@@ -121,6 +121,32 @@ def test_end_to_end_analyzer_recovers_perfect_factor_effects():
         "answer_policy": 1.0,
         "tone_policy": 1.0,
     }
+    cell_means, interactions = analyzer.interaction_tables(frame, reps=20, seed=2)
+    assert len(cell_means) == 32  # 16 cells for ALL and for the single model.
+    assert set(cell_means.n) == {1}
+    assert (interactions.interaction.abs() < 1e-12).all()
+
+
+def test_interaction_table_detects_constructed_two_way_effect():
+    rows = []
+    for question in analyzer.FACTOR_LEVELS["question_policy"]:
+        for answer in analyzer.FACTOR_LEVELS["answer_policy"]:
+            for tone in analyzer.FACTOR_LEVELS["tone_policy"]:
+                value = int(question == "question_first" and answer == "reveal")
+                rows.append({
+                    "base_id": "b",
+                    "model": "m",
+                    "learner_need": "explore",
+                    "question_policy": question,
+                    "answer_policy": answer,
+                    "tone_policy": tone,
+                    **{metric: value for metric in analyzer.REPORT_METRICS},
+                })
+    frame = pd.DataFrame(rows)
+    assert analyzer.two_way_interaction(
+        frame, "question_policy", "answer_policy", "question_first",
+    ) == 1.0
+    assert analyzer.three_way_interaction(frame, "question_first") == 0.0
 
 
 class EmptyThenSuccessClient:

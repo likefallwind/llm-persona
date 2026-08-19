@@ -799,8 +799,8 @@
     },
     {
       "path": "research/17_factorial_prompt_intervention_protocol.md",
-      "bytes": 7570,
-      "sha256": "1a18d1ab0ed26b839973b8d8627ce127ac76bf346a8a6f4380ccc7b49abc6b67"
+      "bytes": 8460,
+      "sha256": "5731a82be7fb45ef957e292943a85333af08ababb5b755cb79413e6617837d25"
     },
     {
       "path": "research/18_2026_neighbor_work_audit.md",
@@ -834,8 +834,8 @@
     },
     {
       "path": "scripts/analyze_factorial_prompt_panel.py",
-      "bytes": 13245,
-      "sha256": "cd83311aa856c8015d429cfe4ce89e79249f6ae9e377beaf29b36d44d448cc0a"
+      "bytes": 17756,
+      "sha256": "c6ce4289ae7f503530f3d700e2ccedc2adcf5b37501312ecae01b9d52697bbf7"
     },
     {
       "path": "scripts/analyze_judge_human_calibration.py",
@@ -994,8 +994,8 @@
     },
     {
       "path": "tests/test_factorial_prompt_panel.py",
-      "bytes": 6226,
-      "sha256": "0da7a7545d909a246482a963e5be8658d6ea817120fe01419d9c10a125a58655"
+      "bytes": 7439,
+      "sha256": "bb5cbcf34ec74162b4a98c60fe85f9557e857e69da1cac2ecfa468dd9daa99fa"
     },
     {
       "path": "tests/test_run_external_semantic_panel.py",

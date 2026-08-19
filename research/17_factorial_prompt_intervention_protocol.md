@@ -1,11 +1,12 @@
 # Prospective factorial policy-intervention protocol
 
-The design, prompts, routes, thresholds, and statistical procedure were frozen
-before any response from this experiment was requested or inspected. The two
-mechanical detector corrections documented below were made after collection
-started but before any response content or outcome estimate was inspected.
+The design, prompts, routes, outcomes, primary contrasts, and claim gates were
+frozen before any response from this experiment was requested or inspected.
+The detector corrections and complete-factorial secondary reporting amendment
+documented below were made after collection started but before any response
+content or outcome estimate was inspected.
 
-Current executable freeze hashes after the pre-outcome detector amendment:
+Current executable freeze hashes after the pre-outcome analysis amendments:
 
 | Component | SHA-256 |
 |---|---|
@@ -13,7 +14,7 @@ Current executable freeze hashes after the pre-outcome detector amendment:
 | `artifacts/factorial_prompt_v1/sample_manifest.jsonl` | `65d79fa4cf3a5c94f5e696d7b97a37d5f761ebc2181d365cbb9881e55860e5e4` |
 | `scripts/generate_factorial_prompt_panel.py` | `1a2eacccea836e3804cdeb7a56fddc28e24b2aa3a2034c421994681ba8924d6c` |
 | `scripts/run_factorial_prompt_panel.py` | `d46af3c4ea7704ad1bb855da54eeb7aec799c0473bdc0fd1fde25910cde18195` |
-| `scripts/analyze_factorial_prompt_panel.py` | `cd83311aa856c8015d429cfe4ce89e79249f6ae9e377beaf29b36d44d448cc0a` |
+| `scripts/analyze_factorial_prompt_panel.py` | `c6ce4289ae7f503530f3d700e2ccedc2adcf5b37501312ecae01b9d52697bbf7` |
 | `scripts/factorial_prompt_status.py` | `e970b37843d023b50f989a8dd4eb58e7fd3dde4c26196033d98c717a30efd469` |
 
 ## Motivation
@@ -84,7 +85,7 @@ No LLM judge is used for the primary factorial test.
 - `warmth_marker`: a frozen English encouragement lexicon is present.
 - word/character/sentence counts are secondary surface outcomes.
 
-### Pre-outcome implementation amendment
+### Pre-outcome analysis amendments
 
 On 2026-08-19, after collection had started but before any response text or
 interim effect estimate was inspected, a code-only blind audit found two
@@ -98,6 +99,17 @@ statistical procedure, or collected response changed. This amendment is
 committed to the method PR before running the analysis or inspecting outcomes;
 the updated source and manifest hashes in the table above supersede the original
 freeze hashes, which remain recoverable from the preceding method commit.
+
+The same outcome-blind code audit also found that the analyzer for a design
+described as a complete 2×2×2 factorial emitted main effects but not the full
+cell means or factor interactions. Before inspecting response content or any
+effect estimate, the analyzer was extended to report all 16 learner-need ×
+factor cell means per group, all three two-way interactions, and the three-way
+interaction for every registered response metric, overall and per model.
+Interactions use high-minus-low difference-in-differences and the same
+base-problem bootstrap. They are secondary, have no claim gate, cannot upgrade a
+failed main-effect or selectivity claim, and must be reported regardless of
+sign. No prompt, response, factor, threshold, primary contrast, or gate changed.
 
 The reveal instruction requires a `Final answer: <value>` ending and the
 withhold instruction prohibits that label, making correct reveal observable
@@ -129,7 +141,8 @@ explicit local learner request under this hierarchy.
 - Completion is all-or-nothing: 2,560 successful nonempty responses. A failed
   endpoint is retried but not replaced by another model or route.
 - All target effects, cross-effects, model effects, learner-need effects, and
-  family breakdowns are reported.
+  family breakdowns are reported, together with all factorial cell means and
+  two- and three-way interactions.
 - A large target effect with large cross-effects is bundled controllability, not
   an independently addressable dimension.
 - Correct answer formatting is instruction adherence, not tutoring quality.

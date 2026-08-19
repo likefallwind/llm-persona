@@ -22,6 +22,9 @@ WARMTH_RE = re.compile(
 )
 FINAL_RE = re.compile(r"\bfinal\s+answer\s*[:=]", flags=re.IGNORECASE)
 PRIMARY_METRICS = ("question_first", "answer_reveal_correct", "warmth_marker")
+REPORT_METRICS = PRIMARY_METRICS + (
+    "question_any", "answer_reveal_any", "word_count", "char_count",
+)
 FACTOR_LEVELS = {
     "question_policy": ("question_first", "explain_only"),
     "answer_policy": ("reveal", "withhold"),
@@ -131,14 +134,114 @@ def bootstrap_ci(frame: pd.DataFrame, column: str, high: str, low: str, metric: 
     return float(np.quantile(draws, 0.025)), float(np.quantile(draws, 0.975))
 
 
+def two_way_interaction(
+    frame: pd.DataFrame, factor_a: str, factor_b: str, metric: str,
+) -> float:
+    """Difference in factor-A effects between high and low factor-B cells."""
+    high_a, low_a = FACTOR_LEVELS[factor_a]
+    high_b, low_b = FACTOR_LEVELS[factor_b]
+    effect_at_high_b = difference(
+        frame[frame[factor_b] == high_b], factor_a, high_a, low_a, metric,
+    )
+    effect_at_low_b = difference(
+        frame[frame[factor_b] == low_b], factor_a, high_a, low_a, metric,
+    )
+    return effect_at_high_b - effect_at_low_b
+
+
+def three_way_interaction(frame: pd.DataFrame, metric: str) -> float:
+    """Question-by-answer interaction at warm minus the same interaction at neutral."""
+    high_tone, low_tone = FACTOR_LEVELS["tone_policy"]
+    at_high = two_way_interaction(
+        frame[frame.tone_policy == high_tone],
+        "question_policy", "answer_policy", metric,
+    )
+    at_low = two_way_interaction(
+        frame[frame.tone_policy == low_tone],
+        "question_policy", "answer_policy", metric,
+    )
+    return at_high - at_low
+
+
+def bootstrap_stat_ci(
+    frame: pd.DataFrame, statistic: Any, reps: int, seed: int,
+) -> tuple[float, float]:
+    """Context bootstrap for an arbitrary statistic on a balanced base block."""
+    by_base = np.asarray([
+        statistic(group) for _, group in frame.groupby("base_id", sort=True)
+    ], dtype=float)
+    rng = np.random.default_rng(seed)
+    draws = rng.choice(by_base, size=(reps, len(by_base)), replace=True).mean(axis=1)
+    return float(np.quantile(draws, 0.025)), float(np.quantile(draws, 0.975))
+
+
+def interaction_tables(
+    frame: pd.DataFrame, reps: int, seed: int,
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Return all cell means and two-/three-way factorial interactions."""
+    cell_rows = []
+    interaction_rows = []
+    groups = [("ALL", frame)] + [(model, group) for model, group in frame.groupby("model", sort=True)]
+    cell_columns = [
+        "learner_need", "question_policy", "answer_policy", "tone_policy",
+    ]
+    factor_pairs = [
+        ("question_policy", "answer_policy"),
+        ("question_policy", "tone_policy"),
+        ("answer_policy", "tone_policy"),
+    ]
+    for group_name, group in groups:
+        for keys, cell in group.groupby(cell_columns, sort=True):
+            row = {"group": group_name, **dict(zip(cell_columns, keys)), "n": len(cell)}
+            row.update({metric: float(cell[metric].mean()) for metric in REPORT_METRICS})
+            cell_rows.append(row)
+        for factor_a, factor_b in factor_pairs:
+            for metric in REPORT_METRICS:
+                estimate = two_way_interaction(group, factor_a, factor_b, metric)
+                ci_low, ci_high = bootstrap_stat_ci(
+                    group,
+                    lambda block, a=factor_a, b=factor_b, m=metric: two_way_interaction(
+                        block, a, b, m,
+                    ),
+                    reps,
+                    seed + len(interaction_rows),
+                )
+                interaction_rows.append({
+                    "group": group_name,
+                    "order": 2,
+                    "factors": f"{factor_a}*{factor_b}",
+                    "metric": metric,
+                    "interaction": estimate,
+                    "bootstrap_ci_low": ci_low,
+                    "bootstrap_ci_high": ci_high,
+                })
+        for metric in REPORT_METRICS:
+            estimate = three_way_interaction(group, metric)
+            ci_low, ci_high = bootstrap_stat_ci(
+                group,
+                lambda block, m=metric: three_way_interaction(block, m),
+                reps,
+                seed + len(interaction_rows),
+            )
+            interaction_rows.append({
+                "group": group_name,
+                "order": 3,
+                "factors": "question_policy*answer_policy*tone_policy",
+                "metric": metric,
+                "interaction": estimate,
+                "bootstrap_ci_low": ci_low,
+                "bootstrap_ci_high": ci_high,
+            })
+    return pd.DataFrame(cell_rows), pd.DataFrame(interaction_rows)
+
+
 def effect_tables(frame: pd.DataFrame, reps: int, seed: int) -> tuple[pd.DataFrame, pd.DataFrame]:
     rows = []
     family_rows = []
-    metrics = list(PRIMARY_METRICS) + ["question_any", "answer_reveal_any", "word_count", "char_count"]
     groups = [("ALL", frame)] + [(model, group) for model, group in frame.groupby("model", sort=True)]
     for group_name, group in groups:
         for factor, (high, low) in FACTOR_LEVELS.items():
-            for metric in metrics:
+            for metric in REPORT_METRICS:
                 estimate = difference(group, factor, high, low, metric)
                 ci_low, ci_high = bootstrap_ci(
                     group, factor, high, low, metric, reps, seed + len(rows),
@@ -264,12 +367,17 @@ def main() -> None:
     manifest = load_jsonl(args.manifest)
     frame = build_metric_frame(spec, manifest, load_jsonl(args.responses))
     effects, family = effect_tables(frame, args.bootstrap_reps, args.seed)
+    cell_means, interactions = interaction_tables(
+        frame, args.bootstrap_reps, args.seed + 20_000,
+    )
     need = learner_need_effects(frame, args.bootstrap_reps, args.seed + 10_000)
     conditional = conditional_need_effects(frame)
     decision = evaluate_gates(spec, effects, need)
     args.output_dir.mkdir(parents=True, exist_ok=True)
     frame.to_csv(args.output_dir / "derived_response_metrics.csv", index=False)
     effects.to_csv(args.output_dir / "factor_effects.csv", index=False)
+    cell_means.to_csv(args.output_dir / "factorial_cell_means.csv", index=False)
+    interactions.to_csv(args.output_dir / "factor_interactions.csv", index=False)
     family.to_csv(args.output_dir / "family_target_effects.csv", index=False)
     need.to_csv(args.output_dir / "learner_need_effects.csv", index=False)
     conditional.to_csv(args.output_dir / "conditional_learner_need_effects.csv", index=False)
@@ -279,6 +387,8 @@ def main() -> None:
         "models": sorted(frame.model.unique().tolist()),
         "base_problems": int(frame.base_id.nunique()),
         "factor_cells_per_model": int(len(frame) / frame.model.nunique()),
+        "reported_cell_rows": len(cell_means),
+        "reported_interaction_rows": len(interactions),
         "decision": decision,
     }
     (args.output_dir / "factorial_analysis_report.json").write_text(
