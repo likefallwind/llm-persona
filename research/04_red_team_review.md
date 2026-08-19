@@ -194,10 +194,13 @@ long real histories, and exact-item causal contrasts compare the same model and
 context under two prompts.  Contamination cannot alone explain within-item prompt
 movement, but it can affect baselines and criterion alignment.
 
-**Still needed:** add a small, procedurally generated held-out context set after
-the models' knowledge cutoff or remove any claim of benchmark-unseen
-generalization.  Hash-based sampling is unbiased within the archive but does not
-make the archive uncontaminated.
+**Current prospective answer:** the frozen factorial uses 32 procedurally
+generated contexts whose exact numbers and wrong solutions are absent from the
+benchmark archive. This reduces exact-item familiarity but does not establish
+that the underlying arithmetic templates were absent from training. The paper
+therefore cannot claim benchmark-unseen conceptual generalization. Hash-based
+sampling is unbiased within the archive but does not make the archive
+uncontaminated.
 
 ### 12. “The paired prompt changes more than pedagogy.”
 
@@ -265,6 +268,32 @@ report the attrition.
 can reasonably prefer a fully rerunnable provider or an independently replicated
 panel; the correct response is transparency and sensitivity analysis, not a claim
 that the technical failure is ignorable by design.
+
+### 15. “The factorial request order is confounded with its conditions.”
+
+**Why it is serious:** the parent runner submits a lexicographically sorted
+manifest. Although every base-problem block contains all 16 learner-need × policy
+cells, direct versus explore differs by eight mean within-block queue positions;
+question, answer, and tone levels differ by four, two, and one. Short provider
+drift, load effects, or cache behavior could therefore move with a factor.
+
+**Current answer:** the non-random sequence is disclosed as a primary-design
+limitation rather than erased after collection. Before any response text or
+effect estimate was inspected, a fixed eight-base replication was registered.
+It reuses byte-identical prompts but publishes a different SHA-256 order for
+every model. Every consecutive 16-call block contains each factorial cell once,
+and analysis checks observed ranks against the public 640-row plan.
+
+**Downgrade rule:** the replication runs after the parent completes and
+regardless of its outcomes. A factor is order-robust only if both complete panels
+pass the original controllability and selectivity gates and its target effect is
+positive for every model in both the matching parent subset and replication. The
+replication cannot rescue a failed parent result.
+
+**Residual threat:** the replay uses only eight of 32 base problems and occurs
+later, so provider-version drift and repeat-prompt caching cannot be separated
+from order robustness. If any frozen endpoint is unavailable or the replication
+is incomplete, no order-robust claim is made.
 
 ## Decision after red-team review
 

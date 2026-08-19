@@ -754,8 +754,8 @@
     },
     {
       "path": "research/04_red_team_review.md",
-      "bytes": 16195,
-      "sha256": "2ac355df5022752fbb87e34148f942a5e5462d794ec4535afaeda97b59707ac6"
+      "bytes": 17986,
+      "sha256": "194dd5a78a5b724271cd5fd7856efc7ce4d33d3debcf6000de49218460e78e81"
     },
     {
       "path": "research/05_semantic_analysis_plan.md",
