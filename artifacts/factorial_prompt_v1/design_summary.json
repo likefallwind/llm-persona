@@ -1,0 +1,21 @@
+{
+  "base_problem_count": 32,
+  "expected_calls": 2560,
+  "manifest_sha256": "c247dc3af4e1f1a85f18f5fd9a0b3a4e3441a925496197f4b4e02bd389784cc6",
+  "model_count": 5,
+  "payload_scope": "synthetic problem, synthetic learner work/request, frozen policy clauses",
+  "potential_pii_pattern_flags": {
+    "email": 0,
+    "phone_like": 0,
+    "url": 0
+  },
+  "prompt_chars": {
+    "max": 745,
+    "mean": 665.0625,
+    "min": 593
+  },
+  "sample_count": 512,
+  "schema_version": 1,
+  "seed": 20260820,
+  "spec_sha256": "bbe4ae5debcba9057f026a9e3fef18aab3bfc6522915a5464148d48f20d3abf5"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "seed": 20260820,
+  "base_problems_per_family": 8,
+  "problem_families": [
+    "fraction_addition",
+    "linear_equation",
+    "percentage_discount",
+    "arithmetic_mean"
+  ],
+  "learner_needs": ["explore", "direct"],
+  "factors": {
+    "question_policy": ["question_first", "explain_only"],
+    "answer_policy": ["withhold", "reveal"],
+    "tone_policy": ["warm", "neutral"]
+  },
+  "models": [
+    "MiniMax-M3",
+    "MiniMax-M2.7",
+    "glm-5.2",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite"
+  ],
+  "generation": {
+    "temperature": 0,
+    "max_tokens": null,
+    "language": "English",
+    "minimax_concurrency": 4,
+    "gateway_concurrency": 8,
+    "retries": 3
+  },
+  "success_gate": {
+    "required_complete_cells": 2560,
+    "allow_missing": 0,
+    "allow_empty": 0
+  },
+  "claim_gates": {
+    "question_target_mean_difference_min": 0.60,
+    "answer_target_mean_difference_min": 0.60,
+    "tone_target_mean_difference_min": 0.30,
+    "target_effect_positive_in_every_model": true,
+    "selectivity_ratio_min": 2.0,
+    "learner_need_reveal_difference_min": 0.10,
+    "learner_need_question_difference_min": 0.10
+  },
+  "reporting_rules": [
+    "Report all target and cross-effects even when a gate fails.",
+    "Treat system-factor effects as instruction controllability, not learning benefit.",
+    "Treat learner-need effects as context responsiveness, not human preference satisfaction.",
+    "Do not call a factor selective when its target-to-largest-cross-effect ratio is below 2.",
+    "Do not replace failed calls, models, problem families, or factor cells after inspecting outcomes."
+  ]
+}

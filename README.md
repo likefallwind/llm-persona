@@ -168,6 +168,25 @@ unresolved citation/reference. The fresh-checkout reproduction boundary and ARR
 checklist evidence map are in `research/14_clean_room_reproduction.md` and
 `research/15_arr_responsible_nlp_checklist.md`.
 
+## Prospective factorial policy intervention
+
+`research/17_factorial_prompt_intervention_protocol.md` freezes a synthetic
+2×2×2 experiment separating question-first, answer-withholding, and warm-tone
+instructions. It uses 32 newly generated math problems, two conflicting learner
+requests, eight policy cells, and five currently reachable model routes (2,560
+calls). No benchmark or learner text is transmitted.
+
+Generate and audit the public synthetic payload without making API calls:
+
+```bash
+python scripts/generate_factorial_prompt_panel.py
+python scripts/run_factorial_prompt_panel.py --dry-run
+```
+
+The live runner is append-only, resumable, provider-capped, and protected by a
+single-writer lock. Raw provider responses remain ignored; only their hashes,
+deterministic behavior metrics, and aggregate contrasts are eligible for release.
+
 The data and model release boundaries are documented in
 `research/09_dataset_card.md` and `research/10_model_panel_card.md`.  In
 particular, a public release contains derived measurements and hashes rather

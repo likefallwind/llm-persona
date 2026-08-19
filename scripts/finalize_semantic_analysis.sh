@@ -80,6 +80,8 @@ cd "$ROOT"
     artifacts/semantic_scale_diagnostics \
     artifacts/semantic_objective_validity \
     artifacts/submission_decision \
+    artifacts/factorial_prompt_v1 \
+    artifacts/factorial_analysis_v1 \
   --output artifacts/reproducibility_manifest.json
 
 "$PY" -m py_compile scripts/*.py
