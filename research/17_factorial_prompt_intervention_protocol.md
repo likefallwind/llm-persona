@@ -73,6 +73,15 @@ messages. The complete panel is 32 problems × 2 learner needs × 8 cells × 5
 models = **2,560 calls**. Temperature is explicitly zero and output is uncapped,
 following the provider-client policy for reasoning models.
 
+The frozen manifest is submitted in lexicographic `sample_id` order within each
+model rather than in a randomized request sequence. Every adjacent base-problem
+block still contains all 16 learner-need × policy cells, so conditions are
+balanced across the full run and across each local block. Nevertheless, a
+condition-correlated within-block provider drift, load effect, or cache effect
+cannot be ruled out. This execution-order limitation was identified in an
+outcome-blind code audit and is reported without changing the running collection
+or any claim gate.
+
 ## Deterministic outcomes
 
 No LLM judge is used for the primary factorial test.
@@ -150,4 +159,6 @@ explicit local learner request under this hierarchy.
   learning.
 - Procedural novelty reduces exact benchmark memorization but does not prove the
   underlying mathematical templates were absent from training.
+- The request sequence was locally balanced but not randomized, so the study
+  does not identify or exclude condition-correlated within-block service drift.
 - The method commit and executable spec must be pushed before live calls begin.
