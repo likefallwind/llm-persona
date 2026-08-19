@@ -151,6 +151,23 @@ Ollama; the current 8B/12B smoke tests are valid structurally but too slow and
 low-confidence to serve as primary judges.  Local model work is paused until a
 stronger server is available.
 
+## Build the anonymous ACL submission
+
+The review manuscript is in `paper/submission/main.tex`. It uses the official
+ACL `[review]` mode and a pinned, hash-checked checkout of
+<https://github.com/acl-org/acl-style-files>. The upstream style files are not
+vendored or modified. Build the deterministic six-page PDF with:
+
+```bash
+ACL_STYLE_DIR=/path/to/acl-style-files ./scripts/build_acl_submission.sh
+```
+
+The exact official commit and file hashes are recorded in
+`paper/submission/README.md`. The build fails on a style hash mismatch or any
+unresolved citation/reference. The fresh-checkout reproduction boundary and ARR
+checklist evidence map are in `research/14_clean_room_reproduction.md` and
+`research/15_arr_responsible_nlp_checklist.md`.
+
 The data and model release boundaries are documented in
 `research/09_dataset_card.md` and `research/10_model_panel_card.md`.  In
 particular, a public release contains derived measurements and hashes rather

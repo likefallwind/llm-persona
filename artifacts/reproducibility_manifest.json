@@ -654,8 +654,8 @@
     },
     {
       "path": "paper/figures/main_findings.pdf",
-      "bytes": 34430,
-      "sha256": "158ccef181ee8af82c389756a32723a941ad0476bca951f853c36c5ee0271387"
+      "bytes": 31320,
+      "sha256": "04aa6bb8874d74fd2f1f4b17cd8880588243ce226e2b1fd6b24ef39fdc86a601"
     },
     {
       "path": "paper/figures/main_findings.png",
@@ -664,8 +664,8 @@
     },
     {
       "path": "paper/figures/semantic_findings.pdf",
-      "bytes": 27003,
-      "sha256": "5b6f67baf2a86952e4d5f3521095b80bf5e68d39afac7ea4280ac2cde1a26d34"
+      "bytes": 22816,
+      "sha256": "d001109f1772f571d1331e1b5bca97e5361dbcd2459ff9f1d46d372b7d35a509"
     },
     {
       "path": "paper/figures/semantic_findings.png",
@@ -681,6 +681,21 @@
       "path": "paper/references.bib",
       "bytes": 8542,
       "sha256": "d201850ad4cce51ce81de74c09beed088a80e10f74a7359998b5e70a34a2bbdc"
+    },
+    {
+      "path": "paper/submission/README.md",
+      "bytes": 1610,
+      "sha256": "c0c6c78da5f84633d43ec7d0710fab46acf4de9e72954e64f3aa4ddca1411384"
+    },
+    {
+      "path": "paper/submission/main.tex",
+      "bytes": 18413,
+      "sha256": "61ff9d8117277916bef8d45df24cdda8d1abb9edb7f028fc59dfb83e02f80819"
+    },
+    {
+      "path": "paper/submission/submission.pdf",
+      "bytes": 184327,
+      "sha256": "a717163c097cb3188e2023c2d697b22640cce3e465c226b7c18de7e39c233738"
     },
     {
       "path": "research/00_research_charter.md",
@@ -699,8 +714,8 @@
     },
     {
       "path": "research/03_claim_evidence_matrix.md",
-      "bytes": 8192,
-      "sha256": "a1d8eb945ded9eba0d92e8f149358e01ff2c5c736c095dbb92d71f321c68ce66"
+      "bytes": 8353,
+      "sha256": "dc44c7c2d43a4d7ff90805bb967abf98d58470b78bd7f826a6c24499cf72ae7e"
     },
     {
       "path": "research/04_red_team_review.md",
@@ -751,6 +766,16 @@
       "path": "research/13_semantic_attrition_amendment.md",
       "bytes": 2084,
       "sha256": "d99169db27af0cfc74d9f3bd587626d9161dc64b850a0d42395c1de912874660"
+    },
+    {
+      "path": "research/14_clean_room_reproduction.md",
+      "bytes": 2092,
+      "sha256": "ae77ab4cf79a33093fb33aed4df9cbf2598cec8bac39eb34baf2ce93600c319b"
+    },
+    {
+      "path": "research/15_arr_responsible_nlp_checklist.md",
+      "bytes": 2973,
+      "sha256": "004d4319c51e10fa4cf948c12bfa56fe5c7265cbcb51e14162d065a05036f11c"
     },
     {
       "path": "research/semantic_panel_exclusions_v1.json",
@@ -818,6 +843,11 @@
       "sha256": "3c81181d6adee0225a1cbb13f12022c3c042dad5075c89be81bbdb90116c6d91"
     },
     {
+      "path": "scripts/build_acl_submission.sh",
+      "bytes": 1868,
+      "sha256": "752ce87a8e923c0a15f445e5f6ad51ef615d2abe3618219d25391119d911b20b"
+    },
+    {
       "path": "scripts/build_corpus_inventory.py",
       "bytes": 10532,
       "sha256": "9c66a07a67b89b0504ea77741a4a3f1a520d3343c92c9301839752e4f2510fcd"
@@ -844,8 +874,8 @@
     },
     {
       "path": "scripts/make_paper_figures.py",
-      "bytes": 9667,
-      "sha256": "2270d943088c5d5b2e451f60d923a26143f4d95dec7291ef67a4044336b83674"
+      "bytes": 9805,
+      "sha256": "2878381432585d0a5e9d8a4723bd45856ac222e81de1e999901290bf68265fdc"
     },
     {
       "path": "scripts/reproduce_completed.sh",

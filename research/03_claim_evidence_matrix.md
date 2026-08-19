@@ -35,8 +35,9 @@ The strongest defensible thesis is therefore narrower and more useful:
 
 ## Remaining requirements before upload
 
-- Complete a clean-room reproduction of the frozen semantic and non-semantic
-  package, including all registered claims and the technical-exclusion gate.
+- Repeat the fresh-checkout reproduction in an independently created dependency
+  environment if claiming environment portability. The completed audit reused
+  the machine's installed Python dependencies and is labelled accordingly.
 - Extend the human-labelled dialogue-act criterion with a downstream outcome;
   action agreement is independent of LLM judges but still is not student learning.
 - Treat naive prompted student simulation as invalid unless the simulator is
@@ -44,9 +45,10 @@ The strongest defensible thesis is therefore narrower and more useful:
   prerequisite-competence result, not learning effectiveness.
 - Expand the independently sampled model panel if making population-level or
   family-level claims; six model means cannot support latent-trait correlations.
-- Fit cluster-aware confirmatory models and freeze the exact primary contrasts
-  before viewing semantic labels.
-- Package manifests, hashes, scripts, environment, and an auditable exclusion
-  ledger; clarify upstream licenses before releasing any text.
+- Preserve the context-clustered confirmatory estimands and disclose that the
+  decision rule was frozen after two judges were partially inspected; it is not
+  a preregistration.
+- Resolve upstream license and privacy review before releasing any text. The
+  code, derived artifacts, manifest, hashes, and exclusion ledger are packaged.
 - Apply `research/11_submission_decision_rule.md` without dropping failed
   semantic dimensions or weakening the third-judge reveal thresholds.

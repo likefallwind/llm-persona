@@ -15,6 +15,11 @@ import numpy as np
 import pandas as pd
 
 
+# Keep figure text searchable and avoid Type 3 fonts in the ACL PDF.
+plt.rcParams["pdf.fonttype"] = 42
+plt.rcParams["ps.fonttype"] = 42
+
+
 COLORS = {"blue": "#0072B2", "orange": "#E69F00", "green": "#009E73", "red": "#D55E00"}
 
 

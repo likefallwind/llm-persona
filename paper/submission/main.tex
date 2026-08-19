@@ -1,0 +1,338 @@
+\documentclass[11pt]{article}
+
+\usepackage[review]{acl}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{booktabs}
+
+\title{Beyond Personality and Fingerprints: Behavioral Evidence for\\
+Pedagogical Policy Signatures in AI Tutors}
+\author{Anonymous ACL submission}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Questionnaire studies of language-model personality are vulnerable to prompt
+fragility and a self-report--behavior gap. We instead study \emph{pedagogical
+policy signatures}: recurring, model-conditioned teaching actions in authentic
+educational responses. Across 31,638 paired responses from six models,
+transparent policy features identify the model on held-out teaching families
+(0.242 accuracy versus 0.167 chance), but generic tasks yield stronger
+attribution. In a nine-model, 26,586-response panel, the same pedagogy instruction
+makes every model ask more questions and produce shorter turns, while reducing
+cross-model policy dispersion to 0.763 of baseline (95\% CI [0.738, 0.794]). A
+classifier trained on 18,541 human-labelled teacher turns finds higher average
+next-action agreement after prompting, but agreement collapses when the human
+teacher selected direct telling. Transparent policy features improve
+leave-one-model-out tutoring-quality AUC by 0.023--0.031 beyond exact-item
+controls, while judged adaptive teaching does not improve human-gold learner
+diagnosis. Finally, 1,074 complete blinded judge--batch annotations identify
+models on held-out educational tasks at 0.322 accuracy. Prespecified gates retain
+help directness and cognitive load as cross-task signatures, but only help
+directness as a validated disposition. The evidence supports stable and
+steerable policy signatures in this finite panel, not human-like personality.
+\end{abstract}
+
+\section{Introduction}
+
+Language models are often described as having personalities. Much evidence
+comes from asking them to complete human inventories or enact a persona
+\citep{jiang-etal-2024-personallm,lee-etal-2025-trait}. Such studies establish
+expressibility, but not whether an elicited profile predicts behavior when a
+model tutors a learner. Wording and option order destabilize scores
+\citep{shu-etal-2024-dont}; recent work also questions construct equivalence and
+predictive validity
+\citep{han-etal-2025-personality-illusion,zierahn-etal-2026-arent-human,contreras-2026-native-psychometric}.
+
+Educational agents offer a consequential behavioral test. A tutor must decide
+whether to explain or elicit, reveal an answer or preserve learner effort, and
+diagnose a misconception or remain cautious. These actions are observable across
+repeated contexts and are not universally good: a Socratic question can help
+after a productive error and obstruct when direct instruction is warranted.
+
+We introduce a behavior-first hierarchy. A \emph{surface fingerprint} is any
+stable authorship cue. A \emph{pedagogical policy signature} is an interpretable
+teaching-action pattern surviving exact-item and surface controls. A
+\emph{validated pedagogical disposition} additionally recurs across educational
+tasks, relates to an independent criterion, and responds coherently to an
+intervention. These terms do not imply human traits or inner mental states.
+
+Our paired archive contains the same benchmark items and harness across model
+systems. Held-out-task analyses test recurrence; generic tasks expose
+domain-general fingerprints; paired generic and explicit-pedagogy prompts supply
+a within-model intervention; and existing human teacher moves and human-gold
+learner-state tasks provide criteria independent of the primary quality judge.
+The results reject both a verbosity-only account and a universal beneficial
+persona. They support a narrower, actionable object: finite-panel default
+tutoring policies and their resistance to steering.
+
+\section{Related Work}
+
+Behavior-first psychometrics is an active direction. GenPT generates projective
+stimuli rather than fixed inventories \citep{wang-etal-2026-genpt}, while
+construct-matched contexts can improve self-report--behavior coherence
+\citep{kocielnik-etal-2026-rethinking}. Our unit is narrower and more ecological:
+archived tutor actions on shared tasks, subjected to task, fingerprint,
+intervention, and external-criterion controls.
+
+MathDial defines teacher moves and premature solution reveal
+\citep{macina-etal-2023-mathdial}; MRBench and MathTutorBench organize open-ended
+tutoring capabilities
+\citep{maurya-etal-2025-mrbench,macina-etal-2025-mathtutorbench}. LongTutor
+separates historical evidence, knowledge-state diagnosis, and adaptive teaching
+\citep{li-etal-2026-longtutor}. Closest to our context-sensitivity question,
+\citet{borchers-shou-2025-adaptivity} find limited adaptivity under learner-context
+ablations. Tutor-persona steering \citep{lee-etal-2026-tutor-personas} and
+theory-grounded runtime control \citep{nkambou-etal-2026-pedrag} ask how a desired
+policy can be induced; we first measure recurring defaults and then test a shared
+instruction.
+
+Attribution alone is insufficient because lexical features identify generators
+across domains \citep{mcgovern-etal-2025-fingerprints}. Prompted students are
+also not assumed to measure learning: recent evaluations find weak linguistic,
+behavioral, and cognitive fidelity \citep{scarlatos-etal-2026-simulated}. We
+therefore treat objective diagnosis and evidence retrieval as prerequisite
+competence and reserve learning gain for prospective work.
+
+\section{Data and Governance}
+
+The core panel contains six frozen deployed configurations: MiniMax-M3,
+MiniMax-M2.7, GLM-5.2, DeepSeek-V4-Pro, Doubao-Seed-2.0-Pro, and Qwen3.5-4B. We
+retain only successful responses available for every model on an item. Six
+teaching arms yield 31,638 responses; four generic negative-control families
+yield 57,516. A nine-model MathDial panel adds three configurations for 26,586
+responses. LongTutor contributes long learner histories, and MathTutorBench
+provides paired generic and LearnLM-style pedagogy prompts in standard and hard
+contexts.
+
+The MathDial source supplies human teacher moves (\texttt{probing},
+\texttt{focus}, \texttt{telling}, and \texttt{generic}). LongTutor supplies
+human-gold knowledge-state diagnosis and reference-scored historical evidence.
+We pin 84 relevant prediction/summary pairs by SHA-256. Exact provider-response
+regeneration is impossible: temperature is present for 22/84 runs, while seed
+and prompt-version metadata are absent from all 84.
+
+Public analysis artifacts store identifiers, hashes, features, scores, and
+inferred labels rather than source responses. Although the LongTutor paper
+states CC BY 4.0 for data, we withhold longitudinal learner histories as a
+privacy-minimizing choice. The external semantic sample was transmitted only
+after explicit authorization.
+
+\section{Methods}
+
+\subsection{Transparent features and transport}
+
+We deterministically count length, structure, formatting, questions, address
+terms, praise, encouragement, hedges, imperatives, history references, answer
+reveal, explanation, and diagnosis markers. Features are centered across models
+within exact item and standardized within benchmark. Multinomial logistic
+regression predicts model identity while holding out an entire task family. The
+same protocol on generic tasks is a negative control: strong generic attribution
+prevents relabeling an authorship fingerprint as pedagogy.
+
+For paired prompts we subtract the generic-arm feature from the pedagogy-arm
+feature for the same context and model. Bootstrap resampling preserves the six
+correlated responses within each context. We measure both directional
+model-by-model effects and cross-model profile dispersion.
+
+\subsection{Quality, actions, and learner state}
+
+Quality prediction holds out one candidate model at a time. Exact-item effects
+form the baseline; length and policy features are nested additions. Byte-identical
+responses scored by two judges provide a judge swap. A separate set of 482 expert
+positive/negative pairs, each shown in both orders, audits three judges.
+
+Three TF--IDF linear-SVM variants are trained on 18,541 human teacher turns, with
+five-fold splits grouped by math problem. Generated responses are then compared
+with the human next move. LongTutor analyses join teaching, diagnosis, and
+evidence tasks by exact history and model. Held-out-model prediction includes
+exact-history effects before teaching scores are added.
+
+\subsection{Blinded semantic panel and frozen hierarchy}
+
+The deterministic sample initially contained 360 context--arm batches and 2,160
+responses: 40 LongTutor, 80 standard MathDial pairs, 40 hard pairs, and 80
+Socratic contexts. Three judges coded eight bipolar 1--5 dimensions: help
+directness, elicitation, autonomy support, affective warmth, diagnostic
+specificity, personalization, cognitive load, and epistemic caution. Model
+identity was hidden and response order independently randomized by judge and
+batch. Confirmatory scores are judge medians.
+
+One DeepSeek annotation remained unavailable after three rounds of three
+attempts. Before formal analysis and without inspecting the affected scores, we
+excluded that generic batch and its prespecified pedagogy counterpart for all
+judges. The complete-case panel therefore contains 358 batches, 2,148 responses,
+and 1,074 annotations (0.56\% technical attrition).
+
+All eight dimensions remain reported. A frozen cumulative hierarchy requires
+(i) ICC(3,k)$\geq .60$, adequate range, leave-one-judge profile
+$\rho\geq .70$, and no prompt sign reversal; (ii) nonzero exact-context model
+variance plus cross-task ICC or median task correlation $\geq .50$; and (iii) an
+independent quality/action, prompt/action, or BH-corrected human-gold diagnosis
+criterion. Fewer than two validated dimensions forces the policy-signature
+thesis used here.
+
+\section{Results}
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{main_findings.pdf}
+  \caption{Complementary falsification tests. (A) Generic responses are more
+  attributable than teaching responses. (B) a common pedagogy prompt compresses
+  policy dispersion. (C) it reduces agreement when human teachers chose telling.
+  (D) teaching dimensions do not improve human-gold diagnosis beyond exact
+  history.}
+  \label{fig:main}
+\end{figure*}
+
+\subsection{Signatures and generic fingerprints}
+
+Teaching-task held-out attribution is 0.242 with policy features and 0.251 with
+all transparent features, versus 0.167 chance; length alone reaches 0.230.
+Several within-item-centered proxies recur across tasks, including mean sentence
+length (ICC 0.645), explanation (0.546), hedging (0.474), and response length
+(0.470). The negative control reverses the hoped-for ordering: generic combined
+features reach 0.372 and surface features 0.347. Cross-domain policy geometry is
+not preserved (Mantel $r=.296$, exact $p=.307$). Attribution thus detects stable
+generator signatures but is not construct validity by itself (Figure~\ref{fig:main}A).
+
+\subsection{A shared prompt compresses policies}
+
+All nine models ask more questions and produce shorter responses under the
+explicit pedagogy prompt in both difficulty sets. Prompted cross-model dispersion
+is 0.763 of generic baseline (95\% bootstrap CI [0.738, 0.794]). Praise,
+diagnosis, imperatives, and answer reveal do not move uniformly, rejecting a
+single scalar ``more pedagogical'' interpretation (Figure~\ref{fig:main}B).
+
+\subsection{Quality prediction and judge audit}
+
+On 14,770 identical responses, the two quality judges show 0.808 exact agreement,
+0.955 within half a point, Spearman 0.806, and quadratic $\kappa=.810$. An
+exact-item model reaches mean AUC 0.867. Length adds about 0.002; policy plus
+length reaches 0.898 under DeepSeek (+0.031) and 0.889 under MiniMax (+0.023),
+with every held-out-model fold improving. Exact one-sided sign tests are
+$p=.0312$ and $p=.0156$.
+
+On 482 expert-labelled pairs, MiniMax-M3, GLM-5.2, and DeepSeek-V4-Pro agree with
+experts at 0.844, 0.839, and 0.817; position consistency is 0.900--0.919. The
+three-judge majority reaches 0.835 and does not beat the strongest judge, so it
+is not treated as human ground truth.
+
+\subsection{Human actions expose oversteering}
+
+Problem-grouped macro F1 is 0.559--0.571 across the action classifiers. All 54
+classifier $\times$ difficulty $\times$ model contrasts improve overall action
+match, by 0.091--0.114 in standard and 0.145--0.180 in hard contexts. The hard
+subset is nearly all probing, so its gain is chiefly probing compliance.
+
+The aggregate hides a consistent failure. For the 48 standard contexts where the
+human target is \texttt{telling}, generic match is 0.394--0.442 but prompted
+match falls to 0.111--0.125; inferred telling share drops 0.234--0.280. A
+universal question policy oversteers precisely where a human teacher chose direct
+instruction (Figure~\ref{fig:main}C).
+
+\subsection{Adaptive presentation is not diagnosis}
+
+Across 6,000 model--history observations, diagnosis accuracy ranges from 0.278
+to 0.437. Teaching quality has weak within-model association with diagnosis
+(mean Spearman 0.173) and essentially none with evidence accuracy (-0.010). With
+exact-history effects and a held-out model, item-only diagnosis reaches AUC
+0.822; four teaching dimensions reach 0.816 and their mean 0.817. Evidence RMSE
+remains 0.187 for all variants. Adaptive-sounding instruction does not substitute
+for learner-state inference (Figure~\ref{fig:main}D).
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=\textwidth]{semantic_findings.pdf}
+  \caption{Confirmatory semantic results. (A) The frozen cumulative decision
+  ladder retains two signatures and one validated disposition. (B) paired prompt
+  effects. (C) held-out-task model attribution.}
+  \label{fig:semantic}
+\end{figure*}
+
+\subsection{Confirmatory semantic measurement}
+
+Reliability is high for help directness (ICC(3,k)=0.905), elicitation (0.963),
+and cognitive load (0.855); epistemic caution fails the threshold (0.580).
+Dropping any judge preserves the full profile ($\rho=.959$--$.962$). Own-family
+judge residuals average only 0.001--0.014 points and candidate-position ranges are
+0.075--0.160, below the registered 0.25 flags.
+
+Semantic dimensions identify models on held-out tasks at 0.322, versus 0.167
+chance, 0.239 for length, and 0.353 for transparent features. Combining semantic
+and transparent features reaches 0.391. Help directness (cross-task ICC 0.629;
+median task $\rho=.647$) and cognitive load (0.663; 0.677) qualify as signatures.
+Elicitation is reliable but misses stability (0.475; 0.468).
+
+The intervention supplies a semantic manipulation check. The prompt reduces help
+directness by 1.709 points in standard and 1.542 in hard contexts, increases
+elicitation by 2.470 and 2.171, and reduces cognitive load by 0.759 and 0.721.
+Independently inferred telling responses score 1.360 points higher in help
+directness than probing/focus. Help directness therefore passes prompt--action
+convergence. Semantic features add 0.015 mean quality AUC but fail fold
+consistency (minimum $-0.004$); no dimension survives BH correction against
+human-gold diagnosis. Consequently only help directness reaches the disposition
+tier, below the two-dimension threshold. Figure~\ref{fig:semantic} shows how the
+frozen hierarchy prevents weaker dimensions from being promoted.
+
+\section{Discussion}
+
+The results favor a narrower object than model personality. Tutor policies recur
+and are steerable, but some identity signal is a domain-general fingerprint. A
+shared intervention shows causal addressability while also homogenizing models
+and suppressing appropriate telling. The learner-diagnosis null further
+separates adaptive presentation from accurate learner modeling.
+
+This suggests a controller decomposition: estimate learner state, select an
+appropriate action, then realize that action in language. A model's signature
+describes its default and resistance to steering; it is not itself a quality
+label. Runtime grounding such as PedRAG may provide a controller layer, but our
+telling failure implies that the retrieval or steering policy must condition on
+learner state rather than enforce one pedagogy uniformly.
+
+\section{Conclusion}
+
+AI tutors in this finite panel exhibit stable and causally steerable pedagogical
+policy signatures. They are neither reducible to length nor equivalent to human
+personality. Their consequences are conditional: prompting can improve average
+action agreement while suppressing appropriate telling, and adaptive-sounding
+responses can coexist with weak learner diagnosis. Behavior-first measurement
+makes these distinctions auditable.
+
+\section*{Limitations}
+
+The core panel contains only six systems. Thousands of responses increase
+precision for context effects but do not create model replicates; population and
+family claims are excluded. Most quality outcomes are LLM-judged, although judge
+swaps, expert-pair calibration, human action labels, and human-gold diagnosis
+provide complementary checks. Human action agreement is not learning gain, and
+no simulated-student claim is made. A learning-effectiveness claim requires
+prospective learners or a separately validated simulator and objective pre/post
+tests.
+
+Provider system prompts, alias updates, and serving backends are uncontrolled.
+Generation cannot be exactly repeated because most settings and all seeds and
+prompt versions were not retained. Findings concern frozen deployed
+configurations, not immutable weights. The semantic complete-case rule was fixed
+after a provider failure but before formal analysis; its 0.56\% paired technical
+attrition is fully reported.
+
+\section*{Ethics Statement}
+
+The study analyzes existing model responses and educational histories. Public
+artifacts use hashes and derived measurements rather than raw learner histories
+or source responses. External semantic coding used only explicitly authorized
+endpoints and a frozen payload. Model-conditioned differences must not be read as
+human traits, demographic characteristics, or evidence that one system improves
+learning. Deployment should test learner outcomes and provide educator oversight,
+especially where a uniform Socratic policy may withhold needed direct help.
+
+\bibliography{references}
+
+\end{document}
