@@ -5,15 +5,21 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PY="$ROOT/.venv/bin/python"
 PANEL="$ROOT/artifacts/semantic_judge/full_v1"
 OUT="$ROOT/artifacts/semantic_panel"
+EXCLUSIONS="$ROOT/research/semantic_panel_exclusions_v1.json"
 
 cd "$ROOT"
 
-"$PY" scripts/semantic_judge_status.py --output-dir "$PANEL" --require-complete
+"$PY" scripts/semantic_judge_status.py \
+  --output-dir "$PANEL" \
+  --exclusions "$EXCLUSIONS" \
+  --require-complete
 
-# This command intentionally has no --allow-incomplete flag.  It is the formal
-# 1,080-annotation coverage gate for every downstream semantic conclusion.
+# This command intentionally has no --allow-incomplete flag. It is the formal
+# 1,074-annotation complete-case gate after the frozen two-batch technical
+# attrition amendment.
 "$PY" scripts/analyze_semantic_panel.py \
   --panel-dir "$PANEL" \
+  --exclusions "$EXCLUSIONS" \
   --features artifacts/pilot/behavior_features.csv \
   --dialogue-acts artifacts/dialogue_act_validity/generated_dialogue_acts.csv \
   --output-dir "$OUT" \

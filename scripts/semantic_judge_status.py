@@ -11,15 +11,19 @@ from typing import Any
 
 import pandas as pd
 
+from semantic_panel_exclusions import load_excluded_items
+
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--exclusions", type=Path)
     parser.add_argument("--require-complete", action="store_true")
     args = parser.parse_args()
     manifest_path = args.output_dir / "sample_manifest.json"
     annotation_path = args.output_dir / "annotations.jsonl"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    excluded = load_excluded_items(args.exclusions, manifest)
     judges = ["MiniMax-M3", "glm-5.2", "deepseek-v4-pro"]
     latest: dict[str, dict[str, Any]] = {}
     raw_rows = 0
@@ -39,7 +43,11 @@ def main() -> None:
 
     rows = []
     errors: Counter[str] = Counter()
-    for item in manifest["items"]:
+    analyzed_items = [
+        item for item in manifest["items"]
+        if (str(item["benchmark"]), str(item["item_id"])) not in excluded
+    ]
+    for item in analyzed_items:
         for judge in judges:
             annotation_id = f"{item['benchmark']}|{item['item_id']}|{judge}"
             record = latest.get(annotation_id)
@@ -75,6 +83,8 @@ def main() -> None:
     )
     overall = pd.DataFrame([{
         "manifest_batches": len(manifest["items"]),
+        "excluded_batches": len(excluded),
+        "analyzed_batches": len(analyzed_items),
         "expected_annotations": len(rows),
         "successful_annotations": int((frame["status"] == "success").sum()),
         "current_errors": int((frame["status"] == "error").sum()),
@@ -104,6 +114,7 @@ def main() -> None:
         if errors else "No current errors.",
         "",
         "Only the latest row for each annotation ID determines status; earlier failed retry rows remain in the append-only JSONL for auditability.",
+        f"Technical exclusions: **{len(excluded)}** frozen batches; the gate covers **{len(analyzed_items)}** complete analyzed batches.",
         "",
     ])
     (args.output_dir / "status_report.md").write_text(report, encoding="utf-8")

@@ -31,6 +31,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 from run_behavioral_pilot import ALL_FEATURES
 from run_semantic_judge import DIMENSIONS
+from semantic_panel_exclusions import load_excluded_items
 
 
 JUDGES = ("MiniMax-M3", "glm-5.2", "deepseek-v4-pro")
@@ -77,10 +78,11 @@ def latest_successes(path: Path) -> tuple[dict[str, dict[str, Any]], dict[str, d
     return latest, successes, invalid
 
 
-def expected_ids(manifest: dict[str, Any]) -> set[str]:
+def expected_ids(manifest: dict[str, Any], excluded: set[tuple[str, str]]) -> set[str]:
     return {
         f"{item['benchmark']}|{item['item_id']}|{judge}"
         for item in manifest["items"] for judge in JUDGES
+        if (str(item["benchmark"]), str(item["item_id"])) not in excluded
     }
 
 
@@ -537,6 +539,7 @@ def main() -> None:
     parser.add_argument("--features", type=Path, required=True)
     parser.add_argument("--dialogue-acts", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--exclusions", type=Path)
     parser.add_argument("--bootstrap-reps", type=int, default=2000)
     parser.add_argument("--seed", type=int, default=20260819)
     parser.add_argument("--allow-incomplete", action="store_true")
@@ -544,13 +547,21 @@ def main() -> None:
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
     manifest = json.loads((args.panel_dir / "sample_manifest.json").read_text(encoding="utf-8"))
+    excluded = load_excluded_items(args.exclusions, manifest)
     latest, successes, invalid = latest_successes(args.panel_dir / "annotations.jsonl")
-    expected = expected_ids(manifest)
+    expected = expected_ids(manifest, excluded)
+    successes = {key: row for key, row in successes.items() if key in expected}
     missing = expected - set(successes)
     errors = {key for key in expected if key in latest and key not in successes}
     if (missing or errors or invalid) and not args.allow_incomplete:
         raise SystemExit(f"coverage gate failed: success={len(successes)}/{len(expected)}, errors={len(errors)}, invalid_lines={invalid}")
-    coverage = {"expected": len(expected), "success": len(successes), "missing": len(missing), "errors": len(errors), "invalid_jsonl": invalid}
+    coverage = {
+        "manifest_batches": len(manifest["items"]),
+        "excluded_batches": len(excluded),
+        "analyzed_batches": len(manifest["items"]) - len(excluded),
+        "expected": len(expected), "success": len(successes), "missing": len(missing),
+        "errors": len(errors), "invalid_jsonl": invalid,
+    }
     (args.output_dir / "coverage.json").write_text(json.dumps(coverage, indent=2) + "\n", encoding="utf-8")
 
     ratings = unblind(successes)
@@ -560,7 +571,9 @@ def main() -> None:
         if not inventory_models:
             inventory_models = sorted(ratings["model"].unique())
             expected_ratings = len(expected) * len(inventory_models) * len(DIMENSIONS)
-        expected_consensus = int(manifest["response_count"]) * len(DIMENSIONS)
+        analyzed_batches = len(manifest["items"]) - len(excluded)
+        expected_response_units = analyzed_batches * len(inventory_models)
+        expected_consensus = expected_response_units * len(DIMENSIONS)
         failures = []
         if len(inventory_models) != 6:
             failures.append(f"candidate_models={len(inventory_models)} (expected 6)")
@@ -572,8 +585,8 @@ def main() -> None:
         if bad_judge_counts:
             failures.append(f"consensus_rows_without_three_judges={bad_judge_counts}")
         response_units = consensus[["benchmark", "item_id", "model", "response_sha256"]].drop_duplicates().shape[0]
-        if response_units != int(manifest["response_count"]):
-            failures.append(f"response_units={response_units} (expected {manifest['response_count']})")
+        if response_units != expected_response_units:
+            failures.append(f"response_units={response_units} (expected {expected_response_units})")
         if failures:
             raise SystemExit("response-level completeness gate failed: " + "; ".join(failures))
     pairwise, iccs = agreement_tables(ratings)

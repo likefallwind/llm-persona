@@ -8,6 +8,7 @@ INVENTORY="$ROOT/artifacts/inventory/corpus_inventory.json"
 EDUBENCH="${EDUBENCH_ROOT:-$ROOT/../edubenchmark}"
 OUT="$ROOT/artifacts/semantic_judge/full_v1"
 STATE="$OUT/run_state"
+EXCLUSIONS="$ROOT/research/semantic_panel_exclusions_v1.json"
 
 # A long-lived tmux server may predate the current login environment. Mirror the
 # upstream EduBenchmark launchers by loading only the two required exports; never
@@ -68,6 +69,7 @@ fi
 if [[ "$code" -eq 0 ]]; then
   "$PY" "$ROOT/scripts/semantic_judge_status.py" \
     --output-dir "$OUT" \
+    --exclusions "$EXCLUSIONS" \
     --require-complete
   code=$?
 fi
