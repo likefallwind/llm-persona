@@ -209,17 +209,22 @@ latent disposition.
 the full treatment vector, and treats convergence plus the telling failure as the
 result.  It does not estimate a single latent causal coefficient.
 
-**Still needed:** avoid language such as “causal effect of personality.”  A later
-factorial prompt study should vary questioning, directness, warmth, and diagnosis
-instructions separately while holding prompt length and specificity comparable.
+**Current prospective answer:** avoid language such as “causal effect of
+personality.” A frozen 2×2×2 follow-up independently varies question-first,
+answer-withholding, and warmth clauses while balancing clause order. It reports
+target and cross-effects and cannot rescue a component claim when the
+prespecified selectivity ratio fails. Diagnosis remains outside that factorial.
 
 ### 13. “Behavior-first personality and tutor adaptivity already exist.”
 
 **Why it is serious:** ACL 2026 GenPT explicitly replaces fixed self-report with
-generative projective behavior collection.  Borchers and Shou already use
+generative projective behavior collection. Borchers and Shou already use
 learner-context ablations and a validated tutor-training classifier to test LLM
-tutor adaptivity.  PedRAG explicitly studies declared-versus-enacted pedagogical
-behavior under runtime control.
+tutor adaptivity. PedRAG studies declared-versus-enacted behavior under runtime
+control. Tutor Personas learns tutor-specific steering; PATS conditions strategy
+on student personality; Pedagogical Alignment and StratL train or optimize
+desired policies; SHAPE and Answer Leakage Robustness test answer-inducing
+pressure; and an ACL 2026 deployment audit analyzes 500 real conversations.
 
 **Current answer:** the novelty is not the phrase *behavior-first*, a new tutor
 taxonomy, or the general observation that prompts change teaching.  It is the
@@ -234,7 +239,12 @@ simulated sessions.
 **Final evidence:** the explicit closest-work comparison is retained and the
 paper never claims the first behavior-based LLM personality study. The semantic
 panel partially succeeds but fails the multi-disposition title gate; that mixed
-outcome is reported rather than hidden behind a renamed trait.
+outcome is reported rather than hidden behind a renamed trait. The answer-leakage
+papers directly own the adversarial withholding problem; the new factorial can
+contribute component selectivity and ordinary learner-request conflict, not a
+first jailbreak claim. The deployment audit provides stronger evidence about
+actual student use than this archive, so the paper retains a finite-panel
+behavior and measurement claim.
 
 ### 14. “The technical exclusion is a post-hoc way to rescue completeness.”
 

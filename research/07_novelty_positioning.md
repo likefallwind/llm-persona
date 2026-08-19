@@ -10,7 +10,13 @@ Snapshot: 2026-08-19.
 | MRBench (NAACL 2025) | Tutor response quality taxonomy | Yes, within benchmark | No | No | No | Human labels on eight dimensions |
 | MathTutorBench (EMNLP 2025) | Open-ended tutor capability | Yes | Multiple benchmark components | No generator-fingerprint control | Some prompt/benchmark contrasts | Reward-model and benchmark criteria |
 | Borchers & Shou (2025) | ITS learner-context adaptivity | Yes: 75 ITS scenarios | Context ablation, not default cross-task recurrence | No | Yes: remove context fields | Validated tutor-training classifier |
+| Pedagogical Alignment (Findings EMNLP 2024) | Trained scaffold-vs-answer preference | Synthetic training behavior | No | No | Training intervention, not same-item prompting | Synthetic preferences and perplexity metrics |
+| StratL (Findings ACL 2025) | Productive-failure tutoring-plan steering | Field prototype | One multi-turn strategy | No | Prompt optimization | Field study with 17 students |
 | Tutor Personas Speak Up (BEA 2026) | Tutor-specific activation steering | Human-dialogue-derived target personas | Dialogue contexts, not broad task families | Lexical preservation, not negative domains | Yes, learned steering vector | Ground-truth utterance alignment and preference |
+| PATS (Findings EACL 2026) | Strategy adaptation to student personality | Simulated dialogues grounded by a classroom case | Two educational tasks | No | Personality-conditioned prompting | Human-teacher and LLM preferences |
+| SHAPE (ACL 2026) | Pedagogical-jailbreak safety/helpfulness | Synthetic benchmark pairs | Knowledge-graph contexts | No | Graph-gated generation | Attack robustness and helpfulness |
+| Answer Leakage Robustness (ACL 2026) | Withholding under adversarial student pressure | Multi-turn simulated attacks | Math plus selected transfer domains | No | Tutor prompts and defenses | Rule filter plus calibrated LLM judge |
+| Student deployment audit (ACL 2026) | Intended-vs-actual student use | Yes: 500 deployed conversations | Four courses | Not applicable | No | Six validated dialogue metrics |
 | PedRAG (EDM 2026 poster) | Theory-grounded runtime behavioral fidelity | Simulated multi-agent sessions | Within-session drift | No | Runtime retrieval vs prompt-only | Theory rubric; simulated mastery only |
 | LongTutor (ACL 2026) | Long-history evidence → diagnosis → teaching | Yes | Three progressive tasks | No | No | Expert-annotated diagnosis and teaching references |
 | **This study** | Model-conditioned pedagogical policy signatures | **Yes: 31,638 paired teaching responses** | **Yes: held-out teaching families** | **Yes: 57,516 non-tutoring responses** | **Yes: identical MathDial contexts, nine models** | **Existing human actions, expert preference calibration, human-gold diagnosis** |
@@ -37,11 +43,19 @@ model-conditioned tutor policies across already-generated tasks.
 
 ## Anticipated reviewer comparison
 
-The closest conceptual threat is *Letting Tutor Personas Speak Up*.  That work
-learns how to steer one model toward variation embedded in human tutor dialogues.
-Our question is orthogonal: do multiple deployed model systems exhibit stable
-default policy differences across tasks, which parts are merely stylometric, and
-what happens when every system receives the same intervention?  The strongest
-comparative result is not better steering quality but the combination of
-cross-domain falsification, convergence under steering, and the telling-action
+There are now three closest-work fronts. *Letting Tutor Personas Speak Up* learns
+how to steer one model toward variation embedded in human tutor dialogues.
+StratL and Pedagogical Alignment optimize a predefined teaching policy. SHAPE
+and Answer Leakage Robustness test withholding under adversarial student
+pressure. Our question is narrower and orthogonal: do multiple deployed model
+systems exhibit stable default policy differences across tasks, which parts are
+merely stylometric, and what target and cross-effects appear when common policy
+components are manipulated? The strongest comparative result is not better
+steering or jailbreak defense, but the conjunction of cross-domain falsification,
+same-item intervention, component-selectivity gates, and the telling-action
 failure.
+
+The prospective factorial protocol now pins routes, models, prompts, decoding,
+deterministic metrics, and claim gates before outcome inspection. Future
+population claims still require at least 14--20 versioned systems across open and
+closed families on the same frozen contexts.

@@ -93,15 +93,27 @@ MathDial defines teacher moves and premature solution reveal
 tutoring capabilities
 \citep{maurya-etal-2025-mrbench,macina-etal-2025-mathtutorbench}. LongTutor
 separates historical evidence, knowledge-state diagnosis, and adaptive teaching
-\citep{li-etal-2026-longtutor}. Closest to our context-sensitivity question,
+\citep{li-etal-2026-longtutor}. Pedagogical Alignment and StratL train or optimize
+a predefined scaffolded policy \citep{sonkar-etal-2024-pedagogical,puech-etal-2025-steering};
+prompt moderation can also harm relative to an unmoderated tutor
+\citep{steindl-etal-2025-prompt}. Closest to our context-sensitivity question,
 \citet{borchers-shou-2025-adaptivity} find limited adaptivity under learner-context
 ablations. Tutor-persona steering \citep{lee-etal-2026-tutor-personas} and
 theory-grounded runtime control \citep{nkambou-etal-2026-pedrag} ask how a desired
-policy can be induced; we first measure recurring defaults and then test a shared
-instruction.
+policy can be induced, while PATS adapts strategies to student personality
+\citep{rooein-etal-2026-pats}. We instead measure recurring deployed-system
+defaults, audit their construct validity, and then apply the same intervention.
 Work on tutor-strategy prediction \citep{ikram-etal-2025-strategy} and feedback
 failure localization \citep{yasir-etal-2026-feedback} further motivates reporting
 action-specific errors instead of one aggregate tutor score.
+
+Answer withholding is already studied under pedagogical jailbreaks and
+multi-turn adversarial student pressure
+\citep{zhao-etal-2026-shape,zhao-etal-2026-answer-leakage}. Real deployment data
+also show that students commonly seek answers and that context can outweigh
+intended system design \citep{kobler-etal-2026-students}. Our learner-action
+analysis is therefore not a first leakage or steering claim, and policy alignment
+is not treated as learning benefit.
 
 Attribution alone is insufficient because lexical features identify generators
 across domains \citep{mcgovern-etal-2025-fingerprints}. Prompted students are

@@ -694,8 +694,8 @@
     },
     {
       "path": "paper/references.bib",
-      "bytes": 8548,
-      "sha256": "0be8277b036bd37067a40654b226f089cbef342db081ec3bb57e9810890938d5"
+      "bytes": 11724,
+      "sha256": "eba2ac7ee6cc926a162e5e0708de1cd9580a1daff2da8173a2d70ddb36996058"
     },
     {
       "path": "paper/submission/README.md",
@@ -704,13 +704,13 @@
     },
     {
       "path": "paper/submission/main.tex",
-      "bytes": 23619,
-      "sha256": "39d34215fe802c1041a0dcbf2081a1e3c45347c9532eeb1c5054e2e39c6acdf5"
+      "bytes": 24463,
+      "sha256": "0bd254b502a91075afb4e0527323bab8d6a82188170fdec1a356eff1ac12b8bb"
     },
     {
       "path": "paper/submission/submission.pdf",
-      "bytes": 199486,
-      "sha256": "2e8a8123fe0fdc18426b0cdd396b7cad383557e034c731663d9f99edbd535cef"
+      "bytes": 204283,
+      "sha256": "1615a498e1f4aee5a926cfb2fd436afa2ab0e2f6b7de942ef61c536bf0c41e7d"
     },
     {
       "path": "research/00_research_charter.md",
@@ -719,8 +719,8 @@
     },
     {
       "path": "research/01_literature_and_gap.md",
-      "bytes": 10107,
-      "sha256": "83b4a3ba88ee32ba06712f936f9e8546b45093efbb3d2ac4174ac9fb2bc4ff41"
+      "bytes": 12088,
+      "sha256": "82ba1b36d058ec3e046543ddcb383996fe81c0c605cf554b8c765bbdc8e78ffc"
     },
     {
       "path": "research/02_semantic_coding_protocol.md",
@@ -734,8 +734,8 @@
     },
     {
       "path": "research/04_red_team_review.md",
-      "bytes": 15426,
-      "sha256": "97098f3f809350ae42e6320afdf9ca5e9e6b421545953610d2ca2c30fbc65f4a"
+      "bytes": 16195,
+      "sha256": "2ac355df5022752fbb87e34148f942a5e5462d794ec4535afaeda97b59707ac6"
     },
     {
       "path": "research/05_semantic_analysis_plan.md",
@@ -749,8 +749,8 @@
     },
     {
       "path": "research/07_novelty_positioning.md",
-      "bytes": 4120,
-      "sha256": "b6d2c7e20f085165199ef7143137ede8aa0a88f6a5d098300aa2ebde72fe6d2e"
+      "bytes": 5852,
+      "sha256": "45cf8c4347779a94ce43e802f38ee0bbf5fc526489c3c1300d75ab8cf478473c"
     },
     {
       "path": "research/08_future_server_experiment_spec.md",
@@ -801,6 +801,11 @@
       "path": "research/17_factorial_prompt_intervention_protocol.md",
       "bytes": 7570,
       "sha256": "1a18d1ab0ed26b839973b8d8627ce127ac76bf346a8a6f4380ccc7b49abc6b67"
+    },
+    {
+      "path": "research/18_2026_neighbor_work_audit.md",
+      "bytes": 6147,
+      "sha256": "fd73e578b2e5cdc0fc2270e85657d4e868126ea11bf387c0f9cd94bddffc9658"
     },
     {
       "path": "research/semantic_panel_exclusions_v1.json",

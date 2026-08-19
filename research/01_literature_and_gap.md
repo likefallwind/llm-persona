@@ -81,6 +81,17 @@ separate sources of evidence.
   possess stable cross-task differences and whether such differences are
   consequential.
   [Letting Tutor Personas Speak Up, 2026](https://arxiv.org/abs/2602.07639)
+- PATS maps teaching strategies to *student* Big Five profiles and evaluates
+  personality-aware simulated tutoring with human teachers. It is important
+  adjacent work, but its personality construct belongs to the learner and its
+  target is adaptation, not recurring default differences among tutor models.
+  [Rooein et al., Findings EACL 2026](https://aclanthology.org/2026.findings-eacl.219/)
+- Pedagogical Alignment and StratL already establish that predefined scaffolding
+  policies can be trained or induced. Therefore, this project cannot claim to
+  introduce pedagogical steering; its distinct question is measurement and
+  construct validity of defaults, followed by component-selectivity tests.
+  [Sonkar et al., Findings EMNLP 2024](https://aclanthology.org/2024.findings-emnlp.797/)
+  [Puech et al., Findings ACL 2025](https://aclanthology.org/2025.findings-acl.1348/)
 - Context-ablation experiments on 75 real ITS scenarios show that three LLMs
   only marginally reproduce ITS adaptivity; a validated tutor-training
   classifier also identifies overly direct feedback.  This is a close study of
@@ -92,6 +103,21 @@ separate sources of evidence.
   behavior.  Its 144-session evaluation is a multi-agent simulation and its
   simulated mastery endpoint is not human learning evidence.
   [Nkambou et al., EDM 2026](https://educationaldatamining.org/edm2026/proceedings/2026.EDM.poster-demo-papers.368/)
+- ACL 2026 work directly studies answer leakage under six adversarial and
+  persuasive attack groups, multi-turn student agents, multiple tutor families,
+  and tutor-side defenses. SHAPE independently formalizes answer-inducing
+  pressure as a pedagogical jailbreak. These papers preclude novelty claims
+  about answer-withholding conflict itself; our narrower addition is to place a
+  non-adversarial learner request inside a complete question × answer × tone
+  factorial and quantify both target and cross-effects.
+  [Zhao et al., ACL 2026](https://aclanthology.org/2026.acl-long.1412/)
+  [SHAPE, ACL 2026](https://aclanthology.org/2026.acl-long.529/)
+- An in-situ audit of 12,650 messages across 500 conversations finds that
+  deployment context outweighs system design or stated preference in predicting
+  usage patterns, with answer extraction common. This is stronger ecological
+  evidence than benchmark responses and requires us to keep deployment behavior
+  and learner outcomes outside the present claim boundary.
+  [Kobler et al., ACL 2026](https://aclanthology.org/2026.acl-long.875/)
 
 ### Why a prompted simulated student is not yet an outcome measure
 
