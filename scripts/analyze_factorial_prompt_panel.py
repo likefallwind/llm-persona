@@ -24,6 +24,7 @@ FINAL_RE = re.compile(r"\bfinal\s+answer\s*[:=]", flags=re.IGNORECASE)
 PRIMARY_METRICS = ("question_first", "answer_reveal_correct", "warmth_marker")
 REPORT_METRICS = PRIMARY_METRICS + (
     "question_any", "answer_reveal_any", "word_count", "char_count",
+    "sentence_count",
 )
 FACTOR_LEVELS = {
     "question_policy": ("question_first", "explain_only"),

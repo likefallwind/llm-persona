@@ -800,7 +800,7 @@
     {
       "path": "research/17_factorial_prompt_intervention_protocol.md",
       "bytes": 8460,
-      "sha256": "5731a82be7fb45ef957e292943a85333af08ababb5b755cb79413e6617837d25"
+      "sha256": "7da82c8e20e1a6c2abab25c731d670ee149d18fe9d1a188b93c58e11fed6a5b8"
     },
     {
       "path": "research/18_2026_neighbor_work_audit.md",
@@ -834,8 +834,8 @@
     },
     {
       "path": "scripts/analyze_factorial_prompt_panel.py",
-      "bytes": 17756,
-      "sha256": "c6ce4289ae7f503530f3d700e2ccedc2adcf5b37501312ecae01b9d52697bbf7"
+      "bytes": 17778,
+      "sha256": "ea6c685567a8637efb3199ce8ef08954bc8214aaf64916f632add21639e30108"
     },
     {
       "path": "scripts/analyze_judge_human_calibration.py",
