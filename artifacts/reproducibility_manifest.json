@@ -208,6 +208,21 @@
       "sha256": "6351cbb489bf383ecdf1ebb5f60448c8bb64739d56c24969ce5f482a6cc20699"
     },
     {
+      "path": "artifacts/factorial_order_replication_v1/design_summary.json",
+      "bytes": 772,
+      "sha256": "68ee781a987dd34418bcc5d5479dde977740a1a5c3d790d139b2e342e413f71a"
+    },
+    {
+      "path": "artifacts/factorial_order_replication_v1/request_order_plan.jsonl",
+      "bytes": 173082,
+      "sha256": "0e863f87dfd2d55ed0e54cc61b8accd08e7cd017bede260279c8e34f175176bc"
+    },
+    {
+      "path": "artifacts/factorial_order_replication_v1/sample_manifest.jsonl",
+      "bytes": 174880,
+      "sha256": "e66a02ed36824229cc9b5afe0116e4a0dbc437bdf6f22fe5bc06797f66293c48"
+    },
+    {
       "path": "artifacts/factorial_prompt_v1/design_summary.json",
       "bytes": 580,
       "sha256": "8c2f7f3de9833a0f3dfee29e6ef4c03d6a0870ff42412727132d5ab56a3cdd44"
@@ -653,6 +668,11 @@
       "sha256": "e01d3766b60238faa770ab7c87a54373dd7a7661a8d7b3d7bba05f0fed22c456"
     },
     {
+      "path": "data/factorial_order_replication_spec_v1.json",
+      "bytes": 1790,
+      "sha256": "8b4fba2e751b41f59aac29c46730231da8041f5f816f86dc62116a8597bf8755"
+    },
+    {
       "path": "data/factorial_prompt_spec_v1.json",
       "bytes": 1639,
       "sha256": "bbe4ae5debcba9057f026a9e3fef18aab3bfc6522915a5464148d48f20d3abf5"
@@ -804,8 +824,13 @@
     },
     {
       "path": "research/18_2026_neighbor_work_audit.md",
-      "bytes": 6147,
-      "sha256": "fd73e578b2e5cdc0fc2270e85657d4e868126ea11bf387c0f9cd94bddffc9658"
+      "bytes": 6617,
+      "sha256": "269d352f951f7a3f2fb7193754f490e922d28424b448e2ddf2441fc01f663e57"
+    },
+    {
+      "path": "research/19_factorial_order_replication_protocol.md",
+      "bytes": 6242,
+      "sha256": "5890e049b369cc67649546b0d0569f063d967a684ffb384c8788d103e0b4c314"
     },
     {
       "path": "research/semantic_panel_exclusions_v1.json",
@@ -831,6 +856,11 @@
       "path": "scripts/analyze_extended_panel.py",
       "bytes": 13241,
       "sha256": "8185d6dd9ac9eaed43698f7255c087b60738d525f32f3c6eee3454134cd95a6f"
+    },
+    {
+      "path": "scripts/analyze_factorial_order_replication.py",
+      "bytes": 11433,
+      "sha256": "0bbc1020e808f54c22494dec06c55be036121dc83a8cc837ff7803392377bf5f"
     },
     {
       "path": "scripts/analyze_factorial_prompt_panel.py",
@@ -904,8 +934,13 @@
     },
     {
       "path": "scripts/finalize_semantic_analysis.sh",
-      "bytes": 2967,
-      "sha256": "2203c2ebe56bc4682b770aef3afe84ac5db826280d8c5479219c17d85c202c8d"
+      "bytes": 3070,
+      "sha256": "bfc792ccf8f84e2b8521b1bd8fe2f414b1a9660d36e22c15ffc2339ff2e2f057"
+    },
+    {
+      "path": "scripts/generate_factorial_order_replication.py",
+      "bytes": 6213,
+      "sha256": "1841ae12c6d2466362369558882bc5f7cbe41c273e381f56de6e2ce7c9fb711a"
     },
     {
       "path": "scripts/generate_factorial_prompt_panel.py",
@@ -936,6 +971,16 @@
       "path": "scripts/run_external_semantic_panel.sh",
       "bytes": 2656,
       "sha256": "b1c311c2af0d31f59baebe7a8306fcb00ca53afb43e5ad826184c4f3f31745f1"
+    },
+    {
+      "path": "scripts/run_factorial_order_replication.py",
+      "bytes": 7230,
+      "sha256": "e79250ee96edf52a4ab707d301bbccab515d5c00d75b077f1aedd72dafbbabe6"
+    },
+    {
+      "path": "scripts/run_factorial_order_replication.sh",
+      "bytes": 2365,
+      "sha256": "58d61e4fd3b7f284d46ba5b40efb99a69a2135c53310b4cb24282740ec789430"
     },
     {
       "path": "scripts/run_factorial_prompt_panel.py",
@@ -991,6 +1036,11 @@
       "path": "tests/test_evaluate_submission_decision.py",
       "bytes": 7027,
       "sha256": "30afa57f01caf520100ac27ccabcd0b3af7298bdeb4074367428622649c9a321"
+    },
+    {
+      "path": "tests/test_factorial_order_replication.py",
+      "bytes": 8856,
+      "sha256": "dc5b06c57b9305392954dd24d6496f3de5a374f25b8d1ab01f6f5db600ae6bcd"
     },
     {
       "path": "tests/test_factorial_prompt_panel.py",

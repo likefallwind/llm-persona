@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "parent_spec": "data/factorial_prompt_spec_v1.json",
+  "parent_manifest": "artifacts/factorial_prompt_v1/sample_manifest.jsonl",
+  "order_seed": 20260821,
+  "selected_base_indices_per_family": [0, 4],
+  "expected_base_problems": 8,
+  "expected_samples_per_model": 128,
+  "models": [
+    "MiniMax-M3",
+    "MiniMax-M2.7",
+    "glm-5.2",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite"
+  ],
+  "generation": {
+    "temperature": 0,
+    "max_tokens": null,
+    "language": "English",
+    "minimax_concurrency": 4,
+    "gateway_concurrency": 8,
+    "retries": 3
+  },
+  "success_gate": {
+    "required_complete_cells": 640,
+    "allow_missing": 0,
+    "allow_empty": 0
+  },
+  "claim_gates": {
+    "question_target_mean_difference_min": 0.60,
+    "answer_target_mean_difference_min": 0.60,
+    "tone_target_mean_difference_min": 0.30,
+    "target_effect_positive_in_every_model": true,
+    "selectivity_ratio_min": 2.0,
+    "learner_need_reveal_difference_min": 0.10,
+    "learner_need_question_difference_min": 0.10
+  },
+  "joint_reporting_rules": [
+    "Run after the complete 2560-call parent panel but regardless of its outcomes.",
+    "Use exactly the parent prompts for base indices 00 and 04 in every family.",
+    "Hash-randomize request order independently for each model in exact 16-cell factorial blocks.",
+    "Report every target, cross-effect, learner-need effect, cell mean, and interaction.",
+    "The replication can preserve or downgrade a parent-panel claim but cannot rescue one.",
+    "Call a factor order-robust only when both panels pass controllability and selectivity and every parent-subset and replication model effect is positive.",
+    "Do not replace failed calls, models, base problems, or factor cells after inspecting outcomes."
+  ]
+}

@@ -27,3 +27,4 @@ paper/submission/build/
 # Mutable external factorial-panel state. Synthetic prompts and derived outputs
 # remain eligible for release; raw provider responses stay local.
 artifacts/factorial_prompt_v1/run/
+artifacts/factorial_order_replication_v1/run/

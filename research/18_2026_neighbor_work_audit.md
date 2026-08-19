@@ -17,6 +17,7 @@ factorial panel was still collecting and before its outcomes were inspected.
 | Answer Leakage Robustness (ACL 2026) | 240 GSM8K evaluation problems, six attack groups, multi-turn student agents, multiple tutor families and defenses | Tutor answer-withholding is fragile under strategic student pressure | Directly overlaps the learner-request/withholding contrast, so this study cannot claim to introduce that problem; our distinct test is non-adversarial request conflict inside a complete three-policy factorial plus archived cross-task measurement |
 | Your Students Don't Use LLMs Like You Wish They Did (ACL 2026) | 12,650 messages in 500 conversations across four courses | Deployment context can dominate intended tutor design and students often seek answers | Stronger ecological evidence about student use; our archive is broad across models/tasks but is not an in-situ learner-use study |
 | Rethinking Scaffolding (ICML 2026 workshop preprint) | 9,490 chats across nine benchmark and deployment datasets | Benchmark-preferred scaffolding and actual student uptake can diverge | Reinforces that question asking or withholding is not universally beneficial and that our action-matching results must not be called learning gains |
+| IHEval (NAACL 2025) | 3,538 examples across nine aligned/conflicting instruction tasks | Models struggle to follow priority when system and lower-priority instructions conflict | Makes instruction hierarchy the correct construct for the learner-request contrast; system-over-user behavior is not evidence of personality, empathy, or pedagogical appropriateness |
 
 Primary records:
 
@@ -29,6 +30,7 @@ Primary records:
 - [Zhao et al., Answer Leakage, 2026](https://aclanthology.org/2026.acl-long.1412/)
 - [Kobler et al., 2026](https://aclanthology.org/2026.acl-long.875/)
 - [Neagu et al., 2026](https://arxiv.org/abs/2606.15766)
+- [Zhang et al., IHEval, 2025](https://aclanthology.org/2025.naacl-long.425/)
 
 ## Revised novelty boundary
 
@@ -53,7 +55,8 @@ cross-effects rather than treating a bundled prompt as a scalar treatment.
 - Compare answer-policy results directly with SHAPE and Answer Leakage
   Robustness; do not rename ordinary request conflict as a novel jailbreak.
 - Interpret positive system-over-user effects as instruction-hierarchy behavior,
-  not as empathy, learner understanding, or pedagogical benefit.
+  following IHEval rather than as empathy, learner understanding, or pedagogical
+  benefit.
 - Interpret learner-request responsiveness jointly with the real-deployment
   findings: blindly preserving scaffolding can itself be a mismatch.
 - If factor selectivity fails, report bundled controllability and remove any

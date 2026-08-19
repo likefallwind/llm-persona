@@ -1,0 +1,25 @@
+{
+  "base_ids": [
+    "arithmetic_mean-00",
+    "arithmetic_mean-04",
+    "fraction_addition-00",
+    "fraction_addition-04",
+    "linear_equation-00",
+    "linear_equation-04",
+    "percentage_discount-00",
+    "percentage_discount-04"
+  ],
+  "base_problem_count": 8,
+  "exact_block_balance": true,
+  "expected_calls": 640,
+  "factorial_blocks_per_model": 8,
+  "factorial_cells_per_block": 16,
+  "manifest_sha256": "e66a02ed36824229cc9b5afe0116e4a0dbc437bdf6f22fe5bc06797f66293c48",
+  "model_count": 5,
+  "order_plan_rows": 640,
+  "order_plan_sha256": "0e863f87dfd2d55ed0e54cc61b8accd08e7cd017bede260279c8e34f175176bc",
+  "parent_prompt_hashes_preserved": true,
+  "payload_scope": "unchanged parent synthetic prompts only",
+  "sample_count": 128,
+  "schema_version": 1
+}

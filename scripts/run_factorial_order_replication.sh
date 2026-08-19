@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+set -uo pipefail
+
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+PY="$ROOT/.venv/bin/python"
+OUT="$ROOT/artifacts/factorial_order_replication_v1/run"
+STATE="$OUT/run_state"
+EDUBENCH="${EDUBENCH_ROOT:-$ROOT/../edubenchmark}"
+
+"$PY" "$ROOT/scripts/factorial_prompt_status.py" \
+  --spec "$ROOT/data/factorial_prompt_spec_v1.json" \
+  --manifest "$ROOT/artifacts/factorial_prompt_v1/sample_manifest.jsonl" \
+  --responses "$ROOT/artifacts/factorial_prompt_v1/run/responses.jsonl" \
+  --require-complete || exit $?
+
+if [[ -z "${MINIMAX_API_KEY:-}" || -z "${API_GATEWAY:-}" ]]; then
+  : "${PERSONA_ENV_FILE:?Set API variables or provide PERSONA_ENV_FILE}"
+  eval "$(grep -E '^export (MINIMAX_API_KEY|API_GATEWAY)=' "$PERSONA_ENV_FILE")"
+fi
+: "${MINIMAX_API_KEY:?MINIMAX_API_KEY is required}"
+: "${API_GATEWAY:?API_GATEWAY is required}"
+
+mkdir -p "$STATE"
+date -Is > "$STATE/started"
+rm -f "$STATE/finished" "$STATE/exit"
+
+"$PY" "$ROOT/scripts/generate_factorial_order_replication.py" \
+  --spec "$ROOT/data/factorial_order_replication_spec_v1.json" \
+  --parent-manifest "$ROOT/artifacts/factorial_prompt_v1/sample_manifest.jsonl" \
+  --output-dir "$ROOT/artifacts/factorial_order_replication_v1"
+code=$?
+if [[ "$code" -eq 0 ]]; then
+  "$PY" "$ROOT/scripts/run_factorial_order_replication.py" \
+    --spec "$ROOT/data/factorial_order_replication_spec_v1.json" \
+    --manifest "$ROOT/artifacts/factorial_order_replication_v1/sample_manifest.jsonl" \
+    --order-plan "$ROOT/artifacts/factorial_order_replication_v1/request_order_plan.jsonl" \
+    --output-dir "$OUT" \
+    --parent-spec "$ROOT/data/factorial_prompt_spec_v1.json" \
+    --parent-manifest "$ROOT/artifacts/factorial_prompt_v1/sample_manifest.jsonl" \
+    --parent-responses "$ROOT/artifacts/factorial_prompt_v1/run/responses.jsonl" \
+    --edubenchmark-root "$EDUBENCH" \
+    --minimax-concurrency 4 \
+    --gateway-concurrency 8 \
+    --timeout 600 \
+    --retries 3
+  code=$?
+fi
+if [[ "$code" -eq 0 ]]; then
+  "$PY" "$ROOT/scripts/factorial_prompt_status.py" \
+    --spec "$ROOT/data/factorial_order_replication_spec_v1.json" \
+    --manifest "$ROOT/artifacts/factorial_order_replication_v1/sample_manifest.jsonl" \
+    --responses "$OUT/responses.jsonl" \
+    --require-complete
+  code=$?
+fi
+
+printf '%s\n' "$code" > "$STATE/exit"
+date -Is > "$STATE/finished"
+exit "$code"

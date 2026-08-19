@@ -187,6 +187,20 @@ The live runner is append-only, resumable, provider-capped, and protected by a
 single-writer lock. Raw provider responses remain ignored; only their hashes,
 deterministic behavior metrics, and aggregate contrasts are eligible for release.
 
+`research/19_factorial_order_replication_protocol.md` freezes a 640-call,
+outcome-blind request-order replication. It copies 128 byte-identical parent
+prompts, independently hash-randomizes their queue for every model, and applies
+exact 16-cell local blocking plus downgrade-only joint gates. Generate and
+dry-run that public design with:
+
+```bash
+python scripts/generate_factorial_order_replication.py
+python scripts/run_factorial_order_replication.py --dry-run
+```
+
+The order replication runs only after the 2,560-call parent panel completes and
+regardless of its outcomes. Its raw response directory is also ignored.
+
 The data and model release boundaries are documented in
 `research/09_dataset_card.md` and `research/10_model_panel_card.md`.  In
 particular, a public release contains derived measurements and hashes rather

@@ -82,6 +82,8 @@ cd "$ROOT"
     artifacts/submission_decision \
     artifacts/factorial_prompt_v1 \
     artifacts/factorial_analysis_v1 \
+    artifacts/factorial_order_replication_v1 \
+    artifacts/factorial_order_replication_analysis_v1 \
   --output artifacts/reproducibility_manifest.json
 
 "$PY" -m py_compile scripts/*.py
