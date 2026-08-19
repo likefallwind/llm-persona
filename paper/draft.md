@@ -1,7 +1,8 @@
 # Beyond Personality and Fingerprints: Behavioral Evidence for Pedagogical Policy Signatures in AI Tutors
 
 > Working draft.  Bracketed semantic-panel fields are intentionally unresolved
-> until the 1,080/1,080 completeness gate passes.
+> until the 1,080/1,080 completeness gate passes.  Supplementary design and
+> audit details are in `appendix.md`.
 
 ## Abstract
 
