@@ -22,11 +22,17 @@ fi
 : "${API_GATEWAY:?API_GATEWAY is required}"
 
 mkdir -p "$STATE"
+exec 9>"$STATE/writer.lock"
+if ! flock -n 9; then
+  echo "another semantic-panel writer holds $STATE/writer.lock" >&2
+  exit 73
+fi
 date -Is > "$STATE/started"
 rm -f \
   "$STATE/finished" "$STATE/exit" \
   "$STATE/main.finished" "$STATE/main.exit" \
-  "$STATE/longtutor.finished" "$STATE/longtutor.exit"
+  "$STATE/longtutor.finished" "$STATE/longtutor.exit" \
+  "$STATE/finalize.started" "$STATE/finalize.finished" "$STATE/finalize.exit"
 
 run_phase() {
   local name="$1"

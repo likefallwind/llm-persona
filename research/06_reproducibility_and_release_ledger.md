@@ -56,6 +56,9 @@ or a substantive privacy assessment.
 
 - Sampling and candidate order are deterministic under seed `20260819`.
 - The semantic panel is append-only and resumable by annotation ID.
+- The external runner holds a nonblocking `flock` for its full lifetime and
+  clears stale finalizer markers before a resumed pass; one JSONL must never have
+  two active writers.
 - Exact-context controls are used wherever the same prompt is answered by
   multiple models.
 - Prompt effects resample underlying contexts rather than six correlated model
