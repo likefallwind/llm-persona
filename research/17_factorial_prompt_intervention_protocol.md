@@ -1,16 +1,19 @@
 # Prospective factorial policy-intervention protocol
 
-Frozen before any response from this experiment is requested or inspected.
+The design, prompts, routes, thresholds, and statistical procedure were frozen
+before any response from this experiment was requested or inspected. The two
+mechanical detector corrections documented below were made after collection
+started but before any response content or outcome estimate was inspected.
 
-Executable freeze hashes:
+Current executable freeze hashes after the pre-outcome detector amendment:
 
 | Component | SHA-256 |
 |---|---|
 | `data/factorial_prompt_spec_v1.json` | `bbe4ae5debcba9057f026a9e3fef18aab3bfc6522915a5464148d48f20d3abf5` |
-| `artifacts/factorial_prompt_v1/sample_manifest.jsonl` | `c247dc3af4e1f1a85f18f5fd9a0b3a4e3441a925496197f4b4e02bd389784cc6` |
-| `scripts/generate_factorial_prompt_panel.py` | `dddb2550fa92da0eb5f7d350ad0ecc23d9606205f5bd10fdb45b9545d763f5f2` |
+| `artifacts/factorial_prompt_v1/sample_manifest.jsonl` | `65d79fa4cf3a5c94f5e696d7b97a37d5f761ebc2181d365cbb9881e55860e5e4` |
+| `scripts/generate_factorial_prompt_panel.py` | `1a2eacccea836e3804cdeb7a56fddc28e24b2aa3a2034c421994681ba8924d6c` |
 | `scripts/run_factorial_prompt_panel.py` | `d46af3c4ea7704ad1bb855da54eeb7aec799c0473bdc0fd1fde25910cde18195` |
-| `scripts/analyze_factorial_prompt_panel.py` | `fc546bb6be9fe8d920c554d9444ae04394c2262ef10a13826df8d9b2459ec0cb` |
+| `scripts/analyze_factorial_prompt_panel.py` | `cd83311aa856c8015d429cfe4ce89e79249f6ae9e377beaf29b36d44d448cc0a` |
 | `scripts/factorial_prompt_status.py` | `e970b37843d023b50f989a8dd4eb58e7fd3dde4c26196033d98c717a30efd469` |
 
 ## Motivation
@@ -80,6 +83,21 @@ No LLM judge is used for the primary factorial test.
 - `answer_reveal_any`: any `Final answer:` field occurs.
 - `warmth_marker`: a frozen English encouragement lexicon is present.
 - word/character/sentence counts are secondary surface outcomes.
+
+### Pre-outcome implementation amendment
+
+On 2026-08-19, after collection had started but before any response text or
+interim effect estimate was inspected, a code-only blind audit found two
+mechanical detector defects. First, positive accepted-answer regexes could
+match the unsigned substring inside an incorrect negative answer (for example,
+`-17` as `17`). Second, the intended `encourag*` warmth stem was followed by a
+word boundary and therefore failed to match `encourage`, `encouraging`, or
+`encouragement`. The detectors were corrected and explicit negative unit tests
+were added. No prompt, prompt hash, sample, model, route, threshold, factor,
+statistical procedure, or collected response changed. This amendment is
+committed to the method PR before running the analysis or inspecting outcomes;
+the updated source and manifest hashes in the table above supersede the original
+freeze hashes, which remain recoverable from the preceding method commit.
 
 The reveal instruction requires a `Final answer: <value>` ending and the
 withhold instruction prohibits that label, making correct reveal observable

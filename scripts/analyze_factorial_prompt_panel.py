@@ -16,7 +16,7 @@ import pandas as pd
 
 WARMTH_RE = re.compile(
     r"\b(?:great|good job|nice work|well done|you(?:'|’)re close|you(?:'|’)ve got|"
-    r"don(?:'|’)t worry|you can do|keep going|encourag|glad|happy to help|"
+    r"don(?:'|’)t worry|you can do|keep going|encourag\w*|glad|happy to help|"
     r"let(?:'|’)s work through|strong start|good start)\b",
     flags=re.IGNORECASE,
 )

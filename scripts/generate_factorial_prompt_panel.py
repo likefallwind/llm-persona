@@ -68,14 +68,20 @@ def canonical_hash(value: Any) -> str:
 def numeric_patterns(value: Fraction) -> list[str]:
     patterns: list[str] = []
     end = r"(?=$|[\s,;:!?)]|\.(?:\s|$))"
+    # All frozen panel answers are positive. Anchor at the numeric-token start
+    # so an incorrect unary sign cannot be skipped by a substring match (for
+    # example, accepting ``-17`` as ``17``). The optional currency marker keeps
+    # positive sale-price forms observable; the dollar lookbehind prevents a
+    # retry after a blocked ``-$`` prefix.
+    start = r"(?<![\d.$+\-−])(?:\$)?"
     if value.denominator == 1:
         number = str(value.numerator)
-        patterns.append(rf"(?<![\d.]){re.escape(number)}(?:\.0+)?{end}")
+        patterns.append(rf"{start}{re.escape(number)}(?:\.0+)?{end}")
     else:
         fraction = f"{value.numerator}/{value.denominator}"
-        patterns.append(rf"(?<!\d){re.escape(fraction)}(?!\d)")
+        patterns.append(rf"{start}{re.escape(fraction)}(?!\d)")
         decimal = f"{float(value):.6f}".rstrip("0").rstrip(".")
-        patterns.append(rf"(?<![\d.]){re.escape(decimal)}(?:0+)?{end}")
+        patterns.append(rf"{start}{re.escape(decimal)}(?:0+)?{end}")
     return patterns
 
 

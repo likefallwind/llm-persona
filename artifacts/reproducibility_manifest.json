@@ -210,12 +210,12 @@
     {
       "path": "artifacts/factorial_prompt_v1/design_summary.json",
       "bytes": 580,
-      "sha256": "e530b0e71c170112d47895b1fd81a40adb41cabd1c0f6e27fefc7df9504ede26"
+      "sha256": "8c2f7f3de9833a0f3dfee29e6ef4c03d6a0870ff42412727132d5ab56a3cdd44"
     },
     {
       "path": "artifacts/factorial_prompt_v1/sample_manifest.jsonl",
-      "bytes": 688416,
-      "sha256": "c247dc3af4e1f1a85f18f5fd9a0b3a4e3441a925496197f4b4e02bd389784cc6"
+      "bytes": 699040,
+      "sha256": "65d79fa4cf3a5c94f5e696d7b97a37d5f761ebc2181d365cbb9881e55860e5e4"
     },
     {
       "path": "artifacts/inventory/corpus_inventory.json",
@@ -799,8 +799,8 @@
     },
     {
       "path": "research/17_factorial_prompt_intervention_protocol.md",
-      "bytes": 6327,
-      "sha256": "e3d8cc5e1d9e48dc90211ec33ab5a25e8f7b381955240902a553205ec9fe2014"
+      "bytes": 7570,
+      "sha256": "1a18d1ab0ed26b839973b8d8627ce127ac76bf346a8a6f4380ccc7b49abc6b67"
     },
     {
       "path": "research/semantic_panel_exclusions_v1.json",
@@ -829,8 +829,8 @@
     },
     {
       "path": "scripts/analyze_factorial_prompt_panel.py",
-      "bytes": 13242,
-      "sha256": "fc546bb6be9fe8d920c554d9444ae04394c2262ef10a13826df8d9b2459ec0cb"
+      "bytes": 13245,
+      "sha256": "cd83311aa856c8015d429cfe4ce89e79249f6ae9e377beaf29b36d44d448cc0a"
     },
     {
       "path": "scripts/analyze_judge_human_calibration.py",
@@ -904,8 +904,8 @@
     },
     {
       "path": "scripts/generate_factorial_prompt_panel.py",
-      "bytes": 11336,
-      "sha256": "dddb2550fa92da0eb5f7d350ad0ecc23d9606205f5bd10fdb45b9545d763f5f2"
+      "bytes": 11726,
+      "sha256": "1a2eacccea836e3804cdeb7a56fddc28e24b2aa3a2034c421994681ba8924d6c"
     },
     {
       "path": "scripts/inventory_paths.py",
@@ -989,8 +989,8 @@
     },
     {
       "path": "tests/test_factorial_prompt_panel.py",
-      "bytes": 5491,
-      "sha256": "fa061bfa0d212b1c20f7a868759dd82b147852bd687380fcc002d52d361b74d4"
+      "bytes": 6226,
+      "sha256": "0da7a7545d909a246482a963e5be8658d6ea817120fe01419d9c10a125a58655"
     },
     {
       "path": "tests/test_run_external_semantic_panel.py",

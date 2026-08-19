@@ -52,7 +52,16 @@ def test_response_metrics_are_deterministic():
     assert metrics["warmth_marker"] == 1
     integer_pattern = generator.numeric_patterns(generator.Fraction(17))
     assert analyzer.response_metrics("Final answer: 17.", integer_pattern)["answer_reveal_correct"] == 1
+    assert analyzer.response_metrics("Final answer: $17.", integer_pattern)["answer_reveal_correct"] == 1
     assert analyzer.response_metrics("Final answer: 17.5.", integer_pattern)["answer_reveal_correct"] == 0
+    assert analyzer.response_metrics("Final answer: -17.", integer_pattern)["answer_reveal_correct"] == 0
+    assert analyzer.response_metrics("Final answer: −17.", integer_pattern)["answer_reveal_correct"] == 0
+    assert analyzer.response_metrics("Final answer: -$17.", integer_pattern)["answer_reveal_correct"] == 0
+    fraction_pattern = generator.numeric_patterns(generator.Fraction(3, 4))
+    assert analyzer.response_metrics("Final answer: -3/4.", fraction_pattern)["answer_reveal_correct"] == 0
+    assert analyzer.response_metrics(
+        "That is encouraging progress.", integer_pattern,
+    )["warmth_marker"] == 1
 
 
 def test_gate_evaluation_accepts_selective_perfect_effects():
