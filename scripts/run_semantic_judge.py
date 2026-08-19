@@ -240,24 +240,45 @@ def annotate_one(client: Any, judge: str, seed: int, batch: dict[str, Any], retr
     raw = ""
     usage: dict[str, Any] = {}
     parsed: dict[str, Any] = {}
+    transport = "stream"
+    prefer_nonstream = False
     for attempt in range(1, retries + 1):
         try:
             client.reset_usage_window()
-            raw = client.chat([{"role": "user", "content": prompt}], model=judge, max_tokens=None)
+            transport = "nonstream" if prefer_nonstream else "stream"
+            raw = client.chat(
+                [{"role": "user", "content": prompt}],
+                model=judge,
+                max_tokens=None,
+                stream=not prefer_nonstream,
+            )
             usage = client.read_usage_window()
             parsed = parse_json_object(raw)
             if validate_annotation(parsed, list(mapping)):
-                return result_row(batch, judge, mapping, prompt, raw, parsed, usage, attempt, "")
-            error = "invalid annotation JSON"
+                return result_row(
+                    batch, judge, mapping, prompt, raw, parsed, usage, attempt, "", transport,
+                )
+            if not raw.strip():
+                error = "empty judge response"
+                # Some OpenAI-compatible relays occasionally emit an empty SSE
+                # stream while the equivalent blob response is complete.  This
+                # changes transport only: model, prompt, blind ordering, and
+                # sampling parameters remain identical.
+                prefer_nonstream = True
+            else:
+                error = "invalid annotation JSON"
         except Exception as exc:  # noqa: BLE001
             error = str(exc)[:500]
         time.sleep(min(8, attempt * 2))
-    return result_row(batch, judge, mapping, prompt, raw, parsed, usage, retries, error)
+    return result_row(
+        batch, judge, mapping, prompt, raw, parsed, usage, retries, error, transport,
+    )
 
 
 def result_row(
     batch: dict[str, Any], judge: str, mapping: dict[str, str], prompt: str,
     raw: str, parsed: dict[str, Any], usage: dict[str, Any], attempts: int, error: str,
+    transport: str,
 ) -> dict[str, Any]:
     return {
         "annotation_id": f"{batch['benchmark']}|{batch['item_id']}|{judge}",
@@ -274,6 +295,7 @@ def result_row(
         "raw_judge_response": raw,
         "usage": usage,
         "attempts": attempts,
+        "transport": transport,
         "error": error,
     }
 
