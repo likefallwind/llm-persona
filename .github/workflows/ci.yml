@@ -1,0 +1,45 @@
+name: research-gates
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  frozen-artifact-gates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+          cache: pip
+      - name: Install locked dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Check Python and shell syntax
+        run: |
+          python -m py_compile scripts/*.py
+          for script in scripts/*.sh; do bash -n "$script"; done
+      - name: Test frozen submission decisions
+        run: python -m pytest -q tests/test_evaluate_submission_decision.py
+      - name: Verify registered headline claims
+        run: >-
+          python scripts/verify_release_claims.py
+          --root .
+          --output-dir /tmp/claim-verification
+      - name: Audit public artifact structure
+        run: >-
+          python scripts/audit_release_privacy.py
+          --root .
+          --output /tmp/release-privacy-audit.md
+      - name: Rebuild the publication overview figure
+        run: >-
+          python scripts/make_paper_figures.py
+          --root .
+          --output-dir /tmp/paper-figures
+      - name: Confirm checks did not mutate the checkout
+        run: git diff --exit-code
