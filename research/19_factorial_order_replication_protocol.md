@@ -39,6 +39,7 @@ the educational policy contrasts survive request-sequence randomization.
 | `scripts/run_factorial_order_replication.py` | `e79250ee96edf52a4ab707d301bbccab515d5c00d75b077f1aedd72dafbbabe6` |
 | `scripts/analyze_factorial_order_replication.py` | `0bbc1020e808f54c22494dec06c55be036121dc83a8cc837ff7803392377bf5f` |
 | `scripts/run_factorial_order_replication.sh` | `58d61e4fd3b7f284d46ba5b40efb99a69a2135c53310b4cb24282740ec789430` |
+| `scripts/render_factorial_results_report.py` | `c1053be5ebca229210ab1f301d63ebfea1d6c8e593651cbff7e1dce2bb3f27cc` |
 
 ## Fixed sample and external payload
 
@@ -87,6 +88,15 @@ The replication uses the parent deterministic metrics, base-problem bootstrap,
 all target and cross-effects, learner-need effects, family breakdowns, 16 cell
 means per group, and all two- and three-way interactions. It also compares each
 target effect with the same eight-context subset in the parent run.
+
+The paper-facing renderer is frozen before outcomes. Its generated report must
+show all three registered factor gates; target effects for every model in the
+full parent, matching parent subset, and replication; every aggregate target and
+primary cross-effect; learner-request effects for ALL and every model; all family
+target effects; and every ALL-group two- and three-way interaction on the three
+primary outcomes. Full CSV releases retain every registered surface metric,
+group, cell, and interaction. Result-dependent omission from this fixed report is
+not permitted.
 
 A factor is called **order-robust** only if all conditions hold:
 

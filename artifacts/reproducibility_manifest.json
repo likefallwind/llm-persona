@@ -829,8 +829,8 @@
     },
     {
       "path": "research/19_factorial_order_replication_protocol.md",
-      "bytes": 6242,
-      "sha256": "5890e049b369cc67649546b0d0569f063d967a684ffb384c8788d103e0b4c314"
+      "bytes": 6934,
+      "sha256": "7cb7c3afb9e9007e491bf0c56bca6b4aed275212d193512c5d2d90eabe18c588"
     },
     {
       "path": "research/semantic_panel_exclusions_v1.json",
@@ -958,6 +958,11 @@
       "sha256": "2878381432585d0a5e9d8a4723bd45856ac222e81de1e999901290bf68265fdc"
     },
     {
+      "path": "scripts/render_factorial_results_report.py",
+      "bytes": 10175,
+      "sha256": "c1053be5ebca229210ab1f301d63ebfea1d6c8e593651cbff7e1dce2bb3f27cc"
+    },
+    {
       "path": "scripts/reproduce_completed.sh",
       "bytes": 3481,
       "sha256": "b6722ace7d3c1ee79a0a74d12215c420089005ccaca6d6753d1d087c911b0bb9"
@@ -1039,8 +1044,8 @@
     },
     {
       "path": "tests/test_factorial_order_replication.py",
-      "bytes": 8856,
-      "sha256": "dc5b06c57b9305392954dd24d6496f3de5a374f25b8d1ab01f6f5db600ae6bcd"
+      "bytes": 9922,
+      "sha256": "5c903008679a07d24b6dc1e5d9a98db58f3cbd5b09f351d69bbfaebc68e66e7e"
     },
     {
       "path": "tests/test_factorial_prompt_panel.py",

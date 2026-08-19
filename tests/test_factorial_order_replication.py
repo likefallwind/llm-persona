@@ -191,6 +191,14 @@ def test_order_replication_analyzer_end_to_end(tmp_path):
     replication_path.write_text(
         "".join(json.dumps(row) + "\n" for row in replication_rows)
     )
+    parent_output = tmp_path / "parent_analysis"
+    subprocess.run([
+        sys.executable, str(ROOT / "scripts/analyze_factorial_prompt_panel.py"),
+        "--spec", str(ROOT / "data/factorial_prompt_spec_v1.json"),
+        "--manifest", str(ROOT / "artifacts/factorial_prompt_v1/sample_manifest.jsonl"),
+        "--responses", str(parent_path), "--output-dir", str(parent_output),
+        "--bootstrap-reps", "10",
+    ], check=True, capture_output=True, text=True)
     output = tmp_path / "analysis"
     subprocess.run([
         sys.executable, str(ROOT / "scripts/analyze_factorial_order_replication.py"),
@@ -213,3 +221,14 @@ def test_order_replication_analyzer_end_to_end(tmp_path):
         row["order_robust"]
         for row in report["joint_order_robustness_decision"]["factor_results"].values()
     )
+    rendered = tmp_path / "factorial_results.md"
+    subprocess.run([
+        sys.executable, str(ROOT / "scripts/render_factorial_results_report.py"),
+        "--parent-dir", str(parent_output),
+        "--replication-dir", str(output), "--output", str(rendered),
+    ], check=True, capture_output=True, text=True)
+    text = rendered.read_text()
+    assert "## Registered factor gates" in text
+    assert "## Target effects for every model" in text
+    assert "## ALL-group interactions on primary outcomes" in text
+    assert text.count("order-robust black-box component addressability") == 3
