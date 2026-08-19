@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "passed": true,
+  "checks": [
+    {
+      "claim": "core common benchmark-item IDs",
+      "observed": 47321,
+      "expected": 47321,
+      "passed": true
+    },
+    {
+      "claim": "core response count implied by paired panel",
+      "observed": 283926,
+      "expected": 283926,
+      "passed": true
+    },
+    {
+      "claim": "primary teaching response rows",
+      "observed": 31638,
+      "expected": 31638,
+      "passed": true
+    },
+    {
+      "claim": "negative-control response rows",
+      "observed": 57516,
+      "expected": 57516,
+      "passed": true
+    },
+    {
+      "claim": "extended MathDial response rows",
+      "observed": 26586,
+      "expected": 26586,
+      "passed": true
+    },
+    {
+      "claim": "primary held-out-family macro policy attribution",
+      "observed": 0.242,
+      "expected": 0.242,
+      "passed": true
+    },
+    {
+      "claim": "primary held-out-family macro all-feature attribution",
+      "observed": 0.251,
+      "expected": 0.251,
+      "passed": true
+    },
+    {
+      "claim": "negative-control macro all-feature attribution",
+      "observed": 0.372,
+      "expected": 0.372,
+      "passed": true
+    },
+    {
+      "claim": "cross-domain policy-geometry Mantel r",
+      "observed": 0.296,
+      "expected": 0.296,
+      "passed": true
+    },
+    {
+      "claim": "cross-domain policy-geometry exact p",
+      "observed": 0.307,
+      "expected": 0.307,
+      "passed": true
+    },
+    {
+      "claim": "pedagogy/generic profile dispersion ratio",
+      "observed": 0.763,
+      "expected": 0.763,
+      "passed": true
+    },
+    {
+      "claim": "dispersion bootstrap lower bound",
+      "observed": 0.738,
+      "expected": 0.738,
+      "passed": true
+    },
+    {
+      "claim": "dispersion bootstrap upper bound",
+      "observed": 0.794,
+      "expected": 0.794,
+      "passed": true
+    },
+    {
+      "claim": "identical responses in judge swap",
+      "observed": 14770,
+      "expected": 14770,
+      "passed": true
+    },
+    {
+      "claim": "judge-swap response mismatches",
+      "observed": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "claim": "deepseek-v4-flash mean policy AUC increment",
+      "observed": 0.031,
+      "expected": 0.031,
+      "passed": true
+    },
+    {
+      "claim": "deepseek-v4-flash positive held-out-model policy folds",
+      "observed": 5,
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "claim": "minimax-m3 mean policy AUC increment",
+      "observed": 0.023,
+      "expected": 0.023,
+      "passed": true
+    },
+    {
+      "claim": "minimax-m3 positive held-out-model policy folds",
+      "observed": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "claim": "best judge expert-pair agreement",
+      "observed": 0.844,
+      "expected": 0.844,
+      "passed": true
+    },
+    {
+      "claim": "majority minus best CI contains zero",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "claim": "action-classifier contrasts with all nine models positive",
+      "observed": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "claim": "telling match drops for every classifier",
+      "observed": 3,
+      "expected": 3,
+      "passed": true
+    },
+    {
+      "claim": "telling generic match range",
+      "observed": [
+        0.394,
+        0.442
+      ],
+      "expected": [
+        0.394,
+        0.442
+      ],
+      "passed": true
+    },
+    {
+      "claim": "telling pedagogy match range",
+      "observed": [
+        0.111,
+        0.125
+      ],
+      "expected": [
+        0.111,
+        0.125
+      ],
+      "passed": true
+    },
+    {
+      "claim": "LongTutor matched model-history rows",
+      "observed": 6000,
+      "expected": 6000,
+      "passed": true
+    },
+    {
+      "claim": "LongTutor unique histories",
+      "observed": 1000,
+      "expected": 1000,
+      "passed": true
+    },
+    {
+      "claim": "mean diagnosis-teaching-quality Spearman",
+      "observed": 0.173,
+      "expected": 0.173,
+      "passed": true
+    },
+    {
+      "claim": "mean diagnosis-strategy-alignment Spearman",
+      "observed": 0.208,
+      "expected": 0.208,
+      "passed": true
+    },
+    {
+      "claim": "mean evidence-teaching-quality Spearman",
+      "observed": -0.01,
+      "expected": -0.01,
+      "passed": true
+    },
+    {
+      "claim": "LongTutor item-only diagnosis AUC",
+      "observed": 0.822,
+      "expected": 0.822,
+      "passed": true
+    },
+    {
+      "claim": "LongTutor teaching-dimensions diagnosis AUC",
+      "observed": 0.816,
+      "expected": 0.816,
+      "passed": true
+    },
+    {
+      "claim": "LongTutor teaching-mean diagnosis AUC",
+      "observed": 0.817,
+      "expected": 0.817,
+      "passed": true
+    },
+    {
+      "claim": "LongTutor evidence RMSE invariant at reported precision",
+      "observed": [
+        0.187
+      ],
+      "expected": [
+        0.187
+      ],
+      "passed": true
+    }
+  ]
+}

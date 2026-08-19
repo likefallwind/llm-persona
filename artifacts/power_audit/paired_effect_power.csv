@@ -1,0 +1,7 @@
+design,n_independent_context_pairs,multiplicity_rule,alpha,minimum_dz_for_80pct_power
+hard prompt pair per model,40,single planned contrast,0.05,0.45425711232469046
+hard prompt pair per model,40,six-model Bonferroni,0.008333333333333333,0.5761226749991148
+standard prompt pair per model,80,single planned contrast,0.05,0.31709876532047765
+standard prompt pair per model,80,six-model Bonferroni,0.008333333333333333,0.39786227594929235
+pooled standard + hard per model,120,single planned contrast,0.05,0.2578353924450131
+pooled standard + hard per model,120,six-model Bonferroni,0.008333333333333333,0.3223949976275519

@@ -1,0 +1,9 @@
+train_domain,test_domain,feature_set,n_train,n_test,accuracy,balanced_accuracy
+teaching,negative_control,length_only,11772,12864,0.2506218905472637,0.2506218905472637
+teaching,negative_control,surface,11772,12864,0.25536380597014924,0.2553638059701493
+teaching,negative_control,policy,11772,12864,0.22419154228855723,0.2241915422885572
+teaching,negative_control,surface_plus_policy,11772,12864,0.2531094527363184,0.2531094527363184
+negative_control,teaching,length_only,12864,11772,0.19308528712198436,0.19308528712198436
+negative_control,teaching,surface,12864,11772,0.204638124362895,0.204638124362895
+negative_control,teaching,policy,12864,11772,0.19554875976894326,0.19554875976894323
+negative_control,teaching,surface_plus_policy,12864,11772,0.21933401291199456,0.21933401291199459

@@ -1,0 +1,6 @@
+benchmark,model_count,rank_spearman
+mathtutorbench_pedagogy,5,0.9999999999999999
+mathtutorbench_pedagogy_hard,5,0.8999999999999998
+mathtutorbench_scaffolding,5,0.9999999999999999
+mathtutorbench_scaffolding_hard,5,0.9999999999999999
+ALL_TASK_MEAN,5,0.9999999999999999

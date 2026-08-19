@@ -1,0 +1,4 @@
+judge_left,judge_right,raw_agreement,cohen_kappa
+MiniMax-M3,glm-5.2,0.8973029045643154,0.6144311570782159
+MiniMax-M3,deepseek-v4-pro,0.8921161825726142,0.6165590674050729
+glm-5.2,deepseek-v4-pro,0.9201244813278008,0.7193903010690901

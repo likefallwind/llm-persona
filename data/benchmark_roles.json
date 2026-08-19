@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "primary_behavior_generation": {
+    "longtutor_teaching": {
+      "family": "longitudinal_personalization",
+      "role": "tutor",
+      "constructs": ["history_use", "diagnostic_adaptation", "scaffolding"]
+    },
+    "mathtutorbench_scaffolding": {
+      "family": "mathdial_bridge",
+      "role": "tutor",
+      "constructs": ["scaffolding", "directiveness", "affective_support"],
+      "paired_prompt_arm": "generic_caring_teacher"
+    },
+    "mathtutorbench_pedagogy": {
+      "family": "mathdial_bridge",
+      "role": "tutor",
+      "constructs": ["scaffolding", "directiveness", "affective_support"],
+      "paired_prompt_arm": "explicit_learnlm_pedagogy"
+    },
+    "mathtutorbench_scaffolding_hard": {
+      "family": "mathdial_bridge_hard",
+      "role": "tutor",
+      "constructs": ["scaffolding", "directiveness", "affective_support"],
+      "paired_prompt_arm": "generic_caring_teacher"
+    },
+    "mathtutorbench_pedagogy_hard": {
+      "family": "mathdial_bridge_hard",
+      "role": "tutor",
+      "constructs": ["scaffolding", "directiveness", "affective_support"],
+      "paired_prompt_arm": "explicit_learnlm_pedagogy"
+    },
+    "mathtutorbench_socratic": {
+      "family": "socratic_question_generation",
+      "role": "tutor",
+      "constructs": ["elicitation", "stepwise_scaffolding"]
+    }
+  },
+  "external_criteria": {
+    "p08_abstention": {"role": "problem_solver", "constructs": ["epistemic_restraint"]},
+    "p07_selfcheck": {"role": "problem_solver", "constructs": ["self_correction"]},
+    "eduguard_adversarial": {"role": "education_assistant", "constructs": ["safe_redirection"]},
+    "longtutor_diagnosis": {"role": "diagnostician", "constructs": ["learner_diagnosis"]}
+  },
+  "negative_controls": {
+    "mmlu_pro": {"family": "mcq_mmlu", "role": "test_taker"},
+    "ceval": {"family": "mcq_ceval", "role": "test_taker"},
+    "agieval": {"family": "mcq_agieval", "role": "test_taker"},
+    "ifeval": {"family": "instruction_following", "role": "instruction_follower"}
+  },
+  "judge_only": {
+    "mrbench_judge": {"role": "judge"},
+    "bea2025_judge": {"role": "judge"},
+    "mathtutorbench_judge_calibration": {"role": "judge"}
+  }
+}

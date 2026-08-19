@@ -1,0 +1,17 @@
+feature_set,held_out_family,n_test,accuracy,balanced_accuracy
+length_only,longitudinal_personalization,6000,0.30966666666666665,0.3096666666666667
+length_only,mathdial_bridge,13800,0.19942028985507246,0.19942028985507246
+length_only,mathdial_bridge_hard,3924,0.21788990825688073,0.21788990825688073
+length_only,socratic_question_generation,7914,0.19155926206722265,0.19155926206722265
+surface,longitudinal_personalization,6000,0.2215,0.2215
+surface,mathdial_bridge,13800,0.20528985507246378,0.20528985507246378
+surface,mathdial_bridge_hard,3924,0.24337410805300713,0.2433741080530072
+surface,socratic_question_generation,7914,0.18979024513520343,0.18979024513520346
+policy,longitudinal_personalization,6000,0.244,0.244
+policy,mathdial_bridge,13800,0.26717391304347826,0.26717391304347826
+policy,mathdial_bridge_hard,3924,0.28950050968399593,0.28950050968399593
+policy,socratic_question_generation,7914,0.16767753348496336,0.1676775334849634
+surface_plus_policy,longitudinal_personalization,6000,0.19866666666666666,0.19866666666666666
+surface_plus_policy,mathdial_bridge,13800,0.29282608695652174,0.29282608695652174
+surface_plus_policy,mathdial_bridge_hard,3924,0.33893985728848114,0.3389398572884812
+surface_plus_policy,socratic_question_generation,7914,0.17412180945160474,0.17412180945160474

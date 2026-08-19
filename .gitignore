@@ -1,0 +1,22 @@
+.venv/
+.tools/
+agent.md
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+artifacts/semantic_panel_partial/
+artifacts/semantic_judge/external_smoke_v1/
+artifacts/semantic_judge/external_smoke_short_v1/
+artifacts/semantic_judge/local_smoke_qwen/
+artifacts/semantic_judge/local_smoke_short/
+
+# Mutable external-run state is never committed.  The frozen manifest and
+# payload audit remain eligible for release; completed derived tables are added
+# only after the coverage and privacy gates in research/06 pass.
+artifacts/semantic_judge/full_v1/annotations.jsonl
+artifacts/semantic_judge/full_v1/coverage.csv
+artifacts/semantic_judge/full_v1/run.log
+artifacts/semantic_judge/full_v1/status_report.md
+artifacts/semantic_judge/full_v1/run_state/
+artifacts/semantic_judge/full_v1/finalize.log

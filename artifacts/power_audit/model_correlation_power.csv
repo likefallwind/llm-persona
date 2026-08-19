@@ -1,0 +1,5 @@
+target_absolute_correlation,models_needed_for_80pct_power
+0.3,85
+0.5,30
+0.7,14
+0.8,10
