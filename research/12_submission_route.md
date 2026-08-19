@@ -30,9 +30,12 @@ October deadline; revise for the January 2027 ARR route listed for ACL 2027.
 2. `evaluate_submission_decision.py` determines the title/thesis using the frozen
    hierarchy.  Fewer than two validated dimensions forces the policy-signature
    framing.
-3. A clean environment reproduces all non-semantic results and the completed
-   semantic finalizer; all registered headline claims, unit tests, privacy
-   structure, and manifest hashes pass.
+3. Reproduction evidence is reported by scope: the private-input semantic
+   finalizer reruns locally; a fresh checkout verifies all frozen public files;
+   and an independent GitHub Ubuntu runner installs the exact dependency
+   versions and passes registered claims, unit tests, privacy structure, figure
+   rebuild, and clean-worktree checks. No claim of provider-byte regeneration or
+   private-corpus recomputation on CI is made.
 4. The paper names GenPT, the ITS context-ablation study, and tutor-persona/runtime
    control work as closest comparisons; it does not claim behavior-first
    psychometrics as a generic invention.

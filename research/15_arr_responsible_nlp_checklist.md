@@ -26,7 +26,12 @@ immediately before upload:
 - `scripts/reproduce_completed.sh` and CI verify registered claims, tests,
   privacy structure, and figures.
 - `research/14_clean_room_reproduction.md` reports a fresh-checkout audit and
-  explicitly states that its dependency environment was reused.
+  explicitly separates its reused local dependency environment from the
+  independently provisioned GitHub runner.
+- GitHub Actions run `32257044437` installs the exact versions in
+  `requirements.txt` on a new Python 3.13 Ubuntu runner and passes public-package
+  tests, claims, privacy, figures, and clean-worktree gates. It does not receive
+  private corpus inputs.
 - Provider-side generation is not exactly reproducible; the paper discloses the
   absent seed/prompt-version fields and partial temperature coverage.
 

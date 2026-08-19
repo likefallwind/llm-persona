@@ -259,8 +259,12 @@ that the technical failure is ignorable by design.
 ## Decision after red-team review
 
 The completed evidence is strong enough for a main-conference NLP measurement and
-falsification submission, subject to clean-room reproduction and final editorial
-review. The semantic panel is reliable across judges and adds held-out-task signal
+falsification submission, subject to final editorial and release review. A fresh
+checkout verifies the frozen public package, and GitHub CI installs the pinned
+dependency versions on an independent Ubuntu runner before repeating public
+tests, claims, privacy, and figure gates. The private-input finalizer was rerun
+locally and is not misreported as an independent-provider regeneration. The
+semantic panel is reliable across judges and adds held-out-task signal
 beyond transparent features, but the frozen decision rule retains only help
 directness and cognitive load as cross-task signatures and only help directness as
 a validated disposition. The correct thesis is therefore *pedagogical policy

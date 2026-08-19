@@ -679,8 +679,8 @@
     },
     {
       "path": "paper/references.bib",
-      "bytes": 8542,
-      "sha256": "d201850ad4cce51ce81de74c09beed088a80e10f74a7359998b5e70a34a2bbdc"
+      "bytes": 8548,
+      "sha256": "0be8277b036bd37067a40654b226f089cbef342db081ec3bb57e9810890938d5"
     },
     {
       "path": "paper/submission/README.md",
@@ -694,8 +694,8 @@
     },
     {
       "path": "paper/submission/submission.pdf",
-      "bytes": 184327,
-      "sha256": "a717163c097cb3188e2023c2d697b22640cce3e465c226b7c18de7e39c233738"
+      "bytes": 184328,
+      "sha256": "4264a0902169c7bba6990a75d7fb3e950c324af4ca4d314e595074bfad02b13e"
     },
     {
       "path": "research/00_research_charter.md",
@@ -714,13 +714,13 @@
     },
     {
       "path": "research/03_claim_evidence_matrix.md",
-      "bytes": 8353,
-      "sha256": "dc44c7c2d43a4d7ff90805bb967abf98d58470b78bd7f826a6c24499cf72ae7e"
+      "bytes": 8508,
+      "sha256": "b326c74b997755a66b92a9b73f5bcfd1f36084d0c4cbfae89963d4ad9fb81929"
     },
     {
       "path": "research/04_red_team_review.md",
-      "bytes": 15127,
-      "sha256": "cf5579af3939dfebc82fd77cd36f622d8129e97f666de90b5f4a2149794380a0"
+      "bytes": 15426,
+      "sha256": "97098f3f809350ae42e6320afdf9ca5e9e6b421545953610d2ca2c30fbc65f4a"
     },
     {
       "path": "research/05_semantic_analysis_plan.md",
@@ -759,8 +759,8 @@
     },
     {
       "path": "research/12_submission_route.md",
-      "bytes": 2832,
-      "sha256": "7a246a4ffc7b40962825a6cf3dd1a8bc9e1034396dbb7691028c280d1fde2184"
+      "bytes": 3075,
+      "sha256": "e1a71dca85280adaf339044f72b5aa7dfce68db969c904a4622ae681af7c3b67"
     },
     {
       "path": "research/13_semantic_attrition_amendment.md",
@@ -769,13 +769,18 @@
     },
     {
       "path": "research/14_clean_room_reproduction.md",
-      "bytes": 2092,
-      "sha256": "ae77ab4cf79a33093fb33aed4df9cbf2598cec8bac39eb34baf2ce93600c319b"
+      "bytes": 2963,
+      "sha256": "72938d3bbdf464947f584134bbdb885de735c57d45ffa478e5b5833a453cfde3"
     },
     {
       "path": "research/15_arr_responsible_nlp_checklist.md",
-      "bytes": 2973,
-      "sha256": "004d4319c51e10fa4cf948c12bfa56fe5c7265cbcb51e14162d065a05036f11c"
+      "bytes": 3278,
+      "sha256": "4ca4246e18e3449bb958203c35a69d97ee72e8c765db63750779f14a754e4ad3"
+    },
+    {
+      "path": "research/16_bibliography_audit.md",
+      "bytes": 1030,
+      "sha256": "8d36a2df6f903825d373a476d4bb63b08e82ee18029b339cddd94b636cf80141"
     },
     {
       "path": "research/semantic_panel_exclusions_v1.json",

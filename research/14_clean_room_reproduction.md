@@ -45,6 +45,22 @@ this machine.  It does not establish:
   or
 - portability to another operating system or TeX distribution.
 
-The ACL submission-package branch adds a separately pinned style-file build.
-Dependency-isolated Python reproduction remains a release gate if the package is
-to be advertised as environment-independent.
+The ACL submission-package branch adds a separately pinned style-file build. A
+new dependency runner can verify the frozen public package, but full cross-machine
+recomputation remains impossible without the private upstream inputs described
+above.
+
+## Independent dependency-runner verification
+
+Draft PR #3 triggered GitHub Actions run
+[`32257044437`](https://github.com/likefallwind/llm-persona/actions/runs/32257044437)
+at submission-package commit `d7b7bec`. GitHub provisioned a new Ubuntu runner,
+checked out the commit, configured Python 3.13, and installed the exact versions
+in `requirements.txt`. The requirements are version-pinned but do not include
+package hashes.
+
+The independent runner passed Python/shell syntax, 10/10 tests, 51/51 registered
+claims, public artifact privacy structure, deterministic figure rebuilding, and
+a final clean-worktree check. It had no private upstream corpus or ignored live
+annotation JSONL, so this is dependency-isolated verification of the frozen
+public package, not a rerun of private-input analysis or provider generation.

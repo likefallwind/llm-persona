@@ -35,9 +35,11 @@ The strongest defensible thesis is therefore narrower and more useful:
 
 ## Remaining requirements before upload
 
-- Repeat the fresh-checkout reproduction in an independently created dependency
-  environment if claiming environment portability. The completed audit reused
-  the machine's installed Python dependencies and is labelled accordingly.
+- Keep the three reproduction scopes distinct: the complete semantic finalizer
+  was rerun locally with private inputs; a fresh checkout verified every frozen
+  public artifact; and GitHub CI installed exact dependency versions on a new
+  Ubuntu runner before repeating tests, claims, privacy, and figure gates. CI did
+  not receive private source responses or rerun provider generation.
 - Extend the human-labelled dialogue-act criterion with a downstream outcome;
   action agreement is independent of LLM judges but still is not student learning.
 - Treat naive prompted student simulation as invalid unless the simulator is
