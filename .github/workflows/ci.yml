@@ -25,7 +25,7 @@ jobs:
           python -m py_compile scripts/*.py
           for script in scripts/*.sh; do bash -n "$script"; done
       - name: Test frozen submission decisions
-        run: python -m pytest -q tests/test_evaluate_submission_decision.py
+        run: python -m pytest -q tests
       - name: Verify registered headline claims
         run: >-
           python scripts/verify_release_claims.py

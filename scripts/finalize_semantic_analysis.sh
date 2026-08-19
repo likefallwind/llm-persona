@@ -8,7 +8,7 @@ OUT="$ROOT/artifacts/semantic_panel"
 
 cd "$ROOT"
 
-"$PY" scripts/semantic_judge_status.py --output-dir "$PANEL"
+"$PY" scripts/semantic_judge_status.py --output-dir "$PANEL" --require-complete
 
 # This command intentionally has no --allow-incomplete flag.  It is the formal
 # 1,080-annotation coverage gate for every downstream semantic conclusion.
@@ -77,5 +77,5 @@ cd "$ROOT"
   --output artifacts/reproducibility_manifest.json
 
 "$PY" -m py_compile scripts/*.py
-"$PY" -m pytest -q tests/test_evaluate_submission_decision.py
+"$PY" -m pytest -q tests
 git diff --check

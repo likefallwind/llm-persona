@@ -98,7 +98,7 @@ cd "$REPO_ROOT"
   --root "$REPO_ROOT"
 
 "$PYTHON_BIN" -m py_compile scripts/*.py
-"$PYTHON_BIN" -m pytest -q tests/test_evaluate_submission_decision.py
+"$PYTHON_BIN" -m pytest -q tests
 bash -n scripts/*.sh
 
 echo "completed non-semantic analyses reproduced successfully"

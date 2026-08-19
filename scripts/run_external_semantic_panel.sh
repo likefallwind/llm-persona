@@ -65,6 +65,12 @@ if [[ "$code" -eq 0 ]]; then
   run_phase longtutor "longtutor_teaching"
   code=$?
 fi
+if [[ "$code" -eq 0 ]]; then
+  "$PY" "$ROOT/scripts/semantic_judge_status.py" \
+    --output-dir "$OUT" \
+    --require-complete
+  code=$?
+fi
 
 printf '%s\n' "$code" > "$STATE/exit"
 date -Is > "$STATE/finished"

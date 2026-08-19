@@ -15,6 +15,7 @@ import pandas as pd
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-dir", type=Path, required=True)
+    parser.add_argument("--require-complete", action="store_true")
     args = parser.parse_args()
     manifest_path = args.output_dir / "sample_manifest.json"
     annotation_path = args.output_dir / "annotations.jsonl"
@@ -107,6 +108,19 @@ def main() -> None:
     ])
     (args.output_dir / "status_report.md").write_text(report, encoding="utf-8")
     print(overall.to_json(orient="records"))
+    status = overall.iloc[0]
+    if args.require_complete and (
+        status["successful_annotations"] != status["expected_annotations"]
+        or status["current_errors"] != 0
+        or status["missing_annotations"] != 0
+        or status["invalid_jsonl_rows"] != 0
+    ):
+        raise SystemExit(
+            "coverage gate failed: "
+            f"success={status['successful_annotations']}/{status['expected_annotations']}, "
+            f"errors={status['current_errors']}, missing={status['missing_annotations']}, "
+            f"invalid_lines={status['invalid_jsonl_rows']}"
+        )
 
 
 if __name__ == "__main__":
