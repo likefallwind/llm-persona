@@ -156,7 +156,7 @@ stronger server is available.
 The review manuscript is in `paper/submission/main.tex`. It uses the official
 ACL `[review]` mode and a pinned, hash-checked checkout of
 <https://github.com/acl-org/acl-style-files>. The upstream style files are not
-vendored or modified. Build the deterministic six-page PDF with:
+vendored or modified. Build the deterministic seven-page PDF with:
 
 ```bash
 ACL_STYLE_DIR=/path/to/acl-style-files ./scripts/build_acl_submission.sh

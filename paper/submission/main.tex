@@ -72,6 +72,13 @@ The results reject both a verbosity-only account and a universal beneficial
 persona. They support a narrower, actionable object: finite-panel default
 tutoring policies and their resistance to steering.
 
+The paper contributes four linked tests rather than a new personality inventory:
+(1) same-item cross-task signatures with generic-domain controls; (2) a paired
+prompt intervention measuring both convergence and action-specific harm; (3)
+independent criteria from human teacher actions and human-gold learner diagnosis;
+and (4) a blinded semantic panel whose frozen cumulative rule can downgrade, but
+not selectively upgrade, the headline construct.
+
 \section{Related Work}
 
 Behavior-first psychometrics is an active direction. GenPT generates projective
@@ -92,6 +99,9 @@ ablations. Tutor-persona steering \citep{lee-etal-2026-tutor-personas} and
 theory-grounded runtime control \citep{nkambou-etal-2026-pedrag} ask how a desired
 policy can be induced; we first measure recurring defaults and then test a shared
 instruction.
+Work on tutor-strategy prediction \citep{ikram-etal-2025-strategy} and feedback
+failure localization \citep{yasir-etal-2026-feedback} further motivates reporting
+action-specific errors instead of one aggregate tutor score.
 
 Attribution alone is insufficient because lexical features identify generators
 across domains \citep{mcgovern-etal-2025-fingerprints}. Prompted students are
@@ -110,6 +120,26 @@ yield 57,516. A nine-model MathDial panel adds three configurations for 26,586
 responses. LongTutor contributes long learner histories, and MathTutorBench
 provides paired generic and LearnLM-style pedagogy prompts in standard and hard
 contexts.
+
+\begin{table*}[t]
+  \centering
+  \small
+  \begin{tabular}{lrrrl}
+    \toprule
+    \textbf{Panel or criterion} & \textbf{Models} & \textbf{Shared units} & \textbf{Responses} & \textbf{Primary role} \\
+    \midrule
+    Core teaching & 6 & 5,273 items & 31,638 & transparent signature \\
+    Generic controls & 6 & 9,586 items & 57,516 & fingerprint falsifier \\
+    MathDial intervention & 9 & 2,954 item--arms & 26,586 & steering and dispersion \\
+    Blinded semantics & 6 & 358 context--arms & 2,148 & reliability and transport \\
+    LongTutor objective & 6 & 1,000 histories & 6,000 & diagnosis boundary \\
+    Human teacher actions & -- & 18,541 turns & 18,541 & classifier training \\
+    \bottomrule
+  \end{tabular}
+  \caption{Evidence sources and dependence-preserving units. Shared units are
+  not multiplied by the number of models when uncertainty is estimated.}
+  \label{tab:data}
+\end{table*}
 
 The MathDial source supplies human teacher moves (\texttt{probing},
 \texttt{focus}, \texttt{telling}, and \texttt{generic}). LongTutor supplies
@@ -177,6 +207,25 @@ variance plus cross-task ICC or median task correlation $\geq .50$; and (iii) an
 independent quality/action, prompt/action, or BH-corrected human-gold diagnosis
 criterion. Fewer than two validated dimensions forces the policy-signature
 thesis used here.
+
+\subsection{Inference, multiplicity, and freeze timing}
+
+The inferential unit follows the claim (Table~\ref{tab:data}). Cross-task
+attribution reports an unweighted macro-average over held-out families. Prompt
+intervals resample underlying contexts while retaining all model-linked rows;
+judge calls are first reduced to response medians and never counted as
+independent educational cases. Quality models report every held-out-model fold,
+and exact sign tests treat folds, not responses, as replicates. Prompt tests use
+BH correction over the 48 model $\times$ dimension contrasts within each
+difficulty; semantic diagnosis uses within-outcome BH correction.
+
+The multi-judge plan was frozen at 311/1,080 annotations, all from the first
+judge and before any second- or third-judge result. Single-judge directions had
+been inspected, so this is a prospective multi-judge freeze, not a full
+preregistration. Manuscript decision thresholds were fixed at 637/1,080, before
+the third judge and all LongTutor annotations; a later multiplicity amendment
+also preceded all semantic LongTutor results. Analyzer hashes and the technical-
+attrition amendment are retained in the audit trail.
 
 \section{Results}
 
@@ -281,6 +330,40 @@ human-gold diagnosis. Consequently only help directness reaches the disposition
 tier, below the two-dimension threshold. Figure~\ref{fig:semantic} shows how the
 frozen hierarchy prevents weaker dimensions from being promoted.
 
+\begin{table*}[t]
+  \centering
+  \small
+  \begin{tabular}{lrrrrl}
+    \toprule
+    \textbf{Dimension} & \textbf{ICC(3,k)} & \textbf{Task ICC} & \textbf{Median task $\rho$} & \textbf{Reversals} & \textbf{Highest retained tier} \\
+    \midrule
+    Help directness & .905 & .629 & .647 & 0 & validated disposition \\
+    Elicitation & .963 & .475 & .468 & 0 & reliable measurement \\
+    Autonomy support & .819 & .610 & .734 & 1 & none \\
+    Affective warmth & .937 & .479 & .714 & 3 & none \\
+    Diagnostic specificity & .924 & .203 & .371 & 1 & none \\
+    Personalization & .832 & .340 & .257 & 1 & none \\
+    Cognitive load & .855 & .663 & .677 & 0 & cross-task signature \\
+    Epistemic caution & .580 & .035 & .129 & 0 & none \\
+    \bottomrule
+  \end{tabular}
+  \caption{Every prespecified semantic dimension remains visible. Tiers are
+  cumulative: reliability or stability alone cannot establish a disposition.}
+  \label{tab:semantic-decisions}
+\end{table*}
+
+\subsection{Robustness and negative evidence}
+
+The result is not driven by a single favorable judge. Full-profile
+leave-one-judge correlations are .959--.962; same-family judge residuals are
+.001--.014 points and position ranges .075--.160, below the registered .25
+flags. Nor is a mean quality gain sufficient: semantic features add .015 mean
+AUC over transparent features but one held-out fold is $-.004$, so the quality
+gate fails. The 40-history semantic LongTutor subset also underperforms its
+exact-history diagnosis baseline (.744 versus .775), with no dimension surviving
+BH correction. These failures restrict Table~\ref{tab:semantic-decisions} to one
+disposition.
+
 \section{Discussion}
 
 The results favor a narrower object than model personality. Tutor policies recur
@@ -295,6 +378,19 @@ describes its default and resistance to steering; it is not itself a quality
 label. Runtime grounding such as PedRAG may provide a controller layer, but our
 telling failure implies that the retrieval or steering policy must condition on
 learner state rather than enforce one pedagogy uniformly.
+
+\section{Reproducibility and Release}
+
+The release contains analysis code, frozen derived tables, figures, exclusion
+rules, and a SHA-256 manifest, but no source responses or learner histories. A
+single command reruns the private-input semantic finalizer and blocks on coverage,
+claims, privacy structure, figures, syntax, or tests. Separately, a fresh checkout
+verified all frozen public paths and hashes. GitHub CI provisions Python 3.13 on
+a new Ubuntu runner, installs exact dependency versions, and repeats tests, 51
+registered claims, privacy auditing, figure rebuilding, and a clean-worktree
+check. This verifies the public package; it does not recreate private inputs or
+provider responses. The anonymous TeX build pins and hash-checks the official ACL
+style and produces a byte-stable PDF.
 
 \section{Conclusion}
 

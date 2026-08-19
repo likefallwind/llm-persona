@@ -689,13 +689,13 @@
     },
     {
       "path": "paper/submission/main.tex",
-      "bytes": 18413,
-      "sha256": "61ff9d8117277916bef8d45df24cdda8d1abb9edb7f028fc59dfb83e02f80819"
+      "bytes": 23619,
+      "sha256": "39d34215fe802c1041a0dcbf2081a1e3c45347c9532eeb1c5054e2e39c6acdf5"
     },
     {
       "path": "paper/submission/submission.pdf",
-      "bytes": 184328,
-      "sha256": "4264a0902169c7bba6990a75d7fb3e950c324af4ca4d314e595074bfad02b13e"
+      "bytes": 199486,
+      "sha256": "2e8a8123fe0fdc18426b0cdd396b7cad383557e034c731663d9f99edbd535cef"
     },
     {
       "path": "research/00_research_charter.md",
