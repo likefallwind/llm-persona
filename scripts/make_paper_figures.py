@@ -10,11 +10,90 @@ from pathlib import Path
 os.environ.setdefault("MPLCONFIGDIR", "/tmp/llm-persona-matplotlib")
 
 import matplotlib.pyplot as plt
+from matplotlib.colors import ListedColormap
 import numpy as np
 import pandas as pd
 
 
 COLORS = {"blue": "#0072B2", "orange": "#E69F00", "green": "#009E73", "red": "#D55E00"}
+
+
+def make_semantic_figure(root: Path, output: Path) -> None:
+    decision_path = root / "artifacts/submission_decision/dimension_decisions.csv"
+    effects_path = root / "artifacts/semantic_panel/prompt_effects.csv"
+    attribution_path = root / "artifacts/semantic_panel/heldout_task_model_attribution.csv"
+    if not all(path.is_file() for path in (decision_path, effects_path, attribution_path)):
+        return
+
+    decisions = pd.read_csv(decision_path)
+    effects = pd.read_csv(effects_path)
+    attribution = pd.read_csv(attribution_path)
+    short_names = {
+        "help_directness": "Help directness",
+        "elicitation": "Elicitation",
+        "autonomy_support": "Autonomy support",
+        "affective_warmth": "Warmth",
+        "diagnostic_specificity": "Diagnosis",
+        "personalization": "Personalization",
+        "cognitive_load": "Cognitive load",
+        "epistemic_caution": "Epistemic caution",
+    }
+
+    fig, axes = plt.subplots(1, 3, figsize=(11.0, 3.8), constrained_layout=True)
+    ax = axes[0]
+    gate_columns = [
+        "reliable_semantic_measurement",
+        "cross_task_semantic_signature",
+        "validated_pedagogical_disposition",
+    ]
+    matrix = decisions[gate_columns].astype(int).to_numpy()
+    ax.imshow(matrix, aspect="auto", vmin=0, vmax=1, cmap=ListedColormap(["#E5E5E5", COLORS["green"]]))
+    for row in range(matrix.shape[0]):
+        for column in range(matrix.shape[1]):
+            ax.text(column, row, "pass" if matrix[row, column] else "—", ha="center", va="center", fontsize=8)
+    ax.set_xticks(range(3), ["Reliable", "Signature", "Disposition"], rotation=18, ha="right")
+    ax.set_yticks(range(len(decisions)), [short_names[name] for name in decisions["dimension"]])
+    ax.set_title("A  Frozen decision ladder", loc="left", fontweight="bold")
+    ax.tick_params(length=0)
+
+    ax = axes[1]
+    selected = ["help_directness", "elicitation", "cognitive_load"]
+    summary = effects.groupby(["task", "dimension"])["mean_delta"].mean().unstack("task")
+    summary = summary.reindex(selected)
+    tasks = ["mathdial_standard", "mathdial_hard"]
+    x = np.arange(len(selected)); width = .36
+    ax.bar(x - width / 2, summary[tasks[0]], width, color=COLORS["blue"], label="Standard")
+    ax.bar(x + width / 2, summary[tasks[1]], width, color=COLORS["orange"], label="Hard")
+    ax.axhline(0, color="0.3", linewidth=.8)
+    ax.set_xticks(x, [short_names[name] for name in selected], rotation=18, ha="right")
+    ax.set_ylabel("Pedagogy minus generic score")
+    ax.set_title("B  Prompt intervention", loc="left", fontweight="bold")
+    ax.legend(frameon=False, ncol=2, loc="upper right")
+
+    ax = axes[2]
+    feature_order = ["length_only", "semantic", "transparent", "transparent_plus_semantic"]
+    labels = ["Length", "Semantic", "Transparent", "Combined"]
+    values = attribution.groupby("feature_set")["accuracy"].mean().reindex(feature_order)
+    colors = ["#999999", COLORS["green"], COLORS["blue"], COLORS["orange"]]
+    ax.bar(range(len(values)), values, color=colors, width=.68)
+    ax.axhline(1 / 6, color="0.35", linestyle="--", linewidth=1, label="Chance")
+    ax.set_xticks(range(len(values)), labels, rotation=18, ha="right")
+    ax.set_ylabel("Held-out-task model accuracy")
+    ax.set_ylim(0, max(values.max() * 1.18, .45))
+    ax.set_title("C  Semantic signal transports", loc="left", fontweight="bold")
+    ax.legend(frameon=False, loc="upper left")
+
+    for axis in axes[1:]:
+        axis.spines[["top", "right"]].set_visible(False)
+        axis.grid(axis="y", color="0.9", linewidth=.6, zorder=0)
+        axis.set_axisbelow(True)
+
+    fig.savefig(output / "semantic_findings.png", dpi=300, bbox_inches="tight")
+    fig.savefig(
+        output / "semantic_findings.pdf", bbox_inches="tight",
+        metadata={"CreationDate": None, "ModDate": None},
+    )
+    plt.close(fig)
 
 
 def main() -> None:
@@ -99,8 +178,12 @@ def main() -> None:
         axis.set_axisbelow(True)
 
     fig.savefig(output / "main_findings.png", dpi=300, bbox_inches="tight")
-    fig.savefig(output / "main_findings.pdf", bbox_inches="tight")
+    fig.savefig(
+        output / "main_findings.pdf", bbox_inches="tight",
+        metadata={"CreationDate": None, "ModDate": None},
+    )
     plt.close(fig)
+    make_semantic_figure(root, output)
     print(output / "main_findings.pdf")
 
 

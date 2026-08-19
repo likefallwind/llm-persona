@@ -1,14 +1,14 @@
-# LLM Pedagogical Dispositions
+# Pedagogical Policy Signatures in LLM Tutors
 
 This repository studies whether language models exhibit stable, task-general
 behavioral dispositions when acting in educational settings.  The central
 empirical asset is the set of model responses produced by the shared
 EduBenchmark evaluation harness.
 
-The project deliberately uses **pedagogical dispositions** rather than claiming
-that language models possess human personality.  A disposition is an observable,
-repeatable policy tendency (for example, giving a direct answer versus eliciting
-student reasoning) that:
+The project deliberately studies **pedagogical policy signatures** rather than
+claiming that language models possess human personality. A validated disposition
+is a narrower observable, repeatable policy tendency (for example, giving a
+direct answer versus eliciting student reasoning) that:
 
 1. survives controls for task, item difficulty, response length, and competence;
 2. generalizes to held-out educational tasks;
@@ -93,7 +93,7 @@ EDUBENCH_ROOT=/path/to/edubenchmark scripts/reproduce_completed.sh
 ```
 
 The command ends by running `scripts/verify_release_claims.py`, a machine-readable
-gate that checks 34 registered headline claims against the regenerated CSVs.  A
+gate that checks registered headline claims against the regenerated CSVs. A
 drifted count or effect fails the command rather than silently leaving stale
 prose.  Other descriptive values remain covered by the reproducibility manifest
 and ordinary manuscript review, not by an inaccurately broad automated claim.
@@ -106,13 +106,15 @@ exact analysis reproduction even when provider-side regeneration is not exact.
 The frozen external semantic-coding runner is `scripts/run_semantic_judge.py`.
 It exports sampled educational contexts and candidate responses to configured
 judge endpoints, so it must only be run after explicit authorization naming the
-payload and destinations.  That authorization has been obtained for the frozen
-three-judge panel; its active run is resumable and audited by hashes.  Once the
-coverage gate reaches 1,080/1,080, reproduce the confirmatory analysis with:
+payload and destinations. That authorization was obtained for the frozen
+three-judge panel. The formal complete-case analysis contains 1,074 annotations
+after the audited exclusion of one technically failed paired context (six
+ratings, 0.56%). Reproduce it with:
 
 ```bash
 python scripts/analyze_semantic_panel.py \
   --panel-dir artifacts/semantic_judge/full_v1 \
+  --exclusions research/semantic_panel_exclusions_v1.json \
   --features artifacts/pilot/behavior_features.csv \
   --dialogue-acts artifacts/dialogue_act_validity/generated_dialogue_acts.csv \
   --output-dir artifacts/semantic_panel
@@ -141,9 +143,8 @@ python scripts/evaluate_submission_decision.py \
 
 The last command applies the thresholds frozen in
 `research/11_submission_decision_rule.md` without dropping failed dimensions.
-The detached watcher runs the same sequence through
-`scripts/finalize_semantic_analysis.sh` only after the strict coverage and
-response-level completeness gates pass.
+`scripts/finalize_semantic_analysis.sh` runs the same sequence only after the
+strict exclusion-aware coverage and response-level completeness gates pass.
 
 `scripts/run_local_semantic_judge.py` keeps all text on the machine through
 Ollama; the current 8B/12B smoke tests are valid structurally but too slow and
@@ -168,8 +169,11 @@ tutoring-quality AUC by 0.023--0.031 under two judges, while length adds about
 finds prompt effects for all nine models but reveals a sharp failure on human
 `telling` targets.  On LongTutor, adaptive-teaching scores do not improve
 human-gold diagnosis prediction beyond exact-history difficulty, separating an
-adaptive presentation from accurate learner modeling.  These results support a
-pedagogical policy signature, not human personality.  The three-judge semantic
-panel remains completion-gated.  See `research/03_claim_evidence_matrix.md` and
-`research/04_red_team_review.md` for the claim boundary and remaining submission
-blockers.
+adaptive presentation from accurate learner modeling. The completed semantic
+panel adds a separate result: semantic features identify models on held-out
+educational tasks at 0.322 accuracy (0.167 chance) and reach 0.391 when combined
+with transparent features. Registered gates retain help directness and cognitive
+load as cross-task signatures, but only help directness as a validated
+disposition, forcing the policy-signature thesis. See
+`research/03_claim_evidence_matrix.md` and `research/04_red_team_review.md` for
+the claim boundary and remaining submission blockers.

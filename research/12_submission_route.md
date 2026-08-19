@@ -24,13 +24,14 @@ October deadline; revise for the January 2027 ARR route listed for ACL 2027.
 
 ## Evidence gates before upload
 
-1. The 1,080-call semantic panel and every response-level completeness invariant
-   pass; no partial result enters the paper.
+1. The exclusion-aware semantic panel passes at 1,074/1,074 eligible annotations,
+   2,148 responses, 17,184 consensus rows, and three judges per row; the 0.56%
+   paired technical attrition is reported.
 2. `evaluate_submission_decision.py` determines the title/thesis using the frozen
    hierarchy.  Fewer than two validated dimensions forces the policy-signature
    framing.
 3. A clean environment reproduces all non-semantic results and the completed
-   semantic finalizer; 34 registered headline claims, unit tests, privacy
+   semantic finalizer; all registered headline claims, unit tests, privacy
    structure, and manifest hashes pass.
 4. The paper names GenPT, the ITS context-ablation study, and tutor-persona/runtime
    control work as closest comparisons; it does not claim behavior-first

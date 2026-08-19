@@ -506,6 +506,9 @@ def render_report(
         f"Coverage: **{coverage['success']:,}/{coverage['expected']:,}** annotations; "
         f"**{consensus[['benchmark','item_id','model']].drop_duplicates().shape[0]:,}** response-level units; "
         f"**{len(DIMENSIONS)}** prespecified descriptive dimensions.", "",
+        f"The analysis retains **{coverage['analyzed_batches']}** of "
+        f"**{coverage['manifest_batches']}** frozen batches after the audited "
+        f"technical exclusion of **{coverage['excluded_batches']}** paired batches.", "",
         "Candidate identity was blinded independently for each judge. The confirmatory unit is the response-level median across judges. "
         "The labels are prespecified candidate behavioral dimensions, not human personality traits; only dimensions passing the reported validity gates are interpreted as dispositions.", "",
         "## Judge reliability", "", iccs.to_markdown(index=False, floatfmt=".3f"), "",

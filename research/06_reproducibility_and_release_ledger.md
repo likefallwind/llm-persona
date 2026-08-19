@@ -39,12 +39,14 @@ That would transmit a new payload class and requires a new disclosure.
 The semantic run is complete only if all hold:
 
 1. `sample_manifest.json` contains 360 unique batches;
-2. status reports 1,080 latest successful annotation IDs, zero current errors,
-   and zero invalid JSONL rows;
+2. the validated exclusion file removes exactly one failed prompt pair and status
+   reports 1,074/1,074 eligible successes, zero eligible errors, and zero invalid
+   JSONL rows;
 3. `run_state/main.exit` and `run_state/longtutor.exit` both equal zero;
 4. `run_state/finished` exists;
 5. the confirmatory analyzer runs without `--allow-incomplete`;
-6. every response consensus has exactly three distinct judges;
+6. all 2,148 retained responses have exactly three judges and yield 17,184
+   response-dimension consensus rows;
 7. saved derived tables contain no source context or candidate response text.
 
 `scripts/audit_release_privacy.py` enforces item 7 over every Git-eligible
@@ -66,6 +68,9 @@ or a substantive privacy assessment.
 - Model-level conclusions remain descriptive with six systems.
 - Intermediate single-judge results are kept outside the release path and ignored
   by version control.
+- `build_reproducibility_manifest.py` hashes only tracked or unignored eligible
+  files, so live annotations, logs, run state, bytecode caches, and credentials
+  cannot make a clean checkout's manifest unsatisfiable.
 - `research/05_semantic_analysis_plan.md` records which analyses were frozen
   before any second- or third-judge result was available.
 

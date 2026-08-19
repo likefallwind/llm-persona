@@ -17,9 +17,10 @@ negative-domain transfer; and requires policy features to add outcome prediction
 beyond exact-item and length baselines.  Policy+length adds 0.023--0.031 AUC while
 length alone adds about 0.002.
 
-**Still needed:** blinded semantic dimensions must show incremental validity after
-transparent and negative-domain profiles.  If they do not, the disposition claim
-must be withdrawn and the contribution reframed as steerable policy fingerprints.
+**Final evidence:** semantic features reach 0.322 held-out-task attribution and
+raise transparent-feature attribution from 0.353 to 0.391. The frozen hierarchy
+retains two cross-task signatures but only one validated disposition, so the
+manuscript uses the policy-signature framing rather than a disposition thesis.
 
 ### 2. “Six models cannot support psychometrics.”
 
@@ -88,11 +89,11 @@ judge, the same response bytes are scored, and the confirmatory analyzer reports
 judge residuals for own-family versus other candidates.  A separate human-
 preference calibration finds pairwise judge kappas of 0.614--0.719.
 
-**Still needed:** finish the active three-judge panel and inspect the prespecified
-judge × candidate-family interaction and leave-one-judge-out conclusions.  A local
-8B/12B smoke test produced valid JSON but confidence 1 and is not reliable enough
-to replace frontier judges; further local work is paused until a stronger server
-is available.
+**Final evidence:** leave-one-judge profile Spearman is 0.959--0.962. Mean
+same-family residuals are 0.001--0.014 points and candidate-position ranges are
+0.075--0.160, below registered flags. A local 8B/12B smoke test remains too
+low-confidence to replace the three frontier judges; further local work is paused
+until a stronger server is available.
 
 ### 6. “The family analysis is underpowered and causally uninterpretable.”
 
@@ -156,9 +157,11 @@ residuals are audited on the identical response.  The main claims concern
 within-context model differences and paired prompt movement, for which a shared
 slate is partly advantageous.
 
-**Still needed:** report marginal score distributions and ceiling/floor rates by
-task and judge.  Do not claim absolute score calibration across benchmarks.  A
-future isolated-response subsample would be needed to quantify slate effects.
+**Final evidence:** marginal score distributions, entropy, and ceiling/floor
+rates are reported by task and judge. Socratic contexts expose several floor or
+ceiling scales, and epistemic caution fails reliability. Absolute calibration
+across benchmarks is not claimed; a future isolated-response subsample is still
+needed to quantify slate effects.
 
 ### 10. “The models are a convenience panel, not a population sample.”
 
@@ -228,19 +231,43 @@ elicits behavior inside a psychometric instrument; the ITS study tests context
 sensitivity in 75 scenarios; PedRAG evaluates a control architecture in 144
 simulated sessions.
 
-**Still needed:** retain the explicit closest-work table and never use
-“first behavior-based LLM personality study.”  If the semantic panel fails, the
-negative construct-validity result must remain the contribution rather than
-being hidden behind a renamed trait.
+**Final evidence:** the explicit closest-work comparison is retained and the
+paper never claims the first behavior-based LLM personality study. The semantic
+panel partially succeeds but fails the multi-disposition title gate; that mixed
+outcome is reported rather than hidden behind a renamed trait.
+
+### 14. “The technical exclusion is a post-hoc way to rescue completeness.”
+
+**Why it is serious:** one DeepSeek annotation failed after the other panel data
+already existed. A flexible exclusion or replacement could select a favorable
+effect or silently change the frozen sample.
+
+**Current answer:** the failure produced no score: two rounds returned empty
+content and a transport-only fallback surfaced HTTP 500. Before formal analysis
+and without consulting the affected pair's scores, the failed generic batch and
+its prespecified pedagogy counterpart were excluded for every judge. No prompt,
+route, or replacement context changed. The executable exclusion file is checked
+against the frozen manifest and removes exactly 2/360 batches and 6/1,080 ratings
+(0.56%), leaving a rectangular 1,074-annotation panel. The paper and appendix
+report the attrition.
+
+**Residual threat:** the amendment is not prospective preregistration. A reviewer
+can reasonably prefer a fully rerunnable provider or an independently replicated
+panel; the correct response is transparency and sensitivity analysis, not a claim
+that the technical failure is ignorable by design.
 
 ## Decision after red-team review
 
-The present work is not yet “毫无争议” top-tier-ready.  It now has two complementary
-core results: policy behavior adds held-out-model quality prediction beyond exact-
-item and length controls, and the intervention changes an independently inferred
-human teacher action in the same direction across all nine models and three
-classifiers.  The telling-action failure makes the contribution less promotional
-and more scientifically informative.  Construct validity and downstream learning
-validity remain incomplete.  The next go/no-go gate is the blinded semantic panel.
-If it collapses to surface features or varies substantially by judge, the correct
-conclusion is still steerable policy fingerprints, not stable dispositions.
+The completed evidence is strong enough for a main-conference NLP measurement and
+falsification submission, subject to clean-room reproduction and final editorial
+review. The semantic panel is reliable across judges and adds held-out-task signal
+beyond transparent features, but the frozen decision rule retains only help
+directness and cognitive load as cross-task signatures and only help directness as
+a validated disposition. The correct thesis is therefore *pedagogical policy
+signatures*, not human personality or a general disposition inventory.
+
+The paper is not ready for a broad education or general-science journal claim:
+neither existing nor semantic teaching measures improve human-gold learner
+diagnosis beyond exact-history controls, and no prospective learner outcome is
+available. This negative boundary is a central result, not a blocker to the
+narrower NLP contribution.

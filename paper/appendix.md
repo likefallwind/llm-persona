@@ -1,8 +1,7 @@
 # Supplementary methods and audit tables
 
-This appendix accompanies *Beyond Personality and Fingerprints*.  It reports
-design and audit details that do not fit the main paper.  Confirmatory semantic
-numbers remain intentionally absent until the 1,080/1,080 gate passes.
+This appendix accompanies *Beyond Personality and Fingerprints*. It reports
+design and audit details that do not fit the main paper.
 
 ## A. Units of analysis and dependence
 
@@ -110,11 +109,18 @@ The eight descriptive 1--5 dimensions are help directness, elicitation, autonomy
 support, affective warmth, diagnostic specificity, personalization, cognitive
 load, and epistemic caution.  The runner is append-only and resumable by
 annotation ID.  A nonblocking file lock prevents future concurrent writers.
-Confirmatory analysis is impossible unless the latest state has:
+One DeepSeek annotation remained unavailable after three rounds of three
+attempts: two streaming rounds returned empty visible content, and a
+transport-only non-streaming fallback surfaced HTTP 500. Before formal analysis
+and without consulting the pair's scores, we excluded the failed generic batch
+and its prespecified pedagogy counterpart for all three judges. The executable
+rule is `research/semantic_panel_exclusions_v1.json`; no replacement item or
+alternate judge route was used. Confirmatory analysis is impossible unless the
+latest retained state has:
 
-1. 1,080 successful annotation IDs and zero current errors/invalid lines;
+1. 1,074 successful eligible annotation IDs and zero eligible errors/invalid lines;
 2. six candidates per context-arm batch;
-3. 2,160 unique response units and 17,280 response-dimension consensus rows; and
+3. 2,148 unique response units and 17,184 response-dimension consensus rows; and
 4. exactly three distinct judges for every consensus row.
 
 All eight dimensions remain in the report.  Reliability, scale range,
@@ -123,6 +129,14 @@ semantic attribution, prompt direction, action convergence, quality increment,
 LongTutor human-gold diagnosis, judge-family residuals, and candidate-position
 effects are saved as separate tables.  The frozen decision hierarchy can
 downgrade the paper to policy signatures; no failed dimension is deleted.
+
+The final decision retained help directness, elicitation, and cognitive load as
+reliable measurements. Help directness and cognitive load passed the cross-task
+signature tier; only help directness passed an independent disposition criterion.
+Because fewer than two dimensions reached that tier, the registered title rule
+selected the policy-signature framing. Semantic held-out-task attribution is
+0.322 from semantic features alone and 0.391 when combined with transparent
+features, versus 0.167 chance.
 
 ## G. Reproduction and release
 

@@ -35,6 +35,16 @@ hypothesis, threshold, or result-selection rule changed.  The amended analyzer
 SHA-256 is
 `aefa19fc3a7f99c2acb73b73745381bfa3594247fe327351035bf7591e626459`.
 
+Technical-attrition amendment: after the 360-batch run finished, one DeepSeek
+annotation remained unobtainable across three rounds of three attempts. The first
+two rounds returned empty content; a same-model, same-prompt non-streaming
+transport fallback surfaced HTTP 500. Before formal confirmatory analysis and
+without consulting the affected pair's scores, the failed generic batch and its
+prespecified pedagogy counterpart were excluded for all judges. The executable
+rule is `research/semantic_panel_exclusions_v1.json` and the rationale is recorded
+in `research/13_semantic_attrition_amendment.md`. This leaves 358 batches, 1,074
+annotations, 2,148 responses, and 17,184 consensus rows.
+
 ## Units and reduction
 
 - A judge call codes all six candidate responses for one sampled context.
@@ -49,9 +59,10 @@ SHA-256 is
 
 ## Prespecified analyses
 
-1. **Coverage gate.** No confirmatory report unless all 1,080 planned judge ×
-   context annotations succeed with valid eight-dimension JSON.  Retries remain
-   in the append-only log; only the latest success determines coverage.
+1. **Coverage gate.** No confirmatory report unless all 1,074 exclusion-eligible
+   judge × context annotations succeed with valid eight-dimension JSON. Retries
+   remain in the append-only log; only the latest success determines coverage,
+   and the exclusion file must validate against the original 360-batch manifest.
 2. **Judge reliability.** For every dimension report pairwise exact agreement,
    within-one agreement, Spearman correlation, quadratic weighted kappa,
    ICC(3,1), and ICC(3,k).  Do not silently discard low-variance dimensions.

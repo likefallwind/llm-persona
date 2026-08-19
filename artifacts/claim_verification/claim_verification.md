@@ -38,3 +38,20 @@ Overall: **PASS**
 | LongTutor teaching-dimensions diagnosis AUC | `0.816` | `0.816` | yes |
 | LongTutor teaching-mean diagnosis AUC | `0.817` | `0.817` | yes |
 | LongTutor evidence RMSE invariant at reported precision | `[0.187]` | `[0.187]` | yes |
+| semantic analyzed batches | `358` | `358` | yes |
+| semantic eligible annotations | `1074` | `1074` | yes |
+| semantic successful annotations | `1074` | `1074` | yes |
+| semantic response units | `2148` | `2148` | yes |
+| semantic consensus rows have three judges | `17184` | `17184` | yes |
+| reliable semantic dimensions | `['help_directness', 'elicitation', 'cognitive_load']` | `['help_directness', 'elicitation', 'cognitive_load']` | yes |
+| cross-task signature dimensions | `['help_directness', 'cognitive_load']` | `['help_directness', 'cognitive_load']` | yes |
+| validated disposition dimensions | `['help_directness']` | `['help_directness']` | yes |
+| frozen recommended thesis | `pedagogical_policy_signatures` | `pedagogical_policy_signatures` | yes |
+| semantic held-out-task attribution | `0.322` | `0.322` | yes |
+| combined held-out-task attribution | `0.391` | `0.391` | yes |
+| minimum leave-one-judge profile Spearman | `0.959` | `0.959` | yes |
+| telling help-directness contrast | `1.36` | `1.36` | yes |
+| semantic prompt deltas standard | `[-1.709, 2.47, -0.759]` | `[-1.709, 2.47, -0.759]` | yes |
+| semantic prompt deltas hard | `[-1.542, 2.171, -0.721]` | `[-1.542, 2.171, -0.721]` | yes |
+| semantic diagnosis AUC item-only | `0.775` | `0.775` | yes |
+| semantic diagnosis AUC all dimensions | `0.744` | `0.744` | yes |

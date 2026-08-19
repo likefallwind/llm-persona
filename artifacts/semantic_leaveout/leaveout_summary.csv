@@ -1,0 +1,4 @@
+excluded_judge,profile_spearman_vs_full,prompt_cells,prompt_sign_reversals,max_absolute_prompt_delta_change,mean_absolute_prompt_delta_change
+MiniMax-M3,0.9613500960471127,96,3,0.36250000000000004,0.08511834124472574
+deepseek-v4-pro,0.9617320228126222,96,2,0.2721518987341772,0.08555676424050633
+glm-5.2,0.9592036049554128,96,1,0.2215189873417721,0.07711300105485235

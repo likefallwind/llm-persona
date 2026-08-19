@@ -1,7 +1,7 @@
 # Dataset and release card
 
-Snapshot: 2026-08-19.  This card covers the evidence used by the pedagogical
-disposition study, not every benchmark present in EduBenchmark.
+Snapshot: 2026-08-19. This card covers the evidence used by the pedagogical
+policy-signature study, not every benchmark present in EduBenchmark.
 
 ## Dataset composition
 
@@ -49,8 +49,10 @@ text-free even after the external calls finish.
 - Core comparisons require the same item ID for all six models.
 - Role membership is frozen in `data/benchmark_roles.json`; judge-only tasks are
   never treated as tutor behavior.
-- The external semantic sample is deterministic under seed `20260819` and is
-  complete only at 360 unique batches and 1,080 latest successful annotations.
+- The external semantic sample is deterministic under seed `20260819`. One
+  technically failed prompt pair is excluded across all judges by the frozen
+  `research/semantic_panel_exclusions_v1.json`, leaving 358 batches, 2,148
+  responses, and 1,074/1,074 eligible annotations.
 - Ambiguous or unmatched MathDial action targets are excluded before generated
   model outcomes are examined.
 - The LongTutor objective analysis uses 1,000 histories shared by all six models;

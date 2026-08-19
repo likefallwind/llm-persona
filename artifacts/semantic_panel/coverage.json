@@ -1,0 +1,10 @@
+{
+  "manifest_batches": 360,
+  "excluded_batches": 2,
+  "analyzed_batches": 358,
+  "expected": 1074,
+  "success": 1074,
+  "missing": 0,
+  "errors": 0,
+  "invalid_jsonl": 0
+}

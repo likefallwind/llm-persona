@@ -18,6 +18,20 @@ Frozen analyzer hashes:
 | `analyze_semantic_objective_validity.py` | `9810c8f9425c029d05254a94add97d2595efa01f91b80d7dcb4cc2661a4e7e08` |
 | `evaluate_submission_decision.py` | `deb14346686160ce6a01ed8844c050fb595ff73ca28c82aaea76e05c4c2b0a89` |
 
+The historical analyzer hash above identifies the prospective decision freeze.
+After the provider failure documented in
+`research/13_semantic_attrition_amendment.md`, only exclusion-aware coverage and
+row-count plumbing changed; no threshold, estimand, or decision branch changed.
+The implementation used for the formal result is pinned below:
+
+| Attrition-aware component | SHA-256 |
+|---|---|
+| `analyze_semantic_panel.py` | `dc14ebdfb5d4b03ed3aa6ae4aba8e2ad5639193da481b401c7d5aecaeb5983b8` |
+| `semantic_judge_status.py` | `a115af013f9054a373d3c9814432054717a90d4622d0baf8eae568b44aa6c2aa` |
+| `semantic_panel_exclusions.py` | `e12a820f0d230ba45621529a6d6e92d6b925974821f5e24b60ce77a2e8ea502f` |
+| `semantic_panel_exclusions_v1.json` | `90c2eaefa8127d4199300f00b58d13f00585abf97baec27ac2b67d1fc66241fa` |
+| `evaluate_submission_decision.py` | `deb14346686160ce6a01ed8844c050fb595ff73ca28c82aaea76e05c4c2b0a89` |
+
 Implementation note frozen at 640/1,080 successful annotations, before any
 DeepSeek-V4-Pro or LongTutor annotation was available: the executable decision
 gate applies the model-variance interval requirement to **every** sampled

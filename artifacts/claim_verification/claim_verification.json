@@ -221,6 +221,142 @@
         0.187
       ],
       "passed": true
+    },
+    {
+      "claim": "semantic analyzed batches",
+      "observed": 358,
+      "expected": 358,
+      "passed": true
+    },
+    {
+      "claim": "semantic eligible annotations",
+      "observed": 1074,
+      "expected": 1074,
+      "passed": true
+    },
+    {
+      "claim": "semantic successful annotations",
+      "observed": 1074,
+      "expected": 1074,
+      "passed": true
+    },
+    {
+      "claim": "semantic response units",
+      "observed": 2148,
+      "expected": 2148,
+      "passed": true
+    },
+    {
+      "claim": "semantic consensus rows have three judges",
+      "observed": 17184,
+      "expected": 17184,
+      "passed": true
+    },
+    {
+      "claim": "reliable semantic dimensions",
+      "observed": [
+        "help_directness",
+        "elicitation",
+        "cognitive_load"
+      ],
+      "expected": [
+        "help_directness",
+        "elicitation",
+        "cognitive_load"
+      ],
+      "passed": true
+    },
+    {
+      "claim": "cross-task signature dimensions",
+      "observed": [
+        "help_directness",
+        "cognitive_load"
+      ],
+      "expected": [
+        "help_directness",
+        "cognitive_load"
+      ],
+      "passed": true
+    },
+    {
+      "claim": "validated disposition dimensions",
+      "observed": [
+        "help_directness"
+      ],
+      "expected": [
+        "help_directness"
+      ],
+      "passed": true
+    },
+    {
+      "claim": "frozen recommended thesis",
+      "observed": "pedagogical_policy_signatures",
+      "expected": "pedagogical_policy_signatures",
+      "passed": true
+    },
+    {
+      "claim": "semantic held-out-task attribution",
+      "observed": 0.322,
+      "expected": 0.322,
+      "passed": true
+    },
+    {
+      "claim": "combined held-out-task attribution",
+      "observed": 0.391,
+      "expected": 0.391,
+      "passed": true
+    },
+    {
+      "claim": "minimum leave-one-judge profile Spearman",
+      "observed": 0.959,
+      "expected": 0.959,
+      "passed": true
+    },
+    {
+      "claim": "telling help-directness contrast",
+      "observed": 1.36,
+      "expected": 1.36,
+      "passed": true
+    },
+    {
+      "claim": "semantic prompt deltas standard",
+      "observed": [
+        -1.709,
+        2.47,
+        -0.759
+      ],
+      "expected": [
+        -1.709,
+        2.47,
+        -0.759
+      ],
+      "passed": true
+    },
+    {
+      "claim": "semantic prompt deltas hard",
+      "observed": [
+        -1.542,
+        2.171,
+        -0.721
+      ],
+      "expected": [
+        -1.542,
+        2.171,
+        -0.721
+      ],
+      "passed": true
+    },
+    {
+      "claim": "semantic diagnosis AUC item-only",
+      "observed": 0.775,
+      "expected": 0.775,
+      "passed": true
+    },
+    {
+      "claim": "semantic diagnosis AUC all dimensions",
+      "observed": 0.744,
+      "expected": 0.744,
+      "passed": true
     }
   ]
 }

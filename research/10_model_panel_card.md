@@ -48,11 +48,12 @@ of the original API bytes is not.  See
 
 ## Semantic judge panel
 
-MiniMax-M3, GLM-5.2, and DeepSeek-V4-Pro independently rate every frozen
-context.  Candidate identities are replaced by independently shuffled blind
-letters for each judge and context.  The primary unit is the response-level
-median across all three judges; no confirmatory result is emitted unless each of
-the 2,160 responses has three distinct judge ratings.
+MiniMax-M3, GLM-5.2, and DeepSeek-V4-Pro independently rate every retained
+context. Candidate identities are replaced by independently shuffled blind
+letters for each judge and context. The primary unit is the response-level
+median across all three judges. One technically failed prompt pair is excluded
+for every judge under the frozen attrition amendment; no confirmatory result is
+emitted unless each of the remaining 2,148 responses has three distinct ratings.
 
 Judge competence is calibrated on 482 existing expert preference pairs shown in
 both candidate orders.  Individual agreement with expert preference is

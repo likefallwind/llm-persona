@@ -27,10 +27,12 @@ three planned semantic judges achieve 0.817--0.844 agreement and 0.900--0.919
 position consistency, although their majority does not improve on the best judge.
 In leave-one-model-out prediction with exact item fixed
 effects, policy features improve tutoring-quality AUC by 0.023--0.031 over an item
-baseline, whereas length adds only 0.002.  These results support stable and
-steerable pedagogical policy signatures, not human-like personality, and reveal a
-cost of one-size-fits-all tutoring prompts.  Blinded semantic and downstream-
-learning validation remain required before this abstract is submission-ready.
+baseline, whereas length adds only 0.002. In the completed blind panel, semantic
+features identify models on held-out tasks at 0.322 accuracy and reach 0.391 with
+transparent features. Registered gates retain help directness and cognitive load
+as signatures, but only help directness as a disposition. These results support
+stable and steerable pedagogical policy signatures, not human-like personality,
+and reveal a cost of one-size-fits-all tutoring prompts.
 
 ## Research questions
 
@@ -59,8 +61,8 @@ learning validation remain required before this abstract is submission-ready.
    calibration for all three planned semantic judges.
 6. **Human-action validity:** three classifier variants, 54/54 positive overall
    prompt contrasts, and the telling-action collapse.
-7. **Semantic validation (pending):** dimension reliability, task generalization,
-   intervention movement, and leave-judge-out/self-family sensitivity.
+7. **Semantic validation:** decision ladder, paired semantic intervention,
+   held-out-task attribution, and leave-judge-out/self-family sensitivity.
 
 ## Confirmatory statistical spine
 
@@ -90,9 +92,9 @@ learning validation remain required before this abstract is submission-ready.
 
 ## Target positioning
 
-The current empirical core is plausible for ACL/EMNLP/NAACL main-conference review
-if the pending semantic and independent-criterion tests succeed.  A Nature-family
-or similarly broad journal claim would additionally require externally meaningful
-learning outcomes, a substantially larger and version-controlled model panel, and
-preferably prospective student interaction evidence.  Dataset volume alone does
-not bridge that gap.
+The completed empirical core is scoped for ACL-family main-conference review as a
+measurement and falsification paper, subject to clean-room reproduction and final
+editorial review. A Nature-family or similarly broad journal claim would
+additionally require externally meaningful learning outcomes, a substantially
+larger and version-controlled model panel, and preferably prospective student
+interaction evidence. Dataset volume alone does not bridge that gap.

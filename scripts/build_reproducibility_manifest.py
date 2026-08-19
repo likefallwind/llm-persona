@@ -9,6 +9,7 @@ import importlib.metadata
 import json
 import platform
 from pathlib import Path
+import subprocess
 
 
 PACKAGES = ("numpy", "pandas", "scipy", "scikit-learn", "statsmodels", "matplotlib", "seaborn")
@@ -22,25 +23,40 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def git_eligible_files(root: Path, includes: list[str]) -> list[Path]:
+    """Return tracked or untracked-not-ignored files under the requested roots."""
+    completed = subprocess.run(
+        [
+            "git", "-C", str(root), "ls-files", "--cached", "--others",
+            "--exclude-standard", "-z", "--", *includes,
+        ],
+        check=True,
+        capture_output=True,
+    )
+    relative_paths = [
+        Path(raw.decode("utf-8", errors="surrogateescape"))
+        for raw in completed.stdout.split(b"\0") if raw
+    ]
+    return sorted({(root / path).resolve() for path in relative_paths})
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--root", type=Path, required=True)
     parser.add_argument("--include", nargs="+", required=True)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
+    root = args.root.resolve()
     output = args.output.resolve()
     files = []
-    for relative in args.include:
-        target = (args.root / relative).resolve()
-        candidates = [target] if target.is_file() else sorted(path for path in target.rglob("*") if path.is_file())
-        for path in candidates:
-            if path == output or path.name == "finalize.log" or "run_state" in path.parts:
-                continue
-            files.append({
-                "path": str(path.relative_to(args.root.resolve())),
-                "bytes": path.stat().st_size,
-                "sha256": sha256(path),
-            })
+    for path in git_eligible_files(root, args.include):
+        if path == output or not path.is_file():
+            continue
+        files.append({
+            "path": str(path.relative_to(root)),
+            "bytes": path.stat().st_size,
+            "sha256": sha256(path),
+        })
     manifest = {
         "schema_version": 1,
         "python": platform.python_version(),

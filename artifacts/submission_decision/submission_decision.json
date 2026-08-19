@@ -1,0 +1,20 @@
+{
+  "dimensions": 8,
+  "reliable_dimensions": [
+    "help_directness",
+    "elicitation",
+    "cognitive_load"
+  ],
+  "signature_dimensions": [
+    "help_directness",
+    "cognitive_load"
+  ],
+  "validated_disposition_dimensions": [
+    "help_directness"
+  ],
+  "recommended_thesis": "pedagogical_policy_signatures",
+  "contextual_oversteering_semantic_claim_eligible": true,
+  "main_conference_finite_panel_claim_eligible": true,
+  "broad_learning_effectiveness_claim_eligible": false,
+  "broad_learning_effectiveness_blocker": "No prospective learner study or independently validated simulator with objective pre/post outcomes."
+}

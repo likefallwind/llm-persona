@@ -1,8 +1,7 @@
 # Beyond Personality and Fingerprints: Behavioral Evidence for Pedagogical Policy Signatures in AI Tutors
 
-> Working draft.  Bracketed semantic-panel fields are intentionally unresolved
-> until the 1,080/1,080 completeness gate passes.  Supplementary design and
-> audit details are in `appendix.md`.
+> Working draft. Supplementary design, technical attrition, and audit details
+> are in `appendix.md`.
 
 ## Abstract
 
@@ -25,8 +24,12 @@ features improve leave-one-model-out tutoring-quality AUC by 0.023--0.031 beyond
 exact-item controls, whereas length adds about 0.002.  Conversely, on 6,000
 LongTutor model--history pairs, adaptive-teaching scores do not improve human-gold
 diagnosis or reference-grounded historical-evidence prediction beyond exact-history difficulty.
-[INSERT COMPLETE THREE-JUDGE SEMANTIC RESULTS.]  The evidence supports stable and
-steerable pedagogical policy signatures in this finite model panel, not human-like
+In a blinded panel of 1,074 complete judge--batch annotations, semantic features
+identify models on held-out educational tasks at 0.322 accuracy and reach 0.391
+when combined with transparent features; prespecified gates retain help
+directness and cognitive load as cross-task signatures, but only help directness
+as a validated disposition. The evidence supports stable and steerable
+pedagogical policy signatures in this finite model panel, not human-like
 personality, and exposes both a cost of universal questioning prompts and a gap
 between adaptive-sounding instruction and accurate learner modeling.
 
@@ -223,8 +226,12 @@ independently randomized for each judge and batch.  Confirmatory response scores
 are judge medians.  The analysis reports ordinal agreement, exact-context model
 variance, generic-task stability, held-out-task attribution, paired prompt
 effects, same-family judge residuals, leave-one-judge-out sensitivity, quality
-increment, and convergence with dialogue actions.  The report is blocked unless
-all 1,080 annotations succeed.
+increment, and convergence with dialogue actions. The report is blocked unless
+every retained batch has all three annotations. One generic batch repeatedly
+failed at the DeepSeek gateway; before formal analysis and without consulting the
+pair's scores, we excluded that batch and its prespecified pedagogy counterpart
+for all judges. The complete-case panel therefore contains 358 batches, 2,148
+responses, and 1,074 annotations (0.56% technical attrition).
 
 ## 5 Results
 
@@ -320,7 +327,49 @@ ensemble is therefore not human ground truth.
 
 ### 5.7 Confirmatory semantic results
 
-[INSERT ONLY AFTER `coverage.json` REPORTS 1080 SUCCESSES AND ZERO ERRORS.]
+The complete-case panel contains 1,074/1,074 annotations and 2,148 response
+units, with exactly three judges per response. Multi-judge reliability is high
+for help directness (ICC(3,k)=0.905), elicitation (0.963), and cognitive load
+(0.855); epistemic caution fails the registered reliability threshold (0.580).
+Full-profile conclusions are insensitive to dropping one judge (Spearman
+0.959--0.962). Candidate-family residuals average 0.001--0.014 points by judge,
+and mean position ranges are 0.075--0.160 points, providing no registered bias
+flag.
+
+Semantic dimensions carry transportable model signal. Held-out-task model
+attribution reaches 0.322 from semantic scores alone, compared with 0.167 chance,
+0.239 from length, and 0.353 from transparent features. Combining transparent
+and semantic features reaches 0.391. Under the frozen hierarchy, help
+directness (cross-task ICC 0.629; median pairwise task Spearman 0.647) and
+cognitive load (0.663; 0.677) qualify as cross-task signatures. Elicitation is
+reliable but misses stability (0.475; 0.468); the remaining dimensions fail at
+least one reliability, variance, or stability gate.
+
+The paired intervention supplies a semantic manipulation check. Averaged over
+six models, pedagogy prompting reduces help directness by 1.709 points in
+standard and 1.542 in hard contexts, increases elicitation by 2.470 and 2.171,
+and reduces cognitive load by 0.759 and 0.721. These directions survive every
+leave-one-judge analysis for the reliable dimensions. Independently inferred
+`telling` responses score 1.360 points higher in help directness than
+`probing/focus`, so help directness passes the registered prompt--action
+convergence criterion. Semantic scores add 0.015 mean quality AUC but fail fold
+consistency (minimum gain -0.004), and no dimension survives BH correction
+against human-gold LongTutor diagnosis. All-semantic diagnosis prediction is
+worse than exact-history controls (AUC 0.744 versus 0.775).
+
+Consequently, only help directness meets the disposition rule, below the
+two-dimension threshold for a disposition thesis. The executable decision
+therefore selects *pedagogical policy signatures*. This outcome is not a null:
+it identifies two cross-task semantic signatures while preventing six weaker
+dimensions from being promoted by reliability or prompt sensitivity alone.
+
+![Confirmatory semantic measurement, intervention, and attribution results.](figures/semantic_findings.png)
+
+*Figure 2: (A) the frozen decision ladder retains two semantic signatures and one
+validated disposition; cells show pass/fail at each cumulative tier. (B) the
+shared pedagogy instruction sharply decreases help directness and cognitive load
+while increasing elicitation in both paired task sets. (C) semantic dimensions
+identify models above chance on held-out tasks and add to transparent features.*
 
 ## 6 Discussion
 
@@ -333,9 +382,11 @@ modeling.
 
 This decomposition changes system design.  A product should not choose one
 globally “good tutor persona.”  It should estimate the learner state, select an
-appropriate action, and then realize that action in language.  Behavioral
-dispositions matter because they reveal a model's default policy and resistance to
-steering, but they are inputs to a controller rather than quality labels.
+appropriate action, and then realize that action in language. Policy signatures
+matter because they reveal a model's default policy and resistance to steering,
+but they are inputs to a controller rather than quality labels. The single
+validated help-directness disposition is evidence for the hierarchy, not
+permission to generalize the label to all eight dimensions.
 Runtime behavioral grounding such as PedRAG is one possible controller layer;
 our telling-action failure suggests that its retrieval policy must condition on
 learner state rather than enforce one pedagogical theory uniformly.

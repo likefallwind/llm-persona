@@ -108,6 +108,48 @@ def main() -> None:
     check("LongTutor teaching-mean diagnosis AUC", rounded(diagnosis_auc["teaching_mean"]), 0.817)
     check("LongTutor evidence RMSE invariant at reported precision", sorted({rounded(value) for value in evidence_rmse}), [0.187])
 
+    semantic_coverage = json.loads((root / "artifacts/semantic_panel/coverage.json").read_text())
+    check("semantic analyzed batches", semantic_coverage["analyzed_batches"], 358)
+    check("semantic eligible annotations", semantic_coverage["expected"], 1074)
+    check("semantic successful annotations", semantic_coverage["success"], 1074)
+    consensus = pd.read_csv(root / "artifacts/semantic_panel/response_consensus.csv")
+    response_units = consensus[["benchmark", "item_id", "model", "response_sha256"]].drop_duplicates()
+    check("semantic response units", len(response_units), 2148)
+    check("semantic consensus rows have three judges", int((consensus["judge_count"] == 3).sum()), len(consensus))
+
+    semantic_decision = json.loads((root / "artifacts/submission_decision/submission_decision.json").read_text())
+    check("reliable semantic dimensions", semantic_decision["reliable_dimensions"], ["help_directness", "elicitation", "cognitive_load"])
+    check("cross-task signature dimensions", semantic_decision["signature_dimensions"], ["help_directness", "cognitive_load"])
+    check("validated disposition dimensions", semantic_decision["validated_disposition_dimensions"], ["help_directness"])
+    check("frozen recommended thesis", semantic_decision["recommended_thesis"], "pedagogical_policy_signatures")
+
+    semantic_attribution = pd.read_csv(root / "artifacts/semantic_panel/heldout_task_model_attribution.csv")
+    semantic_attribution = semantic_attribution.groupby("feature_set")["accuracy"].mean()
+    check("semantic held-out-task attribution", rounded(semantic_attribution["semantic"]), 0.322)
+    check("combined held-out-task attribution", rounded(semantic_attribution["transparent_plus_semantic"]), 0.391)
+    leaveout = pd.read_csv(root / "artifacts/semantic_leaveout/leaveout_summary.csv")
+    check("minimum leave-one-judge profile Spearman", rounded(leaveout["profile_spearman_vs_full"].min()), 0.959)
+
+    semantic_acts = pd.read_csv(root / "artifacts/semantic_panel/dialogue_act_semantic_contrasts.csv").set_index("dimension")
+    check("telling help-directness contrast", rounded(semantic_acts.loc["help_directness", "telling_minus_probing_or_focus"]), 1.360)
+    semantic_effects = pd.read_csv(root / "artifacts/semantic_panel/prompt_effects.csv")
+    semantic_effects = semantic_effects.groupby(["task", "dimension"])["mean_delta"].mean()
+    check(
+        "semantic prompt deltas standard",
+        [rounded(semantic_effects[("mathdial_standard", dimension)]) for dimension in ("help_directness", "elicitation", "cognitive_load")],
+        [-1.709, 2.470, -0.759],
+    )
+    check(
+        "semantic prompt deltas hard",
+        [rounded(semantic_effects[("mathdial_hard", dimension)]) for dimension in ("help_directness", "elicitation", "cognitive_load")],
+        [-1.542, 2.171, -0.721],
+    )
+
+    semantic_objective = pd.read_csv(root / "artifacts/semantic_objective_validity/heldout_model_objective_prediction.csv")
+    semantic_objective = semantic_objective[semantic_objective["outcome"] == "diagnosis_correct"].groupby("feature_set")["auc"].mean()
+    check("semantic diagnosis AUC item-only", rounded(semantic_objective["item_only"]), 0.775)
+    check("semantic diagnosis AUC all dimensions", rounded(semantic_objective["all_semantic"]), 0.744)
+
     output_dir.mkdir(parents=True, exist_ok=True)
     result = {
         "schema_version": 1,
