@@ -110,6 +110,10 @@ al. (2026) learn activation directions for tutor-specific variation from human
 dialogue.  More broadly, persona and steering work asks whether a predefined
 policy can be induced; we ask first whether deployed systems show recurring
 default differences and how a shared prompt intervention changes them.
+IHEval reports sharp degradation when instruction priorities conflict (Zhang et
+al., 2025). Whether an explicit learner request survives system-level policy
+clauses is therefore an instruction-hierarchy test, not evidence of empathy,
+learner understanding, or pedagogical appropriateness.
 
 Borchers and Shou (2025) ablate learner-context fields in 75 ITS scenarios and
 find that three LLMs only marginally reproduce ITS adaptivity, while a validated
