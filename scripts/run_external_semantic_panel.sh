@@ -35,8 +35,8 @@ rm -f \
   "$STATE/finalize.started" "$STATE/finalize.finished" "$STATE/finalize.exit"
 
 run_phase() {
-  local name="$1"
-  local filter="$2"
+  local name="${1:?phase name is required}"
+  : "${2:?benchmark selector is required}"
   date -Is > "$STATE/${name}.started"
   "$PY" "$RUNNER" \
     --inventory "$INVENTORY" \
@@ -51,7 +51,7 @@ run_phase() {
     --gateway-concurrency 8 \
     --timeout 600 \
     --retries 3 \
-    --run-benchmarks "$filter"
+    --run-benchmarks "$2"
   local code=$?
   printf '%s\n' "$code" > "$STATE/${name}.exit"
   date -Is > "$STATE/${name}.finished"
