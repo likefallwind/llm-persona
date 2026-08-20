@@ -1,0 +1,13 @@
+group,policy,metric,system_conflict_effect,system_conflict_ci_low,system_conflict_ci_high,learner_override_effect,learner_override_ci_low,learner_override_ci_high,control_gap,control_gap_ci_low,control_gap_ci_high
+ALL,question,question_first,0.803125,0.778125,0.828125,0.0,0.0,0.0,0.803125,0.778125,0.828125
+ALL,answer,answer_reveal_correct,0.8234375,0.803125,0.8453125,0.0015625,0.0,0.0046875,0.821875,0.8015625,0.84375
+MiniMax-M2.7,question,question_first,0.546875,0.46875,0.6171875,0.0,0.0,0.0,0.546875,0.46875,0.6171875
+MiniMax-M2.7,answer,answer_reveal_correct,0.53125,0.4375,0.6328125,0.0078125,0.0,0.0234375,0.5234375,0.4296875,0.6171875
+MiniMax-M3,question,question_first,0.65625,0.6015625,0.7109375,0.0,0.0,0.0,0.65625,0.6015625,0.7109375
+MiniMax-M3,answer,answer_reveal_correct,0.6484375,0.578125,0.7189453124999989,0.0,0.0,0.0,0.6484375,0.578125,0.7189453124999989
+deepseek-v4-pro,question,question_first,0.921875,0.8828125,0.9609375,0.0,0.0,0.0,0.921875,0.8828125,0.9609375
+deepseek-v4-pro,answer,answer_reveal_correct,0.9921875,0.9765625,1.0,0.0,0.0,0.0,0.9921875,0.9765625,1.0
+doubao-seed-2.0-lite,question,question_first,0.9921875,0.9765625,1.0,0.0,0.0,0.0,0.9921875,0.9765625,1.0
+doubao-seed-2.0-lite,answer,answer_reveal_correct,0.9453125,0.8984375,0.984375,0.0,0.0,0.0,0.9453125,0.8984375,0.984375
+glm-5.2,question,question_first,0.8984375,0.8359375,0.953125,0.0,0.0,0.0,0.8984375,0.8359375,0.953125
+glm-5.2,answer,answer_reveal_correct,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0

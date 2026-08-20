@@ -1,0 +1,146 @@
+import importlib.util
+import json
+from pathlib import Path
+import sys
+
+import pandas as pd
+
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+
+
+def load_module(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    assert spec.loader is not None
+    spec.loader.exec_module(module)
+    return module
+
+
+generator = load_module(
+    "action_routing_generator", ROOT / "scripts/generate_action_routing_trial.py",
+)
+runner = load_module(
+    "action_routing_runner", ROOT / "scripts/run_action_routing_trial.py",
+)
+analyzer = load_module(
+    "action_routing_analyzer", ROOT / "scripts/analyze_action_routing_trial.py",
+)
+
+
+def frozen_objects():
+    spec = json.loads((ROOT / "data/action_routing_trial_spec_v1.json").read_text())
+    bridge = json.loads(Path(spec["source_bridge"]).read_text())
+    targets = generator.load_targets(
+        ROOT / spec["source_target_audit"],
+        spec["source_benchmark"],
+        spec["target_source"],
+    )
+    contexts = generator.select_contexts(spec, bridge, targets)
+    samples = generator.build_samples(spec, contexts)
+    return spec, contexts, samples
+
+
+def test_manifest_is_balanced_and_nonoracle_policy_is_target_invariant():
+    spec, contexts, samples = frozen_objects()
+    assert len(contexts) == 96
+    assert len(samples) == 384
+    assert sum(row["target_act"] == "probing" for row in contexts) == 48
+    assert sum(row["target_act"] == "telling" for row in contexts) == 48
+    assert len({row["prompt_sha256"] for row in samples}) == 384
+    for arm in ("generic", "uniform_scaffold", "adaptive_router"):
+        prompts = {
+            row["messages"][0]["content"] for row in samples if row["arm"] == arm
+        }
+        assert len(prompts) == 1
+        assert {
+            row["target_act"] for row in samples if row["arm"] == arm
+        } == {"probing", "telling"}
+    for row in samples:
+        assert row["heldout_teacher_sha256"] not in "\n".join(
+            message["content"] for message in row["messages"]
+        )
+    public_rows = [
+        json.loads(line) for line in
+        (ROOT / "artifacts/action_routing_trial_v1/sample_manifest.jsonl")
+        .read_text(encoding="utf-8").splitlines() if line
+    ]
+    assert len(public_rows) == 384
+    assert all("messages" not in row for row in public_rows)
+    assert all("conversation_prompt" not in row for row in public_rows)
+
+
+def test_order_plan_is_deterministic_and_exactly_block_balanced():
+    spec, _, samples = frozen_objects()
+    first = generator.build_order_plan(spec, samples)
+    second = generator.build_order_plan(spec, samples)
+    assert first == second
+    assert len(first) == 1920
+    for model in spec["models"]:
+        ordered = runner.planned_samples(samples, first, model, spec["order_seed"])
+        assert len(ordered) == 384
+        for start in range(0, 384, 8):
+            assert len({generator.stratum_key(row) for row in ordered[start:start + 8]}) == 8
+
+
+def test_runner_rejects_tampered_order_hash():
+    spec, _, samples = frozen_objects()
+    plan = generator.build_order_plan(spec, samples)
+    plan[0] = {**plan[0], "order_sha256": "0" * 64}
+    try:
+        runner.planned_samples(samples, plan, spec["models"][0], spec["order_seed"])
+    except RuntimeError as exc:
+        assert "order hash mismatch" in str(exc)
+    else:
+        raise AssertionError("tampered routing order was accepted")
+
+
+def deterministic_predictions(spec):
+    rows = []
+    matches = {
+        "probing": {
+            "generic": 0, "uniform_scaffold": 1,
+            "adaptive_router": 1, "oracle_action": 1,
+        },
+        "telling": {
+            "generic": 1, "uniform_scaffold": 0,
+            "adaptive_router": 1, "oracle_action": 1,
+        },
+    }
+    for variant in spec["analysis"]["classifier_variants"]:
+        for target in spec["target_acts"]:
+            for context in range(6):
+                for model in spec["models"]:
+                    for arm in spec["arms"]:
+                        match = matches[target][arm]
+                        rows.append({
+                            "classifier_variant": variant,
+                            "context_id": f"{target}-{context}",
+                            "target_act": target,
+                            "arm": arm,
+                            "model": model,
+                            "predicted_act": target if match else "generic",
+                            "act_match": match,
+                        })
+    return pd.DataFrame(rows)
+
+
+def test_joint_gates_pass_only_when_adaptive_arm_recovers_telling():
+    spec, _, _ = frozen_objects()
+    predictions = deterministic_predictions(spec)
+    contrasts, _ = analyzer.contrast_tables(predictions, reps=20, seed=5)
+    means = analyzer.arm_means(predictions, reps=20, seed=6)
+    decision = analyzer.evaluate_gates(spec, contrasts, means)
+    assert decision["joint_all_classifier_variants_pass"]
+
+    broken = contrasts.copy()
+    mask = (
+        (broken.classifier_variant == spec["analysis"]["classifier_variants"][0])
+        & (broken.target_act == "telling")
+        & (broken.contrast == "adaptive_minus_uniform")
+    )
+    broken.loc[mask, "mean_delta"] = 0.0
+    broken.loc[mask, "context_cluster_ci_low"] = -0.1
+    decision = analyzer.evaluate_gates(spec, broken, means)
+    assert not decision["joint_all_classifier_variants_pass"]

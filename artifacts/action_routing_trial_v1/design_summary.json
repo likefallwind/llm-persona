@@ -1,0 +1,26 @@
+{
+  "context_count": 96,
+  "contexts_by_target": {
+    "probing": 48,
+    "telling": 48
+  },
+  "exact_eight_stratum_block_balance": true,
+  "expected_calls": 1920,
+  "manifest_sha256": "4c7b11e64e2e9963b9632aeefe63791f71a2964b3a61eab9aa2524bc4ea4283f",
+  "model_count": 5,
+  "nonoracle_system_prompt_counts_by_arm": {
+    "adaptive_router": 1,
+    "generic": 1,
+    "uniform_scaffold": 1
+  },
+  "nonoracle_system_prompts_are_target_invariant": true,
+  "order_plan_sha256": "21bb71e599cac0cf91ecefda98cc565284fab56fe6508ee3082fe405edf30659",
+  "payload_scope": "public MathDial-derived benchmark problem and conversation contexts; no private user logs, archived model responses, or held-out teacher text",
+  "prompt_hashes_unique": true,
+  "release_scope": "public manifest contains IDs, labels, hashes, and design metadata only; the generated request manifest with benchmark text is gitignored",
+  "sample_count": 384,
+  "samples_per_model": 384,
+  "schema_version": 1,
+  "source_bridge_sha256": "96609c808383eea57d16bb24a49f302a9d84ffa323571c5989e57638bbaf2066",
+  "source_target_audit_sha256": "e88b66557e42ed23f8121695b6c86fa5d24a0b2ec9ebbc8e7256edfe028081fe"
+}

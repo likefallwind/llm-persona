@@ -1,0 +1,30 @@
+{
+  "checks": {
+    "cross_model_entropy_decreases_all_classifier_families": true,
+    "entropy_decrease_ci_below_zero_all_classifier_families": true,
+    "overall_standard_positive_all_classifiers": true,
+    "probing_aggregate_ci_above_zero_all_classifiers": true,
+    "probing_positive_all_models_all_classifiers": true,
+    "telling_aggregate_ci_below_zero_all_classifiers": true,
+    "telling_negative_all_models_all_classifiers": true
+  },
+  "claim_boundary": "The response panel and target labels predate this audit, but the joint average-gain/action-harm/homogenization estimand was specified after outcome inspection. Models are a fixed convenience panel; classifier variants are robustness checks, not independent samples; action match is not learning gain.",
+  "cross_model_entropy_delta_range": [
+    -0.04790959518905567,
+    -0.0350897216782584
+  ],
+  "schema_version": 1,
+  "standard_overall_delta_range": [
+    0.09052678176184152,
+    0.11387782204515272
+  ],
+  "standard_probing_delta_range": [
+    0.14417344173441735,
+    0.2056910569105691
+  ],
+  "standard_telling_delta_range": [
+    -0.31712962962962965,
+    -0.2824074074074074
+  ],
+  "status": "post_hoc_action_heterogeneity_audit_on_existing_responses"
+}

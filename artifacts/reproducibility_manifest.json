@@ -13,6 +13,21 @@
   },
   "files": [
     {
+      "path": "artifacts/action_routing_trial_v1/design_summary.json",
+      "bytes": 1165,
+      "sha256": "2718ccc72e34db0c293d4312fe438fb5faa3a9c83524ae93a800ccdad8462bfa"
+    },
+    {
+      "path": "artifacts/action_routing_trial_v1/request_order_plan.jsonl",
+      "bytes": 469666,
+      "sha256": "21bb71e599cac0cf91ecefda98cc565284fab56fe6508ee3082fe405edf30659"
+    },
+    {
+      "path": "artifacts/action_routing_trial_v1/sample_manifest.jsonl",
+      "bytes": 138411,
+      "sha256": "4c7b11e64e2e9963b9632aeefe63791f71a2964b3a61eab9aa2524bc4ea4283f"
+    },
+    {
       "path": "artifacts/claim_verification/claim_verification.json",
       "bytes": 11746,
       "sha256": "d37f723692f8b713d491e40d02e6a142c4fb38bf5f660980015644b28a95b01f"
@@ -248,6 +263,16 @@
       "sha256": "78215b2997ab1fc5a5091eaffef7a2991c2a8a4207fb51d61e5e43891dbe6f50"
     },
     {
+      "path": "artifacts/factorial_control_asymmetry_exploratory_v1/control_asymmetry.csv",
+      "bytes": 1491,
+      "sha256": "4345424ac0284bf16f3282c5ac52e50fab09b66a9389169dc83cce8eef148303"
+    },
+    {
+      "path": "artifacts/factorial_control_asymmetry_exploratory_v1/control_asymmetry_report.json",
+      "bytes": 1341,
+      "sha256": "b8ed71040a96ddaba83e286df25ac7bd7c5653d0773e8775f86b3659eef4c3d4"
+    },
+    {
       "path": "artifacts/factorial_detector_validation_analysis_v1/detector_validation_metrics.csv",
       "bytes": 767,
       "sha256": "f11886ccd34dfdf5533072bf07d3cccc7480c09721c82e988e6ec53d0c323858"
@@ -343,6 +368,16 @@
       "sha256": "b90df25ee72bfb708c1f2d9514859589e9cc11ce7ddb24e1f287ca5a9a1ea5ff"
     },
     {
+      "path": "artifacts/factorial_order_replication_control_asymmetry_exploratory_v1/control_asymmetry.csv",
+      "bytes": 1286,
+      "sha256": "e3155094a0220f98c8d280a39c6746a6319f019bf5f893059ac5d16e9e205dd7"
+    },
+    {
+      "path": "artifacts/factorial_order_replication_control_asymmetry_exploratory_v1/control_asymmetry_report.json",
+      "bytes": 1299,
+      "sha256": "560c9322c82f5dae477df2e06e0b855666e16892f94ffce3c3e2c836934e7252"
+    },
+    {
       "path": "artifacts/factorial_order_replication_v1/design_summary.json",
       "bytes": 772,
       "sha256": "68ee781a987dd34418bcc5d5479dde977740a1a5c3d790d139b2e342e413f71a"
@@ -356,6 +391,21 @@
       "path": "artifacts/factorial_order_replication_v1/sample_manifest.jsonl",
       "bytes": 174880,
       "sha256": "e66a02ed36824229cc9b5afe0116e4a0dbc437bdf6f22fe5bc06797f66293c48"
+    },
+    {
+      "path": "artifacts/factorial_paraphrase_replication_v1/design_summary.json",
+      "bytes": 1720,
+      "sha256": "238e7be6f5522226a07e588c0e5af024685828c1821194aaa0b25b4b746aeeb6"
+    },
+    {
+      "path": "artifacts/factorial_paraphrase_replication_v1/request_order_plan.jsonl",
+      "bytes": 401754,
+      "sha256": "47f50c9cc662fe9554d7c33f04d3642d600ed9d433da5e8820949d918560c203"
+    },
+    {
+      "path": "artifacts/factorial_paraphrase_replication_v1/sample_manifest.jsonl",
+      "bytes": 402048,
+      "sha256": "24bae58887c9806bf2338635ad2be57c716e86ae6f66ad8c59bafbe0c4e79c4f"
     },
     {
       "path": "artifacts/factorial_prompt_v1/design_summary.json",
@@ -566,6 +616,46 @@
       "path": "artifacts/pilot/task_profiles.csv",
       "bytes": 18008,
       "sha256": "9e0704a4921c4aabead1b0d0727c743f6718539cd05a0dfd5ceb0867ed9d236a"
+    },
+    {
+      "path": "artifacts/policy_homogenization_v1/consensus_prompt_effects.csv",
+      "bytes": 2676,
+      "sha256": "f013193cdd91105abeddd7c5cf0f860e74d78cbe9f8aa04fa74a83f465a78690"
+    },
+    {
+      "path": "artifacts/policy_homogenization_v1/context_model_consensus.csv",
+      "bytes": 528492,
+      "sha256": "52396342f85acb2be7b2ee9d38e4506de07c7364a0a64411aa7b2acb6b91337f"
+    },
+    {
+      "path": "artifacts/policy_homogenization_v1/overall_prompt_effects.csv",
+      "bytes": 867,
+      "sha256": "e816709a64f1cff1064e7a7574a652888dc5c8d7297550f3045504b6e8c024b8"
+    },
+    {
+      "path": "artifacts/policy_homogenization_v1/paired_action_match.csv",
+      "bytes": 1697251,
+      "sha256": "bb744544524efa223ddcdbac476862a5741e15cb4ca1104e98343d37b1ba07e3"
+    },
+    {
+      "path": "artifacts/policy_homogenization_v1/policy_homogenization_report.json",
+      "bytes": 1231,
+      "sha256": "b9a25bb40b2074d47ebb0ada4ccf3ce4420ed161fda4d6b2da2d218de2fa4628"
+    },
+    {
+      "path": "artifacts/policy_homogenization_v1/target_action_effects.csv",
+      "bytes": 2397,
+      "sha256": "9fa1c8106bf95f76e32e89fa563c3953be57001d9973ccdd9a96a28919152b4a"
+    },
+    {
+      "path": "artifacts/policy_homogenization_v1/target_action_model_effects.csv",
+      "bytes": 20121,
+      "sha256": "2c94eaa7c9ecbfa7e4180eb26c1a8dfe53a2815f041a8dba9880bb10db217c33"
+    },
+    {
+      "path": "artifacts/policy_homogenization_v1/target_action_sign_robustness.csv",
+      "bytes": 1327,
+      "sha256": "cdfd83cc35a82d52c6853a9ceb28f948862b5122062c867ca4cbe5ec4f6a935c"
     },
     {
       "path": "artifacts/power_audit/exact_test_resolution.csv",
@@ -818,6 +908,11 @@
       "sha256": "6ea9c09a7312d47d2bf225e54de74b48e0a535ce55bcacfaa7961b89edb095f1"
     },
     {
+      "path": "data/action_routing_trial_spec_v1.json",
+      "bytes": 3655,
+      "sha256": "a21ba055036ebdcd8c701662f43830b6ed4f20b5b5d3a669ad130226b44d6927"
+    },
+    {
       "path": "data/benchmark_roles.json",
       "bytes": 2199,
       "sha256": "e01d3766b60238faa770ab7c87a54373dd7a7661a8d7b3d7bba05f0fed22c456"
@@ -831,6 +926,11 @@
       "path": "data/factorial_order_replication_spec_v1.json",
       "bytes": 1790,
       "sha256": "8b4fba2e751b41f59aac29c46730231da8041f5f816f86dc62116a8597bf8755"
+    },
+    {
+      "path": "data/factorial_paraphrase_replication_spec_v1.json",
+      "bytes": 3164,
+      "sha256": "fd531ede42b80a581667bd543f978fecb210e309c6daf7d52d33e84c55806a9b"
     },
     {
       "path": "data/factorial_prompt_spec_v1.json",
@@ -849,8 +949,8 @@
     },
     {
       "path": "paper/draft.md",
-      "bytes": 30964,
-      "sha256": "422167cb0daa0df35d0ae488c0504d462a0e90b00cfddf6a3de5b0f1ae5135ef"
+      "bytes": 31659,
+      "sha256": "dd5eefc42c89c0931d635a792ce94cfb942dc99ea9179360205859d6c7a4bd3e"
     },
     {
       "path": "paper/figures/main_findings.pdf",
@@ -879,8 +979,8 @@
     },
     {
       "path": "paper/references.bib",
-      "bytes": 12428,
-      "sha256": "2e9f88afd32ba20a1c06e953f0fb2c44b6e66a254816fd09d8ec4806c71ca891"
+      "bytes": 14595,
+      "sha256": "68fb5eef28c027e8373bf1b784a895e5db0e197d940715c43bda8b14d277c30c"
     },
     {
       "path": "paper/submission/README.md",
@@ -889,13 +989,13 @@
     },
     {
       "path": "paper/submission/main.tex",
-      "bytes": 31473,
-      "sha256": "2e5623bed073cecd50f52eaf24bb171b5ca22cffc366674c1cce6272d25c4541"
+      "bytes": 31543,
+      "sha256": "ad5a45da8056975285d5cadde9605095e1562a53446eea241f8e2fa3d4a82fc3"
     },
     {
       "path": "paper/submission/submission.pdf",
-      "bytes": 215653,
-      "sha256": "8debfbdba89396c28ee18560553db71a018431363f71bec965c187af4b51b369"
+      "bytes": 216638,
+      "sha256": "6946e17421e21b6ea38f12b112ccb198d0cdb6863f70cc2bc5b2d3cfb5855abf"
     },
     {
       "path": "research/00_research_charter.md",
@@ -904,8 +1004,8 @@
     },
     {
       "path": "research/01_literature_and_gap.md",
-      "bytes": 12088,
-      "sha256": "82ba1b36d058ec3e046543ddcb383996fe81c0c605cf554b8c765bbdc8e78ffc"
+      "bytes": 13716,
+      "sha256": "ffc05878eb19120b5749a702c5e3856a340c7ebac1fe5eb41236ce34c06d1190"
     },
     {
       "path": "research/02_semantic_coding_protocol.md",
@@ -919,8 +1019,8 @@
     },
     {
       "path": "research/04_red_team_review.md",
-      "bytes": 19298,
-      "sha256": "f9aa5812e370bac267ec9483cb3c1e6c9359ade21d905aca25ccc33a045032da"
+      "bytes": 19554,
+      "sha256": "093b11df813329f8b6fd81c515cf29c902df2815e422d4d726ce13f1776de817"
     },
     {
       "path": "research/05_semantic_analysis_plan.md",
@@ -934,8 +1034,8 @@
     },
     {
       "path": "research/07_novelty_positioning.md",
-      "bytes": 5852,
-      "sha256": "45cf8c4347779a94ce43e802f38ee0bbf5fc526489c3c1300d75ab8cf478473c"
+      "bytes": 6765,
+      "sha256": "de3871155d4e0d80fe017e118e4a06791dc8c9de9b8932a6bd9f89682b8e526f"
     },
     {
       "path": "research/08_future_server_experiment_spec.md",
@@ -989,8 +1089,8 @@
     },
     {
       "path": "research/18_2026_neighbor_work_audit.md",
-      "bytes": 6617,
-      "sha256": "269d352f951f7a3f2fb7193754f490e922d28424b448e2ddf2441fc01f663e57"
+      "bytes": 8352,
+      "sha256": "bc4eb08a9189a4e1ef87af769ec9602effa40b31411326d39b6d7cbce5182726"
     },
     {
       "path": "research/19_factorial_order_replication_protocol.md",
@@ -1023,9 +1123,24 @@
       "sha256": "0d8ab68b58b3a3caaa194a8d5c195ef3e22ca158492f8f1177308b8b786eba4f"
     },
     {
+      "path": "research/25_policy_homogenization_and_control_asymmetry.md",
+      "bytes": 9611,
+      "sha256": "4736e2da3c4aa6b2fbf2656453f0e7f6bb2f555e76e02033bd2b70103311f81f"
+    },
+    {
+      "path": "research/26_action_routing_trial_protocol.md",
+      "bytes": 7794,
+      "sha256": "adc2a7bbe171a986ee6c56d3e32f15804faf44c5adf06086a9386673b2a34b6f"
+    },
+    {
       "path": "research/semantic_panel_exclusions_v1.json",
       "bytes": 1149,
       "sha256": "90c2eaefa8127d4199300f00b58d13f00585abf97baec27ac2b67d1fc66241fa"
+    },
+    {
+      "path": "scripts/analyze_action_routing_trial.py",
+      "bytes": 17031,
+      "sha256": "bcd547035c8604e288f79e6bb7deb40085b0687201bba560086822e8fd21305b"
     },
     {
       "path": "scripts/analyze_dialogue_act_validity.py",
@@ -1048,6 +1163,11 @@
       "sha256": "8185d6dd9ac9eaed43698f7255c087b60738d525f32f3c6eee3454134cd95a6f"
     },
     {
+      "path": "scripts/analyze_factorial_control_asymmetry.py",
+      "bytes": 8184,
+      "sha256": "6c9a1a98c58841fa242cd7ac0f6f0f0ca39cc6a7fa4e5ce3087c9566cfff6179"
+    },
+    {
       "path": "scripts/analyze_factorial_detector_validation.py",
       "bytes": 14376,
       "sha256": "411aad4feb698c8c2693d27be13cddc364aeb01f9cf9b769c5513f3b57dc6947"
@@ -1056,6 +1176,11 @@
       "path": "scripts/analyze_factorial_order_replication.py",
       "bytes": 11433,
       "sha256": "0bbc1020e808f54c22494dec06c55be036121dc83a8cc837ff7803392377bf5f"
+    },
+    {
+      "path": "scripts/analyze_factorial_paraphrase_replication.py",
+      "bytes": 10658,
+      "sha256": "c14e1e38975c4f65952db799a1fb8604ef79d1a93ea8c03f25015eb07b1d2242"
     },
     {
       "path": "scripts/analyze_factorial_prompt_panel.py",
@@ -1071,6 +1196,11 @@
       "path": "scripts/analyze_longtutor_objective_validity.py",
       "bytes": 10257,
       "sha256": "e98d1780dcd8c554df00f9e05f81688bbce5fde922ef380d45fa6b717c8ece7a"
+    },
+    {
+      "path": "scripts/analyze_policy_homogenization.py",
+      "bytes": 11958,
+      "sha256": "280334a459a783f577c71e588b43f37d9710527903034f142bc0d0cefcbe83d3"
     },
     {
       "path": "scripts/analyze_semantic_leaveout_sensitivity.py",
@@ -1139,8 +1269,13 @@
     },
     {
       "path": "scripts/finalize_semantic_analysis.sh",
-      "bytes": 4079,
-      "sha256": "d01a357f0b6bb1172597ffba159cabb5c089ac36bc4d5bba7b28e6ad83d129f0"
+      "bytes": 4348,
+      "sha256": "322f6462aa938d56d200a6133bfd01f3fe5e7627f03470509b2bee1f3d5fecb3"
+    },
+    {
+      "path": "scripts/generate_action_routing_trial.py",
+      "bytes": 13000,
+      "sha256": "d27bfe269cfd117da6770b6e4db1544e248e27ed17ac24e5a6ba53fa8cd281c1"
     },
     {
       "path": "scripts/generate_factorial_detector_validation.py",
@@ -1151,6 +1286,11 @@
       "path": "scripts/generate_factorial_order_replication.py",
       "bytes": 6213,
       "sha256": "1841ae12c6d2466362369558882bc5f7cbe41c273e381f56de6e2ce7c9fb711a"
+    },
+    {
+      "path": "scripts/generate_factorial_paraphrase_replication.py",
+      "bytes": 13766,
+      "sha256": "4a92ab00ac0c7b8210b481f237686d1488097a5a97b1e5b23d91be0b01d81f62"
     },
     {
       "path": "scripts/generate_factorial_prompt_panel.py",
@@ -1183,6 +1323,16 @@
       "sha256": "b6722ace7d3c1ee79a0a74d12215c420089005ccaca6d6753d1d087c911b0bb9"
     },
     {
+      "path": "scripts/run_action_routing_trial.py",
+      "bytes": 6645,
+      "sha256": "42c945c91bfcbcadd2743a1a555901f7da5bf6ab9b05169e3f0ed6924ad08368"
+    },
+    {
+      "path": "scripts/run_action_routing_trial.sh",
+      "bytes": 1670,
+      "sha256": "fcc34f8662fa4832543f83b78f958883494f9917099b55f211be36ba743bc36f"
+    },
+    {
       "path": "scripts/run_behavioral_pilot.py",
       "bytes": 19461,
       "sha256": "74b7759b3283a486cf12f533e90e61721dbd596f0ef09810820ea57d1f3b4843"
@@ -1211,6 +1361,16 @@
       "path": "scripts/run_factorial_order_replication.sh",
       "bytes": 2365,
       "sha256": "58d61e4fd3b7f284d46ba5b40efb99a69a2135c53310b4cb24282740ec789430"
+    },
+    {
+      "path": "scripts/run_factorial_paraphrase_replication.py",
+      "bytes": 8202,
+      "sha256": "74d3d58f4c7f87b0961d0b3f13da8682ea966fae4bd6052f25f3c620710728ce"
+    },
+    {
+      "path": "scripts/run_factorial_paraphrase_replication.sh",
+      "bytes": 1898,
+      "sha256": "5f1ce81f972119f48e32a0776716ee37e9afc3c369cf772ad0e7bb7d79ca77a4"
     },
     {
       "path": "scripts/run_factorial_prompt_panel.py",
@@ -1258,6 +1418,11 @@
       "sha256": "30b33b5d50ca048b35846a9b4b7788a0a389007279a015e1ae24dfbf073d5878"
     },
     {
+      "path": "tests/test_action_routing_trial.py",
+      "bytes": 5435,
+      "sha256": "01f498a269fc8f9187b313b16bc523499c2d347a1b56c0392dc1cd32b23b061f"
+    },
+    {
       "path": "tests/test_audit_acl_submission.py",
       "bytes": 1245,
       "sha256": "33fc639a561d512e7dac20edcda541545ee7ed6c67e8f91783e3db5274c9aeb4"
@@ -1283,6 +1448,11 @@
       "sha256": "fe68b0370e953d1202c0e886cfb4668127978bf4ca2ef6ef5ac3607513259f65"
     },
     {
+      "path": "tests/test_factorial_paraphrase_replication.py",
+      "bytes": 9540,
+      "sha256": "881e7b735da790e3425781ace6b6185f8b55e07cc819544945f8cab16b23bfae"
+    },
+    {
       "path": "tests/test_factorial_prompt_panel.py",
       "bytes": 7439,
       "sha256": "bb5cbcf34ec74162b4a98c60fe85f9557e857e69da1cac2ecfa468dd9daa99fa"
@@ -1291,6 +1461,11 @@
       "path": "tests/test_learner_outcome_trial_power.py",
       "bytes": 1687,
       "sha256": "75a29b3fb4d6286edc2c7c3491583d138e3fe9cd90b4e250377793493ff9c0c5"
+    },
+    {
+      "path": "tests/test_policy_homogenization.py",
+      "bytes": 2650,
+      "sha256": "6c6b4780a2f03e5676e1e74c1c2e95384d5295591feaf5b49d1dc2265072fb2a"
     },
     {
       "path": "tests/test_run_external_semantic_panel.py",

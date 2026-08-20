@@ -1,0 +1,44 @@
+{
+  "aggregate": [
+    {
+      "control_gap": 0.825,
+      "control_gap_ci_high": 0.85,
+      "control_gap_ci_low": 0.7875,
+      "group": "ALL",
+      "learner_override_ci_high": 0.0,
+      "learner_override_ci_low": 0.0,
+      "learner_override_effect": 0.0,
+      "metric": "question_first",
+      "policy": "question",
+      "system_conflict_ci_high": 0.85,
+      "system_conflict_ci_low": 0.7875,
+      "system_conflict_effect": 0.825
+    },
+    {
+      "control_gap": 0.85625,
+      "control_gap_ci_high": 0.90625,
+      "control_gap_ci_low": 0.8125,
+      "group": "ALL",
+      "learner_override_ci_high": 0.0,
+      "learner_override_ci_low": 0.0,
+      "learner_override_effect": 0.0,
+      "metric": "answer_reveal_correct",
+      "policy": "answer",
+      "system_conflict_ci_high": 0.90625,
+      "system_conflict_ci_low": 0.8125,
+      "system_conflict_effect": 0.85625
+    }
+  ],
+  "base_problems": 8,
+  "claim_boundary": "The existing-panel analysis is exploratory because the estimand was defined after both parent and order-replication outcomes were inspected.",
+  "models": [
+    "MiniMax-M2.7",
+    "MiniMax-M3",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite",
+    "glm-5.2"
+  ],
+  "rows": 640,
+  "schema_version": 1,
+  "status": "post_hoc_exploratory_on_existing_responses"
+}

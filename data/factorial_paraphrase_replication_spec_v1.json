@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "parent_spec": "data/factorial_prompt_spec_v1.json",
+  "parent_manifest": "artifacts/factorial_prompt_v1/sample_manifest.jsonl",
+  "source_order_replication_spec": "data/factorial_order_replication_spec_v1.json",
+  "source_order_replication_manifest": "artifacts/factorial_order_replication_v1/sample_manifest.jsonl",
+  "seed": 20260822,
+  "order_seed": 20260823,
+  "selected_base_indices_per_family": [1, 5],
+  "wording_sets": ["paraphrase_a", "paraphrase_b"],
+  "expected_base_problems": 8,
+  "expected_samples_per_model": 256,
+  "factors": {
+    "question_policy": ["question_first", "explain_only"],
+    "answer_policy": ["withhold", "reveal"],
+    "tone_policy": ["warm", "neutral"]
+  },
+  "learner_needs": ["explore", "direct"],
+  "models": [
+    "MiniMax-M3",
+    "MiniMax-M2.7",
+    "glm-5.2",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite"
+  ],
+  "generation": {
+    "temperature": 0,
+    "max_tokens": null,
+    "language": "English",
+    "minimax_concurrency": 4,
+    "gateway_concurrency": 8,
+    "retries": 3
+  },
+  "success_gate": {
+    "required_complete_cells": 1280,
+    "allow_missing": 0,
+    "allow_empty": 0
+  },
+  "claim_gates": {
+    "question_target_mean_difference_min": 0.60,
+    "answer_target_mean_difference_min": 0.60,
+    "tone_target_mean_difference_min": 0.30,
+    "target_effect_positive_in_every_model": true,
+    "selectivity_ratio_min": 2.0,
+    "learner_need_reveal_difference_min": 0.10,
+    "learner_need_question_difference_min": 0.10
+  },
+  "control_asymmetry_gates": {
+    "system_conflict_effect_min": 0.60,
+    "system_conflict_ci_low_min": 0.50,
+    "learner_override_equivalence_bound": 0.10,
+    "control_gap_min": 0.50,
+    "control_gap_ci_low_min": 0.40,
+    "positive_system_conflict_and_gap_in_every_model": true,
+    "must_pass_independently_in_both_wording_sets": true
+  },
+  "reporting_rules": [
+    "Freeze both clause sets, all prompts, the complete request-order plan, metrics, and gates before any paraphrase-response call.",
+    "Use parent base indices 01 and 05 in each family, distinct from the earlier order-replication subset.",
+    "Cross every base, learner need, and policy cell with both paraphrase sets.",
+    "Hash-randomize request order independently for each model in exact 32-stratum blocks: 16 learner-need-by-policy cells times two wording sets.",
+    "Report aggregate and wording-specific target effects, all cross-effects, learner-need effects, model effects, family effects, cells, interactions, and wording-set effect differences.",
+    "Call question-first or correct-answer reveal paraphrase-robust only if each wording set independently passes the original target, every-model sign, and selectivity gates.",
+    "The tone endpoint remains a literal frozen encouragement marker even if it passes; it cannot regain a semantic warmth claim.",
+    "The experiment is a post-result prospective wording replication, not an outcome-blind replication of the original study and not a learning-effectiveness test.",
+    "Do not replace failed calls, models, base problems, wording sets, factor cells, metrics, or thresholds after inspecting responses."
+  ]
+}

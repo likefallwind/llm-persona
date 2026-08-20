@@ -1,0 +1,55 @@
+{
+  "base_ids": [
+    "arithmetic_mean-01",
+    "arithmetic_mean-05",
+    "fraction_addition-01",
+    "fraction_addition-05",
+    "linear_equation-01",
+    "linear_equation-05",
+    "percentage_discount-01",
+    "percentage_discount-05"
+  ],
+  "base_problem_count": 8,
+  "clause_position_counts": {
+    "policy_0_position_0": 86,
+    "policy_0_position_1": 84,
+    "policy_0_position_2": 86,
+    "policy_1_position_0": 86,
+    "policy_1_position_1": 86,
+    "policy_1_position_2": 84,
+    "policy_2_position_0": 84,
+    "policy_2_position_1": 86,
+    "policy_2_position_2": 86
+  },
+  "exact_32_stratum_block_balance": true,
+  "expected_calls": 1280,
+  "manifest_sha256": "24bae58887c9806bf2338635ad2be57c716e86ae6f66ad8c59bafbe0c4e79c4f",
+  "model_count": 5,
+  "order_plan_rows": 1280,
+  "order_plan_sha256": "47f50c9cc662fe9554d7c33f04d3642d600ed9d433da5e8820949d918560c203",
+  "original_clause_fragment_hits": {
+    "Answer policy: Do not state the final numeric answer": 0,
+    "Answer policy: State the correct numeric result explicitly": 0,
+    "Interaction policy: Ask no questions": 0,
+    "Interaction policy: Start with exactly one focused question": 0,
+    "Tone policy: Include one brief sincere encouragement": 0,
+    "Tone policy: Use neutral professional language": 0
+  },
+  "payload_scope": "synthetic problems, wrong work, learner requests, and frozen paraphrased policy clauses only",
+  "potential_pii_pattern_flags": {
+    "email": 0,
+    "phone_like": 0,
+    "url": 0
+  },
+  "prompt_hashes_unique": true,
+  "sample_count": 256,
+  "samples_per_wording_set": {
+    "paraphrase_a": 128,
+    "paraphrase_b": 128
+  },
+  "schema_version": 1,
+  "wording_sets": [
+    "paraphrase_a",
+    "paraphrase_b"
+  ]
+}

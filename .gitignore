@@ -28,4 +28,6 @@ paper/submission/build/
 # remain eligible for release; raw provider responses stay local.
 artifacts/factorial_prompt_v1/run/
 artifacts/factorial_order_replication_v1/run/
+artifacts/factorial_paraphrase_replication_v1/run/
+artifacts/action_routing_trial_v1/run/
 artifacts/factorial_detector_validation_v1/run/

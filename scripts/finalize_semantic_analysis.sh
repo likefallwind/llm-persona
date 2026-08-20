@@ -112,8 +112,13 @@ cd "$ROOT"
     artifacts/factorial_analysis_v1 \
     artifacts/factorial_order_replication_v1 \
     artifacts/factorial_order_replication_analysis_v1 \
+    artifacts/factorial_control_asymmetry_exploratory_v1 \
+    artifacts/factorial_order_replication_control_asymmetry_exploratory_v1 \
+    artifacts/factorial_paraphrase_replication_v1 \
     artifacts/factorial_detector_validation_v1 \
     artifacts/factorial_detector_validation_analysis_v1 \
+    artifacts/policy_homogenization_v1 \
+    artifacts/action_routing_trial_v1 \
     artifacts/learner_outcome_trial_planning_v1 \
     artifacts/submission_audit \
   --output artifacts/reproducibility_manifest.json

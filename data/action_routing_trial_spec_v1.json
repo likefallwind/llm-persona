@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "seed": 20260827,
+  "order_seed": 20260828,
+  "source_bridge": "../edubenchmark/sources/datasets/mathtutorbench/datasets/mathdial_bridge.json",
+  "source_mathdial": "../edubenchmark/sources/datasets/mathdial",
+  "source_target_audit": "artifacts/dialogue_act_validity/target_mapping_audit.csv",
+  "source_hashes": {
+    "bridge_sha256": "96609c808383eea57d16bb24a49f302a9d84ffa323571c5989e57638bbaf2066",
+    "target_audit_sha256": "e88b66557e42ed23f8121695b6c86fa5d24a0b2ec9ebbc8e7256edfe028081fe",
+    "mathdial_train_sha256": "d6135869c02dccf8d14756fa2f0367c5352922bb263ec22dc0eeace4da815d43",
+    "mathdial_test_sha256": "3ec54ee8ab921dc6191bf5e2ee766d4e7916b4264394eb17a6be9b3fe486e50b"
+  },
+  "source_benchmark": "mathtutorbench_scaffolding",
+  "target_source": "exact_human_lookup",
+  "target_acts": ["probing", "telling"],
+  "contexts_per_target_act": 48,
+  "arms": ["generic", "uniform_scaffold", "adaptive_router", "oracle_action"],
+  "expected_contexts": 96,
+  "expected_samples_per_model": 384,
+  "models": [
+    "MiniMax-M3",
+    "MiniMax-M2.7",
+    "glm-5.2",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite"
+  ],
+  "generation": {
+    "temperature": 0,
+    "max_tokens": null,
+    "language": "English",
+    "minimax_concurrency": 4,
+    "gateway_concurrency": 8,
+    "retries": 3
+  },
+  "success_gate": {
+    "required_complete_cells": 1920,
+    "allow_missing": 0,
+    "allow_empty": 0
+  },
+  "analysis": {
+    "classifier_variants": ["char_svm", "word_svm", "hybrid_svm"],
+    "context_cluster_bootstrap_reps": 4000,
+    "fixed_model_panel": true
+  },
+  "claim_gates": {
+    "uniform_replication_probing_delta_min": 0.10,
+    "uniform_replication_telling_delta_max": -0.15,
+    "adaptive_telling_vs_uniform_delta_min": 0.15,
+    "adaptive_telling_vs_uniform_positive_every_model": true,
+    "adaptive_telling_vs_generic_noninferiority_margin": 0.05,
+    "adaptive_probing_vs_uniform_noninferiority_margin": 0.05,
+    "adaptive_overall_vs_generic_delta_min": 0.05,
+    "oracle_target_match_min": 0.65,
+    "must_pass_independently_for_all_classifier_variants": true
+  },
+  "reporting_rules": [
+    "Freeze the selected public benchmark contexts, four prompts, messages, prompt hashes, complete model-specific request order, analyzer, and gates before any trial response call.",
+    "Use all 48 exact-lookup telling contexts and a hash-selected set of 48 exact-lookup probing contexts; never replace a context after outcomes are observed.",
+    "Do not expose the human target action in generic, uniform-scaffold, or adaptive-router messages. The oracle arm is a diagnostic realization ceiling and cannot support an adaptivity claim.",
+    "Randomize each model in exact eight-stratum blocks crossing two target actions by four arms.",
+    "Train the same three conventional action classifiers only on the existing human MathDial teacher turns and apply all frozen variants to identical trial responses.",
+    "Both target-specific and aggregate paired contrasts use contexts as bootstrap clusters and treat the five models as a fixed panel.",
+    "Every classifier variant must independently pass every primary gate. Classifier variants are robustness checks, not independent samples.",
+    "Report every model, target action, arm, classifier variant, failed call, and cross-model action-consensus result regardless of direction.",
+    "The outcome is agreement with an observed human next action, not learning, response quality, or a uniquely optimal pedagogical decision.",
+    "Do not change routes, models, contexts, arms, prompts, classifiers, thresholds, or exclusions after inspecting responses."
+  ]
+}
