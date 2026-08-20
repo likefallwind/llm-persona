@@ -1,6 +1,6 @@
 # Reproducibility, privacy, and release ledger
 
-Snapshot: 2026-08-19.
+Snapshot: 2026-08-20.
 
 ## Provenance boundaries
 
@@ -73,6 +73,13 @@ or a substantive privacy assessment.
   cannot make a clean checkout's manifest unsatisfiable.
 - `research/05_semantic_analysis_plan.md` records which analyses were frozen
   before any second- or third-judge result was available.
+- `scripts/finalize_semantic_analysis.sh` applies strict completeness gates to
+  the semantic, parent-factorial, order-replication, paraphrase, action-routing,
+  and two-stage panels before rebuilding every released analysis directory.
+- Provider response JSONL and private request manifests are ignored inputs. The
+  public package therefore supports verification of frozen designs, released
+  derived tables, registered decisions, and hashes; exact table regeneration
+  additionally requires governed access to those raw inputs.
 
 ## Release package
 

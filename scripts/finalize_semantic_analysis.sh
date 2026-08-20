@@ -66,6 +66,35 @@ cd "$ROOT"
 
 "$PY" scripts/analyze_factorial_detector_validation.py
 
+"$PY" scripts/factorial_prompt_status.py \
+  --spec data/factorial_paraphrase_replication_spec_v1.json \
+  --manifest artifacts/factorial_paraphrase_replication_v1/sample_manifest.jsonl \
+  --responses artifacts/factorial_paraphrase_replication_v1/run/responses.jsonl \
+  --require-complete
+
+"$PY" scripts/analyze_factorial_paraphrase_replication.py \
+  --bootstrap-reps 2000
+
+"$PY" scripts/factorial_prompt_status.py \
+  --spec data/action_routing_trial_spec_v1.json \
+  --manifest artifacts/action_routing_trial_v1/sample_manifest.jsonl \
+  --responses artifacts/action_routing_trial_v1/run/responses.jsonl \
+  --require-complete
+
+"$PY" scripts/analyze_action_routing_trial.py
+
+"$PY" scripts/analyze_action_routing_surface.py
+
+"$PY" scripts/factorial_prompt_status.py \
+  --spec data/two_stage_routing_trial_spec_v1.json \
+  --manifest artifacts/two_stage_routing_trial_v1/sample_manifest.jsonl \
+  --responses artifacts/two_stage_routing_trial_v1/run/responses.jsonl \
+  --require-complete
+
+"$PY" scripts/analyze_two_stage_routing_trial.py
+
+"$PY" scripts/analyze_two_stage_selection_bias.py
+
 "$PY" scripts/render_factorial_results_report.py
 
 "$PY" scripts/power_learner_outcome_trial.py \
@@ -115,10 +144,16 @@ cd "$ROOT"
     artifacts/factorial_control_asymmetry_exploratory_v1 \
     artifacts/factorial_order_replication_control_asymmetry_exploratory_v1 \
     artifacts/factorial_paraphrase_replication_v1 \
+    artifacts/factorial_paraphrase_replication_analysis_v1 \
     artifacts/factorial_detector_validation_v1 \
     artifacts/factorial_detector_validation_analysis_v1 \
     artifacts/policy_homogenization_v1 \
     artifacts/action_routing_trial_v1 \
+    artifacts/action_routing_trial_analysis_v1 \
+    artifacts/action_routing_surface_audit_v1 \
+    artifacts/two_stage_routing_trial_v1 \
+    artifacts/two_stage_routing_trial_analysis_v1 \
+    artifacts/two_stage_selection_bias_audit_v1 \
     artifacts/learner_outcome_trial_planning_v1 \
     artifacts/submission_audit \
   --output artifacts/reproducibility_manifest.json

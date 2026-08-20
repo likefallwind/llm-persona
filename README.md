@@ -227,6 +227,45 @@ semantic warmth or support (0.818; kappa 0.631), so the paper reports it only by
 its literal operational definition. See
 `research/22_factorial_detector_validation_results.md`.
 
+## Prospective wording transport and routing falsifications
+
+Three later, separately frozen experiments test whether the factorial result
+transports and whether it can support action-adaptive control. They are complete:
+the paraphrase panel has 1,280/1,280 successful calls, the action-routing panel
+has 1,920/1,920, and the two-stage routing panel has 2,400/2,400, all with zero
+failed or missing responses.
+
+The two validated behavioral clauses transport across both paraphrase sets; the
+literal encouragement marker does not. The action-routing panel independently
+replicates the generic probing benefit and telling-target harm, but rejects its
+registered single-pass adaptive router. The two-stage trial also fails its joint
+gate: selectors remain near chance and underperform the same-snapshot single-pass
+baseline even though the forced ASK and EXPLAIN executors realize their assigned
+actions at 0.998--1.000. These are controller-requirements and falsification
+results, not evidence that this repository invented or solved adaptive tutoring.
+See `research/27_factorial_paraphrase_replication_results.md`,
+`research/28_action_routing_trial_results.md`, and
+`research/30_two_stage_routing_results.md`.
+
+With the ignored private response JSONL files present, reproduce all three result
+families with:
+
+```bash
+python scripts/analyze_factorial_paraphrase_replication.py --bootstrap-reps 2000
+python scripts/analyze_action_routing_trial.py
+python scripts/analyze_action_routing_surface.py
+python scripts/analyze_two_stage_routing_trial.py
+python scripts/analyze_two_stage_selection_bias.py
+```
+
+`scripts/finalize_semantic_analysis.sh` first requires complete frozen response
+panels, then rebuilds every semantic, factorial, paraphrase, and routing analysis,
+verifies registered claims and privacy structure, audits the anonymous PDF,
+rebuilds figures, writes the reproducibility manifest, and runs the full tests.
+Raw provider responses and request manifests remain deliberately excluded from
+Git; a clean public checkout verifies all released derived artifacts and claims
+but cannot regenerate response-derived tables without those governed inputs.
+
 The data and model release boundaries are documented in
 `research/09_dataset_card.md` and `research/10_model_panel_card.md`.  In
 particular, a public release contains derived measurements and hashes rather
