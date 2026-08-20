@@ -1,0 +1,13 @@
+problem_family,factor,metric,mean_difference
+arithmetic_mean,question_policy,question_first,0.8125
+arithmetic_mean,answer_policy,answer_reveal_correct,0.975
+arithmetic_mean,tone_policy,warmth_marker,0.3625
+fraction_addition,question_policy,question_first,0.8875
+fraction_addition,answer_policy,answer_reveal_correct,0.975
+fraction_addition,tone_policy,warmth_marker,0.5375
+linear_equation,question_policy,question_first,0.8125
+linear_equation,answer_policy,answer_reveal_correct,0.9875
+linear_equation,tone_policy,warmth_marker,0.4125
+percentage_discount,question_policy,question_first,0.825
+percentage_discount,answer_policy,answer_reveal_correct,1.0
+percentage_discount,tone_policy,warmth_marker,0.4125
