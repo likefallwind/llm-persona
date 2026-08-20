@@ -1,7 +1,8 @@
 # Prospective action-routing trial
 
-Local method freeze: 2026-08-20. Status: **designed and generated, no response
-calls started**. The method must be committed and pushed before live collection.
+Local method freeze: 2026-08-20. Status: **designed, generated, and amended
+before any response was recorded or inspected**. The original method and the
+execution amendment must be committed and pushed before live collection.
 
 ## Research question
 
@@ -122,7 +123,7 @@ target, model, classifier, consensus, and failure results remain reportable.
 |---|---|
 | `data/action_routing_trial_spec_v1.json` | `a21ba055036ebdcd8c701662f43830b6ed4f20b5b5d3a669ad130226b44d6927` |
 | `scripts/generate_action_routing_trial.py` | `d27bfe269cfd117da6770b6e4db1544e248e27ed17ac24e5a6ba53fa8cd281c1` |
-| `scripts/run_action_routing_trial.py` | `42c945c91bfcbcadd2743a1a555901f7da5bf6ab9b05169e3f0ed6924ad08368` |
+| `scripts/run_action_routing_trial.py` (initial freeze; superseded only by the pre-result execution amendment below) | `42c945c91bfcbcadd2743a1a555901f7da5bf6ab9b05169e3f0ed6924ad08368` |
 | `scripts/analyze_action_routing_trial.py` | `bcd547035c8604e288f79e6bb7deb40085b0687201bba560086822e8fd21305b` |
 | `scripts/analyze_dialogue_act_validity.py` | `21a4ce5cea6261c5cc90b92f6ae477be82dcf7dd0212e54a1d4955de557e9aa2` |
 | `artifacts/action_routing_trial_v1/sample_manifest.jsonl` | `4c7b11e64e2e9963b9632aeefe63791f71a2964b3a61eab9aa2524bc4ea4283f` |
@@ -134,6 +135,26 @@ target, model, classifier, consensus, and failure results remain reportable.
 
 The generated design contains 384 unique prompt hashes, 48 contexts per target,
 and exact eight-stratum balance in all 48 blocks for every model.
+
+## Pre-result execution amendment
+
+The first live launch began at `2026-08-20T10:10:47+08:00`. It exposed an
+implementation-only schema incompatibility before any response was written or
+inspected: the routing runner imported the factorial panel's serializer, which
+requires factorial-only fields (`base_id`, `problem_family`, `learner_need`, and
+three policy-factor columns) that routing samples deliberately do not contain.
+Successful provider returns would therefore have raised `KeyError` before
+serialization and been retried rather than recorded.
+
+The run was terminated with **0 response rows**, no `finished` marker, and no
+`exit` marker. API requests may have reached the provider, but no returned text
+or outcome entered the dataset or the analyst's view. The correction introduces
+an action-specific result serializer and a regression test using the exact
+routing sample schema. It does not change any request message, sample, hash,
+order, model, route, concurrency cap, classifier, estimand, threshold, or
+decision rule. The amended runner SHA-256 is
+`b9877f109c9fb5a18a38fa54c420a07c2763ba6617a54c36599752bda22d48f9`.
+Live collection must restart from zero only after this amendment is public.
 
 ## Interpretation boundary
 
