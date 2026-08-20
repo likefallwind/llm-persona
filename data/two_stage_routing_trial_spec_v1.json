@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "parent_action_spec": "data/action_routing_trial_spec_v1.json",
+  "parent_action_manifest": "artifacts/action_routing_trial_v1/sample_manifest.jsonl",
+  "source_bridge": "../edubenchmark/sources/datasets/mathtutorbench/datasets/mathdial_bridge.json",
+  "source_mathdial": "../edubenchmark/sources/datasets/mathdial",
+  "source_target_audit": "artifacts/dialogue_act_validity/target_mapping_audit.csv",
+  "source_hashes": {
+    "parent_action_spec_sha256": "a21ba055036ebdcd8c701662f43830b6ed4f20b5b5d3a669ad130226b44d6927",
+    "parent_action_manifest_sha256": "4c7b11e64e2e9963b9632aeefe63791f71a2964b3a61eab9aa2524bc4ea4283f",
+    "bridge_sha256": "96609c808383eea57d16bb24a49f302a9d84ffa323571c5989e57638bbaf2066",
+    "target_audit_sha256": "e88b66557e42ed23f8121695b6c86fa5d24a0b2ec9ebbc8e7256edfe028081fe",
+    "mathdial_train_sha256": "d6135869c02dccf8d14756fa2f0367c5352922bb263ec22dc0eeace4da815d43",
+    "mathdial_test_sha256": "3ec54ee8ab921dc6191bf5e2ee766d4e7916b4264394eb17a6be9b3fe486e50b"
+  },
+  "seed": 20260831,
+  "order_seed": 20260901,
+  "target_acts": ["probing", "telling"],
+  "binary_actions": {"probing": "ASK", "telling": "EXPLAIN"},
+  "call_types": [
+    "selector_ask_first",
+    "selector_explain_first",
+    "ask_executor",
+    "explain_executor",
+    "single_pass_adaptive"
+  ],
+  "expected_contexts": 96,
+  "expected_samples_per_model": 480,
+  "models": [
+    "MiniMax-M3",
+    "MiniMax-M2.7",
+    "glm-5.2",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite"
+  ],
+  "generation": {
+    "temperature": 0,
+    "max_tokens": null,
+    "language": "English",
+    "minimax_concurrency": 4,
+    "gateway_concurrency": 8,
+    "retries": 3
+  },
+  "success_gate": {
+    "required_complete_cells": 2400,
+    "allow_missing": 0,
+    "allow_empty": 0
+  },
+  "analysis": {
+    "selector_parse_regex": "^(ASK|EXPLAIN)[.!]?$",
+    "context_cluster_bootstrap_reps": 4000,
+    "classifier_variants": ["char_svm", "word_svm", "hybrid_svm"],
+    "fixed_model_panel": true
+  },
+  "claim_gates": {
+    "selector_valid_rate_min": 0.98,
+    "selector_accuracy_min": 0.60,
+    "selector_accuracy_ci_low_min": 0.50,
+    "selector_accuracy_above_chance_every_model": true,
+    "selector_wording_accuracy_difference_abs_max": 0.10,
+    "ask_executor_question_rate_min": 0.95,
+    "explain_executor_no_question_rate_min": 0.95,
+    "executor_minimum_model_rate_min": 0.90,
+    "composed_vs_single_pass_delta_min": 0.08,
+    "composed_vs_single_pass_ci_low_above_zero": true,
+    "composed_vs_single_pass_positive_every_model": true,
+    "must_pass_independently_for_both_selector_wordings": true
+  },
+  "reporting_rules": [
+    "Freeze both selector wordings, both executor prompts, the same-snapshot single-pass baseline, all 96 inherited contexts, messages, hashes, model-specific order, metrics, and gates before any response call.",
+    "Both selectors use identical binary actions and differ in wording and ASK-versus-EXPLAIN presentation order; each must pass independently.",
+    "Non-selector calls and selector prompts are target-invariant; no message may expose the held-out human target action.",
+    "Generate both counterfactual executor responses for every context and model before composition; never condition provider calls on an observed selector outcome.",
+    "Compose each selector with the already generated executor response for its parsed action; invalid selector outputs remain invalid and cannot be repaired or excluded.",
+    "Use question-mark realization as the registered binary ASK-versus-EXPLAIN endpoint; report the three four-way human-action classifiers as secondary measurement-sensitive outcomes without a success gate.",
+    "Randomize each model in exact ten-stratum blocks crossing two human targets by five call types.",
+    "Treat contexts as bootstrap clusters and the five models as a fixed panel; report every model and failed gate.",
+    "The human next action is an observed reference, not a uniquely optimal teaching decision, and no endpoint measures learning.",
+    "Do not change models, contexts, prompts, calls, parser, metrics, thresholds, routes, or exclusions after inspecting responses."
+  ]
+}

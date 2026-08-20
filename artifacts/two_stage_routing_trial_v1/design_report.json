@@ -1,0 +1,20 @@
+{
+  "call_types": [
+    "selector_ask_first",
+    "selector_explain_first",
+    "ask_executor",
+    "explain_executor",
+    "single_pass_adaptive"
+  ],
+  "contexts": 96,
+  "contexts_by_target": {
+    "probing": 48,
+    "telling": 48
+  },
+  "exact_ten_stratum_block_balance": true,
+  "expected_calls": 2400,
+  "payload_scope": "public MathDial-derived contexts; no held-out teacher text or private logs",
+  "samples_per_model": 480,
+  "schema_version": 1,
+  "unique_prompt_hashes": 480
+}
