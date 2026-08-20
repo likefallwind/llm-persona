@@ -27,11 +27,33 @@ negative evidence because the failed remedies were frozen before collection and
 are not silently removed. It supports a controller-requirements result, not a
 claim that this paper invents or solves adaptive routing.
 
-The package is ready for a serious main-conference NLP review after the final
-release checks, anonymous PDF audit, and stacked Draft PR CI pass. Acceptance is
-never “without dispute”: reviewers can still challenge construct choice, model
+The locally accessible package has completed its final release checks, anonymous
+PDF audit, and stacked Draft PR CI pass. It is ready for a serious
+main-conference NLP review under the bounded claim above. Acceptance is never
+“without dispute”: reviewers can still challenge construct choice, model
 sampling, API snapshot transport, LLM-judge dependence, and the absence of human
 learning outcomes.
+
+## Final release evidence
+
+The integration snapshot was rebuilt from the governed raw-response inputs with
+`bash scripts/finalize_semantic_analysis.sh` on 2026-08-20. The command exited
+zero after confirming 1,074/1,074 semantic annotations, 2,560/2,560 parent
+factorial responses, 640/640 independently ordered responses, 144/144 detector
+annotations, 1,280/1,280 paraphrase responses, 1,920/1,920 action-routing
+responses, and 2,400/2,400 two-stage responses, all with zero eligible errors or
+missing cells. It then verified 72 registered release claims, passed all 55
+tests, rebuilt the paper figure, and wrote a 349-file reproducibility manifest.
+
+The code/artifact integration snapshot `cb933b0` is published on Draft PR #14,
+which is open, mergeable, and based on the two-stage result PR. GitHub Actions
+run `32355321110` completed every clean-checkout step successfully: syntax, 55
+tests, 72 claims, 225 Git-eligible artifact privacy checks, anonymous-PDF audit,
+figure rebuild, and checkout non-mutation. The PDF audit reports nine pages,
+references only on page nine, 14 embedded fonts, blank author/title metadata,
+review mode, and no identity or local-path hits. Preceding stacked result PR runs
+are also green: `32353317168`, `32353350276`, `32353919584`, `32353996329`, and
+`32354181133`.
 
 ## Broad-journal boundary
 
@@ -58,12 +80,16 @@ with a seven-day unassisted transfer test, automatic scoring, intention-to-treat
 analysis, and explicit attrition/safety gates. This is not a completed or
 registered study and cannot change the present claim boundary.
 
-## Publication checkpoints still outside the local result package
+## Checkpoints that require publication or study coordination
 
-1. Re-run the full finalizer and anonymous ACL PDF audit after all wording is
-   synchronized.
-2. Commit, push, and open the next stacked Draft PR; repair the public-test
-   fixture's accidental sibling-repository dependency and require CI to pass.
-3. Resolve final license/privacy review and record the artifact URL and commit.
-4. Recheck the live venue call, format, anonymity, and responsible-NLP form at
-   upload time.
+The remaining items cannot be truthfully completed inside this repository:
+
+1. At upload time, record the chosen venue's live call, deadline, format, and
+   responsible-NLP form version; no target venue has been selected here.
+2. Record the final public or anonymous artifact URL and immutable submission
+   commit after deciding the venue's anonymity policy, and repeat the upstream
+   license review against that exact release payload.
+3. Do not promote the work to an educational-efficacy or broad-journal claim
+   until the planned learner study has ethics approval, registration, objective
+   outcomes, and completed data. A future server-hosted Qwen panel is a transport
+   extension, not a substitute for that study.
