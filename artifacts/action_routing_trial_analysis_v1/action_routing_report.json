@@ -1,0 +1,75 @@
+{
+  "claim_boundary": "This tests agreement with a frozen observed human next-action label in a fixed model panel. It does not establish learning benefit, globally optimal pedagogy, or a model-population effect.",
+  "classifier_provenance": {
+    "classifier_variants": [
+      "char_svm",
+      "hybrid_svm",
+      "word_svm"
+    ],
+    "human_training_turns": 18541,
+    "mathdial_test_sha256": "3ec54ee8ab921dc6191bf5e2ee766d4e7916b4264394eb17a6be9b3fe486e50b",
+    "mathdial_train_sha256": "d6135869c02dccf8d14756fa2f0367c5352922bb263ec22dc0eeace4da815d43",
+    "training_label_counts": {
+      "focus": 6789,
+      "generic": 4430,
+      "probing": 4236,
+      "telling": 3086
+    },
+    "unique_math_problems": 1111
+  },
+  "contexts": 96,
+  "decision": {
+    "joint_all_classifier_variants_pass": false,
+    "per_classifier_variant": {
+      "char_svm": {
+        "all_primary_gates_pass": false,
+        "checks": {
+          "adaptive_improves_overall_vs_generic": false,
+          "adaptive_probing_noninferior_to_uniform": false,
+          "adaptive_recovers_telling_vs_uniform": false,
+          "adaptive_telling_noninferior_to_generic": false,
+          "oracle_realization_check": false,
+          "uniform_probing_gain_replicates": true,
+          "uniform_telling_harm_replicates": true
+        }
+      },
+      "hybrid_svm": {
+        "all_primary_gates_pass": false,
+        "checks": {
+          "adaptive_improves_overall_vs_generic": false,
+          "adaptive_probing_noninferior_to_uniform": false,
+          "adaptive_recovers_telling_vs_uniform": false,
+          "adaptive_telling_noninferior_to_generic": false,
+          "oracle_realization_check": false,
+          "uniform_probing_gain_replicates": true,
+          "uniform_telling_harm_replicates": true
+        }
+      },
+      "word_svm": {
+        "all_primary_gates_pass": false,
+        "checks": {
+          "adaptive_improves_overall_vs_generic": false,
+          "adaptive_probing_noninferior_to_uniform": false,
+          "adaptive_recovers_telling_vs_uniform": false,
+          "adaptive_telling_noninferior_to_generic": false,
+          "oracle_realization_check": false,
+          "uniform_probing_gain_replicates": true,
+          "uniform_telling_harm_replicates": true
+        }
+      }
+    },
+    "rule": "Every frozen classifier variant must independently pass every gate. The oracle arm is a realization diagnostic and not evidence of adaptivity."
+  },
+  "derived_classifier_rows": 5760,
+  "exact_eight_stratum_block_balance": true,
+  "models": [
+    "MiniMax-M2.7",
+    "MiniMax-M3",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite",
+    "glm-5.2"
+  ],
+  "response_rows": 1920,
+  "schema_version": 1,
+  "status": "prospective_action_routing_trial"
+}

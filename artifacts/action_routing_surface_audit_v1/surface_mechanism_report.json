@@ -1,0 +1,26 @@
+{
+  "claim_boundary": "Question marks are deterministic surface indicators, not complete dialogue-act labels or learning outcomes. This audit was specified after the primary trial outcomes were inspected.",
+  "oracle_classifier_match_ranges": {
+    "probing_max": 0.45416666666666666,
+    "probing_min": 0.42916666666666664,
+    "telling_max": 0.775,
+    "telling_min": 0.7
+  },
+  "oracle_surface_realization": {
+    "probing_any_question_rate": 1.0,
+    "probing_first_sentence_question_rate": 0.9666666666666667,
+    "telling_no_question_rate": 1.0
+  },
+  "response_rows": 1920,
+  "schema_version": 1,
+  "single_pass_routing": {
+    "adaptive_model_separation_max": 0.22916666666666669,
+    "adaptive_model_separation_min": -0.10416666666666663,
+    "adaptive_probing_minus_telling_question_rate": 0.06666666666666665,
+    "adaptive_question_rate_on_probing": 0.7,
+    "adaptive_question_rate_on_telling": 0.6333333333333333,
+    "generic_question_rate_on_telling": 0.30833333333333335,
+    "uniform_question_rate_on_telling": 0.8541666666666666
+  },
+  "status": "post_hoc_mechanism_audit_after_primary_action_routing_analysis"
+}

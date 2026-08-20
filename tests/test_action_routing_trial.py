@@ -27,6 +27,9 @@ runner = load_module(
 analyzer = load_module(
     "action_routing_analyzer", ROOT / "scripts/analyze_action_routing_trial.py",
 )
+surface = load_module(
+    "action_routing_surface", ROOT / "scripts/analyze_action_routing_surface.py",
+)
 
 
 def frozen_objects():
@@ -177,3 +180,37 @@ def test_joint_gates_pass_only_when_adaptive_arm_recovers_telling():
     broken.loc[mask, "context_cluster_ci_low"] = -0.1
     decision = analyzer.evaluate_gates(spec, broken, means)
     assert not decision["joint_all_classifier_variants_pass"]
+
+
+def test_surface_audit_distinguishes_selection_from_realization():
+    manifest = []
+    successful = {}
+    for target in ("probing", "telling"):
+        for arm in ("generic", "uniform_scaffold", "adaptive_router", "oracle_action"):
+            sample_id = f"{target}|{arm}"
+            manifest.append({
+                "sample_id": sample_id, "context_id": target,
+                "target_act": target, "arm": arm,
+            })
+            if arm == "oracle_action":
+                response = "What step led you there?" if target == "probing" else "Subtract three from both sides."
+            elif arm == "adaptive_router":
+                response = "What should you try next?"
+            else:
+                response = "Try the inverse operation."
+            successful[(sample_id, "model")] = {"response": response}
+    frame = surface.response_metrics(successful, manifest)
+    summary = surface.arm_summary(frame, reps=20, seed=1)
+    oracle = summary[
+        (summary.arm == "oracle_action")
+        & (summary.metric == "has_question_mark")
+    ].set_index("target_act")["mean"]
+    assert oracle["probing"] == 1
+    assert oracle["telling"] == 0
+    separation = surface.target_separation(frame, reps=20, seed=2)
+    adaptive = separation[
+        (separation.model == "ALL")
+        & (separation.arm == "adaptive_router")
+        & (separation.metric == "has_question_mark")
+    ].iloc[0]
+    assert adaptive.probing_minus_telling == 0
