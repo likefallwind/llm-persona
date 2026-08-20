@@ -35,9 +35,30 @@ selection_bias = load_module(
 
 def frozen_objects():
     spec = json.loads((ROOT / "data/two_stage_routing_trial_spec_v1.json").read_text())
-    contexts = generator.inherited_contexts(spec)
-    samples = generator.build_samples(spec, contexts)
+    samples = [
+        json.loads(line) for line in
+        (ROOT / "artifacts/two_stage_routing_trial_v1/sample_manifest.jsonl")
+        .read_text(encoding="utf-8").splitlines() if line
+    ]
+    contexts = sorted({
+        (row["context_id"], row["bridge_index"], row["target_act"],
+         row["heldout_teacher_sha256"])
+        for row in samples
+    })
     return spec, contexts, samples
+
+
+def synthetic_samples(spec):
+    synthetic_spec = {**spec, "expected_samples_per_model": 10}
+    contexts = [
+        {
+            "context_id": f"synthetic-{target}", "bridge_index": index,
+            "target_act": target, "conversation_prompt": "public context",
+            "heldout_teacher_sha256": "heldout-sentinel",
+        }
+        for index, target in enumerate(("probing", "telling"))
+    ]
+    return generator.build_samples(synthetic_spec, contexts)
 
 
 def test_two_stage_manifest_and_order_are_exactly_balanced():
@@ -46,15 +67,32 @@ def test_two_stage_manifest_and_order_are_exactly_balanced():
     assert len(samples) == 480
     assert len({row["prompt_sha256"] for row in samples}) == 480
     for call_type in spec["call_types"]:
-        prompts = {
-            row["messages"][0]["content"] for row in samples
-            if row["call_type"] == call_type
-        }
-        assert len(prompts) == 1
         assert {row["target_act"] for row in samples if row["call_type"] == call_type} == {
             "probing", "telling",
         }
+    assert all("messages" not in row for row in samples)
+    assert all("conversation_prompt" not in row for row in samples)
+
+    synthetic = synthetic_samples(spec)
+    for call_type in spec["call_types"]:
+        prompts = {
+            row["messages"][0]["content"] for row in synthetic
+            if row["call_type"] == call_type
+        }
+        assert prompts == {generator.PROMPTS[call_type]}
+    assert all(
+        "heldout-sentinel" not in "\n".join(
+            message["content"] for message in row["messages"]
+        )
+        for row in synthetic
+    )
     plan = generator.build_order_plan(spec, samples)
+    checked_in = [
+        json.loads(line) for line in
+        (ROOT / "artifacts/two_stage_routing_trial_v1/request_order_plan.jsonl")
+        .read_text(encoding="utf-8").splitlines() if line
+    ]
+    assert plan == checked_in
     assert len(plan) == 2400
     for model in spec["models"]:
         ordered = runner.planned_samples(samples, plan, model, spec["order_seed"])
@@ -81,7 +119,8 @@ class SuccessClient:
 
 
 def test_runner_serializes_real_two_stage_sample_schema():
-    _, _, samples = frozen_objects()
+    spec, _, _ = frozen_objects()
+    samples = synthetic_samples(spec)
     row = runner.call_one(SuccessClient(), "test", samples[0], retries=1)
     assert not row["error"]
     assert row["context_id"]
@@ -123,7 +162,7 @@ def test_complete_synthetic_panel_validates_and_composes_without_text_release():
 
 
 def test_joint_gate_requires_both_selector_wordings():
-    spec, _, _ = frozen_objects()
+    spec = json.loads((ROOT / "data/two_stage_routing_trial_spec_v1.json").read_text())
     selectors = pd.DataFrame([
         {
             "selector": selector, "valid_rate": 1.0, "target_accuracy": 0.7,

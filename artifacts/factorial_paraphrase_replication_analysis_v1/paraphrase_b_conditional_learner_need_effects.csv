@@ -1,0 +1,13 @@
+condition_factor,condition_level,contrast,mean_difference
+question_policy,question_first,direct_minus_explore_reveal,0.01874999999999999
+question_policy,question_first,explore_minus_direct_question,0.018750000000000044
+question_policy,explain_only,direct_minus_explore_reveal,0.0
+question_policy,explain_only,explore_minus_direct_question,0.0
+answer_policy,reveal,direct_minus_explore_reveal,0.018750000000000044
+answer_policy,reveal,explore_minus_direct_question,0.0
+answer_policy,withhold,direct_minus_explore_reveal,0.0
+answer_policy,withhold,explore_minus_direct_question,0.01874999999999999
+tone_policy,warm,direct_minus_explore_reveal,0.006249999999999978
+tone_policy,warm,explore_minus_direct_question,0.01874999999999999
+tone_policy,neutral,direct_minus_explore_reveal,0.012500000000000011
+tone_policy,neutral,explore_minus_direct_question,0.0
