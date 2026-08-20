@@ -1,0 +1,13 @@
+group,policy,metric,system_conflict_effect,system_conflict_ci_low,system_conflict_ci_high,learner_override_effect,learner_override_ci_low,learner_override_ci_high,control_gap,control_gap_ci_low,control_gap_ci_high
+ALL,question,question_first,0.98125,0.9625,0.99375,0.0,0.0,0.0,0.98125,0.9625,0.99375
+ALL,answer,answer_reveal_correct,0.98125,0.95625,1.0,0.0,0.0,0.0,0.98125,0.95625,1.0
+MiniMax-M2.7,question,question_first,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0
+MiniMax-M2.7,answer,answer_reveal_correct,0.96875,0.90625,1.0,0.0,0.0,0.0,0.96875,0.90625,1.0
+MiniMax-M3,question,question_first,0.9375,0.84375,1.0,0.0,0.0,0.0,0.9375,0.84375,1.0
+MiniMax-M3,answer,answer_reveal_correct,0.96875,0.90625,1.0,0.0,0.0,0.0,0.96875,0.90625,1.0
+deepseek-v4-pro,question,question_first,0.96875,0.90625,1.0,0.0,0.0,0.0,0.96875,0.90625,1.0
+deepseek-v4-pro,answer,answer_reveal_correct,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0
+doubao-seed-2.0-lite,question,question_first,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0
+doubao-seed-2.0-lite,answer,answer_reveal_correct,0.96875,0.90625,1.0,0.0,0.0,0.0,0.96875,0.90625,1.0
+glm-5.2,question,question_first,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0
+glm-5.2,answer,answer_reveal_correct,1.0,1.0,1.0,0.0,0.0,0.0,1.0,1.0,1.0
