@@ -1,0 +1,236 @@
+{
+  "base_problems": 8,
+  "claim_boundary": "This tests transport across two frozen clause paraphrases and confirms the predeclared control-asymmetry estimand. It is not outcome-blind replication of the original panel and does not measure learner benefit.",
+  "exact_32_stratum_block_balance": true,
+  "joint_decision": {
+    "control_asymmetry": {
+      "answer": {
+        "pass_by_wording_set": {
+          "paraphrase_a": true,
+          "paraphrase_b": true
+        },
+        "prospectively_confirmed_across_wordings": true
+      },
+      "question": {
+        "pass_by_wording_set": {
+          "paraphrase_a": true,
+          "paraphrase_b": true
+        },
+        "prospectively_confirmed_across_wordings": true
+      }
+    },
+    "factor_wording_transport": {
+      "answer_policy": {
+        "paraphrase_robust_operational_effect": true,
+        "selective_by_wording_set": {
+          "paraphrase_a": true,
+          "paraphrase_b": true
+        },
+        "semantic_claim": "answer_reveal_correct"
+      },
+      "question_policy": {
+        "paraphrase_robust_operational_effect": true,
+        "selective_by_wording_set": {
+          "paraphrase_a": true,
+          "paraphrase_b": true
+        },
+        "semantic_claim": "question_first"
+      },
+      "tone_policy": {
+        "paraphrase_robust_operational_effect": false,
+        "selective_by_wording_set": {
+          "paraphrase_a": true,
+          "paraphrase_b": false
+        },
+        "semantic_claim": "literal frozen encouragement marker only"
+      }
+    },
+    "rule": "Both frozen wording sets must independently pass. The tone result remains a literal marker and cannot regain semantic warmth status."
+  },
+  "models": [
+    "MiniMax-M2.7",
+    "MiniMax-M3",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite",
+    "glm-5.2"
+  ],
+  "per_wording": {
+    "paraphrase_a": {
+      "control_asymmetry": {
+        "answer": {
+          "control_asymmetry_pass": true,
+          "control_gap": 0.975,
+          "control_gap_ci_low": 0.95,
+          "control_gap_pass": true,
+          "learner_override_ci": [
+            0.0,
+            0.0
+          ],
+          "learner_override_effect": 0.0,
+          "learner_override_equivalent_to_zero": true,
+          "system_conflict_ci_low": 0.95,
+          "system_conflict_effect": 0.975,
+          "system_conflict_min": 0.6,
+          "system_conflict_pass": true
+        },
+        "question": {
+          "control_asymmetry_pass": true,
+          "control_gap": 0.88125,
+          "control_gap_ci_low": 0.84375,
+          "control_gap_pass": true,
+          "learner_override_ci": [
+            0.0,
+            0.0
+          ],
+          "learner_override_effect": 0.0,
+          "learner_override_equivalent_to_zero": true,
+          "system_conflict_ci_low": 0.84375,
+          "system_conflict_effect": 0.88125,
+          "system_conflict_min": 0.6,
+          "system_conflict_pass": true
+        }
+      },
+      "factor_gates": {
+        "factor_results": {
+          "answer_policy": {
+            "controllable": true,
+            "largest_primary_cross_effect_abs": 0.06562499999999999,
+            "positive_in_every_model": true,
+            "selective": true,
+            "selectivity_pass": true,
+            "selectivity_ratio": 15.000000000000002,
+            "target_mean_difference": 0.984375,
+            "target_metric": "answer_reveal_correct",
+            "target_threshold": 0.6,
+            "target_threshold_pass": true
+          },
+          "question_policy": {
+            "controllable": true,
+            "largest_primary_cross_effect_abs": 0.1,
+            "positive_in_every_model": true,
+            "selective": true,
+            "selectivity_pass": true,
+            "selectivity_ratio": 8.34375,
+            "target_mean_difference": 0.834375,
+            "target_metric": "question_first",
+            "target_threshold": 0.6,
+            "target_threshold_pass": true
+          },
+          "tone_policy": {
+            "controllable": true,
+            "largest_primary_cross_effect_abs": 0.09062500000000001,
+            "positive_in_every_model": true,
+            "selective": true,
+            "selectivity_pass": true,
+            "selectivity_ratio": 4.758620689655172,
+            "target_mean_difference": 0.43125,
+            "target_metric": "warmth_marker",
+            "target_threshold": 0.3,
+            "target_threshold_pass": true
+          }
+        },
+        "learner_need": {
+          "direct_minus_explore_reveal": 0.009375000000000022,
+          "explore_minus_direct_question": -0.046875,
+          "question_pass": false,
+          "question_threshold": 0.1,
+          "reveal_pass": false,
+          "reveal_threshold": 0.1
+        }
+      },
+      "rows": 640
+    },
+    "paraphrase_b": {
+      "control_asymmetry": {
+        "answer": {
+          "control_asymmetry_pass": true,
+          "control_gap": 0.98125,
+          "control_gap_ci_low": 0.95625,
+          "control_gap_pass": true,
+          "learner_override_ci": [
+            0.0,
+            0.0
+          ],
+          "learner_override_effect": 0.0,
+          "learner_override_equivalent_to_zero": true,
+          "system_conflict_ci_low": 0.95625,
+          "system_conflict_effect": 0.98125,
+          "system_conflict_min": 0.6,
+          "system_conflict_pass": true
+        },
+        "question": {
+          "control_asymmetry_pass": true,
+          "control_gap": 0.98125,
+          "control_gap_ci_low": 0.9625,
+          "control_gap_pass": true,
+          "learner_override_ci": [
+            0.0,
+            0.0
+          ],
+          "learner_override_effect": 0.0,
+          "learner_override_equivalent_to_zero": true,
+          "system_conflict_ci_low": 0.9625,
+          "system_conflict_effect": 0.98125,
+          "system_conflict_min": 0.6,
+          "system_conflict_pass": true
+        }
+      },
+      "factor_gates": {
+        "factor_results": {
+          "answer_policy": {
+            "controllable": true,
+            "largest_primary_cross_effect_abs": 0.05937499999999998,
+            "positive_in_every_model": true,
+            "selective": true,
+            "selectivity_pass": true,
+            "selectivity_ratio": 16.684210526315795,
+            "target_mean_difference": 0.990625,
+            "target_metric": "answer_reveal_correct",
+            "target_threshold": 0.6,
+            "target_threshold_pass": true
+          },
+          "question_policy": {
+            "controllable": true,
+            "largest_primary_cross_effect_abs": 0.084375,
+            "positive_in_every_model": true,
+            "selective": true,
+            "selectivity_pass": true,
+            "selectivity_ratio": 11.74074074074074,
+            "target_mean_difference": 0.990625,
+            "target_metric": "question_first",
+            "target_threshold": 0.6,
+            "target_threshold_pass": true
+          },
+          "tone_policy": {
+            "controllable": false,
+            "largest_primary_cross_effect_abs": 0.009375000000000022,
+            "positive_in_every_model": true,
+            "selective": false,
+            "selectivity_pass": true,
+            "selectivity_ratio": 30.99999999999993,
+            "target_mean_difference": 0.290625,
+            "target_metric": "warmth_marker",
+            "target_threshold": 0.3,
+            "target_threshold_pass": false
+          }
+        },
+        "learner_need": {
+          "direct_minus_explore_reveal": 0.009375000000000022,
+          "explore_minus_direct_question": 0.009375000000000022,
+          "question_pass": false,
+          "question_threshold": 0.1,
+          "reveal_pass": false,
+          "reveal_threshold": 0.1
+        }
+      },
+      "rows": 640
+    }
+  },
+  "response_rows": 1280,
+  "schema_version": 1,
+  "status": "prospective_post_result_wording_replication",
+  "wording_sets": [
+    "paraphrase_a",
+    "paraphrase_b"
+  ]
+}
