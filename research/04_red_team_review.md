@@ -227,7 +227,10 @@ tutor adaptivity. PedRAG studies declared-versus-enacted behavior under runtime
 control. Tutor Personas learns tutor-specific steering; PATS conditions strategy
 on student personality; Pedagogical Alignment and StratL train or optimize
 desired policies; SHAPE and Answer Leakage Robustness test answer-inducing
-pressure; and an ACL 2026 deployment audit analyzes 500 real conversations.
+pressure; a cross-task study tests consistency of assigned personas; a
+preregistered audit already shows that general helpfulness is not a reliable
+pedagogy signal; a deployed supervisor enforces answer withholding; and an ACL
+2026 deployment audit analyzes 500 real conversations.
 
 **Current answer:** the novelty is not the phrase *behavior-first*, a new tutor
 taxonomy, or the general observation that prompts change teaching.  It is the
@@ -243,9 +246,9 @@ simulated sessions.
 paper never claims the first behavior-based LLM personality study. The semantic
 panel partially succeeds but fails the multi-disposition title gate; that mixed
 outcome is reported rather than hidden behind a renamed trait. The answer-leakage
-papers directly own the adversarial withholding problem; the new factorial can
+papers and supervisor work directly own the withholding problem; the new factorial can
 contribute component selectivity and ordinary learner-request conflict, not a
-first jailbreak claim. The deployment audit provides stronger evidence about
+first jailbreak, measurement-warning, or deployed-control claim. The deployment audit provides stronger evidence about
 actual student use than this archive, so the paper retains a finite-panel
 behavior and measurement claim.
 

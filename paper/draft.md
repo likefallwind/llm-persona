@@ -91,7 +91,9 @@ associated with objective diagnosis and adds no prediction beyond exact history.
 
 PersonaLLM shows that prompted models can reproduce designated Big Five profiles
 in inventories and stories (Jiang et al., 2024), while TRAIT expands such probes
-to thousands of scenarios (Lee et al., 2025).  These are expressibility results.
+to thousands of scenarios (Lee et al., 2025). Reusens et al. (2025) test whether
+assigned personas remain consistent across elicitation tasks. These are
+expressibility or prompted-consistency results.
 Shu et al. (2024) demonstrate substantial sensitivity to order and negation.
 Recent audits challenge both construct equivalence with human personality and the
 predictive validity of LLM self-report (Han et al., 2025; Zierahn et al., 2026;
@@ -100,9 +102,9 @@ constructs and behavioral contexts are tightly matched.  We therefore begin with
 repeated tutor actions rather than a human inventory.  GenPT replaces fixed
 self-report items with newly generated projective stimuli and a staged behavior-
 collection pipeline (Wang et al., 2026), showing that behavior-first elicitation
-is itself an active psychometric direction.  Our unit is narrower and more
-ecological: previously generated tutor actions on shared educational tasks,
-tested against task, fingerprint, intervention, and external-criterion controls.
+is itself an active psychometric direction. Our unit is narrower: unassigned
+defaults in shared-harness tutor outputs, tested against task, fingerprint,
+intervention, and external-criterion controls.
 
 ### 2.2 Evaluating and steering AI tutors
 
@@ -115,9 +117,10 @@ knowledge-state diagnosis, and adaptive teaching on long real-world histories
 (Li et al., 2026).  We extend that setting with an exact-history, held-out-model
 test of whether adaptive-teaching scores predict human-gold diagnosis.  Lee et
 al. (2026) learn activation directions for tutor-specific variation from human
-dialogue.  More broadly, persona and steering work asks whether a predefined
-policy can be induced; we ask first whether deployed systems show recurring
-default differences and how a shared prompt intervention changes them.
+dialogue. ScaffoldLM and MHPO instead add learner-state planning and multi-horizon
+optimization (Li et al., 2026; Shi et al., 2026). More broadly, this work asks
+how a predefined policy can be induced; we ask first whether deployed systems
+show recurring default differences and how a shared intervention changes them.
 IHEval reports sharp degradation when instruction priorities conflict (Zhang et
 al., 2025). Whether an explicit learner request survives system-level policy
 clauses is therefore an instruction-hierarchy test, not evidence of empathy,
@@ -132,6 +135,14 @@ human-gold learner diagnosis.  PedRAG proposes runtime theory grounding to reduc
 declared-versus-enacted pedagogical inconsistency (Nkambou et al., 2026), but its
 reported mastery is from controlled multi-agent simulation.  We treat it as a
 control architecture, not learning-effectiveness evidence.
+
+Answer withholding is already studied under pedagogical jailbreaks, adversarial
+student pressure, and a deployed machine-checkable help supervisor (Zhao et al.,
+2026a,b; Pisan, 2026). A separate preregistered audit finds that general
+helpfulness judgments can reverse between judges even when targeted pedagogy
+contrasts persist (Fan et al., 2026). These results preclude first-withholding
+claims and support our requirement for targeted measures and independent
+criteria rather than one aggregate judge score.
 
 ### 2.3 Why attribution and simulation are insufficient
 

@@ -1,6 +1,6 @@
 # Literature map and research gap
 
-Snapshot date: 2026-08-19.  This is a living map; it records claims supported by
+Snapshot date: 2026-08-20.  This is a living map; it records claims supported by
 primary paper pages rather than relying on secondary summaries.
 
 ## 1. Why a questionnaire paper is not enough
@@ -43,6 +43,11 @@ primary paper pages rather than relying on secondary summaries.
   inside a purpose-built psychometric instrument rather than observing repeated
   behavior in an external application domain.
   [Wang et al., ACL 2026](https://aclanthology.org/2026.acl-long.1901/)
+- A cross-task consistency framework assigns personas and tests them across
+  surveys, essays, social posts, and single-/multi-turn dialogue. This is the
+  closest personality-side precedent for cross-task recurrence, but it studies
+  prompted personas rather than unassigned defaults in a consequential domain.
+  [Reusens et al., Findings EMNLP 2025](https://aclanthology.org/2025.findings-emnlp.603/)
 
 **Consequence for this project:** human personality tests are a deliberately
 excluded primary endpoint.  We infer domain-specific dispositions from behavior,
@@ -92,6 +97,12 @@ separate sources of evidence.
   construct validity of defaults, followed by component-selectivity tests.
   [Sonkar et al., Findings EMNLP 2024](https://aclanthology.org/2024.findings-emnlp.797/)
   [Puech et al., Findings ACL 2025](https://aclanthology.org/2025.findings-acl.1348/)
+- ScaffoldLM and MHPO further show that learner-state memory, explicit planning,
+  and trajectory-level optimization can improve a desired tutoring policy. They
+  strengthen the boundary: our novelty is auditing naturally recurring defaults
+  and their construct validity, not inventing a better control architecture.
+  [ScaffoldLM, ACL 2026](https://aclanthology.org/2026.acl-long.325/)
+  [MHPO, ACL 2026](https://aclanthology.org/2026.acl-long.518/)
 - Context-ablation experiments on 75 real ITS scenarios show that three LLMs
   only marginally reproduce ITS adaptivity; a validated tutor-training
   classifier also identifies overly direct feedback.  This is a close study of
@@ -118,6 +129,17 @@ separate sources of evidence.
   evidence than benchmark responses and requires us to keep deployment behavior
   and learner outcomes outside the present claim boundary.
   [Kobler et al., ACL 2026](https://aclanthology.org/2026.acl-long.875/)
+- A preregistered three-base audit finds that general helpfulness judgments are
+  judge-contingent even when targeted pedagogy contrasts persist, and recommends
+  pairing targeted rubrics with deterministic process measures. This directly
+  supports our measurement design but precludes presenting the general critique
+  of aggregate LLM judging as novel.
+  [Fan et al., 2026](https://arxiv.org/abs/2607.28128)
+- A deployed Socratic supervisor enforces answer withholding with a deterministic
+  help ceiling, LLM audit, and scripted personas. It explicitly does not claim
+  learning outcomes. Our answer-policy result is therefore a comparative
+  measurement and request-conflict result, not a first withholding mechanism.
+  [Pisan, 2026](https://arxiv.org/abs/2608.12292)
 
 ### Why a prompted simulated student is not yet an outcome measure
 
