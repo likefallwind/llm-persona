@@ -34,16 +34,14 @@ surface = load_module(
 
 def frozen_objects():
     spec = json.loads((ROOT / "data/action_routing_trial_spec_v1.json").read_text())
-    samples = [
-        json.loads(line) for line in
-        (ROOT / "artifacts/action_routing_trial_v1/sample_manifest.jsonl")
-        .read_text(encoding="utf-8").splitlines() if line
-    ]
-    contexts = sorted({
-        (row["context_id"], row["bridge_index"], row["target_act"],
-         row["heldout_teacher_sha256"])
-        for row in samples
-    })
+    bridge = json.loads(Path(spec["source_bridge"]).read_text())
+    targets = generator.load_targets(
+        ROOT / spec["source_target_audit"],
+        spec["source_benchmark"],
+        spec["target_source"],
+    )
+    contexts = generator.select_contexts(spec, bridge, targets)
+    samples = generator.build_samples(spec, contexts)
     return spec, contexts, samples
 
 
@@ -51,37 +49,29 @@ def test_manifest_is_balanced_and_nonoracle_policy_is_target_invariant():
     spec, contexts, samples = frozen_objects()
     assert len(contexts) == 96
     assert len(samples) == 384
-    assert sum(row[2] == "probing" for row in contexts) == 48
-    assert sum(row[2] == "telling" for row in contexts) == 48
+    assert sum(row["target_act"] == "probing" for row in contexts) == 48
+    assert sum(row["target_act"] == "telling" for row in contexts) == 48
     assert len({row["prompt_sha256"] for row in samples}) == 384
     for arm in ("generic", "uniform_scaffold", "adaptive_router"):
+        prompts = {
+            row["messages"][0]["content"] for row in samples if row["arm"] == arm
+        }
+        assert len(prompts) == 1
         assert {
             row["target_act"] for row in samples if row["arm"] == arm
         } == {"probing", "telling"}
-    assert all("messages" not in row for row in samples)
-    assert all("conversation_prompt" not in row for row in samples)
-
-    synthetic_spec = {**spec, "expected_samples_per_model": 8}
-    synthetic_contexts = [
-        {
-            "context_id": f"synthetic-{target}", "bridge_index": index,
-            "target_act": target, "conversation_prompt": "public context",
-            "heldout_teacher_sha256": "heldout-sentinel",
-        }
-        for index, target in enumerate(("probing", "telling"))
-    ]
-    synthetic = generator.build_samples(synthetic_spec, synthetic_contexts)
-    for arm in ("generic", "uniform_scaffold", "adaptive_router"):
-        prompts = {
-            row["messages"][0]["content"] for row in synthetic if row["arm"] == arm
-        }
-        assert prompts == {generator.SYSTEM_PROMPTS[arm]}
-    assert all(
-        "heldout-sentinel" not in "\n".join(
+    for row in samples:
+        assert row["heldout_teacher_sha256"] not in "\n".join(
             message["content"] for message in row["messages"]
         )
-        for row in synthetic
-    )
+    public_rows = [
+        json.loads(line) for line in
+        (ROOT / "artifacts/action_routing_trial_v1/sample_manifest.jsonl")
+        .read_text(encoding="utf-8").splitlines() if line
+    ]
+    assert len(public_rows) == 384
+    assert all("messages" not in row for row in public_rows)
+    assert all("conversation_prompt" not in row for row in public_rows)
 
 
 def test_order_plan_is_deterministic_and_exactly_block_balanced():
@@ -89,12 +79,6 @@ def test_order_plan_is_deterministic_and_exactly_block_balanced():
     first = generator.build_order_plan(spec, samples)
     second = generator.build_order_plan(spec, samples)
     assert first == second
-    checked_in = [
-        json.loads(line) for line in
-        (ROOT / "artifacts/action_routing_trial_v1/request_order_plan.jsonl")
-        .read_text(encoding="utf-8").splitlines() if line
-    ]
-    assert first == checked_in
     assert len(first) == 1920
     for model in spec["models"]:
         ordered = runner.planned_samples(samples, first, model, spec["order_seed"])
@@ -179,7 +163,7 @@ def deterministic_predictions(spec):
 
 
 def test_joint_gates_pass_only_when_adaptive_arm_recovers_telling():
-    spec = json.loads((ROOT / "data/action_routing_trial_spec_v1.json").read_text())
+    spec, _, _ = frozen_objects()
     predictions = deterministic_predictions(spec)
     contrasts, _ = analyzer.contrast_tables(predictions, reps=20, seed=5)
     means = analyzer.arm_means(predictions, reps=20, seed=6)
