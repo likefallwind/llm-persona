@@ -6,14 +6,68 @@ from __future__ import annotations
 import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import fcntl
+import hashlib
 import json
 from pathlib import Path
 import sys
 import threading
+import time
 from typing import Any
 
 from generate_action_routing_trial import order_hash, stratum_key
-from run_factorial_prompt_panel import call_one, completed_keys, load_jsonl
+from run_factorial_prompt_panel import completed_keys, load_jsonl
+
+
+def result_row(
+    sample: dict[str, Any], model: str, response: str, usage: dict[str, Any],
+    attempts: int, error: str, transport: str,
+) -> dict[str, Any]:
+    """Serialize the routing schema without assuming factorial-only fields."""
+    return {
+        "request_id": f"{sample['sample_id']}|{model}",
+        "sample_id": sample["sample_id"],
+        "context_id": sample["context_id"],
+        "arm": sample["arm"],
+        "target_act": sample["target_act"],
+        "model": model,
+        "prompt_sha256": sample["prompt_sha256"],
+        "response": response,
+        "response_sha256": hashlib.sha256(response.encode()).hexdigest() if response else "",
+        "usage": usage,
+        "attempts": attempts,
+        "transport": transport,
+        "error": error,
+    }
+
+
+def call_one(
+    client: Any, model: str, sample: dict[str, Any], retries: int,
+) -> dict[str, Any]:
+    """Call one frozen routing request and retain its action-specific metadata."""
+    response = ""
+    error = ""
+    usage: dict[str, Any] = {}
+    transport = "stream"
+    nonstream = False
+    for attempt in range(1, retries + 1):
+        try:
+            client.reset_usage_window()
+            transport = "nonstream" if nonstream else "stream"
+            response = client.chat(
+                sample["messages"], model=model, max_tokens=None,
+                stream=not nonstream,
+            )
+            usage = client.read_usage_window()
+            if response.strip():
+                return result_row(
+                    sample, model, response, usage, attempt, "", transport,
+                )
+            error = "empty response"
+            nonstream = True
+        except Exception as exc:  # noqa: BLE001
+            error = str(exc)[:500]
+        time.sleep(min(8, attempt * 2))
+    return result_row(sample, model, response, usage, retries, error, transport)
 
 
 def planned_samples(
@@ -125,8 +179,6 @@ def main() -> None:
                         model, timeout=args.timeout, temperature=0,
                     )
                 row = call_one(thread_state.client, model, sample, args.retries)
-                row["routing_arm"] = sample["arm"]
-                row["routing_target_act"] = sample["target_act"]
                 row["routing_order_seed"] = seed
                 row["routing_queue_rank"] = rank[sample["sample_id"]]
                 return row
@@ -140,8 +192,8 @@ def main() -> None:
                     print(json.dumps({
                         "request_id": row["request_id"],
                         "queue_rank": row["routing_queue_rank"],
-                        "arm": row["routing_arm"],
-                        "target_act": row["routing_target_act"],
+                        "arm": row["arm"],
+                        "target_act": row["target_act"],
                         "ok": not bool(row["error"]),
                         "error": row["error"],
                     }, ensure_ascii=False), flush=True)

@@ -96,6 +96,39 @@ def test_runner_rejects_tampered_order_hash():
         raise AssertionError("tampered routing order was accepted")
 
 
+class RoutingSuccessClient:
+    def reset_usage_window(self):
+        pass
+
+    def read_usage_window(self):
+        return {"calls": 1}
+
+    def chat(self, messages, model, max_tokens, stream):
+        assert messages == [{"role": "user", "content": "public context"}]
+        assert model == "test-model"
+        assert max_tokens is None
+        assert stream
+        return "Try the inverse operation first."
+
+
+def test_runner_serializes_action_schema_without_factorial_fields():
+    sample = {
+        "sample_id": "route-1",
+        "context_id": "context-1",
+        "arm": "adaptive_router",
+        "target_act": "telling",
+        "prompt_sha256": "a" * 64,
+        "messages": [{"role": "user", "content": "public context"}],
+    }
+    row = runner.call_one(RoutingSuccessClient(), "test-model", sample, retries=1)
+    assert not row["error"]
+    assert row["context_id"] == "context-1"
+    assert row["arm"] == "adaptive_router"
+    assert row["target_act"] == "telling"
+    assert row["response_sha256"]
+    assert "base_id" not in row
+
+
 def deterministic_predictions(spec):
     rows = []
     matches = {
