@@ -26,11 +26,29 @@ The script checks both file hashes, compiles in a temporary directory, and
 copies only the final PDF into this directory.  `SOURCE_DATE_EPOCH` is pinned so
 repeated builds with the same TeX toolchain are byte-stable.
 
+The 2026-08-19 result build is nine PDF pages. Main text, limitations, and ethics
+end on page 8; references begin on page 8 and continue through page 9, so the
+manuscript remains within an eight-page main-content limit. `pdfinfo` reports
+blank author/title metadata, `pdffonts` reports every font embedded and no Type 3
+font, and text extraction contains no local path or contributor identity. The
+factorial table has no overfull box warning.
+
+These structural properties are now executable rather than only manually
+recorded. `scripts/audit_acl_submission.py --require-pass` checks review mode,
+anonymous TeX authorship, page-8 main-content termination, reference-only page 9,
+blank PDF author/title metadata, embedded non-Type-3 fonts, identity/local-path
+patterns, and the required claim-boundary wording. Its report is stored under
+`artifacts/submission_audit/`. Final visual inspection and the live venue rules
+remain separate requirements.
+
 ## Pre-upload gates
 
 1. Confirm `\usepackage[review]{acl}` remains enabled.
 2. Inspect the PDF for author-identifying text and broken figures or citations.
-3. Run `./scripts/reproduce_completed.sh` and the manifest verifier.
-4. Complete the current ARR Responsible NLP checklist in the submission form;
+3. Confirm the complete 480-unit, three-judge detector audit preserves the
+   registered downgrade: question-first and correct-answer reveal pass, while
+   the encouragement lexicon fails as a semantic warmth measure.
+4. Run `./scripts/reproduce_completed.sh` and the manifest verifier.
+5. Complete the current ARR Responsible NLP checklist in the submission form;
    `research/15_arr_responsible_nlp_checklist.md` is the local evidence map.
-5. Recheck the venue page limit and deadline on the official ARR pages.
+6. Recheck the venue page limit and deadline on the official ARR pages.

@@ -1,0 +1,63 @@
+{
+  "base_problems": 32,
+  "decision": {
+    "factor_results": {
+      "answer_policy": {
+        "controllable": true,
+        "largest_primary_cross_effect_abs": 0.07890625000000001,
+        "positive_in_every_model": true,
+        "selective": true,
+        "selectivity_pass": true,
+        "selectivity_ratio": 11.346534653465346,
+        "target_mean_difference": 0.8953125000000001,
+        "target_metric": "answer_reveal_correct",
+        "target_threshold": 0.6,
+        "target_threshold_pass": true
+      },
+      "question_policy": {
+        "controllable": true,
+        "largest_primary_cross_effect_abs": 0.07578125000000002,
+        "positive_in_every_model": true,
+        "selective": true,
+        "selectivity_pass": true,
+        "selectivity_ratio": 10.195876288659791,
+        "target_mean_difference": 0.77265625,
+        "target_metric": "question_first",
+        "target_threshold": 0.6,
+        "target_threshold_pass": true
+      },
+      "tone_policy": {
+        "controllable": true,
+        "largest_primary_cross_effect_abs": 0.11796875000000001,
+        "positive_in_every_model": true,
+        "selective": true,
+        "selectivity_pass": true,
+        "selectivity_ratio": 5.039735099337748,
+        "target_mean_difference": 0.5945312500000001,
+        "target_metric": "warmth_marker",
+        "target_threshold": 0.3,
+        "target_threshold_pass": true
+      }
+    },
+    "learner_need": {
+      "direct_minus_explore_reveal": 0.07343749999999999,
+      "explore_minus_direct_question": -0.03046874999999999,
+      "question_pass": false,
+      "question_threshold": 0.1,
+      "reveal_pass": false,
+      "reveal_threshold": 0.1
+    }
+  },
+  "factor_cells_per_model": 512,
+  "models": [
+    "MiniMax-M2.7",
+    "MiniMax-M3",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite",
+    "glm-5.2"
+  ],
+  "reported_cell_rows": 96,
+  "reported_interaction_rows": 192,
+  "response_rows": 2560,
+  "schema_version": 1
+}

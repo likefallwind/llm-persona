@@ -1,0 +1,13 @@
+group,contrast,metric,mean_difference,bootstrap_ci_low,bootstrap_ci_high
+ALL,direct_minus_explore_reveal,answer_reveal_correct,0.07343749999999999,0.06091796874999999,0.08515624999999999
+ALL,explore_minus_direct_question,question_first,-0.03046874999999999,-0.046875,-0.014062500000000002
+MiniMax-M2.7,direct_minus_explore_reveal,answer_reveal_correct,0.18359375,0.1328125,0.23828125
+MiniMax-M2.7,explore_minus_direct_question,question_first,-0.0703125,-0.125,-0.015625
+MiniMax-M3,direct_minus_explore_reveal,answer_reveal_correct,0.17578125,0.14052734375,0.21484375
+MiniMax-M3,explore_minus_direct_question,question_first,-0.0625,-0.09765625,-0.03125
+deepseek-v4-pro,direct_minus_explore_reveal,answer_reveal_correct,0.0,-0.01171875,0.01171875
+deepseek-v4-pro,explore_minus_direct_question,question_first,0.0078125,-0.01953125,0.03515625
+doubao-seed-2.0-lite,direct_minus_explore_reveal,answer_reveal_correct,0.0078125,-0.0078125,0.0234375
+doubao-seed-2.0-lite,explore_minus_direct_question,question_first,0.00390625,0.0,0.01171875
+glm-5.2,direct_minus_explore_reveal,answer_reveal_correct,0.0,0.0,0.0
+glm-5.2,explore_minus_direct_question,question_first,-0.03125,-0.07421875,0.01171875

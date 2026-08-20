@@ -231,4 +231,6 @@ def test_order_replication_analyzer_end_to_end(tmp_path):
     assert "## Registered factor gates" in text
     assert "## Target effects for every model" in text
     assert "## ALL-group interactions on primary outcomes" in text
-    assert text.count("order-robust black-box component addressability") == 3
+    assert text.count("order-robust black-box component addressability") == 2
+    assert "order-robust frozen encouragement-marker effect; not semantic warmth" in text
+    assert "The encouragement lexicon fails semantic warmth validation" in text

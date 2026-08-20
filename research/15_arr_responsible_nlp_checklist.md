@@ -16,6 +16,12 @@ immediately before upload:
 - Section 7 reports the six-model limit, correlated response structure,
   judge-dependence, missing provider provenance, and the distinction between
   action agreement and learning outcomes.
+- The prospective factorial is scoped to black-box component addressability;
+  the paper reports synthetic-task, deterministic-detector, provider-snapshot,
+  delayed-replay, and component-interaction limitations.
+- The post-result detector audit is explicitly downgrade-only: question-first
+  and correct-answer reveal validate, while the encouragement lexicon fails
+  semantic warmth validation and is reported only literally.
 - The executable decision rule prevents promotion from policy signatures to a
   disposition thesis when fewer than two dimensions pass all tiers.
 
@@ -34,6 +40,13 @@ immediately before upload:
   private corpus inputs.
 - Provider-side generation is not exactly reproducible; the paper discloses the
   absent seed/prompt-version fields and partial temperature coverage.
+- The 2,560-call factorial and 640-call replay have public specifications,
+  prompt hashes, a complete randomized-order plan, derived metrics, complete
+  cell/interaction tables, and machine-checked downgrade-only decisions. Raw
+  provider responses remain excluded.
+- The detector audit publishes its outcome-independent sample plan, payload
+  audit, 480 majority labels, subgroup diagnostics, and frozen pass thresholds;
+  raw synthetic provider text and judge payloads remain excluded.
 
 ## Data, privacy, and external services
 
@@ -43,6 +56,13 @@ immediately before upload:
 - LongTutor histories are withheld as a privacy-minimizing choice even though
   its paper describes a permissive data license.
 - The semantic coding payload was transmitted only after explicit authorization.
+- The prospective API payload contains only synthetic math problems, synthetic
+  wrong work, synthetic learner requests, and frozen policy clauses; it contains
+  no benchmark response, real learner history, identifier, or private source
+  text.
+- The detector-validation payload contains only synthetic problems, correct
+  answers, and synthetic model responses; it excludes model identity, factor
+  cells, detector values, effects, benchmark text, and learner histories.
 - One provider failure and the paired complete-case exclusion are reported in
   the main paper, appendix, executable JSON rule, and attrition amendment.
 
@@ -54,6 +74,9 @@ immediately before upload:
 - LLM-judge agreement and calibration are not labelled human ground truth.
 - Human-labelled dialogue actions and human-gold LongTutor diagnosis are used as
   complementary criteria, but neither is represented as student learning gain.
+- Deterministic factorial endpoints are reported as surface behaviors. Failed
+  learner-request gates and reproduced policy interactions remain central rather
+  than being hidden by the successful system-clause effects.
 
 ## Compute and artifacts to add at submission time
 
@@ -63,3 +86,7 @@ immediately before upload:
   artifact URL, and license decisions.
 - Perform an author-identity scan over TeX, PDF metadata, acknowledgements,
   repository URLs, and supplementary filenames before anonymous upload.
+- Run `scripts/audit_acl_submission.py --require-pass`; it machine-checks the
+  current PDF's page boundary, metadata, embedded fonts, Type-3 absence,
+  local-path/identity patterns, and mandatory scope language. Still inspect the
+  rendered PDF visually and recheck the live venue rules.

@@ -357,6 +357,216 @@
       "observed": 0.744,
       "expected": 0.744,
       "passed": true
+    },
+    {
+      "claim": "prospective factorial response rows",
+      "observed": 2560,
+      "expected": 2560,
+      "passed": true
+    },
+    {
+      "claim": "parent factorial target effects",
+      "observed": [
+        0.773,
+        0.895,
+        0.595
+      ],
+      "expected": [
+        0.773,
+        0.895,
+        0.595
+      ],
+      "passed": true
+    },
+    {
+      "claim": "parent factorial selective factors",
+      "observed": [
+        true,
+        true,
+        true
+      ],
+      "expected": [
+        true,
+        true,
+        true
+      ],
+      "passed": true
+    },
+    {
+      "claim": "parent learner-request gates",
+      "observed": [
+        false,
+        false
+      ],
+      "expected": [
+        false,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "claim": "order-replication response rows",
+      "observed": 640,
+      "expected": 640,
+      "passed": true
+    },
+    {
+      "claim": "order-replication exact block balance",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "claim": "replication factorial target effects",
+      "observed": [
+        0.809,
+        0.922,
+        0.55
+      ],
+      "expected": [
+        0.809,
+        0.922,
+        0.55
+      ],
+      "passed": true
+    },
+    {
+      "claim": "joint order-robust factors",
+      "observed": [
+        true,
+        true,
+        true
+      ],
+      "expected": [
+        true,
+        true,
+        true
+      ],
+      "passed": true
+    },
+    {
+      "claim": "order-robust learner-request gates",
+      "observed": [
+        false,
+        false
+      ],
+      "expected": [
+        false,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "claim": "factorial detector validation response units",
+      "observed": 480,
+      "expected": 480,
+      "passed": true
+    },
+    {
+      "claim": "factorial detector validation annotations",
+      "observed": 144,
+      "expected": 144,
+      "passed": true
+    },
+    {
+      "claim": "factorial detector validation batches",
+      "observed": 48,
+      "expected": 48,
+      "passed": true
+    },
+    {
+      "claim": "factorial detector validation decisions",
+      "observed": [
+        true,
+        true,
+        false
+      ],
+      "expected": [
+        true,
+        true,
+        false
+      ],
+      "passed": true
+    },
+    {
+      "claim": "factorial detector balanced accuracies",
+      "observed": [
+        1.0,
+        0.996,
+        0.818
+      ],
+      "expected": [
+        1.0,
+        0.996,
+        0.818
+      ],
+      "passed": true
+    },
+    {
+      "claim": "factorial detector kappa values",
+      "observed": [
+        1.0,
+        0.992,
+        0.631
+      ],
+      "expected": [
+        1.0,
+        0.992,
+        0.631
+      ],
+      "passed": true
+    },
+    {
+      "claim": "learner-outcome trial remains planning only",
+      "observed": "planning_only_not_preregistered_not_started",
+      "expected": "planning_only_not_preregistered_not_started",
+      "passed": true
+    },
+    {
+      "claim": "learner-outcome conservative power plan passes",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "claim": "learner-outcome planned sample and cells",
+      "observed": [
+        3300,
+        12,
+        275
+      ],
+      "expected": [
+        3300,
+        12,
+        275
+      ],
+      "passed": true
+    },
+    {
+      "claim": "anonymous ACL submission audit",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "claim": "ACL PDF page count",
+      "observed": 9,
+      "expected": 9,
+      "passed": true
+    },
+    {
+      "claim": "ACL PDF embedded fonts and identity boundary",
+      "observed": [
+        true,
+        true,
+        true
+      ],
+      "expected": [
+        true,
+        true,
+        true
+      ],
+      "passed": true
     }
   ]
 }

@@ -73,6 +73,33 @@ Shared LLM training data and evaluator conventions can still induce correlated
 errors.  The panel is not human ground truth, and dimensions with weak reliability
 or range restriction are not retained as validated dispositions.
 
+## Prospective intervention panel
+
+The prospective factorial uses five reachable generation routes: MiniMax-M3,
+MiniMax-M2.7, GLM-5.2, DeepSeek-V4-Pro, and Doubao-Seed-2.0-Lite. These are
+deployed aliases, not immutable checkpoints, and the panel is a convenience
+sample. The same frozen temperature and provider-specific concurrency limits are
+used in the parent and replay. All 512 parent calls and 128 replay calls per
+route completed without a final error.
+
+The replay occurs later and repeats eight parent problems. Its independently
+ordered, exact-block-balanced queue tests request-order robustness, but cannot
+separate provider-version drift, backend changes, or cache behavior from replay
+agreement. A future server-hosted Qwen experiment is a new panel version and
+must not be pooled with these API snapshots without a registered transport rule.
+
+The post-result detector validation uses MiniMax-M3, GLM-5.2, and
+DeepSeek-V4-Pro as blinded annotators, not as additional generation-panel
+replicates. Agreement with their majority label validates the question-first and
+correct-answer-reveal detectors in this sample, but does not make the judges
+human ground truth. The encouragement lexicon fails the frozen semantic warmth
+gates and is downgraded.
+
+The planning-only learner trial names three routes to balance policy effects over
+deployed providers. This does not add models or evidence to the current panel.
+Any trial must record the exact aliases and dates actually deployed, and model
+interactions remain exploratory because three routes do not define a population.
+
 ## Nonclaims and update policy
 
 Results describe model-conditioned behavior under the observed tasks and prompt

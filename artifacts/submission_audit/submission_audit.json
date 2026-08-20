@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "pdf": "paper/submission/submission.pdf",
+  "tex": "paper/submission/main.tex",
+  "pages": 9,
+  "font_count": 14,
+  "identity_hits": {
+    "local_home_path": false,
+    "workspace_user": false,
+    "repository_owner_url": false,
+    "acknowledgements": false
+  },
+  "checks": {
+    "review_mode": true,
+    "anonymous_author_field": true,
+    "page_count_within_review_package": true,
+    "main_content_ends_on_page_eight": true,
+    "page_nine_is_references_only": true,
+    "blank_pdf_title_metadata": true,
+    "blank_pdf_author_metadata": true,
+    "fonts_present": true,
+    "all_fonts_embedded": true,
+    "no_type_three_fonts": true,
+    "no_identity_or_local_path_hits": true,
+    "bounded_personality_claim": true,
+    "detector_downgrade_present": true,
+    "learner_request_null_present": true,
+    "no_warm_tone_outcome_label": true
+  },
+  "passed": true
+}

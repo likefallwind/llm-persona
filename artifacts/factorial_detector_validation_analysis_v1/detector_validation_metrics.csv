@@ -1,0 +1,4 @@
+n,tp,tn,fp,fn,accuracy,balanced_accuracy,sensitivity,specificity,positive_predictive_value,negative_predictive_value,cohen_kappa,metric,majority_label_coverage,balanced_accuracy_ci_low,balanced_accuracy_ci_high,coverage_pass,balanced_accuracy_pass,bootstrap_ci_pass,kappa_pass,validated
+480,190,290,0,0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,question_first,1.0,1.0,1.0,True,True,True,True,True
+480,230,248,0,2,0.9958333333333333,0.9956896551724138,0.9913793103448276,1.0,1.0,0.992,0.9916550764951322,answer_reveal_correct,1.0,0.9891280511060259,1.0,True,True,True,True,True
+480,155,236,0,89,0.8145833333333333,0.8176229508196722,0.6352459016393442,1.0,1.0,0.7261538461538461,0.6313427683810838,warmth_marker,1.0,0.7868178294573644,0.847457627118644,True,False,False,False,False

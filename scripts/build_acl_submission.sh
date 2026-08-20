@@ -50,4 +50,8 @@ export FORCE_SOURCE_DATE=1
 )
 
 cp "$BUILD_DIR/main.pdf" "$REPO_ROOT/paper/submission/submission.pdf"
+python3 "$REPO_ROOT/scripts/audit_acl_submission.py" \
+  --root "$REPO_ROOT" \
+  --output-dir artifacts/submission_audit \
+  --require-pass
 echo "Built $REPO_ROOT/paper/submission/submission.pdf"

@@ -1,0 +1,20 @@
+{
+  "batch_count": 48,
+  "excluded": "benchmark text, LongTutor histories, real learner data, identifiers, private source text, model identity, factor cells, detector values, and effect estimates",
+  "external_payload_scope": "synthetic problem, known answer, and synthetic model responses only",
+  "judges": [
+    "MiniMax-M3",
+    "glm-5.2",
+    "deepseek-v4-pro"
+  ],
+  "potential_identifier_pattern_flags": {
+    "china_id_like": 0,
+    "china_mobile_like": 0,
+    "email": 0,
+    "ipv4": 0,
+    "url": 0
+  },
+  "response_units": 480,
+  "schema_version": 1,
+  "total_payload_characters_per_judge": 300301
+}

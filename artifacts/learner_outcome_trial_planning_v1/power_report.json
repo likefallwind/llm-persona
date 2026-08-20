@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "status": "planning_only_not_preregistered_not_started",
+  "required_completed_per_policy_arm": 698,
+  "required_recruited_per_policy_arm": 822,
+  "planned_recruited_per_policy_arm": 825,
+  "planned_total": 3300,
+  "planned_cells": 12,
+  "planned_per_cell": 275,
+  "assumptions": {
+    "standardized_effect": 0.15,
+    "two_sided_alpha": 0.05,
+    "power": 0.8,
+    "attrition": 0.15,
+    "covariate_or_blocking_credit": 0
+  },
+  "checks": {
+    "planning_only_status": true,
+    "arm_count": true,
+    "model_count": true,
+    "cell_count": true,
+    "per_arm_balance": true,
+    "per_cell_balance": true,
+    "power_target": true,
+    "no_human_annotation": true,
+    "unassisted_primary_outcome": true,
+    "warmth_not_promoted": true
+  },
+  "passed": true,
+  "claim_boundary": "A passing planning report is not evidence that the trial was registered, run, or effective."
+}

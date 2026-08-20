@@ -138,7 +138,38 @@ selected the policy-signature framing. Semantic held-out-task attribution is
 0.322 from semantic features alone and 0.391 when combined with transparent
 features, versus 0.167 chance.
 
-## G. Reproduction and release
+## G. Prospective factorial and request-order replay
+
+The public synthetic design crosses 32 elementary-math problems, two learner
+requests, and eight system-policy cells over five model endpoints. The parent
+panel completed 2,560/2,560 calls. Its runner used a lexicographic manifest, so
+the outcome-blind order amendment selected two fixed problems from each of four
+families and replayed 640 byte-identical prompts in a model-specific SHA-256
+order. Every consecutive 16-call block contains all request-policy cells exactly
+once. The replay completed 640/640 calls with zero errors, and observed queue
+ranks match the public plan.
+
+The analysis releases deterministic question-first, answer-reveal, frozen
+encouragement-lexicon, and length metrics plus prompt and response hashes, not
+provider text. It reports all
+96 parent cells, 192 parent interaction rows, all model and family effects, and
+the corresponding replication tables. The fixed paper-facing report is
+`research/20_factorial_results.md`. Replication is downgrade-only and cannot
+rescue a failed parent gate. The final joint result retains all three operational
+effects but rejects both learner-request adaptation claims.
+
+After aggregate results were known, we froze a post-result, downgrade-only
+validation of the three primary detectors. An outcome-independent SHA-256 sample
+contains 480 responses (320 parent and 160 replay). Three judges independently
+labelled 48 blinded batches without model identity, factor cells, detector
+values, or effects, producing 144/144 complete batch annotations. Question-first
+and correct-answer reveal passed coverage, balanced-accuracy, bootstrap-lower-
+bound, and kappa gates. The encouragement lexicon failed (balanced accuracy
+0.818 [0.787, 0.847], kappa 0.631) and is therefore reported only as a literal
+marker, not semantic warmth or support. Synthetic behavioral compliance is
+neither learner modeling nor learning gain.
+
+## H. Reproduction and release
 
 The provenance audit pins 84 relevant prediction/summary pairs by SHA-256.
 Temperature is recoverable for 22/84 runs and seed/prompt-version for none, so

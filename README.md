@@ -201,6 +201,32 @@ python scripts/run_factorial_order_replication.py --dry-run
 The order replication runs only after the 2,560-call parent panel completes and
 regardless of its outcomes. Its raw response directory is also ignored.
 
+Both panels are complete (2,560/2,560 parent and 640/640 replication, with zero
+failed calls). Reproduce the frozen analyses and paper-facing report with:
+
+```bash
+python scripts/analyze_factorial_prompt_panel.py --bootstrap-reps 2000
+python scripts/analyze_factorial_order_replication.py --bootstrap-reps 2000
+python scripts/render_factorial_results_report.py
+```
+
+The three system clauses pass their registered target, every-model sign,
+selectivity, and randomized-order replication gates. Parent target effects are
+0.773 (question-first), 0.895 (correct answer reveal), and 0.595 (frozen
+encouragement-lexicon marker); replication effects are 0.809, 0.922, and 0.550.
+Learner-request adaptation fails both registered 0.10 gates in both panels. The
+fixed complete report is
+`research/20_factorial_results.md`; released derived rows contain hashes and
+deterministic metrics, not response text.
+
+A post-result, downgrade-only blind validation samples 480 responses without
+using outcomes or factor cells and obtains 144/144 batch annotations from three
+judges. Question-first and correct-answer-reveal validate (balanced accuracy
+1.000 and 0.996; kappa 1.000 and 0.992). The lexicon marker does not validate
+semantic warmth or support (0.818; kappa 0.631), so the paper reports it only by
+its literal operational definition. See
+`research/22_factorial_detector_validation_results.md`.
+
 The data and model release boundaries are documented in
 `research/09_dataset_card.md` and `research/10_model_panel_card.md`.  In
 particular, a public release contains derived measurements and hashes rather
@@ -210,9 +236,28 @@ on Git-eligible artifacts with explicit source-text fields or local user-home
 paths, while documenting that this structural check is not a complete privacy
 assessment.
 
+## Planning-only learner-outcome extension
+
+`research/24_learner_outcome_trial_protocol.md` turns the remaining journal-level
+gap into a machine-checkable design without claiming that a trial has occurred.
+It proposes learner-level randomization across four policy arms and three hidden
+model routes, with a seven-day unassisted transfer test as the sole primary
+outcome. A conservative effect-size-0.15 calculation requires 698 completed
+learners per arm; after 15% attrition inflation, the balanced target is 3,300
+learners across 12 cells. Scoring is automatic and semantic warmth is excluded.
+
+```bash
+python scripts/power_learner_outcome_trial.py --require-pass
+```
+
+Passing this command proves only that the planning contract is internally
+consistent. The status remains `planning_only_not_preregistered_not_started`
+until a collaborating institution supplies ethics approval, registration, and
+actual learners.
+
 ## Evidential status
 
-The completed evidence has three complementary pieces.  In leave-one-model-out
+The completed evidence has four complementary pieces.  In leave-one-model-out
 prediction with exact-item fixed effects, transparent policy features improve
 tutoring-quality AUC by 0.023--0.031 under two judges, while length adds about
 0.002.  A non-LLM action classifier trained on existing human MathDial labels
@@ -224,6 +269,11 @@ panel adds a separate result: semantic features identify models on held-out
 educational tasks at 0.322 accuracy (0.167 chance) and reach 0.391 when combined
 with transparent features. Registered gates retain help directness and cognitive
 load as cross-task signatures, but only help directness as a validated
-disposition, forcing the policy-signature thesis. See
+disposition, forcing the policy-signature thesis. The completed prospective
+factorial adds a separate control result: explicit
+system clauses selectively address question-first and answer-reveal behavior;
+the warm-tone clause changes an order-robust encouragement-lexicon marker that
+fails broader semantic validation. Learner requests alone do not reliably
+produce the corresponding adaptation. See
 `research/03_claim_evidence_matrix.md` and `research/04_red_team_review.md` for
 the claim boundary and remaining submission blockers.

@@ -150,6 +150,130 @@ def main() -> None:
     check("semantic diagnosis AUC item-only", rounded(semantic_objective["item_only"]), 0.775)
     check("semantic diagnosis AUC all dimensions", rounded(semantic_objective["all_semantic"]), 0.744)
 
+    factorial = json.loads(
+        (root / "artifacts/factorial_analysis_v1/factorial_analysis_report.json").read_text()
+    )
+    factorial_decision = factorial["decision"]
+    check("prospective factorial response rows", factorial["response_rows"], 2560)
+    check(
+        "parent factorial target effects",
+        [
+            rounded(factorial_decision["factor_results"][factor]["target_mean_difference"])
+            for factor in ("question_policy", "answer_policy", "tone_policy")
+        ],
+        [0.773, 0.895, 0.595],
+    )
+    check(
+        "parent factorial selective factors",
+        [
+            factorial_decision["factor_results"][factor]["selective"]
+            for factor in ("question_policy", "answer_policy", "tone_policy")
+        ],
+        [True, True, True],
+    )
+    check(
+        "parent learner-request gates",
+        [
+            factorial_decision["learner_need"]["question_pass"],
+            factorial_decision["learner_need"]["reveal_pass"],
+        ],
+        [False, False],
+    )
+
+    replication = json.loads(
+        (root / "artifacts/factorial_order_replication_analysis_v1/order_replication_report.json").read_text()
+    )
+    replication_decision = replication["replication_decision"]
+    joint_decision = replication["joint_order_robustness_decision"]
+    check("order-replication response rows", replication["replication_rows"], 640)
+    check("order-replication exact block balance", replication["request_order_block_balance_pass"], True)
+    check(
+        "replication factorial target effects",
+        [
+            rounded(replication_decision["factor_results"][factor]["target_mean_difference"])
+            for factor in ("question_policy", "answer_policy", "tone_policy")
+        ],
+        [0.809, 0.922, 0.550],
+    )
+    check(
+        "joint order-robust factors",
+        [
+            joint_decision["factor_results"][factor]["order_robust"]
+            for factor in ("question_policy", "answer_policy", "tone_policy")
+        ],
+        [True, True, True],
+    )
+    check(
+        "order-robust learner-request gates",
+        [
+            joint_decision["learner_need"]["question_order_robust"],
+            joint_decision["learner_need"]["reveal_order_robust"],
+        ],
+        [False, False],
+    )
+
+    detector_validation = json.loads(
+        (root / "artifacts/factorial_detector_validation_analysis_v1/detector_validation_report.json").read_text()
+    )
+    check("factorial detector validation response units", detector_validation["response_units"], 480)
+    check("factorial detector validation annotations", detector_validation["annotations"], 144)
+    check("factorial detector validation batches", detector_validation["batches"], 48)
+    detector_results = detector_validation["detectors"]
+    check(
+        "factorial detector validation decisions",
+        [
+            detector_results[metric]["validated"]
+            for metric in ("question_first", "answer_reveal_correct", "warmth_marker")
+        ],
+        [True, True, False],
+    )
+    check(
+        "factorial detector balanced accuracies",
+        [
+            rounded(detector_results[metric]["balanced_accuracy"])
+            for metric in ("question_first", "answer_reveal_correct", "warmth_marker")
+        ],
+        [1.000, 0.996, 0.818],
+    )
+    check(
+        "factorial detector kappa values",
+        [
+            rounded(detector_results[metric]["cohen_kappa"])
+            for metric in ("question_first", "answer_reveal_correct", "warmth_marker")
+        ],
+        [1.000, 0.992, 0.631],
+    )
+
+    learner_trial = json.loads(
+        (root / "artifacts/learner_outcome_trial_planning_v1/power_report.json").read_text()
+    )
+    check(
+        "learner-outcome trial remains planning only",
+        learner_trial["status"],
+        "planning_only_not_preregistered_not_started",
+    )
+    check("learner-outcome conservative power plan passes", learner_trial["passed"], True)
+    check(
+        "learner-outcome planned sample and cells",
+        [learner_trial["planned_total"], learner_trial["planned_cells"], learner_trial["planned_per_cell"]],
+        [3300, 12, 275],
+    )
+
+    submission_audit = json.loads(
+        (root / "artifacts/submission_audit/submission_audit.json").read_text()
+    )
+    check("anonymous ACL submission audit", submission_audit["passed"], True)
+    check("ACL PDF page count", submission_audit["pages"], 9)
+    check(
+        "ACL PDF embedded fonts and identity boundary",
+        [
+            submission_audit["checks"]["all_fonts_embedded"],
+            submission_audit["checks"]["no_type_three_fonts"],
+            submission_audit["checks"]["no_identity_or_local_path_hits"],
+        ],
+        [True, True, True],
+    )
+
     output_dir.mkdir(parents=True, exist_ok=True)
     result = {
         "schema_version": 1,

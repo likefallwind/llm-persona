@@ -290,10 +290,23 @@ pass the original controllability and selectivity gates and its target effect is
 positive for every model in both the matching parent subset and replication. The
 replication cannot rescue a failed parent result.
 
+**Final evidence:** both panels completed without missing or failed calls
+(2,560/2,560 parent; 640/640 replication), and observed replication ranks match
+the public plan with exact 16-cell block balance. All three clauses pass the
+parent and replication target, selectivity, and every-model sign gates. Parent
+target effects are 0.773 for question-first, 0.895 for correct answer reveal, and
+0.595 for the frozen encouragement marker; replication effects are 0.809, 0.922,
+and 0.550. A post-result, downgrade-only blind audit validates the question and
+answer detectors but rejects the marker as a measure of semantic warmth
+(balanced accuracy 0.818, kappa 0.631). Learner-request
+effects fail both registered 0.10 gates in both panels and cannot be described as
+reliable personalization. Question and tone behavior also interact, so the
+result establishes component addressability rather than component independence.
+
 **Residual threat:** the replay uses only eight of 32 base problems and occurs
 later, so provider-version drift and repeat-prompt caching cannot be separated
-from order robustness. If any frozen endpoint is unavailable or the replication
-is incomplete, no order-robust claim is made.
+from order robustness. The outcomes are deterministic surface behaviors in
+synthetic elementary-math contexts, not tutoring quality or learning gain.
 
 ## Decision after red-team review
 
@@ -307,7 +320,12 @@ semantic panel is reliable across judges and adds held-out-task signal
 beyond transparent features, but the frozen decision rule retains only help
 directness and cognitive load as cross-task signatures and only help directness as
 a validated disposition. The correct thesis is therefore *pedagogical policy
-signatures*, not human personality or a general disposition inventory.
+signatures*, not human personality or a general disposition inventory. The
+completed prospective factorial strengthens the control claim: system-level
+question-first and answer-reveal clauses are selectively addressable under an
+independently randomized request order; the warm-tone clause changes only a
+literal encouragement marker under the validated measurement boundary. Ordinary
+learner requests fail the registered adaptation gates.
 
 The paper is not ready for a broad education or general-science journal claim:
 neither existing nor semantic teaching measures improve human-gold learner

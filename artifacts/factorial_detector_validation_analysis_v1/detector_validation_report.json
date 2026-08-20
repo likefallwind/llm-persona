@@ -1,0 +1,34 @@
+{
+  "all_detectors_validated": false,
+  "annotations": 144,
+  "batches": 48,
+  "detectors": {
+    "answer_reveal_correct": {
+      "balanced_accuracy": 0.9956896551724138,
+      "balanced_accuracy_ci_high": 1.0,
+      "balanced_accuracy_ci_low": 0.9891280511060259,
+      "cohen_kappa": 0.9916550764951322,
+      "majority_label_coverage": 1.0,
+      "validated": true
+    },
+    "question_first": {
+      "balanced_accuracy": 1.0,
+      "balanced_accuracy_ci_high": 1.0,
+      "balanced_accuracy_ci_low": 1.0,
+      "cohen_kappa": 1.0,
+      "majority_label_coverage": 1.0,
+      "validated": true
+    },
+    "warmth_marker": {
+      "balanced_accuracy": 0.8176229508196722,
+      "balanced_accuracy_ci_high": 0.847457627118644,
+      "balanced_accuracy_ci_low": 0.7868178294573644,
+      "cohen_kappa": 0.6313427683810838,
+      "majority_label_coverage": 1.0,
+      "validated": false
+    }
+  },
+  "response_units": 480,
+  "rule": "Validation is downgrade-only. A detector that fails any registered gate cannot support a semantic component claim; its result must be reported only under the exact operational detector definition.",
+  "schema_version": 1
+}

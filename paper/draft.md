@@ -24,14 +24,22 @@ features improve leave-one-model-out tutoring-quality AUC by 0.023--0.031 beyond
 exact-item controls, whereas length adds about 0.002.  Conversely, on 6,000
 LongTutor model--history pairs, adaptive-teaching scores do not improve human-gold
 diagnosis or reference-grounded historical-evidence prediction beyond exact-history difficulty.
-In a blinded panel of 1,074 complete judge--batch annotations, semantic features
+In a prospectively frozen 2,560-response factorial, question and answer clauses
+change validated target behaviors by 0.773 and 0.895, while a warm-tone clause
+changes a frozen encouragement marker by 0.595; an independently ordered
+640-response replication preserves all three operational effects, whereas
+learner requests fail both registered adaptation gates. A blind three-judge
+audit validates the question and answer detectors but rejects semantic warmth
+for the marker. In a blinded
+panel of 1,074 complete judge--batch annotations, semantic features
 identify models on held-out educational tasks at 0.322 accuracy and reach 0.391
 when combined with transparent features; prespecified gates retain help
 directness and cognitive load as cross-task signatures, but only help directness
 as a validated disposition. The evidence supports stable and steerable
 pedagogical policy signatures in this finite model panel, not human-like
 personality, and exposes both a cost of universal questioning prompts and a gap
-between adaptive-sounding instruction and accurate learner modeling.
+between explicit policy control, learner-request adaptation, and accurate learner
+modeling.
 
 ## 1 Introduction
 
@@ -237,6 +245,32 @@ pair's scores, we excluded that batch and its prespecified pedagogy counterpart
 for all judges. The complete-case panel therefore contains 358 batches, 2,148
 responses, and 1,074 annotations (0.56% technical attrition).
 
+### 4.7 Prospective component intervention
+
+Before inspecting any response or effect, we froze 32 synthetic elementary-math
+problems and a complete 2x2x2 intervention over question-first, answer-reveal,
+and warm-tone system clauses. Each cell is crossed with learner requests for
+direct help or exploration and five reachable model routes (2,560 calls).
+Deterministic detectors score first-sentence-like-segment questions,
+correct-answer reveal, a frozen encouragement lexicon, and secondary surface
+outcomes; all cells and two- and three-way
+interactions remain reported.
+
+A component must exceed its registered target threshold (0.60 for question and
+answer, 0.30 for tone), be positive in every model, and be at least twice its
+largest primary cross-effect. Learner-request adaptation has separate 0.10
+thresholds. Because the parent queue was lexicographic, we froze while outcome-
+blind an eight-problem replay with byte-identical prompts, model-specific SHA-256
+order, and all 16 request-policy cells exactly balanced in every consecutive
+block. Replication can only downgrade a claim: both panels and every model in the
+matching parent subset and replay must pass.
+
+After aggregate effects were known, a downgrade-only audit was frozen. It
+samples 480 responses by hash without detector values or factor cells. Three
+blinded judges label 48 batches; validation requires coverage >=0.95, balanced
+accuracy >=0.90 with bootstrap lower bound >=0.80, and Cohen's kappa >=0.70.
+Failure restricts the claim to the detector's literal definition.
+
 ## 5 Results
 
 ![Four-panel overview of the completed non-semantic evidence.](figures/main_findings.png)
@@ -375,6 +409,39 @@ shared pedagogy instruction sharply decreases help directness and cognitive load
 while increasing elicitation in both paired task sets. (C) semantic dimensions
 identify models above chance on held-out tasks and add to transparent features.*
 
+### 5.8 System clauses are addressable; learner requests are not
+
+All three operational endpoints pass every registered parent gate and the
+downgrade-only order replication:
+
+| Clause | Parent target effect (95% CI) | Parent selectivity | Replication target effect (95% CI) | Replication selectivity | Order-robust |
+|---|---:|---:|---:|---:|:---:|
+| Question-first | 0.773 [0.756, 0.790] | 10.20 | 0.809 [0.772, 0.841] | 12.95 | yes |
+| Reveal answer | 0.895 [0.883, 0.908] | 11.35 | 0.922 [0.900, 0.950] | 9.52 | yes |
+| Encouragement lexicon | 0.595 [0.563, 0.623] | 5.04 | 0.550 [0.497, 0.597] | 5.33 | yes |
+
+Every target effect is positive for all five models in the full parent, matching
+parent subset, and randomized replay. All four problem families are positive in
+both panels. The learner-request contrasts fail in a different and informative
+way. Direct-help versus explore requests change correct reveal by only 0.073
+[0.061, 0.085] in the parent and 0.066 [0.041, 0.087] in replication, below the
+0.10 gate. Explore versus direct requests change question-first by -0.030
+[-0.047, -0.014] and -0.016 [-0.037, 0.006]. System-over-request behavior is an
+instruction-hierarchy result, not reliable learner understanding.
+
+On the blind audit, question-first reaches balanced accuracy 1.000 (95% CI
+[1.000, 1.000], kappa 1.000) and correct-answer reveal 0.996 [0.989, 1.000]
+(kappa 0.992); both validate. The encouragement lexicon reaches 0.818 [0.787,
+0.847] with kappa 0.631 and fails. It is therefore a literal marker result, not
+evidence of semantic warmth or support.
+
+Addressability is not independence. The warm-tone clause reduces question-first by 0.118 in
+the parent and 0.103 in replication. The question x tone interaction on
+question-first is -0.236 [-0.266, -0.208] and -0.206 [-0.256, -0.162], and the
+three-way question x answer x tone interaction is 0.203 [0.138, 0.278] and 0.237
+[0.125, 0.350]. These prespecified interactions reproduce in sign, bounding the
+claim to controllable black-box components rather than orthogonal latent traits.
+
 ## 6 Discussion
 
 The results favor a narrower object than model personality.  Model-conditioned
@@ -382,7 +449,12 @@ tutor policies recur across tasks and are steerable, but part of their identity 
 a domain-general generation fingerprint.  The intervention demonstrates causal
 addressability yet also policy homogenization and a telling-action failure.  The
 LongTutor null further separates an adaptive presentation from accurate learner
-modeling.
+modeling. The prospective factorial makes the control boundary sharper: explicit
+system clauses selectively address question-first and answer-reveal behavior;
+the warm-tone clause changes only a non-semantic encouragement marker under the
+validated measurement boundary. Ordinary learner requests do not reliably
+induce matching adaptation. Reproduced cross-component interactions favor a
+controller over composable actions rather than independent persona sliders.
 
 This decomposition changes system design.  A product should not choose one
 globally “good tutor persona.”  It should estimate the learner state, select an
@@ -408,6 +480,15 @@ used because recent evidence questions its fidelity.  A broad-journal claim woul
 require prospective learners or a separately validated simulator and objective
 pre/post tests.
 
+The prospective factorial uses synthetic elementary-math contexts and surface
+detectors. A post-result blind audit validates question-first and correct-answer
+reveal, while the encouragement lexicon fails semantic warmth validation and is
+reported literally. Its five endpoints are provider snapshots, and
+the eight-problem replay occurred later; provider drift and repeat-prompt caching
+cannot be separated from request-order robustness. Component effects are not
+learning outcomes or evidence of empathy, and the stable interactions preclude
+treating the clauses as independent latent traits.
+
 The archived response bytes, item IDs, and analysis inputs are pinned, but
 provider-side regeneration is not exact because most generation settings and all
 prompt-version/seed fields were not retained.  Provider system prompts, alias
@@ -428,5 +509,7 @@ policy signatures.  These signatures are neither reducible to length nor
 equivalent to human personality.  Their consequences are conditional: a shared
 prompt can improve average agreement while suppressing appropriate telling, and
 an adaptive-sounding response can coexist with weak objective learner diagnosis.
-Behavior-first measurement makes those distinctions visible and supplies a more
-auditable foundation for selecting and controlling educational agents.
+Explicit system clauses can selectively control surface policy components under
+order replication, while learner requests alone do not reliably personalize
+them. Behavior-first measurement makes those distinctions visible and supplies a
+more auditable foundation for selecting and controlling educational agents.

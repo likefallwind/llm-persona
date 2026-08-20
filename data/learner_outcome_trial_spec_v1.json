@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "planning_only_not_preregistered_not_started",
+  "snapshot_date": "2026-08-20",
+  "title": "Policy-controller effects on unassisted mathematical transfer",
+  "population": {
+    "setting": "grade 8-10 mathematics classrooms",
+    "minimum_classes": 40,
+    "target_recruited_learners": 3300,
+    "consent": "institutional ethics approval plus guardian and learner consent or assent as locally required"
+  },
+  "models": [
+    "MiniMax-M3",
+    "glm-5.2",
+    "deepseek-v4-pro"
+  ],
+  "policy_arms": {
+    "adaptive_controller": "External state machine selects question-withhold after a productive attempt and explanation-reveal only after two failed attempts, an explicit stall, or a safety trigger.",
+    "static_question_withhold": "Every eligible turn receives the frozen question-first and answer-withholding policy.",
+    "static_explain_reveal": "Every eligible turn receives the frozen explanation-first and correct-answer-reveal policy.",
+    "model_default": "The same grounded content and safety envelope is supplied without a question or answer policy clause."
+  },
+  "randomization": {
+    "unit": "learner",
+    "strata": ["classroom", "pretest_quartile"],
+    "allocation": "equal across 4 policy arms and 3 hidden model routes",
+    "cells": 12,
+    "learners_per_policy_arm": 825,
+    "learners_per_model_policy_cell": 275,
+    "model_alias_hidden_from_learners_and_teachers": true
+  },
+  "schedule": {
+    "pretest": "one unassisted session before treatment",
+    "learning": "six 35-minute sessions over three weeks",
+    "immediate_posttest": "unassisted isomorphic and near-transfer items within 24 hours",
+    "delayed_posttest": "unassisted isomorphic and far-transfer items seven days later"
+  },
+  "primary_estimand": {
+    "contrast": "adaptive_controller minus model_default",
+    "outcome": "delayed unassisted transfer score standardized to the pooled control distribution",
+    "analysis": "intention-to-treat ANCOVA with pretest, model route, classroom fixed effects, and classroom-clustered small-sample-corrected standard errors",
+    "two_sided_alpha": 0.05,
+    "target_standardized_effect": 0.15,
+    "power": 0.8,
+    "anticipated_attrition": 0.15,
+    "power_rule": "two-independent-arm normal approximation with no credit for pretest adjustment or within-class blocking"
+  },
+  "secondary_outcomes": [
+    "immediate unassisted transfer",
+    "delayed retention",
+    "time on task",
+    "independent attempts before help",
+    "correct solution copying rate",
+    "session completion and differential attrition"
+  ],
+  "measurement": {
+    "scoring": "exact numeric, symbolic-equivalence, or fixed-choice automatic scoring only",
+    "human_annotation": false,
+    "tutor_access_during_outcomes": false,
+    "warmth_marker_used_as_construct_or_treatment": false,
+    "validated_process_checks": ["question_first", "answer_reveal_correct"]
+  },
+  "analysis_guards": [
+    "The primary contrast and delayed outcome cannot be changed after enrollment begins.",
+    "All randomized learners remain in intention-to-treat analyses.",
+    "Report every policy arm and model-policy cell regardless of sign.",
+    "Use multiple imputation, inverse-probability weighting, and worst-case bounds as attrition sensitivity analyses.",
+    "Flag any arm difference above 5 percentage points in delayed-posttest completion.",
+    "Model-by-policy interactions are exploratory because three model routes do not define a model population.",
+    "No learning-effectiveness claim is eligible before ethics approval, registration, completed collection, and the frozen analysis."
+  ],
+  "safety": {
+    "grounding": "Every route receives curriculum content, worked solutions, and prohibited-answer timing rules.",
+    "oversight": "A teacher dashboard provides monitoring, escalation, and an immediate session kill switch.",
+    "logging": "Store randomized assignment, prompt version, model alias, timestamps, policy decisions, attempts, and errors; separate identifiers from research records.",
+    "exclusions": "No high-stakes grading, clinical advice, sensitive profiling, or unsupervised deployment to minors."
+  }
+}

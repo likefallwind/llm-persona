@@ -58,7 +58,7 @@ def factor_verdict(
     return "registered controllability gate failed"
 
 
-def render(parent_dir: Path, replication_dir: Path) -> str:
+def render(parent_dir: Path, replication_dir: Path, detector_validation_path: Path) -> str:
     parent_report = read_json(parent_dir / "factorial_analysis_report.json")
     replication_report = read_json(replication_dir / "order_replication_report.json")
     if parent_report["response_rows"] != 2560:
@@ -90,6 +90,21 @@ def render(parent_dir: Path, replication_dir: Path) -> str:
     parent_decision = parent_report["decision"]
     replication_decision = replication_report["replication_decision"]
     joint = replication_report["joint_order_robustness_decision"]
+    detector_validation = read_json(detector_validation_path)
+    expected_detector_decisions = {
+        "question_first": True,
+        "answer_reveal_correct": True,
+        "warmth_marker": False,
+    }
+    observed_detector_decisions = {
+        metric: bool(detector_validation["detectors"][metric]["validated"])
+        for metric in expected_detector_decisions
+    }
+    if observed_detector_decisions != expected_detector_decisions:
+        raise RuntimeError(
+            "detector-validation decision drift: "
+            f"{observed_detector_decisions} != {expected_detector_decisions}"
+        )
 
     lines = [
         "# Prospective factorial and request-order replication results",
@@ -125,7 +140,26 @@ def render(parent_dir: Path, replication_dir: Path) -> str:
             f"{effect_ci(replication_row)} | "
             f"{'PASS' if replication_gate['selective'] else 'FAIL'} | "
             f"{'PASS' if joint_gate['order_robust'] else 'FAIL'} | "
-            f"{factor_verdict(factor, parent_decision, joint)} |"
+            f"{('order-robust frozen encouragement-marker effect; not semantic warmth' if factor == 'tone_policy' else factor_verdict(factor, parent_decision, joint))} |"
+        )
+
+    lines.extend([
+        "",
+        "## Blind detector validation",
+        "",
+        "This post-result audit is downgrade-only and cannot strengthen the original claim.",
+        "",
+        "| Detector | Coverage | Balanced accuracy (95% CI) | Kappa | Validated |",
+        "|---|---:|---:|---:|:---:|",
+    ])
+    for metric in ("question_first", "answer_reveal_correct", "warmth_marker"):
+        result = detector_validation["detectors"][metric]
+        lines.append(
+            f"| {metric} | {num(result['majority_label_coverage'])} | "
+            f"{num(result['balanced_accuracy'])} "
+            f"[{num(result['balanced_accuracy_ci_low'])}, {num(result['balanced_accuracy_ci_high'])}] | "
+            f"{num(result['cohen_kappa'])} | "
+            f"{'YES' if result['validated'] else 'NO'} |"
         )
 
     lines.extend([
@@ -229,6 +263,7 @@ def render(parent_dir: Path, replication_dir: Path) -> str:
         "- A failed selectivity or replication gate remains a central negative result.",
         "- System-over-user behavior is instruction-hierarchy behavior, not empathy or learner understanding.",
         "- Correct answer formatting is not tutoring quality or learning gain.",
+        "- The encouragement lexicon fails semantic warmth validation; its effects are literal marker effects only.",
         "- Full released CSV files retain all surface outcomes, model groups, cells, and interactions.",
         "",
     ])
@@ -247,8 +282,12 @@ def main() -> None:
     parser.add_argument(
         "--output", type=Path, default=Path("research/20_factorial_results.md"),
     )
+    parser.add_argument(
+        "--detector-validation", type=Path,
+        default=Path("artifacts/factorial_detector_validation_analysis_v1/detector_validation_report.json"),
+    )
     args = parser.parse_args()
-    report = render(args.parent_dir, args.replication_dir)
+    report = render(args.parent_dir, args.replication_dir, args.detector_validation)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(report, encoding="utf-8")
     print(args.output)

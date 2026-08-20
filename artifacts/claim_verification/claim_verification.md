@@ -55,3 +55,24 @@ Overall: **PASS**
 | semantic prompt deltas hard | `[-1.542, 2.171, -0.721]` | `[-1.542, 2.171, -0.721]` | yes |
 | semantic diagnosis AUC item-only | `0.775` | `0.775` | yes |
 | semantic diagnosis AUC all dimensions | `0.744` | `0.744` | yes |
+| prospective factorial response rows | `2560` | `2560` | yes |
+| parent factorial target effects | `[0.773, 0.895, 0.595]` | `[0.773, 0.895, 0.595]` | yes |
+| parent factorial selective factors | `[True, True, True]` | `[True, True, True]` | yes |
+| parent learner-request gates | `[False, False]` | `[False, False]` | yes |
+| order-replication response rows | `640` | `640` | yes |
+| order-replication exact block balance | `True` | `True` | yes |
+| replication factorial target effects | `[0.809, 0.922, 0.55]` | `[0.809, 0.922, 0.55]` | yes |
+| joint order-robust factors | `[True, True, True]` | `[True, True, True]` | yes |
+| order-robust learner-request gates | `[False, False]` | `[False, False]` | yes |
+| factorial detector validation response units | `480` | `480` | yes |
+| factorial detector validation annotations | `144` | `144` | yes |
+| factorial detector validation batches | `48` | `48` | yes |
+| factorial detector validation decisions | `[True, True, False]` | `[True, True, False]` | yes |
+| factorial detector balanced accuracies | `[1.0, 0.996, 0.818]` | `[1.0, 0.996, 0.818]` | yes |
+| factorial detector kappa values | `[1.0, 0.992, 0.631]` | `[1.0, 0.992, 0.631]` | yes |
+| learner-outcome trial remains planning only | `planning_only_not_preregistered_not_started` | `planning_only_not_preregistered_not_started` | yes |
+| learner-outcome conservative power plan passes | `True` | `True` | yes |
+| learner-outcome planned sample and cells | `[3300, 12, 275]` | `[3300, 12, 275]` | yes |
+| anonymous ACL submission audit | `True` | `True` | yes |
+| ACL PDF page count | `9` | `9` | yes |
+| ACL PDF embedded fonts and identity boundary | `[True, True, True]` | `[True, True, True]` | yes |

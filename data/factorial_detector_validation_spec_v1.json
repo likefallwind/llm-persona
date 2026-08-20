@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "seed": 20260822,
+  "panels": {
+    "parent": {
+      "spec": "data/factorial_prompt_spec_v1.json",
+      "manifest": "artifacts/factorial_prompt_v1/sample_manifest.jsonl",
+      "derived_metrics": "artifacts/factorial_analysis_v1/derived_response_metrics.csv",
+      "raw_responses": "artifacts/factorial_prompt_v1/run/responses.jsonl",
+      "samples_per_base_model": 2
+    },
+    "replication": {
+      "spec": "data/factorial_order_replication_spec_v1.json",
+      "manifest": "artifacts/factorial_order_replication_v1/sample_manifest.jsonl",
+      "derived_metrics": "artifacts/factorial_order_replication_analysis_v1/derived_replication_metrics.csv",
+      "raw_responses": "artifacts/factorial_order_replication_v1/run/responses.jsonl",
+      "samples_per_base_model": 4
+    }
+  },
+  "judges": ["MiniMax-M3", "glm-5.2", "deepseek-v4-pro"],
+  "batch_size": 10,
+  "generation": {
+    "temperature": 0,
+    "max_tokens": null,
+    "minimax_concurrency": 4,
+    "gateway_concurrency": 8,
+    "retries": 3
+  },
+  "success_gate": {
+    "response_units": 480,
+    "batches": 48,
+    "annotations": 144,
+    "allow_missing": 0,
+    "allow_failed": 0
+  },
+  "validation_gate": {
+    "majority_label_coverage_min": 0.95,
+    "balanced_accuracy_min": 0.90,
+    "balanced_accuracy_bootstrap_ci_low_min": 0.80,
+    "cohen_kappa_min": 0.70,
+    "bootstrap_reps": 2000
+  },
+  "decision_rule": "Validation is downgrade-only. A detector that fails any registered gate cannot support a semantic component claim; its result must be reported only under the exact operational detector definition."
+}

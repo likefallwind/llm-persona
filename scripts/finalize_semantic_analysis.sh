@@ -47,6 +47,34 @@ cd "$ROOT"
   --objective-dir artifacts/semantic_objective_validity \
   --output-dir artifacts/submission_decision
 
+"$PY" scripts/factorial_prompt_status.py --require-complete
+
+"$PY" scripts/analyze_factorial_prompt_panel.py \
+  --bootstrap-reps 2000
+
+"$PY" scripts/factorial_prompt_status.py \
+  --spec data/factorial_order_replication_spec_v1.json \
+  --manifest artifacts/factorial_order_replication_v1/sample_manifest.jsonl \
+  --responses artifacts/factorial_order_replication_v1/run/responses.jsonl \
+  --require-complete
+
+"$PY" scripts/analyze_factorial_order_replication.py \
+  --bootstrap-reps 2000
+
+"$PY" scripts/factorial_detector_validation_status.py \
+  --require-complete
+
+"$PY" scripts/analyze_factorial_detector_validation.py
+
+"$PY" scripts/render_factorial_results_report.py
+
+"$PY" scripts/power_learner_outcome_trial.py \
+  --require-pass
+
+"$PY" scripts/audit_acl_submission.py \
+  --root "$ROOT" \
+  --require-pass
+
 "$PY" scripts/verify_release_claims.py \
   --root "$ROOT" \
   --output-dir artifacts/claim_verification
@@ -84,6 +112,10 @@ cd "$ROOT"
     artifacts/factorial_analysis_v1 \
     artifacts/factorial_order_replication_v1 \
     artifacts/factorial_order_replication_analysis_v1 \
+    artifacts/factorial_detector_validation_v1 \
+    artifacts/factorial_detector_validation_analysis_v1 \
+    artifacts/learner_outcome_trial_planning_v1 \
+    artifacts/submission_audit \
   --output artifacts/reproducibility_manifest.json
 
 "$PY" -m py_compile scripts/*.py

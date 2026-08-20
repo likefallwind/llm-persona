@@ -15,6 +15,7 @@ not established for the population of all language models.
 | Appearing to teach adaptively is not equivalent to objectively diagnosing the learner. | Across 6,000 model-history observations, existing teaching scores do not improve diagnosis (0.816 versus 0.822 item-only). In the blind 40-history semantic subset, all semantic dimensions also underperform exact-history controls (mean AUC 0.744 versus 0.775), and no diagnosis association survives within-outcome BH correction. | Only diagnosis is exact human-gold scoring; the blinded subset has 40 histories. | Strong diagnosis null/boundary result under both existing and confirmatory semantic measurements. |
 | Dispositions persist within model families. | In a nine-model panel, four approximate within-family pairs are closer at baseline than random matchings (p=0.0512). | Only four non-clean pairs; training, generation, and serving all differ; minimum sign-test p with four pairs is 0.0625. | Suggestive only; must not be a headline claim. |
 | Semantic dimensions are reliable and distinguishable from surface style. | The exclusion-aware panel has 1,074/1,074 annotations and 2,148 responses with three judges each. Help directness, elicitation, and cognitive load pass reliability; leave-one-judge profile Spearman is 0.959--0.962. Semantic attribution is 0.322 and combined attribution 0.391 versus 0.353 transparent. | One paired context (0.56%) was technically excluded before formal analysis; LLM judges may share source variance; six models limit transport. | Help directness and cognitive load are cross-task signatures; only help directness is a validated disposition. The paper is therefore framed as policy signatures. |
+| System clauses selectively address tutor-policy components, but learner requests do not reliably induce the corresponding adaptation. | In a prospectively frozen 2x2x2 panel (2,560 responses), question-first, answer-reveal, and warm-tone clauses change their operational endpoints by 0.773, 0.895, and 0.595. An independently ordered 640-response replication preserves all three (0.809, 0.922, 0.550). A post-result blind three-judge audit validates question-first (balanced accuracy 1.000, kappa 1.000) and correct answer reveal (0.996, 0.992), but the encouragement lexicon fails semantic warmth validation (0.818, 0.631). Learner-request effects miss both registered 0.10 gates in both panels. | Synthetic elementary-math contexts, five provider snapshots, a later eight-problem replication, and post-result detector validation; provider drift and repeat-prompt caching cannot be separated from order robustness. | Strong black-box addressability for question-first and answer reveal; the third result is only a literal encouragement-marker effect. Central learner-request null; no evidence of empathy, learner understanding, pedagogical benefit, semantic warmth, or component independence. |
 | Model-level dispositions predict outcomes across benchmarks. | Existing benchmark outcomes include history use, self-correction, abstention, and educational safety. | Six model means are severely underpowered: about 14 models are needed even for an absolute correlation of 0.7 at 80% power. | Exploratory only until panel expansion. |
 
 ## Current paper-level conclusion
@@ -29,7 +30,12 @@ The strongest defensible thesis is therefore narrower and more useful:
 > AI tutors exhibit model-conditioned pedagogical policy signatures that are
 > partially stable, causally steerable, and incrementally predictive of judged
 > tutoring quality and human-labelled next actions, but steering toward a generic
-> “ask questions” policy can suppress contextually appropriate telling.  These
+> “ask questions” policy can suppress contextually appropriate telling. A
+> prospective factorial shows that explicit system clauses selectively address
+> validated question-first and answer-reveal behavior under randomized-order
+> replication; a warm-tone clause changes a literal encouragement marker that
+> fails broader semantic validation. Learner requests alone do not reliably
+> elicit the matching adaptation. These
 > signatures are distinct from both generic generator fingerprints and human
 > personality traits.
 
