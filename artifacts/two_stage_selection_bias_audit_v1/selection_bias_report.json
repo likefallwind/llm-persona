@@ -1,0 +1,26 @@
+{
+  "contexts": 96,
+  "interpretation_boundary": "These diagnostics were specified after the registered trial result was known. They localize action and format biases but do not alter any prospective gate.",
+  "models": [
+    "MiniMax-M2.7",
+    "MiniMax-M3",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite",
+    "glm-5.2"
+  ],
+  "rows": 480,
+  "schema_version": 1,
+  "status": "post_hoc_text_free_selector_diagnostic",
+  "wording_audit": {
+    "agreement_rate_given_both_valid": 0.7893518518518519,
+    "ask_first_ask_to_explain_first_explain_rate": 0.0875,
+    "ask_first_explain_to_explain_first_ask_rate": 0.10208333333333333,
+    "ask_first_minus_explain_first_ask_rate": 0.010416666666666666,
+    "ask_first_prompt_ask_rate": 0.7333333333333333,
+    "both_valid_rate": 0.9,
+    "explain_first_prompt_ask_rate": 0.7229166666666667,
+    "position_effect_context_cluster_ci_high": 0.05000000000000001,
+    "position_effect_context_cluster_ci_low": -0.029166666666666664,
+    "rows": 480
+  }
+}

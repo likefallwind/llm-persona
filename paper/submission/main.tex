@@ -110,6 +110,13 @@ defaults, audit their construct validity, and then apply the same intervention.
 Work on tutor-strategy prediction \citep{ikram-etal-2025-strategy} and feedback
 failure localization \citep{yasir-etal-2026-feedback} further motivates reporting
 action-specific errors instead of one aggregate tutor score.
+Strategy-before-generation is itself established: prior work jointly predicts
+tutor strategies and responses \citep{wang-etal-2023-strategize}, while Tutor
+CoPilot deliberately retains human strategy selection in a live system
+\citep{wang-etal-2025-tutor-copilot}. SLOW explicitly separates learner-state
+reasoning from action selection \citep{wei-etal-2026-slow}. Our routing test is
+therefore a controlled falsification of prompt-only modularization, not a claim
+to invent a two-stage tutor.
 
 Answer withholding is already studied under pedagogical jailbreaks and
 multi-turn adversarial student pressure
@@ -339,6 +346,20 @@ match falls to 0.111--0.125; inferred telling share drops 0.234--0.280. A
 universal question policy oversteers precisely where a human teacher chose direct
 instruction (Figure~\ref{fig:main}C).
 
+\subsection{Explicit selection does not repair oversteering}
+
+We froze two prospective remedies on the same 96 balanced contexts. A 1,920-call
+trial first reproduced the uniform prompt's probing gain and telling harm, while
+a one-pass adaptive menu failed its recovery and noninferiority gates. We then
+crossed five models with two independently worded ASK/EXPLAIN selectors, both
+counterfactual executors, and a concurrently rerun single-pass baseline (2,400
+calls). ASK and EXPLAIN realization reach .998 and 1.000, but selector accuracy
+is only .519 [.456, .583] and .500 [.433, .563]. Composing the selected action
+with its executor is worse than single-pass by $-.058$ [$-.110$, $-.004$] and
+$-.077$ [$-.131$, $-.023$]. Thus action realization is not the bottleneck:
+prompt-only discrete selection largely re-expresses the ASK default and can
+amplify rather than repair contextual harm.
+
 \subsection{Adaptive presentation is not diagnosis}
 
 Across 6,000 model--history observations, diagnosis accuracy ranges from 0.278
@@ -480,15 +501,17 @@ factorial sharpens the control result: explicit system clauses selectively
 address question-first and answer-reveal behavior, while the warm-tone clause
 changes only a non-semantic lexicon marker under the validated measurement
 boundary. Ordinary learner requests do not reliably induce matching adaptation.
-Stable cross-component interactions further argue for a controller over
-composable actions, not a menu of independent persona sliders.
+Stable cross-component interactions argue against a menu of independent persona
+sliders. The prospective routing trials sharpen that point: neither an adaptive
+menu nor an explicit binary selection stage is a sufficient controller.
 
-This suggests a controller decomposition: estimate learner state, select an
-appropriate action, then realize that action in language. A model's signature
-describes its default and resistance to steering; it is not itself a quality
-label. Runtime grounding such as PedRAG may provide a controller layer, but our
-telling failure implies that the retrieval or steering policy must condition on
-learner state rather than enforce one pedagogy uniformly.
+Any successful controller must validate three separable competencies: estimate
+learner state, select an appropriate action, and realize that action in language.
+Our models nearly solve only the last under an externally fixed binary action. A
+model's signature describes its default and resistance to steering; it is not
+itself a quality label. Runtime grounding such as PedRAG may provide a controller
+layer, but our telling and selector failures imply that the decision policy must
+be independently validated rather than inferred from fluent realization.
 
 \section{Reproducibility and Release}
 
@@ -515,7 +538,10 @@ responses can coexist with weak learner diagnosis. Explicit system clauses can
 selectively control validated question-first and answer-reveal behaviors plus a
 literal encouragement marker under order replication, while
 learner requests alone do not reliably personalize them. Behavior-first
-measurement makes these distinctions auditable.
+measurement makes these distinctions auditable. In particular, near-perfect
+execution of a prescribed teaching action coexists with near-chance contextual
+selection, and naive two-stage prompting significantly underperforms a
+single-pass baseline.
 
 \section*{Limitations}
 

@@ -1,0 +1,3 @@
+selector,contrast,mean_delta,context_cluster_ci_low,context_cluster_ci_high,positive_models,minimum_model_delta,maximum_model_delta
+selector_ask_first,two_stage_composed_minus_single_pass,-0.058333333333333334,-0.11041666666666666,-0.004166666666666668,1,-0.15625,0.052083333333333336
+selector_explain_first,two_stage_composed_minus_single_pass,-0.07708333333333334,-0.13125,-0.02291666666666667,1,-0.23958333333333334,0.041666666666666664

@@ -311,6 +311,29 @@ later, so provider-version drift and repeat-prompt caching cannot be separated
 from order robustness. The outcomes are deterministic surface behaviors in
 synthetic elementary-math contexts, not tutoring quality or learning gain.
 
+### 16. “The proposed controller is just an untested architectural suggestion.”
+
+**Why it is serious:** separating learner-state inference, action selection, and
+response realization is established prior art. A discussion-only controller
+proposal would be neither novel nor evidence that the observed telling harm can
+be repaired.
+
+**Current answer:** two proposed remedies were prospectively frozen and allowed
+to fail. A 1,920-call balanced trial reproduced the uniform question policy's
+probing benefit and telling harm, while the one-pass adaptive router failed its
+recovery and noninferiority gates. A separate 2,400-call trial used two
+independently worded binary selectors, both counterfactual executors, and a
+concurrent single-pass baseline. ASK/EXPLAIN realization was 0.998/1.000, but
+selector accuracy was 0.519/0.500 and composition significantly reduced binary
+target match by 0.058/0.077. The paper therefore rejects both naive remedies
+instead of presenting either as a solution.
+
+**Residual threat:** the target is one observed human next action on 96
+MathDial-derived contexts, not an optimal policy or learner outcome. The fixed
+five-model provider panel cannot support a population claim. The later ASK-bias
+localization is explicitly post hoc. The result establishes requirements for a
+future controller, not that a controller has been solved.
+
 ## Decision after red-team review
 
 The completed evidence is strong enough for a main-conference NLP measurement and

@@ -22,6 +22,9 @@ factorial panel was still collecting and before its outcomes were inspected.
 | Your Students Don't Use LLMs Like You Wish They Did (ACL 2026) | 12,650 messages in 500 conversations across four courses | Deployment context can dominate intended tutor design and students often seek answers | Stronger ecological evidence about student use; our archive is broad across models/tasks but is not an in-situ learner-use study |
 | Rethinking Scaffolding (ICML 2026 workshop preprint) | 9,490 chats across nine benchmark and deployment datasets | Benchmark-preferred scaffolding and actual student uptake can diverge | Reinforces that question asking or withholding is not universally beneficial and that our action-matching results must not be called learning gains |
 | IHEval (NAACL 2025) | 3,538 examples across nine aligned/conflicting instruction tasks | Models struggle to follow priority when system and lower-priority instructions conflict | Makes instruction hierarchy the correct construct for the learner-request contrast; system-over-user behavior is not evidence of personality, empathy, or pedagogical appropriateness |
+| Strategize Before Teaching (Findings EACL 2023) | Joint tutor-strategy prediction and response generation on three tutoring-dialogue datasets | Strategy prediction can be integrated with response generation and affects generation quality | Precludes novelty for strategy-before-response architecture; our distinct result is a same-context causal decomposition showing near-perfect realization but near-chance selection and harm versus a concurrent single-pass baseline |
+| Tutor CoPilot (arXiv 2025 revision) | Preregistered RCT with 900 assigned tutors and 1,800 students; human-selected strategies drive LM suggestions | Human-selected, expert-grounded guidance can improve real tutoring outcomes | Provides the learner-outcome evidence absent here and explicitly retains human strategy choice; our autonomous selector trial tests and rejects replacing that choice with a naive binary LM selector |
+| SLOW (arXiv 2026) | Explicit learner-state workspace followed by instructional action selection | Structured reasoning can separate diagnosis from strategy choice | Precludes novelty for modular learner-state/action architecture; our result is a black-box falsification of prompt-only stage separation, not a competing architecture claim |
 
 Primary records:
 
@@ -40,6 +43,9 @@ Primary records:
 - [Zhang et al., IHEval, 2025](https://aclanthology.org/2025.naacl-long.425/)
 - [Fan et al., 2026](https://arxiv.org/abs/2607.28128)
 - [Pisan, 2026](https://arxiv.org/abs/2608.12292)
+- [Wang et al., Strategize Before Teaching, 2023](https://aclanthology.org/2023.findings-eacl.170/)
+- [Wang et al., Tutor CoPilot, 2025 revision](https://arxiv.org/abs/2410.03017)
+- [Wei et al., SLOW, 2026](https://arxiv.org/abs/2603.28062)
 
 ## Revised novelty boundary
 
@@ -58,6 +64,14 @@ generic-domain generator-fingerprint negative control; same-item policy
 intervention; independent human actions and human-gold diagnosis boundaries;
 and a prospectively frozen three-component factorial that reports target and
 cross-effects rather than treating a bundled prompt as a scalar treatment.
+
+The later prospective action trials add a distinct falsification rather than a
+new architecture: a uniform questioning policy reproduces an average-gain /
+telling-harm reversal, a one-pass adaptive menu fails, and two explicit binary
+selectors also fail despite 0.998--1.000 executor realization. The narrow new
+claim is a controlled selection--execution gap and harm from naive
+modularization. Strategy prediction, human strategy selection, and modular
+learner-state/action systems already exist.
 
 ## Mandatory interpretation tests for the factorial result
 

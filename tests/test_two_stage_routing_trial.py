@@ -27,6 +27,10 @@ runner = load_module(
 analyzer = load_module(
     "two_stage_analyzer", ROOT / "scripts/analyze_two_stage_routing_trial.py",
 )
+selection_bias = load_module(
+    "two_stage_selection_bias",
+    ROOT / "scripts/analyze_two_stage_selection_bias.py",
+)
 
 
 def frozen_objects():
@@ -145,3 +149,28 @@ def test_joint_gate_requires_both_selector_wordings():
     assert not analyzer.evaluate_gates(spec, selectors, contrasts, execution)[
         "joint_two_stage_claim_pass"
     ]
+
+
+def test_post_hoc_selection_audit_exposes_position_bias_without_raw_text():
+    rows = []
+    for context_id, target in (("p", "probing"), ("t", "telling")):
+        for model in ("m1", "m2"):
+            rows.append({
+                "context_id": context_id,
+                "target_act": target,
+                "model": model,
+                "selector_ask_first_selected_action": "ASK",
+                "selector_ask_first_valid": 1,
+                "selector_ask_first_target_match": int(target == "probing"),
+                "selector_explain_first_selected_action": "EXPLAIN",
+                "selector_explain_first_valid": 1,
+                "selector_explain_first_target_match": int(target == "telling"),
+            })
+    overall, by_target_model, separation, report = selection_bias.analyze(
+        pd.DataFrame(rows), reps=20, seed=1,
+    )
+    assert len(overall) == 2
+    assert len(by_target_model) == 12
+    assert (separation.probing_minus_telling_ask_rate == 0).all()
+    assert report["wording_audit"]["ask_first_minus_explain_first_ask_rate"] == 1
+    assert report["status"] == "post_hoc_text_free_selector_diagnostic"

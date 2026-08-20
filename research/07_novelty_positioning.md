@@ -22,7 +22,10 @@ Snapshot: 2026-08-20.
 | Student deployment audit (ACL 2026) | Intended-vs-actual student use | Yes: 500 deployed conversations | Four courses | Not applicable | No | Six validated dialogue metrics |
 | PedRAG (EDM 2026 poster) | Theory-grounded runtime behavioral fidelity | Simulated multi-agent sessions | Within-session drift | No | Runtime retrieval vs prompt-only | Theory rubric; simulated mastery only |
 | LongTutor (ACL 2026) | Long-history evidence → diagnosis → teaching | Yes | Three progressive tasks | No | No | Expert-annotated diagnosis and teaching references |
-| **This study** | Model-conditioned pedagogical policy signatures | **Yes: 31,638 paired teaching responses** | **Yes: held-out teaching families** | **Yes: 57,516 non-tutoring responses** | **Yes: identical MathDial contexts, nine models** | **Existing human actions, expert preference calibration, human-gold diagnosis** |
+| Strategize Before Teaching (Findings EACL 2023) | Joint strategy prediction and tutor-response generation | Tutoring corpora | Three dialogue datasets | No | Learned joint selector/generator | Tutor-strategy labels |
+| Tutor CoPilot (arXiv 2025 revision) | Human-selected expert strategy → LM guidance | Yes: live tutoring | Live K--12 platform | Not applicable | Human selects from strategy options | Preregistered learner mastery outcome |
+| SLOW (arXiv 2026) | Learner-state reasoning → action selection | Simulated/evaluated tutoring | Within framework | No | Modular workspace and selector | Hybrid human--AI judgments |
+| **This study** | Model-conditioned pedagogical policy signatures | **Yes: 31,638 paired teaching responses plus 4,320 prospective action-control responses** | **Yes: held-out teaching families** | **Yes: 57,516 non-tutoring responses** | **Yes: identical MathDial contexts, concurrent baselines** | **Existing human actions, expert preference calibration, human-gold diagnosis** |
 
 ## The actual novelty claim
 
@@ -59,6 +62,16 @@ components are manipulated? The strongest comparative result is not better
 steering or jailbreak defense, but the conjunction of cross-domain falsification,
 same-item intervention, component-selectivity gates, and the telling-action
 failure.
+
+The prospective routing extension must be positioned as a falsification, not a
+controller contribution. Two-stage strategy selection and modular
+learner-state/action architectures are prior art. The new evidence is that two
+independently worded binary selectors perform near chance and significantly
+worse than a concurrently rerun single-pass policy on the same contexts, while
+counterfactual ASK/EXPLAIN executors realize the requested action almost
+perfectly. That same-serving-period decomposition directly identifies a
+selection--execution gap and shows that naive modularization can amplify the
+policy anchoring it is intended to correct.
 
 The prospective factorial protocol now pins routes, models, prompts, decoding,
 deterministic metrics, and claim gates before outcome inspection. Future

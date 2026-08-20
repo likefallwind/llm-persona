@@ -1,0 +1,49 @@
+{
+  "claim_boundary": "The binary target is agreement with one observed human ASK-versus-EXPLAIN next action. It does not establish action optimality, response quality, or learning.",
+  "classifier_provenance": {
+    "classifier_variants": [
+      "char_svm",
+      "hybrid_svm",
+      "word_svm"
+    ],
+    "human_training_turns": 18541,
+    "unique_math_problems": 1111
+  },
+  "contexts": 96,
+  "decision": {
+    "execution_realization_pass": true,
+    "joint_two_stage_claim_pass": false,
+    "per_selector": {
+      "selector_ask_first": {
+        "all_selector_gates_pass": false,
+        "checks": {
+          "composed_improves_over_single_pass": false,
+          "selector_accuracy": false,
+          "valid_rate": false
+        }
+      },
+      "selector_explain_first": {
+        "all_selector_gates_pass": false,
+        "checks": {
+          "composed_improves_over_single_pass": false,
+          "selector_accuracy": false,
+          "valid_rate": false
+        }
+      }
+    },
+    "rule": "Both selector wordings, both executors, and the wording-gap gate must pass independently.",
+    "selector_wording_accuracy_abs_difference": 0.018750000000000044,
+    "selector_wording_robustness_pass": true
+  },
+  "exact_ten_stratum_block_balance": true,
+  "models": [
+    "MiniMax-M2.7",
+    "MiniMax-M3",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite",
+    "glm-5.2"
+  ],
+  "response_rows": 2400,
+  "schema_version": 1,
+  "status": "prospective_two_stage_selection_then_execution_trial"
+}

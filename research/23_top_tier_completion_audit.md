@@ -1,6 +1,6 @@
 # Top-tier completion audit
 
-Snapshot: 2026-08-19. This audit distinguishes a defensible main-conference NLP
+Snapshot: 2026-08-20. This audit distinguishes a defensible main-conference NLP
 submission from the substantially stronger evidence needed for an education or
 general-science journal claim.
 
@@ -15,6 +15,17 @@ Question-first and correct-answer-reveal detectors validate, while the
 encouragement lexicon does not validate semantic warmth and is explicitly
 downgraded. Failed learner-request gates, diagnosis nulls, telling-action harm,
 and component interactions remain central results rather than exclusions.
+
+Two additional prospective action-control trials materially strengthen the
+mechanism boundary. A 1,920-call balanced trial prospectively replicates the
+uniform prompt's probing benefit and telling harm while rejecting a one-pass
+adaptive router. A separately published 2,400-call selection--execution trial
+then rejects the proposed two-stage remedy: both selectors are near chance and
+significantly worse than a same-snapshot single-pass baseline, even though ASK
+and EXPLAIN executors realize their actions at 0.998--1.000. This is useful
+negative evidence because the failed remedies were frozen before collection and
+are not silently removed. It supports a controller-requirements result, not a
+claim that this paper invents or solves adaptive routing.
 
 The package is ready for a serious main-conference NLP review after the final
 release checks, anonymous PDF audit, and stacked Draft PR CI pass. Acceptance is
@@ -51,7 +62,8 @@ registered study and cannot change the present claim boundary.
 
 1. Re-run the full finalizer and anonymous ACL PDF audit after all wording is
    synchronized.
-2. Commit, push, and open the next stacked Draft PR; require its CI to pass.
+2. Commit, push, and open the next stacked Draft PR; repair the public-test
+   fixture's accidental sibling-repository dependency and require CI to pass.
 3. Resolve final license/privacy review and record the artifact URL and commit.
 4. Recheck the live venue call, format, anonymity, and responsible-NLP form at
    upload time.
