@@ -1,0 +1,2 @@
+[{"manifest_batches":360,"expected_annotations":1080,"successful_annotations":1079,"current_errors":1,"missing_annotations":0,"raw_jsonl_rows":1082,"superseded_retry_rows":2,"invalid_jsonl_rows":0}]
+coverage gate failed: success=1079/1080, errors=1, missing=0, invalid_lines=0

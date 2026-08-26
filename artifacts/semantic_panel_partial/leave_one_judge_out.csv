@@ -1,0 +1,3 @@
+excluded_judge,profile_cells,spearman_vs_all_judges
+MiniMax-M3,96,0.6410121634259657
+glm-5.2,240,0.995587928590195

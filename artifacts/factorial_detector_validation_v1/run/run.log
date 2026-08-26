@@ -1,0 +1,170 @@
+{"batches": 48, "response_units": 480}
+{"batch_count": 48, "excluded": "benchmark text, LongTutor histories, real learner data, identifiers, private source text, model identity, factor cells, detector values, and effect estimates", "external_payload_scope": "synthetic problem, known answer, and synthetic model responses only", "judges": ["MiniMax-M3", "glm-5.2", "deepseek-v4-pro"], "potential_identifier_pattern_flags": {"china_id_like": 0, "china_mobile_like": 0, "email": 0, "ipv4": 0, "url": 0}, "response_units": 480, "schema_version": 1, "total_payload_characters_per_judge": 300301}
+{"annotation_id": "parent|arithmetic_mean-03|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-01|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-00|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-02|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-07|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-06|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-04|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-05|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-00|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-02|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-01|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-04|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-05|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-03|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-07|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-06|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-03|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-01|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-02|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-00|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-07|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-05|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-06|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-04|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-00|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-01|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-03|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-02|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-05|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-04|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-06|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-07|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|arithmetic_mean-00|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|arithmetic_mean-00|B02|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|arithmetic_mean-04|B02|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|arithmetic_mean-04|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|fraction_addition-00|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|fraction_addition-00|B02|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|fraction_addition-04|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|linear_equation-00|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|fraction_addition-04|B02|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|linear_equation-00|B02|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|linear_equation-04|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|linear_equation-04|B02|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|percentage_discount-00|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|percentage_discount-00|B02|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|percentage_discount-04|B01|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "replication|percentage_discount-04|B02|MiniMax-M3", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-04|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-05|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-00|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-06|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-01|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-03|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-02|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-01|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-02|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-00|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-03|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-07|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-06|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-03|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-00|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-04|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-02|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-07|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-01|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-04|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-07|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-00|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-02|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-06|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-01|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-05|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-05|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-07|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-06|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|arithmetic_mean-04|B02|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-04|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|arithmetic_mean-04|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|fraction_addition-00|B02|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|fraction_addition-00|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|fraction_addition-04|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-05|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|arithmetic_mean-00|B02|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|linear_equation-00|B02|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|linear_equation-00|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|fraction_addition-04|B02|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|percentage_discount-00|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|percentage_discount-04|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-03|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|linear_equation-04|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|percentage_discount-04|B02|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|percentage_discount-00|B02|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|arithmetic_mean-00|B01|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "replication|linear_equation-04|B02|glm-5.2", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-04|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-01|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-05|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-03|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-07|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-00|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-06|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|arithmetic_mean-02|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-04|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-02|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-00|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-01|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-05|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-03|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-06|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-02|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|fraction_addition-07|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-01|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-04|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-03|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-00|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-05|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-06|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|linear_equation-07|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-00|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-03|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-01|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-02|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-04|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-05|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|fraction_addition-00|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-07|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "parent|percentage_discount-06|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|arithmetic_mean-04|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|arithmetic_mean-00|B02|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|arithmetic_mean-00|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|arithmetic_mean-04|B02|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|fraction_addition-00|B02|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|fraction_addition-04|B02|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|linear_equation-04|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|linear_equation-00|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|fraction_addition-04|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|linear_equation-00|B02|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|linear_equation-04|B02|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|percentage_discount-00|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|percentage_discount-00|B02|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|percentage_discount-04|B01|deepseek-v4-pro", "ok": true, "error": ""}
+{"annotation_id": "replication|percentage_discount-04|B02|deepseek-v4-pro", "ok": true, "error": ""}
+{
+  "current_errors": 0,
+  "expected": 144,
+  "missing": 0,
+  "per_judge": {
+    "MiniMax-M3": {
+      "expected": 48,
+      "missing": 0,
+      "successful": 48
+    },
+    "deepseek-v4-pro": {
+      "expected": 48,
+      "missing": 0,
+      "successful": 48
+    },
+    "glm-5.2": {
+      "expected": 48,
+      "missing": 0,
+      "successful": 48
+    }
+  },
+  "successful": 144,
+  "unexpected_ids": 0
+}

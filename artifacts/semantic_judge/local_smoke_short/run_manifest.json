@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "route": "local Ollama at 127.0.0.1; no external API",
+  "seed": 20260819,
+  "counts": {
+    "longtutor": 40,
+    "mathdial": 80,
+    "mathdial_hard": 40,
+    "socratic": 80
+  },
+  "limit_batches": 1,
+  "selected_batch_count": 1,
+  "judge_models": [
+    "qwen3:8b",
+    "llama3.1:8b",
+    "mistral-nemo:12b"
+  ],
+  "benchmark_filter": [
+    "mathtutorbench_scaffolding"
+  ],
+  "num_ctx": 32768,
+  "items": [
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-10",
+      "pair_group": "mathdial_standard",
+      "pair_id": "10"
+    }
+  ]
+}

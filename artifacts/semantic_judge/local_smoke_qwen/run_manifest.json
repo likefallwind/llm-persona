@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "route": "local Ollama at 127.0.0.1; no external API",
+  "seed": 20260819,
+  "counts": {
+    "longtutor": 40,
+    "mathdial": 80,
+    "mathdial_hard": 40,
+    "socratic": 80
+  },
+  "limit_batches": 1,
+  "selected_batch_count": 1,
+  "judge_models": [
+    "qwen3:8b"
+  ],
+  "num_ctx": 32768,
+  "items": [
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "10439||1d68b749c26738897a36ef4aa1948e3a5d4d663f9d2479d92278087314385007",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "10439||1d68b749c26738897a36ef4aa1948e3a5d4d663f9d2479d92278087314385007"
+    }
+  ]
+}

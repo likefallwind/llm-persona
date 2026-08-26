@@ -1,0 +1,720 @@
+{
+  "current_errors": 0,
+  "expected": 2560,
+  "missing": 0,
+  "per_model": {
+    "MiniMax-M2.7": {
+      "errors": 0,
+      "expected": 512,
+      "missing": 0,
+      "successful": 512
+    },
+    "MiniMax-M3": {
+      "errors": 0,
+      "expected": 512,
+      "missing": 0,
+      "successful": 512
+    },
+    "deepseek-v4-pro": {
+      "errors": 0,
+      "expected": 512,
+      "missing": 0,
+      "successful": 512
+    },
+    "doubao-seed-2.0-lite": {
+      "errors": 0,
+      "expected": 512,
+      "missing": 0,
+      "successful": 512
+    },
+    "glm-5.2": {
+      "errors": 0,
+      "expected": 512,
+      "missing": 0,
+      "successful": 512
+    }
+  },
+  "successful": 2560,
+  "unexpected_keys": 0
+}
+{"base_ids": ["arithmetic_mean-00", "arithmetic_mean-04", "fraction_addition-00", "fraction_addition-04", "linear_equation-00", "linear_equation-04", "percentage_discount-00", "percentage_discount-04"], "base_problem_count": 8, "exact_block_balance": true, "expected_calls": 640, "factorial_blocks_per_model": 8, "factorial_cells_per_block": 16, "manifest_sha256": "e66a02ed36824229cc9b5afe0116e4a0dbc437bdf6f22fe5bc06797f66293c48", "model_count": 5, "order_plan_rows": 640, "order_plan_sha256": "0e863f87dfd2d55ed0e54cc61b8accd08e7cd017bede260279c8e34f175176bc", "parent_prompt_hashes_preserved": true, "payload_scope": "unchanged parent synthetic prompts only", "sample_count": 128, "schema_version": 1}
+{"expected_calls": 640, "models": ["MiniMax-M3", "MiniMax-M2.7", "glm-5.2", "deepseek-v4-pro", "doubao-seed-2.0-lite"], "order": "independent SHA-256 rank per model in exact 16-cell blocks", "order_seed": 20260821, "payload": "unchanged parent synthetic prompts only", "samples": 128}
+{"request_id": "linear_equation-00|direct|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 2, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 1, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 0, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|reveal|warm|MiniMax-M3", "queue_rank": 3, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 6, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 7, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 4, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 5, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 9, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|reveal|warm|MiniMax-M3", "queue_rank": 8, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 11, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 13, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 12, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|withhold|warm|MiniMax-M3", "queue_rank": 14, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 10, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|withhold|warm|MiniMax-M3", "queue_rank": 15, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 16, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 17, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|reveal|warm|MiniMax-M3", "queue_rank": 18, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 21, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 19, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|withhold|warm|MiniMax-M3", "queue_rank": 20, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 22, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|withhold|warm|MiniMax-M3", "queue_rank": 23, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 24, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 27, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 26, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 25, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 29, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 30, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|reveal|warm|MiniMax-M3", "queue_rank": 28, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 32, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 31, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 33, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|withhold|warm|MiniMax-M3", "queue_rank": 36, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 35, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 34, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 37, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 39, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 38, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 41, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 42, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 40, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 44, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|reveal|warm|MiniMax-M3", "queue_rank": 45, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 46, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|withhold|warm|MiniMax-M3", "queue_rank": 43, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 48, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 50, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|reveal|warm|MiniMax-M3", "queue_rank": 47, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|withhold|warm|MiniMax-M3", "queue_rank": 52, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 51, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 53, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|withhold|warm|MiniMax-M3", "queue_rank": 49, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 56, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 55, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|reveal|warm|MiniMax-M3", "queue_rank": 57, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 60, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 54, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 58, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 61, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 63, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 62, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 66, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 65, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|reveal|warm|MiniMax-M3", "queue_rank": 59, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 64, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|withhold|warm|MiniMax-M3", "queue_rank": 68, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 69, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|reveal|warm|MiniMax-M3", "queue_rank": 70, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 67, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 72, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 74, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 73, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 75, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 78, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 79, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|withhold|warm|MiniMax-M3", "queue_rank": 76, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|reveal|warm|MiniMax-M3", "queue_rank": 71, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 81, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 80, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 77, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 83, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 86, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|withhold|warm|MiniMax-M3", "queue_rank": 85, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 82, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 84, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 89, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 87, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|reveal|warm|MiniMax-M3", "queue_rank": 88, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|reveal|warm|MiniMax-M3", "queue_rank": 92, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 93, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 91, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|withhold|warm|MiniMax-M3", "queue_rank": 94, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 90, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|withhold|warm|MiniMax-M3", "queue_rank": 97, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 98, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 95, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 96, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 99, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 100, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 103, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|withhold|warm|MiniMax-M3", "queue_rank": 102, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 101, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 105, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 104, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|reveal|warm|MiniMax-M3", "queue_rank": 106, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 108, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 109, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 107, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 112, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|reveal|warm|MiniMax-M3", "queue_rank": 110, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 113, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 115, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 116, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|reveal|warm|MiniMax-M3", "queue_rank": 114, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 111, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|reveal|neutral|MiniMax-M3", "queue_rank": 120, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|withhold|warm|MiniMax-M3", "queue_rank": 117, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|withhold|warm|MiniMax-M3", "queue_rank": 119, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 122, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|reveal|warm|MiniMax-M3", "queue_rank": 121, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 123, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|withhold|warm|MiniMax-M3", "queue_rank": 124, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|withhold|neutral|MiniMax-M3", "queue_rank": 125, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|reveal|neutral|MiniMax-M3", "queue_rank": 126, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|withhold|neutral|MiniMax-M3", "queue_rank": 127, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|reveal|warm|MiniMax-M3", "queue_rank": 118, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 0, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 2, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 3, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 5, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 1, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 8, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 4, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 7, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 9, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 10, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 11, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 6, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 12, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 14, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 13, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 16, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 18, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 15, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 17, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 19, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 21, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 22, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 20, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 23, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 26, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 27, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 28, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 29, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 25, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 31, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 33, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 24, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 34, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 32, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 30, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 38, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 35, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 40, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 37, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 39, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 41, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 43, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 42, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 36, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 45, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 47, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 44, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 48, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 50, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 49, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 51, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 52, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 54, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 46, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 53, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 55, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 57, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 58, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 60, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 59, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 61, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 62, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 64, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 63, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 56, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 66, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 69, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 65, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 68, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 70, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 72, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 71, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 67, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 73, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 74, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 77, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 75, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 76, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 80, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 79, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 81, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 82, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 83, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 85, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 78, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 84, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 86, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 88, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 90, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 91, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 92, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 89, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 93, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 95, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 94, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 97, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 96, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 100, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 87, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 99, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 98, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 102, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 104, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 106, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 105, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 108, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 103, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 101, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 110, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 111, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 107, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 113, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 114, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 112, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 116, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 109, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 117, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 115, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 119, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|reveal|neutral|MiniMax-M2.7", "queue_rank": 122, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|reveal|warm|MiniMax-M2.7", "queue_rank": 121, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|withhold|warm|MiniMax-M2.7", "queue_rank": 124, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|reveal|warm|MiniMax-M2.7", "queue_rank": 120, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|withhold|warm|MiniMax-M2.7", "queue_rank": 126, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|withhold|neutral|MiniMax-M2.7", "queue_rank": 118, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 125, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|withhold|neutral|MiniMax-M2.7", "queue_rank": 127, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|reveal|neutral|MiniMax-M2.7", "queue_rank": 123, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|reveal|warm|glm-5.2", "queue_rank": 0, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|reveal|neutral|glm-5.2", "queue_rank": 7, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|withhold|neutral|glm-5.2", "queue_rank": 5, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|withhold|warm|glm-5.2", "queue_rank": 6, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|reveal|warm|glm-5.2", "queue_rank": 1, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|withhold|neutral|glm-5.2", "queue_rank": 3, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|reveal|warm|glm-5.2", "queue_rank": 8, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|reveal|neutral|glm-5.2", "queue_rank": 9, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|reveal|neutral|glm-5.2", "queue_rank": 4, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|withhold|warm|glm-5.2", "queue_rank": 12, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|reveal|warm|glm-5.2", "queue_rank": 2, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|reveal|neutral|glm-5.2", "queue_rank": 14, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|withhold|neutral|glm-5.2", "queue_rank": 15, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|withhold|warm|glm-5.2", "queue_rank": 10, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|reveal|warm|glm-5.2", "queue_rank": 17, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|withhold|warm|glm-5.2", "queue_rank": 13, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|withhold|neutral|glm-5.2", "queue_rank": 11, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|withhold|warm|glm-5.2", "queue_rank": 19, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|withhold|neutral|glm-5.2", "queue_rank": 20, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|withhold|neutral|glm-5.2", "queue_rank": 18, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|reveal|warm|glm-5.2", "queue_rank": 23, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|withhold|warm|glm-5.2", "queue_rank": 22, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|withhold|warm|glm-5.2", "queue_rank": 21, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|reveal|warm|glm-5.2", "queue_rank": 16, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|reveal|neutral|glm-5.2", "queue_rank": 25, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|withhold|neutral|glm-5.2", "queue_rank": 28, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|reveal|warm|glm-5.2", "queue_rank": 26, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|reveal|neutral|glm-5.2", "queue_rank": 29, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|reveal|neutral|glm-5.2", "queue_rank": 31, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|withhold|neutral|glm-5.2", "queue_rank": 30, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|reveal|neutral|glm-5.2", "queue_rank": 27, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|withhold|warm|glm-5.2", "queue_rank": 24, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|reveal|neutral|glm-5.2", "queue_rank": 32, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|withhold|neutral|glm-5.2", "queue_rank": 37, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|reveal|neutral|glm-5.2", "queue_rank": 39, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|reveal|neutral|glm-5.2", "queue_rank": 38, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|withhold|warm|glm-5.2", "queue_rank": 41, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|withhold|warm|glm-5.2", "queue_rank": 36, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|reveal|warm|glm-5.2", "queue_rank": 43, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|reveal|warm|glm-5.2", "queue_rank": 33, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|withhold|warm|glm-5.2", "queue_rank": 34, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|withhold|warm|glm-5.2", "queue_rank": 42, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|reveal|neutral|glm-5.2", "queue_rank": 44, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|withhold|neutral|glm-5.2", "queue_rank": 46, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|reveal|warm|glm-5.2", "queue_rank": 45, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|withhold|neutral|glm-5.2", "queue_rank": 35, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|reveal|neutral|glm-5.2", "queue_rank": 49, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|reveal|neutral|glm-5.2", "queue_rank": 50, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|withhold|neutral|glm-5.2", "queue_rank": 51, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|withhold|neutral|glm-5.2", "queue_rank": 48, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|withhold|neutral|glm-5.2", "queue_rank": 47, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|withhold|neutral|glm-5.2", "queue_rank": 54, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|reveal|warm|glm-5.2", "queue_rank": 53, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|withhold|warm|glm-5.2", "queue_rank": 52, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|reveal|warm|glm-5.2", "queue_rank": 40, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|withhold|neutral|glm-5.2", "queue_rank": 61, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|withhold|warm|glm-5.2", "queue_rank": 56, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|reveal|warm|glm-5.2", "queue_rank": 57, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|reveal|neutral|glm-5.2", "queue_rank": 60, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|reveal|neutral|glm-5.2", "queue_rank": 58, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|reveal|warm|glm-5.2", "queue_rank": 67, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|withhold|warm|glm-5.2", "queue_rank": 65, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|withhold|warm|glm-5.2", "queue_rank": 66, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|withhold|warm|glm-5.2", "queue_rank": 62, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|withhold|neutral|glm-5.2", "queue_rank": 64, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|reveal|warm|glm-5.2", "queue_rank": 59, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|withhold|warm|glm-5.2", "queue_rank": 63, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|reveal|neutral|glm-5.2", "queue_rank": 71, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|withhold|neutral|glm-5.2", "queue_rank": 69, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|reveal|warm|glm-5.2", "queue_rank": 55, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|reveal|warm|glm-5.2", "queue_rank": 73, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|withhold|warm|glm-5.2", "queue_rank": 68, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|withhold|neutral|glm-5.2", "queue_rank": 77, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|withhold|warm|glm-5.2", "queue_rank": 74, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|reveal|neutral|glm-5.2", "queue_rank": 72, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|reveal|neutral|glm-5.2", "queue_rank": 70, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|withhold|neutral|glm-5.2", "queue_rank": 80, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|reveal|warm|glm-5.2", "queue_rank": 81, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|reveal|warm|glm-5.2", "queue_rank": 78, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|reveal|neutral|glm-5.2", "queue_rank": 82, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|withhold|warm|glm-5.2", "queue_rank": 84, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|reveal|neutral|glm-5.2", "queue_rank": 79, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|withhold|neutral|glm-5.2", "queue_rank": 76, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|withhold|neutral|glm-5.2", "queue_rank": 85, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|reveal|neutral|glm-5.2", "queue_rank": 86, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|withhold|neutral|glm-5.2", "queue_rank": 87, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|withhold|warm|glm-5.2", "queue_rank": 88, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|withhold|warm|glm-5.2", "queue_rank": 89, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|reveal|neutral|glm-5.2", "queue_rank": 92, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|reveal|neutral|glm-5.2", "queue_rank": 90, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|withhold|neutral|glm-5.2", "queue_rank": 95, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|withhold|warm|glm-5.2", "queue_rank": 93, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|reveal|warm|glm-5.2", "queue_rank": 75, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|reveal|neutral|glm-5.2", "queue_rank": 97, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|reveal|warm|glm-5.2", "queue_rank": 83, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|reveal|warm|glm-5.2", "queue_rank": 94, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|reveal|warm|glm-5.2", "queue_rank": 96, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|reveal|neutral|glm-5.2", "queue_rank": 100, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|withhold|warm|glm-5.2", "queue_rank": 98, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|reveal|warm|glm-5.2", "queue_rank": 101, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|reveal|neutral|glm-5.2", "queue_rank": 102, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|withhold|warm|glm-5.2", "queue_rank": 104, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|withhold|warm|glm-5.2", "queue_rank": 103, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|withhold|warm|glm-5.2", "queue_rank": 105, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|withhold|neutral|glm-5.2", "queue_rank": 107, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|reveal|warm|glm-5.2", "queue_rank": 106, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|withhold|neutral|glm-5.2", "queue_rank": 109, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|withhold|neutral|glm-5.2", "queue_rank": 108, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|withhold|warm|glm-5.2", "queue_rank": 112, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|reveal|neutral|glm-5.2", "queue_rank": 110, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|reveal|warm|glm-5.2", "queue_rank": 91, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|withhold|neutral|glm-5.2", "queue_rank": 115, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|reveal|warm|glm-5.2", "queue_rank": 111, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|reveal|neutral|glm-5.2", "queue_rank": 118, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|reveal|warm|glm-5.2", "queue_rank": 117, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|withhold|warm|glm-5.2", "queue_rank": 119, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|withhold|neutral|glm-5.2", "queue_rank": 120, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|withhold|neutral|glm-5.2", "queue_rank": 99, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|withhold|warm|glm-5.2", "queue_rank": 114, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|withhold|neutral|glm-5.2", "queue_rank": 126, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|reveal|neutral|glm-5.2", "queue_rank": 122, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|withhold|neutral|glm-5.2", "queue_rank": 121, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|reveal|warm|glm-5.2", "queue_rank": 113, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|reveal|warm|glm-5.2", "queue_rank": 116, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|reveal|neutral|glm-5.2", "queue_rank": 127, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|reveal|warm|glm-5.2", "queue_rank": 123, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|reveal|neutral|glm-5.2", "queue_rank": 124, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|withhold|warm|glm-5.2", "queue_rank": 125, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 3, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 4, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 2, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 6, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 0, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 7, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 1, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 5, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 8, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 11, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 13, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 14, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 15, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 12, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 19, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 9, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 20, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 10, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 21, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 18, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 22, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 25, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 16, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 24, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 17, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 28, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 29, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 23, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 26, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 31, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 30, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 27, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 32, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 33, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 38, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 36, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 34, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 37, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 35, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 39, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 41, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 40, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 44, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 43, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 45, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 47, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 42, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 50, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 51, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 49, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 52, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 54, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 48, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 46, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 53, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 55, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 56, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 58, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 60, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 62, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 63, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 64, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 59, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 57, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 61, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 66, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 67, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 65, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 72, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 68, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 69, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 70, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 74, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 71, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 79, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 73, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 75, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 76, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 77, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 78, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 80, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 84, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 81, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 87, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 83, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 82, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 85, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 86, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 89, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 88, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 93, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 90, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 94, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 91, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 92, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 96, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 98, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 100, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 97, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 101, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 102, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 104, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 99, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 95, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 106, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 108, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 109, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 107, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 103, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 105, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 113, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 115, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 114, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 111, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 112, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 110, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 117, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 119, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|reveal|warm|deepseek-v4-pro", "queue_rank": 118, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|withhold|neutral|deepseek-v4-pro", "queue_rank": 122, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|withhold|warm|deepseek-v4-pro", "queue_rank": 121, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 123, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|reveal|neutral|deepseek-v4-pro", "queue_rank": 124, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|withhold|neutral|deepseek-v4-pro", "queue_rank": 116, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|reveal|neutral|deepseek-v4-pro", "queue_rank": 126, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 125, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|withhold|warm|deepseek-v4-pro", "queue_rank": 120, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|reveal|warm|deepseek-v4-pro", "queue_rank": 127, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 5, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 4, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 0, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 3, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 6, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 7, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 1, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 2, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 9, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 10, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 11, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 13, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 12, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 8, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 14, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 17, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 15, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 19, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 16, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 21, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 18, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 20, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 22, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 24, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 23, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 25, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 26, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 28, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 31, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 32, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 29, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 34, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 35, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 27, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 30, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 33, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 38, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 36, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 39, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 37, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 40, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 43, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 42, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 41, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 48, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 46, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 44, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 47, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 50, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 45, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 51, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 52, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 49, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 57, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 54, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 56, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 53, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 59, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 60, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 61, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 55, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 58, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 64, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 63, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 62, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 67, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 65, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 71, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 66, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 70, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 72, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 69, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 73, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|explore|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 74, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 68, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 75, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 79, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 77, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 76, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 82, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|direct|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 78, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 81, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 80, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 83, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 84, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 88, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 86, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 89, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 87, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 85, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 93, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 90, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|direct|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 91, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 94, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 95, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 92, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 98, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 96, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 99, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 97, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 101, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 100, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 103, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 104, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 105, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 102, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 107, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 108, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|explore|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 109, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 106, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 111, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 113, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|direct|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 110, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-00|direct|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 116, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 115, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|explore|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 112, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|direct|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 114, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 117, "ok": true, "error": ""}
+{"request_id": "arithmetic_mean-04|direct|explain_only|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 121, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|direct|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 119, "ok": true, "error": ""}
+{"request_id": "linear_equation-04|explore|question_first|reveal|warm|doubao-seed-2.0-lite", "queue_rank": 118, "ok": true, "error": ""}
+{"request_id": "percentage_discount-04|explore|question_first|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 123, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 120, "ok": true, "error": ""}
+{"request_id": "percentage_discount-00|explore|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 124, "ok": true, "error": ""}
+{"request_id": "fraction_addition-00|explore|question_first|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 122, "ok": true, "error": ""}
+{"request_id": "linear_equation-00|explore|explain_only|reveal|neutral|doubao-seed-2.0-lite", "queue_rank": 125, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|withhold|neutral|doubao-seed-2.0-lite", "queue_rank": 127, "ok": true, "error": ""}
+{"request_id": "fraction_addition-04|direct|explain_only|withhold|warm|doubao-seed-2.0-lite", "queue_rank": 126, "ok": true, "error": ""}
+{
+  "current_errors": 0,
+  "expected": 640,
+  "missing": 0,
+  "per_model": {
+    "MiniMax-M2.7": {
+      "errors": 0,
+      "expected": 128,
+      "missing": 0,
+      "successful": 128
+    },
+    "MiniMax-M3": {
+      "errors": 0,
+      "expected": 128,
+      "missing": 0,
+      "successful": 128
+    },
+    "deepseek-v4-pro": {
+      "errors": 0,
+      "expected": 128,
+      "missing": 0,
+      "successful": 128
+    },
+    "doubao-seed-2.0-lite": {
+      "errors": 0,
+      "expected": 128,
+      "missing": 0,
+      "successful": 128
+    },
+    "glm-5.2": {
+      "errors": 0,
+      "expected": 128,
+      "missing": 0,
+      "successful": 128
+    }
+  },
+  "successful": 640,
+  "unexpected_keys": 0
+}

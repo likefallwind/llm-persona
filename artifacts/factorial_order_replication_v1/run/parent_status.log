@@ -1,0 +1,39 @@
+{
+  "current_errors": 0,
+  "expected": 2560,
+  "missing": 0,
+  "per_model": {
+    "MiniMax-M2.7": {
+      "errors": 0,
+      "expected": 512,
+      "missing": 0,
+      "successful": 512
+    },
+    "MiniMax-M3": {
+      "errors": 0,
+      "expected": 512,
+      "missing": 0,
+      "successful": 512
+    },
+    "deepseek-v4-pro": {
+      "errors": 0,
+      "expected": 512,
+      "missing": 0,
+      "successful": 512
+    },
+    "doubao-seed-2.0-lite": {
+      "errors": 0,
+      "expected": 512,
+      "missing": 0,
+      "successful": 512
+    },
+    "glm-5.2": {
+      "errors": 0,
+      "expected": 512,
+      "missing": 0,
+      "successful": 512
+    }
+  },
+  "successful": 2560,
+  "unexpected_keys": 0
+}

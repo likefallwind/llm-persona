@@ -1,0 +1,61 @@
+{
+  "judges_and_routes": {
+    "MiniMax-M3": "MiniMax official API",
+    "glm-5.2": "configured API gateway",
+    "deepseek-v4-pro": "configured API gateway"
+  },
+  "requested_judges": [
+    "MiniMax-M3",
+    "glm-5.2",
+    "deepseek-v4-pro"
+  ],
+  "batch_count": 2,
+  "context_count": 2,
+  "response_count": 12,
+  "context_chars": {
+    "min": 611,
+    "median": 895,
+    "p95": 895,
+    "max": 895,
+    "total": 1506
+  },
+  "response_chars": {
+    "min": 66,
+    "median": 124,
+    "p95": 268,
+    "max": 268,
+    "total": 1673
+  },
+  "potential_pii_pattern_flags": {
+    "email": {
+      "contexts": 0,
+      "responses": 0
+    },
+    "url": {
+      "contexts": 0,
+      "responses": 0
+    },
+    "ipv4": {
+      "contexts": 0,
+      "responses": 0
+    },
+    "china_id_like": {
+      "contexts": 0,
+      "responses": 0
+    },
+    "china_mobile_like": {
+      "contexts": 0,
+      "responses": 0
+    },
+    "international_phone_like": {
+      "contexts": 0,
+      "responses": 0
+    }
+  },
+  "international_phone_like_contexts_by_benchmark": {
+    "mathtutorbench_pedagogy": 0,
+    "mathtutorbench_scaffolding": 0
+  },
+  "stored_locally": "sample ids, hashes, blind label mappings, judge ratings, and raw judge JSON; source contexts and candidate responses are not copied",
+  "caveat": "Regex checks cannot prove absence of names or other indirect identifiers. LongTutor's upstream release has no LICENSE file according to the source repository instructions."
+}

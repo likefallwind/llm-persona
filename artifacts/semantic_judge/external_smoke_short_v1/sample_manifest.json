@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "seed": 20260819,
+  "counts": {
+    "longtutor": 0,
+    "mathdial": 1,
+    "mathdial_hard": 0,
+    "socratic": 0
+  },
+  "batch_count": 2,
+  "response_count": 12,
+  "items": [
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-738",
+      "pair_group": "mathdial_standard",
+      "pair_id": "738"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-738",
+      "pair_group": "mathdial_standard",
+      "pair_id": "738"
+    }
+  ]
+}

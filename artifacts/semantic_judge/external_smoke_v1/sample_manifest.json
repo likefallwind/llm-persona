@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "seed": 20260819,
+  "counts": {
+    "longtutor": 1,
+    "mathdial": 0,
+    "mathdial_hard": 0,
+    "socratic": 0
+  },
+  "batch_count": 1,
+  "response_count": 6,
+  "items": [
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "1043||fd2ec02f1fbea3d067f232f1b363e77d0e49dc92b0634676dc1cb4c3ae55c3c2",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "1043||fd2ec02f1fbea3d067f232f1b363e77d0e49dc92b0634676dc1cb4c3ae55c3c2"
+    }
+  ]
+}
