@@ -1,0 +1,2544 @@
+{
+  "schema_version": 1,
+  "rubric_version": "theory_grounded_character_v1",
+  "seed": 20260819,
+  "pilot_pairs_per_group": 6,
+  "counts": {
+    "longtutor": 40,
+    "mathdial": 80,
+    "mathdial_hard": 40,
+    "socratic": 80
+  },
+  "judges": [
+    "MiniMax-M3",
+    "MiniMax-M2.7",
+    "glm-5.2",
+    "deepseek-v4-pro"
+  ],
+  "batch_count": 360,
+  "pilot_batch_count": 36,
+  "formal_batch_count": 324,
+  "response_count": 2160,
+  "items": [
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "10439||1d68b749c26738897a36ef4aa1948e3a5d4d663f9d2479d92278087314385007",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "10439||1d68b749c26738897a36ef4aa1948e3a5d4d663f9d2479d92278087314385007",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "1043||fd2ec02f1fbea3d067f232f1b363e77d0e49dc92b0634676dc1cb4c3ae55c3c2",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "1043||fd2ec02f1fbea3d067f232f1b363e77d0e49dc92b0634676dc1cb4c3ae55c3c2",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "10624||3c828ac348cc108e260b14b7a715384a863a33a3130dd15f9862b2154fe5dd95",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "10624||3c828ac348cc108e260b14b7a715384a863a33a3130dd15f9862b2154fe5dd95",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "11402||cb31c1fc6790e6b4791208e3543bebee44b2c20509ead7fee6aea8c295bc06b5",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "11402||cb31c1fc6790e6b4791208e3543bebee44b2c20509ead7fee6aea8c295bc06b5",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "12704||327ba74454647f356ce8ba62d6f568d45aa8124053bf6b11fef6ff08b403d39f",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "12704||327ba74454647f356ce8ba62d6f568d45aa8124053bf6b11fef6ff08b403d39f",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "12757||a8b68e05150082181fd43b31d5484433462fe9b4b717e54f71f282866c42d0d2",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "12757||a8b68e05150082181fd43b31d5484433462fe9b4b717e54f71f282866c42d0d2",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "12890||e977ea2b8994a5478b4c592cdee35f585fdff28d103f74e4fae065e541533aef",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "12890||e977ea2b8994a5478b4c592cdee35f585fdff28d103f74e4fae065e541533aef",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "13039||143f126951eac1749765f9438d08988408d05b52842a6262ec957797a5649264",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "13039||143f126951eac1749765f9438d08988408d05b52842a6262ec957797a5649264",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "13124||b1dbbfb7569e74accbad22934b94a54296cbb8c25cccb3e869259bc8f761004f",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "13124||b1dbbfb7569e74accbad22934b94a54296cbb8c25cccb3e869259bc8f761004f",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "13249||9f954b63950286d40c35c144337b80afbecd246934d2b4ebc99906ad9afa362e",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "13249||9f954b63950286d40c35c144337b80afbecd246934d2b4ebc99906ad9afa362e",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "13525||a2748a1a0512630bee49e8da92354091497d940586bb5fb89a0fba5725047938",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "13525||a2748a1a0512630bee49e8da92354091497d940586bb5fb89a0fba5725047938",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "13755||ec2725c7e3df22ddfbc3668d47f5cb2f8c1fd4ccd735af8493ac358d8dd2a949",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "13755||ec2725c7e3df22ddfbc3668d47f5cb2f8c1fd4ccd735af8493ac358d8dd2a949",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "13895||bc3f8a3e1b30356e214da130f7b58f44270b5eea5a394b2f18c8da29a1c3f76a",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "13895||bc3f8a3e1b30356e214da130f7b58f44270b5eea5a394b2f18c8da29a1c3f76a",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "14321||bc0f4ae21946bf4ad4b404940ff980c1eb076e4f7486cad1e8ba1657d617b01c",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "14321||bc0f4ae21946bf4ad4b404940ff980c1eb076e4f7486cad1e8ba1657d617b01c",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "14539||7d59081fdb4be3fa7f4e3ffc86a24ac18571aa6b48a6bda9264a5f66902d1f7b",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "14539||7d59081fdb4be3fa7f4e3ffc86a24ac18571aa6b48a6bda9264a5f66902d1f7b",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "14583||eebec058ddcf0c37ff32565b3970646c11a97d2157643e9db62f89a130c1a174",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "14583||eebec058ddcf0c37ff32565b3970646c11a97d2157643e9db62f89a130c1a174",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "15511||6674094bc454f629bf0d37fd2fcb90d6ed739d99e33ac396e2427e09874a3ee4",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "15511||6674094bc454f629bf0d37fd2fcb90d6ed739d99e33ac396e2427e09874a3ee4",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "1597||09c770a9461aa7c42116268d5dcab93a846ca62d545cf7e599ae3566de2b5319",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "1597||09c770a9461aa7c42116268d5dcab93a846ca62d545cf7e599ae3566de2b5319",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "16299||3c460b5eb254712531f413f3df71c3bff906890ca6e486047cb2c297c741f6a9",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "16299||3c460b5eb254712531f413f3df71c3bff906890ca6e486047cb2c297c741f6a9",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "16426||1288a12207182446df15b94fddd08c680ad2663a455ec821a7327835e17b2bfd",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "16426||1288a12207182446df15b94fddd08c680ad2663a455ec821a7327835e17b2bfd",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "16779||e9ca8e65926a4da4de1762a3899a5f383e2494b63ff14a3ab3a9b7e819d8205b",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "16779||e9ca8e65926a4da4de1762a3899a5f383e2494b63ff14a3ab3a9b7e819d8205b",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "17160||4efcc9ef26f5408202336adc99c14fc12140d21f0d282101b7f4564a13e41b7e",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "17160||4efcc9ef26f5408202336adc99c14fc12140d21f0d282101b7f4564a13e41b7e",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "17242||0457c820382e56fbb5a58c79a7fc7e8acdc7a7f4eb086aeb23133d192276cd9b",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "17242||0457c820382e56fbb5a58c79a7fc7e8acdc7a7f4eb086aeb23133d192276cd9b",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "17714||4710a24427726797a64d4c3ca20fa9686b2f4221055ca5761b29dc16f48210d8",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "17714||4710a24427726797a64d4c3ca20fa9686b2f4221055ca5761b29dc16f48210d8",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "2070||c5f0f3848ae38e979739dc37eb3400dff6d12448890ada038e509725c1625ae6",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "2070||c5f0f3848ae38e979739dc37eb3400dff6d12448890ada038e509725c1625ae6",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "2407||0a0a85b114ee5e340983c585699f36eb4ed80f0a2d71151ddc87ac0e34ce7b29",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "2407||0a0a85b114ee5e340983c585699f36eb4ed80f0a2d71151ddc87ac0e34ce7b29",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "3040||763c12819594c442879c9176cb0e45ae89266550bb83e7d5a0f73986af8bc072",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "3040||763c12819594c442879c9176cb0e45ae89266550bb83e7d5a0f73986af8bc072",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "4110||23a93d7c2061238cdba6cc97538aaa6d4ea13896875c5d53fb3dbbff08854cf7",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "4110||23a93d7c2061238cdba6cc97538aaa6d4ea13896875c5d53fb3dbbff08854cf7",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "4167||42fe5a51488687445ce6ef2494516780a100c8da7a18506c1916957de3bde088",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "4167||42fe5a51488687445ce6ef2494516780a100c8da7a18506c1916957de3bde088",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "4266||20c2d24250437ab28475a086d1e743031ba26ddccc7c061b4b8de03a782a7939",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "4266||20c2d24250437ab28475a086d1e743031ba26ddccc7c061b4b8de03a782a7939",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "6188||4230bb42522bac3290003f9af1dd16587ff98f771ec9e88e02f61ec5b73843a9",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "6188||4230bb42522bac3290003f9af1dd16587ff98f771ec9e88e02f61ec5b73843a9",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "6300||ccaf0d5e6a7cc5bb7adbb14ddccc863b910b58c9f7bf1a15285c7cca18e4764d",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "6300||ccaf0d5e6a7cc5bb7adbb14ddccc863b910b58c9f7bf1a15285c7cca18e4764d",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "6468||9a8e0952b33e4e4259db0460daef1f9377983e3f15576eed081fe48b335caf99",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "6468||9a8e0952b33e4e4259db0460daef1f9377983e3f15576eed081fe48b335caf99",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "8256||3234808830a5a441c64e99cfcaa17f45c1c4ad1d62c960d52a101f7f693b0c3c",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "8256||3234808830a5a441c64e99cfcaa17f45c1c4ad1d62c960d52a101f7f693b0c3c",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "8310||c88f12e61aa274a0095ba3ef492419ece063d83cb3415588cce4a1b75caa9acb",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "8310||c88f12e61aa274a0095ba3ef492419ece063d83cb3415588cce4a1b75caa9acb",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "8543||905caef9721ad76d985df36030b8d2c3a54582e7e406035f97a26b102ec1d73a",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "8543||905caef9721ad76d985df36030b8d2c3a54582e7e406035f97a26b102ec1d73a",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "9362||f425cce1cea7d4e246ac684f7ab00b1080137e073140cd682abc588b5422c01a",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "9362||f425cce1cea7d4e246ac684f7ab00b1080137e073140cd682abc588b5422c01a",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "9487||d63d9cc8e29060d8e903d1cef0d931f5a12b4e915b828bebfd0c595c3bf8c0f8",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "9487||d63d9cc8e29060d8e903d1cef0d931f5a12b4e915b828bebfd0c595c3bf8c0f8",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "9653||00896346df7f439496a4ea72d3b0105c868ea0a3dfc8ee81f5eee4e4d62e0833",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "9653||00896346df7f439496a4ea72d3b0105c868ea0a3dfc8ee81f5eee4e4d62e0833",
+      "split": "formal"
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "item_id": "9829||832f2da96be9e071662a95cff0fd0d1443c14df48305e8799d8ce5a6a7579cc4",
+      "pair_group": "longtutor_teaching",
+      "pair_id": "9829||832f2da96be9e071662a95cff0fd0d1443c14df48305e8799d8ce5a6a7579cc4",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-10",
+      "pair_group": "mathdial_standard",
+      "pair_id": "10",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-1013",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1013",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-1041",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1041",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-1044",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1044",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-1052",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1052",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-1061",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1061",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-1063",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1063",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-1079",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1079",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-109",
+      "pair_group": "mathdial_standard",
+      "pair_id": "109",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-1092",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1092",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-1098",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1098",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-110",
+      "pair_group": "mathdial_standard",
+      "pair_id": "110",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-1111",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1111",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-112",
+      "pair_group": "mathdial_standard",
+      "pair_id": "112",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-1149",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1149",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-124",
+      "pair_group": "mathdial_standard",
+      "pair_id": "124",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-13",
+      "pair_group": "mathdial_standard",
+      "pair_id": "13",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-18",
+      "pair_group": "mathdial_standard",
+      "pair_id": "18",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-183",
+      "pair_group": "mathdial_standard",
+      "pair_id": "183",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-189",
+      "pair_group": "mathdial_standard",
+      "pair_id": "189",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-207",
+      "pair_group": "mathdial_standard",
+      "pair_id": "207",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-22",
+      "pair_group": "mathdial_standard",
+      "pair_id": "22",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-221",
+      "pair_group": "mathdial_standard",
+      "pair_id": "221",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-245",
+      "pair_group": "mathdial_standard",
+      "pair_id": "245",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-267",
+      "pair_group": "mathdial_standard",
+      "pair_id": "267",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-314",
+      "pair_group": "mathdial_standard",
+      "pair_id": "314",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-320",
+      "pair_group": "mathdial_standard",
+      "pair_id": "320",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-321",
+      "pair_group": "mathdial_standard",
+      "pair_id": "321",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-327",
+      "pair_group": "mathdial_standard",
+      "pair_id": "327",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-346",
+      "pair_group": "mathdial_standard",
+      "pair_id": "346",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-353",
+      "pair_group": "mathdial_standard",
+      "pair_id": "353",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-354",
+      "pair_group": "mathdial_standard",
+      "pair_id": "354",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-362",
+      "pair_group": "mathdial_standard",
+      "pair_id": "362",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-369",
+      "pair_group": "mathdial_standard",
+      "pair_id": "369",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-385",
+      "pair_group": "mathdial_standard",
+      "pair_id": "385",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-390",
+      "pair_group": "mathdial_standard",
+      "pair_id": "390",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-399",
+      "pair_group": "mathdial_standard",
+      "pair_id": "399",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-400",
+      "pair_group": "mathdial_standard",
+      "pair_id": "400",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-409",
+      "pair_group": "mathdial_standard",
+      "pair_id": "409",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-41",
+      "pair_group": "mathdial_standard",
+      "pair_id": "41",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-436",
+      "pair_group": "mathdial_standard",
+      "pair_id": "436",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-440",
+      "pair_group": "mathdial_standard",
+      "pair_id": "440",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-445",
+      "pair_group": "mathdial_standard",
+      "pair_id": "445",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-47",
+      "pair_group": "mathdial_standard",
+      "pair_id": "47",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-481",
+      "pair_group": "mathdial_standard",
+      "pair_id": "481",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-49",
+      "pair_group": "mathdial_standard",
+      "pair_id": "49",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-490",
+      "pair_group": "mathdial_standard",
+      "pair_id": "490",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-500",
+      "pair_group": "mathdial_standard",
+      "pair_id": "500",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-531",
+      "pair_group": "mathdial_standard",
+      "pair_id": "531",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-539",
+      "pair_group": "mathdial_standard",
+      "pair_id": "539",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-545",
+      "pair_group": "mathdial_standard",
+      "pair_id": "545",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-569",
+      "pair_group": "mathdial_standard",
+      "pair_id": "569",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-572",
+      "pair_group": "mathdial_standard",
+      "pair_id": "572",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-612",
+      "pair_group": "mathdial_standard",
+      "pair_id": "612",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-622",
+      "pair_group": "mathdial_standard",
+      "pair_id": "622",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-638",
+      "pair_group": "mathdial_standard",
+      "pair_id": "638",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-641",
+      "pair_group": "mathdial_standard",
+      "pair_id": "641",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-643",
+      "pair_group": "mathdial_standard",
+      "pair_id": "643",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-655",
+      "pair_group": "mathdial_standard",
+      "pair_id": "655",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-675",
+      "pair_group": "mathdial_standard",
+      "pair_id": "675",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-688",
+      "pair_group": "mathdial_standard",
+      "pair_id": "688",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-694",
+      "pair_group": "mathdial_standard",
+      "pair_id": "694",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-705",
+      "pair_group": "mathdial_standard",
+      "pair_id": "705",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-714",
+      "pair_group": "mathdial_standard",
+      "pair_id": "714",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-738",
+      "pair_group": "mathdial_standard",
+      "pair_id": "738",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-743",
+      "pair_group": "mathdial_standard",
+      "pair_id": "743",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-764",
+      "pair_group": "mathdial_standard",
+      "pair_id": "764",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-824",
+      "pair_group": "mathdial_standard",
+      "pair_id": "824",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-856",
+      "pair_group": "mathdial_standard",
+      "pair_id": "856",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-867",
+      "pair_group": "mathdial_standard",
+      "pair_id": "867",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-885",
+      "pair_group": "mathdial_standard",
+      "pair_id": "885",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-891",
+      "pair_group": "mathdial_standard",
+      "pair_id": "891",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-902",
+      "pair_group": "mathdial_standard",
+      "pair_id": "902",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-91",
+      "pair_group": "mathdial_standard",
+      "pair_id": "91",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-92",
+      "pair_group": "mathdial_standard",
+      "pair_id": "92",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-926",
+      "pair_group": "mathdial_standard",
+      "pair_id": "926",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-927",
+      "pair_group": "mathdial_standard",
+      "pair_id": "927",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-960",
+      "pair_group": "mathdial_standard",
+      "pair_id": "960",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-977",
+      "pair_group": "mathdial_standard",
+      "pair_id": "977",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "item_id": "pedagogy-985",
+      "pair_group": "mathdial_standard",
+      "pair_id": "985",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-0",
+      "pair_group": "mathdial_hard",
+      "pair_id": "0",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-104",
+      "pair_group": "mathdial_hard",
+      "pair_id": "104",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-112",
+      "pair_group": "mathdial_hard",
+      "pair_id": "112",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-12",
+      "pair_group": "mathdial_hard",
+      "pair_id": "12",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-130",
+      "pair_group": "mathdial_hard",
+      "pair_id": "130",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-134",
+      "pair_group": "mathdial_hard",
+      "pair_id": "134",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-140",
+      "pair_group": "mathdial_hard",
+      "pair_id": "140",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-155",
+      "pair_group": "mathdial_hard",
+      "pair_id": "155",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-160",
+      "pair_group": "mathdial_hard",
+      "pair_id": "160",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-165",
+      "pair_group": "mathdial_hard",
+      "pair_id": "165",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-172",
+      "pair_group": "mathdial_hard",
+      "pair_id": "172",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-177",
+      "pair_group": "mathdial_hard",
+      "pair_id": "177",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-181",
+      "pair_group": "mathdial_hard",
+      "pair_id": "181",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-183",
+      "pair_group": "mathdial_hard",
+      "pair_id": "183",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-202",
+      "pair_group": "mathdial_hard",
+      "pair_id": "202",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-211",
+      "pair_group": "mathdial_hard",
+      "pair_id": "211",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-215",
+      "pair_group": "mathdial_hard",
+      "pair_id": "215",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-219",
+      "pair_group": "mathdial_hard",
+      "pair_id": "219",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-232",
+      "pair_group": "mathdial_hard",
+      "pair_id": "232",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-246",
+      "pair_group": "mathdial_hard",
+      "pair_id": "246",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-247",
+      "pair_group": "mathdial_hard",
+      "pair_id": "247",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-252",
+      "pair_group": "mathdial_hard",
+      "pair_id": "252",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-274",
+      "pair_group": "mathdial_hard",
+      "pair_id": "274",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-277",
+      "pair_group": "mathdial_hard",
+      "pair_id": "277",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-28",
+      "pair_group": "mathdial_hard",
+      "pair_id": "28",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-29",
+      "pair_group": "mathdial_hard",
+      "pair_id": "29",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-315",
+      "pair_group": "mathdial_hard",
+      "pair_id": "315",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-326",
+      "pair_group": "mathdial_hard",
+      "pair_id": "326",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-33",
+      "pair_group": "mathdial_hard",
+      "pair_id": "33",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-39",
+      "pair_group": "mathdial_hard",
+      "pair_id": "39",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-42",
+      "pair_group": "mathdial_hard",
+      "pair_id": "42",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-46",
+      "pair_group": "mathdial_hard",
+      "pair_id": "46",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-5",
+      "pair_group": "mathdial_hard",
+      "pair_id": "5",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-51",
+      "pair_group": "mathdial_hard",
+      "pair_id": "51",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-71",
+      "pair_group": "mathdial_hard",
+      "pair_id": "71",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-75",
+      "pair_group": "mathdial_hard",
+      "pair_id": "75",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-77",
+      "pair_group": "mathdial_hard",
+      "pair_id": "77",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-80",
+      "pair_group": "mathdial_hard",
+      "pair_id": "80",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-83",
+      "pair_group": "mathdial_hard",
+      "pair_id": "83",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "item_id": "hard-89",
+      "pair_group": "mathdial_hard",
+      "pair_id": "89",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-10",
+      "pair_group": "mathdial_standard",
+      "pair_id": "10",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-1013",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1013",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-1041",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1041",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-1044",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1044",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-1052",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1052",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-1061",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1061",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-1063",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1063",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-1079",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1079",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-109",
+      "pair_group": "mathdial_standard",
+      "pair_id": "109",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-1092",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1092",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-1098",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1098",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-110",
+      "pair_group": "mathdial_standard",
+      "pair_id": "110",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-1111",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1111",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-112",
+      "pair_group": "mathdial_standard",
+      "pair_id": "112",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-1149",
+      "pair_group": "mathdial_standard",
+      "pair_id": "1149",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-124",
+      "pair_group": "mathdial_standard",
+      "pair_id": "124",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-13",
+      "pair_group": "mathdial_standard",
+      "pair_id": "13",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-18",
+      "pair_group": "mathdial_standard",
+      "pair_id": "18",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-183",
+      "pair_group": "mathdial_standard",
+      "pair_id": "183",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-189",
+      "pair_group": "mathdial_standard",
+      "pair_id": "189",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-207",
+      "pair_group": "mathdial_standard",
+      "pair_id": "207",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-22",
+      "pair_group": "mathdial_standard",
+      "pair_id": "22",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-221",
+      "pair_group": "mathdial_standard",
+      "pair_id": "221",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-245",
+      "pair_group": "mathdial_standard",
+      "pair_id": "245",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-267",
+      "pair_group": "mathdial_standard",
+      "pair_id": "267",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-314",
+      "pair_group": "mathdial_standard",
+      "pair_id": "314",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-320",
+      "pair_group": "mathdial_standard",
+      "pair_id": "320",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-321",
+      "pair_group": "mathdial_standard",
+      "pair_id": "321",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-327",
+      "pair_group": "mathdial_standard",
+      "pair_id": "327",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-346",
+      "pair_group": "mathdial_standard",
+      "pair_id": "346",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-353",
+      "pair_group": "mathdial_standard",
+      "pair_id": "353",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-354",
+      "pair_group": "mathdial_standard",
+      "pair_id": "354",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-362",
+      "pair_group": "mathdial_standard",
+      "pair_id": "362",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-369",
+      "pair_group": "mathdial_standard",
+      "pair_id": "369",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-385",
+      "pair_group": "mathdial_standard",
+      "pair_id": "385",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-390",
+      "pair_group": "mathdial_standard",
+      "pair_id": "390",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-399",
+      "pair_group": "mathdial_standard",
+      "pair_id": "399",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-400",
+      "pair_group": "mathdial_standard",
+      "pair_id": "400",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-409",
+      "pair_group": "mathdial_standard",
+      "pair_id": "409",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-41",
+      "pair_group": "mathdial_standard",
+      "pair_id": "41",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-436",
+      "pair_group": "mathdial_standard",
+      "pair_id": "436",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-440",
+      "pair_group": "mathdial_standard",
+      "pair_id": "440",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-445",
+      "pair_group": "mathdial_standard",
+      "pair_id": "445",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-47",
+      "pair_group": "mathdial_standard",
+      "pair_id": "47",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-481",
+      "pair_group": "mathdial_standard",
+      "pair_id": "481",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-49",
+      "pair_group": "mathdial_standard",
+      "pair_id": "49",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-490",
+      "pair_group": "mathdial_standard",
+      "pair_id": "490",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-500",
+      "pair_group": "mathdial_standard",
+      "pair_id": "500",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-531",
+      "pair_group": "mathdial_standard",
+      "pair_id": "531",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-539",
+      "pair_group": "mathdial_standard",
+      "pair_id": "539",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-545",
+      "pair_group": "mathdial_standard",
+      "pair_id": "545",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-569",
+      "pair_group": "mathdial_standard",
+      "pair_id": "569",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-572",
+      "pair_group": "mathdial_standard",
+      "pair_id": "572",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-612",
+      "pair_group": "mathdial_standard",
+      "pair_id": "612",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-622",
+      "pair_group": "mathdial_standard",
+      "pair_id": "622",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-638",
+      "pair_group": "mathdial_standard",
+      "pair_id": "638",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-641",
+      "pair_group": "mathdial_standard",
+      "pair_id": "641",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-643",
+      "pair_group": "mathdial_standard",
+      "pair_id": "643",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-655",
+      "pair_group": "mathdial_standard",
+      "pair_id": "655",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-675",
+      "pair_group": "mathdial_standard",
+      "pair_id": "675",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-688",
+      "pair_group": "mathdial_standard",
+      "pair_id": "688",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-694",
+      "pair_group": "mathdial_standard",
+      "pair_id": "694",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-705",
+      "pair_group": "mathdial_standard",
+      "pair_id": "705",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-714",
+      "pair_group": "mathdial_standard",
+      "pair_id": "714",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-738",
+      "pair_group": "mathdial_standard",
+      "pair_id": "738",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-743",
+      "pair_group": "mathdial_standard",
+      "pair_id": "743",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-764",
+      "pair_group": "mathdial_standard",
+      "pair_id": "764",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-824",
+      "pair_group": "mathdial_standard",
+      "pair_id": "824",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-856",
+      "pair_group": "mathdial_standard",
+      "pair_id": "856",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-867",
+      "pair_group": "mathdial_standard",
+      "pair_id": "867",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-885",
+      "pair_group": "mathdial_standard",
+      "pair_id": "885",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-891",
+      "pair_group": "mathdial_standard",
+      "pair_id": "891",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-902",
+      "pair_group": "mathdial_standard",
+      "pair_id": "902",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-91",
+      "pair_group": "mathdial_standard",
+      "pair_id": "91",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-92",
+      "pair_group": "mathdial_standard",
+      "pair_id": "92",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-926",
+      "pair_group": "mathdial_standard",
+      "pair_id": "926",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-927",
+      "pair_group": "mathdial_standard",
+      "pair_id": "927",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-960",
+      "pair_group": "mathdial_standard",
+      "pair_id": "960",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-977",
+      "pair_group": "mathdial_standard",
+      "pair_id": "977",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "item_id": "scaffolding-985",
+      "pair_group": "mathdial_standard",
+      "pair_id": "985",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-0",
+      "pair_group": "mathdial_hard",
+      "pair_id": "0",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-104",
+      "pair_group": "mathdial_hard",
+      "pair_id": "104",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-112",
+      "pair_group": "mathdial_hard",
+      "pair_id": "112",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-12",
+      "pair_group": "mathdial_hard",
+      "pair_id": "12",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-130",
+      "pair_group": "mathdial_hard",
+      "pair_id": "130",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-134",
+      "pair_group": "mathdial_hard",
+      "pair_id": "134",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-140",
+      "pair_group": "mathdial_hard",
+      "pair_id": "140",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-155",
+      "pair_group": "mathdial_hard",
+      "pair_id": "155",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-160",
+      "pair_group": "mathdial_hard",
+      "pair_id": "160",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-165",
+      "pair_group": "mathdial_hard",
+      "pair_id": "165",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-172",
+      "pair_group": "mathdial_hard",
+      "pair_id": "172",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-177",
+      "pair_group": "mathdial_hard",
+      "pair_id": "177",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-181",
+      "pair_group": "mathdial_hard",
+      "pair_id": "181",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-183",
+      "pair_group": "mathdial_hard",
+      "pair_id": "183",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-202",
+      "pair_group": "mathdial_hard",
+      "pair_id": "202",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-211",
+      "pair_group": "mathdial_hard",
+      "pair_id": "211",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-215",
+      "pair_group": "mathdial_hard",
+      "pair_id": "215",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-219",
+      "pair_group": "mathdial_hard",
+      "pair_id": "219",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-232",
+      "pair_group": "mathdial_hard",
+      "pair_id": "232",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-246",
+      "pair_group": "mathdial_hard",
+      "pair_id": "246",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-247",
+      "pair_group": "mathdial_hard",
+      "pair_id": "247",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-252",
+      "pair_group": "mathdial_hard",
+      "pair_id": "252",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-274",
+      "pair_group": "mathdial_hard",
+      "pair_id": "274",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-277",
+      "pair_group": "mathdial_hard",
+      "pair_id": "277",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-28",
+      "pair_group": "mathdial_hard",
+      "pair_id": "28",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-29",
+      "pair_group": "mathdial_hard",
+      "pair_id": "29",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-315",
+      "pair_group": "mathdial_hard",
+      "pair_id": "315",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-326",
+      "pair_group": "mathdial_hard",
+      "pair_id": "326",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-33",
+      "pair_group": "mathdial_hard",
+      "pair_id": "33",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-39",
+      "pair_group": "mathdial_hard",
+      "pair_id": "39",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-42",
+      "pair_group": "mathdial_hard",
+      "pair_id": "42",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-46",
+      "pair_group": "mathdial_hard",
+      "pair_id": "46",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-5",
+      "pair_group": "mathdial_hard",
+      "pair_id": "5",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-51",
+      "pair_group": "mathdial_hard",
+      "pair_id": "51",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-71",
+      "pair_group": "mathdial_hard",
+      "pair_id": "71",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-75",
+      "pair_group": "mathdial_hard",
+      "pair_id": "75",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-77",
+      "pair_group": "mathdial_hard",
+      "pair_id": "77",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-80",
+      "pair_group": "mathdial_hard",
+      "pair_id": "80",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-83",
+      "pair_group": "mathdial_hard",
+      "pair_id": "83",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "item_id": "hard-89",
+      "pair_group": "mathdial_hard",
+      "pair_id": "89",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1003",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1003",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1010",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1010",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1012",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1012",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1030",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1030",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1033",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1033",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-104",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-104",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1054",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1054",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-107",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-107",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1078",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1078",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-108",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-108",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1086",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1086",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-11",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-11",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-111",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-111",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1129",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1129",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1145",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1145",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1152",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1152",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1155",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1155",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1170",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1170",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-118",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-118",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1188",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1188",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1196",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1196",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1218",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1218",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1238",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1238",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-125",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-125",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1251",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1251",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1294",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1294",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-1296",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-1296",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-14",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-14",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-154",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-154",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-170",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-170",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-172",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-172",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-189",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-189",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-190",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-190",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-205",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-205",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-220",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-220",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-223",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-223",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-230",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-230",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-233",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-233",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-236",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-236",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-254",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-254",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-259",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-259",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-278",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-278",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-304",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-304",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-306",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-306",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-351",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-351",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-368",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-368",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-383",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-383",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-397",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-397",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-399",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-399",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-411",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-411",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-414",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-414",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-423",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-423",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-438",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-438",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-506",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-506",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-520",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-520",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-550",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-550",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-552",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-552",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-581",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-581",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-584",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-584",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-590",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-590",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-592",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-592",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-598",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-598",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-619",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-619",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-636",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-636",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-646",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-646",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-663",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-663",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-686",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-686",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-73",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-73",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-739",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-739",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-748",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-748",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-752",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-752",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-819",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-819",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-859",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-859",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-873",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-873",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-896",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-896",
+      "split": "pilot"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-916",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-916",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-935",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-935",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-937",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-937",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-962",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-962",
+      "split": "formal"
+    },
+    {
+      "benchmark": "mathtutorbench_socratic",
+      "item_id": "soc-988",
+      "pair_group": "mathtutorbench_socratic",
+      "pair_id": "soc-988",
+      "split": "formal"
+    }
+  ]
+}

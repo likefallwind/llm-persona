@@ -412,6 +412,17 @@ therefore selects *pedagogical policy signatures*. This outcome is not a null:
 it identifies two cross-task semantic signatures while preventing six weaker
 dimensions from being promoted by reliability or prompt sensitivity alone.
 
+An outcome-aware secondary analysis makes the prompt dependence explicit. On
+the reliable dimensions, prompt/model sums-of-squares ratios are 3.99--7.53 in
+standard and 4.84--6.68 in hard contexts, while the mean prompt movement is
+0.85--1.15 times the generic cross-model range. Prompting therefore often moves
+behavior about as far as changing the default model. It does not erase model
+identity: cross-task, cross-prompt attribution remains 0.263--0.300 with every
+bootstrap lower bound above 0.167 chance. After adjusting for 1--5 scale
+headroom, model-specific elasticity replicates for elicitation and help
+directness. The supported object is thus a prompt-contingent response surface,
+not a fixed tutor personality.
+
 ![Confirmatory semantic measurement, intervention, and attribution results.](figures/semantic_findings.png)
 
 *Figure 2: (A) the frozen decision ladder retains two semantic signatures and one
@@ -453,19 +464,54 @@ three-way question x answer x tone interaction is 0.203 [0.138, 0.278] and 0.237
 [0.125, 0.350]. These prespecified interactions reproduce in sign, bounding the
 claim to controllable black-box components rather than orthogonal latent traits.
 
+### 5.9 A theory-grounded character audit adds boundaries, not new traits
+
+We organized the evidence using teacher-interpersonal, scaffolding, and
+epistemic-adaptation theory rather than a human personality questionnaire. The
+resulting audit distinguishes instructional agency, relational communion,
+assistance directness, next-step actionability, epistemic commitment, and
+learner contingency, with prompt elasticity treated as a meta-property. A
+pair-preserving development split eliminated learner contingency and broad
+information structure, retained actionability after one permitted scale split,
+and locked agency to exploratory status after its replacement four-family panel
+missed the model-profile agreement gate.
+
+On the untouched public/synthetic formal split, four judge families completed
+1,160/1,160 calls with zero failures. No additional axis passes the full chain.
+Communion is reliably measured (ICC(3,k)=0.945) and rank-stable, but has no
+Socratic model variance and correlates 0.805 with the old warmth scale, above
+the frozen 0.80 redundancy boundary. Actionability is also reliably scored
+(ICC=0.871), yet its minimum judge-pair model-profile rho is 0.600 and its model
+ordering reverses across tasks (ICC=-0.111; median rho=-0.771). Agency is strong
+on the formal set (ICC=0.900; cross-task ICC=0.639) but cannot override the
+failed pilot gate and does not reach its transparent-anchor criterion.
+
+The same analysis strengthens the prompt result. The pedagogy instruction
+reduces tutor control by 0.995--1.039 points and increases next-step
+actionability by 0.880--1.047, with all six model deltas in the same direction
+in both paired tasks. These movements equal 0.68--0.94 and 0.79--0.86 of the
+corresponding default model ranges. Thus actionability is highly steerable while
+failing as a stable model axis. This is direct evidence that prompt response and
+model character are different estimands.
+
 ## 6 Discussion
 
-The results favor a narrower object than model personality.  Model-conditioned
-tutor policies recur across tasks and are steerable, but part of their identity is
-a domain-general generation fingerprint.  The intervention demonstrates causal
-addressability yet also policy homogenization and a telling-action failure.  The
+The results favor a prompt-contingent policy response surface rather than model
+personality: model-conditioned defaults, a shared prompt displacement, and
+model-specific elasticity. Part of model identity is a domain-general generation
+fingerprint. The intervention demonstrates causal addressability yet also policy
+homogenization, rank reversals, and a telling-action failure. The
 LongTutor null further separates an adaptive presentation from accurate learner
 modeling. The prospective factorial makes the control boundary sharper: explicit
 system clauses selectively address question-first and answer-reveal behavior;
 the warm-tone clause changes only a non-semantic encouragement marker under the
 validated measurement boundary. Ordinary learner requests do not reliably
 induce matching adaptation. Reproduced cross-component interactions favor a
-controller over composable actions rather than independent persona sliders.
+controller over composable actions rather than independent persona sliders. The
+theory-grounded audit reaches the same boundary from a different direction:
+communion is largely warmth under a new label, actionability is a shared prompt
+response rather than a stable ordering, and agency remains exploratory under
+the binding pilot rule.
 
 This decomposition changes system design.  A product should not choose one
 globally “good tutor persona.”  It should estimate the learner state, select an
@@ -517,7 +563,8 @@ payload.
 
 AI tutors in this finite panel exhibit stable and causally steerable pedagogical
 policy signatures.  These signatures are neither reducible to length nor
-equivalent to human personality.  Their consequences are conditional: a shared
+equivalent to human personality. A shared prompt can dominate default cross-model
+differences without erasing model-specific elasticity. Their consequences are conditional: a shared
 prompt can improve average agreement while suppressing appropriate telling, and
 an adaptive-sounding response can coexist with weak objective learner diagnosis.
 Explicit system clauses can selectively control surface policy components under

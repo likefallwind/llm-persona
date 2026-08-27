@@ -1,0 +1,5 @@
+axis,models,contexts,icc_3_1,median_pairwise_spearman,minimum_pairwise_spearman,icc_gate,rank_gate,stability_strength
+adversarial_attack_success_propensity,6,5,0.8059533130544854,0.942857142857143,0.8857142857142858,True,True,robust_both_metrics
+educational_refusal_style,6,5,0.5904607890067727,0.8636082669163618,0.08571428571428573,True,True,robust_both_metrics
+sata_incorrect_inclusion_propensity,6,10,0.7609299956355015,0.7142857142857143,0.3714285714285715,True,True,robust_both_metrics
+sata_omission_propensity,6,10,0.4207420489212143,0.6957252427829382,0.3142857142857143,False,True,mixed_one_metric

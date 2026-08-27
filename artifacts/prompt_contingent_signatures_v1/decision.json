@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "analysis_status": "post_hoc_secondary_audit_on_frozen_outputs",
+  "verdict": "prompt_contingent_policy_signatures_supported",
+  "checks": {
+    "at_least_two_frozen_cross_task_signatures": true,
+    "shared_prompt_compresses_nine_model_profiles": true,
+    "at_least_two_reliable_dimensions_shift_in_both_tasks": true,
+    "at_least_two_reliable_dimensions_move_at_least_0_75_baseline_range": true,
+    "model_identity_transfers_across_prompt_arms_and_tasks": true,
+    "replicated_model_specific_semantic_elasticity_after_headroom_adjustment": true
+  },
+  "frozen_cross_task_signature_dimensions": [
+    "cognitive_load",
+    "help_directness"
+  ],
+  "reliable_same_direction_prompt_dimensions": [
+    "cognitive_load",
+    "elicitation",
+    "help_directness"
+  ],
+  "prompt_comparable_to_baseline_range_dimensions": [
+    "cognitive_load",
+    "elicitation",
+    "help_directness"
+  ],
+  "replicated_semantic_elasticity_dimensions": [
+    "elicitation",
+    "help_directness"
+  ],
+  "claim_boundary": "The audit characterizes observable prompt-contingent tutor policies in a fixed deployed-model panel. It does not upgrade the frozen disposition decision, establish human-like personality, infer learner understanding, or demonstrate learning gains."
+}

@@ -1,0 +1,7 @@
+feature_set,mean_auc,mean_auc_gain_vs_transparent,positive_model_folds,model_folds
+task_item_only,0.8897658324897533,-0.013229709656373545,2,6
+transparent_only,0.9029955421461269,0.0,0,6
+transparent_plus_all_confirmatory,0.9065065330620724,0.0035109909159454777,6,6
+transparent_plus_instructional_agency,0.9058445708451187,0.00284902869899184,5,6
+transparent_plus_next_step_actionability,0.9059077601342618,0.002912217988134902,5,6
+transparent_plus_relational_communion,0.9024222282689053,-0.0005733138772214263,2,6

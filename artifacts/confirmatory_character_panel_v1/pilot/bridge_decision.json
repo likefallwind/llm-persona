@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "threshold_status": "fixed_before_confirmatory_bridge_calls",
+  "dimensions": [
+    {
+      "dimension": "instructional_agency",
+      "matched_responses": 180,
+      "uncentered_score_spearman": 0.9007380067900186,
+      "item_centered_response_spearman": 0.8551933673239801,
+      "model_profile_spearman": 0.942857142857143,
+      "mean_absolute_score_difference": 0.23055555555555557,
+      "gates": {
+        "all_180_responses_matched": true,
+        "uncentered_score_spearman_at_least_0_70": true,
+        "item_centered_response_spearman_at_least_0_60": true,
+        "six_model_profile_spearman_at_least_0_70": true
+      },
+      "bridge_pass": true
+    },
+    {
+      "dimension": "relational_communion",
+      "matched_responses": 180,
+      "uncentered_score_spearman": 0.9396144537700585,
+      "item_centered_response_spearman": 0.8559467499874855,
+      "model_profile_spearman": 0.942857142857143,
+      "mean_absolute_score_difference": 0.2,
+      "gates": {
+        "all_180_responses_matched": true,
+        "uncentered_score_spearman_at_least_0_70": true,
+        "item_centered_response_spearman_at_least_0_60": true,
+        "six_model_profile_spearman_at_least_0_70": true
+      },
+      "bridge_pass": true
+    },
+    {
+      "dimension": "next_step_actionability",
+      "matched_responses": 180,
+      "uncentered_score_spearman": 0.8669005076160875,
+      "item_centered_response_spearman": 0.8659013718967501,
+      "model_profile_spearman": 0.942857142857143,
+      "mean_absolute_score_difference": 0.25,
+      "gates": {
+        "all_180_responses_matched": true,
+        "uncentered_score_spearman_at_least_0_70": true,
+        "item_centered_response_spearman_at_least_0_60": true,
+        "six_model_profile_spearman_at_least_0_70": true
+      },
+      "bridge_pass": true
+    }
+  ],
+  "all_dimensions_bridge_pass": true,
+  "boundary": "A bridge pass licenses use of the compact rubric on the untouched formal split; it does not itself establish a cross-task model-character signature."
+}

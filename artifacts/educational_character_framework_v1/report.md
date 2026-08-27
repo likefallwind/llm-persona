@@ -1,0 +1,45 @@
+# Educational-character framework synthesis
+
+## Dimension evidence
+
+| axis                    | classification                                                | evidence_source                                         | prompt_status                                     | normative_permissiveness_rejected   | claim_unit                         |
+|:------------------------|:--------------------------------------------------------------|:--------------------------------------------------------|:--------------------------------------------------|:------------------------------------|:-----------------------------------|
+| instructional_agency    | exploratory_only_pilot_measurement_failure                    | confirmatory_character_panel_v1/formal                  | matched_prompt_effect_estimated                   | True                                | fixed_deployed_model_configuration |
+| relational_communion    | formal_cross_task_signature_not_supported                     | confirmatory_character_panel_v1/formal                  | matched_prompt_effect_estimated                   | True                                | fixed_deployed_model_configuration |
+| assistance_directness   | validated_behavioral_character_axis                           | submission_decision_and_prompt_contingent_signatures_v1 | replicated_model_specific_prompt_elasticity       | True                                | fixed_deployed_model_configuration |
+| next_step_actionability | formal_cross_task_signature_not_supported                     | confirmatory_character_panel_v1/formal                  | matched_prompt_effect_estimated                   | True                                | fixed_deployed_model_configuration |
+| epistemic_commitment    | finite_panel_expressed_confidence_signature_with_mixed_facets | epistemic_character_axes_v1                             | matched_epistemic_prompt_elasticity_not_tested    | True                                | fixed_deployed_model_configuration |
+| learner_contingency     | negative_boundary_learner_contingency_not_supported           | factorial_and_longtutor_negative_results                | system_policy_dominates_observed_learner_evidence | True                                | fixed_deployed_model_configuration |
+
+## Decision
+
+```json
+{
+  "schema_version": 1,
+  "recommended_thesis": "prompt_contingent_pedagogical_policy_signatures",
+  "supported_axes": [
+    "assistance_directness",
+    "epistemic_commitment"
+  ],
+  "bounded_redundant_axes": [],
+  "exploratory_axes": [
+    "instructional_agency"
+  ],
+  "rejected_or_unsupported_axes": [
+    "relational_communion",
+    "next_step_actionability",
+    "learner_contingency"
+  ],
+  "axis_classifications": {
+    "instructional_agency": "exploratory_only_pilot_measurement_failure",
+    "relational_communion": "formal_cross_task_signature_not_supported",
+    "assistance_directness": "validated_behavioral_character_axis",
+    "next_step_actionability": "formal_cross_task_signature_not_supported",
+    "epistemic_commitment": "finite_panel_expressed_confidence_signature_with_mixed_facets",
+    "learner_contingency": "negative_boundary_learner_contingency_not_supported"
+  },
+  "prompt_elasticity_is_meta_property": true,
+  "normative_permissiveness_is_not_a_unified_axis": true,
+  "claim_boundary": "Classifications describe six fixed deployed configurations. They do not establish human-like personality, consciousness, learner understanding, or learning gains."
+}
+```

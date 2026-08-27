@@ -88,3 +88,17 @@ learner-state/action systems already exist.
   the five frozen deployed systems and 32 synthetic contexts.
 - Keep real learning outcomes as an unmet requirement even if every compliance
   gate passes.
+
+## Addendum: prompt-contingency neighbors (2026-08-26)
+
+| Work | Evidence object | Boundary relative to this study |
+|---|---|---|
+| Self-Assessment Tests are Unreliable Measures of LLM Personality (BlackboxNLP 2024) | Three semantically equivalent administration prompts plus option-order tests on ChatGPT and three Llama2 sizes | Directly establishes psychometric prompt sensitivity; our construct is observed tutor behavior under exact-context causal intervention, not self-report scores |
+| Comparing Behavioral Patterns of LLM and Human Tutors (BEA 2025) | CIMA comparison of human tutors with GPT-4o, Gemini Pro 1.5, and LLaMA 3.1 450B | Direct educational precedent for model-specific action and complexity patterns; lacks cross-task recurrence, generic fingerprint falsification, and model-specific intervention elasticity |
+| Pedagogical Suitability Index (arXiv:2608.05411; IEEE IRI 2026) | Four models, 30 scenarios, standard versus defective student prompts; aggregate and subscore PSI comparison | Closest recent prompt-contingency neighbor; studies a lower-priority learner utterance and proxy index without inferential statistics, whereas our paired system prompt permits exact-context causal deformation and transfer tests |
+
+Primary records:
+
+- https://aclanthology.org/2024.blackboxnlp-1.20/
+- https://aclanthology.org/2025.bea-1.64/
+- https://arxiv.org/abs/2608.05411

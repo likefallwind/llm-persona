@@ -1,0 +1,54 @@
+{
+  "status": "outcome_aware_exploratory_existing_data",
+  "models": [
+    "minimax-m3",
+    "minimax-m2.7",
+    "glm-5.2",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-pro",
+    "qwen3.5-4b"
+  ],
+  "axes": [
+    {
+      "axis": "revision_propensity",
+      "models": 6,
+      "contexts": 4,
+      "icc_3_1": 0.5371042054219625,
+      "median_pairwise_spearman": 0.47233582909125377,
+      "minimum_pairwise_spearman": 0.3188740696088466,
+      "icc_gate": true,
+      "rank_gate": false,
+      "stability_strength": "mixed_one_metric"
+    },
+    {
+      "axis": "expressed_confidence",
+      "models": 6,
+      "contexts": 4,
+      "icc_3_1": 0.8520396318763286,
+      "median_pairwise_spearman": 0.8857142857142859,
+      "minimum_pairwise_spearman": 0.6571428571428573,
+      "icc_gate": true,
+      "rank_gate": true,
+      "stability_strength": "robust_both_metrics"
+    },
+    {
+      "axis": "unanswerable_abstention_propensity",
+      "models": 6,
+      "contexts": 5,
+      "icc_3_1": 0.3460038986354777,
+      "median_pairwise_spearman": 0.7047689012592435,
+      "minimum_pairwise_spearman": 0.08696565534786727,
+      "icc_gate": false,
+      "rank_gate": true,
+      "stability_strength": "mixed_one_metric"
+    }
+  ],
+  "robust_trait_like_axes": [
+    "expressed_confidence"
+  ],
+  "mixed_stability_axes": [
+    "revision_propensity",
+    "unanswerable_abstention_propensity"
+  ],
+  "interpretation": "Stability supports finite-panel behavioral tendencies only. Accuracy, calibration, correction quality, and abstention selectivity remain capabilities or consequences rather than personality dimensions."
+}

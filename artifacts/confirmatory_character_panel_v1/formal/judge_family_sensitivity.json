@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "threshold_status": "fixed_before_formal_results",
+  "judge_families": [
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite",
+    "glm-5.2",
+    "minimax-m2.7"
+  ],
+  "classification": [
+    {
+      "dimension": "instructional_agency",
+      "gates": {
+        "minimum_leaveout_model_profile_rho_at_least_0_90": true,
+        "minimum_leaveout_prompt_cell_rho_at_least_0_70": true,
+        "all_leaveouts_retain_prompt_direction": true,
+        "all_leaveouts_retain_cross_task_gate": true
+      },
+      "judge_family_robust": true
+    },
+    {
+      "dimension": "next_step_actionability",
+      "gates": {
+        "minimum_leaveout_model_profile_rho_at_least_0_90": true,
+        "minimum_leaveout_prompt_cell_rho_at_least_0_70": true,
+        "all_leaveouts_retain_prompt_direction": true,
+        "all_leaveouts_retain_cross_task_gate": false
+      },
+      "judge_family_robust": false
+    },
+    {
+      "dimension": "relational_communion",
+      "gates": {
+        "minimum_leaveout_model_profile_rho_at_least_0_90": true,
+        "minimum_leaveout_prompt_cell_rho_at_least_0_70": true,
+        "all_leaveouts_retain_prompt_direction": true,
+        "all_leaveouts_retain_cross_task_gate": true
+      },
+      "judge_family_robust": true
+    }
+  ],
+  "boundary": "Each family is represented by one judge and all judges share one Gateway route; this tests family leaveout sensitivity, not provider-route replication."
+}

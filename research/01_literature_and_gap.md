@@ -209,3 +209,37 @@ objects:
    controls), and
 3. **validated disposition** (only dimensions that generalize, predict external
    criteria, and move under intervention).
+
+## 6. Prompt-contingency update (2026-08-26)
+
+Three adjacent findings sharpen the gap. Gupta et al. (BlackboxNLP 2024) show
+that semantically equivalent prompts and option ordering destabilize LLM
+personality-test scores, so self-report stability cannot be assumed. Kucheria et
+al. (BEA 2025) find model-specific action and complexity patterns among three LLM
+tutors, establishing direct educational precedent for baseline differences. The
+Pedagogical Suitability Index study (arXiv:2608.05411; IEEE IRI 2026) reports an
+almost unchanged aggregate score across standard versus defective student
+prompts while subscores trade off, reinforcing the danger of aggregate masking.
+
+The remaining gap is therefore not “do tutor models ever differ?” It is whether
+the same fixed model panel supports a joint decomposition into default policy,
+shared prompt displacement, and model-specific elasticity after task transfer,
+generic-fingerprint controls, and bounded-scale sensitivity. The completed
+secondary analysis in `research/32_prompt_contingent_policy_signature_results.md`
+addresses that gap without upgrading the human-personality or disposition claim.
+
+The completed theory-grounded extension in
+`research/33_theory_grounded_educational_character_framework.md` and
+`research/36_confirmatory_character_results.md` addresses the remaining
+dimension-selection objection. It replaces Big Five self-report with teacher
+interpersonal agency/communion, scaffolding directness/actionability,
+epistemic-behavior, and learner-contingency axes. Its untouched four-family
+judge split finds no additional validated axis: the contribution is a
+construct-boundary map plus direct evidence that a large prompt response can
+coexist with unstable cross-task model ordering.
+
+Primary records:
+
+- https://aclanthology.org/2024.blackboxnlp-1.20/
+- https://aclanthology.org/2025.bea-1.64/
+- https://arxiv.org/abs/2608.05411

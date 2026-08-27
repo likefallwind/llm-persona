@@ -1,0 +1,16 @@
+benchmark,dimension,contexts,models,partial_eta_squared_model_after_item,bootstrap_ci_low,bootstrap_ci_high
+mathtutorbench_pedagogy,instructional_agency,74,6,0.0633748844758019,0.030183321355766613,0.14410479357509662
+mathtutorbench_pedagogy,next_step_actionability,74,6,0.03886126126126126,0.018253822045685503,0.10159081796429904
+mathtutorbench_pedagogy,relational_communion,74,6,0.16177965037280628,0.09989033120653223,0.2556872018626196
+mathtutorbench_pedagogy_hard,instructional_agency,34,6,0.06363408442759097,0.0300272439133965,0.17304782249814582
+mathtutorbench_pedagogy_hard,next_step_actionability,34,6,0.045213379469434836,0.02077400153359742,0.14886216928225168
+mathtutorbench_pedagogy_hard,relational_communion,34,6,0.07362248696947135,0.037134566236064134,0.18365808621834645
+mathtutorbench_scaffolding,instructional_agency,74,6,0.31577955704734484,0.25451289540850736,0.39750835047073285
+mathtutorbench_scaffolding,next_step_actionability,74,6,0.11151423059193113,0.06170423199961773,0.194048627637816
+mathtutorbench_scaffolding,relational_communion,74,6,0.26981411791538373,0.21484539907616554,0.34268764494553106
+mathtutorbench_scaffolding_hard,instructional_agency,34,6,0.21072951697446785,0.13297890549591385,0.3604257696438918
+mathtutorbench_scaffolding_hard,next_step_actionability,34,6,0.10384535051172404,0.045763652848395765,0.23686979268610422
+mathtutorbench_scaffolding_hard,relational_communion,34,6,0.3180199549837068,0.24912953120039888,0.43313440493783817
+mathtutorbench_socratic,instructional_agency,74,6,0.0740740740740741,0.045811260262479774,0.12649564080209239
+mathtutorbench_socratic,next_step_actionability,74,6,0.042205989773557356,0.021421078156399622,0.09944449167474857
+mathtutorbench_socratic,relational_communion,74,6,,,

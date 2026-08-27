@@ -1,0 +1,13 @@
+dimension,judge_left,judge_right,models,model_profile_spearman
+information_sequencing,MiniMax-M3,MiniMax-M2.7,6,0.8285714285714287
+information_sequencing,MiniMax-M3,glm-5.2,6,0.8285714285714287
+information_sequencing,MiniMax-M3,deepseek-v4-pro,6,-0.028988551782622423
+information_sequencing,MiniMax-M2.7,glm-5.2,6,0.4285714285714286
+information_sequencing,MiniMax-M2.7,deepseek-v4-pro,6,0.20291986247835697
+information_sequencing,glm-5.2,deepseek-v4-pro,6,0.057977103565244846
+next_step_actionability,MiniMax-M3,MiniMax-M2.7,6,0.8986451052612952
+next_step_actionability,MiniMax-M3,glm-5.2,6,0.8285714285714287
+next_step_actionability,MiniMax-M3,deepseek-v4-pro,6,0.7142857142857143
+next_step_actionability,MiniMax-M2.7,glm-5.2,6,0.9276336570439174
+next_step_actionability,MiniMax-M2.7,deepseek-v4-pro,6,0.9276336570439174
+next_step_actionability,glm-5.2,deepseek-v4-pro,6,0.942857142857143

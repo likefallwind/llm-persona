@@ -1,0 +1,17 @@
+new_dimension,old_dimension,responses,spearman
+information_sequencing,affective_warmth,180,-0.12981585377696994
+information_sequencing,autonomy_support,180,-0.08501987134171171
+information_sequencing,cognitive_load,180,0.45669690411895875
+information_sequencing,diagnostic_specificity,180,0.3263364176784128
+information_sequencing,elicitation,180,0.03532256461030857
+information_sequencing,epistemic_caution,180,-0.024608923014516938
+information_sequencing,help_directness,180,0.2431843135988761
+information_sequencing,personalization,180,0.08149548717533209
+next_step_actionability,affective_warmth,180,-0.06361356785609494
+next_step_actionability,autonomy_support,180,0.37617535450882195
+next_step_actionability,cognitive_load,180,0.017065018630734584
+next_step_actionability,diagnostic_specificity,180,0.17584068855968207
+next_step_actionability,elicitation,180,0.4374695081308343
+next_step_actionability,epistemic_caution,180,0.07217774853116803
+next_step_actionability,help_directness,180,-0.2374247236887786
+next_step_actionability,personalization,180,0.10444007793899096

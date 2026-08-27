@@ -1,0 +1,11 @@
+benchmark,dimension,contexts,models,partial_eta_squared_model_after_item,bootstrap_ci_low,bootstrap_ci_high
+mathtutorbench_pedagogy,information_sequencing,6,6,0.07671957671957672,0.06621004566210048,0.5416666666666666
+mathtutorbench_pedagogy,next_step_actionability,6,6,0.14663023679417117,0.06296296296296297,0.669472502805836
+mathtutorbench_pedagogy_hard,information_sequencing,6,6,0.06832298136645963,0.03683241252302026,0.5203372157632279
+mathtutorbench_pedagogy_hard,next_step_actionability,6,6,0.13209449726303663,0.07560137457044674,0.5655986195384327
+mathtutorbench_scaffolding,information_sequencing,6,6,0.13973063973063973,0.10185185185185186,0.6619194847020933
+mathtutorbench_scaffolding,next_step_actionability,6,6,0.20916334661354585,0.10538896132116472,0.7434094903339191
+mathtutorbench_scaffolding_hard,information_sequencing,6,6,0.26791277258566987,0.19277108433734944,0.6416529631021739
+mathtutorbench_scaffolding_hard,next_step_actionability,6,6,0.2521800281293953,0.13178340156242874,0.7058043887022917
+mathtutorbench_socratic,information_sequencing,6,6,0.0440251572327044,0.0440251572327044,0.5805243445692884
+mathtutorbench_socratic,next_step_actionability,6,6,0.13796909492273726,0.026881720430107527,0.6666666666666666

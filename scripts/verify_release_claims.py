@@ -145,6 +145,163 @@ def main() -> None:
         [-1.542, 2.171, -0.721],
     )
 
+    prompt_signature_dir = root / "artifacts/prompt_contingent_signatures_v1"
+    prompt_signature_decision = json.loads((prompt_signature_dir / "decision.json").read_text())
+    check(
+        "prompt-contingent signature verdict",
+        prompt_signature_decision["verdict"],
+        "prompt_contingent_policy_signatures_supported",
+    )
+    check(
+        "prompt-contingent signature decision gates",
+        all(prompt_signature_decision["checks"].values()),
+        True,
+    )
+    check(
+        "headroom-adjusted replicated elasticity dimensions",
+        prompt_signature_decision["replicated_semantic_elasticity_dimensions"],
+        ["elicitation", "help_directness"],
+    )
+
+    prompt_variance = pd.read_csv(prompt_signature_dir / "variance_decomposition.csv")
+    reliable_prompt_dimensions = ["cognitive_load", "elicitation", "help_directness"]
+    prompt_variance = prompt_variance[prompt_variance["dimension"].isin(reliable_prompt_dimensions)]
+    for task, expected in (
+        ("mathdial_standard", [3.987, 7.532]),
+        ("mathdial_hard", [4.837, 6.685]),
+    ):
+        ratios = prompt_variance[prompt_variance["task"] == task]["prompt_to_model_ss_ratio"]
+        check(
+            f"{task} reliable-dimension prompt/model SS ratio range",
+            [rounded(ratios.min()), rounded(ratios.max())],
+            expected,
+        )
+
+    prompt_scale = pd.read_csv(prompt_signature_dir / "prompt_vs_model_scale.csv")
+    prompt_scale = prompt_scale[prompt_scale["dimension"].isin(reliable_prompt_dimensions)]
+    for task, expected in (
+        ("mathdial_standard", [1.000, 1.148]),
+        ("mathdial_hard", [0.848, 1.011]),
+    ):
+        ratios = prompt_scale[prompt_scale["task"] == task]["absolute_prompt_over_baseline_range"]
+        check(
+            f"{task} reliable-dimension prompt/default-range ratio",
+            [rounded(ratios.min()), rounded(ratios.max())],
+            expected,
+        )
+
+    prompt_attribution = pd.read_csv(prompt_signature_dir / "cross_prompt_model_attribution.csv")
+    pooled = prompt_attribution[
+        (prompt_attribution["train_task"] == "ALL")
+        & (prompt_attribution["test_task"] == "ALL")
+    ]
+    check(
+        "pooled cross-prompt identity accuracy",
+        [rounded(value) for value in pooled["accuracy"]],
+        [0.301, 0.297],
+    )
+    check(
+        "pooled cross-prompt identity lower bounds exceed chance",
+        bool((pooled["bootstrap_ci_low"] > pooled["chance_accuracy"]).all()),
+        True,
+    )
+    cross_task = prompt_attribution[
+        (prompt_attribution["train_task"] != "ALL")
+        & (prompt_attribution["test_task"] != "ALL")
+        & (prompt_attribution["train_task"] != prompt_attribution["test_task"])
+    ]
+    check("cross-task cross-prompt transfer directions", len(cross_task), 4)
+    check(
+        "cross-task cross-prompt lower bounds exceed chance",
+        bool((cross_task["bootstrap_ci_low"] > cross_task["chance_accuracy"]).all()),
+        True,
+    )
+
+    character_dir = root / "artifacts/confirmatory_character_panel_v1/formal"
+    character_decision = json.loads((character_dir / "decision.json").read_text())
+    character_coverage = character_decision["coverage"]
+    check("character formal judge calls", character_coverage["successful"], 1160)
+    check("character formal missing or failed calls", character_coverage["missing_or_failed"], 0)
+    character_rows = {row["dimension"]: row for row in character_decision["classification"]}
+    check(
+        "character formal classifications",
+        {dimension: row["classification_status"] for dimension, row in character_rows.items()},
+        {
+            "instructional_agency": "formal_signature_not_supported",
+            "relational_communion": "formal_signature_not_supported",
+            "next_step_actionability": "formal_signature_not_supported",
+        },
+    )
+    check(
+        "agency pilot failure remains binding",
+        character_rows["instructional_agency"]["measurement_gates"]["pilot_measurement_pass"],
+        False,
+    )
+    character_icc = pd.read_csv(character_dir / "judge_icc.csv").set_index("dimension")
+    check(
+        "character formal ICC(3,k)",
+        [rounded(character_icc.loc[dimension, "icc_3_k"]) for dimension in (
+            "instructional_agency", "relational_communion", "next_step_actionability"
+        )],
+        [0.900, 0.945, 0.871],
+    )
+    character_profiles = pd.read_csv(character_dir / "judge_model_profile_agreement.csv")
+    minimum_profile = character_profiles.groupby("dimension")["model_profile_spearman"].min()
+    check("formal actionability minimum judge-profile rho", rounded(minimum_profile["next_step_actionability"]), 0.600)
+    character_stability = pd.read_csv(character_dir / "cross_task_stability.csv").set_index("dimension")
+    check(
+        "formal actionability cross-task stability",
+        [rounded(character_stability.loc["next_step_actionability", column]) for column in (
+            "icc_3_1", "median_pairwise_spearman"
+        )],
+        [-0.111, -0.771],
+    )
+    character_old = pd.read_csv(character_dir / "old_scale_convergence.csv")
+    communion_warmth = character_old[
+        (character_old["new_dimension"] == "relational_communion")
+        & (character_old["old_dimension"] == "affective_warmth")
+    ].iloc[0]
+    check("formal communion convergence with warmth", rounded(communion_warmth["spearman"]), 0.805)
+    character_prompt = pd.read_csv(character_dir / "prompt_effect_summary.csv").set_index(["task", "dimension"])
+    for task, expected in (
+        ("mathdial_standard", [-0.995, 1.047, 0.679, 0.856]),
+        ("mathdial_hard", [-1.039, 0.880, 0.942, 0.787]),
+    ):
+        check(
+            f"{task} confirmatory character prompt effects and scale ratios",
+            [
+                rounded(character_prompt.loc[(task, "instructional_agency"), "mean_prompt_delta"]),
+                rounded(character_prompt.loc[(task, "next_step_actionability"), "mean_prompt_delta"]),
+                rounded(character_prompt.loc[(task, "instructional_agency"), "absolute_prompt_over_default_model_range"]),
+                rounded(character_prompt.loc[(task, "next_step_actionability"), "absolute_prompt_over_default_model_range"]),
+            ],
+            expected,
+        )
+    family_decision = json.loads((character_dir / "judge_family_sensitivity.json").read_text())
+    family_rows = {row["dimension"]: row for row in family_decision["classification"]}
+    check("formal actionability judge-family robust", family_rows["next_step_actionability"]["judge_family_robust"], False)
+    quality_boundary = pd.read_csv(character_dir / "quality_summary.csv").set_index("feature_set")
+    check(
+        "all confirmatory scores mean quality AUC gain",
+        rounded(quality_boundary.loc["transparent_plus_all_confirmatory", "mean_auc_gain_vs_transparent"], 4),
+        0.0035,
+    )
+
+    character_framework = json.loads(
+        (root / "artifacts/educational_character_framework_v1/decision.json").read_text()
+    )
+    check(
+        "educational character supported axes",
+        character_framework["supported_axes"],
+        ["assistance_directness", "epistemic_commitment"],
+    )
+    check("educational character exploratory axes", character_framework["exploratory_axes"], ["instructional_agency"])
+    check(
+        "educational character rejected axes",
+        character_framework["rejected_or_unsupported_axes"],
+        ["relational_communion", "next_step_actionability", "learner_contingency"],
+    )
+
     semantic_objective = pd.read_csv(root / "artifacts/semantic_objective_validity/heldout_model_objective_prediction.csv")
     semantic_objective = semantic_objective[semantic_objective["outcome"] == "diagnosis_correct"].groupby("feature_set")["auc"].mean()
     check("semantic diagnosis AUC item-only", rounded(semantic_objective["item_only"]), 0.775)

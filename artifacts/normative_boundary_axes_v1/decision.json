@@ -1,0 +1,53 @@
+{
+  "status": "exploratory_existing_data",
+  "candidate_axis": "normative_boundary_permissiveness",
+  "within_task_stability": [
+    {
+      "axis": "adversarial_attack_success_propensity",
+      "models": 6,
+      "contexts": 5,
+      "icc_3_1": 0.8059533130544854,
+      "median_pairwise_spearman": 0.942857142857143,
+      "minimum_pairwise_spearman": 0.8857142857142858,
+      "icc_gate": true,
+      "rank_gate": true,
+      "stability_strength": "robust_both_metrics"
+    },
+    {
+      "axis": "educational_refusal_style",
+      "models": 6,
+      "contexts": 5,
+      "icc_3_1": 0.5904607890067727,
+      "median_pairwise_spearman": 0.8636082669163618,
+      "minimum_pairwise_spearman": 0.08571428571428573,
+      "icc_gate": true,
+      "rank_gate": true,
+      "stability_strength": "robust_both_metrics"
+    },
+    {
+      "axis": "sata_incorrect_inclusion_propensity",
+      "models": 6,
+      "contexts": 10,
+      "icc_3_1": 0.7609299956355015,
+      "median_pairwise_spearman": 0.7142857142857143,
+      "minimum_pairwise_spearman": 0.3714285714285715,
+      "icc_gate": true,
+      "rank_gate": true,
+      "stability_strength": "robust_both_metrics"
+    },
+    {
+      "axis": "sata_omission_propensity",
+      "models": 6,
+      "contexts": 10,
+      "icc_3_1": 0.4207420489212143,
+      "median_pairwise_spearman": 0.6957252427829382,
+      "minimum_pairwise_spearman": 0.3142857142857143,
+      "icc_gate": false,
+      "rank_gate": true,
+      "stability_strength": "mixed_one_metric"
+    }
+  ],
+  "cross_task_permissiveness_spearman": -0.48571428571428577,
+  "candidate_axis_supported": false,
+  "boundary": "Attack success and incorrect option inclusion are safety outcomes as well as behavioral tendencies. The adversarial scorer uses MiniMax-M3, including for MiniMax-M3 candidates. Results cannot establish a judge-independent personality trait or replace selective-safety evaluation."
+}

@@ -1,0 +1,7 @@
+left,right,responses,spearman
+instructional_agency,relational_communion,180,0.11682834188082242
+instructional_agency,information_structure,180,-0.048364500490610925
+instructional_agency,learner_contingency,180,-0.06463632900101664
+relational_communion,information_structure,180,-0.1902677366546125
+relational_communion,learner_contingency,180,0.07727149449558832
+information_structure,learner_contingency,180,0.2797456182716148

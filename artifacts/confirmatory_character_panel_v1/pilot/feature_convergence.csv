@@ -1,0 +1,9 @@
+new_dimension,feature,expected_sign,responses,spearman,direction_pass,magnitude_pass_0_30
+instructional_agency,imperative_rate,1,180,-0.08792061809014935,False,False
+instructional_agency,question_rate,-1,180,-0.25726064527461356,True,False
+relational_communion,praise_rate,1,180,0.3703011560433787,True,True
+relational_communion,encouragement_rate,1,180,-0.06410760902777606,False,False
+information_structure,bullet_rate,1,0,,False,False
+information_structure,numbered_step_rate,1,0,,False,False
+learner_contingency,history_reference_rate,1,0,,False,False
+learner_contingency,diagnosis_rate,1,0,,False,False

@@ -77,3 +77,35 @@ The prospective factorial protocol now pins routes, models, prompts, decoding,
 deterministic metrics, and claim gates before outcome inspection. Future
 population claims still require at least 14--20 versioned systems across open and
 closed families on the same frozen contexts.
+
+## Prompt-contingent signature refinement (2026-08-26)
+
+The paper should now distinguish three related contributions:
+
+1. prior educational work establishes that LLM and human tutors show different
+   action and complexity patterns;
+2. prior psychometric audits establish that prompt form can destabilize apparent
+   LLM personality; and
+3. this study estimates both phenomena jointly on exact paired educational
+   contexts: default model policy, common prompt deformation, and residual
+   model-specific elasticity with cross-task/cross-prompt transfer.
+
+The new result is not that prompts matter, nor that models differ. Its value is
+showing their relative scale and coexistence: on reliable semantic dimensions,
+the prompt main effect is several times the model main effect and roughly one
+default cross-model range, while identity still transfers and elasticity remains
+replicated for elicitation and help directness after headroom adjustment. This
+supports “prompt-contingent policy signatures” and weakens any fixed-personality
+framing.
+
+The theory-grounded follow-up makes that comparison harder to dismiss as a poor
+initial codebook. Agency/communion, scaffolding/actionability, epistemic, and
+learner-contingency constructs were mapped from mature educational frameworks,
+then the plausible new semantic axes were tested on an untouched split with
+four judge families. No additional axis survives the full chain: communion is
+largely the old warmth score, actionability is a large shared prompt response
+whose model ordering reverses across tasks, and agency remains exploratory under
+a binding pilot failure. The novelty is consequently a falsifiable dimensional
+audit showing *which* educational differences behave like defaults, prompt
+responses, redundant labels, or unsupported adaptation—not a broader catalogue
+of anthropomorphic traits.

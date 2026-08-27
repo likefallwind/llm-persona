@@ -21,6 +21,22 @@ artifacts/semantic_judge/full_v1/status_report.md
 artifacts/semantic_judge/full_v1/run_state/
 artifacts/semantic_judge/full_v1/finalize.log
 
+# Mutable theory-grounded judge state.  Only the frozen manifest, payload audit,
+# and derived aggregate tables are release-eligible.
+artifacts/theory_grounded_judge_v*/annotations.jsonl
+artifacts/theory_grounded_judge_v*/run.log
+artifacts/theory_grounded_judge_v*/run_state/
+artifacts/theory_grounded_judge_v1/
+artifacts/theory_grounded_judge_v2/
+artifacts/structure_facet_judge_v*/annotations.jsonl
+artifacts/structure_facet_judge_v*/run.log
+artifacts/structure_facet_judge_v*/run_state/
+artifacts/confirmatory_character_judge_v*/annotations.jsonl
+artifacts/confirmatory_character_judge_v*/run.log
+artifacts/confirmatory_character_judge_v*/run_state/
+artifacts/confirmatory_character_judge_v1/
+artifacts/confirmatory_character_judge_v2/
+
 # ACL build intermediates.  The reviewed PDF is intentionally tracked.
 paper/submission/build/
 

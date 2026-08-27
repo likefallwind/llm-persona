@@ -53,6 +53,32 @@ Overall: **PASS**
 | telling help-directness contrast | `1.36` | `1.36` | yes |
 | semantic prompt deltas standard | `[-1.709, 2.47, -0.759]` | `[-1.709, 2.47, -0.759]` | yes |
 | semantic prompt deltas hard | `[-1.542, 2.171, -0.721]` | `[-1.542, 2.171, -0.721]` | yes |
+| prompt-contingent signature verdict | `prompt_contingent_policy_signatures_supported` | `prompt_contingent_policy_signatures_supported` | yes |
+| prompt-contingent signature decision gates | `True` | `True` | yes |
+| headroom-adjusted replicated elasticity dimensions | `['elicitation', 'help_directness']` | `['elicitation', 'help_directness']` | yes |
+| mathdial_standard reliable-dimension prompt/model SS ratio range | `[3.987, 7.532]` | `[3.987, 7.532]` | yes |
+| mathdial_hard reliable-dimension prompt/model SS ratio range | `[4.837, 6.685]` | `[4.837, 6.685]` | yes |
+| mathdial_standard reliable-dimension prompt/default-range ratio | `[1.0, 1.148]` | `[1.0, 1.148]` | yes |
+| mathdial_hard reliable-dimension prompt/default-range ratio | `[0.848, 1.011]` | `[0.848, 1.011]` | yes |
+| pooled cross-prompt identity accuracy | `[0.301, 0.297]` | `[0.301, 0.297]` | yes |
+| pooled cross-prompt identity lower bounds exceed chance | `True` | `True` | yes |
+| cross-task cross-prompt transfer directions | `4` | `4` | yes |
+| cross-task cross-prompt lower bounds exceed chance | `True` | `True` | yes |
+| character formal judge calls | `1160` | `1160` | yes |
+| character formal missing or failed calls | `0` | `0` | yes |
+| character formal classifications | `{'instructional_agency': 'formal_signature_not_supported', 'relational_communion': 'formal_signature_not_supported', 'next_step_actionability': 'formal_signature_not_supported'}` | `{'instructional_agency': 'formal_signature_not_supported', 'relational_communion': 'formal_signature_not_supported', 'next_step_actionability': 'formal_signature_not_supported'}` | yes |
+| agency pilot failure remains binding | `False` | `False` | yes |
+| character formal ICC(3,k) | `[0.9, 0.945, 0.871]` | `[0.9, 0.945, 0.871]` | yes |
+| formal actionability minimum judge-profile rho | `0.6` | `0.6` | yes |
+| formal actionability cross-task stability | `[-0.111, -0.771]` | `[-0.111, -0.771]` | yes |
+| formal communion convergence with warmth | `0.805` | `0.805` | yes |
+| mathdial_standard confirmatory character prompt effects and scale ratios | `[-0.995, 1.047, 0.679, 0.856]` | `[-0.995, 1.047, 0.679, 0.856]` | yes |
+| mathdial_hard confirmatory character prompt effects and scale ratios | `[-1.039, 0.88, 0.942, 0.787]` | `[-1.039, 0.88, 0.942, 0.787]` | yes |
+| formal actionability judge-family robust | `False` | `False` | yes |
+| all confirmatory scores mean quality AUC gain | `0.0035` | `0.0035` | yes |
+| educational character supported axes | `['assistance_directness', 'epistemic_commitment']` | `['assistance_directness', 'epistemic_commitment']` | yes |
+| educational character exploratory axes | `['instructional_agency']` | `['instructional_agency']` | yes |
+| educational character rejected axes | `['relational_communion', 'next_step_actionability', 'learner_contingency']` | `['relational_communion', 'next_step_actionability', 'learner_contingency']` | yes |
 | semantic diagnosis AUC item-only | `0.775` | `0.775` | yes |
 | semantic diagnosis AUC all dimensions | `0.744` | `0.744` | yes |
 | prospective factorial response rows | `2560` | `2560` | yes |

@@ -347,6 +347,258 @@
       "passed": true
     },
     {
+      "claim": "prompt-contingent signature verdict",
+      "observed": "prompt_contingent_policy_signatures_supported",
+      "expected": "prompt_contingent_policy_signatures_supported",
+      "passed": true
+    },
+    {
+      "claim": "prompt-contingent signature decision gates",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "claim": "headroom-adjusted replicated elasticity dimensions",
+      "observed": [
+        "elicitation",
+        "help_directness"
+      ],
+      "expected": [
+        "elicitation",
+        "help_directness"
+      ],
+      "passed": true
+    },
+    {
+      "claim": "mathdial_standard reliable-dimension prompt/model SS ratio range",
+      "observed": [
+        3.987,
+        7.532
+      ],
+      "expected": [
+        3.987,
+        7.532
+      ],
+      "passed": true
+    },
+    {
+      "claim": "mathdial_hard reliable-dimension prompt/model SS ratio range",
+      "observed": [
+        4.837,
+        6.685
+      ],
+      "expected": [
+        4.837,
+        6.685
+      ],
+      "passed": true
+    },
+    {
+      "claim": "mathdial_standard reliable-dimension prompt/default-range ratio",
+      "observed": [
+        1.0,
+        1.148
+      ],
+      "expected": [
+        1.0,
+        1.148
+      ],
+      "passed": true
+    },
+    {
+      "claim": "mathdial_hard reliable-dimension prompt/default-range ratio",
+      "observed": [
+        0.848,
+        1.011
+      ],
+      "expected": [
+        0.848,
+        1.011
+      ],
+      "passed": true
+    },
+    {
+      "claim": "pooled cross-prompt identity accuracy",
+      "observed": [
+        0.301,
+        0.297
+      ],
+      "expected": [
+        0.301,
+        0.297
+      ],
+      "passed": true
+    },
+    {
+      "claim": "pooled cross-prompt identity lower bounds exceed chance",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "claim": "cross-task cross-prompt transfer directions",
+      "observed": 4,
+      "expected": 4,
+      "passed": true
+    },
+    {
+      "claim": "cross-task cross-prompt lower bounds exceed chance",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "claim": "character formal judge calls",
+      "observed": 1160,
+      "expected": 1160,
+      "passed": true
+    },
+    {
+      "claim": "character formal missing or failed calls",
+      "observed": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "claim": "character formal classifications",
+      "observed": {
+        "instructional_agency": "formal_signature_not_supported",
+        "relational_communion": "formal_signature_not_supported",
+        "next_step_actionability": "formal_signature_not_supported"
+      },
+      "expected": {
+        "instructional_agency": "formal_signature_not_supported",
+        "relational_communion": "formal_signature_not_supported",
+        "next_step_actionability": "formal_signature_not_supported"
+      },
+      "passed": true
+    },
+    {
+      "claim": "agency pilot failure remains binding",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "claim": "character formal ICC(3,k)",
+      "observed": [
+        0.9,
+        0.945,
+        0.871
+      ],
+      "expected": [
+        0.9,
+        0.945,
+        0.871
+      ],
+      "passed": true
+    },
+    {
+      "claim": "formal actionability minimum judge-profile rho",
+      "observed": 0.6,
+      "expected": 0.6,
+      "passed": true
+    },
+    {
+      "claim": "formal actionability cross-task stability",
+      "observed": [
+        -0.111,
+        -0.771
+      ],
+      "expected": [
+        -0.111,
+        -0.771
+      ],
+      "passed": true
+    },
+    {
+      "claim": "formal communion convergence with warmth",
+      "observed": 0.805,
+      "expected": 0.805,
+      "passed": true
+    },
+    {
+      "claim": "mathdial_standard confirmatory character prompt effects and scale ratios",
+      "observed": [
+        -0.995,
+        1.047,
+        0.679,
+        0.856
+      ],
+      "expected": [
+        -0.995,
+        1.047,
+        0.679,
+        0.856
+      ],
+      "passed": true
+    },
+    {
+      "claim": "mathdial_hard confirmatory character prompt effects and scale ratios",
+      "observed": [
+        -1.039,
+        0.88,
+        0.942,
+        0.787
+      ],
+      "expected": [
+        -1.039,
+        0.88,
+        0.942,
+        0.787
+      ],
+      "passed": true
+    },
+    {
+      "claim": "formal actionability judge-family robust",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "claim": "all confirmatory scores mean quality AUC gain",
+      "observed": 0.0035,
+      "expected": 0.0035,
+      "passed": true
+    },
+    {
+      "claim": "educational character supported axes",
+      "observed": [
+        "assistance_directness",
+        "epistemic_commitment"
+      ],
+      "expected": [
+        "assistance_directness",
+        "epistemic_commitment"
+      ],
+      "passed": true
+    },
+    {
+      "claim": "educational character exploratory axes",
+      "observed": [
+        "instructional_agency"
+      ],
+      "expected": [
+        "instructional_agency"
+      ],
+      "passed": true
+    },
+    {
+      "claim": "educational character rejected axes",
+      "observed": [
+        "relational_communion",
+        "next_step_actionability",
+        "learner_contingency"
+      ],
+      "expected": [
+        "relational_communion",
+        "next_step_actionability",
+        "learner_contingency"
+      ],
+      "passed": true
+    },
+    {
       "claim": "semantic diagnosis AUC item-only",
       "observed": 0.775,
       "expected": 0.775,

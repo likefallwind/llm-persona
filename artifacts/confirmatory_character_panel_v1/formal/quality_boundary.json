@@ -1,0 +1,5 @@
+{
+  "status": "descriptive_external_quality_association",
+  "rows": 36,
+  "boundary": "Existing benchmark quality is a judged response outcome, not learner gain. Association cannot upgrade a dimension that fails measurement, cross-task, nonredundancy, or judge-family gates."
+}

@@ -1,0 +1,93 @@
+{
+  "rubric_version": "educational_character_confirmatory_v1",
+  "analysis_split": "pilot",
+  "classification": [
+    {
+      "dimension": "instructional_agency",
+      "measurement_gates": {
+        "icc_3_k_at_least_0_60": true,
+        "score_sd_at_least_0_50": true,
+        "floor_below_0_80": true,
+        "ceiling_below_0_80": true,
+        "judge_model_profile_rho_at_least_0_70": false
+      },
+      "signature_gates": {
+        "cross_task_icc_or_rank_at_least_0_50": false,
+        "all_observed_benchmark_variance_ci_above_zero": true
+      },
+      "criterion_gates": {
+        "at_least_one_registered_behavior_anchor": false
+      },
+      "reliable_measurement": false,
+      "pilot_proceed_unchanged": false,
+      "cross_task_signature": false,
+      "validated_character_axis": false,
+      "classification_status": "pilot_measurement_fail"
+    },
+    {
+      "dimension": "relational_communion",
+      "measurement_gates": {
+        "icc_3_k_at_least_0_60": true,
+        "score_sd_at_least_0_50": true,
+        "floor_below_0_80": true,
+        "ceiling_below_0_80": true,
+        "judge_model_profile_rho_at_least_0_70": true
+      },
+      "signature_gates": {
+        "cross_task_icc_or_rank_at_least_0_50": false,
+        "all_observed_benchmark_variance_ci_above_zero": false
+      },
+      "criterion_gates": {
+        "at_least_one_registered_behavior_anchor": true
+      },
+      "reliable_measurement": true,
+      "pilot_proceed_unchanged": true,
+      "cross_task_signature": false,
+      "validated_character_axis": false,
+      "classification_status": "pilot_measurement_pass"
+    },
+    {
+      "dimension": "next_step_actionability",
+      "measurement_gates": {
+        "icc_3_k_at_least_0_60": true,
+        "score_sd_at_least_0_50": true,
+        "floor_below_0_80": true,
+        "ceiling_below_0_80": true,
+        "judge_model_profile_rho_at_least_0_70": true
+      },
+      "signature_gates": {
+        "cross_task_icc_or_rank_at_least_0_50": false,
+        "all_observed_benchmark_variance_ci_above_zero": true
+      },
+      "criterion_gates": {
+        "at_least_one_registered_behavior_anchor": false
+      },
+      "reliable_measurement": true,
+      "pilot_proceed_unchanged": true,
+      "cross_task_signature": false,
+      "validated_character_axis": false,
+      "classification_status": "pilot_measurement_pass"
+    }
+  ],
+  "boundary": "The panel uses 4 judges across 4 model families. MiniMax contributes 1 judge(s); leave-one-family sensitivity is required before any formal cross-family validity claim.",
+  "coverage": {
+    "split": "pilot",
+    "judges": [
+      "glm-5.2",
+      "deepseek-v4-pro",
+      "doubao-seed-2.0-lite",
+      "minimax-m2.7"
+    ],
+    "benchmarks": [
+      "mathtutorbench_pedagogy",
+      "mathtutorbench_pedagogy_hard",
+      "mathtutorbench_scaffolding",
+      "mathtutorbench_scaffolding_hard",
+      "mathtutorbench_socratic"
+    ],
+    "expected": 120,
+    "successful": 120,
+    "missing_or_failed": 0,
+    "invalid_jsonl_rows": 0
+  }
+}

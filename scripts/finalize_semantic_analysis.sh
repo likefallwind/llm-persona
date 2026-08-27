@@ -47,6 +47,50 @@ cd "$ROOT"
   --objective-dir artifacts/semantic_objective_validity \
   --output-dir artifacts/submission_decision
 
+"$PY" scripts/analyze_prompt_contingent_signatures.py \
+  --bootstrap-reps 5000 \
+  --attribution-bootstrap-reps 2000
+
+# The theory-grounded confirmation uses only the frozen synthetic formal split.
+# Raw judge rows remain ignored; the analyzer exports identifiers, hashes,
+# ratings, and aggregates only. LongTutor histories are not transmitted.
+"$PY" scripts/analyze_theory_grounded_panel.py \
+  --panel-dir artifacts/confirmatory_character_judge_v3 \
+  --output-dir artifacts/confirmatory_character_panel_v1/formal \
+  --split formal \
+  --judges glm-5.2,deepseek-v4-pro,doubao-seed-2.0-lite,minimax-m2.7 \
+  --benchmarks mathtutorbench_scaffolding,mathtutorbench_pedagogy,mathtutorbench_scaffolding_hard,mathtutorbench_pedagogy_hard,mathtutorbench_socratic \
+  --pilot-decision artifacts/confirmatory_character_panel_v1/pilot/decision.json \
+  --bootstrap 2000 \
+  --seed 20260826 \
+  --require-complete
+
+"$PY" scripts/analyze_judge_family_sensitivity.py \
+  --ratings artifacts/confirmatory_character_panel_v1/formal/unblinded_ratings.csv \
+  --output-dir artifacts/confirmatory_character_panel_v1/formal
+
+"$PY" scripts/analyze_character_quality_boundary.py \
+  --consensus artifacts/confirmatory_character_panel_v1/formal/response_consensus.csv \
+  --features artifacts/pilot/behavior_features.csv \
+  --output-dir artifacts/confirmatory_character_panel_v1/formal
+
+"$PY" scripts/analyze_epistemic_character_axes.py
+"$PY" scripts/analyze_normative_boundary_axes.py
+
+"$PY" scripts/synthesize_educational_character_framework.py \
+  --formal-decision artifacts/confirmatory_character_panel_v1/formal/decision.json \
+  --family-sensitivity artifacts/confirmatory_character_panel_v1/formal/judge_family_sensitivity.json \
+  --submission-decision artifacts/submission_decision/submission_decision.json \
+  --epistemic-decision artifacts/epistemic_character_axes_v1/decision.json \
+  --normative-decision artifacts/normative_boundary_axes_v1/decision.json \
+  --prompt-decision artifacts/prompt_contingent_signatures_v1/decision.json \
+  --formal-profiles artifacts/confirmatory_character_panel_v1/formal/model_profiles.csv \
+  --semantic-profiles artifacts/prompt_contingent_signatures_v1/default_semantic_profiles.csv \
+  --epistemic-profiles artifacts/epistemic_character_axes_v1/model_profiles.csv \
+  --formal-prompt artifacts/confirmatory_character_panel_v1/formal/prompt_effects.csv \
+  --semantic-prompt artifacts/prompt_contingent_signatures_v1/model_semantic_elasticity.csv \
+  --output-dir artifacts/educational_character_framework_v1
+
 "$PY" scripts/factorial_prompt_status.py --require-complete
 
 "$PY" scripts/analyze_factorial_prompt_panel.py \
@@ -137,6 +181,16 @@ cd "$ROOT"
     artifacts/semantic_scale_diagnostics \
     artifacts/semantic_objective_validity \
     artifacts/submission_decision \
+    artifacts/prompt_contingent_signatures_v1 \
+    artifacts/theory_grounded_judge_v3 \
+    artifacts/theory_grounded_panel_v1 \
+    artifacts/structure_facet_judge_v1 \
+    artifacts/structure_facet_panel_v1 \
+    artifacts/confirmatory_character_judge_v3 \
+    artifacts/confirmatory_character_panel_v1 \
+    artifacts/epistemic_character_axes_v1 \
+    artifacts/normative_boundary_axes_v1 \
+    artifacts/educational_character_framework_v1 \
     artifacts/factorial_prompt_v1 \
     artifacts/factorial_analysis_v1 \
     artifacts/factorial_order_replication_v1 \

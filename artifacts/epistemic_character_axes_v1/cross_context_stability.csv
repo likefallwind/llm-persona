@@ -1,0 +1,4 @@
+axis,models,contexts,icc_3_1,median_pairwise_spearman,minimum_pairwise_spearman,icc_gate,rank_gate,stability_strength
+revision_propensity,6,4,0.5371042054219625,0.47233582909125377,0.3188740696088466,True,False,mixed_one_metric
+expressed_confidence,6,4,0.8520396318763286,0.8857142857142859,0.6571428571428573,True,True,robust_both_metrics
+unanswerable_abstention_propensity,6,5,0.3460038986354777,0.7047689012592435,0.08696565534786727,False,True,mixed_one_metric
