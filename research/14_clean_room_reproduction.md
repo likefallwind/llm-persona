@@ -1,66 +1,42 @@
 # Fresh-checkout reproduction audit
 
-Audit date: 2026-08-19 (Asia/Shanghai)  
-Frozen result commit: `f495256`  
-Source branch: `agent/semantic-result-freeze-v2`
+Snapshot: 2026-08-28. Status: **refresh required after the final commit**.
 
-## Scope and terminology
+## What has been verified in the working checkout
 
-This audit used a newly cloned checkout in
-`/tmp/llm-persona-cleanroom.biVsRP/repo`.  It reused the machine's already
-installed Python interpreter and packages.  It is therefore a **fresh-checkout
-reproduction**, not evidence of a fresh or dependency-isolated environment.
-No private upstream corpus and no live semantic annotation stream were copied
-into the checkout.
+The current release pipeline rebuilds every completed analysis available from
+local governed inputs, verifies registered manuscript claims, runs the full test
+suite, checks Git-eligible artifact privacy, rebuilds paper figures, regenerates
+the SHA-256 manifest, and audits the anonymous ACL PDF. The general-personality
+archive audit and affiliation pilot are now included in both the private-input
+finalizer and public reproduction path.
 
-## Checks and observed results
+The release no longer tracks the historical raw response/judge JSONL files or
+the path-bearing semantic log that caused the repository-wide privacy gate to
+fail. Those files remain local under existing ignore rules. Public affiliation
+artifacts contain conditions, hashes, derived ratings, profiles, and decisions,
+not raw provider or judge response text.
 
-The following public-package gates were executed from the fresh checkout:
+## Required final clean-room procedure
 
-| Gate | Result |
-|---|---:|
-| Unit tests | 10/10 passed |
-| Registered claims | 51/51 matched frozen artifacts |
-| Git-eligible privacy audit | 128/128 paths passed |
-| Paper figure rebuild | passed |
-| Reproducibility-manifest path/hash verification | 182/182 matched |
-| Worktree after checks | clean |
+After committing the current manuscript and release artifacts:
 
-The test suite includes the executable semantic decision hierarchy, semantic
-completion/stream recovery, and manifest eligibility logic.  The claim verifier
-checks the exact values used in the manuscript; it does not regenerate the
-private upstream model responses.  The manifest check confirms each declared
-Git-eligible path existed and matched its stored SHA-256.
+1. clone that exact local commit into a new temporary directory;
+2. install or reuse the pinned dependencies, explicitly recording which;
+3. run the public reproduction command, tests, registered-claim verifier,
+   privacy audit, manifest verifier, and ACL submission audit;
+4. confirm that every generated public artifact leaves the checkout clean; and
+5. record the commit, command outputs, dependency provenance, and any private
+   input that was intentionally unavailable.
 
-## Boundary of the result
+Until that refresh is recorded, prior clean-room and CI runs remain useful
+historical evidence but do not certify the newly added affiliation artifacts or
+the 2026-08-28 manuscript.
 
-This audit establishes that a clean checkout can verify the frozen public
-analysis package and rebuild its paper figures with the dependencies already on
-this machine.  It does not establish:
+## Boundary
 
-- provider-side response regeneration, because seeds, prompt versions, and most
-  generation settings were not retained;
-- installation from a lockfile into an empty environment;
-- reproduction of private-corpus analyses without the frozen derived artifacts;
-  or
-- portability to another operating system or TeX distribution.
-
-The ACL submission-package branch adds a separately pinned style-file build. A
-new dependency runner can verify the frozen public package, but full cross-machine
-recomputation remains impossible without the private upstream inputs described
-above.
-
-## Independent dependency-runner verification
-
-Draft PR #3 triggered GitHub Actions run
-[`32257044437`](https://github.com/likefallwind/llm-persona/actions/runs/32257044437)
-at submission-package commit `d7b7bec`. GitHub provisioned a new Ubuntu runner,
-checked out the commit, configured Python 3.13, and installed the exact versions
-in `requirements.txt`. The requirements are version-pinned but do not include
-package hashes.
-
-The independent runner passed Python/shell syntax, 10/10 tests, 51/51 registered
-claims, public artifact privacy structure, deterministic figure rebuilding, and
-a final clean-worktree check. It had no private upstream corpus or ignored live
-annotation JSONL, so this is dependency-isolated verification of the frozen
-public package, not a rerun of private-input analysis or provider generation.
+No clean-room run can recreate provider-side generations exactly: most archived
+generation settings and all seed/prompt-version fields are absent, and deployed
+aliases may drift. Reproduction therefore means recomputing public analyses from
+frozen derived inputs and verifying their hashes and decisions; it does not mean
+regenerating identical provider text or private learner histories.

@@ -125,5 +125,5 @@ Overall: **PASS**
 | learner-outcome conservative power plan passes | `True` | `True` | yes |
 | learner-outcome planned sample and cells | `[3300, 12, 275]` | `[3300, 12, 275]` | yes |
 | anonymous ACL submission audit | `True` | `True` | yes |
-| ACL PDF page count | `9` | `9` | yes |
+| ACL PDF page count | `10` | `10` | yes |
 | ACL PDF embedded fonts and identity boundary | `[True, True, True]` | `[True, True, True]` | yes |

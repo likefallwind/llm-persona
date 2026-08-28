@@ -4,6 +4,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PY="$ROOT/.venv/bin/python"
 EDUBENCH_ROOT="${EDUBENCH_ROOT:-$ROOT/../edubenchmark}"
+export EDUBENCH_ROOT
 PANEL="$ROOT/artifacts/semantic_judge/full_v1"
 OUT="$ROOT/artifacts/semantic_panel"
 EXCLUSIONS="$ROOT/research/semantic_panel_exclusions_v1.json"
@@ -222,6 +223,10 @@ cd "$ROOT"
     artifacts/learner_outcome_trial_planning_v1 \
     artifacts/submission_audit \
   --output artifacts/reproducibility_manifest.json
+
+"$PY" scripts/verify_reproducibility_manifest.py \
+  --root "$ROOT" \
+  --manifest artifacts/reproducibility_manifest.json
 
 "$PY" -m py_compile scripts/*.py
 "$PY" -m pytest -q tests

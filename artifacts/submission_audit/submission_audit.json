@@ -1,9 +1,9 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "pdf": "paper/submission/submission.pdf",
   "tex": "paper/submission/main.tex",
-  "pages": 9,
-  "font_count": 14,
+  "pages": 10,
+  "font_count": 12,
   "identity_hits": {
     "local_home_path": false,
     "workspace_user": false,
@@ -13,9 +13,10 @@
   "checks": {
     "review_mode": true,
     "anonymous_author_field": true,
-    "page_count_within_review_package": true,
+    "page_count_supports_eight_content_pages": true,
     "main_content_ends_on_page_eight": true,
-    "page_nine_is_references_only": true,
+    "limitations_after_conclusion_before_references": true,
+    "post_page_eight_has_no_main_content": true,
     "blank_pdf_title_metadata": true,
     "blank_pdf_author_metadata": true,
     "fonts_present": true,

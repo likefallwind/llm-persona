@@ -34,5 +34,8 @@ def test_current_acl_pdf_passes_structural_audit():
         ROOT / "paper/submission/main.tex",
         ROOT / "paper/submission/submission.pdf",
     )
-    assert report["pages"] == 9
+    assert report["pages"] >= 9
+    assert report["checks"]["main_content_ends_on_page_eight"]
+    assert report["checks"]["limitations_after_conclusion_before_references"]
+    assert report["checks"]["post_page_eight_has_no_main_content"]
     assert report["passed"], report

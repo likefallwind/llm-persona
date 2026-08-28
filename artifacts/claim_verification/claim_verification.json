@@ -956,8 +956,8 @@
     },
     {
       "claim": "ACL PDF page count",
-      "observed": 9,
-      "expected": 9,
+      "observed": 10,
+      "expected": 10,
       "passed": true
     },
     {

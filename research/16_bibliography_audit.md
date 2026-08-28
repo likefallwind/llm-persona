@@ -1,8 +1,10 @@
 # Bibliography link and metadata audit
 
-Audit date: 2026-08-19. The 19 entries in `paper/references.bib` were checked
-against primary publication pages: 13 ACL Anthology records, five arXiv abstract
-records, and one official EDM 2026 proceedings record.
+Audit date: 2026-08-28. The current `paper/references.bib` contains 35 entries.
+All entries compile under the pinned ACL BibTeX style. Earlier audit rounds
+checked the ACL Anthology, arXiv, and official EDM records used by the original
+manuscript; this refresh adds the primary Journal of Research in Personality
+metadata for the IPIP bridge (DOI `10.1016/j.jrp.2005.08.007`).
 
 ## Corrections made
 
@@ -13,7 +15,7 @@ records, and one official EDM 2026 proceedings record.
    accepted-paper list. Its canonical paper page ends in `index.html`; the URL
    was updated because the directory form produced a connector error.
 
-All other bibliography URLs resolved to a page whose title matched the cited
-work. This audit confirms link and top-level bibliographic consistency, not an
-independent replication of every cited result. Venue/date metadata must be
-rechecked if a cited preprint is revised or published before submission.
+The final LaTeX build has no unresolved citation or reference. This audit
+confirms syntax and top-level bibliographic consistency, not an independent
+replication of cited results. Several 2026 sources remain preprints; their venue
+and title metadata must be refreshed immediately before submission.

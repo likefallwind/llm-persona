@@ -478,7 +478,7 @@ def main() -> None:
         (root / "artifacts/submission_audit/submission_audit.json").read_text()
     )
     check("anonymous ACL submission audit", submission_audit["passed"], True)
-    check("ACL PDF page count", submission_audit["pages"], 9)
+    check("ACL PDF page count", submission_audit["pages"], 10)
     check(
         "ACL PDF embedded fonts and identity boundary",
         [

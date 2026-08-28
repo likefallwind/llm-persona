@@ -1,95 +1,86 @@
 # Top-tier completion audit
 
-Snapshot: 2026-08-20. This audit distinguishes a defensible main-conference NLP
-submission from the substantially stronger evidence needed for an education or
-general-science journal claim.
+Snapshot: 2026-08-28. This audit separates scientific contribution,
+submission-package readiness, and the stronger evidence required for educational
+efficacy or general human-like personality claims.
 
-## Main-conference NLP package
+## Scientific contribution
 
-The current package has a coherent measurement-and-falsification contribution:
-a large exact-item archive analysis; generic-task and verbosity controls;
-human-labelled teacher-action convergence; a blinded three-judge semantic
-panel; a complete prospective factorial; an independently ordered replication;
-and a post-result, downgrade-only validation of its three surface detectors.
-Question-first and correct-answer-reveal detectors validate, while the
-encouragement lexicon does not validate semantic warmth and is explicitly
-downgraded. Failed learner-request gates, diagnosis nulls, telling-action harm,
-and component interactions remain central results rather than exclusions.
+The paper now has one coherent measurement-and-falsification thesis:
 
-Two additional prospective action-control trials materially strengthen the
-mechanism boundary. A 1,920-call balanced trial prospectively replicates the
-uniform prompt's probing benefit and telling harm while rejecting a one-pass
-adaptive router. A separately published 2,400-call selection--execution trial
-then rejects the proposed two-stage remedy: both selectors are near chance and
-significantly worse than a same-snapshot single-pass baseline, even though ASK
-and EXPLAIN executors realize their actions at 0.998--1.000. This is useful
-negative evidence because the failed remedies were frozen before collection and
-are not silently removed. It supports a controller-requirements result, not a
-claim that this paper invents or solves adaptive routing.
+> Deployed model behavior is better represented as a response surface---a
+> model-conditioned default, prompt-induced displacement, and model-specific
+> elasticity---than as a fixed human-like personality.
 
-The locally accessible package has completed its final release checks, anonymous
-PDF audit, and stacked Draft PR CI pass. It is ready for a serious
-main-conference NLP review under the bounded claim above. Acceptance is never
-“without dispute”: reviewers can still challenge construct choice, model
-sampling, API snapshot transport, LLM-judge dependence, and the absence of human
-learning outcomes.
+The educational evidence combines a large exact-item archive, generic-task and
+verbosity controls, human teacher-action convergence, human-gold learner-state
+criteria, a blinded three-judge semantic panel, a prospective factorial,
+independently ordered replication, downgrade-only detector validation, and two
+prospective routing failures. Only help directness reaches the full educational
+disposition tier. The shared pedagogy prompt moves all models strongly but can
+suppress appropriate telling, and near-perfect action realization coexists with
+near-chance contextual selection.
 
-## Final release evidence
+The new general-personality extension is selective rather than expansive. An
+archive-first audit covers 22 constructs or validity targets, validates none,
+and authorizes only affiliation for a prospective pilot. In that five-model
+pilot, open affiliation is reliable, transports across educational and
+non-educational conflicts, and survives one irrelevant perturbation. High/low
+prompts induce a large but heterogeneous shift. Standard self-report is
+negatively related to open behavior, forced choice is at ceiling, and open
+affiliation overlaps surface warmth. This extends the response-surface account
+beyond education for one behavioral cluster without establishing Big Five,
+HEXACO, Dark Triad, Schwartz, or model-population personality claims.
 
-The integration snapshot was rebuilt from the governed raw-response inputs with
-`bash scripts/finalize_semantic_analysis.sh` on 2026-08-20. The command exited
-zero after confirming 1,074/1,074 semantic annotations, 2,560/2,560 parent
-factorial responses, 640/640 independently ordered responses, 144/144 detector
-annotations, 1,280/1,280 paraphrase responses, 1,920/1,920 action-routing
-responses, and 2,400/2,400 two-stage responses, all with zero eligible errors or
-missing cells. It then verified 72 registered release claims, passed all 55
-tests, rebuilt the paper figure, and wrote a 349-file reproducibility manifest.
+This is substantial enough for a serious main-conference NLP submission as
+model analysis, evaluation, or human-centered NLP. The main reviewer risk is no
+longer lack of experiments; it is perceived sprawl. The eight-page manuscript
+therefore centers four evidential moves---defaults/fingerprints, prompt
+deformation, consequential educational criteria, and the cross-domain
+affiliation falsification---while detailed routing and diagnostics remain in the
+appendix and release.
 
-The code/artifact integration snapshot `cb933b0` is published on Draft PR #14,
-which is open, mergeable, and based on the two-stage result PR. GitHub Actions
-run `32355321110` completed every clean-checkout step successfully: syntax, 55
-tests, 72 claims, 225 Git-eligible artifact privacy checks, anonymous-PDF audit,
-figure rebuild, and checkout non-mutation. The PDF audit reports nine pages,
-references only on page nine, 14 embedded fonts, blank author/title metadata,
-review mode, and no identity or local-path hits. Preceding stacked result PR runs
-are also green: `32353317168`, `32353350276`, `32353919584`, `32353996329`, and
-`32354181133`.
+## Submission-package status
 
-## Broad-journal boundary
+The anonymous ACL manuscript has been rebuilt from the latest results. Main
+content ends with the conclusion on page 8; limitations and ethics follow after
+the conclusion on page 8, and pages 9--10 contain only references. The PDF audit
+checks review mode, anonymity, section ordering, absence of main-content headings
+after page 8, blank metadata, embedded non-Type-3 fonts, and bounded claim
+language. This implements the current ARR allowance of eight content pages plus
+unlimited post-conclusion limitations/ethics and references.
 
-The work is not ready for a claim that agent personality or policy improves
-learning. No prospective learner experiment provides objective pre/post
-outcomes, and existing LongTutor analyses test diagnosis rather than subsequent
-learning. A read-only, outcome-blind schema audit found that every selected
-LongTutor sequence ends at index 199 with zero retained future interactions;
-upstream construction chooses the 200-event window ending at the learner's last
-incorrect response. Any discarded suffix is therefore selected to contain no
-later errors and cannot serve as an unbiased future outcome.
+The historical release blocker has been repaired: eleven raw response/judge
+files and one path-bearing log were removed from the Git index while retained
+locally under existing ignore rules. The repository-wide structural privacy
+audit now passes. The current release gate must still be rerun after every
+manuscript or artifact change, and a final rendered-PDF visual inspection remains
+an author responsibility.
 
-A journal-level extension needs a prospectively specified learner study or a
-separately validated simulator, objective pre/post tasks, assignment and
-attrition handling, power analysis at the learner/classroom unit, and an
-independently sampled model panel. A future server-hosted Qwen panel can improve
-model transport, but it cannot substitute for learner-outcome evidence.
+## What the paper does not establish
 
-The remaining empirical requirement is now specified rather than left vague.
-`research/24_learner_outcome_trial_protocol.md` and
-`data/learner_outcome_trial_spec_v1.json` define a planning-only, 3,300-learner
-trial of an external adaptive controller versus static and default policies,
-with a seven-day unassisted transfer test, automatic scoring, intention-to-treat
-analysis, and explicit attrition/safety gates. This is not a completed or
-registered study and cannot change the present claim boundary.
+The study does not show learning gains, empathy, consciousness, immutable model
+traits, or model-family/population effects. Thousands of responses reduce item
+uncertainty but do not create independent model replicates. The affiliation
+pilot contains five configurations, twelve synthetic conflicts, one irrelevant
+perturbation, overlapping generator/judge families, and a primary score strongly
+coupled to warmth. Exact profile p-values are correspondingly weak despite the
+frozen gate passes.
 
-## Checkpoints that require publication or study coordination
+A stronger education or general-science journal claim requires a prospective
+learner trial with objective transfer outcomes and an independently sampled
+larger model panel. A stronger general-personality claim additionally requires
+multiple irrelevant perturbations, languages and decoding conditions,
+incentive-bearing behavioral games, discriminant measures not reducible to
+warmth, and preregistered cross-method convergence.
 
-The remaining items cannot be truthfully completed inside this repository:
+## External coordination before upload
 
-1. At upload time, record the chosen venue's live call, deadline, format, and
-   responsible-NLP form version; no target venue has been selected here.
-2. Record the final public or anonymous artifact URL and immutable submission
-   commit after deciding the venue's anonymity policy, and repeat the upstream
-   license review against that exact release payload.
-3. Do not promote the work to an educational-efficacy or broad-journal claim
-   until the planned learner study has ethics approval, registration, objective
-   outcomes, and completed data. A future server-hosted Qwen panel is a transport
-   extension, not a substitute for that study.
+1. Recheck the live ARR call, deadline, template, responsible-NLP form, and
+   author reviewing obligations.
+2. Decide the anonymous artifact hosting and license scope, then record the
+   immutable submission commit and artifact URL.
+3. Complete the required AI-assistance disclosure and final author-by-author
+   citation, originality, anonymity, and conflict checks.
+4. Do not promote the work to educational efficacy or broad human personality
+   until the separately planned studies are completed.

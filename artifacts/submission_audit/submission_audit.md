@@ -2,16 +2,17 @@
 
 Overall: **PASS**
 
-- PDF pages: 9
-- Embedded font rows inspected: 14
+- PDF pages: 10
+- Embedded font rows inspected: 12
 
 | Check | Pass |
 |---|:---:|
 | review_mode | yes |
 | anonymous_author_field | yes |
-| page_count_within_review_package | yes |
+| page_count_supports_eight_content_pages | yes |
 | main_content_ends_on_page_eight | yes |
-| page_nine_is_references_only | yes |
+| limitations_after_conclusion_before_references | yes |
+| post_page_eight_has_no_main_content | yes |
 | blank_pdf_title_metadata | yes |
 | blank_pdf_author_metadata | yes |
 | fonts_present | yes |

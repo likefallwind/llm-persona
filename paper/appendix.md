@@ -169,7 +169,58 @@ bound, and kappa gates. The encouragement lexicon failed (balanced accuracy
 marker, not semantic warmth or support. Synthetic behavioral compliance is
 neither learner modeling nor learning gain.
 
-## H. Reproduction and release
+## H. General-personality archive audit and affiliation pilot
+
+The archive-first audit prevents a large new personality battery from being
+authorized merely because an educational axis has an intuitive human label. A
+theory-first map covers the Big Five, HEXACO honesty--humility, Dark Triad,
+Schwartz values, cooperation, risk, impression management, measurement routes,
+and stability perturbations. Of 22 construct or validity targets, nine have a
+partial behavioral candidate and thirteen are not identifiable in the archived
+tasks. None validates. In particular, organizational style is recurrent but
+correlates negatively with IFEval accuracy (rho=-0.886, exact p=0.035), so it is
+not relabelled conscientiousness. The only selected ambiguity is affiliation:
+non-tutoring communal expression transports to default tutoring (rho=0.829) and
+relational communion (rho=0.771).
+
+The resulting prospective pilot fixes five generator configurations, twelve
+matched interpersonal conflicts, education and non-education domains, and four
+conditions: default, an irrelevant interface context, high affiliation, and low
+affiliation. It separately elicits a ten-item public-domain IPIP agreeableness
+self-report, twelve balanced forced choices, and twelve open responses. Three
+blinded judges rate the open responses on affiliative behavior, benevolent cost
+acceptance, assertive dominance, surface warmth, and task effectiveness. All 280
+generator calls and 144 judge batches completed without final errors.
+
+All five preregistered default-stability gates pass: ICC(3,k)=0.931;
+education/non-education profile rho=0.900; default/irrelevant profile rho=0.718;
+irrelevant mean shift=-0.050; and between-model SD=0.445. The exact profile
+p-values are 0.091 and 0.174 because the fixed panel has only five models. High
+minus low prompting moves the primary score by 1.689 points and is positive for
+all five models, but per-model shifts range from 0.444 to 2.917. High prompting
+compresses model SD to 0.201, whereas low prompting expands it to 0.879.
+
+The general-trait convergence gates fail. Default IPIP scores span only
+4.2--4.9 and correlate -0.200 with open behavior. Every model chooses all twelve
+affiliative forced-choice options at default, leaving no model variance. Open
+affiliation also correlates 0.900 with surface warmth. The retained claim is a
+localized cross-domain, prompt-contingent affiliation behavior cluster, not a
+Big Five trait or a model-population estimate.
+
+## I. Prospective action-routing falsification
+
+Two frozen remedies test whether explicit action selection repairs the shared
+prompt's telling harm. A 1,920-call balanced trial reproduces the uniform
+prompt's probing gain and telling loss but rejects a one-pass adaptive menu. A
+separate 2,400-call trial crosses five models with two independently worded
+ASK/EXPLAIN selectors, both counterfactual executors, and a same-snapshot
+single-pass baseline. ASK and EXPLAIN realization reaches 0.998 and 1.000, while
+selector accuracy is only 0.519 [0.456, 0.583] and 0.500 [0.433, 0.563]. The
+composed policies underperform single pass by -0.058 [-0.110, -0.004] and -0.077
+[-0.131, -0.023]. This localizes the failure to contextual selection rather than
+verbal realization; it does not establish a successful controller.
+
+## J. Reproduction and release
 
 The provenance audit pins 84 relevant prediction/summary pairs by SHA-256.
 Temperature is recoverable for 22/84 runs and seed/prompt-version for none, so

@@ -56,12 +56,26 @@ def audit(root: Path, tex_path: Path, pdf_path: Path) -> dict[str, Any]:
     info = pdfinfo_fields(run("pdfinfo", str(pdf_path)))
     fonts = font_rows(run("pdffonts", str(pdf_path)))
     full_text = run("pdftotext", str(pdf_path), "-")
+    pages = int(info.get("Pages", "0"))
     page_eight = run("pdftotext", "-f", "8", "-l", "8", str(pdf_path), "-")
-    page_nine = run("pdftotext", "-f", "9", "-l", "9", str(pdf_path), "-")
+    after_page_eight = run(
+        "pdftotext", "-f", "9", "-l", str(pages),
+        str(pdf_path), "-"
+    ) if pages >= 9 else ""
     compact = normalized(full_text)
     compact_page_eight = normalized(page_eight)
-    compact_page_nine = normalized(page_nine)
-    pages = int(info.get("Pages", "0"))
+    compact_after_page_eight = normalized(after_page_eight)
+
+    main_headings = (
+        "Introduction",
+        "Related Work",
+        "Data and Governance",
+        "Methods",
+        "Results",
+        "Discussion",
+        "Reproducibility and Release",
+        "Conclusion",
+    )
 
     identity_patterns = {
         "local_home_path": r"/home/",
@@ -76,15 +90,19 @@ def audit(root: Path, tex_path: Path, pdf_path: Path) -> dict[str, Any]:
     checks = {
         "review_mode": r"\usepackage[review]{acl}" in tex,
         "anonymous_author_field": r"\author{Anonymous ACL submission}" in tex,
-        "page_count_within_review_package": 8 <= pages <= 9,
+        "page_count_supports_eight_content_pages": pages >= 8,
         "main_content_ends_on_page_eight": (
-            "Ethics Statement" in compact_page_eight
-            and "References" in compact_page_eight
-            and compact_page_eight.index("Ethics Statement") < compact_page_eight.index("References")
+            "Conclusion" in compact_page_eight
+            and not any(heading in compact_after_page_eight for heading in main_headings)
         ),
-        "page_nine_is_references_only": not any(
-            heading in compact_page_nine
-            for heading in ("Conclusion", "Limitations", "Ethics Statement")
+        "limitations_after_conclusion_before_references": (
+            "Conclusion" in compact
+            and "Limitations" in compact
+            and "References" in compact
+            and compact.index("Conclusion") < compact.index("Limitations") < compact.index("References")
+        ),
+        "post_page_eight_has_no_main_content": not any(
+            heading in compact_after_page_eight for heading in main_headings
         ),
         "blank_pdf_title_metadata": info.get("Title", "") == "",
         "blank_pdf_author_metadata": info.get("Author", "") == "",
@@ -98,7 +116,7 @@ def audit(root: Path, tex_path: Path, pdf_path: Path) -> dict[str, Any]:
         "no_warm_tone_outcome_label": "Warm tone" not in tex,
     }
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "pdf": str(pdf_path.relative_to(root)),
         "tex": str(tex_path.relative_to(root)),
         "pages": pages,

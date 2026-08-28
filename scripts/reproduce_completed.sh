@@ -104,6 +104,10 @@ cd "$REPO_ROOT"
 "$PYTHON_BIN" scripts/make_paper_figures.py \
   --root "$REPO_ROOT"
 
+"$PYTHON_BIN" scripts/verify_reproducibility_manifest.py \
+  --root "$REPO_ROOT" \
+  --manifest artifacts/reproducibility_manifest.json
+
 "$PYTHON_BIN" -m py_compile scripts/*.py
 "$PYTHON_BIN" -m pytest -q tests
 bash -n scripts/*.sh

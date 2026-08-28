@@ -26,16 +26,19 @@ The script checks both file hashes, compiles in a temporary directory, and
 copies only the final PDF into this directory.  `SOURCE_DATE_EPOCH` is pinned so
 repeated builds with the same TeX toolchain are byte-stable.
 
-The 2026-08-19 result build is nine PDF pages. Main text, limitations, and ethics
-end on page 8; references begin on page 8 and continue through page 9, so the
-manuscript remains within an eight-page main-content limit. `pdfinfo` reports
+The 2026-08-28 result build is ten PDF pages. Main content ends with the
+conclusion on page 8; the required limitations and ethics sections also fit on
+page 8, and pages 9--10 contain only references. This follows the current ARR
+rule of eight content pages plus unlimited post-conclusion limitations, ethics,
+and references. `pdfinfo` reports
 blank author/title metadata, `pdffonts` reports every font embedded and no Type 3
 font, and text extraction contains no local path or contributor identity. The
 factorial table has no overfull box warning.
 
 These structural properties are now executable rather than only manually
 recorded. `scripts/audit_acl_submission.py --require-pass` checks review mode,
-anonymous TeX authorship, page-8 main-content termination, reference-only page 9,
+anonymous TeX authorship, page-8 main-content termination, post-conclusion
+limitations ordering, absence of main-content headings after page 8,
 blank PDF author/title metadata, embedded non-Type-3 fonts, identity/local-path
 patterns, and the required claim-boundary wording. Its report is stored under
 `artifacts/submission_audit/`. Final visual inspection and the live venue rules
