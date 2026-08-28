@@ -1,6 +1,6 @@
 # Fresh-checkout reproduction audit
 
-Snapshot: 2026-08-28. Status: **refresh required after the final commit**.
+Snapshot: 2026-08-28. Status: **fresh-checkout public-package audit passed**.
 
 ## What has been verified in the working checkout
 
@@ -17,21 +17,27 @@ fail. Those files remain local under existing ignore rules. Public affiliation
 artifacts contain conditions, hashes, derived ratings, profiles, and decisions,
 not raw provider or judge response text.
 
-## Required final clean-room procedure
+## Observed fresh-checkout result
 
-After committing the current manuscript and release artifacts:
+Candidate commit `7d71f15` was cloned without hard links into a new temporary
+directory. The audit reused the working machine's pinned virtual environment and
+set `PYTHONDONTWRITEBYTECODE=1`; it was therefore checkout-isolated but not
+dependency-isolated. No private upstream corpus or ignored raw response stream
+was copied into the clone.
 
-1. clone that exact local commit into a new temporary directory;
-2. install or reuse the pinned dependencies, explicitly recording which;
-3. run the public reproduction command, tests, registered-claim verifier,
-   privacy audit, manifest verifier, and ACL submission audit;
-4. confirm that every generated public artifact leaves the checkout clean; and
-5. record the commit, command outputs, dependency provenance, and any private
-   input that was intentionally unavailable.
+| Gate | Result |
+|---|---:|
+| Unit tests | 87/87 passed |
+| Registered release claims | 123/123 passed |
+| Git-eligible artifact privacy | 446/446 passed |
+| Manifest paths and SHA-256 values | 647/647 passed |
+| Anonymous ACL PDF audit | passed, 10 pages |
+| Deterministic main-figure rebuild | passed |
+| Worktree after all checks | clean |
 
-Until that refresh is recorded, prior clean-room and CI runs remain useful
-historical evidence but do not certify the newly added affiliation artifacts or
-the 2026-08-28 manuscript.
+The PDF audit confirms that content ends on page 8, later pages contain no main
+content, author/title metadata are blank, all fonts are embedded and non-Type-3,
+and no configured identity or local-home pattern is present.
 
 ## Boundary
 
