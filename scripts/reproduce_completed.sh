@@ -89,6 +89,11 @@ cd "$REPO_ROOT"
 
 "$PYTHON_BIN" scripts/analyze_existing_general_personality_bridge.py
 
+"$PYTHON_BIN" scripts/audit_general_personality_content_archive.py \
+  --edubench-root "$EDUBENCH_ROOT"
+
+"$PYTHON_BIN" scripts/analyze_affiliation_stability_pilot.py
+
 "$PYTHON_BIN" scripts/verify_release_claims.py \
   --root "$REPO_ROOT" \
   --output-dir artifacts/claim_verification

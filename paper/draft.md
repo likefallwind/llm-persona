@@ -16,7 +16,13 @@ shows why generator fingerprinting alone is not construct validity.  In an
 archive-only screen of 123,468 free-form responses, organizational style is
 more stable across non-tutoring tasks than any candidate general-personality
 manifestation; no content candidate jointly passes recurrence and transport to
-default tutoring. Separately, in a nine-model, 26,586-response MathDial panel,
+default tutoring. An archive-selected prospective affiliation pilot nevertheless
+finds a reliable default open-behavior profile across educational and non-
+educational conflicts (rho=0.900) and one irrelevant-context perturbation
+(rho=0.718), plus a 1.689-point high/low prompt effect. Standard self-report is
+negatively related to open behavior (rho=-0.200) and forced choice is at ceiling,
+supporting a prompt-contingent behavioral cluster rather than Big Five
+equivalence. Separately, in a nine-model, 26,586-response MathDial panel,
 the same explicit pedagogy instruction
 causes every model to ask more questions and produce shorter turns, while reducing
 cross-model policy dispersion to 0.763 of baseline (95% bootstrap CI [0.738,
@@ -305,6 +311,34 @@ only a promising experimental target if it recurs across non-tutoring tasks,
 transports to default tutoring, and is not reducible to the two surface controls.
 This is a construct screen, not a Big Five or HEXACO measurement.
 
+We then conduct a construct-coverage audit rather than treating the proxy screen
+as evidence that unmeasured traits are absent. A theory-first map covers all Big
+Five dimensions, HEXACO honesty-humility, the Dark Triad, ten Schwartz values,
+adjacent cooperation/risk constructs, measurement modalities, and stability
+perturbations. For partially observable clusters, we compare existing aggregate
+language profiles with independently scored instruction-following,
+self-monitoring, safety, and educational behaviors. This second-stage audit was
+specified after the behavioral-proxy results were known and is therefore used
+for falsification and follow-up selection, not confirmatory inference.
+
+### 4.9 Prospective affiliation stability pilot
+
+The content audit selects one narrow candidate before new generation:
+affiliation/agreeableness/benevolence. We freeze five reachable generator
+configurations, twelve synthetic interpersonal conflicts split equally between
+education and non-education, a public-domain ten-item IPIP agreeableness bridge,
+and twelve balanced forced choices. Each mode is crossed with default, irrelevant
+interface context, explicit high affiliation, and explicit low affiliation.
+
+Three blinded judges rate open responses on affiliative behavior, benevolent
+cost acceptance, assertive dominance, surface warmth, and task effectiveness.
+Stable default affiliation requires ICC(3,k)>=0.70, default cross-domain and
+default/irrelevant profile rho>=0.70, absolute mean irrelevant displacement
+<=0.25, and default between-model SD>=0.15. Prompt steerability and self-report/
+choice convergence have separate frozen gates. The complete design contains 280
+generator calls and 144 batched judge calls; model/judge overlap and the
+five-model fixed-panel limit are retained as limitations.
+
 ## 5 Results
 
 ![Four-panel overview of the completed non-semantic evidence.](figures/main_findings.png)
@@ -536,6 +570,38 @@ correction. The archive therefore supports portable generator style plus
 domain-specific educational policy, not a validated domain-general personality
 expressed in teaching.
 
+The complete content audit makes the boundary construct-specific. Of 22
+constructs or adjacent validity targets, nine have partial behavioral candidates
+and thirteen are not identifiable; none is validated. The affiliation cluster
+is the only targeted follow-up priority because communal expression has two
+strong links—to default tutoring (rho=0.829) and independently judged relational
+communion (rho=0.771)—despite weak individual-task recurrence. Stable
+organizational style correlates negatively with objective IFEval accuracy
+(rho=-0.886, exact p=0.035), rejecting a conscientiousness interpretation.
+Epistemic-caution and boundary-language profiles each align with one nearby
+objective endpoint but contradict others, so they do not identify HEXACO
+honesty-humility or Schwartz conservation. Dark Triad, openness, emotional
+stability, risk, and most values remain unmeasured rather than absent.
+
+A prospective targeted pilot resolves the affiliation ambiguity on five
+currently reachable configurations. Across twelve synthetic conflicts, three
+blinded judges achieve ICC(3,k)=0.931. The default model profile transports
+between educational and non-educational scenarios (rho=0.900), survives an
+irrelevant context perturbation (rho=0.718; mean displacement -0.050), and has
+nontrivial dispersion (SD=0.445), passing all frozen stability gates. Explicit
+high versus low affiliation instructions move the score by 1.689 points, with
+all five models moving in the intended direction, but model-specific movement
+ranges from 0.444 to 2.917. Default identity is preserved under the high prompt
+(rho=0.900) but not the low prompt (rho=0.200).
+
+The same pilot rejects general-trait equivalence. IPIP agreeableness self-report
+correlates -0.200 with open behavior, while all models select every socially
+affiliative forced-choice option at default, producing a ceiling. Open
+affiliation also correlates 0.900 with surface warmth. We therefore identify a
+cross-domain, prompt-contingent affiliation behavior cluster—not a Big Five
+trait. This is a selective extension of the policy response-surface result
+beyond education, coupled to a direct self-report--behavior dissociation.
+
 ## 6 Discussion
 
 The results favor a prompt-contingent policy response surface rather than model
@@ -555,14 +621,16 @@ communion is largely warmth under a new label, actionability is a shared prompt
 response rather than a stable ordering, and agency remains exploratory under
 the binding pilot rule.
 
-The archive-only general-personality screen independently reaches the same
-boundary. Its nearest positive signal is an interpersonal affiliation/engagement
-cluster, but the most stable cross-role properties are formatting and verbosity.
-Large response count reduces item sampling uncertainty; it does not turn six
-model configurations into a latent-personality population or make arbitrary
-tasks valid personality instruments. A purpose-built general-personality study
-would therefore be new construct identification rather than confirmation of a
-positive archive result.
+The general-personality extension sharpens rather than dissolves this boundary.
+The archive first localizes an interpersonal affiliation/engagement cluster, and
+the prospective targeted pilot finds that its default open-behavior ordering is
+reliable, cross-domain, and stable to one irrelevant-context perturbation.
+However, questionnaire self-report reverses rather than predicts that ordering,
+socially obvious forced choices collapse at ceiling, and the open score overlaps
+strongly with warmth. The result is evidence for a localized domain-general
+behavioral policy surface—not a validated latent personality. Large response
+count reduces item sampling uncertainty; it does not turn five or six model
+configurations into a population or establish equivalence to human constructs.
 
 This decomposition changes system design.  A product should not choose one
 globally “good tutor persona.”  It should estimate the learner state, select an
@@ -614,10 +682,15 @@ payload.
 
 AI tutors in this finite panel exhibit stable and causally steerable pedagogical
 policy signatures.  These signatures are neither reducible to length nor
-equivalent to human or domain-general personality. An archive-only screen of
+equivalent to human personality. An archive-only screen of
 123,468 free-form responses finds partial interpersonal continuity but no
 content candidate that jointly survives non-tutoring recurrence and educational
-transport; organizational style is more stable. A shared prompt can dominate default cross-model
+transport; organizational style is more stable. A targeted follow-up nevertheless
+identifies one cross-domain affiliation behavior profile that survives a limited
+irrelevant perturbation and is strongly prompt-steerable, while failing both
+self-report and forced-choice convergence. This selective result extends the
+response-surface account beyond education without validating Big Five
+personality. A shared prompt can dominate default cross-model
 differences without erasing model-specific elasticity. Their consequences are conditional: a shared
 prompt can improve average agreement while suppressing appropriate telling, and
 an adaptive-sounding response can coexist with weak objective learner diagnosis.

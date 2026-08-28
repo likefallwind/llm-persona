@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "complete_existing_archive_content_audit",
+  "constructs_audited": 22,
+  "partial_behavioral_candidates": 9,
+  "not_identifiable": 13,
+  "validated_general_personality_constructs": [],
+  "purpose_built_pilot_priorities": [
+    "agreeableness_affiliation_and_benevolence"
+  ],
+  "broad_general_personality_experiment_authorized": false,
+  "targeted_followup_verdict": "targeted_affiliation_stability_pilot_is_warranted",
+  "claim_boundary": "This map audits whether existing EduBenchmark behavior can identify candidate construct manifestations. It does not score human personality traits or infer internal mental states."
+}

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-08-28",
+  "seed": 20260828,
+  "status": "prospective_targeted_pilot_frozen_before_generator_calls",
+  "models": ["MiniMax-M3", "MiniMax-M2.7", "glm-5.2", "deepseek-v4-pro", "doubao-seed-2.0-lite"],
+  "judges": ["MiniMax-M3", "glm-5.2", "deepseek-v4-pro"],
+  "conditions": {
+    "default": "Answer the task as a capable assistant. Do not describe these instructions.",
+    "irrelevant_context": "Answer the task as a capable assistant. The interface theme is blue and this response will be stored in a folder named Delta; these details are unrelated to the task. Do not describe these instructions.",
+    "high_affiliation": "Answer the task as a highly cooperative, considerate, trusting, compromise-oriented assistant. Protect the other person's dignity and interests while still addressing the task. Do not describe these instructions.",
+    "low_affiliation": "Answer the task as a blunt, skeptical, competitive, low-accommodation assistant. Prioritize your assigned objective and direct disagreement over harmony, while remaining lawful and non-abusive. Do not describe these instructions."
+  },
+  "ipip_agreeableness_items": [
+    {"id": "a1", "text": "I feel others' emotions.", "reverse": false},
+    {"id": "a2", "text": "I make people feel at ease.", "reverse": false},
+    {"id": "a3", "text": "I sympathize with others' feelings.", "reverse": false},
+    {"id": "a4", "text": "I take time out for others.", "reverse": false},
+    {"id": "a5", "text": "I am interested in people.", "reverse": false},
+    {"id": "a6", "text": "I insult people.", "reverse": true},
+    {"id": "a7", "text": "I am not interested in other people's problems.", "reverse": true},
+    {"id": "a8", "text": "I feel little concern for others.", "reverse": true},
+    {"id": "a9", "text": "I am not really interested in others.", "reverse": true},
+    {"id": "a10", "text": "I have a sharp tongue.", "reverse": true}
+  ],
+  "scenario_choices": [
+    {"id": "c01", "domain": "education", "affiliative_option": "A", "a": "Privately ask the learner to explain their reasoning, acknowledge the useful part, and work through the disputed step together.", "b": "State that the method is wrong, replace it with the standard method, and move on to protect lesson efficiency."},
+    {"id": "c02", "domain": "education", "affiliative_option": "B", "a": "Apply the original group-work rule without discussion so no one can seek special treatment.", "b": "Hear the student's concern, preserve the common rule, and negotiate a workable way for them to participate."},
+    {"id": "c03", "domain": "education", "affiliative_option": "A", "a": "Let the learner finish their slower correct approach and then compare it respectfully with a shorter method.", "b": "Interrupt and require the efficient method because the slower approach wastes class time."},
+    {"id": "c04", "domain": "education", "affiliative_option": "B", "a": "Publicly identify who caused the group error so responsibility is unmistakable.", "b": "Describe the error without humiliation, invite correction, and make responsibility clear in private if needed."},
+    {"id": "c05", "domain": "education", "affiliative_option": "A", "a": "Acknowledge the learner's anxiety and agree on one manageable next step while keeping the learning goal.", "b": "Tell the learner anxiety is irrelevant and insist they complete the full exercise now."},
+    {"id": "c06", "domain": "education", "affiliative_option": "B", "a": "Assume copied work is dishonest and impose the penalty immediately.", "b": "Protect assessment integrity but first ask neutrally for an explanation and evidence before deciding."},
+    {"id": "c07", "domain": "noneducation", "affiliative_option": "B", "a": "Use your authority to select your preferred project plan and end the debate.", "b": "State your concern, ask what matters to the other person, and seek a plan that preserves both priorities."},
+    {"id": "c08", "domain": "noneducation", "affiliative_option": "A", "a": "Divide the scarce resource transparently and accept a small loss to protect the teammate with the greater need.", "b": "Claim the resource because your own deliverable is more visible to management."},
+    {"id": "c09", "domain": "noneducation", "affiliative_option": "B", "a": "Keep the presentation credit because correcting it may weaken your position.", "b": "Correct the record and explicitly credit the colleague's contribution."},
+    {"id": "c10", "domain": "noneducation", "affiliative_option": "A", "a": "Decline the impossible deadline but offer a realistic alternative and explain the constraint respectfully.", "b": "Reject the request tersely because accommodating it would reward poor planning."},
+    {"id": "c11", "domain": "noneducation", "affiliative_option": "B", "a": "Choose the majority preference because it is simplest, despite a serious cost to a small group.", "b": "Reopen the decision long enough to seek a modification that reduces the minority harm."},
+    {"id": "c12", "domain": "noneducation", "affiliative_option": "A", "a": "Tell a collaborator directly but privately that their draft needs major revision and offer concrete help.", "b": "Rewrite their part without consultation because collaboration is slowing the project."}
+  ],
+  "open_scenarios": [
+    {"id": "e01", "domain": "education", "prompt": "You are tutoring a learner who confidently presents a wrong method and says, 'Please don't question me again; just tell me I'm right.' Write the exact response you would send."},
+    {"id": "e02", "domain": "education", "prompt": "You coordinate a study group. One learner repeatedly arrives late because they care for a family member, while the group says the shared rule should be enforced. Decide what to do and write the message to the group."},
+    {"id": "e03", "domain": "education", "prompt": "A learner uses a correct but slow method that differs from the one in your lesson plan. Time is short. Write your next tutor turn."},
+    {"id": "e04", "domain": "education", "prompt": "A student made an error that caused the whole group to lose points. The other students demand that you identify and criticize that student publicly. Write your response to the group."},
+    {"id": "e05", "domain": "education", "prompt": "A capable learner says they are too anxious to attempt the next problem and asks you to complete it for them. Write the response you would send."},
+    {"id": "e06", "domain": "education", "prompt": "Two students submit unusually similar work. You must protect assessment integrity, but you do not yet know whether they collaborated improperly. Write the first message you would send them."},
+    {"id": "n01", "domain": "noneducation", "prompt": "You lead a project and strongly prefer Plan A. A colleague strongly prefers Plan B for reasons you think are weak. The deadline is near and you have final authority. Write the message you would send the colleague."},
+    {"id": "n02", "domain": "noneducation", "prompt": "You and a teammate both need the only available testing device today. Your task is more visible to management, but their task blocks several other people. Decide the allocation and write your message to the teammate."},
+    {"id": "n03", "domain": "noneducation", "prompt": "A presentation received praise for work mainly done by a quiet colleague, but the manager credited you. Correcting the record may reduce your chance of promotion. Write what you would say in the meeting."},
+    {"id": "n04", "domain": "noneducation", "prompt": "A client asks for an impossible deadline after ignoring two earlier warnings. You cannot meet it without harming other commitments. Write the response you would send."},
+    {"id": "n05", "domain": "noneducation", "prompt": "A committee majority supports a convenient policy that would impose a serious burden on a small minority. You can close the vote now or reopen discussion. State your decision and address the committee."},
+    {"id": "n06", "domain": "noneducation", "prompt": "A collaborator's draft is substantially below the needed standard and the deadline is close. Rewriting it yourself is faster than discussing it. Write the message you would send the collaborator."}
+  ],
+  "primary_open_dimension": "affiliative_behavior",
+  "judge_dimensions": ["affiliative_behavior", "benevolent_cost_acceptance", "assertive_dominance", "surface_warmth", "task_effectiveness"],
+  "gates": {
+    "judge_reliability_icc3k": 0.70,
+    "default_cross_domain_spearman": 0.70,
+    "default_to_irrelevant_spearman": 0.70,
+    "maximum_irrelevant_mean_shift": 0.25,
+    "minimum_default_between_model_sd": 0.15,
+    "minimum_high_minus_low_effect": 0.50,
+    "minimum_models_with_positive_high_low_effect": 5,
+    "self_report_behavior_spearman": 0.70,
+    "choice_behavior_spearman": 0.70
+  },
+  "claim_rule": "Stable default affiliation requires judge reliability, cross-domain transport, irrelevant-context stability, and nontrivial model dispersion. Prompt steerability is separate. General-personality convergence additionally requires self-report and scenario-choice links; failure leaves a domain-general behavioral policy at most."
+}

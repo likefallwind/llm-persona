@@ -1,0 +1,4 @@
+comparison,spearman,exact_two_sided_p,model_count,left_out_judge
+leave_out_MiniMax-M3,0.9999999999999999,0.024793388429752067,5,MiniMax-M3
+leave_out_glm-5.2,0.9999999999999999,0.024793388429752067,5,glm-5.2
+leave_out_deepseek-v4-pro,0.9999999999999999,0.024793388429752067,5,deepseek-v4-pro

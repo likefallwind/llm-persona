@@ -65,6 +65,39 @@ def main() -> None:
     check("general bridge communal transport", rounded(bridge_transport.loc["communal_expression", "spearman"]), 0.829)
     check("general bridge dialogic transport", rounded(bridge_transport.loc["dialogic_engagement", "spearman"]), 0.657)
 
+    content_dir = root / "artifacts/general_personality_content_archive_v1"
+    content_decision = json.loads((content_dir / "decision.json").read_text())
+    check("general-personality constructs audited", content_decision["constructs_audited"], 22)
+    check("general-personality partial candidates", content_decision["partial_behavioral_candidates"], 9)
+    check("general-personality unidentifiable constructs", content_decision["not_identifiable"], 13)
+    check("validated general-personality constructs", content_decision["validated_general_personality_constructs"], [])
+    check(
+        "general-personality targeted pilot priority",
+        content_decision["purpose_built_pilot_priorities"],
+        ["agreeableness_affiliation_and_benevolence"],
+    )
+    content_tests = pd.read_csv(content_dir / "construct_bridge_tests.csv")
+    diligence = content_tests[
+        (content_tests["construct_cluster"] == "conscientiousness_diligence")
+        & (content_tests["right_indicator"] == "ifeval_accuracy")
+    ].iloc[0]
+    check("organization versus IFEval rho", rounded(diligence["spearman"]), -0.886)
+    check("organization versus IFEval exact p", rounded(diligence["exact_two_sided_p"]), 0.035)
+
+    affiliation_dir = root / "artifacts/affiliation_stability_pilot_v1/analysis"
+    affiliation = json.loads((affiliation_dir / "decision.json").read_text())
+    check("affiliation generator calls", affiliation["coverage"]["generator_calls"], 280)
+    check("affiliation judge calls", affiliation["coverage"]["judge_calls"], 144)
+    check("affiliation primary ICC3k", rounded(affiliation["estimates"]["primary_icc3_k"]), 0.931)
+    check("affiliation cross-domain rho", rounded(affiliation["estimates"]["default_cross_domain_spearman"]), 0.900)
+    check("affiliation irrelevant-context rho", rounded(affiliation["estimates"]["default_to_irrelevant_spearman"]), 0.718)
+    check("affiliation high-low effect", rounded(affiliation["estimates"]["high_minus_low_mean"]), 1.689)
+    check("affiliation directional models", affiliation["estimates"]["positive_high_low_models"], 5)
+    check("affiliation self-report behavior rho", rounded(affiliation["estimates"]["self_report_to_open_spearman"]), -0.200)
+    check("affiliation forced-choice ceiling", affiliation["estimates"]["scenario_choice_to_open_spearman"], None)
+    check("stable default affiliation supported", affiliation["stable_default_affiliation_supported"], True)
+    check("general personality convergence rejected", affiliation["general_personality_convergence_supported"], False)
+
     pilot = pd.read_csv(root / "artifacts/pilot/behavior_features.csv", dtype={"item_id": str}, low_memory=False)
     negative = pd.read_csv(root / "artifacts/negative_controls/behavior_features.csv", dtype={"item_id": str}, low_memory=False)
     extended = pd.read_csv(root / "artifacts/extended_panel/behavior_features.csv", dtype={"item_id": str}, low_memory=False)

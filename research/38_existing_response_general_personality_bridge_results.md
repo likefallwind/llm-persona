@@ -135,6 +135,15 @@ Protocol: `research/37_existing_response_general_personality_bridge_protocol.md`
 Machine decision: `artifacts/general_personality_bridge_v1/decision.json`.
 Full aggregate report: `artifacts/general_personality_bridge_v1/report.md`.
 
+## Later targeted follow-up
+
+The stricter archive-confirmation verdict above remains unchanged. A subsequent
+construct-coverage audit used the localized affiliation near miss to select a
+new prospective falsification pilot rather than claim archive confirmation. That
+pilot finds stable cross-domain open affiliation behavior but rejects
+self-report and forced-choice convergence; see
+`research/42_affiliation_stability_pilot_results.md`.
+
 ## Claim boundary
 
 The analysis concerns observable language and interaction policies in six fixed

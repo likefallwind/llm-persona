@@ -13,6 +13,24 @@ Overall: **PASS**
 | general bridge organizational-style median task rho | `0.771` | `0.771` | yes |
 | general bridge communal transport | `0.829` | `0.829` | yes |
 | general bridge dialogic transport | `0.657` | `0.657` | yes |
+| general-personality constructs audited | `22` | `22` | yes |
+| general-personality partial candidates | `9` | `9` | yes |
+| general-personality unidentifiable constructs | `13` | `13` | yes |
+| validated general-personality constructs | `[]` | `[]` | yes |
+| general-personality targeted pilot priority | `['agreeableness_affiliation_and_benevolence']` | `['agreeableness_affiliation_and_benevolence']` | yes |
+| organization versus IFEval rho | `-0.886` | `-0.886` | yes |
+| organization versus IFEval exact p | `0.035` | `0.035` | yes |
+| affiliation generator calls | `280` | `280` | yes |
+| affiliation judge calls | `144` | `144` | yes |
+| affiliation primary ICC3k | `0.931` | `0.931` | yes |
+| affiliation cross-domain rho | `0.9` | `0.9` | yes |
+| affiliation irrelevant-context rho | `0.718` | `0.718` | yes |
+| affiliation high-low effect | `1.689` | `1.689` | yes |
+| affiliation directional models | `5` | `5` | yes |
+| affiliation self-report behavior rho | `-0.2` | `-0.2` | yes |
+| affiliation forced-choice ceiling | `None` | `None` | yes |
+| stable default affiliation supported | `True` | `True` | yes |
+| general personality convergence rejected | `False` | `False` | yes |
 | primary teaching response rows | `31638` | `31638` | yes |
 | negative-control response rows | `57516` | `57516` | yes |
 | extended MathDial response rows | `26586` | `26586` | yes |

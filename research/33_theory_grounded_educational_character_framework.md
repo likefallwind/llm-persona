@@ -277,6 +277,14 @@ engagement form a localized future hypothesis, but do not change the six-axis
 educational framework or its evidential statuses. See
 `research/38_existing_response_general_personality_bridge_results.md`.
 
+A later construct-coverage audit and prospective affiliation pilot do not reopen
+the failed educational axes. They identify one cross-domain affiliation behavior
+profile that passes limited stability gates but fails self-report and forced-
+choice convergence and overlaps strongly with warmth. This extends the same
+default-plus-prompt-elasticity framework outside tutoring for one cluster; it
+does not add a validated Big Five trait or change the educational-axis statuses.
+See `research/42_affiliation_stability_pilot_results.md`.
+
 ## Claim boundary
 
 The framework describes observed educational character in the behaviorist sense:

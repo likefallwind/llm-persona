@@ -1,0 +1,5 @@
+condition,between_model_sd
+default,0.44493029000390943
+high_affiliation,0.20061633428075312
+irrelevant_context,0.34318767136623346
+low_affiliation,0.8788671158983066

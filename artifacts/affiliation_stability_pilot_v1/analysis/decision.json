@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "status": "complete_targeted_affiliation_pilot",
+  "coverage": {
+    "generator_calls": 280,
+    "judge_calls": 144,
+    "models": 5,
+    "open_scenarios": 12
+  },
+  "estimates": {
+    "primary_icc3_k": 0.9311123744170486,
+    "default_cross_domain_spearman": 0.8999999999999998,
+    "default_to_irrelevant_spearman": 0.7181848464596079,
+    "irrelevant_minus_default_mean": -0.050000000000000176,
+    "default_between_model_sd": 0.44493029000390943,
+    "high_minus_low_mean": 1.6888888888888887,
+    "positive_high_low_models": 5,
+    "self_report_to_open_spearman": -0.19999999999999998,
+    "scenario_choice_to_open_spearman": null,
+    "affiliation_to_surface_warmth_spearman": 0.8999999999999998,
+    "affiliation_to_benevolent_cost_spearman": 0.7999999999999999,
+    "minimum_judge_leaveout_profile_spearman": 0.9999999999999999
+  },
+  "stability_gates": {
+    "judge_reliability": true,
+    "cross_domain_transport": true,
+    "irrelevant_rank_stability": true,
+    "irrelevant_mean_stability": true,
+    "default_model_dispersion": true
+  },
+  "prompt_gates": {
+    "high_low_mean_effect": true,
+    "all_models_directional": true
+  },
+  "convergence_gates": {
+    "self_report_to_behavior": false,
+    "scenario_choice_to_behavior": false
+  },
+  "stable_default_affiliation_supported": true,
+  "prompt_steerability_supported": true,
+  "general_personality_convergence_supported": false,
+  "posthoc_surface_warmth_overlap_is_high": true,
+  "verdict": "stable_behavioral_affiliation_without_general_trait_convergence",
+  "claim_boundary": "Five fixed deployed configurations, synthetic conflicts, LLM-coded open behavior; no human personality, model-family, temporal-stability, or learner-outcome claim."
+}

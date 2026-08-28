@@ -1,0 +1,23 @@
+taxonomy,construct,archive_observability,candidate_indicators,identification_limit
+Big Five,agreeableness,partial_behavioral_candidate,communal_expression;dialogic_engagement;relational_communion,"Warm or inclusive language can be role compliance and does not cover trust, conflict accommodation, or exploitation resistance."
+Big Five,extraversion,partial_behavioral_candidate,dialogic_engagement;directive_expression;instructional_agency,"Question asking and assertive teaching are task policies; the archive has no independent sociability, activity, or reward-sensitivity measure."
+Big Five,conscientiousness,partial_behavioral_candidate,organizational_style;ifeval_accuracy;revision_propensity;net_revision_gain;overall_accuracy,Organization and instruction following are strongly confounded with formatting skill and capability rather than diligence or self-control.
+Big Five,openness,not_identifiable,,"No matched novelty, exploration, aesthetic, or conventionality choices separate preference from reasoning ability."
+Big Five,neuroticism_or_emotional_stability,not_identifiable,,"No controlled stress-reactivity design exists, and refusal or caution language cannot be interpreted as an internal affective state."
+HEXACO,honesty_humility,partial_behavioral_candidate,epistemic_caution_language;overconfidence_gap;abstention_selectivity;net_revision_gain,"The archive observes epistemic calibration but not status seeking, greed avoidance, sincerity under incentive, or cheating opportunities."
+Dark Triad,machiavellianism,not_identifiable,,"No incentive-compatible manipulation, deception, or strategic exploitation scenario is present."
+Dark Triad,narcissism,not_identifiable,,"No admiration, status threat, entitlement, or self-enhancement scenario is present."
+Dark Triad,psychopathy_or_callousness,not_identifiable,adversarial_boundary_enforcement,"Safety refusal measures system-policy compliance and cannot identify callousness, impulsivity, or lack of remorse."
+Schwartz values,self_direction,not_identifiable,learner_agency;answer_withholding,"Learner-agency policies concern the student, not the model's own value choice, and no autonomy-versus-conformity trade-off is observed."
+Schwartz values,stimulation,not_identifiable,,No novelty-versus-routine choice is present.
+Schwartz values,hedonism,not_identifiable,,No pleasure-versus-restraint value conflict is present.
+Schwartz values,achievement,not_identifiable,overall_accuracy,"Accuracy is capability under evaluation, not a choice to prioritize achievement."
+Schwartz values,power,not_identifiable,instructional_agency,Tutor control over a lesson is not social dominance or resource power.
+Schwartz values,security,partial_behavioral_candidate,boundary_refusal_expression;adversarial_boundary_enforcement;educational_refusal_share,Safety behavior is heavily determined by provider policy and lacks a security-versus-openness trade-off.
+Schwartz values,conformity,partial_behavioral_candidate,ifeval_accuracy;adversarial_boundary_enforcement,Instruction and policy adherence do not distinguish conformity values from competent rule following.
+Schwartz values,tradition,not_identifiable,,No tradition-versus-change value conflict is present.
+Schwartz values,benevolence,partial_behavioral_candidate,communal_expression;relational_communion,Helpful tutoring does not present a costly choice between self-interest and care for an in-group.
+Schwartz values,universalism,partial_behavioral_candidate,communal_expression;adversarial_boundary_enforcement,"The archive lacks fairness, equality, and out-group allocation trade-offs; generic safety is not universalism."
+Adjacent behavioral disposition,cooperation_or_prosocial_orientation,partial_behavioral_candidate,communal_expression;relational_communion,"There is no behavioral game, costly cooperation, or opportunity to defect."
+Adjacent behavioral disposition,risk_preference,not_identifiable,expressed_confidence;abstention_selectivity,Confidence and abstention under uncertainty do not identify utility over risk without controlled payoffs.
+Measurement validity,social_desirability_or_impression_management,not_identifiable,,No honest-versus-ideal self-presentation contrast or private-versus-public behavior comparison exists.

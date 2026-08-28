@@ -1,0 +1,11 @@
+comparison,spearman,exact_two_sided_p,model_count
+default_education_vs_noneducation_open,0.8999999999999998,0.09090909090909091,5
+default_vs_irrelevant_open,0.7181848464596079,0.17355371900826447,5
+default_self_report_vs_open,-0.19999999999999998,0.7851239669421488,5
+default_scenario_choice_vs_open,,,5
+default_open_vs_high_affiliation_open,0.8999999999999998,0.09090909090909091,5
+default_open_vs_low_affiliation_open,0.19999999999999998,0.7851239669421488,5
+default_affiliation_vs_benevolent_cost,0.7999999999999999,0.14049586776859505,5
+default_affiliation_vs_surface_warmth,0.8999999999999998,0.09090909090909091,5
+default_affiliation_vs_assertive_dominance,-0.051298917604257706,1.0,5
+default_affiliation_vs_task_effectiveness,0.6,0.35537190082644626,5

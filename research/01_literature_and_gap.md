@@ -268,3 +268,26 @@ general personality expressed through education. A future general-personality
 experiment would be a new construct-identification study, not confirmation of a
 positive archive result. See `research/37_existing_response_general_personality_bridge_protocol.md`
 and `research/38_existing_response_general_personality_bridge_results.md`.
+
+The subsequent full content-coverage audit prevents this proxy result from being
+misread as evidence that unmeasured constructs are absent. It maps all Big Five,
+HEXACO honesty-humility, Dark Triad, and Schwartz-value constructs to the archive
+and cross-checks partial candidates against existing objective outcomes. Only an
+affiliation/agreeableness/benevolence-like cluster has two strong cross-role or
+cross-source links, but its individual-task recurrence remains weak. Stable
+organization is inversely related to objective instruction-following accuracy,
+while epistemic and safety indicators fail construct-wide convergence. Thus a
+narrow affiliation stability pilot is worth falsifying; a broad inventory study
+is not. See `research/39_general_personality_content_archive_protocol.md` and
+`research/40_general_personality_content_archive_results.md`.
+
+The archive-selected affiliation hypothesis subsequently passes a prospective
+five-model stability pilot in open behavior while failing general-trait
+convergence. Default affiliation transports between education and non-education
+(rho=0.900), survives the tested irrelevant context (rho=0.718), and moves 1.689
+points between high/low prompts with heterogeneous model elasticity. Yet
+self-report correlates -0.200 with open behavior and forced choice is universally
+socially desirable. The resulting contribution is a localized behavioral
+response surface plus self-report--behavior dissociation, not Big Five
+validation. See `research/41_affiliation_stability_pilot_protocol.md` and
+`research/42_affiliation_stability_pilot_results.md`.

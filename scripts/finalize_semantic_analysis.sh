@@ -3,6 +3,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PY="$ROOT/.venv/bin/python"
+EDUBENCH_ROOT="${EDUBENCH_ROOT:-$ROOT/../edubenchmark}"
 PANEL="$ROOT/artifacts/semantic_judge/full_v1"
 OUT="$ROOT/artifacts/semantic_panel"
 EXCLUSIONS="$ROOT/research/semantic_panel_exclusions_v1.json"
@@ -92,6 +93,11 @@ cd "$ROOT"
   --output-dir artifacts/educational_character_framework_v1
 
 "$PY" scripts/analyze_existing_general_personality_bridge.py
+
+"$PY" scripts/audit_general_personality_content_archive.py \
+  --edubench-root "$EDUBENCH_ROOT"
+
+"$PY" scripts/analyze_affiliation_stability_pilot.py
 
 "$PY" scripts/factorial_prompt_status.py --require-complete
 
@@ -194,6 +200,8 @@ cd "$ROOT"
     artifacts/normative_boundary_axes_v1 \
     artifacts/educational_character_framework_v1 \
     artifacts/general_personality_bridge_v1 \
+    artifacts/general_personality_content_archive_v1 \
+    artifacts/affiliation_stability_pilot_v1 \
     artifacts/factorial_prompt_v1 \
     artifacts/factorial_analysis_v1 \
     artifacts/factorial_order_replication_v1 \

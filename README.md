@@ -299,6 +299,44 @@ rejects upgrading the current archive to a domain-general personality claim. See
 `research/37_existing_response_general_personality_bridge_protocol.md` and
 `research/38_existing_response_general_personality_bridge_results.md`.
 
+The follow-on content audit explicitly covers all Big Five dimensions, HEXACO
+honesty-humility, the Dark Triad, all ten Schwartz values, adjacent behavioral
+dispositions, measurement modality, and stability perturbations:
+
+```bash
+.venv/bin/python scripts/audit_general_personality_content_archive.py \
+  --edubench-root /path/to/edubenchmark
+```
+
+It audits 22 constructs or validity targets: nine have only partially observable
+behavioral candidates and thirteen are not identifiable in the old tasks. No
+general-personality construct is validated. The only purpose-built pilot
+priority is a narrow affiliation/agreeableness/benevolence cluster: its pooled
+cross-role and educational links are strong, while its individual-task ordering
+is unstable. Conscientiousness-like organization is falsified by its negative
+association with objective IFEval accuracy; epistemic and safety facets do not
+converge into honesty-humility or Schwartz conservation. See
+`research/39_general_personality_content_archive_protocol.md` and
+`research/40_general_personality_content_archive_results.md`.
+
+The archive-selected affiliation hypothesis was then tested prospectively on
+five reachable configurations, with 280 generator calls and 144 blinded
+three-judge calls:
+
+```bash
+.venv/bin/python scripts/analyze_affiliation_stability_pilot.py
+```
+
+All frozen stability gates pass (judge ICC(3,k)=0.931; default education versus
+non-education rho=0.900; default versus irrelevant-context rho=0.718), and the
+high-minus-low prompt effect is 1.689/5 with all models moving in the intended
+direction. General-trait convergence nevertheless fails: self-report correlates
+-0.200 with open behavior and default forced choice has a complete affiliative
+ceiling. The supported extension is therefore a stable but prompt-contingent
+affiliation behavior policy, not Big Five personality. See
+`research/41_affiliation_stability_pilot_protocol.md` and
+`research/42_affiliation_stability_pilot_results.md`.
+
 ## Planning-only learner-outcome extension
 
 `research/24_learner_outcome_trial_protocol.md` turns the remaining journal-level

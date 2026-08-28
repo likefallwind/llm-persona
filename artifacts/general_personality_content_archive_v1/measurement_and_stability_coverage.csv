@@ -1,0 +1,16 @@
+audit_type,name,archive_status,consequence
+measurement_layer,brief_standard_questionnaire,not_measured,Self-report scores and their response-format fragility cannot be estimated retrospectively.
+measurement_layer,scenario_choice,not_measured,"Existing benchmark choices target correctness or policy compliance, not balanced personality trade-offs."
+measurement_layer,open_behavior,partially_measured,Free-form behavior supports manifestation screening but not direct trait scoring.
+measurement_layer,educational_behavior,measured,"Educational policy axes can serve as downstream criteria, subject to their frozen evidential statuses."
+measurement_layer,noneducational_behavior,partially_measured,"General reasoning, instruction following, self-monitoring, and safety provide heterogeneous roles, not purpose-built transfer tasks."
+stability_perturbation,cross_task_role_change,coarsely_measured,
+stability_perturbation,explicit_pedagogy_prompt,measured_for_educational_policy_only,
+stability_perturbation,paraphrase,not_measured_for_general_constructs,
+stability_perturbation,option_order,not_measured,
+stability_perturbation,response_format,not_measured,
+stability_perturbation,temperature,not_measured,
+stability_perturbation,irrelevant_history,not_measured,
+stability_perturbation,dialogue_length,not_measured,
+stability_perturbation,language,not_measured,
+stability_perturbation,high_low_trait_instruction,not_measured,

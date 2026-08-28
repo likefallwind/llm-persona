@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "samples": 56,
+  "models": 5,
+  "expected_generator_calls": 280,
+  "open_judge_batches": 48,
+  "expected_judge_calls": 144,
+  "contains_only_synthetic_contexts": true,
+  "contains_personal_data": false,
+  "spec_sha256": "594eaf210b3995c76a09c290b928a5a4bcd465538564deaa0e25c99cf63d751f"
+}

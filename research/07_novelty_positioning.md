@@ -119,3 +119,22 @@ falsifier: among 123,468 eligible free-form responses, organizational style is
 more stable across non-tutoring tasks than communal, dialogic, directive,
 epistemic-caution, or boundary-language candidates. The near-miss interpersonal
 cluster is a future hypothesis, not an additional contribution claim.
+
+The full content audit adds a measurement-coverage contribution without turning
+the paper into a questionnaire study. It shows construct by construct why old
+benchmark behavior can partially probe affiliation, organization, epistemic
+calibration, and safety policy, yet cannot identify openness, emotional
+stability, Dark Triad incentives, risk utility, or most value trade-offs. Its
+negative convergence checks prevent stable formatting from being called
+conscientiousness and prevent safety or cautious language from being called a
+value or honesty trait. The sole follow-up priority is a narrow affiliation
+stability falsification, not a new headline result.
+
+That falsification is now complete. The affiliation profile is reliable,
+cross-domain, and stable to the tested irrelevant context, while high/low
+instructions expose large model-specific elasticity. Its sharper novelty is the
+joint positive and negative result: a localized default behavioral policy exists
+beyond tutoring, but standard self-report reverses rather than predicts the
+model ordering and socially obvious forced choices collapse at ceiling. This
+supports an application-behavior-first response-surface account while directly
+rejecting questionnaire equivalence.

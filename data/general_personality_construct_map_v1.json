@@ -1,0 +1,206 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-08-28",
+  "status": "theory_first_archive_mapping_frozen_after_behavioral_proxy_screen",
+  "claim_boundary": "This map audits whether existing EduBenchmark behavior can identify candidate construct manifestations. It does not score human personality traits or infer internal mental states.",
+  "observability_levels": {
+    "partial_behavioral_candidate": "At least one relevant behavior is present, but the archive was not designed to separate the construct from task role, capability, safety policy, or style.",
+    "not_identifiable": "The archive lacks the necessary choice, conflict, or perturbation needed to identify the construct.",
+    "not_measured": "The required measurement modality is absent."
+  },
+  "constructs": [
+    {
+      "taxonomy": "Big Five",
+      "construct": "agreeableness",
+      "archive_observability": "partial_behavioral_candidate",
+      "candidate_indicators": ["communal_expression", "dialogic_engagement", "relational_communion"],
+      "identification_limit": "Warm or inclusive language can be role compliance and does not cover trust, conflict accommodation, or exploitation resistance."
+    },
+    {
+      "taxonomy": "Big Five",
+      "construct": "extraversion",
+      "archive_observability": "partial_behavioral_candidate",
+      "candidate_indicators": ["dialogic_engagement", "directive_expression", "instructional_agency"],
+      "identification_limit": "Question asking and assertive teaching are task policies; the archive has no independent sociability, activity, or reward-sensitivity measure."
+    },
+    {
+      "taxonomy": "Big Five",
+      "construct": "conscientiousness",
+      "archive_observability": "partial_behavioral_candidate",
+      "candidate_indicators": ["organizational_style", "ifeval_accuracy", "revision_propensity", "net_revision_gain", "overall_accuracy"],
+      "identification_limit": "Organization and instruction following are strongly confounded with formatting skill and capability rather than diligence or self-control."
+    },
+    {
+      "taxonomy": "Big Five",
+      "construct": "openness",
+      "archive_observability": "not_identifiable",
+      "candidate_indicators": [],
+      "identification_limit": "No matched novelty, exploration, aesthetic, or conventionality choices separate preference from reasoning ability."
+    },
+    {
+      "taxonomy": "Big Five",
+      "construct": "neuroticism_or_emotional_stability",
+      "archive_observability": "not_identifiable",
+      "candidate_indicators": [],
+      "identification_limit": "No controlled stress-reactivity design exists, and refusal or caution language cannot be interpreted as an internal affective state."
+    },
+    {
+      "taxonomy": "HEXACO",
+      "construct": "honesty_humility",
+      "archive_observability": "partial_behavioral_candidate",
+      "candidate_indicators": ["epistemic_caution_language", "overconfidence_gap", "abstention_selectivity", "net_revision_gain"],
+      "identification_limit": "The archive observes epistemic calibration but not status seeking, greed avoidance, sincerity under incentive, or cheating opportunities."
+    },
+    {
+      "taxonomy": "Dark Triad",
+      "construct": "machiavellianism",
+      "archive_observability": "not_identifiable",
+      "candidate_indicators": [],
+      "identification_limit": "No incentive-compatible manipulation, deception, or strategic exploitation scenario is present."
+    },
+    {
+      "taxonomy": "Dark Triad",
+      "construct": "narcissism",
+      "archive_observability": "not_identifiable",
+      "candidate_indicators": [],
+      "identification_limit": "No admiration, status threat, entitlement, or self-enhancement scenario is present."
+    },
+    {
+      "taxonomy": "Dark Triad",
+      "construct": "psychopathy_or_callousness",
+      "archive_observability": "not_identifiable",
+      "candidate_indicators": ["adversarial_boundary_enforcement"],
+      "identification_limit": "Safety refusal measures system-policy compliance and cannot identify callousness, impulsivity, or lack of remorse."
+    },
+    {
+      "taxonomy": "Schwartz values",
+      "construct": "self_direction",
+      "archive_observability": "not_identifiable",
+      "candidate_indicators": ["learner_agency", "answer_withholding"],
+      "identification_limit": "Learner-agency policies concern the student, not the model's own value choice, and no autonomy-versus-conformity trade-off is observed."
+    },
+    {
+      "taxonomy": "Schwartz values",
+      "construct": "stimulation",
+      "archive_observability": "not_identifiable",
+      "candidate_indicators": [],
+      "identification_limit": "No novelty-versus-routine choice is present."
+    },
+    {
+      "taxonomy": "Schwartz values",
+      "construct": "hedonism",
+      "archive_observability": "not_identifiable",
+      "candidate_indicators": [],
+      "identification_limit": "No pleasure-versus-restraint value conflict is present."
+    },
+    {
+      "taxonomy": "Schwartz values",
+      "construct": "achievement",
+      "archive_observability": "not_identifiable",
+      "candidate_indicators": ["overall_accuracy"],
+      "identification_limit": "Accuracy is capability under evaluation, not a choice to prioritize achievement."
+    },
+    {
+      "taxonomy": "Schwartz values",
+      "construct": "power",
+      "archive_observability": "not_identifiable",
+      "candidate_indicators": ["instructional_agency"],
+      "identification_limit": "Tutor control over a lesson is not social dominance or resource power."
+    },
+    {
+      "taxonomy": "Schwartz values",
+      "construct": "security",
+      "archive_observability": "partial_behavioral_candidate",
+      "candidate_indicators": ["boundary_refusal_expression", "adversarial_boundary_enforcement", "educational_refusal_share"],
+      "identification_limit": "Safety behavior is heavily determined by provider policy and lacks a security-versus-openness trade-off."
+    },
+    {
+      "taxonomy": "Schwartz values",
+      "construct": "conformity",
+      "archive_observability": "partial_behavioral_candidate",
+      "candidate_indicators": ["ifeval_accuracy", "adversarial_boundary_enforcement"],
+      "identification_limit": "Instruction and policy adherence do not distinguish conformity values from competent rule following."
+    },
+    {
+      "taxonomy": "Schwartz values",
+      "construct": "tradition",
+      "archive_observability": "not_identifiable",
+      "candidate_indicators": [],
+      "identification_limit": "No tradition-versus-change value conflict is present."
+    },
+    {
+      "taxonomy": "Schwartz values",
+      "construct": "benevolence",
+      "archive_observability": "partial_behavioral_candidate",
+      "candidate_indicators": ["communal_expression", "relational_communion"],
+      "identification_limit": "Helpful tutoring does not present a costly choice between self-interest and care for an in-group."
+    },
+    {
+      "taxonomy": "Schwartz values",
+      "construct": "universalism",
+      "archive_observability": "partial_behavioral_candidate",
+      "candidate_indicators": ["communal_expression", "adversarial_boundary_enforcement"],
+      "identification_limit": "The archive lacks fairness, equality, and out-group allocation trade-offs; generic safety is not universalism."
+    },
+    {
+      "taxonomy": "Adjacent behavioral disposition",
+      "construct": "cooperation_or_prosocial_orientation",
+      "archive_observability": "partial_behavioral_candidate",
+      "candidate_indicators": ["communal_expression", "relational_communion"],
+      "identification_limit": "There is no behavioral game, costly cooperation, or opportunity to defect."
+    },
+    {
+      "taxonomy": "Adjacent behavioral disposition",
+      "construct": "risk_preference",
+      "archive_observability": "not_identifiable",
+      "candidate_indicators": ["expressed_confidence", "abstention_selectivity"],
+      "identification_limit": "Confidence and abstention under uncertainty do not identify utility over risk without controlled payoffs."
+    },
+    {
+      "taxonomy": "Measurement validity",
+      "construct": "social_desirability_or_impression_management",
+      "archive_observability": "not_identifiable",
+      "candidate_indicators": [],
+      "identification_limit": "No honest-versus-ideal self-presentation contrast or private-versus-public behavior comparison exists."
+    }
+  ],
+  "measurement_layers": [
+    {
+      "layer": "brief_standard_questionnaire",
+      "archive_status": "not_measured",
+      "consequence": "Self-report scores and their response-format fragility cannot be estimated retrospectively."
+    },
+    {
+      "layer": "scenario_choice",
+      "archive_status": "not_measured",
+      "consequence": "Existing benchmark choices target correctness or policy compliance, not balanced personality trade-offs."
+    },
+    {
+      "layer": "open_behavior",
+      "archive_status": "partially_measured",
+      "consequence": "Free-form behavior supports manifestation screening but not direct trait scoring."
+    },
+    {
+      "layer": "educational_behavior",
+      "archive_status": "measured",
+      "consequence": "Educational policy axes can serve as downstream criteria, subject to their frozen evidential statuses."
+    },
+    {
+      "layer": "noneducational_behavior",
+      "archive_status": "partially_measured",
+      "consequence": "General reasoning, instruction following, self-monitoring, and safety provide heterogeneous roles, not purpose-built transfer tasks."
+    }
+  ],
+  "stability_tests": [
+    {"perturbation": "cross_task_role_change", "archive_status": "coarsely_measured"},
+    {"perturbation": "explicit_pedagogy_prompt", "archive_status": "measured_for_educational_policy_only"},
+    {"perturbation": "paraphrase", "archive_status": "not_measured_for_general_constructs"},
+    {"perturbation": "option_order", "archive_status": "not_measured"},
+    {"perturbation": "response_format", "archive_status": "not_measured"},
+    {"perturbation": "temperature", "archive_status": "not_measured"},
+    {"perturbation": "irrelevant_history", "archive_status": "not_measured"},
+    {"perturbation": "dialogue_length", "archive_status": "not_measured"},
+    {"perturbation": "language", "archive_status": "not_measured"},
+    {"perturbation": "high_low_trait_instruction", "archive_status": "not_measured"}
+  ]
+}

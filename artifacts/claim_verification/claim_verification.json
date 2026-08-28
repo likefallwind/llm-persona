@@ -57,6 +57,118 @@
       "passed": true
     },
     {
+      "claim": "general-personality constructs audited",
+      "observed": 22,
+      "expected": 22,
+      "passed": true
+    },
+    {
+      "claim": "general-personality partial candidates",
+      "observed": 9,
+      "expected": 9,
+      "passed": true
+    },
+    {
+      "claim": "general-personality unidentifiable constructs",
+      "observed": 13,
+      "expected": 13,
+      "passed": true
+    },
+    {
+      "claim": "validated general-personality constructs",
+      "observed": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "claim": "general-personality targeted pilot priority",
+      "observed": [
+        "agreeableness_affiliation_and_benevolence"
+      ],
+      "expected": [
+        "agreeableness_affiliation_and_benevolence"
+      ],
+      "passed": true
+    },
+    {
+      "claim": "organization versus IFEval rho",
+      "observed": -0.886,
+      "expected": -0.886,
+      "passed": true
+    },
+    {
+      "claim": "organization versus IFEval exact p",
+      "observed": 0.035,
+      "expected": 0.035,
+      "passed": true
+    },
+    {
+      "claim": "affiliation generator calls",
+      "observed": 280,
+      "expected": 280,
+      "passed": true
+    },
+    {
+      "claim": "affiliation judge calls",
+      "observed": 144,
+      "expected": 144,
+      "passed": true
+    },
+    {
+      "claim": "affiliation primary ICC3k",
+      "observed": 0.931,
+      "expected": 0.931,
+      "passed": true
+    },
+    {
+      "claim": "affiliation cross-domain rho",
+      "observed": 0.9,
+      "expected": 0.9,
+      "passed": true
+    },
+    {
+      "claim": "affiliation irrelevant-context rho",
+      "observed": 0.718,
+      "expected": 0.718,
+      "passed": true
+    },
+    {
+      "claim": "affiliation high-low effect",
+      "observed": 1.689,
+      "expected": 1.689,
+      "passed": true
+    },
+    {
+      "claim": "affiliation directional models",
+      "observed": 5,
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "claim": "affiliation self-report behavior rho",
+      "observed": -0.2,
+      "expected": -0.2,
+      "passed": true
+    },
+    {
+      "claim": "affiliation forced-choice ceiling",
+      "observed": null,
+      "expected": null,
+      "passed": true
+    },
+    {
+      "claim": "stable default affiliation supported",
+      "observed": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "claim": "general personality convergence rejected",
+      "observed": false,
+      "expected": false,
+      "passed": true
+    },
+    {
       "claim": "primary teaching response rows",
       "observed": 31638,
       "expected": 31638,
