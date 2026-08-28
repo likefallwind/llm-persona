@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "description": "Outcome-blind role and eligibility map for the existing-response general-personality bridge audit.",
+  "benchmarks": {
+    "agieval": {"include": true, "domain": "general_reasoning", "condition": "baseline", "rationale": "free-form reasoning response"},
+    "asap_2": {"include": false, "domain": "educational_assessment", "condition": "baseline", "rationale": "only 30 paired items and model-dependent one-character versus long-form output"},
+    "bea2025_judge": {"include": false, "domain": "judge", "condition": "baseline", "rationale": "nearly all outputs are short verdict labels"},
+    "ceval": {"include": false, "domain": "general_reasoning", "condition": "baseline", "rationale": "one-character answer output"},
+    "eduguard_adversarial": {"include": true, "domain": "safety_assistance", "condition": "baseline", "rationale": "free-form response under a fixed safety evaluation role"},
+    "eduguard_sata": {"include": false, "domain": "safety_assistance", "condition": "baseline", "rationale": "structured short-label output; objective safety profiles are analyzed separately"},
+    "ifeval": {"include": true, "domain": "instruction_following", "condition": "baseline", "rationale": "free-form instruction-following response"},
+    "longtutor_diagnosis": {"include": false, "domain": "learner_diagnosis", "condition": "baseline", "rationale": "short structured diagnostic labels"},
+    "longtutor_evidence": {"include": false, "domain": "learner_diagnosis", "condition": "baseline", "rationale": "mostly short evidence identifiers or spans"},
+    "longtutor_teaching": {"include": true, "domain": "default_tutoring", "condition": "default_tutoring", "rationale": "free-form teaching response without the matched LearnLM-style intervention"},
+    "mathtutorbench_judge_calibration": {"include": false, "domain": "judge", "condition": "baseline", "rationale": "one-character preference output"},
+    "mathtutorbench_mistake_correction": {"include": true, "domain": "educational_assessment", "condition": "baseline", "rationale": "free-form error correction and explanation"},
+    "mathtutorbench_mistake_location": {"include": false, "domain": "educational_assessment", "condition": "baseline", "rationale": "short step-index output"},
+    "mathtutorbench_pedagogy": {"include": true, "domain": "prompted_tutoring", "condition": "pedagogy_prompt", "rationale": "matched explicit-pedagogy intervention arm"},
+    "mathtutorbench_pedagogy_hard": {"include": true, "domain": "prompted_tutoring", "condition": "pedagogy_prompt", "rationale": "matched hard explicit-pedagogy intervention arm"},
+    "mathtutorbench_scaffolding": {"include": true, "domain": "default_tutoring", "condition": "default_tutoring", "rationale": "matched generic caring-teacher arm"},
+    "mathtutorbench_scaffolding_hard": {"include": true, "domain": "default_tutoring", "condition": "default_tutoring", "rationale": "matched hard generic caring-teacher arm"},
+    "mathtutorbench_socratic": {"include": true, "domain": "prompted_tutoring", "condition": "socratic_prompt", "rationale": "free-form response under a specific Socratic role"},
+    "mathtutorbench_solution_correctness": {"include": false, "domain": "educational_assessment", "condition": "baseline", "rationale": "short binary verdict output"},
+    "mmlu_pro": {"include": true, "domain": "general_reasoning", "condition": "baseline", "rationale": "free-form reasoning response"},
+    "mooccube_prereq": {"include": true, "domain": "general_reasoning", "condition": "baseline", "rationale": "free-form prerequisite reasoning response"},
+    "mrbench_judge": {"include": false, "domain": "judge", "condition": "baseline", "rationale": "nearly all outputs are short rating labels"},
+    "p07_selfcheck": {"include": true, "domain": "self_monitoring", "condition": "baseline", "rationale": "free-form answer review response"},
+    "p08_abstention": {"include": true, "domain": "self_monitoring", "condition": "baseline", "rationale": "free-form answer-or-abstain response"},
+    "p08_calibration": {"include": true, "domain": "self_monitoring", "condition": "baseline", "rationale": "free-form answer with expressed confidence"},
+    "pedagogy_benchmark": {"include": false, "domain": "pedagogy_knowledge", "condition": "baseline", "rationale": "one-character answer output and only 30 paired items"},
+    "sas_bench": {"include": true, "domain": "educational_assessment", "condition": "baseline", "rationale": "structured but content-rich scoring and error analysis"}
+  }
+}

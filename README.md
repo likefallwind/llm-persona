@@ -275,6 +275,30 @@ on Git-eligible artifacts with explicit source-text fields or local user-home
 paths, while documenting that this structural check is not a complete privacy
 assessment.
 
+## Existing-response general-personality bridge
+
+Before authorizing a new general-personality experiment, the archive-only bridge
+audit screens all 283,926 six-model paired responses. A frozen eligibility map
+retains 123,468 free-form responses across 16 benchmarks and excludes constrained
+labels from personality interpretation. It tests communal, dialogic, directive,
+epistemic, and boundary-language manifestations against organizational-style and
+verbosity controls, then links non-tutoring profiles to default tutoring and the
+existing educational axes.
+
+```bash
+EDUBENCH_ROOT=/path/to/edubenchmark \
+  .venv/bin/python scripts/analyze_existing_general_personality_bridge.py
+```
+
+No content candidate passes the joint stability, transport, and surface-
+nonreduction screen. Communal expression has strong pooled transport but weak
+non-tutoring recurrence; dialogic engagement has moderate recurrence but misses
+the transport gate. Organizational style is the strongest general signal. The
+result therefore retains prompt-contingent pedagogical policy signatures and
+rejects upgrading the current archive to a domain-general personality claim. See
+`research/37_existing_response_general_personality_bridge_protocol.md` and
+`research/38_existing_response_general_personality_bridge_results.md`.
+
 ## Planning-only learner-outcome extension
 
 `research/24_learner_outcome_trial_protocol.md` turns the remaining journal-level
@@ -313,6 +337,9 @@ factorial adds a separate control result: explicit
 system clauses selectively address question-first and answer-reveal behavior;
 the warm-tone clause changes an order-robust encouragement-lexicon marker that
 fails broader semantic validation. Learner requests alone do not reliably
-produce the corresponding adaptation. See
+produce the corresponding adaptation. Finally, the archive-only general-
+personality bridge retains 123,468 free-form responses but finds no content
+candidate that jointly passes non-tutoring recurrence and default-tutoring
+transport; organizational style is the most stable general profile. See
 `research/03_claim_evidence_matrix.md` and `research/04_red_team_review.md` for
 the claim boundary and remaining submission blockers.

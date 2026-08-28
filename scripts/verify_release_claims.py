@@ -40,6 +40,31 @@ def main() -> None:
     check("core common benchmark-item IDs", common_items, 47321)
     check("core response count implied by paired panel", common_items * len(inventory["core_models"]), 283926)
 
+    bridge_dir = root / "artifacts/general_personality_bridge_v1"
+    bridge_decision = json.loads((bridge_dir / "decision.json").read_text())
+    check("general-personality bridge included responses", bridge_decision["corpus"]["included_paired_responses"], 123468)
+    check("general-personality bridge promising candidates", bridge_decision["promising_candidates"], [])
+    check(
+        "general-personality bridge verdict",
+        bridge_decision["verdict"],
+        "existing_archive_does_not_yet_support_general_personality_bridge",
+    )
+    bridge_stability = pd.read_csv(bridge_dir / "cross_task_stability.csv")
+    non_tutoring_bridge = bridge_stability[bridge_stability["pool"] == "non_tutoring"].set_index("axis")
+    check("general bridge organizational-style ICC", rounded(non_tutoring_bridge.loc["organizational_style", "icc3_1"]), 0.601)
+    check(
+        "general bridge organizational-style median task rho",
+        rounded(non_tutoring_bridge.loc["organizational_style", "median_pairwise_spearman"]),
+        0.771,
+    )
+    bridge_transport = pd.read_csv(bridge_dir / "cross_domain_transport.csv")
+    bridge_transport = bridge_transport[
+        (bridge_transport["left_pool"] == "non_tutoring")
+        & (bridge_transport["right_pool"] == "default_tutoring")
+    ].set_index("axis")
+    check("general bridge communal transport", rounded(bridge_transport.loc["communal_expression", "spearman"]), 0.829)
+    check("general bridge dialogic transport", rounded(bridge_transport.loc["dialogic_engagement", "spearman"]), 0.657)
+
     pilot = pd.read_csv(root / "artifacts/pilot/behavior_features.csv", dtype={"item_id": str}, low_memory=False)
     negative = pd.read_csv(root / "artifacts/negative_controls/behavior_features.csv", dtype={"item_id": str}, low_memory=False)
     extended = pd.read_csv(root / "artifacts/extended_panel/behavior_features.csv", dtype={"item_id": str}, low_memory=False)

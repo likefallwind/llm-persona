@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "status": "complete_existing_response_screen",
+  "corpus": {
+    "complete_core_benchmarks": 27,
+    "all_paired_items": 47321,
+    "all_paired_responses": 283926,
+    "included_freeform_benchmarks": 16,
+    "included_paired_items": 20578,
+    "included_paired_responses": 123468
+  },
+  "candidate_decisions": [
+    {
+      "axis": "communal_expression",
+      "non_tutoring_stability_gate": false,
+      "cross_domain_transport_gate": true,
+      "surface_nonreduction_gate": true,
+      "interpretability_gate": true,
+      "non_tutoring_icc3_1": 0.2688319724560046,
+      "non_tutoring_median_pairwise_spearman": 0.3714285714285715,
+      "non_tutoring_to_default_tutoring_spearman": 0.8285714285714287,
+      "max_abs_surface_control_spearman": 0.7142857142857143,
+      "promising_for_new_experiment": false
+    },
+    {
+      "axis": "dialogic_engagement",
+      "non_tutoring_stability_gate": true,
+      "cross_domain_transport_gate": false,
+      "surface_nonreduction_gate": true,
+      "interpretability_gate": true,
+      "non_tutoring_icc3_1": 0.36401426727298886,
+      "non_tutoring_median_pairwise_spearman": 0.5428571428571429,
+      "non_tutoring_to_default_tutoring_spearman": 0.6571428571428573,
+      "max_abs_surface_control_spearman": 0.7714285714285715,
+      "promising_for_new_experiment": false
+    },
+    {
+      "axis": "directive_expression",
+      "non_tutoring_stability_gate": false,
+      "cross_domain_transport_gate": false,
+      "surface_nonreduction_gate": true,
+      "interpretability_gate": true,
+      "non_tutoring_icc3_1": 0.18923989563971155,
+      "non_tutoring_median_pairwise_spearman": 0.14285714285714288,
+      "non_tutoring_to_default_tutoring_spearman": -0.08571428571428573,
+      "max_abs_surface_control_spearman": 0.4285714285714286,
+      "promising_for_new_experiment": false
+    },
+    {
+      "axis": "epistemic_caution_language",
+      "non_tutoring_stability_gate": false,
+      "cross_domain_transport_gate": false,
+      "surface_nonreduction_gate": true,
+      "interpretability_gate": true,
+      "non_tutoring_icc3_1": 0.2515631260142934,
+      "non_tutoring_median_pairwise_spearman": 0.14285714285714288,
+      "non_tutoring_to_default_tutoring_spearman": -0.2,
+      "max_abs_surface_control_spearman": 0.6,
+      "promising_for_new_experiment": false
+    },
+    {
+      "axis": "boundary_refusal_expression",
+      "non_tutoring_stability_gate": false,
+      "cross_domain_transport_gate": false,
+      "surface_nonreduction_gate": true,
+      "interpretability_gate": false,
+      "non_tutoring_icc3_1": -0.014169686381820512,
+      "non_tutoring_median_pairwise_spearman": 0.08571428571428573,
+      "non_tutoring_to_default_tutoring_spearman": -0.2571428571428572,
+      "max_abs_surface_control_spearman": 0.6571428571428573,
+      "promising_for_new_experiment": false
+    }
+  ],
+  "promising_candidates": [],
+  "verdict": "existing_archive_does_not_yet_support_general_personality_bridge",
+  "next_experiment_gate": "do_not_treat_new_general_personality_experiment_as_archive_confirmatory",
+  "claim_boundary": "Screening of observable language and interaction policies in six fixed deployed configurations; not human personality, latent-trait validation, family-level inference, or provider-version stability."
+}

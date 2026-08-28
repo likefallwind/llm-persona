@@ -87,6 +87,8 @@ cd "$REPO_ROOT"
   --inventory artifacts/inventory/corpus_inventory.json \
   --output-dir artifacts/longtutor_objective_validity
 
+"$PYTHON_BIN" scripts/analyze_existing_general_personality_bridge.py
+
 "$PYTHON_BIN" scripts/verify_release_claims.py \
   --root "$REPO_ROOT" \
   --output-dir artifacts/claim_verification

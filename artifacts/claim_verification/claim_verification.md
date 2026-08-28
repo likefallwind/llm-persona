@@ -6,6 +6,13 @@ Overall: **PASS**
 |---|---:|---:|:---:|
 | core common benchmark-item IDs | `47321` | `47321` | yes |
 | core response count implied by paired panel | `283926` | `283926` | yes |
+| general-personality bridge included responses | `123468` | `123468` | yes |
+| general-personality bridge promising candidates | `[]` | `[]` | yes |
+| general-personality bridge verdict | `existing_archive_does_not_yet_support_general_personality_bridge` | `existing_archive_does_not_yet_support_general_personality_bridge` | yes |
+| general bridge organizational-style ICC | `0.601` | `0.601` | yes |
+| general bridge organizational-style median task rho | `0.771` | `0.771` | yes |
+| general bridge communal transport | `0.829` | `0.829` | yes |
+| general bridge dialogic transport | `0.657` | `0.657` | yes |
 | primary teaching response rows | `31638` | `31638` | yes |
 | negative-control response rows | `57516` | `57516` | yes |
 | extended MathDial response rows | `26586` | `26586` | yes |

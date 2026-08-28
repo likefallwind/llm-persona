@@ -12,8 +12,12 @@ model-conditioned teaching actions measured in authentic educational responses.
 Across 31,638 paired responses from six models and six teaching arms, transparent
 policy features identify the model on held-out teaching families (0.242 accuracy
 versus 0.167 chance), but general tasks yield even stronger attribution.  This
-shows why generator fingerprinting alone is not construct validity.  In a
-nine-model, 26,586-response MathDial panel, the same explicit pedagogy instruction
+shows why generator fingerprinting alone is not construct validity.  In an
+archive-only screen of 123,468 free-form responses, organizational style is
+more stable across non-tutoring tasks than any candidate general-personality
+manifestation; no content candidate jointly passes recurrence and transport to
+default tutoring. Separately, in a nine-model, 26,586-response MathDial panel,
+the same explicit pedagogy instruction
 causes every model to ask more questions and produce shorter turns, while reducing
 cross-model policy dispersion to 0.763 of baseline (95% bootstrap CI [0.738,
 0.794]).  A conventional classifier trained on 18,541 existing human-labelled
@@ -166,6 +170,12 @@ responses.  Four generic negative-control families yield 57,516 responses.  A
 nine-model MathDial panel adds Doubao-Seed-2.0-Lite, DeepSeek-V4-Flash, and
 Qwen3.8-27B for 26,586 responses.
 
+The broader inventory contains 47,321 items answered successfully by all six
+core models, or 283,926 paired responses across 27 benchmarks. A later frozen
+archive screen retains 123,468 free-form responses across 16 benchmarks for a
+domain-general personality bridge audit; short labels and constrained outputs
+remain coverage evidence but are excluded from personality interpretation.
+
 We pin the prediction and summary files for 84 relevant core-panel runs by
 SHA-256.  This permits byte-defined analysis reproduction.  The archive does not
 support exact provider-response regeneration: temperature is present for 22/84
@@ -281,6 +291,19 @@ samples 480 responses by hash without detector values or factor cells. Three
 blinded judges label 48 batches; validation requires coverage >=0.95, balanced
 accuracy >=0.90 with bootstrap lower bound >=0.80, and Cohen's kappa >=0.70.
 Failure restricts the claim to the detector's literal definition.
+
+### 4.8 Archive-only general-personality bridge
+
+Before authorizing a new general-personality experiment, we freeze five
+transparent candidate manifestations—communal expression, dialogic engagement,
+directive expression, epistemic-caution language, and boundary/refusal
+expression—plus organizational-style and verbosity controls. Responses are
+centered within exact item across models and standardized within benchmark.
+Profiles are compared across non-tutoring roles, default tutoring, and prompted
+tutoring, then linked to the closest existing educational axes. A candidate is
+only a promising experimental target if it recurs across non-tutoring tasks,
+transports to default tutoring, and is not reducible to the two surface controls.
+This is a construct screen, not a Big Five or HEXACO measurement.
 
 ## 5 Results
 
@@ -494,6 +517,25 @@ corresponding default model ranges. Thus actionability is highly steerable while
 failing as a stable model axis. This is direct evidence that prompt response and
 model character are different estimands.
 
+### 5.10 The existing archive does not establish general personality
+
+No content manifestation passes the frozen archive bridge. Communal expression
+transports strongly from non-tutoring roles to default tutoring (rho=0.829), but
+its non-tutoring recurrence is weak (ICC=0.269; median task rho=0.371).
+Dialogic engagement has moderate task recurrence (median rho=0.543) but misses
+the transport gate (rho=0.657). Directive, epistemic-caution, and boundary
+language fail both parts. By contrast, organizational style is the strongest
+non-tutoring profile (ICC=0.601; median rho=0.771), and verbosity transports to
+default tutoring at rho=0.771.
+
+The two interpersonal candidates give localized but insufficient convergence:
+communal expression correlates 0.771 with relational communion, while dialogic
+engagement correlates -0.486 with instructional agency and -0.543 with
+assistance directness. None survives the full gate or multiple-testing
+correction. The archive therefore supports portable generator style plus
+domain-specific educational policy, not a validated domain-general personality
+expressed in teaching.
+
 ## 6 Discussion
 
 The results favor a prompt-contingent policy response surface rather than model
@@ -512,6 +554,15 @@ theory-grounded audit reaches the same boundary from a different direction:
 communion is largely warmth under a new label, actionability is a shared prompt
 response rather than a stable ordering, and agency remains exploratory under
 the binding pilot rule.
+
+The archive-only general-personality screen independently reaches the same
+boundary. Its nearest positive signal is an interpersonal affiliation/engagement
+cluster, but the most stable cross-role properties are formatting and verbosity.
+Large response count reduces item sampling uncertainty; it does not turn six
+model configurations into a latent-personality population or make arbitrary
+tasks valid personality instruments. A purpose-built general-personality study
+would therefore be new construct identification rather than confirmation of a
+positive archive result.
 
 This decomposition changes system design.  A product should not choose one
 globally “good tutor persona.”  It should estimate the learner state, select an
@@ -563,7 +614,10 @@ payload.
 
 AI tutors in this finite panel exhibit stable and causally steerable pedagogical
 policy signatures.  These signatures are neither reducible to length nor
-equivalent to human personality. A shared prompt can dominate default cross-model
+equivalent to human or domain-general personality. An archive-only screen of
+123,468 free-form responses finds partial interpersonal continuity but no
+content candidate that jointly survives non-tutoring recurrence and educational
+transport; organizational style is more stable. A shared prompt can dominate default cross-model
 differences without erasing model-specific elasticity. Their consequences are conditional: a shared
 prompt can improve average agreement while suppressing appropriate telling, and
 an adaptive-sounding response can coexist with weak objective learner diagnosis.

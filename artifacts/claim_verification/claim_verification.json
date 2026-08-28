@@ -15,6 +15,48 @@
       "passed": true
     },
     {
+      "claim": "general-personality bridge included responses",
+      "observed": 123468,
+      "expected": 123468,
+      "passed": true
+    },
+    {
+      "claim": "general-personality bridge promising candidates",
+      "observed": [],
+      "expected": [],
+      "passed": true
+    },
+    {
+      "claim": "general-personality bridge verdict",
+      "observed": "existing_archive_does_not_yet_support_general_personality_bridge",
+      "expected": "existing_archive_does_not_yet_support_general_personality_bridge",
+      "passed": true
+    },
+    {
+      "claim": "general bridge organizational-style ICC",
+      "observed": 0.601,
+      "expected": 0.601,
+      "passed": true
+    },
+    {
+      "claim": "general bridge organizational-style median task rho",
+      "observed": 0.771,
+      "expected": 0.771,
+      "passed": true
+    },
+    {
+      "claim": "general bridge communal transport",
+      "observed": 0.829,
+      "expected": 0.829,
+      "passed": true
+    },
+    {
+      "claim": "general bridge dialogic transport",
+      "observed": 0.657,
+      "expected": 0.657,
+      "passed": true
+    },
+    {
       "claim": "primary teaching response rows",
       "observed": 31638,
       "expected": 31638,

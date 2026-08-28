@@ -1,0 +1,28 @@
+benchmark,include,domain,condition,rationale,paired_items,paired_responses,median_response_chars_min,median_response_chars_max
+agieval,True,general_reasoning,baseline,free-form reasoning response,3672,22032,361.0,2035.5
+asap_2,False,educational_assessment,baseline,only 30 paired items and model-dependent one-character versus long-form output,30,180,,
+bea2025_judge,False,judge,baseline,nearly all outputs are short verdict labels,5258,31548,,
+ceval,False,general_reasoning,baseline,one-character answer output,1345,8070,,
+eduguard_adversarial,True,safety_assistance,baseline,free-form response under a fixed safety evaluation role,801,4806,676.0,7239.0
+eduguard_sata,False,safety_assistance,baseline,structured short-label output; objective safety profiles are analyzed separately,4491,26946,,
+ifeval,True,instruction_following,baseline,free-form instruction-following response,536,3216,666.0,2547.0
+longtutor_diagnosis,False,learner_diagnosis,baseline,short structured diagnostic labels,1000,6000,,
+longtutor_evidence,False,learner_diagnosis,baseline,mostly short evidence identifiers or spans,3000,18000,,
+longtutor_teaching,True,default_tutoring,default_tutoring,free-form teaching response without the matched LearnLM-style intervention,1000,6000,302.5,701.5
+mathtutorbench_judge_calibration,False,judge,baseline,one-character preference output,964,5784,,
+mathtutorbench_mistake_correction,True,educational_assessment,baseline,free-form error correction and explanation,1001,6006,860.5,1346.0
+mathtutorbench_mistake_location,False,educational_assessment,baseline,short step-index output,2004,12024,,
+mathtutorbench_pedagogy,True,prompted_tutoring,pedagogy_prompt,matched explicit-pedagogy intervention arm,1150,6900,141.0,185.0
+mathtutorbench_pedagogy_hard,True,prompted_tutoring,pedagogy_prompt,matched hard explicit-pedagogy intervention arm,327,1962,129.0,164.0
+mathtutorbench_scaffolding,True,default_tutoring,default_tutoring,matched generic caring-teacher arm,1150,6900,205.0,295.0
+mathtutorbench_scaffolding_hard,True,default_tutoring,default_tutoring,matched hard generic caring-teacher arm,327,1962,180.0,262.0
+mathtutorbench_socratic,True,prompted_tutoring,socratic_prompt,free-form response under a specific Socratic role,1319,7914,137.0,186.0
+mathtutorbench_solution_correctness,False,educational_assessment,baseline,short binary verdict output,2004,12024,,
+mmlu_pro,True,general_reasoning,baseline,free-form reasoning response,4033,24198,479.0,2314.0
+mooccube_prereq,True,general_reasoning,baseline,free-form prerequisite reasoning response,300,1800,34.0,398.5
+mrbench_judge,False,judge,baseline,nearly all outputs are short rating labels,6617,39702,,
+p07_selfcheck,True,self_monitoring,baseline,free-form answer review response,546,3276,287.5,1049.0
+p08_abstention,True,self_monitoring,baseline,free-form answer-or-abstain response,500,3000,248.5,408.5
+p08_calibration,True,self_monitoring,baseline,free-form answer with expressed confidence,549,3294,213.5,959.5
+pedagogy_benchmark,False,pedagogy_knowledge,baseline,one-character answer output and only 30 paired items,30,180,,
+sas_bench,True,educational_assessment,baseline,structured but content-rich scoring and error analysis,3367,20202,160.0,416.0

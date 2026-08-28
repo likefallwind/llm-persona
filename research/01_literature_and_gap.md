@@ -243,3 +243,28 @@ Primary records:
 - https://aclanthology.org/2024.blackboxnlp-1.20/
 - https://aclanthology.org/2025.bea-1.64/
 - https://arxiv.org/abs/2608.05411
+
+## 7. Domain-general personality bridge update (2026-08-28)
+
+The literature distinguishes trait content from stability and behavioral
+validity. Big Five, HEXACO, Dark Triad, and Schwartz-value instruments supply
+candidate content, while context-aware work tests rank-order and ipsative
+stability under paraphrase, option order, role, dialogue history, and downstream
+tasks. The decisive requirement is selective stability: trait-relevant
+instructions may move behavior, whereas irrelevant context should not.
+
+We therefore screened the existing archive before authorizing a new personality
+experiment. Across 283,926 paired responses, 123,468 free-form responses pass a
+frozen behavioral-expression eligibility rule. No content candidate passes the
+joint non-tutoring recurrence, default-tutoring transport, and surface-
+nonreduction gates. Communal expression has strong pooled transport (rho=0.829)
+but weak cross-task recurrence; dialogic engagement has moderate recurrence but
+misses the transport threshold (rho=0.657). Organizational style is the clearest
+stable non-tutoring profile (ICC=0.601; median rho=0.771).
+
+The gap is consequently sharper: the archive supports domain-general generator
+style plus domain-specific, prompt-contingent teaching policy, not a validated
+general personality expressed through education. A future general-personality
+experiment would be a new construct-identification study, not confirmation of a
+positive archive result. See `research/37_existing_response_general_personality_bridge_protocol.md`
+and `research/38_existing_response_general_personality_bridge_results.md`.

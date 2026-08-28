@@ -91,6 +91,8 @@ cd "$ROOT"
   --semantic-prompt artifacts/prompt_contingent_signatures_v1/model_semantic_elasticity.csv \
   --output-dir artifacts/educational_character_framework_v1
 
+"$PY" scripts/analyze_existing_general_personality_bridge.py
+
 "$PY" scripts/factorial_prompt_status.py --require-complete
 
 "$PY" scripts/analyze_factorial_prompt_panel.py \
@@ -191,6 +193,7 @@ cd "$ROOT"
     artifacts/epistemic_character_axes_v1 \
     artifacts/normative_boundary_axes_v1 \
     artifacts/educational_character_framework_v1 \
+    artifacts/general_personality_bridge_v1 \
     artifacts/factorial_prompt_v1 \
     artifacts/factorial_analysis_v1 \
     artifacts/factorial_order_replication_v1 \

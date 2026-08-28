@@ -1,6 +1,6 @@
 # Novelty positioning against the closest work
 
-Snapshot: 2026-08-20.
+Snapshot: 2026-08-28.
 
 | Work | Primary object | Naturally generated task behavior | Same-model cross-task test | Generic-fingerprint control | Paired causal steering | Independent behavioral / gold criterion |
 |---|---|---:|---:|---:|---:|---:|
@@ -25,7 +25,7 @@ Snapshot: 2026-08-20.
 | Strategize Before Teaching (Findings EACL 2023) | Joint strategy prediction and tutor-response generation | Tutoring corpora | Three dialogue datasets | No | Learned joint selector/generator | Tutor-strategy labels |
 | Tutor CoPilot (arXiv 2025 revision) | Human-selected expert strategy → LM guidance | Yes: live tutoring | Live K--12 platform | Not applicable | Human selects from strategy options | Preregistered learner mastery outcome |
 | SLOW (arXiv 2026) | Learner-state reasoning → action selection | Simulated/evaluated tutoring | Within framework | No | Modular workspace and selector | Hybrid human--AI judgments |
-| **This study** | Model-conditioned pedagogical policy signatures | **Yes: 31,638 paired teaching responses plus 4,320 prospective action-control responses** | **Yes: held-out teaching families** | **Yes: 57,516 non-tutoring responses** | **Yes: identical MathDial contexts, concurrent baselines** | **Existing human actions, expert preference calibration, human-gold diagnosis** |
+| **This study** | Model-conditioned pedagogical policy signatures | **Yes: 31,638 paired teaching responses plus 4,320 prospective action-control responses; 123,468-response archive personality screen** | **Yes: held-out teaching and non-tutoring task families** | **Yes: 57,516 primary negative controls plus a 16-benchmark bridge audit** | **Yes: identical MathDial contexts, concurrent baselines** | **Existing human actions, expert preference calibration, human-gold diagnosis** |
 
 ## The actual novelty claim
 
@@ -40,7 +40,10 @@ default model behavior:
 4. test whether an aggregate improvement hides action-specific harm;
 5. audit evaluator competence, position, and candidate-family overlap; and
 6. require convergence with existing human actions and human-gold diagnosis
-   rather than LLM-judge agreement alone.
+   rather than LLM-judge agreement alone; and
+7. screen the broader response archive before authorizing a general-personality
+   experiment, rejecting the bridge when content recurrence is weaker than
+   formatting recurrence.
 
 This package is stronger than a “models have personalities” paper because its
 negative controls can falsify the disposition interpretation.  It is also
@@ -109,3 +112,10 @@ a binding pilot failure. The novelty is consequently a falsifiable dimensional
 audit showing *which* educational differences behave like defaults, prompt
 responses, redundant labels, or unsupported adaptation—not a broader catalogue
 of anthropomorphic traits.
+
+The archive-only general-personality bridge sharpens this positioning. It does
+not claim a new psychometric instrument. Its value is a large behavioral
+falsifier: among 123,468 eligible free-form responses, organizational style is
+more stable across non-tutoring tasks than communal, dialogic, directive,
+epistemic-caution, or boundary-language candidates. The near-miss interpersonal
+cluster is a future hypothesis, not an additional contribution claim.

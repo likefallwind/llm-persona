@@ -1,6 +1,6 @@
 # Reproducibility, privacy, and release ledger
 
-Snapshot: 2026-08-26.
+Snapshot: 2026-08-28.
 
 ## Provenance boundaries
 
@@ -11,6 +11,7 @@ Snapshot: 2026-08-26.
 | LongTutor histories | Existing prepared LongTutor checkout | IDs and derived scores only | Do not redistribute raw text until an explicit upstream license is established |
 | External semantic coding | 360 sampled contexts × six candidate responses, sent to MiniMax official and the configured GLM/DeepSeek gateway | Blind mappings, response hashes, ratings, raw rating JSON, usage, and errors; prompts/source text are not copied | Release derived annotations and hashes; withhold source text |
 | Theory-grounded character confirmation | Pair-preserving public/synthetic MathTutorBench split scored by GLM-5.2, DeepSeek-V4-Pro, Doubao-Seed-2.0-Lite, and MiniMax-M2.7 through one local Gateway | Frozen manifest, payload audit, blind mappings, hashes, ratings, and aggregate tables; no source text in derived outputs | Release manifests and aggregate/hash-only tables; keep raw judge JSON local and disclose the single-route limitation |
+| Existing-response general-personality bridge | 283,926 paired archived responses; 123,468 free-form responses pass the frozen eligibility map | Aggregate benchmark/domain/model profiles, stability and transport tables, no prompts or response text | Release protocol, eligibility map, code, aggregate artifacts, and negative decision; no new external transfer occurred |
 | Local semantic smoke | Small Ollama runs | Derived smoke report | Not primary evidence; paused pending stronger server |
 
 No new human annotation was collected.  Existing expert preferences and human

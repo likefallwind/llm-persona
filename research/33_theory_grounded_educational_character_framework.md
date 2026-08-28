@@ -268,6 +268,15 @@ learner-evidence interventions, or matched epistemic prompts—not another attem
 to rescue these axes. Learning outcomes remain a separate validation layer
 rather than a personality score.
 
+The later archive-only general-personality bridge audit preserves this stopping
+rule. It does not add or rescue an educational axis. Across 123,468 eligible
+free-form responses, no general behavioral manifestation passes joint non-
+tutoring recurrence and default-tutoring transport gates; organizational style
+is more stable than the content candidates. Communal expression and dialogic
+engagement form a localized future hypothesis, but do not change the six-axis
+educational framework or its evidential statuses. See
+`research/38_existing_response_general_personality_bridge_results.md`.
+
 ## Claim boundary
 
 The framework describes observed educational character in the behaviorist sense:

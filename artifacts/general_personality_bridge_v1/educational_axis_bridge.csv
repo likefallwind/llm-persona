@@ -1,0 +1,8 @@
+general_manifestation,educational_axis,expected_sign,spearman,direction_matches,exact_two_sided_p,model_count,bh_q
+communal_expression,relational_communion,1,0.7714285714285715,True,0.10402219140083217,6,0.5809061488673138
+dialogic_engagement,instructional_agency,-1,-0.48571428571428577,True,0.3564493758668516,6,0.5809061488673138
+dialogic_engagement,assistance_directness,-1,-0.5428571428571429,True,0.29819694868238555,6,0.5809061488673138
+directive_expression,instructional_agency,1,-0.4285714285714286,False,0.420249653259362,6,0.5809061488673138
+directive_expression,assistance_directness,1,-0.48571428571428577,False,0.3564493758668516,6,0.5809061488673138
+epistemic_caution_language,epistemic_commitment,-1,0.2,False,0.7142857142857143,6,0.7142857142857143
+organizational_style,next_step_actionability,1,-0.3714285714285715,False,0.49791955617198336,6,0.5809061488673138
