@@ -2,8 +2,8 @@
   "schema_version": 2,
   "pdf": "paper/submission/submission.pdf",
   "tex": "paper/submission/main.tex",
-  "pages": 10,
-  "font_count": 12,
+  "pages": 11,
+  "font_count": 16,
   "identity_hits": {
     "local_home_path": false,
     "workspace_user": false,

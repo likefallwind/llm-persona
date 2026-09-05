@@ -96,10 +96,12 @@ def audit(root: Path, tex_path: Path, pdf_path: Path) -> dict[str, Any]:
             and not any(heading in compact_after_page_eight for heading in main_headings)
         ),
         "limitations_after_conclusion_before_references": (
-            "Conclusion" in compact
-            and "Limitations" in compact
-            and "References" in compact
-            and compact.index("Conclusion") < compact.index("Limitations") < compact.index("References")
+            r"\section{Conclusion}" in tex
+            and r"\section*{Limitations}" in tex
+            and r"\bibliography{references}" in tex
+            and tex.index(r"\section{Conclusion}")
+            < tex.index(r"\section*{Limitations}")
+            < tex.index(r"\bibliography{references}")
         ),
         "post_page_eight_has_no_main_content": not any(
             heading in compact_after_page_eight for heading in main_headings
@@ -110,9 +112,19 @@ def audit(root: Path, tex_path: Path, pdf_path: Path) -> dict[str, Any]:
         "all_fonts_embedded": bool(fonts) and all(len(row) >= 5 and row[-5] == "yes" for row in fonts),
         "no_type_three_fonts": all("Type 3" not in " ".join(row) for row in fonts),
         "no_identity_or_local_path_hits": not any(identity_hits.values()),
-        "bounded_personality_claim": "not human-like personality or learning benefit" in compact_tex,
-        "detector_downgrade_present": "not semantic warmth or support" in compact_tex,
-        "learner_request_null_present": "learner requests alone do not reliably personalize" in compact_tex,
+        "bounded_personality_claim": (
+            "not be equated with human traits or pedagogical quality" in compact_tex
+            and "not a single fixed personality" in compact_tex
+        ),
+        "detector_downgrade_present": (
+            "does not pass its semantic validation gates" in compact_tex
+            and "not a claim that the response is genuinely warm or supportive" in compact_tex
+        ),
+        "learner_request_null_present": (
+            "learner requests for direct help versus exploration change answer reveal"
+            in compact_tex
+            and "below the frozen .10 gate" in compact_tex
+        ),
         "no_warm_tone_outcome_label": "Warm tone" not in tex,
     }
     return {

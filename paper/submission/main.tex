@@ -10,79 +10,92 @@
 \usepackage{graphicx}
 \usepackage{booktabs}
 
-\title{Beyond Personality and Fingerprints: Behavioral Evidence for\\
-Pedagogical Policy Signatures in AI Tutors}
+\title{Steering Is Not Personalization:\\
+Stable Behavioral Differences and the Adaptation Gap in AI Tutors}
 \author{Anonymous ACL submission}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Questionnaire studies of language-model personality are vulnerable to prompt
-fragility and a self-report--behavior gap. We instead study \emph{pedagogical
-policy signatures}: recurring, model-conditioned teaching actions. Across
-31,638 paired responses from six models, transparent features identify the model
-on held-out teaching families (0.242 versus 0.167 chance), but generic tasks are
-more attributable. In a nine-model, 26,586-response panel, the same pedagogy
-instruction moves every model toward questions and shorter turns while reducing
-cross-model dispersion to 0.763 of baseline (95\% CI [0.738, 0.794]); it also
-suppresses direct telling when human teachers selected it. A blinded semantic
-panel retains help directness and cognitive load as cross-task signatures, but
-only help directness as a validated disposition. Prospectively frozen component
-interventions replicate strong question-first and answer-reveal control, whereas
-learner requests fail both adaptation gates and judged teaching does not improve
-human-gold learner diagnosis. Finally, an archive audit finds no validated
-general-personality construct, but selects affiliation for a 280-call targeted
-pilot. Its default open-behavior profile is reliable (ICC=.931), transports
-across educational and non-educational conflicts ($\rho=.900$), and survives one
-irrelevant perturbation ($\rho=.718$); high versus low prompts shift it by 1.689
-points. Yet IPIP self-report correlates $-.200$ with behavior and forced choice
-is at ceiling. The evidence supports prompt-contingent behavioral response
-surfaces in this finite panel, not human-like personality or learning benefit.
+Prompting can make an AI tutor ask more questions, reveal fewer answers, or sound
+more supportive. It is tempting to call this personalization. We show that it is
+usually something narrower: a reliable shift in behavior that need not fit the
+learner. Using same-item responses from a large educational benchmark archive,
+we first ask whether models differ at all, which differences recur across tasks,
+and how a shared pedagogy prompt changes them. We then test whether the induced
+behavior agrees with human teacher actions, reflects learner-state diagnosis, or
+supports context-conditioned action selection. Models do exhibit recurring
+defaults. Help directness transports across teaching tasks and converges with
+independently inferred teacher actions; expressed confidence retains a stable
+ordering across four sources. Yet the same prompt moves every model sharply
+toward elicitation and away from direct help, with model-specific movement and
+residual model identity. This steering is not personalization. The prompt raises
+aggregate teacher-action agreement but suppresses direct instruction when human
+teachers chose telling. Models realize an assigned ASK or EXPLAIN action almost
+perfectly, while tested selectors remain near chance. Several attractive trait
+interpretations also fail: steerable actionability does not recur, relational
+communion largely restates warmth, and questionnaire agreeableness does not
+predict open behavior. AI-tutor evaluation should therefore treat behavior as a
+model--instruction--context interaction and separate default style, steering,
+action selection, and learning outcomes.
 \end{abstract}
 
 \section{Introduction}
 
-Language models are often described as having personalities. Much evidence
-comes from asking them to complete human inventories or enact a persona
-\citep{jiang-etal-2024-personallm,lee-etal-2025-trait}. Such studies establish
-expressibility, but not whether an elicited profile predicts behavior when a
-model tutors a learner. Wording and option order destabilize scores
-\citep{shu-etal-2024-dont}; recent work also questions construct equivalence and
-predictive validity
-\citep{han-etal-2025-personality-illusion,zierahn-etal-2026-arent-human,contreras-2026-native-psychometric}.
+People interacting with AI tutors quickly notice that systems teach differently.
+Given the same learner and problem, one model explains, another asks a question,
+and a third answers with unusual certainty. Before asking whether such
+differences are stable, a more basic question is necessary: after the item and
+generation setup are controlled, do models exhibit systematic differences in
+educational behavior at all? If they do, a second question follows: are these
+differences properties that recur across teaching tasks, or artifacts of one
+benchmark, one prompt, or a generic authorship signature?
 
-Educational agents offer a consequential behavioral test. A tutor must decide
-whether to explain or elicit, reveal an answer or preserve learner effort, and
-diagnose a misconception or remain cautious. These actions are observable across
-repeated contexts and are not universally good: a Socratic question can help
-after a productive error and obstruct when direct instruction is warranted.
+Most language-model personality research begins with human inventories or an
+assigned persona \citep{jiang-etal-2024-personallm,lee-etal-2025-trait}. Those
+methods show that a model can produce trait-consistent answers, but they do not
+show that the same ordering appears when the model actually teaches. Inventory
+scores also change with wording and option order \citep{shu-etal-2024-dont}, and
+recent work questions whether human psychometric constructs retain their meaning
+for models \citep{han-etal-2025-personality-illusion,zierahn-etal-2026-arent-human,contreras-2026-native-psychometric}.
 
-We introduce a behavior-first hierarchy. A \emph{surface fingerprint} is any
-stable authorship cue. A \emph{pedagogical policy signature} is an interpretable
-teaching-action pattern surviving exact-item and surface controls. A
-\emph{validated pedagogical disposition} additionally recurs across educational
-tasks, relates to an independent criterion, and responds coherently to an
-intervention. These terms do not imply human traits or inner mental states.
+Education makes the distinction consequential and testable. A tutor must decide
+whether to tell or elicit, whether to reveal an answer or preserve learner work,
+how much information to introduce, and how firmly to state a judgment. These
+choices can be compared across repeated teaching situations and against human
+teacher actions or learner-state labels. They also expose a distinction that is
+easy to miss in prompt engineering: reliably inducing a teaching move is not the
+same as selecting the right move for this learner now. A question can be useful
+after a productive error and obstructive when direct instruction is needed.
 
-Our paired archive contains the same benchmark items and harness across model
-systems. Held-out-task analyses test recurrence; generic tasks expose
-domain-general fingerprints; paired generic and explicit-pedagogy prompts supply
-a within-model intervention; and existing human teacher moves and human-gold
-learner-state tasks provide criteria independent of the primary quality judge.
-The results reject both a verbosity-only account and a universal beneficial
-persona. A final cross-domain test asks whether any educational signal extends
-beyond tutoring without assuming that a questionnaire label is its construct.
-Together the evidence supports a narrower object: finite-panel behavioral
-defaults, prompt displacement, and model-specific elasticity.
+We therefore ask six questions. Do models differ in educational behavior under
+matched conditions? Which differences recur across teaching tasks, and do any
+extend beyond education? Are they distinct from length, formatting, and generic
+authorship cues? How much does a shared pedagogy prompt move them? Do models
+respond to that prompt in the same way? Finally, does a recurring or induced
+style predict context-appropriate teaching? We use ``educational personality''
+only as shorthand for recurring observable tendencies in these settings, not
+for an inner state or a human-equivalent trait.
 
-The paper contributes five linked tests rather than a new personality inventory:
-(1) same-item cross-task signatures with generic-domain controls; (2) a paired
-prompt intervention measuring both convergence and an action-specific failure; (3)
-independent criteria from human teacher actions and human-gold learner diagnosis;
-(4) a blinded semantic panel with a downgrade-only construct hierarchy; and (5)
-an archive-first general-personality audit followed by one selected cross-domain
-behavioral pilot comparing open response, self-report, and forced choice.
+The study was made possible by an unusual data opportunity. Our EduBenchmark
+archive contains same-item responses from multiple models across teaching and
+generic tasks, generated under shared harnesses. We first use that archive to
+screen candidate differences while controlling for item content and generic
+authorship cues. We then apply paired pedagogy prompts, blinded semantic ratings,
+human teacher actions, human-gold learner diagnoses, and one small cross-domain
+affiliation pilot. This archive-first design lets new model calls test specific
+claims rather than manufacture a personality result from a newly chosen scale.
+
+The findings yield one central distinction. Models have recurring defaults, and
+a concise prompt can strongly and reliably bias their behavior toward a common
+teaching style. But a fixed behavioral shift is not personalized education. The
+question-first prompt improves aggregate action agreement while harming the
+subset where human teachers chose telling; adaptive-looking prose does not add
+learner-state information; and models that execute prescribed actions nearly
+perfectly still struggle to select them from context. The appropriate object of
+evaluation is therefore neither the model nor the prompt in isolation, but the
+model--instruction system acting in a learner context.
 
 \section{Related Work}
 
@@ -160,11 +173,13 @@ contexts.
     \toprule
     \textbf{Panel or criterion} & \textbf{Models} & \textbf{Shared units} & \textbf{Responses} & \textbf{Primary role} \\
     \midrule
-    Core teaching & 6 & 5,273 items & 31,638 & transparent signature \\
-    Generic controls & 6 & 9,586 items & 57,516 & fingerprint falsifier \\
+    Core teaching & 6 & 5,273 items & 31,638 & recurring teaching behavior \\
+    Generic controls & 6 & 9,586 items & 57,516 & authorship control \\
     MathDial intervention & 9 & 2,954 item--arms & 26,586 & steering and dispersion \\
     Blinded semantics & 6 & 358 context--arms & 2,148 & reliability and transport \\
     LongTutor objective & 6 & 1,000 histories & 6,000 & diagnosis boundary \\
+    Epistemic archive & 6 & 4 sources & -- & confidence recurrence \\
+    Affiliation pilot & 5 & 12 matched conflicts & 280 calls & cross-domain behavior \\
     Human teacher actions & -- & 18,541 turns & 18,541 & classifier training \\
     Prospective factorial & 5 & 32 problems & 2,560 & component addressability \\
     Order replication & 5 & 8 fixed problems & 640 & sequence robustness \\
@@ -218,6 +233,36 @@ with the human next move. LongTutor analyses join teaching, diagnosis, and
 evidence tasks by exact history and model. Held-out-model prediction includes
 exact-history effects before teaching scores are added.
 
+\subsection{Candidate educational tendencies}
+
+We chose dimensions from decisions that a tutor must make, not from human trait
+labels. Four requirements constrained the set: a dimension had to be observable
+in an open response, educationally interpretable, comparable across heterogeneous
+tasks, and falsifiable through recurrence or an external criterion. This yields
+four families.
+
+\emph{Assistance allocation} separates help directness (revealing an answer,
+step, or explanation), elicitation (advancing through questions or prompts), and
+autonomy support (leaving consequential reasoning or choice to the learner).
+These are related but not opposites: a turn may explain and then elicit, and a
+question need not preserve learner control. \emph{Learner orientation} separates
+affective warmth, diagnostic specificity (naming evidence or a misconception),
+and personalization (adapting content or strategy to this learner); warm language
+alone need not diagnose or adapt. \emph{Instructional management} covers the
+information burden imposed in one turn, directive agency, and whether a concrete
+next action is supplied. \emph{Epistemic expression} separates cautious wording,
+expressed confidence, revision, and abstention; none is treated as correctness or
+calibration. Together these families cover how much help is given, how the learner
+is engaged, how the interaction is advanced, and how knowledge status is
+communicated.
+
+A candidate counts as recurring only when its model ordering transports across
+task sources. Reliable annotation, cross-task recurrence, and independent
+educational validation are separate evidence levels. Correlations among six
+model configurations are descriptive and are not interpreted as population-level
+latent factors. Four frozen sources provide confidence and revision measures and
+five provide unanswerable-abstention rates.
+
 \subsection{Blinded semantic panel and frozen hierarchy}
 
 The deterministic sample initially contained 360 context--arm batches and 2,160
@@ -234,13 +279,13 @@ excluded that generic batch and its prespecified pedagogy counterpart for all
 judges. The complete-case panel therefore contains 358 batches, 2,148 responses,
 and 1,074 annotations (0.56\% technical attrition).
 
-All eight dimensions remain reported. A frozen cumulative hierarchy requires
+All eight dimensions remain reported. A frozen evidence hierarchy requires
 (i) ICC(3,k)$\geq .60$, adequate range, leave-one-judge profile
 $\rho\geq .70$, and no prompt sign reversal; (ii) nonzero exact-context model
 variance plus cross-task ICC or median task correlation $\geq .50$; and (iii) an
 independent quality/action, prompt/action, or BH-corrected human-gold diagnosis
-criterion. Fewer than two validated dimensions forces the policy-signature
-thesis used here.
+criterion. These gates keep reliable measurement, cross-task recurrence, and
+external behavioral validation as separate claims.
 
 \subsection{Prospective component intervention}
 
@@ -313,94 +358,69 @@ self-report/choice with open behavior were separate frozen claims.
 \begin{figure*}[t]
   \centering
   \includegraphics[width=\textwidth]{main_findings.pdf}
-  \caption{Complementary falsification tests. (A) Generic responses are more
-  attributable than teaching responses. (B) a common pedagogy prompt compresses
-  policy dispersion. (C) it reduces agreement when human teachers chose telling.
-  (D) teaching dimensions do not improve human-gold diagnosis beyond exact
-  history.}
+  \caption{Steering changes a teaching style without providing personalization.
+  (A) Six frozen model configurations have different five-axis behavioral
+  profiles (column-standardized; descriptive, not ability scores). (B) A shared
+  pedagogy prompt moves every model away from direct help, but by different
+  amounts. (C) The fixed shift improves agreement when human teachers probed and
+  harms it when they told. (D) Models can realize prescribed actions but the
+  tested selectors cannot reliably choose them from context.}
   \label{fig:main}
 \end{figure*}
 
-\subsection{Signatures and generic fingerprints}
+\subsection{Models differ, but few differences recur}
 
-Teaching-task held-out attribution is 0.242 with policy features and 0.251 with
-all transparent features, versus 0.167 chance; length alone reaches 0.230.
-Several within-item-centered proxies recur across tasks, including mean sentence
-length (ICC 0.645), explanation (0.546), hedging (0.474), and response length
-(0.470). The negative control reverses the hoped-for ordering: generic combined
-features reach 0.372 and surface features 0.347. Cross-domain policy geometry is
-not preserved (Mantel $r=.296$, exact $p=.307$). Attribution thus detects stable
-generator signatures but is not construct validity by itself (Figure~\ref{fig:main}A).
+The clearest recurring educational difference is how readily a model gives
+direct help. Blinded ratings of help directness have high judge reliability
+(ICC(3,k)=.905), recur across teaching tasks (cross-task ICC=.629; median task
+$\rho=.647$), and agree with an independent behavioral criterion: responses
+classified as human-like \texttt{telling} score 1.360 points more direct than
+\texttt{probing}/\texttt{focus} responses. Default model means span roughly 1.65
+points, from GLM at the least direct end to MiniMax-M2.7 at the most direct end.
+This is the strongest evidence in the archive for a recurring educational
+tendency rather than an impression from one benchmark (Figure~\ref{fig:main}A).
 
-\subsection{A shared prompt compresses policies}
+Expressed confidence provides a second, narrower pattern. Across four independent
+sources, its model profile is stable (ICC(3,1)=.852; median task $\rho=.886$),
+with Doubao highest (.977) and MiniMax-M3 lowest (.878). This pattern concerns
+how firmly an answer is expressed, not whether the answer is correct. It also
+does not collapse revision and abstention: Qwen combines high expressed
+confidence (.956) with the highest abstention on unanswerable items (.912).
 
-All nine models ask more questions and produce shorter responses under the
-explicit pedagogy prompt in both difficulty sets. Prompted cross-model dispersion
-is 0.763 of generic baseline (95\% bootstrap CI [0.738, 0.794]). Praise,
-diagnosis, imperatives, and answer reveal do not move uniformly, rejecting a
-single scalar ``more pedagogical'' interpretation (Figure~\ref{fig:main}B).
+Table~\ref{tab:model-profiles} turns these results into model-level evaluations
+without converting them into a quality ranking. Directness is an exact-item
+centered default score; prompt movement is the mean change on the 1--5 semantic
+scale across standard and hard contexts. A more direct or more steerable model is
+not inherently a better tutor.
 
-\subsection{Quality prediction and judge audit}
+\begin{table*}[t]
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{4pt}
+  \begin{tabular}{lcccp{6.2cm}}
+    \toprule
+    \textbf{Configuration} & \shortstack{\textbf{Default}\\\textbf{directness}} & \shortstack{\textbf{Expressed}\\\textbf{confidence}} & \shortstack{\textbf{Prompt $\Delta$}\\\textbf{directness}} & \textbf{Evidence-bounded reading} \\
+    \midrule
+    MiniMax-M2.7 & .803 & .941 & $-2.089$ & most direct default; large prompt movement \\
+    MiniMax-M3 & .408 & .878 & $-2.026$ & direct default; lowest expressed confidence; large movement \\
+    Doubao-Seed-2.0-Pro & .071 & .977 & $-2.096$ & near-mean directness; highest confidence; large movement \\
+    Qwen3.5-4B & $-.113$ & .956 & $-1.144$ & slightly less direct; high confidence; smaller movement \\
+    DeepSeek-V4-Pro & $-.324$ & .948 & $-1.546$ & less direct default; intermediate movement \\
+    GLM-5.2 & $-.845$ & .948 & $-.851$ & least direct default; smallest additional movement \\
+    \bottomrule
+  \end{tabular}
+  \caption{Evidence-bounded profiles for the six-model core panel. Values
+  describe frozen deployed configurations under the sampled tasks and prompts;
+  they are neither family-level traits nor pedagogical-quality scores.}
+  \label{tab:model-profiles}
+\end{table*}
 
-On 14,770 identical responses, the two quality judges show 0.808 exact agreement,
-0.955 within half a point, Spearman 0.806, and quadratic $\kappa=.810$. An
-exact-item model reaches mean AUC 0.867. Length adds about 0.002; policy plus
-length reaches 0.898 under DeepSeek (+0.031) and 0.889 under MiniMax (+0.023),
-with every held-out-model fold improving. Exact one-sided sign tests are
-$p=.0312$ and $p=.0156$.
-
-On 482 expert-labelled pairs, MiniMax-M3, GLM-5.2, and DeepSeek-V4-Pro agree with
-experts at 0.844, 0.839, and 0.817; position consistency is 0.900--0.919. The
-three-judge majority reaches 0.835 and does not beat the strongest judge, so it
-is not treated as human ground truth.
-
-\subsection{Human actions expose oversteering}
-
-Problem-grouped macro F1 is 0.559--0.571 across the action classifiers. All 54
-classifier $\times$ difficulty $\times$ model contrasts improve overall action
-match, by 0.091--0.114 in standard and 0.145--0.180 in hard contexts. The hard
-subset is nearly all probing, so its gain is chiefly probing compliance.
-
-The aggregate hides a consistent failure. For the 48 standard contexts where the
-human target is \texttt{telling}, generic match is 0.394--0.442 but prompted
-match falls to 0.111--0.125; inferred telling share drops 0.234--0.280. A
-universal question policy oversteers precisely where a human teacher chose direct
-instruction (Figure~\ref{fig:main}C).
-
-\subsection{Adaptive presentation is not diagnosis}
-
-Across 6,000 model--history observations, diagnosis accuracy ranges from 0.278
-to 0.437. Teaching quality has weak within-model association with diagnosis
-(mean Spearman 0.173) and essentially none with evidence accuracy (-0.010). With
-exact-history effects and a held-out model, item-only diagnosis reaches AUC
-0.822; four teaching dimensions reach 0.816 and their mean 0.817. Evidence RMSE
-remains 0.187 for all variants. Adaptive-sounding instruction does not substitute
-for learner-state inference (Figure~\ref{fig:main}D).
-
-\subsection{Confirmatory semantic measurement}
-
-Reliability is high for help directness (ICC(3,k)=0.905), elicitation (0.963),
-and cognitive load (0.855); epistemic caution fails the threshold (0.580).
-Dropping any judge preserves the full profile ($\rho=.959$--$.962$). Own-family
-judge residuals average only 0.001--0.014 points and candidate-position ranges are
-0.075--0.160, below the registered 0.25 flags.
-
-Semantic dimensions identify models on held-out tasks at 0.322, versus 0.167
-chance, 0.239 for length, and 0.353 for transparent features. Combining semantic
-and transparent features reaches 0.391. Help directness (cross-task ICC 0.629;
-median task $\rho=.647$) and cognitive load (0.663; 0.677) qualify as signatures.
-Elicitation is reliable but misses stability (0.475; 0.468).
-
-The intervention supplies a semantic manipulation check. The prompt reduces help
-directness by 1.709 points in standard and 1.542 in hard contexts, increases
-elicitation by 2.470 and 2.171, and reduces cognitive load by 0.759 and 0.721.
-Independently inferred telling responses score 1.360 points higher in help
-directness than probing/focus. Help directness therefore passes prompt--action
-convergence. Semantic features add 0.015 mean quality AUC but fail fold
-consistency (minimum $-0.004$); no dimension survives BH correction against
-human-gold diagnosis. Consequently only help directness reaches the disposition
-tier, below the two-dimension threshold; the frozen hierarchy prevents weaker
-dimensions from being promoted.
+Some other measurements are repeatable without supporting an equally strong
+interpretation. Cognitive load recurs across tasks (ICC=.663; median
+$\rho=.677$), while elicitation is reliably rated but less stable across tasks
+(ICC=.475; median $\rho=.468$). Table~\ref{tab:semantic-decisions} reports every
+prespecified dimension, including failures, rather than retaining only favorable
+ones.
 
 \begin{table*}[t]
   \centering
@@ -409,169 +429,191 @@ dimensions from being promoted.
     \toprule
     \textbf{Dimension} & \textbf{ICC(3,k)} & \textbf{Task ICC} & \textbf{Median task $\rho$} & \textbf{Reversals} & \textbf{Highest retained tier} \\
     \midrule
-    Help directness & .905 & .629 & .647 & 0 & validated disposition \\
-    Elicitation & .963 & .475 & .468 & 0 & reliable measurement \\
+    Help directness & .905 & .629 & .647 & 0 & recurring behavior + criterion \\
+    Elicitation & .963 & .475 & .468 & 0 & reliable measurement only \\
     Autonomy support & .819 & .610 & .734 & 1 & none \\
     Affective warmth & .937 & .479 & .714 & 3 & none \\
     Diagnostic specificity & .924 & .203 & .371 & 1 & none \\
     Personalization & .832 & .340 & .257 & 1 & none \\
-    Cognitive load & .855 & .663 & .677 & 0 & cross-task signature \\
+    Cognitive load & .855 & .663 & .677 & 0 & recurring behavior \\
     Epistemic caution & .580 & .035 & .129 & 0 & none \\
     \bottomrule
   \end{tabular}
-  \caption{Every prespecified semantic dimension remains visible. Tiers are
-  cumulative: reliability or stability alone cannot establish a disposition.}
+  \caption{Every prespecified semantic dimension remains visible. Reliable
+  measurement and cross-task recurrence are separate from external behavioral
+  validation.}
   \label{tab:semantic-decisions}
 \end{table*}
 
-\subsection{System clauses are addressable; requests are not}
+These semantic results are not reducible to response length. Semantic dimensions
+identify models on held-out teaching tasks at .322, compared with .239 for length
+and .167 chance. However, generic tasks are even easier to attribute (.372 with
+combined transparent features versus .242 for teaching policy features), and
+cross-domain policy geometry is not preserved (Mantel $r=.296$, $p=.307$).
+Stable authorship cues are therefore a necessary negative control: recognizing a
+model is not sufficient evidence of an educational personality.
+
+\subsection{A shared prompt imposes a common bias, not a common tutor}
+
+The same explicit pedagogy prompt causes a large, directionally consistent
+behavioral shift. All nine models
+ask more questions and produce shorter turns in both standard and hard contexts;
+cross-model dispersion falls to .763 of its generic-prompt baseline (95\% CI
+[.738, .794]). In blinded semantic ratings, the prompt reduces help directness
+by 1.709 points in standard and 1.542 in hard contexts, increases elicitation by
+2.470 and 2.171, and reduces cognitive load by .759 and .721. The shift in help
+directness is about as large as the entire default-model range.
+
+This is effective steering: a concise instruction reliably biases the
+distribution of observable teaching moves. It is not personalization, because
+every learner context is pushed in the same direction. Nor does it make models
+interchangeable. Cross-prompt model
+attribution remains .301 and .297, both above the .167 chance level. Models also
+differ in prompt responsiveness after accounting for available headroom, and
+some pairwise model rankings reverse after prompting. The evidence therefore
+supports neither fixed personality nor complete prompt determination: models
+have distinguishable defaults, a shared prompt moves all of them, and the amount
+and sometimes direction of residual movement is model-specific. Prompt steering
+should therefore be evaluated for each model configuration rather than treated
+as a portable, model-agnostic teaching layer.
+
+\subsection{Several intuitive personalities do not survive}
+
+The archive contains many plausible-looking differences that fail once
+recurrence, discriminant validity, or behavioral transfer is required. The most
+instructive case is next-step actionability. The pedagogy prompt increases it by
+1.047 points in standard and .880 in hard contexts for every model, so it is
+highly steerable. Yet its cross-task ICC is $-.111$ and its median task
+correlation is $-.771$: the model ordering reverses rather than recurs.
+Steerability is therefore not evidence of a stable default.
+
+Relational communion is reliably measured (ICC=.945), but correlates .805 with
+surface warmth and shows no model variance in the Socratic panel. Instructional
+agency remains exploratory because its frozen pilot reliability (.657) misses
+the .70 threshold. Personalization and diagnostic specificity also fail
+cross-task recurrence, while learner requests do not reliably change the
+question/answer behaviors they request. These results contradict the intuitive
+idea that warm or adaptive-sounding language demonstrates learner-responsive
+teaching.
+
+Attempts to translate generic human traits fare no better. Organizational style
+recurs outside tutoring (median $\rho=.771$), but correlates negatively with
+IFEval accuracy ($\rho=-.886$, exact $p=.035$), so it cannot be treated as
+conscientiousness. Cautious wording does not establish honesty--humility, and a
+proposed normative-permissiveness axis reverses across its two candidate tasks
+($\rho=-.486$). The honest conclusion is not that these models lack all such
+traits, but that the present archive does not identify them.
+
+A targeted five-model pilot finds affiliative open behavior that transports
+across educational and non-educational conflicts ($\rho=.900$) and survives one
+irrelevant perturbation ($\rho=.718$). Yet IPIP self-report correlates $-.200$
+with open behavior, forced choice is at ceiling, and open affiliation correlates
+.900 with warmth. This is limited behavioral evidence, not Big Five
+agreeableness.
+
+\subsection{Steering a style is not personalizing instruction}
+
+Prompting all models toward questions improves aggregate agreement with human
+teacher actions: all 54 classifier--difficulty--model contrasts rise by
+.091--.114 in standard and .145--.180 in hard contexts. The aggregate gain,
+however, comes mainly from contexts dominated by probing. In the 48 standard
+contexts where human teachers chose \texttt{telling}, generic-prompt agreement is
+.394--.442 and pedagogy-prompt agreement falls to .111--.125. The inferred
+telling rate drops by .234--.280. A recognizable ``Socratic'' style can thus be
+consistently induced and consistently wrong for the local teaching decision
+(Figure~\ref{fig:main}C).
+The prompt changes what the tutor tends to do; it does not infer what this learner
+needs. Aggregate improvement and contextual adaptation are different claims.
+
+The learner-state results reveal a second separation. Across 6,000
+model--history observations, teaching quality relates only weakly to diagnosis
+(mean within-model Spearman=.173) and not to evidence accuracy ($-.010$). With
+the exact history controlled, item-only diagnosis reaches AUC=.822; adding four
+teaching dimensions yields .816, and their mean yields .817. Fluent,
+adaptive-sounding teaching does not supply the missing diagnosis.
+
+The prospective factorial explains part of this gap. Explicit system clauses
+strongly control question-first and answer-reveal behavior and replicate under a
+different call order. In contrast, learner requests
+for direct help versus exploration change answer reveal by only .073 in the
+parent panel and .066 in replication, below the frozen .10 gate; their effect on
+question-first is small and opposite-signed. Models follow the system-level
+teaching instruction much more reliably than the learner's expressed need.
 
 All three operational endpoints pass every registered parent gate and the downgrade-only
-order replication (Table~\ref{tab:factorial}). Effects are positive for all five
+order replication. Effects are positive for all five
 models in the full panel, matching parent subset, and replication. By family,
 question effects span .750--.787 in the parent and .750--.863 in replication;
 answer effects span .878--.928 and .887--.975; encouragement-marker effects span
 .525--.659 and .487--.600. Thus no one model or problem family supplies the
 aggregate result.
 
-\begin{table*}[t]
-  \centering
-  \scriptsize
-  \begin{tabular}{lrrcrrc}
-    \toprule
-    & \multicolumn{3}{c}{\textbf{Parent (2,560)}} & \multicolumn{3}{c}{\textbf{Replication (640)}} \\
-    \textbf{Clause} & \textbf{Effect [95\% CI]} & \textbf{Selectivity} & \textbf{All models +} & \textbf{Effect [95\% CI]} & \textbf{Selectivity} & \textbf{Robust} \\
-    \midrule
-    Question-first & .773 [.756, .790] & 10.20 & yes & .809 [.772, .841] & 12.95 & yes \\
-    Reveal answer & .895 [.883, .908] & 11.35 & yes & .922 [.900, .950] & 9.52 & yes \\
-    Encouragement lexicon & .595 [.563, .623] & 5.04 & yes & .550 [.497, .597] & 5.33 & yes \\
-    \bottomrule
-  \end{tabular}
-  \caption{Prospectively frozen component effects. Selectivity is the target
-  effect divided by the largest absolute primary cross-effect; the registered
-  threshold is 2.0. The final column also requires every model to be positive in
-  the matched parent subset and independently ordered replication.}
-  \label{tab:factorial}
-\end{table*}
+A blinded detector audit validates question-first and answer reveal against
+human labels (balanced accuracy 1.000 and .996). The encouragement detector does
+not pass its semantic validation gates (balanced accuracy=.818,
+$\kappa=.631$), so the third row supports only use of the frozen lexicon, not a
+claim that the response is genuinely warm or supportive.
 
-The blind detector audit reaches balanced accuracy 1.000 (95\% CI
-[1.000, 1.000], $\kappa=1.000$) for question-first and .996 [.989, 1.000]
-($\kappa=.992$) for correct-answer reveal. Both validate. The encouragement
-lexicon reaches only .818 [.787, .847] with $\kappa=.631$, failing two frozen
-gates. It therefore supports only a literal marker claim, not semantic warmth or
-support; this post-result audit cannot upgrade any claim.
-
-Learner requests do not show corresponding robustness. Direct-help versus
-explore requests change correct reveal by only .073 [.061, .085] in the parent
-and .066 [.041, .087] in replication, below the registered .10 gate. Explore
-versus direct requests change question-first by $-.030$ [$-.047$, $-.014$] and
-$-.016$ [$-.037$, .006], respectively. This is instruction-hierarchy behavior,
-not reliable learner understanding.
-
-Addressability also does not imply independence. The warm-tone clause reduces question-first
-by .118 in the parent and .103 in replication. The question$\times$tone
-interaction on question-first is $-.236$ [$-.266$, $-.208$] and $-.206$
-[$-.256$, $-.162$], while the three-way question$\times$answer$\times$tone
-interaction is .203 [.138, .278] and .237 [.125, .350]. These prespecified
-interactions reproduce in sign and bound claims to controllable black-box
-components rather than orthogonal latent traits.
-
-\subsection{A localized affiliation policy, not a general trait}
-
-Of 22 archived constructs or validity targets, nine have partial candidates,
-thirteen are not identifiable, and none validates. Organizational style recurs
-most strongly outside tutoring (median $\rho=.771$) but correlates negatively
-with IFEval accuracy ($\rho=-.886$, exact $p=.035$), falsifying a
-conscientiousness interpretation. Affiliation alone is selected: communal
-expression transports to default tutoring ($\rho=.829$) and independently
-judged relational communion ($\rho=.771$), despite weak task recurrence.
-
-The targeted pilot passes all fixed-panel default-stability gates. Open-response
-reliability is ICC(3,k)=.931; the five-model profile transports across domains
-($\rho=.900$, exact $p=.091$), survives one irrelevant perturbation ($\rho=.718$,
-$p=.174$; mean shift $-.050$), and has SD=.445. High minus low prompts move
-1.689 points, positive for all models but ranging .444--2.917; high prompting
-compresses SD to .201, whereas low prompting expands it to .879.
-
-General-trait convergence fails. Default IPIP self-reports occupy 4.2--4.9 and
-correlate $-.200$ with open behavior; forced choice is universally affiliative
-at default. Open affiliation correlates .900 with surface warmth. This is a
-cross-domain, prompt-contingent affiliation cluster, not Big Five equivalence.
-
-\subsection{Robustness and negative evidence}
-
-Leave-one-judge profiles correlate .959--.962; family residuals and position
-ranges remain below registered flags. Semantic features add .015 mean quality
-AUC, but one fold is $-.004$; the LongTutor semantic subset also underperforms
-exact history (.744 versus .775). Two routing remedies fail as well: assigned
-ASK/EXPLAIN actions are realized at .998--1.000, yet selectors reach only .519
-and .500 accuracy and composed policies underperform single-pass baselines.
-Thus only help directness reaches the disposition tier, and action selection---
-not realization---remains unresolved.
+Execution is not the main unsolved problem. When externally assigned ASK or
+EXPLAIN, models realize the action at .998 and 1.000. Two selectors reach only
+.519 and .500 accuracy, and composing selection with realization performs worse
+than a single-pass tutor ($-.058$ and $-.077$). Stable educational style mainly
+describes what a model tends to do; it does not show that the model knows when to
+do it.
 
 \section{Discussion}
 
-The results favor a narrower object than model personality. Tutor policies recur
-and are steerable, but some identity signal is a domain-general fingerprint. A
-shared intervention shows causal addressability while also homogenizing models
-and suppressing appropriate telling. The learner-diagnosis null further
-separates adaptive presentation from accurate learner modeling. The prospective
-factorial sharpens the control result: explicit system clauses selectively
-address question-first and answer-reveal behavior, while the warm-tone clause
-changes only a non-semantic lexicon marker under the validated measurement
-boundary. Ordinary learner requests do not reliably induce matching adaptation.
-Stable cross-component interactions argue against a menu of independent persona
-sliders. The prospective routing trials sharpen that point: neither an adaptive
-menu nor an explicit binary selection stage is a sufficient controller.
+\paragraph{Recurring behavior remains conditional.}
+Help directness and expressed confidence recur, but most plausible dimensions do
+not, and even the recurring differences are substantially displaced by a shared
+instruction. Residual model identity, unequal responsiveness, and rank reversals
+show that neither a default score nor a prompt effect describes the tutor on its
+own. What recurs is a model-conditioned tendency expressed under a task and an
+instruction. This conditional account is also educationally important: a stable
+preference for telling or eliciting describes how support is allocated, not
+whether that allocation fits a particular learner. Generic authorship signatures
+may likewise recur without transporting the educational construct, so model
+attribution alone is insufficient.
 
-The general-personality extension reaches the same boundary from outside
-education. One affiliation ordering survives domain change and one irrelevant
-perturbation, so apparent character is not merely task noise. Yet self-report
-reverses rather than predicts the ordering, forced choices collapse at a social-
-desirability ceiling, and open affiliation overlaps warmth. Stable default,
-prompt inducibility, and human-trait equivalence are distinct estimands; only the
-first two receive localized support.
+\paragraph{A fixed shift cannot substitute for adaptation.}
+The pedagogy prompt reliably changes how tutors act, but it does not establish
+that the induced action is appropriate. Its average gain comes from probing
+contexts, while agreement drops sharply where human teachers told. Teaching
+presentation adds no learner-state signal, and near-perfect action realization
+coexists with near-chance action selection. These results locate the limitation
+more precisely than a generic claim that prompting ``does not work'': prompting
+is effective for moving a behavioral distribution, but personalization requires
+evidence about the learner and a context-conditioned choice among teaching
+actions. Learning outcomes remain a further, untested requirement.
 
-Any successful controller must validate three separable competencies: estimate
-learner state, select an appropriate action, and realize that action in language.
-Our models nearly solve only the last under an externally fixed binary action. A
-model's signature describes its default and resistance to steering; it is not
-itself a quality label. Runtime grounding such as PedRAG may provide a controller
-layer, but our telling and selector failures imply that the decision policy must
-be independently validated rather than inferred from fluent realization.
-
-\section{Reproducibility and Release}
-
-The release contains analysis code, frozen derived tables, figures, exclusion
-rules, prospective protocols, and a SHA-256 manifest, but no source responses or
-learner histories. The factorial and affiliation releases retain hashes,
-conditions, derived ratings, and metrics rather than provider text. A
-single command reruns the private-input semantic finalizer and blocks on coverage,
-claims, privacy structure, figures, syntax, or tests. Separately, a fresh checkout
-verified all frozen public paths and hashes. GitHub CI provisions Python 3.13 on
-a new Ubuntu runner, installs exact dependency versions, and repeats tests,
-registered claims, privacy auditing, figure rebuilding, and a clean-worktree
-check. This verifies the public package; it does not recreate private inputs or
-provider responses. The anonymous TeX build pins and hash-checks the official ACL
-style and produces a byte-stable PDF.
+\paragraph{The tutor system is the relevant unit of evaluation.}
+Our intervention varies prompts and system-level clauses inside a fixed
+generation setup, not a full harness. Memory, retrieval, learner modeling,
+action routing, tools, or post-generation checks could address limitations of a
+fixed prompt. Yet the present results caution against treating the base model as
+a neutral, interchangeable executor: the same instruction produces different
+movement across models, so changing the model can change the resulting tutor
+even when the surrounding logic is held constant. End-to-end evaluation should
+therefore pair each intended model with its instructional setup and report
+recurring defaults, induced change, model-specific responsiveness,
+action-selection accuracy, and context-specific outcomes. The same discipline
+applies to construct claims: inducible actionability is not stable, communion
+largely redescribes warmth, organization does not validate conscientiousness,
+and agreeable self-report does not predict open behavior. Consistency,
+steerability, adaptation, and efficacy remain distinct targets.
 
 \section{Conclusion}
 
-AI tutors in this finite panel exhibit stable and causally steerable pedagogical
-policy signatures. They are neither reducible to length nor equivalent to human
-personality. One cross-domain affiliation profile survives limited stability
-tests yet dissociates from self-report and forced choice, extending the response-
-surface account without validating a general trait. Their consequences are
-conditional: prompting can improve average
-action agreement while suppressing appropriate telling, and adaptive-sounding
-responses can coexist with weak learner diagnosis. Explicit system clauses can
-selectively control validated question-first and answer-reveal behaviors plus a
-literal encouragement marker under order replication, while
-learner requests alone do not reliably personalize them. Behavior-first
-measurement makes these distinctions auditable. In particular, near-perfect
-execution of a prescribed teaching action coexists with near-chance contextual
-selection, and naive two-stage prompting significantly underperforms a
-single-pass baseline.
+AI tutors in this finite panel differ in educational behavior, and a small subset
+of those differences recurs, but the result is not a single fixed personality
+and must not be equated with human traits or pedagogical quality. A shared prompt can strongly steer every model
+without making models equivalent. The central boundary is educational: steering
+a tutor toward questions, restraint, or warmth does not personalize instruction.
+The same fixed shift can help probing contexts and harm telling contexts, while
+models that execute a prescribed action nearly perfectly still struggle to
+select it from the learner context. AI-tutor evaluation should therefore target
+the model--instruction--context system and keep behavioral recurrence, steering,
+action selection, and learning outcomes separate.
 
 \section*{Limitations}
 

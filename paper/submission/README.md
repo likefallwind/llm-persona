@@ -26,11 +26,11 @@ The script checks both file hashes, compiles in a temporary directory, and
 copies only the final PDF into this directory.  `SOURCE_DATE_EPOCH` is pinned so
 repeated builds with the same TeX toolchain are byte-stable.
 
-The 2026-08-28 result build is ten PDF pages. Main content ends with the
-conclusion on page 8; the required limitations and ethics sections also fit on
-page 8, and pages 9--10 contain only references. This follows the current ARR
-rule of eight content pages plus unlimited post-conclusion limitations, ethics,
-and references. `pdfinfo` reports
+The 2026-08-28 result build is eleven PDF pages. Main content ends with the
+conclusion on page 8; limitations begin on page 8, and page 9 onward contains
+only post-conclusion limitations, ethics, and references. This follows the
+current ARR rule of eight content pages plus unlimited post-conclusion
+limitations, ethics, and references. `pdfinfo` reports
 blank author/title metadata, `pdffonts` reports every font embedded and no Type 3
 font, and text extraction contains no local path or contributor identity. The
 factorial table has no overfull box warning.

@@ -2,8 +2,8 @@
 
 Overall: **PASS**
 
-- PDF pages: 10
-- Embedded font rows inspected: 12
+- PDF pages: 11
+- Embedded font rows inspected: 16
 
 | Check | Pass |
 |---|:---:|
