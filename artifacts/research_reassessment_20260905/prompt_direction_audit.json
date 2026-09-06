@@ -1,0 +1,50 @@
+{
+  "affective_warmth": {
+    "paired_model_contexts": 714,
+    "positive": 179,
+    "zero": 276,
+    "negative": 259
+  },
+  "autonomy_support": {
+    "paired_model_contexts": 714,
+    "positive": 521,
+    "zero": 114,
+    "negative": 79
+  },
+  "cognitive_load": {
+    "paired_model_contexts": 714,
+    "positive": 63,
+    "zero": 230,
+    "negative": 421
+  },
+  "diagnostic_specificity": {
+    "paired_model_contexts": 714,
+    "positive": 145,
+    "zero": 234,
+    "negative": 335
+  },
+  "elicitation": {
+    "paired_model_contexts": 714,
+    "positive": 567,
+    "zero": 122,
+    "negative": 25
+  },
+  "epistemic_caution": {
+    "paired_model_contexts": 714,
+    "positive": 255,
+    "zero": 410,
+    "negative": 49
+  },
+  "help_directness": {
+    "paired_model_contexts": 714,
+    "positive": 42,
+    "zero": 147,
+    "negative": 525
+  },
+  "personalization": {
+    "paired_model_contexts": 714,
+    "positive": 66,
+    "zero": 604,
+    "negative": 44
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "status": "interpretation safeguard fixed before confirmation responses",
+  "fixed_at": "2026-09-05T06:45:31.217968+00:00",
+  "script": "scripts/audit_personality_inference_edges_v3.py",
+  "script_sha256": "bb5ca52c254e456bf56fc2a9ac36afac656af2f1963aa80c8c6572b10ce0435a",
+  "rule": "Retain frozen numerical neutral-equivalence flags; withhold population-equivalence claims for source standard error <=1e-12. No change to the six primary prediction tests.",
+  "timing_disclosure": "Added in code review during training judging, after pilot results but before confirmation generation.",
+  "new_api_calls": 0,
+  "new_hypothesis_tests": 0,
+  "manual_after_confirmation_command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/audit_personality_inference_edges_v3.py"
+}

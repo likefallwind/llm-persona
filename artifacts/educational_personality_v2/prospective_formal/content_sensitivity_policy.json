@@ -1,0 +1,35 @@
+{
+  "status": "secondary content-error implementation fixed before confirmation responses",
+  "fixed_at": "2026-09-05T07:38:06.350428+00:00",
+  "basis": "Existing frozen protocol section 5 requires mathematics and obvious-content-error sensitivity.",
+  "timing_disclosure": "Specified after measurement pilot, during formal training coding, before confirmation generation.",
+  "canonical_responses": 1280,
+  "agent_authored_control_responses": 12,
+  "judges": [
+    "MiniMax-M3",
+    "deepseek-v4-pro"
+  ],
+  "planned_initial_judge_requests": 2584,
+  "new_tutor_generations": 0,
+  "new_primary_tests": 0,
+  "new_fit_or_tuning": false,
+  "temperature": 0,
+  "max_tokens": 16384,
+  "identical_input_extra_structural_repair_pass_limit": 2,
+  "control_diagnostic_rule": "For each reviewer, at least 5 of 6 controls in each verdict class match the agent-authored expected verdict; limited diagnostic evidence only.",
+  "screening_unit": "Entire five-model source x work-state x affect x repeat slot; raw primary analysis retained.",
+  "waits_for_existing_confirmation_controller": true,
+  "files": {
+    "scripts/personality_content_sensitivity_v3.py": "d853989fa2411a41c2dfc51e805fe8e4c536da966463ca2a3c2a35aaae5e5092",
+    "scripts/complete_personality_content_v3.py": "df34d2e10f6070c917de319f7b0916a63855bdf071f8fd18aeb2da61259c5963",
+    "scripts/analyze_personality_confirmation_v3.py": "451bce2b6941c319d95e0bcf6bac936789e83b684894547a86271d8d8fd9430e",
+    "scripts/analyze_personality_coding_v2.py": "7c52c5202e01f4fa70ca7d4cfa7338bbc1a8836b0b56f920c7ef06f85502d219",
+    "scripts/run_personality_requests_v2.py": "cdc88daec724c46f0f40f105a42b7655c0b76add3a3dc43e61d582111e3611bd",
+    "scripts/run_personality_formal_stage_v3.py": "36bd5fca9209da5f887d7e9dbd112385ffded95cfb404a74153ebdbaf69fd126",
+    "scripts/prepare_personality_pilot_v2.py": "43518822cd8f3eea14d90a2bbc54207fbb47628a32e3c5c9e427c1ee43aa13a8",
+    "research/56_content_error_sensitivity_completion.md": "00a50a719b9d4884c1710691a79f729a983ee90a93b589292ded213108f28fd1",
+    "artifacts/educational_personality_v2/prospective_formal/design_freeze.json": "ec53b09f74d0f241f3de9eee7f9591521b723dac0cbb9ee1cca8cb14a8c719ac",
+    "artifacts/educational_personality_v2/prospective_formal/training_execution_policy.json": "63676a3cf29e7132998e9dc77d8a4f4538ad8f3ca28f12de079229d338df8edd",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_execution_policy.json": "3aecb3b4d37c6b8359df8ee52077caa7ab82045f52846fa2cdba1c8a37cf484d"
+  }
+}

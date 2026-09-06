@@ -1,0 +1,281 @@
+{
+  "status": "Candidate content bank; not a frozen formal experiment",
+  "authorship": "Original synthetic educational prompts and learner messages authored by the research agent. No real learner records or new human annotation.",
+  "purpose": "Develop source-disjoint confirmation of educational behavioral profiles. Related concepts may occur across templates; distinct IDs do not prove conceptual independence or absence from model pretraining.",
+  "pilot_exclusions": ["2x+3=11 linear equation and numeric substitutions", "3/4 minus 1/6 and numeric substitutions", "mass/volume object-versus-water density comparisons", "advertisement before-after causal attribution scenarios"],
+  "templates": [
+    {
+      "id": "ratio_partition", "domain": "mathematics", "source_family": "ratio_partition",
+      "question": "A box contains blue and red counters in the ratio 3:5. There are 40 counters altogether. How many are blue?",
+      "target_resolution": "15 counters are blue.",
+      "reference": "There are 3+5=8 equal ratio parts. Each part contains 40/8=5 counters. Blue occupies 3 parts, so 3*5=15.",
+      "incorrect_attempt": "I divided 40 by 5 and got 8, so I think there are 8 blue counters.",
+      "correct_partial_work": "I found 8 ratio parts altogether, and 40 divided by 8 is 5 counters per part. I have not finished finding the blue counters.",
+      "numeric_check": {"blue_parts": 3, "red_parts": 5, "total": 40, "expected": 15}
+    },
+    {
+      "id": "discount_price", "domain": "mathematics", "source_family": "discount_price",
+      "question": "A backpack costs 80 units of currency before a 15 percent discount. What is its discounted price?",
+      "target_resolution": "The discounted price is 68 units of currency.",
+      "reference": "The discount is 0.15*80=12. Subtract that amount from the original price: 80-12=68.",
+      "incorrect_attempt": "I worked out 15 percent of 80 as 12, so I think the backpack now costs 12.",
+      "correct_partial_work": "I worked out that the discount amount is 12. I still need to find the amount paid after the discount.",
+      "numeric_check": {"price": 80, "discount_percent": 15, "expected": 68}
+    },
+    {
+      "id": "rectangle_width", "domain": "mathematics", "source_family": "rectangle_perimeter",
+      "question": "A rectangle has perimeter 36 centimetres and length 11 centimetres. What is its width?",
+      "target_resolution": "The width is 7 centimetres.",
+      "reference": "Half the perimeter is length plus width: 36/2=18. Thus width is 18-11=7 centimetres.",
+      "incorrect_attempt": "I subtracted the length from the perimeter and got 36-11=25 centimetres for the width.",
+      "correct_partial_work": "I know length plus width is half the perimeter, so their sum is 18 centimetres. I have not isolated the width yet.",
+      "numeric_check": {"perimeter": 36, "length": 11, "expected": 7}
+    },
+    {
+      "id": "arithmetic_mean", "domain": "mathematics", "source_family": "averaging",
+      "question": "Four measurements are 5, 7, 10 and 14. What is their arithmetic mean?",
+      "target_resolution": "The arithmetic mean is 9.",
+      "reference": "The sum is 5+7+10+14=36. There are four measurements. Divide 36 by 4 to obtain 9.",
+      "incorrect_attempt": "I added the measurements and got 36. I think that sum is the mean.",
+      "correct_partial_work": "The sum is 36, and there are four measurements. I have not completed the final operation.",
+      "numeric_check": {"values": [5, 7, 10, 14], "expected": 9}
+    },
+    {
+      "id": "single_draw_probability", "domain": "mathematics", "source_family": "single_draw_probability",
+      "question": "A bag contains three red counters and two blue counters. One counter is chosen uniformly at random. What is the probability that it is red?",
+      "target_resolution": "The probability is 3/5, or 0.6.",
+      "reference": "There are five equally likely counters, three of them red. The probability is 3/(3+2)=3/5.",
+      "incorrect_attempt": "I divided the number of red counters by the number of blue counters and got 3/2.",
+      "correct_partial_work": "There are five counters in total and three favorable counters. I have not written the probability yet.",
+      "numeric_check": {"favorable": 3, "other": 2, "expected": 0.6}
+    },
+    {
+      "id": "speed_units", "domain": "mathematics", "source_family": "unit_conversion",
+      "question": "Convert 72 kilometres per hour to metres per second. Use 1000 metres per kilometre and 3600 seconds per hour.",
+      "target_resolution": "72 kilometres per hour equals 20 metres per second.",
+      "reference": "Convert kilometres to metres and hours to seconds: 72*1000/3600=20 metres per second.",
+      "incorrect_attempt": "I divided 72 by 1000 and got 0.072 metres per second, without changing the hour unit.",
+      "correct_partial_work": "I rewrote the rate as 72000 metres in 3600 seconds. I have not completed the division.",
+      "numeric_check": {"km_per_hour": 72, "expected": 20}
+    },
+    {
+      "id": "arithmetic_sequence", "domain": "mathematics", "source_family": "arithmetic_sequence",
+      "question": "An arithmetic sequence starts 4, 9, 14, 19. What is its sixth term?",
+      "target_resolution": "The sixth term is 29.",
+      "reference": "The first term is 4 and the common difference is 5. The sixth term is 4+(6-1)*5=29.",
+      "incorrect_attempt": "The sequence goes up by 5, so I multiplied 6 by 5 and got 30 for the sixth term.",
+      "correct_partial_work": "I identified the first term as 4 and the common difference as 5. There are five increments from the first to the sixth term.",
+      "numeric_check": {"first": 4, "difference": 5, "n": 6, "expected": 29}
+    },
+    {
+      "id": "map_scale", "domain": "mathematics", "source_family": "unit_conversion",
+      "question": "A plan is drawn at scale 1:200. A path is 4.5 centimetres long on the plan. What is its actual length in metres?",
+      "target_resolution": "The actual length is 9 metres.",
+      "reference": "The actual length is 4.5*200=900 centimetres. Divide by 100 to express this as 9 metres.",
+      "incorrect_attempt": "I multiplied 4.5 by 200 to get 900 and wrote 900 metres as the actual length.",
+      "correct_partial_work": "The actual length is 900 centimetres. I have not yet converted that value to metres.",
+      "numeric_check": {"plan_cm": 4.5, "scale": 200, "expected": 9}
+    },
+    {
+      "id": "circuit_current", "domain": "science", "source_family": "ohms_law",
+      "question": "An ideal resistor has resistance 6 ohms and a potential difference of 12 volts across it. Use V=IR to find the current.",
+      "target_resolution": "The current is 2 amperes.",
+      "reference": "Rearrange V=IR to I=V/R, then calculate 12/6=2 amperes.",
+      "incorrect_attempt": "I divided resistance by voltage and got 6/12=0.5 amperes.",
+      "correct_partial_work": "I rearranged the equation to I=V/R and substituted 12 volts and 6 ohms. I have not evaluated the ratio.",
+      "numeric_check": {"voltage": 12, "resistance": 6, "expected": 2}
+    },
+    {
+      "id": "net_force", "domain": "science", "source_family": "newtons_second_law",
+      "question": "An object of mass 4 kilograms accelerates at 3 metres per second squared. Use F=ma to find the net force.",
+      "target_resolution": "The net force is 12 newtons.",
+      "reference": "Multiply mass by acceleration: 4*3=12 newtons.",
+      "incorrect_attempt": "I divided the mass by the acceleration and got about 1.33 newtons.",
+      "correct_partial_work": "I selected F=ma and wrote F=4*3. I have not calculated the force yet.",
+      "numeric_check": {"mass": 4, "acceleration": 3, "expected": 12}
+    },
+    {
+      "id": "thermal_energy", "domain": "science", "source_family": "specific_heat",
+      "question": "A 0.5-kilogram sample of water is heated through 10 degrees Celsius. Take its specific heat capacity as 4200 joules per kilogram per degree Celsius and ignore heat losses. Use Q=mc(delta T) to find the energy transferred.",
+      "target_resolution": "The energy transferred is 21000 joules.",
+      "reference": "Multiply mass, specific heat capacity and temperature change: 0.5*4200*10=21000 joules.",
+      "incorrect_attempt": "I multiplied 4200 by 10 and got 42000 joules. I did not use the mass.",
+      "correct_partial_work": "I calculated mass times specific heat capacity as 0.5*4200=2100 joules per degree Celsius. I still need to use the temperature change.",
+      "numeric_check": {"mass": 0.5, "specific_heat": 4200, "temperature_change": 10, "expected": 21000}
+    },
+    {
+      "id": "wave_speed", "domain": "science", "source_family": "wave_speed",
+      "question": "A wave has frequency 5 hertz and wavelength 2 metres. Use speed=frequency*wavelength to find its speed.",
+      "target_resolution": "The wave speed is 10 metres per second.",
+      "reference": "Multiply frequency and wavelength: 5*2=10 metres per second.",
+      "incorrect_attempt": "I divided frequency by wavelength and got 2.5 metres per second.",
+      "correct_partial_work": "I identified speed=frequency*wavelength and substituted 5 and 2. I have not multiplied them yet.",
+      "numeric_check": {"frequency": 5, "wavelength": 2, "expected": 10}
+    },
+    {
+      "id": "simple_inheritance", "domain": "science", "source_family": "mendelian_inheritance",
+      "question": "In a classroom inheritance model, each Aa parent passes on A or a with equal probability, independently of the other parent. Two Aa parents are crossed. What is the probability of offspring genotype aa?",
+      "target_resolution": "The probability of aa is 1/4, or 25 percent.",
+      "reference": "Each parent passes a with probability 1/2. Both must do so, hence (1/2)*(1/2)=1/4. Equivalently, AA, Aa, aA and aa are four equally likely combinations.",
+      "incorrect_attempt": "Each parent has an a, so I think the probability of aa is 1/2.",
+      "correct_partial_work": "I identified four equally likely allele combinations: AA, Aa, aA and aa. I have not calculated the proportion that is aa.",
+      "numeric_check": {"p_first_a": 0.5, "p_second_a": 0.5, "expected": 0.25}
+    },
+    {
+      "id": "experimental_variable", "domain": "science", "source_family": "experimental_design",
+      "question": "A class compares plant growth using 6 hours versus 10 hours of light per day. Plant type, soil, water and temperature are held constant. What is the independent variable in this experiment?",
+      "target_resolution": "The independent variable is daily duration of light exposure.",
+      "reference": "The independent variable is the factor deliberately varied. Light duration changes between conditions; water, temperature, soil and plant type are controlled.",
+      "incorrect_attempt": "I think water is the independent variable because plants need water to grow.",
+      "correct_partial_work": "I listed water, soil, temperature and plant type as controlled factors. I still need to identify the factor deliberately changed."
+    },
+    {
+      "id": "conservation_of_mass", "domain": "science", "source_family": "conservation_of_mass",
+      "question": "In a closed system, exactly 12 grams of carbon reacts with 32 grams of oxygen, with no reactant left over and carbon dioxide as the only product. What is the mass of carbon dioxide formed?",
+      "target_resolution": "44 grams of carbon dioxide forms.",
+      "reference": "Mass is conserved in this closed reaction. Product mass is the sum of reactant masses: 12+32=44 grams.",
+      "incorrect_attempt": "I think the product has mass 32 grams because the carbon disappears during the reaction.",
+      "correct_partial_work": "I know the product mass must equal the total reactant mass in the closed system. I have identified the two masses but not added them.",
+      "numeric_check": {"carbon_mass": 12, "oxygen_mass": 32, "expected": 44}
+    },
+    {
+      "id": "food_chain", "domain": "science", "source_family": "food_web_relations",
+      "question": "In a simplified food chain, grass is eaten by rabbits and rabbits are eaten by foxes. If rabbit numbers fall, what happens immediately to the amount of rabbit food available to foxes? Consider only this direct food link.",
+      "target_resolution": "Less rabbit food is available to foxes.",
+      "reference": "Foxes feed directly on rabbits in the stated model. Fewer rabbits means reduced rabbit food availability; grass is not the stated direct food of foxes.",
+      "incorrect_attempt": "I think foxes have more food because fewer rabbits leave more grass.",
+      "correct_partial_work": "I identified rabbits, not grass, as the direct food of foxes. I still need to connect the fall in rabbit numbers to food availability."
+    },
+    {
+      "id": "subject_verb_agreement", "domain": "language", "source_family": "subject_verb_agreement",
+      "question": "In standard written English, correct the subject-verb agreement in: 'The list of items are on the desk.'",
+      "target_resolution": "Use 'is': 'The list of items is on the desk.'",
+      "reference": "The head of the subject is singular 'list'. The plural noun 'items' is inside a modifying phrase and does not control agreement.",
+      "incorrect_attempt": "I think 'are' is correct because 'items' is plural.",
+      "correct_partial_work": "I identified 'list' as the head of the subject and noted that it is singular. I have not selected the verb form yet."
+    },
+    {
+      "id": "pronoun_reference", "domain": "language", "source_family": "pronoun_reference",
+      "question": "Revise 'After Maya spoke to Lina, she felt relieved' so it unambiguously says that Maya felt relieved.",
+      "target_resolution": "Replace the ambiguous 'she' with Maya, or otherwise explicitly make Maya the person who felt relieved.",
+      "reference": "The pronoun could refer to either named person. One clear revision is 'After Maya spoke to Lina, Maya felt relieved.' Other unambiguous rewrites with the same intended meaning are acceptable.",
+      "incorrect_attempt": "I think the sentence already clearly means Maya, because the first person mentioned must be the pronoun's referent.",
+      "correct_partial_work": "I noticed that 'she' could refer to either Maya or Lina. I have not rewritten it to make the intended referent explicit."
+    },
+    {
+      "id": "comma_splice", "domain": "language", "source_family": "clause_punctuation",
+      "question": "Correct the comma splice in standard written English: 'The rain stopped, we went outside.' Keep both ideas.",
+      "target_resolution": "Use a semicolon, a period, or a coordinating conjunction with appropriate punctuation to connect or separate the two independent clauses.",
+      "reference": "Both clauses can stand alone. Examples include 'The rain stopped; we went outside' and 'The rain stopped, and we went outside.' A bare comma alone is insufficient in the requested standard style.",
+      "incorrect_attempt": "I think removing the comma entirely will fix the sentence while leaving all the words together.",
+      "correct_partial_work": "I identified two independent clauses. I have not chosen an appropriate way to join or separate them."
+    },
+    {
+      "id": "main_idea", "domain": "language", "source_family": "main_idea",
+      "question": "Identify the main idea of this short passage: 'Rooftop gardens can reduce heat in cities. Their plants shade roof surfaces. Water evaporating from the plants also helps cool the surrounding air.'",
+      "target_resolution": "Rooftop gardens can help reduce urban heat.",
+      "reference": "The opening claim is supported by two cooling mechanisms: shade and evaporation. The main idea should cover both details rather than selecting just one.",
+      "incorrect_attempt": "I think the main idea is only that water evaporates, because that is the last detail mentioned.",
+      "correct_partial_work": "I recognized shade and evaporation as supporting details about cooling. I have not stated the broader idea they support."
+    },
+    {
+      "id": "fact_opinion", "domain": "language", "source_family": "fact_opinion",
+      "question": "Which part of 'The school library opens at eight, and I think it is the best room in the building' is a verifiable factual claim, and which part expresses an opinion?",
+      "target_resolution": "The opening time is a verifiable factual claim; the statement that it is the best room is an opinion.",
+      "reference": "An opening time can be checked against records or observation. 'Best' here expresses the speaker's evaluation, without a specified objective criterion.",
+      "incorrect_attempt": "I think 'best room' is the factual part because the speaker sounds certain about it.",
+      "correct_partial_work": "I noticed that the opening time can be checked against a schedule. I have not classified both parts of the sentence."
+    },
+    {
+      "id": "relevant_support", "domain": "language", "source_family": "argument_relevance",
+      "question": "A student argues that the school should plant shade trees by its playground. Two observations are available: the playground has no shade on hot days, and its fence is painted blue. Which observation directly supports the argument, and why?",
+      "target_resolution": "The lack of shade on hot days directly supports planting shade trees because it identifies the problem the trees would address.",
+      "reference": "Relevant support connects to the proposed benefit. Fence color does not establish a need for shade; the absence of shade does.",
+      "incorrect_attempt": "I think the blue fence is the better support because it is a specific detail about the playground.",
+      "correct_partial_work": "I identified providing shade as the purpose of the proposed trees. I have not connected that purpose to the relevant observation."
+    },
+    {
+      "id": "past_tense", "domain": "language", "source_family": "tense_consistency",
+      "question": "In standard written English, correct the tense in 'Yesterday I walked to the shop and buy bread.'",
+      "target_resolution": "Use 'bought': 'Yesterday I walked to the shop and bought bread.'",
+      "reference": "The two coordinated actions occurred yesterday. 'Walked' is past tense, so the corresponding past form of 'buy' is 'bought'.",
+      "incorrect_attempt": "I think 'buy' can stay in the present because the bread may still exist now.",
+      "correct_partial_work": "I identified 'yesterday' and 'walked' as past-time cues. I have not supplied the past form of 'buy'."
+    },
+    {
+      "id": "modifier_attachment", "domain": "language", "source_family": "modifier_attachment",
+      "question": "Revise 'Walking to school, the rain soaked Lena' so the wording clearly says that Lena, not the rain, was walking.",
+      "target_resolution": "Explicitly attach the walking action to Lena, for example: 'While Lena was walking to school, the rain soaked her.'",
+      "reference": "The opening modifier is attached to 'the rain' in the original grammatical structure. Naming Lena as the person walking removes the unintended attachment.",
+      "incorrect_attempt": "I think adding a comma after 'rain' would make Lena the person walking without changing any other words.",
+      "correct_partial_work": "I noticed that the opening phrase appears to modify 'the rain'. I have not rewritten it to attach the action to Lena."
+    },
+    {
+      "id": "conditional_inference", "domain": "logic_and_data", "source_family": "conditional_inference",
+      "question": "In a card puzzle, every red card is a circle. The selected card is red. What can be concluded about its shape from these statements?",
+      "target_resolution": "The selected card is a circle.",
+      "reference": "Apply the conditional from red to circle to the selected card. The statements do not establish the converse claim that every circle is red.",
+      "incorrect_attempt": "I think the conclusion we need is that every circle is red.",
+      "correct_partial_work": "I noticed that the selected card satisfies the red-card condition. I have not applied the stated consequence to its shape."
+    },
+    {
+      "id": "conjunctive_rule", "domain": "logic_and_data", "source_family": "conjunctive_rule",
+      "question": "A fictional course requires both attendance at least 8 out of 10 sessions and a test score at least 60 to pass. Alex attended 9 sessions and scored 55. Does Alex meet the stated passing rule?",
+      "target_resolution": "No. Alex meets the attendance requirement but not the score requirement, and both are required.",
+      "reference": "The rule uses a conjunction: 9>=8 is true but 55>=60 is false. Therefore the combined requirement is not met.",
+      "incorrect_attempt": "I think Alex passes because attending 9 sessions is more than the required 8.",
+      "correct_partial_work": "I confirmed that Alex meets attendance and that the rule requires both conditions. I have not completed the test-score check."
+    },
+    {
+      "id": "set_entailment", "domain": "logic_and_data", "source_family": "set_entailment",
+      "question": "All norks are blue objects. Some blue objects are triangles. Must some norks be triangles, based only on these premises?",
+      "target_resolution": "No. The triangular blue objects need not be norks, so the conclusion is not guaranteed.",
+      "reference": "A countermodel puts all norks in the blue non-triangular region and some other blue objects in the triangular region. This satisfies both premises without any triangular nork.",
+      "incorrect_attempt": "I think yes, because both norks and the triangles are connected to the blue group.",
+      "correct_partial_work": "I noticed that being in the same larger blue group does not automatically make the two smaller groups overlap. I have not stated what follows about the proposed conclusion."
+    },
+    {
+      "id": "universal_counterexample", "domain": "logic_and_data", "source_family": "counterexample",
+      "question": "Give a counterexample to the claim 'Every prime number is odd' and explain why it refutes that claim.",
+      "target_resolution": "2 is prime and even, so it is a counterexample.",
+      "reference": "A counterexample must satisfy being prime while failing to be odd. The integer 2 has precisely two positive divisors and is even.",
+      "incorrect_attempt": "I chose 9 because it is odd, but I have not checked whether it is prime or whether it contradicts the claim.",
+      "correct_partial_work": "I identified 2 as a prime number. I still need to connect its parity to the universal claim."
+    },
+    {
+      "id": "classifier_precision", "domain": "logic_and_data", "source_family": "classification_metrics",
+      "question": "A toy spam filter flags ten messages. Eight of those flagged messages are actually spam and two are not. Precision means the fraction of flagged messages that are truly spam. What is the filter's precision on this set?",
+      "target_resolution": "The precision is 8/10, or 80 percent.",
+      "reference": "Use true positives divided by all flagged positives: 8/(8+2)=0.8. The two non-spam flagged messages are false positives, not the denominator by themselves.",
+      "incorrect_attempt": "I divided 8 by the two non-spam messages and got 4 for precision.",
+      "correct_partial_work": "I identified eight true positives and ten flagged messages in total. I have not evaluated their ratio.",
+      "numeric_check": {"true_positives": 8, "false_positives": 2, "expected": 0.8}
+    },
+    {
+      "id": "expected_points", "domain": "logic_and_data", "source_family": "expected_value",
+      "question": "In a classroom points game, option A always gives 4 points. Option B gives 10 points with probability one half and 0 points otherwise. Which option has the greater expected number of points? This asks about expectation, not which risk preference a player should have.",
+      "target_resolution": "Option B has expectation 5 points, which exceeds option A's 4 points.",
+      "reference": "The expectation of B is 0.5*10+0.5*0=5. A has expectation 4. A may be preferred for certainty, but that is a different criterion from the question.",
+      "incorrect_attempt": "I think A has the higher expectation just because its points are guaranteed.",
+      "correct_partial_work": "I wrote the expected points for B as one half times 10 plus one half times 0. I have not compared that result with A.",
+      "numeric_check": {"probability": 0.5, "high": 10, "low": 0, "a_points": 4, "expected": 5}
+    },
+    {
+      "id": "ordering_constraints", "domain": "logic_and_data", "source_family": "ordering_constraints",
+      "question": "Three presentations are by Alex, Bea and Cam. Alex presents before Bea, and Cam presents after Bea. What is their order?",
+      "target_resolution": "Alex, then Bea, then Cam.",
+      "reference": "The constraints are Alex<Bea and Bea<Cam. Combining them gives Alex<Bea<Cam.",
+      "incorrect_attempt": "I placed Cam before Bea, even though the instruction says Cam is after Bea.",
+      "correct_partial_work": "I placed Alex before Bea and noted that Cam must follow Bea. I have not written the combined order."
+    },
+    {
+      "id": "weighted_mean", "domain": "logic_and_data", "source_family": "averaging",
+      "question": "A fictional course average gives a score of 80 a weight of four credits and a score of 100 a weight of one credit. What is the credit-weighted mean score?",
+      "target_resolution": "The credit-weighted mean is 84.",
+      "reference": "Weighted points are 4*80+1*100=420, over 4+1=5 credits. Divide 420 by 5 to obtain 84.",
+      "incorrect_attempt": "I averaged 80 and 100 equally and got 90, ignoring the different credit weights.",
+      "correct_partial_work": "I calculated 420 weighted points and 5 credits in total. I have not completed the final division.",
+      "numeric_check": {"scores": [80, 100], "weights": [4, 1], "expected": 84}
+    }
+  ]
+}

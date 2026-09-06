@@ -1,0 +1,51 @@
+{
+  "status": "synthetic layout and incomplete-input guard reviewed; real confirmation figures pending",
+  "reviewed_at": "2026-09-05T07:08:49.217412+00:00",
+  "api_calls": 0,
+  "empirical_confirmation_figures_written": 0,
+  "visual_inspection": {
+    "files": [
+      "losses.png",
+      "gains.png",
+      "profiles.png",
+      "prompts.png",
+      "states.png"
+    ],
+    "observed": "Labels, axes, interval markers and missing agreement cells are legible on synthetic inputs; all images prominently identify synthetic data.",
+    "limits": "Synthetic inputs do not establish empirical findings. Real-result ranges and all final publication figures require a new visual and scientific review."
+  },
+  "guard_check": "main() rejected missing prospective prediction lock before any figure write",
+  "rehearsal_summary": {
+    "status": "synthetic plotting rehearsal only",
+    "api_calls": 0,
+    "published_confirmation_figures": 0,
+    "figures": [
+      "losses",
+      "gains",
+      "profiles",
+      "prompts",
+      "states"
+    ],
+    "missing_cell_rejected": true,
+    "degenerate_neutral_cases": 2
+  },
+  "synthetic_image_sha256": {
+    "losses.png": "e512b5f81dd36ba926a5627a91992d1483cc4c03148fe337a46070b337516efa",
+    "gains.png": "8165b4a275ea768085210afe5b4e7ff0030f70af4b8dc71be9c7dd17b513b2a2",
+    "profiles.png": "245104b233319d35028e46bd04dca150594bea32186f4da59d103643c6289d37",
+    "prompts.png": "b357e5a1c0089b3e3ade7be15b0afdd284d3d75be7373ba60c6cccd07b2ec43b",
+    "states.png": "7d9031f4bbe1ad32ae0f2ee9f33026eb517325787add67767d2a809206edbc3b"
+  },
+  "plotter_sha256": "d35965e7e324e9ef0403181478d84f8e7850962dd7ba64128c96df6704587a48",
+  "temporary_image_directory": "/tmp/personality_figure_rehearsal",
+  "paper_complete": false,
+  "neutral_bound_caption_review": {
+    "reviewed_at": "2026-09-05T08:16:31.154672+00:00",
+    "image": "/tmp/personality_neutral_bound_figure.png",
+    "image_sha256": "30ded36fc5fcb68f208ffbf46dd57ab485f894a18be60326a0e291e884274ee3",
+    "plotter_sha256": "4dc0655de8172feeb98b3617f8bf149b520e2630958660279b203abc936459d3",
+    "observed": "Synthetic prompt layout is legible; caption distinguishes nominal t intervals from the separately required bounded-source interpretation.",
+    "empirical": false,
+    "final_empirical_review_required": true
+  }
+}

@@ -1,0 +1,2622 @@
+[
+  {
+    "event": "affect_acknowledgement",
+    "fold": 0,
+    "baseline": "context",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.26973222519149725,
+      "1.0": 0.2519317271777071,
+      "10.0": 0.24121203253473658,
+      "100.0": 0.23875608986734964
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.8891312851285775e-06,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 0,
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.2448609736126732,
+      "1.0": 0.22778185694516628,
+      "10.0": 0.2184972594970649,
+      "100.0": 0.23135056187783165
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.584339885343013e-06,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 0,
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.2503063308402152,
+      "1.0": 0.23283714990547746,
+      "10.0": 0.21914965557032032,
+      "100.0": 0.2313581264978628
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.1383930815789256e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 0,
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.25274385565346763,
+      "1.0": 0.23089185572002832,
+      "10.0": 0.21841268064454647,
+      "100.0": 0.23090582250210476
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.486149179390054e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 1,
+    "baseline": "context",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.22833650082795198,
+      "1.0": 0.2166094649569322,
+      "10.0": 0.20960422905207746,
+      "100.0": 0.2087450649359348
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.86363806898138e-07,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 1,
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.205028621262334,
+      "1.0": 0.18797689865622735,
+      "10.0": 0.1822085293795789,
+      "100.0": 0.2000074895822638
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.12337058836232e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 1,
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.20528742186624072,
+      "1.0": 0.1902782807464792,
+      "10.0": 0.18237381079889403,
+      "100.0": 0.20000775168196028
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.5188063154647491e-05,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 1,
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.23262417368843477,
+      "1.0": 0.21265024273693076,
+      "10.0": 0.193733183270958,
+      "100.0": 0.20153374937466598
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 8.383960176661098e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 2,
+    "baseline": "context",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.2565491974090901,
+      "1.0": 0.2444909366911009,
+      "10.0": 0.2384052932980614,
+      "100.0": 0.23742706226129492
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.0534126949911524e-06,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 2,
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.23787441307358262,
+      "1.0": 0.22261601367469652,
+      "10.0": 0.21670096782048265,
+      "100.0": 0.22991886226763691
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.797106514826567e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 2,
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.24198268597968134,
+      "1.0": 0.2242392139547418,
+      "10.0": 0.21672438587910106,
+      "100.0": 0.22992261269492817
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.127810839997913e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 2,
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.2318014096038954,
+      "1.0": 0.21673547183465733,
+      "10.0": 0.20936013101647463,
+      "100.0": 0.22651571126076467
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.379887359931331e-06,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 3,
+    "baseline": "context",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.2373429125516416,
+      "1.0": 0.22234190115242805,
+      "10.0": 0.21516839310267175,
+      "100.0": 0.21540557751522674
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.907273131240288e-07,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 3,
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.21930299598906813,
+      "1.0": 0.202122303905346,
+      "10.0": 0.19604608753998498,
+      "100.0": 0.20943606583401164
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.023508632793437e-06,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 3,
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.22327775521444274,
+      "1.0": 0.20441746538653027,
+      "10.0": 0.1964082521754781,
+      "100.0": 0.20944098638604602
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.094761841098247e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "affect_acknowledgement",
+    "fold": 3,
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.247187561860745,
+      "1.0": 0.21705333284702286,
+      "10.0": 0.19716040143877375,
+      "100.0": 0.20798701559435326
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.0853444871727902e-06,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 0,
+    "baseline": "context",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.16059023852335944,
+      "1.0": 0.15511841471182433,
+      "10.0": 0.1523745339121819,
+      "100.0": 0.15198976743452472
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.004766125971116e-07,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 0,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.09230372866205651,
+      "1.0": 0.08795143633327357,
+      "10.0": 0.09570959917108164,
+      "100.0": 0.13650379272019345
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.2239144273638054e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 0,
+    "baseline": "domain_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.0854836660072009,
+      "1.0": 0.08651178190351898,
+      "10.0": 0.0967307477437901,
+      "100.0": 0.13657816820040883
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.9085212095515964e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 0,
+    "baseline": "conditional_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.10105245477101545,
+      "1.0": 0.09593942195789669,
+      "10.0": 0.0990129592676287,
+      "100.0": 0.1363945190904974
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.3190547676087423e-06,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 1,
+    "baseline": "context",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.1698686136843072,
+      "1.0": 0.1698683877211401,
+      "10.0": 0.16988071903712043,
+      "100.0": 0.16989504868543373
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.8914858563044987e-09,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 1,
+    "baseline": "default_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.032307796911156754,
+      "1.0": 0.03249544474630008,
+      "10.0": 0.05301577138599058,
+      "100.0": 0.13643430682966087
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.164505107486562e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 1,
+    "baseline": "domain_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.03291800512207937,
+      "1.0": 0.03300602551021897,
+      "10.0": 0.05301867827345244,
+      "100.0": 0.13643922808960862
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.4092760180842157e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 1,
+    "baseline": "conditional_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.033033539929812006,
+      "1.0": 0.033122580744626755,
+      "10.0": 0.053125134378119325,
+      "100.0": 0.1361984060742866
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.4926209695352456e-06,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 2,
+    "baseline": "context",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.1675547974217976,
+      "1.0": 0.16141402965010518,
+      "10.0": 0.15821261580539417,
+      "100.0": 0.15772259708800632
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 7.837608133609564e-07,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 2,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.09870989584468985,
+      "1.0": 0.09360557109067408,
+      "10.0": 0.10102897655588954,
+      "100.0": 0.14187086591615686
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.5915915380657637e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 2,
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.09180069269063106,
+      "1.0": 0.09153532306769074,
+      "10.0": 0.10190642272169688,
+      "100.0": 0.14194481448414784
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.5402225122251867e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 2,
+    "baseline": "conditional_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.10852151473870995,
+      "1.0": 0.10185609710957795,
+      "10.0": 0.10491331357404025,
+      "100.0": 0.14192559993798748
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.830019250404161e-06,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 3,
+    "baseline": "context",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.1606793711111123,
+      "1.0": 0.15520667136651828,
+      "10.0": 0.15242494584563407,
+      "100.0": 0.15199224561406285
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.2728036094306105e-06,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 3,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.07717589143395058,
+      "1.0": 0.07607129268872849,
+      "10.0": 0.08744537892687672,
+      "100.0": 0.13429759313562437
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.509397238892319e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 3,
+    "baseline": "domain_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.06957745649443114,
+      "1.0": 0.07313307202364618,
+      "10.0": 0.08863571863907534,
+      "100.0": 0.13439862120766194
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.496940694333329e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "answer_reveal",
+    "fold": 3,
+    "baseline": "conditional_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.07837479134632931,
+      "1.0": 0.08304361907147453,
+      "10.0": 0.09321763638813067,
+      "100.0": 0.1348028535481054
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.771589174792923e-06,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 0,
+    "baseline": "context",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.41356004218217013,
+      "1.0": 0.44491681532494215,
+      "10.0": 0.4576240573187653,
+      "100.0": 0.460253344949697
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.166647639194167e-07,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 0,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.46145081121157144,
+      "1.0": 0.4553963730020661,
+      "10.0": 0.45848723006379877,
+      "100.0": 0.4603155739289712
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.3383744668082898e-08,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 0,
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.4669311069263115,
+      "1.0": 0.4594280391954309,
+      "10.0": 0.4591660694343022,
+      "100.0": 0.46032356095560073
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.2562980251403815e-07,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 0,
+    "baseline": "conditional_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.5001140893331729,
+      "1.0": 0.47765424148728924,
+      "10.0": 0.46196302684087504,
+      "100.0": 0.4603912574037475
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 8.792521120071228e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 1,
+    "baseline": "context",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.016475689153507198,
+      "1.0": 0.016522813780191808,
+      "10.0": 0.01681394446803472,
+      "100.0": 0.016889200308304406
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.570948185586953e-10,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 1,
+    "baseline": "default_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.016479555219038045,
+      "1.0": 0.0165635490092006,
+      "10.0": 0.016828529256386022,
+      "100.0": 0.01688943044969013
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.2290901768574614e-08,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 1,
+    "baseline": "domain_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.01647508632528615,
+      "1.0": 0.016518651583834604,
+      "10.0": 0.016811230310537707,
+      "100.0": 0.01688919826162301
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.0324648189175e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 1,
+    "baseline": "conditional_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.016485607464198377,
+      "1.0": 0.01657534151119525,
+      "10.0": 0.016834994033523915,
+      "100.0": 0.016889841308112993
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.81360427938776e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 2,
+    "baseline": "context",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.4135600421821725,
+      "1.0": 0.4449168153249421,
+      "10.0": 0.4576240573187653,
+      "100.0": 0.460253344949697
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.738477282541538e-07,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 2,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.46145081121157144,
+      "1.0": 0.4553963730020661,
+      "10.0": 0.4584872300637987,
+      "100.0": 0.4603155739289712
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.2512993419200313e-08,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 2,
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.4669311069281252,
+      "1.0": 0.4594280391954309,
+      "10.0": 0.4591660694343022,
+      "100.0": 0.46032356095560073
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.061826309216144e-07,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 2,
+    "baseline": "conditional_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.5001140894790097,
+      "1.0": 0.47765425503494036,
+      "10.0": 0.46196302684087504,
+      "100.0": 0.4603912574037475
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 9.44012413128803e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 3,
+    "baseline": "context",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.3741450837951927,
+      "1.0": 0.42127976217417934,
+      "10.0": 0.45493348779698733,
+      "100.0": 0.4627909304556382
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.2512676460241234e-07,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 3,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.44273500901261525,
+      "1.0": 0.43203409529405157,
+      "10.0": 0.45546114645368013,
+      "100.0": 0.46280845746261684
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.0636816028838396e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 3,
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.45450297893174746,
+      "1.0": 0.44083017663387675,
+      "10.0": 0.4563180350894666,
+      "100.0": 0.4628169497628041
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.099637124748256e-08,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "epistemic_qualification",
+    "fold": 3,
+    "baseline": "conditional_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.451868896736672,
+      "1.0": 0.45123426209017703,
+      "10.0": 0.4581483723806381,
+      "100.0": 0.4628902862970988
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.638646680319656e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 0,
+    "baseline": "context",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.008244493966029083,
+      "1.0": 0.008269261765713649,
+      "10.0": 0.008341000677673018,
+      "100.0": 0.008347250577268725
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.8357027586381192e-09,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 0,
+    "baseline": "default_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.008250856554977596,
+      "1.0": 0.008310803428862671,
+      "10.0": 0.008344962189364095,
+      "100.0": 0.008347291500186592
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.646516670372193e-11,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 0,
+    "baseline": "domain_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.008243811508149915,
+      "1.0": 0.008264413845873102,
+      "10.0": 0.008340411731566171,
+      "100.0": 0.008347250350582086
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.7366662949668275e-08,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 0,
+    "baseline": "conditional_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.008265359378719818,
+      "1.0": 0.008350699163415336,
+      "10.0": 0.008358441441165888,
+      "100.0": 0.00834738110744582
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.5812425864801813e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 1,
+    "baseline": "context",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 3.810394756896813e-05,
+      "1.0": 3.810394756896813e-05,
+      "10.0": 3.810394756896813e-05,
+      "100.0": 3.810394756896813e-05
+    },
+    "constant_training_label": 0.0,
+    "converged": true,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 1,
+    "baseline": "default_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 3.810394756896813e-05,
+      "1.0": 3.810394756896813e-05,
+      "10.0": 3.810394756896813e-05,
+      "100.0": 3.810394756896813e-05
+    },
+    "constant_training_label": 0.0,
+    "converged": true,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 1,
+    "baseline": "domain_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 3.810394756896813e-05,
+      "1.0": 3.810394756896813e-05,
+      "10.0": 3.810394756896813e-05,
+      "100.0": 3.810394756896813e-05
+    },
+    "constant_training_label": 0.0,
+    "converged": true,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 1,
+    "baseline": "conditional_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 3.810394756896813e-05,
+      "1.0": 3.810394756896813e-05,
+      "10.0": 3.810394756896813e-05,
+      "100.0": 3.810394756896813e-05
+    },
+    "constant_training_label": 0.0,
+    "converged": true,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 2,
+    "baseline": "context",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.008244493966029083,
+      "1.0": 0.008269261765713649,
+      "10.0": 0.008341000677673018,
+      "100.0": 0.008347250577268725
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.8357037754029165e-09,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 2,
+    "baseline": "default_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.008250856554977596,
+      "1.0": 0.008310803428862671,
+      "10.0": 0.008344962189364095,
+      "100.0": 0.008347291500186592
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.490472048703566e-11,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 2,
+    "baseline": "domain_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.00824381150815004,
+      "1.0": 0.008264413845873102,
+      "10.0": 0.008340411731566171,
+      "100.0": 0.008347250350582086
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.809564286776478e-08,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 2,
+    "baseline": "conditional_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.008265359378719818,
+      "1.0": 0.008350699163428432,
+      "10.0": 0.008358441441165888,
+      "100.0": 0.00834738110744582
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.357232298938472e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 3,
+    "baseline": "context",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.008244493966029083,
+      "1.0": 0.008269261765713649,
+      "10.0": 0.008341000677673018,
+      "100.0": 0.008347250577268725
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.8357036615616884e-09,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 3,
+    "baseline": "default_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.008250856554977596,
+      "1.0": 0.008310803428862671,
+      "10.0": 0.008344962189364095,
+      "100.0": 0.008347291500186592
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 8.336409340614637e-11,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 3,
+    "baseline": "domain_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.008243811508149982,
+      "1.0": 0.008264413845873102,
+      "10.0": 0.008340411731566171,
+      "100.0": 0.008347250350582086
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.6499370114896337e-08,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "information_request",
+    "fold": 3,
+    "baseline": "conditional_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.00826535937871982,
+      "1.0": 0.008350699163428432,
+      "10.0": 0.008358441441489717,
+      "100.0": 0.00834738110744582
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.314273208695039e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 0,
+    "baseline": "context",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.1198484907956376,
+      "1.0": 0.11840008251591967,
+      "10.0": 0.11782116924332937,
+      "100.0": 0.1178102627292927
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.710670041876199e-08,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 0,
+    "baseline": "default_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.13879219625441877,
+      "1.0": 0.13727923034541856,
+      "10.0": 0.12591028487046566,
+      "100.0": 0.11859546059684305
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.910580358810421e-06,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 0,
+    "baseline": "domain_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.13890597801264642,
+      "1.0": 0.13467802449844185,
+      "10.0": 0.1246296787184954,
+      "100.0": 0.11856466365454628
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.524299195869276e-07,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 0,
+    "baseline": "conditional_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.14969636214103924,
+      "1.0": 0.14611282084442093,
+      "10.0": 0.13049234886034247,
+      "100.0": 0.11918000161915092
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.4488745253560253e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 1,
+    "baseline": "context",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.12077221457977555,
+      "1.0": 0.11827220837755657,
+      "10.0": 0.11753293066671634,
+      "100.0": 0.1177926432704003
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.8334948145580796e-06,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 1,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.109156712189594,
+      "1.0": 0.1081695672228219,
+      "10.0": 0.10946586049437274,
+      "100.0": 0.11585493372299864
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.9882425433558346e-06,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 1,
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.10822879785442147,
+      "1.0": 0.10616233122800561,
+      "10.0": 0.10881338703040482,
+      "100.0": 0.11584280532184947
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.5826580660203167e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 1,
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.13762738378057326,
+      "1.0": 0.12583929637636052,
+      "10.0": 0.11539845893400741,
+      "100.0": 0.116111665135797
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.364929291402532e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 2,
+    "baseline": "context",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.14373559772702982,
+      "1.0": 0.14057365511240275,
+      "10.0": 0.13913328744470613,
+      "100.0": 0.13905937559594136
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.0277944413903413e-06,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 2,
+    "baseline": "default_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.16110738025820612,
+      "1.0": 0.1604922253416569,
+      "10.0": 0.14810273912024127,
+      "100.0": 0.14003936887524882
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.6973393246466628e-08,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 2,
+    "baseline": "domain_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.17187733086380508,
+      "1.0": 0.16581903175472745,
+      "10.0": 0.14864836456409639,
+      "100.0": 0.14004584103351678
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.3253400495804044e-05,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 2,
+    "baseline": "conditional_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.19477737615694557,
+      "1.0": 0.18750912248046558,
+      "10.0": 0.16214504472448293,
+      "100.0": 0.1420515957031296
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.0792242860778742e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 3,
+    "baseline": "context",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.1279608066601046,
+      "1.0": 0.12520570145543697,
+      "10.0": 0.12422927055343132,
+      "100.0": 0.12435946449733326
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.776413860985151e-06,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 3,
+    "baseline": "default_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.1371349265815086,
+      "1.0": 0.136979073426451,
+      "10.0": 0.12759417163957354,
+      "100.0": 0.12423477579298388
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.414971890767447e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 3,
+    "baseline": "domain_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.1444163226140713,
+      "1.0": 0.14092064041152105,
+      "10.0": 0.12838076380221772,
+      "100.0": 0.12423913419932059
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.8603510610357716e-08,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "learner_choice",
+    "fold": 3,
+    "baseline": "conditional_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.16887468724258523,
+      "1.0": 0.15511317074953615,
+      "10.0": 0.1336992560849366,
+      "100.0": 0.12454542686101472
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.3305266666208126e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 0,
+    "baseline": "context",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.27155055510210535,
+      "1.0": 0.27163399363256774,
+      "10.0": 0.27197912758100934,
+      "100.0": 0.2722674897191464
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.345175796891752e-07,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 0,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.18869241296760184,
+      "1.0": 0.18741550271049123,
+      "10.0": 0.1931048738023501,
+      "100.0": 0.24391360603934345
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.434178241195184e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 0,
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.18290277346955017,
+      "1.0": 0.18206887169115046,
+      "10.0": 0.1919018275797736,
+      "100.0": 0.243874110394951
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 8.021189964235731e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 0,
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.20974362631207952,
+      "1.0": 0.20350125656782483,
+      "10.0": 0.20000419481022078,
+      "100.0": 0.244961063451592
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.189172502387038e-06,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 1,
+    "baseline": "context",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.2114521998233194,
+      "1.0": 0.21145701574493433,
+      "10.0": 0.21149978714719755,
+      "100.0": 0.2115580449969107
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.3524858311650974e-07,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 1,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.08514940003720538,
+      "1.0": 0.08387064948706446,
+      "10.0": 0.09987588896518305,
+      "100.0": 0.1755235206631701
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.245769941402244e-06,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 1,
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.08646471718273492,
+      "1.0": 0.08405177872321536,
+      "10.0": 0.09967280899163078,
+      "100.0": 0.17551958060014092
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.973205831786508e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 1,
+    "baseline": "conditional_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.0930026033601992,
+      "1.0": 0.0928665465034531,
+      "10.0": 0.10429720832947263,
+      "100.0": 0.17589085834138488
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.356139032601902e-06,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 2,
+    "baseline": "context",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.27176139531861654,
+      "1.0": 0.2717475480525849,
+      "10.0": 0.2715763941516686,
+      "100.0": 0.2713681257306629
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.2494884632795475e-07,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 2,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.1899258254159449,
+      "1.0": 0.18659672262395824,
+      "10.0": 0.19081409268253505,
+      "100.0": 0.24207153271680262
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.898378365731816e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 2,
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.18009296721811777,
+      "1.0": 0.17988766327543973,
+      "10.0": 0.19010539798670864,
+      "100.0": 0.24206292953271688
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.368402152429065e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 2,
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.2194894750777275,
+      "1.0": 0.20154113641101298,
+      "10.0": 0.19395317470314188,
+      "100.0": 0.2415366672654127
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.1126867360822246e-06,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 3,
+    "baseline": "context",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.2721242031285461,
+      "1.0": 0.2720768318339519,
+      "10.0": 0.27172581981091476,
+      "100.0": 0.27137662762392817
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.781293619857905e-07,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 3,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.2031996395698595,
+      "1.0": 0.19772858704800358,
+      "10.0": 0.1982130953038906,
+      "100.0": 0.24425698518418346
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.021405042573754e-06,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 3,
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.20211885667134902,
+      "1.0": 0.1954202195522182,
+      "10.0": 0.1979450200449445,
+      "100.0": 0.2442626618962306
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.7316844144475994e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "reasoning_elicitation",
+    "fold": 3,
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.22911869548944744,
+      "1.0": 0.21044994508707593,
+      "10.0": 0.20126538092776655,
+      "100.0": 0.24359898832425977
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.88312954633119e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 0,
+    "baseline": "context",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.06465457674778192,
+      "1.0": 0.06316473391412843,
+      "10.0": 0.06278315476170132,
+      "100.0": 0.06291236126093015
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.112753826390758e-08,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 0,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.06226057759528336,
+      "1.0": 0.060442985565600425,
+      "10.0": 0.06060851103688277,
+      "100.0": 0.06249394679989775
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.5344455545649467e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 0,
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.06263175639080827,
+      "1.0": 0.06042532438794726,
+      "10.0": 0.06052941854963919,
+      "100.0": 0.06249184524944359
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.1192523479984793e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 0,
+    "baseline": "conditional_profile",
+    "penalty": 0.1,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.05629969302180988,
+      "1.0": 0.05680562224446866,
+      "10.0": 0.05824818901525641,
+      "100.0": 0.062145554832541285
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.8966989674563256e-06,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 1,
+    "baseline": "context",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.07186466970759316,
+      "1.0": 0.0702668983952384,
+      "10.0": 0.06981372735779993,
+      "100.0": 0.06989267550520721
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.8308345561823813e-08,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 1,
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.06845353088188945,
+      "1.0": 0.06669489851412007,
+      "10.0": 0.06660971069297437,
+      "100.0": 0.06923519092662313
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.559034997824284e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 1,
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.06931334743727785,
+      "1.0": 0.06697062662617144,
+      "10.0": 0.06660299559760031,
+      "100.0": 0.06923309456161257
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.619405876091996e-07,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 1,
+    "baseline": "conditional_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.06422432736686674,
+      "1.0": 0.06258589595506696,
+      "10.0": 0.06357797364161369,
+      "100.0": 0.0686750280207153
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.432182302058994e-06,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 2,
+    "baseline": "context",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.056309955691079105,
+      "1.0": 0.05536450342556126,
+      "10.0": 0.05510729235210648,
+      "100.0": 0.055104114474631365
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 7.558462744583494e-08,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 2,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.046610792305906056,
+      "1.0": 0.043715837612263296,
+      "10.0": 0.047451174359646714,
+      "100.0": 0.05395845800219101
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.777549606454045e-08,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 2,
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.04665008349509414,
+      "1.0": 0.043733031479660435,
+      "10.0": 0.047486583259803504,
+      "100.0": 0.05395855479982329
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.568798492002088e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 2,
+    "baseline": "conditional_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.045014401798602055,
+      "1.0": 0.042586406401306565,
+      "10.0": 0.04583476436328956,
+      "100.0": 0.053651703356407066
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.3581411940643004e-06,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 3,
+    "baseline": "context",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.07186466970756386,
+      "1.0": 0.0702668983952384,
+      "10.0": 0.06981372735779993,
+      "100.0": 0.06989267550520721
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.8308347560225258e-08,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 3,
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.06845353088188944,
+      "1.0": 0.06669489851412007,
+      "10.0": 0.06660971069297437,
+      "100.0": 0.06923519092662313
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.113115939536783e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 3,
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.06931334743727813,
+      "1.0": 0.06697062662617144,
+      "10.0": 0.06660299559760034,
+      "100.0": 0.06923309456161257
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.469669886373538e-07,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "unsupported_ability_claim",
+    "fold": 3,
+    "baseline": "conditional_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.06542639408083054,
+      "1.0": 0.06437629568373239,
+      "10.0": 0.06499168194266339,
+      "100.0": 0.0689482300215627
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.509780819447526e-06,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 0,
+    "baseline": "context",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.049447535710010114,
+      "1.0": 0.048763621646771727,
+      "10.0": 0.04886409926932197,
+      "100.0": 0.049057633446466166
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 9.132074707540738e-09,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 0,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.04639492360430388,
+      "1.0": 0.04480723099922443,
+      "10.0": 0.04603059223471221,
+      "100.0": 0.048555854700912525
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.7399521239358506e-06,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 0,
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.046396605958682335,
+      "1.0": 0.04460045223211231,
+      "10.0": 0.04593950591270971,
+      "100.0": 0.048552190888019514
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 7.498873866307321e-08,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 0,
+    "baseline": "conditional_profile",
+    "penalty": 100.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.050765393322736996,
+      "1.0": 0.05098684247480454,
+      "10.0": 0.04900698327822833,
+      "100.0": 0.04879013691226358
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.814725504369676e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 1,
+    "baseline": "context",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.06532363761787208,
+      "1.0": 0.0638903238316031,
+      "10.0": 0.06335248988479851,
+      "100.0": 0.06343390221248432
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 8.78615086241652e-09,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 1,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.057809591059436526,
+      "1.0": 0.05319936260753278,
+      "10.0": 0.05512499748013133,
+      "100.0": 0.06201364615894106
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.2187215144010555e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 1,
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.058155571590119304,
+      "1.0": 0.05409366170124591,
+      "10.0": 0.05581230743438936,
+      "100.0": 0.06201791835538867
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.4765591427323699e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 1,
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.07146438053454639,
+      "1.0": 0.062242219579384146,
+      "10.0": 0.056428508319066484,
+      "100.0": 0.061790065813610774
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.146196527834213e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 2,
+    "baseline": "context",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.04120843657353534,
+      "1.0": 0.04063256989627652,
+      "10.0": 0.04055036997160907,
+      "100.0": 0.040623310266768096
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.3945107291135628e-09,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 2,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.038738730054128104,
+      "1.0": 0.036952362236532706,
+      "10.0": 0.03822575416261242,
+      "100.0": 0.040279373014946544
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.114227795058099e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 2,
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.03878689449520546,
+      "1.0": 0.03691976077288808,
+      "10.0": 0.03823588729391154,
+      "100.0": 0.04027854464539557
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.858289747109666e-07,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 2,
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.041570066198970475,
+      "1.0": 0.040906025697395106,
+      "10.0": 0.03999538471810881,
+      "100.0": 0.04038991420239981
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.875181814270377e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 3,
+    "baseline": "context",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.06532363761786732,
+      "1.0": 0.0638903238316031,
+      "10.0": 0.06335248988479851,
+      "100.0": 0.06343390221248432
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 8.786137206673317e-09,
+    "block_ranks": [
+      11
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 3,
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.05780959105943656,
+      "1.0": 0.05319936260753278,
+      "10.0": 0.05512499748013134,
+      "100.0": 0.06201364615894105
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.2187215135683882e-07,
+    "block_ranks": [
+      11,
+      4
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 3,
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.05815557159012413,
+      "1.0": 0.05409366170124589,
+      "10.0": 0.05581230743438934,
+      "100.0": 0.06201791835538867
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.5910259736351406e-06,
+    "block_ranks": [
+      11,
+      4,
+      8
+    ]
+  },
+  {
+    "event": "worked_explanation",
+    "fold": 3,
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "selection": "three source-fold training-only Brier CV",
+    "scores": {
+      "0.1": 0.07146438053252267,
+      "1.0": 0.06224221957938444,
+      "10.0": 0.05642850831906646,
+      "100.0": 0.06179006581361077
+    },
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.146196564194017e-07,
+    "block_ranks": [
+      11,
+      4,
+      8,
+      12
+    ]
+  }
+]

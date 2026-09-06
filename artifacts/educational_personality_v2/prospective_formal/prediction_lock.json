@@ -1,0 +1,41 @@
+{
+  "status": "training-fitted predictions frozen before confirmation generation",
+  "locked_at": "2026-09-05T11:00:25.606558+00:00",
+  "design_sha256": "ec53b09f74d0f241f3de9eee7f9591521b723dac0cbb9ee1cca8cb14a8c719ac",
+  "training_sources": 30,
+  "confirmation_sources": 32,
+  "training_answers": 1280,
+  "confirmation_answers_predicted": 1280,
+  "prediction_rows": 40960,
+  "fitted_models": 32,
+  "secondary_style_models": 8,
+  "secondary_style_predictions": 10240,
+  "files": {
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/predictions.csv": "1e3ca4a647ad672041c207e366eb947cb857eb85204ad9280fc659f95ca0bd98",
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/training_frame.csv": "4a52a28fad285c0623010003ada9fc83ae39bd7ad8e4f62330d8ac58a1951b4f",
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/style_models.json": "ff74498485deb7fd12227461d398d7c9864af4b0f9011ccbef6efede7fbc32c4",
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/confirmation_input_frame.csv": "d74460b83a9181e32a4737ad90e96269b80ff0c48af1531861a30f5441725eb7",
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/style_predictions.csv": "e505be792957dd2a395ca567f39b0d5cf7c3a06de37c93d3052f9f3e6d2143db",
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/models.json": "4402bab4462718a12e70fa865ea7e6b378e0c1581d010fdf8723b31a7a6ed992",
+    "artifacts/educational_personality_v2/prospective_formal/training/generation_audit.json": "3fb3321b2baa4bceac25c693710fed87bc81781b0a6d4d8fc05b5cb1bbc062fc",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/combined_diagnostics/consensus.csv": "68fd0ff21921662c34470df67ec4dc42ace23e6db854d91f5a2aa240852cd0dc",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/combined_diagnostics/summary.json": "ae18c72572fb82a37ca6416eb2c939dc0ca31a25c279e4110de064505a7355d9",
+    "artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/unblinding.jsonl": "c1712b9bbb79e0cc9d94ae3ddb327d4729f884d40b6c4bb005ad8592c8e32892",
+    "scripts/lock_personality_predictions_v3.py": "eb9793fd31e76194fdb7f1efd87d9982059420a7d3e14f9805b43e6849aeff27",
+    "scripts/analyze_personality_coding_v2.py": "7c52c5202e01f4fa70ca7d4cfa7338bbc1a8836b0b56f920c7ef06f85502d219",
+    "scripts/personality_style_competitor_v3.py": "e08c621ba1aec198e7bbc7e1ad953060f4e7d417941336506f064764cca1b079"
+  },
+  "environment": {
+    "python": "3.13.11 | packaged by Anaconda, Inc. | (main, Dec 10 2025, 21:28:48) [GCC 14.3.0]",
+    "numpy": "2.5.2",
+    "scipy": "1.18.0",
+    "pandas": "3.0.5",
+    "scikit-learn": "1.9.0"
+  },
+  "limits": [
+    "These are fixed training-fitted forecasts of known model configurations on new source problems.",
+    "No confirmation labels or outputs were used to fit or select these primary predictors.",
+    "The secondary style competitor uses only training source means of log word count and marked-line fraction.",
+    "Length/formatting can be consequences of teaching policy; style competition is not causal adjustment."
+  ]
+}

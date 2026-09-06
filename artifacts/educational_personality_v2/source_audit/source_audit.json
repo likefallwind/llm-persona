@@ -1,0 +1,134 @@
+{
+  "status": "exploratory source-dependence audit; not a confirmatory split",
+  "script_sha256": "c2adc0f248f1d66eb4534672ca63afc6abe8ea4504a41b69771fc08696e45cae",
+  "semantic_input_sha256": "3046ee17abc924808761f2fe68502d7308fcc1b7c24ca54e7fc2a53752973083",
+  "normalization": "Unicode NFKC, whitespace collapse, strip, casefold; punctuation and numbers retained",
+  "datasets": {
+    "mathdial_standard": {
+      "source_path": "mathtutorbench/datasets/mathdial_bridge.json",
+      "source_sha256": "96609c808383eea57d16bb24a49f302a9d84ffa323571c5989e57638bbaf2066",
+      "rows_after_adapter_filter": 1150,
+      "group_kind": "problem",
+      "unresolved_source_rows": 148,
+      "unique_normalized_groups": 612
+    },
+    "mathdial_hard": {
+      "source_path": "mathtutorbench/datasets/mathdial_bridge_hard.json",
+      "source_sha256": "29a18632ae1c90395d7871513ff006363c781b955a7cd8ca403688ac1d2edfe4",
+      "rows_after_adapter_filter": 327,
+      "group_kind": "problem",
+      "unresolved_source_rows": 62,
+      "unique_normalized_groups": 194
+    },
+    "socratic": {
+      "source_path": "mathtutorbench/data/gsm8k_socratic.jsonl",
+      "source_sha256": "3404ba558a78e4141cd4b3d5229652f9baec33cbac878e31180e4241d38f07f6",
+      "rows_after_adapter_filter": 1319,
+      "group_kind": "problem",
+      "unresolved_source_rows": 0,
+      "unique_normalized_groups": 1319
+    },
+    "bea2025_tutor": {
+      "source_path": "bea2025/mrbench_v3_devset.json",
+      "source_sha256": "a395feab801de50d44b73e1e9b88f84824a1f1d92e15ae86842d90c2b6dbf33c",
+      "rows_after_adapter_filter": 300,
+      "group_kind": "conversation",
+      "unresolved_source_rows": 0,
+      "unique_normalized_groups": 287
+    },
+    "mrbench_tutor": {
+      "source_path": "mrbench/MRBench_V2.json",
+      "source_sha256": "a8792225075533d15c23e1c903d0c649f19708ee93f5c3d8267eaa6ab623aac1",
+      "rows_after_adapter_filter": 200,
+      "group_kind": "conversation",
+      "unresolved_source_rows": 0,
+      "unique_normalized_groups": 195
+    }
+  },
+  "source_overlap": [
+    {
+      "left": "mathdial_standard",
+      "right": "mathdial_hard",
+      "shared_normalized_groups": 124,
+      "left_unique": 612,
+      "right_unique": 194
+    },
+    {
+      "left": "mathdial_standard",
+      "right": "socratic",
+      "shared_normalized_groups": 45,
+      "left_unique": 612,
+      "right_unique": 1319
+    },
+    {
+      "left": "mathdial_hard",
+      "right": "socratic",
+      "shared_normalized_groups": 44,
+      "left_unique": 194,
+      "right_unique": 1319
+    },
+    {
+      "left": "bea2025_tutor",
+      "right": "mrbench_tutor",
+      "shared_normalized_groups": 195,
+      "left_unique": 287,
+      "right_unique": 195
+    }
+  ],
+  "semantic_contexts": 239,
+  "semantic_unique_source_groups": 210,
+  "semantic_unresolved_contexts": 15,
+  "semantic_contexts_per_task": {
+    "longtutor": 40,
+    "mathdial_hard": 40,
+    "mathdial_standard": 79,
+    "socratic": 80
+  },
+  "semantic_source_groups_per_task": {
+    "longtutor": 40,
+    "mathdial_hard": 32,
+    "mathdial_standard": 66,
+    "socratic": 80
+  },
+  "semantic_source_overlap": [
+    {
+      "left": "longtutor",
+      "right": "mathdial_hard",
+      "shared_groups": 0
+    },
+    {
+      "left": "longtutor",
+      "right": "mathdial_standard",
+      "shared_groups": 0
+    },
+    {
+      "left": "longtutor",
+      "right": "socratic",
+      "shared_groups": 0
+    },
+    {
+      "left": "mathdial_hard",
+      "right": "mathdial_standard",
+      "shared_groups": 5
+    },
+    {
+      "left": "mathdial_hard",
+      "right": "socratic",
+      "shared_groups": 2
+    },
+    {
+      "left": "mathdial_standard",
+      "right": "socratic",
+      "shared_groups": 1
+    }
+  ],
+  "limitations": [
+    "Source overlap concerns inputs, not duplicates of generated responses.",
+    "Exact normalization misses paraphrases, prefixes, and related conversation turns.",
+    "Matching whole problem text is not the same as matching full model input.",
+    "Current adapters supply index reconstruction; historical source/adapter versions still need verification.",
+    "BEA/MR overlap can establish dependence; unmatched records are not automatically independent.",
+    "No model output was used to define source groups.",
+    "Missing problem fields remain unresolved; empty strings never form a shared source group."
+  ]
+}

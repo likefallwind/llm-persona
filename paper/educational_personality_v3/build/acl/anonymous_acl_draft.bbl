@@ -1,0 +1,87 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Han et~al.(2026)Han, Kwon, and Gratch}]{han2026contexts}
+Bin Han, Deuksin Kwon, and Jonathan Gratch. 2026.
+\newblock \href {https://arxiv.org/abs/2602.01063} {Personality expression
+  across contexts: Linguistic and behavioral variation in {LLM} agents}.
+\newblock \emph{Preprint}, arXiv:2602.01063.
+
+\bibitem[{Hoeffding(1963)}]{hoeffding1963}
+Wassily Hoeffding. 1963.
+\newblock \href {https://doi.org/10.1080/01621459.1963.10500830} {Probability
+  inequalities for sums of bounded random variables}.
+\newblock \emph{Journal of the American Statistical Association},
+  58(301):13--30.
+
+\bibitem[{Kucheria et~al.(2025)Kucheria, Sawhney, and
+  Hellas}]{kucheria2025cima}
+Aayush Kucheria, Nitin Sawhney, and Arto Hellas. 2025.
+\newblock \href {https://doi.org/10.18653/v1/2025.bea-1.64} {Comparing
+  behavioral patterns of {LLM} and human tutors: A population-level analysis
+  with the {CIMA} dataset}.
+\newblock In \emph{Proceedings of the 20th Workshop on Innovative Use of NLP
+  for Building Educational Applications (BEA 2025)}, pages 873--881.
+
+\bibitem[{Lee et~al.(2026)Lee, Scarlatos, Woodhead, and
+  Lan}]{lee2026tutorpersonas}
+Jaewook Lee, Alexander Scarlatos, Simon Woodhead, and Andrew Lan. 2026.
+\newblock \href {https://doi.org/10.18653/v1/2026.bea-1.7} {Letting tutor
+  personas speak up for {LLMs}: Learning steering vectors from dialogue via
+  preference optimization}.
+\newblock In \emph{Proceedings of the 21st Workshop on Innovative Use of NLP
+  for Building Educational Applications (BEA 2026)}, pages 78--92.
+
+\bibitem[{Lee et~al.(2025)Lee, Lim, Han, Oh, Chae, Chung, Kim, Kwak, Lee, Lee,
+  Yeo, and Yu}]{lee2025trait}
+Seungbeen Lee, Seungwon Lim, Seungju Han, Giyeong Oh, Hyungjoo Chae, Jiwan
+  Chung, Minju Kim, Beong-woo Kwak, Yeonsoo Lee, Dongha Lee, Jinyoung Yeo, and
+  Youngjae Yu. 2025.
+\newblock \href {https://doi.org/10.18653/v1/2025.findings-naacl.469} {Do
+  {LLMs} have distinct and consistent personality? {TRAIT}: Personality testset
+  designed for {LLMs} with psychometrics}.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  NAACL 2025}, pages 8412--8452.
+
+\bibitem[{Liu et~al.(2026)Liu, Liu, Xu, Han, Fang, Yan, Deng, Wang, and
+  Zou}]{liu2026bma}
+Haoze Liu, Run Liu, Haiying Xu, Jiahui Han, Siyuan Fang, Siyu Yan, Huiqi Deng,
+  Guanchu Wang, and Na~Zou. 2026.
+\newblock \href {https://arxiv.org/abs/2608.10703} {Your {LLM}, your style:
+  Behavioral mode axes for {LLM} behavioral control}.
+\newblock \emph{Preprint}, arXiv:2608.10703.
+
+\bibitem[{Macina et~al.(2025)Macina, Daheim, Hakimi, Kapur, Gurevych, and
+  Sachan}]{macina2025mathtutorbench}
+Jakub Macina, Nico Daheim, Ido Hakimi, Manu Kapur, Iryna Gurevych, and Mrinmaya
+  Sachan. 2025.
+\newblock \href {https://doi.org/10.18653/v1/2025.emnlp-main.11}
+  {{MathTutorBench}: A benchmark for measuring open-ended pedagogical
+  capabilities of {LLM} tutors}.
+\newblock In \emph{Proceedings of EMNLP 2025}, pages 204--221.
+
+\bibitem[{Maurya et~al.(2025)Maurya, Srivatsa, Petukhova, and
+  Kochmar}]{maurya2025mrbench}
+Kaushal~Kumar Maurya, Kv~Aditya Srivatsa, Kseniia Petukhova, and Ekaterina
+  Kochmar. 2025.
+\newblock \href {https://doi.org/10.18653/v1/2025.naacl-long.57} {Unifying {AI}
+  tutor evaluation: An evaluation taxonomy for pedagogical ability assessment
+  of {LLM}-powered {AI} tutors}.
+\newblock In \emph{Proceedings of NAACL-HLT 2025}, pages 1234--1251.
+
+\bibitem[{Rooein et~al.(2026)Rooein, Chowdhury, Eremeeva, Qin, Nozza, Sachan,
+  and Hovy}]{rooein2026pats}
+Donya Rooein, Sankalan~Pal Chowdhury, Mariia Eremeeva, Yuan Qin, Debora Nozza,
+  Mrinmaya Sachan, and Dirk Hovy. 2026.
+\newblock \href {https://aclanthology.org/2026.findings-eacl.219/} {{PATS}:
+  Personality-aware teaching strategies with large language model tutors}.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  EACL 2026}, pages 4186--4211.
+
+\bibitem[{Zhang et~al.(2026)Zhang, Wang, and Su}]{zhang2026triad}
+Ruikang Zhang, Shuo Wang, and Qi~Su. 2026.
+\newblock \href {https://arxiv.org/abs/2607.26853} {From representations to
+  behaviors: Exploring the person--situation--behavior triad in {LLMs}}.
+\newblock \emph{Preprint}, arXiv:2607.26853.
+
+\end{thebibliography}

@@ -1,0 +1,46 @@
+{
+  "purpose": "Transport and deployment identity audit; not behavioral evidence",
+  "results": [
+    {
+      "model": "MiniMax-M2.7",
+      "returned_model": "MiniMax-M2.7",
+      "finish_reason": "stop",
+      "error": "",
+      "endpoint": "https://api.minimaxi.com/v1/text/chatcompletion_v2",
+      "completed_at": "2026-09-05T02:53:03.268428+00:00"
+    },
+    {
+      "model": "MiniMax-M3",
+      "returned_model": "MiniMax-M3",
+      "finish_reason": "stop",
+      "error": "",
+      "endpoint": "https://api.minimaxi.com/v1/text/chatcompletion_v2",
+      "completed_at": "2026-09-05T02:53:04.283645+00:00"
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "returned_model": "deepseek-v4-pro",
+      "finish_reason": "stop",
+      "error": "",
+      "endpoint": "http://127.0.0.1:8111/v1/chat/completions",
+      "completed_at": "2026-09-05T02:53:05.647186+00:00"
+    },
+    {
+      "model": "doubao-seed-2.0-lite",
+      "returned_model": "doubao-seed-2.0-lite",
+      "finish_reason": "stop",
+      "error": "",
+      "endpoint": "http://127.0.0.1:8111/v1/chat/completions",
+      "completed_at": "2026-09-05T02:53:07.345328+00:00"
+    },
+    {
+      "model": "glm-5.2",
+      "returned_model": "glm-5.3",
+      "finish_reason": "stop",
+      "error": "",
+      "endpoint": "http://127.0.0.1:8111/v1/chat/completions",
+      "completed_at": "2026-09-05T02:53:09.141419+00:00"
+    }
+  ],
+  "version_warning": "glm-5.2 request returned glm-5.3 upstream. Do not merge with historical GLM-5.2."
+}

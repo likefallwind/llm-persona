@@ -1,0 +1,15 @@
+{
+  "mode": "anchors",
+  "items": 32,
+  "judges": [
+    "MiniMax-M3",
+    "glm-5.2",
+    "deepseek-v4-pro"
+  ],
+  "expected_calls": 96,
+  "rubric_sha256": "fcab9618ebb8c1fba68fe970299371d3be60c8813b42760fd50f863653b019f8",
+  "manifest_sha256": "0aa2fb2289c38e0f1536f677ab47f8036cd4791bef2fa2e84e836f3b8be8cb2c",
+  "label_provenance": "Agent-authored operational diagnostic anchors; not human labels or population ground truth.",
+  "temperature": 0,
+  "max_tokens": 4096
+}

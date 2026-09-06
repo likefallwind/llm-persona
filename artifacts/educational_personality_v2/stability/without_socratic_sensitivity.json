@@ -1,0 +1,77 @@
+{
+  "status": "post-hoc sensitivity, not confirmation",
+  "excluded_tasks": [
+    "socratic"
+  ],
+  "source_policy": "exclude",
+  "contexts": 144,
+  "source_groups": 133,
+  "repetitions": 100,
+  "scores": "historical three-judge consensus",
+  "results": [
+    {
+      "dimension": "affective_warmth",
+      "null_mse": 0.8298742634680137,
+      "global_mse": 0.600516598106861,
+      "task_model_mse": 0.5836800156610509,
+      "mean_relative_reduction": 0.028068795981188933,
+      "fraction_splits_improved": 0.92
+    },
+    {
+      "dimension": "autonomy_support",
+      "null_mse": 0.9129778689674527,
+      "global_mse": 0.692697876900436,
+      "task_model_mse": 0.6616097299659295,
+      "mean_relative_reduction": 0.04494264962028994,
+      "fraction_splits_improved": 0.95
+    },
+    {
+      "dimension": "cognitive_load",
+      "null_mse": 0.45761609147025806,
+      "global_mse": 0.3845170037589208,
+      "task_model_mse": 0.3775359037584065,
+      "mean_relative_reduction": 0.01825290160034617,
+      "fraction_splits_improved": 0.82
+    },
+    {
+      "dimension": "diagnostic_specificity",
+      "null_mse": 0.9725370019640852,
+      "global_mse": 0.9180077179335753,
+      "task_model_mse": 0.8950720950524615,
+      "mean_relative_reduction": 0.025083315060217812,
+      "fraction_splits_improved": 0.84
+    },
+    {
+      "dimension": "elicitation",
+      "null_mse": 1.4604657687991023,
+      "global_mse": 1.0926879310779205,
+      "task_model_mse": 1.0574079758386197,
+      "mean_relative_reduction": 0.03233939539677708,
+      "fraction_splits_improved": 0.88
+    },
+    {
+      "dimension": "epistemic_caution",
+      "null_mse": 0.20560816498316498,
+      "global_mse": 0.20376153381941678,
+      "task_model_mse": 0.2060371534610876,
+      "mean_relative_reduction": -0.011131714442797957,
+      "fraction_splits_improved": 0.39
+    },
+    {
+      "dimension": "help_directness",
+      "null_mse": 0.8841294893378228,
+      "global_mse": 0.6675397734301336,
+      "task_model_mse": 0.6652791215989053,
+      "mean_relative_reduction": 0.0034053920984873864,
+      "fraction_splits_improved": 0.62
+    },
+    {
+      "dimension": "personalization",
+      "null_mse": 0.5877840909090909,
+      "global_mse": 0.5355385379974945,
+      "task_model_mse": 0.47929229295599607,
+      "mean_relative_reduction": 0.10522834735749767,
+      "fraction_splits_improved": 1.0
+    }
+  ]
+}

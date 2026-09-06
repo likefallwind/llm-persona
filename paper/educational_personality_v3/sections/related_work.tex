@@ -1,0 +1,41 @@
+\section{Related Work}
+
+\paragraph{Personality and situated behavior.}
+TRAIT extends personality inventories into scenario-based choices and evaluates
+distinctiveness, consistency, and prompting effects \citep{lee2025trait}.
+Behavioral Mode Axes uses situated choices across interaction registers,
+also evaluates open-ended generations, and studies activation-based control
+\citep{liu2026bma}. Separate construction and evaluation scenarios are already
+part of that framework. Internal-feature interventions further connect
+personality-related representations to behavior across situations
+\citep{zhang2026triad}; conversational studies examine contextual variation under
+the same assigned personality \citep{han2026contexts}. Together these studies
+motivate examining both recurring defaults and conditional expression. Our
+deployment-level forecasts test observable educational actions and do not
+identify the internal mechanisms responsible for them.
+
+\paragraph{Tutor behavior and educational personas.}
+The CIMA comparison studies three LLMs in language-learning dialogues, reporting
+characteristic action mixtures and response complexity. Its generation prompt
+requests both a response and action labels \citep{kucheria2025cima}. Thus,
+describing model-specific teaching styles is an existing research direction.
+Tutor-persona steering learns from human tutoring dialogues and evaluates
+persona alignment on held-out dialogues \citep{lee2026tutorpersonas}. Our
+experiment instead measures the default behavior of multiple deployed
+configurations and compares changes caused by controlled student cues and
+teaching instructions. We code the visible answers after generation and retain
+cross-coder sensitivity; this changes the measurement procedure without
+establishing that the resulting labels are ground truth.
+
+\paragraph{Teaching quality and the predictive question.}
+MRBench and MathTutorBench organize pedagogical-capability evaluation
+\citep{maurya2025mrbench,macina2025mathtutorbench}. PATS studies teaching adapted
+to student personality \citep{rooein2026pats}. Our primary target is the
+probability of the tutor's next observable behavior under specified conditions.
+Predicting that behavior does not rank its educational value. The empirical
+addition sought here is a joint account of which default and conditional
+profiles predict new-source actions, how those profiles compare with simpler
+explanations, and how neutral wording and explicit policies change them on
+matched inputs. Source separation and advance prediction locks make these
+comparisons auditable; their substantive contribution depends on the resulting
+evidence rather than on the procedure alone.

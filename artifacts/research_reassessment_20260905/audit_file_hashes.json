@@ -1,0 +1,11 @@
+{
+  "scripts/audit_archive_coverage.py": "9525b961c800b9f7ea58485b5c2e9845e3696eb79cbb5bf562f4bff2f8b9a136",
+  "scripts/audit_conditional_profiles.py": "7575c512a09f52ce9daf4d65f61b1180753483b494f14e52b12ab4aab2fa49fa",
+  "research/43_research_reassessment_20260905.md": "ae023a769a76df02c23c321052aa5723fa965d22422ac234b2158ab00a12834d",
+  "artifacts/research_reassessment_20260905/archive_census.json": "5b1386b6df97b52ae3d8c985ffddfcb9a8e36cc7c516ff86ef4c16f07c1d029f",
+  "artifacts/research_reassessment_20260905/conditional_profile_metadata.json": "56b7a88507a5e1b2a173a03343939177a165e081144ea347c80c8d6024cd15c6",
+  "artifacts/research_reassessment_20260905/prompt_direction_audit.json": "2ba35f6e355aec729cd63dce005c3e330afd62784ccf904a1358c9a6cc29bcb0",
+  "artifacts/research_reassessment_20260905/verification.json": "3c0c4d743e9f4d981a9b764f45c3d1a43dec21b2cf3009441de8812a7ea7e56e",
+  "artifacts/research_reassessment_20260905/conditional_profile_splits.csv": "dc29a3aad6f9bc35d890df6527e4d44b1425c9b344a6c4e051e9c7e45234c40f",
+  "artifacts/research_reassessment_20260905/conditional_profile_summary.csv": "a0fd2971571c2cb127e33d8b83c29c7d73a1c2e510a3aff727c5b14f9f9fb4c5"
+}

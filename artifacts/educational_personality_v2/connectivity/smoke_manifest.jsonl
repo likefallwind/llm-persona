@@ -1,0 +1,5 @@
+{"request_id": "transport-smoke:MiniMax-M3", "model": "MiniMax-M3", "messages": [{"role": "user", "content": "Return only the result of 2 + 3."}]}
+{"request_id": "transport-smoke:MiniMax-M2.7", "model": "MiniMax-M2.7", "messages": [{"role": "user", "content": "Return only the result of 2 + 3."}]}
+{"request_id": "transport-smoke:glm-5.2", "model": "glm-5.2", "messages": [{"role": "user", "content": "Return only the result of 2 + 3."}]}
+{"request_id": "transport-smoke:deepseek-v4-pro", "model": "deepseek-v4-pro", "messages": [{"role": "user", "content": "Return only the result of 2 + 3."}]}
+{"request_id": "transport-smoke:doubao-seed-2.0-lite", "model": "doubao-seed-2.0-lite", "messages": [{"role": "user", "content": "Return only the result of 2 + 3."}]}

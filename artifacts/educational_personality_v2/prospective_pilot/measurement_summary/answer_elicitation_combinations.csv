@@ -1,0 +1,13 @@
+model,action_combination,0
+MiniMax-M2.7,answer_and_elicit,7
+MiniMax-M2.7,answer_only,24
+MiniMax-M2.7,elicit_only,1
+MiniMax-M3,answer_and_elicit,10
+MiniMax-M3,answer_only,18
+MiniMax-M3,elicit_only,4
+deepseek-v4-pro,answer_and_elicit,6
+deepseek-v4-pro,answer_only,26
+doubao-seed-2.0-lite,answer_and_elicit,1
+doubao-seed-2.0-lite,answer_only,31
+glm-5.3,answer_and_elicit,6
+glm-5.3,elicit_only,26

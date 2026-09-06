@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-09-05T10:59:18.963249+00:00",
+  "status": "disclosed single-request training completion-budget amendment before primary forecasts",
+  "allowed_request_ids": [
+    "7890f87b780f9df872d4:glm-5.3"
+  ],
+  "source_run": "artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/run_repair2",
+  "original_max_tokens": 16384,
+  "max_tokens": 32768,
+  "temperature": 0,
+  "timeout": 720,
+  "attempts": 2,
+  "extra_repair_passes": 0,
+  "original_valid_requests_retained": 3839,
+  "new_tutor_generations": 0,
+  "primary_analysis_changed": false,
+  "original_frozen_protocol_compliance": false,
+  "original_terminal_states": "artifacts/educational_personality_v2/runtime/budget_amendment_20260905_105918",
+  "test_evidence": "16 targeted budget recovery and measurement tests passed; no API test calls",
+  "files": {
+    "scripts/complete_personality_training_budget_recovery_v3.py": "36d09ae60e3d35f3481e9c410819f68605d517af3f9ef3b525f3f913f4eed0c0",
+    "scripts/analyze_personality_coding_v2.py": "7c52c5202e01f4fa70ca7d4cfa7338bbc1a8836b0b56f920c7ef06f85502d219",
+    "scripts/run_personality_requests_v2.py": "cdc88daec724c46f0f40f105a42b7655c0b76add3a3dc43e61d582111e3611bd",
+    "scripts/finish_personality_training_v3.py": "708b3fb5976f41501371ec8acd17d137e0f9ba4e22c40b91f2fdac13fab3a6d6",
+    "scripts/lock_personality_predictions_v3.py": "eb9793fd31e76194fdb7f1efd87d9982059420a7d3e14f9805b43e6849aeff27",
+    "scripts/run_personality_formal_stage_v3.py": "36bd5fca9209da5f887d7e9dbd112385ffded95cfb404a74153ebdbaf69fd126",
+    "tests/test_personality_budget_recovery_v3.py": "b0a57986ff77d4ecd766200a5bbde780ff752ad779a1707757c33bf478894c31",
+    "research/59_training_single_code_budget_amendment.md": "41aae053bdd2e1fd3eee56c00de97868af35498890c9fa0fff84f06b522a95a7",
+    "artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/manifest.jsonl": "97796b2095d37916dde375dcb694da29e0d89e2f8ab508edbed1bf4ef187571a",
+    "artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/unblinding.jsonl": "c1712b9bbb79e0cc9d94ae3ddb327d4729f884d40b6c4bb005ad8592c8e32892",
+    "artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/freeze.json": "a6fd8db8263d8173769831c1760a67f37a5407072d3750ea0f721d9d76c9c0db",
+    "artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/run_repair2/responses.jsonl": "cec7b8b0e3bae43476f9cc8cb89b9e98e8d1692fcfbfdd4f1b8270854a59cd01",
+    "artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/run_repair2/summary.json": "22dd2d7061724c58af84a728908ec1d65ff90ff2ea0c1e94d2f0180bca9cb6ad",
+    "artifacts/educational_personality_v2/prospective_formal/training/measurement_diagnostics/pass2/summary.json": "c971048fef45ba1e213bc1669cf0645f06b087e8ad7bfd2e951cda2827058cca",
+    "artifacts/educational_personality_v2/prospective_formal/training/measurement_diagnostics/pass2/coverage.csv": "a7d843016598628af8452112980165d78b0035813e00d877a55ad36c825a3324"
+  }
+}

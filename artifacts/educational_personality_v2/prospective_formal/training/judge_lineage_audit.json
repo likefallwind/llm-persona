@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "checked_at": "2026-09-05T11:00:26.435482+00:00",
+  "visible_generation_items": 1280,
+  "judge_requests": 3840,
+  "mapping_matches_frozen_source_and_visible_output": true,
+  "coder_payload_reconstructed_exactly": true,
+  "input_hashes": {
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v2/prospective_formal/training/generation_manifest.jsonl": "caf16c92b00a55adff0ee98604964f40fe9c0837feb34cff49a3017f10c84382",
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v2/prospective_formal/training/scenarios.jsonl": "6a6b41cfd1424a8493a976eed63115286009fb99e2dab83a7310fdcb29393c13",
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v2/prospective_formal/training/run/responses.jsonl": "a80a8a08e0419ba900bd4e31cecc0c43788b07eb07d773b49104d1c7aa635abf",
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/manifest.jsonl": "97796b2095d37916dde375dcb694da29e0d89e2f8ab508edbed1bf4ef187571a",
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/unblinding.jsonl": "c1712b9bbb79e0cc9d94ae3ddb327d4729f884d40b6c4bb005ad8592c8e32892",
+    "data/educational_personality_measurement_v2_2.json": "dc623c57f86676860b19de1655521a75199af6808ea1488c450c17e8cad09811"
+  },
+  "script_sha256": "837427d7c9d339cc0cd5a958581dcba693a125a81705d36f6ad2df4ff7f87971",
+  "limitation": "Input lineage and explicit blinding are verified; this does not prove semantic code accuracy or unguessable model identity."
+}

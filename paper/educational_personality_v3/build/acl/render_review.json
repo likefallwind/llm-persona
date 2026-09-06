@@ -1,0 +1,38 @@
+{
+  "reviewed_at": "2026-09-06T02:23:45.885740+00:00",
+  "status": "All eleven current ACL-layout draft pages visually inspected; future empirical pages and final submission review still required",
+  "pdf_sha256": "2a0827d1dbaa2de502c64fcff3d7c5c44b6d3b1b75d6453355c1c6ef764908b0",
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ],
+  "clean_auxiliary_build_verified": true,
+  "latex_passes_to_stability": 4,
+  "checks": {
+    "anonymous_title_block": true,
+    "incomplete_draft_banner": true,
+    "a4_and_embedded_fonts": true,
+    "line_numbers_outside_body_without_overlapping_text": true,
+    "figures_and_archive_table_legible": true,
+    "references_and_appendix_links_resolved": true,
+    "no_clipped_or_overlapping_content_observed": true,
+    "no_overfull_or_missing_glyph_warning": true
+  },
+  "remaining": [
+    "Complete confirmation coding and fixed repairs",
+    "Primary, robustness and content-sensitivity evidence",
+    "Empirical abstract, results, discussion, conclusion and actual result figures",
+    "Final scientific claim review and selected venue requirements",
+    "Rebuild and review all final English/Chinese/ACL outputs after empirical sections are added"
+  ],
+  "paper_complete": false
+}

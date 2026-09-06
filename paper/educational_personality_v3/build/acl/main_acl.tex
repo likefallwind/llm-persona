@@ -1,0 +1,36 @@
+\documentclass[11pt]{article}
+\usepackage[review]{acl}
+\usepackage{times,latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,booktabs,graphicx,microtype,xurl,placeins}
+% These floats contain diagrams/tables designed for the full text width.
+% No official style file or page/font dimensions are modified.
+\renewenvironment{figure}[1][t]{\begin{figure*}[#1]}{\end{figure*}}
+\renewenvironment{table}[1][t]{\begin{table*}[#1]}{\end{table*}}
+\title{Do Language Models Have Educational Personalities?\\
+Testing Recurring Behavior on New Tutoring Problems}
+\author{Anonymous working draft}
+\date{}
+\hypersetup{pdfauthor={},pdfsubject={Incomplete research draft}}
+\begin{document}
+
+\maketitle
+\begin{center}
+\small\textbf{Incomplete working draft.} Introduction, related work, methods,
+archive audit, measurement development, and limitations. Prospective confirmation results,
+the empirical abstract, discussion, and conclusion remain to be completed.
+\end{center}
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/methods}
+\input{sections/measurement_development}
+\input{sections/limitations}
+
+\FloatBarrier
+\bibliography{references}
+\clearpage
+\appendix
+\input{sections/archive_scope}
+\input{sections/detailed_methods}
+\end{document}

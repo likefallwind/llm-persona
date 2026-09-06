@@ -1,0 +1,28 @@
+{
+  "status": "measurement-development pilot; no confirmatory personality claim",
+  "responses": 160,
+  "source_templates": 4,
+  "models_actual": [
+    "MiniMax-M2.7",
+    "MiniMax-M3",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite",
+    "glm-5.3"
+  ],
+  "judges": 3,
+  "rubric_sha256": "dc623c57f86676860b19de1655521a75199af6808ea1488c450c17e8cad09811",
+  "inputs": {
+    "artifacts/educational_personality_v2/prospective_pilot/natural_diagnostics_v2_2_repaired/event_codes.csv": "d765bce03e815f8b1dac82027b702630a38feda2ac56105fd506315891926193",
+    "artifacts/educational_personality_v2/prospective_pilot/natural_diagnostics_v2_2_repaired/consensus.csv": "ef3366d64396af9e8892f8c4b2bcbdb90bbfa869e0ea84dcdf39e7cafd87a8d6",
+    "artifacts/educational_personality_v2/prospective_pilot/generation_audit.json": "4302832427d620218594e5fb782e52776d7142d495111cf1ea3f261c3744eded",
+    "/home/likefallwind/code/llm-persona/scripts/summarize_personality_pilot_v2.py": "83d525bbcb4ebbd26ef443c2bb114e6c46c57ee648f6a398a0b33a488884c81b"
+  },
+  "limitations": [
+    "Four templates do not support stable population or cross-domain inference.",
+    "Different generators sharing a family with a judge can induce measurement bias.",
+    "Excluding generator-family judges changes the judge panel; this is sensitivity, not truth.",
+    "Joint answer/elicitation categories contain no evidence about event order.",
+    "Repeated event agreement may reflect constant behavior rather than reliability.",
+    "Pilot-informed endpoint choices must be disclosed and frozen before confirmation."
+  ]
+}

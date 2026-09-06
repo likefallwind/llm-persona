@@ -1,0 +1,31 @@
+{
+  "status": "synthetic design diagnostic; no empirical personality findings",
+  "actual_responses_or_labels_used": 0,
+  "api_calls": 0,
+  "sample_size_changes": 0,
+  "primary_test_changes": 0,
+  "seed": 20260905,
+  "trials_per_scenario": 100000,
+  "scenarios": 11,
+  "neutral_sources": 16,
+  "states_per_source": 4,
+  "requests_per_state_per_arm": 2,
+  "neutral_comparison_family": 30,
+  "nominal_per_comparison_noncoverage": 0.0016666666666666668,
+  "neutral_t_critical": 3.8219733888635274,
+  "maximum_observed_source_sd_for_centered_tolerance": 0.10465797620818625,
+  "gaussian_standardized_effect_for_80_percent_power": 0.5999985153443851,
+  "gaussian_monte_carlo_power": 0.79966,
+  "gaussian_scope": "Illustrative normal source differences and conservative first Holm threshold; not estimated power of the actual Brier comparisons.",
+  "checks": [
+    "Simulated Bernoulli source variances match their analytic values.",
+    "Vectorized t intervals match the unchanged frozen calculation.",
+    "Gaussian simulation matches the noncentral-t calculation."
+  ],
+  "limits": [
+    "The probability profiles are constructed examples, not fitted model profiles.",
+    "Per-comparison simulations do not estimate familywise error for the actual dependent events.",
+    "Simulation-rate intervals describe Monte Carlo uncertainty, not educational-population uncertainty."
+  ],
+  "script_sha256": "393432ec41699d8d96191ec4e4e59f8facc6cdcb0114e97c080f9f9bd1543d96"
+}

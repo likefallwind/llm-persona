@@ -1,0 +1,4 @@
+blind_id,judge_requested,judge_returned,event,present,anchor,expected,anchor_group
+edc02d8d3924a3b8c1de,deepseek-v4-pro,deepseek-v4-pro,epistemic_qualification,1,new_no_bound,0,new_heldout_wording
+307896dc53cb353d903e,glm-5.3,glm-5.3,affect_acknowledgement,1,new_polite_only,0,new_heldout_wording
+cc75a143d13a52081913,glm-5.3,glm-5.3,epistemic_qualification,0,new_bound,1,new_heldout_wording

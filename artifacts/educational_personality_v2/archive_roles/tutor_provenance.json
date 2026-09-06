@@ -1,0 +1,3463 @@
+{
+  "status": "selected archive bytes and provenance coverage audited; full historic inputs not reconstructed",
+  "census_sha256": "5b1386b6df97b52ae3d8c985ffddfcb9a8e36cc7c516ff86ef4c16f07c1d029f",
+  "role_coverage_sha256": "51937d474a6a8541c1453def190c503dd1b3b74b6ed4783255d9cdb95aee9860",
+  "script_sha256": "4a569709d189326089e5357502ca054637e5b73290ecc45a6e4fddcf1d6fb247",
+  "all_selected_prediction_and_summary_hashes_match_census": true,
+  "tutor_benchmarks": 9,
+  "variant_preserving_text_records": 68799,
+  "totals": {
+    "latest_successful_file_items": 86072,
+    "stored_messages": 0,
+    "stored_prompt_text": 0,
+    "generation_prompt_hash": 0,
+    "provider_request_id": 0,
+    "returned_model_identity": 0,
+    "generation_timestamp": 0,
+    "finish_reason": 0,
+    "usage": 86072,
+    "prediction_files": 122,
+    "summary_generation_parameters": 83,
+    "summary_generation_prompt_hash": 0,
+    "summary_judge_prompt_hash": 114
+  },
+  "per_benchmark": {
+    "bea2025_tutor": {
+      "latest_successful_file_items": 4200,
+      "stored_messages": 0,
+      "stored_prompt_text": 0,
+      "generation_prompt_hash": 0,
+      "provider_request_id": 0,
+      "returned_model_identity": 0,
+      "generation_timestamp": 0,
+      "finish_reason": 0,
+      "usage": 4200,
+      "prediction_files": 14,
+      "summary_generation_parameters": 11,
+      "summary_generation_prompt_hash": 0,
+      "summary_judge_prompt_hash": 14
+    },
+    "longtutor_teaching": {
+      "latest_successful_file_items": 14000,
+      "stored_messages": 0,
+      "stored_prompt_text": 0,
+      "generation_prompt_hash": 0,
+      "provider_request_id": 0,
+      "returned_model_identity": 0,
+      "generation_timestamp": 0,
+      "finish_reason": 0,
+      "usage": 14000,
+      "prediction_files": 14,
+      "summary_generation_parameters": 11,
+      "summary_generation_prompt_hash": 0,
+      "summary_judge_prompt_hash": 14
+    },
+    "mathtutorbench_pedagogy": {
+      "latest_successful_file_items": 18400,
+      "stored_messages": 0,
+      "stored_prompt_text": 0,
+      "generation_prompt_hash": 0,
+      "provider_request_id": 0,
+      "returned_model_identity": 0,
+      "generation_timestamp": 0,
+      "finish_reason": 0,
+      "usage": 18400,
+      "prediction_files": 16,
+      "summary_generation_parameters": 9,
+      "summary_generation_prompt_hash": 0,
+      "summary_judge_prompt_hash": 14
+    },
+    "mathtutorbench_pedagogy_hard": {
+      "latest_successful_file_items": 5232,
+      "stored_messages": 0,
+      "stored_prompt_text": 0,
+      "generation_prompt_hash": 0,
+      "provider_request_id": 0,
+      "returned_model_identity": 0,
+      "generation_timestamp": 0,
+      "finish_reason": 0,
+      "usage": 5232,
+      "prediction_files": 16,
+      "summary_generation_parameters": 9,
+      "summary_generation_prompt_hash": 0,
+      "summary_judge_prompt_hash": 14
+    },
+    "mathtutorbench_scaffolding": {
+      "latest_successful_file_items": 18400,
+      "stored_messages": 0,
+      "stored_prompt_text": 0,
+      "generation_prompt_hash": 0,
+      "provider_request_id": 0,
+      "returned_model_identity": 0,
+      "generation_timestamp": 0,
+      "finish_reason": 0,
+      "usage": 18400,
+      "prediction_files": 16,
+      "summary_generation_parameters": 9,
+      "summary_generation_prompt_hash": 0,
+      "summary_judge_prompt_hash": 14
+    },
+    "mathtutorbench_scaffolding_hard": {
+      "latest_successful_file_items": 5232,
+      "stored_messages": 0,
+      "stored_prompt_text": 0,
+      "generation_prompt_hash": 0,
+      "provider_request_id": 0,
+      "returned_model_identity": 0,
+      "generation_timestamp": 0,
+      "finish_reason": 0,
+      "usage": 5232,
+      "prediction_files": 16,
+      "summary_generation_parameters": 9,
+      "summary_generation_prompt_hash": 0,
+      "summary_judge_prompt_hash": 14
+    },
+    "mmtutorbench": {
+      "latest_successful_file_items": 6158,
+      "stored_messages": 0,
+      "stored_prompt_text": 0,
+      "generation_prompt_hash": 0,
+      "provider_request_id": 0,
+      "returned_model_identity": 0,
+      "generation_timestamp": 0,
+      "finish_reason": 0,
+      "usage": 6158,
+      "prediction_files": 8,
+      "summary_generation_parameters": 6,
+      "summary_generation_prompt_hash": 0,
+      "summary_judge_prompt_hash": 8
+    },
+    "mrbench_tutor": {
+      "latest_successful_file_items": 2800,
+      "stored_messages": 0,
+      "stored_prompt_text": 0,
+      "generation_prompt_hash": 0,
+      "provider_request_id": 0,
+      "returned_model_identity": 0,
+      "generation_timestamp": 0,
+      "finish_reason": 0,
+      "usage": 2800,
+      "prediction_files": 14,
+      "summary_generation_parameters": 11,
+      "summary_generation_prompt_hash": 0,
+      "summary_judge_prompt_hash": 14
+    },
+    "tutorbench": {
+      "latest_successful_file_items": 11650,
+      "stored_messages": 0,
+      "stored_prompt_text": 0,
+      "generation_prompt_hash": 0,
+      "provider_request_id": 0,
+      "returned_model_identity": 0,
+      "generation_timestamp": 0,
+      "finish_reason": 0,
+      "usage": 11650,
+      "prediction_files": 8,
+      "summary_generation_parameters": 8,
+      "summary_generation_prompt_hash": 0,
+      "summary_judge_prompt_hash": 8
+    }
+  },
+  "candidate_id_intersections": [
+    {
+      "benchmark": "bea2025_tutor",
+      "input_variant": "standard",
+      "models_with_records": 7,
+      "legacy_core_six_shared_item_ids": 300,
+      "per_model_item_ids": {
+        "deepseek-v4-pro": 300,
+        "doubao-seed-2.0-pro": 300,
+        "glm-5.2": 300,
+        "minimax-m2.7": 300,
+        "minimax-m3": 300,
+        "qwen3.5-4b": 300,
+        "qwen3.8-27b": 300
+      }
+    },
+    {
+      "benchmark": "bea2025_tutor",
+      "input_variant": "unspecified",
+      "models_with_records": 3,
+      "legacy_core_six_shared_item_ids": 0,
+      "per_model_item_ids": {
+        "glm-5.2": 300,
+        "minimax-m2.7": 300,
+        "minimax-m3": 300
+      }
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "input_variant": "standard",
+      "models_with_records": 7,
+      "legacy_core_six_shared_item_ids": 1000,
+      "per_model_item_ids": {
+        "deepseek-v4-pro": 1000,
+        "doubao-seed-2.0-pro": 1000,
+        "glm-5.2": 1000,
+        "minimax-m2.7": 1000,
+        "minimax-m3": 1000,
+        "qwen3.5-4b": 1000,
+        "qwen3.8-27b": 1000
+      }
+    },
+    {
+      "benchmark": "longtutor_teaching",
+      "input_variant": "unspecified",
+      "models_with_records": 5,
+      "legacy_core_six_shared_item_ids": 0,
+      "per_model_item_ids": {
+        "deepseek-v4-pro": 1000,
+        "doubao-seed-2.0-pro": 1000,
+        "glm-5.2": 1000,
+        "minimax-m2.7": 1000,
+        "minimax-m3": 1000
+      }
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "standard",
+      "models_with_records": 7,
+      "legacy_core_six_shared_item_ids": 1150,
+      "per_model_item_ids": {
+        "deepseek-v4-pro": 1150,
+        "doubao-seed-2.0-pro": 1150,
+        "glm-5.2": 1150,
+        "minimax-m2.7": 1150,
+        "minimax-m3": 1150,
+        "qwen3.5-4b": 1150,
+        "qwen3.8-27b": 1150
+      }
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "unspecified",
+      "models_with_records": 7,
+      "legacy_core_six_shared_item_ids": 0,
+      "per_model_item_ids": {
+        "deepseek-v4-flash": 1150,
+        "deepseek-v4-pro": 1150,
+        "doubao-seed-2.0-lite": 1150,
+        "doubao-seed-2.0-pro": 1150,
+        "glm-5.2": 1150,
+        "minimax-m2.7": 1150,
+        "minimax-m3": 1150
+      }
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "standard",
+      "models_with_records": 7,
+      "legacy_core_six_shared_item_ids": 327,
+      "per_model_item_ids": {
+        "deepseek-v4-pro": 327,
+        "doubao-seed-2.0-pro": 327,
+        "glm-5.2": 327,
+        "minimax-m2.7": 327,
+        "minimax-m3": 327,
+        "qwen3.5-4b": 327,
+        "qwen3.8-27b": 327
+      }
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "unspecified",
+      "models_with_records": 7,
+      "legacy_core_six_shared_item_ids": 0,
+      "per_model_item_ids": {
+        "deepseek-v4-flash": 327,
+        "deepseek-v4-pro": 327,
+        "doubao-seed-2.0-lite": 327,
+        "doubao-seed-2.0-pro": 327,
+        "glm-5.2": 327,
+        "minimax-m2.7": 327,
+        "minimax-m3": 327
+      }
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "standard",
+      "models_with_records": 7,
+      "legacy_core_six_shared_item_ids": 1150,
+      "per_model_item_ids": {
+        "deepseek-v4-pro": 1150,
+        "doubao-seed-2.0-pro": 1150,
+        "glm-5.2": 1150,
+        "minimax-m2.7": 1150,
+        "minimax-m3": 1150,
+        "qwen3.5-4b": 1150,
+        "qwen3.8-27b": 1150
+      }
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "unspecified",
+      "models_with_records": 7,
+      "legacy_core_six_shared_item_ids": 0,
+      "per_model_item_ids": {
+        "deepseek-v4-flash": 1150,
+        "deepseek-v4-pro": 1150,
+        "doubao-seed-2.0-lite": 1150,
+        "doubao-seed-2.0-pro": 1150,
+        "glm-5.2": 1150,
+        "minimax-m2.7": 1150,
+        "minimax-m3": 1150
+      }
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "standard",
+      "models_with_records": 7,
+      "legacy_core_six_shared_item_ids": 327,
+      "per_model_item_ids": {
+        "deepseek-v4-pro": 327,
+        "doubao-seed-2.0-pro": 327,
+        "glm-5.2": 327,
+        "minimax-m2.7": 327,
+        "minimax-m3": 327,
+        "qwen3.5-4b": 327,
+        "qwen3.8-27b": 327
+      }
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "unspecified",
+      "models_with_records": 7,
+      "legacy_core_six_shared_item_ids": 0,
+      "per_model_item_ids": {
+        "deepseek-v4-flash": 327,
+        "deepseek-v4-pro": 327,
+        "doubao-seed-2.0-lite": 327,
+        "doubao-seed-2.0-pro": 327,
+        "glm-5.2": 327,
+        "minimax-m2.7": 327,
+        "minimax-m3": 327
+      }
+    },
+    {
+      "benchmark": "mmtutorbench",
+      "input_variant": "standard",
+      "models_with_records": 4,
+      "legacy_core_six_shared_item_ids": 0,
+      "per_model_item_ids": {
+        "doubao-seed-2.0-pro": 770,
+        "minimax-m3": 769,
+        "qwen3.5-4b": 770,
+        "qwen3.8-27b": 770
+      }
+    },
+    {
+      "benchmark": "mmtutorbench",
+      "input_variant": "unspecified",
+      "models_with_records": 2,
+      "legacy_core_six_shared_item_ids": 0,
+      "per_model_item_ids": {
+        "doubao-seed-2.0-pro": 770,
+        "minimax-m3": 769
+      }
+    },
+    {
+      "benchmark": "mrbench_tutor",
+      "input_variant": "standard",
+      "models_with_records": 7,
+      "legacy_core_six_shared_item_ids": 200,
+      "per_model_item_ids": {
+        "deepseek-v4-pro": 200,
+        "doubao-seed-2.0-pro": 200,
+        "glm-5.2": 200,
+        "minimax-m2.7": 200,
+        "minimax-m3": 200,
+        "qwen3.5-4b": 200,
+        "qwen3.8-27b": 200
+      }
+    },
+    {
+      "benchmark": "mrbench_tutor",
+      "input_variant": "unspecified",
+      "models_with_records": 3,
+      "legacy_core_six_shared_item_ids": 0,
+      "per_model_item_ids": {
+        "glm-5.2": 200,
+        "minimax-m2.7": 200,
+        "minimax-m3": 200
+      }
+    },
+    {
+      "benchmark": "tutorbench",
+      "input_variant": "standard",
+      "models_with_records": 4,
+      "legacy_core_six_shared_item_ids": 0,
+      "per_model_item_ids": {
+        "doubao-seed-2.0-pro": 1442,
+        "minimax-m3": 1440,
+        "qwen3.5-4b": 1472,
+        "qwen3.8-27b": 1471
+      }
+    }
+  ],
+  "files": [
+    {
+      "path": "bea2025_tutor/judge-deepseek-v4-flash/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "7c689d8ee49816af07eb822d10ca2d3cd992a89e18ba5027f36e626f9cc70f47",
+      "summary_sha256": "f75f6d06d013106be205c62a096fc6fd66e8534698168d61146af398009e78e1",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "bea2025_tutor/judge-deepseek-v4-flash/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "2f1a3d1ce16b58521ad2d8a5b117b637e8866df886cc9e9b030aa284e14fa15d",
+      "summary_sha256": "fb90d642ef433316b8e89760b69991ce868023a291c8f918522fdf344339f846",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "bea2025_tutor/judge-deepseek-v4-flash/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "ad34da867f0ff22ff077b34ba48f296294f35a39d582a1a9aa2342dd93371f64",
+      "summary_sha256": "d4f5b2c403c10a781656c2fccfe7331ec1fbe928738fa83933bfc8adbf28a6dc",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "bea2025_tutor/judge-deepseek-v4-flash/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "f60895575e14820f5bbf773adc07d6b25225c5c2f4072f42ed2b10a3bbc524ec",
+      "summary_sha256": "40c6bd9c291c07b3a49fbaf0d48bc6cad094758bdf43078229e4fce5f2f02cd6",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "bea2025_tutor/judge-deepseek-v4-flash/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "08b5516365acbd423d6e3f4dc232e53ffac6e115993dea1b6141cee8524305ad",
+      "summary_sha256": "1f6720eaa136245c872226bd756d93595d526ea71485c45645f9d518ada8cee4",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "bea2025_tutor/judge-deepseek-v4-flash/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "4b8ac7d335e8f41e081df1ee6e7335766b9287cdc0c2499746aa2f63a301eff7",
+      "summary_sha256": "afa65c6c7f5c6519ad4bedcc4fd8b01d34aa20169e12aca8ee9da90cd1978ba5",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "bea2025_tutor/judge-deepseek-v4-flash/minimax3/predictions.jsonl",
+      "prediction_sha256": "b91fd613576557a45f3fd17887f46e4111c843ac0be9af42d78ed89f2d52f5f1",
+      "summary_sha256": "5a9077eabf69bc97e55adb687d9e237054239b54256619fab685103d8f4476c1",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "bea2025_tutor/judge-minimax3/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "7c689d8ee49816af07eb822d10ca2d3cd992a89e18ba5027f36e626f9cc70f47",
+      "summary_sha256": "a87b26bfbb4f0c7457f79f4bfd2f09232f07408b199e181c452fdc9fec961ae7",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "bea2025_tutor/judge-minimax3/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "2f1a3d1ce16b58521ad2d8a5b117b637e8866df886cc9e9b030aa284e14fa15d",
+      "summary_sha256": "7e9327f326f895bbd627a9662cf125735163f1292ebd576f684ebf96f8f8626b",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "bea2025_tutor/judge-minimax3/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "ad34da867f0ff22ff077b34ba48f296294f35a39d582a1a9aa2342dd93371f64",
+      "summary_sha256": "428841b9584fea9b132b09fa27e07f332ff230c9062ed39d9500d8fa65288187",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "bea2025_tutor/judge-minimax3/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "f60895575e14820f5bbf773adc07d6b25225c5c2f4072f42ed2b10a3bbc524ec",
+      "summary_sha256": "2f060d5b83da4a1c443c39740f4939e26acf2de2501e3690783ccd852a98d9cf",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "bea2025_tutor/judge-minimax3/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "08b5516365acbd423d6e3f4dc232e53ffac6e115993dea1b6141cee8524305ad",
+      "summary_sha256": "8c63a6f8481bfc19ba6633236822c972204e653ed53d9ffb845f7d46766f1938",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "bea2025_tutor/judge-minimax3/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "4b8ac7d335e8f41e081df1ee6e7335766b9287cdc0c2499746aa2f63a301eff7",
+      "summary_sha256": "d4c2be7786fc6f62aa9e4c208f5875ef62907c2ee20f6cc4df69f939d3b75047",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "bea2025_tutor/judge-minimax3/minimax3/predictions.jsonl",
+      "prediction_sha256": "b91fd613576557a45f3fd17887f46e4111c843ac0be9af42d78ed89f2d52f5f1",
+      "summary_sha256": "007dd409074d07418a2444d309a12dfd2f5693a74804b8e5161bb8ef7876ab00",
+      "benchmark": "bea2025_tutor",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 300,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 300,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "longtutor_teaching/judge-deepseek-v4-flash/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "b4313c878beba4483f671a910fc400dcdd195c22caa4744f729bb853f60eeaf7",
+      "summary_sha256": "9504a45c498024d7fb846a792114da6c6a45dc69373fbfb478e387acfda3c08d",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "longtutor_teaching/judge-deepseek-v4-flash/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "fc5a5011365aaebb20e48a64aeec63374eb42312f1b1cfec93e07e472ec68a77",
+      "summary_sha256": "46fb9fde4d922fd34ba06bda789f7e8f6701d1b46921bf869341079b44ef7aaa",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "longtutor_teaching/judge-deepseek-v4-flash/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "7d8c2bedf8914334ca709ea22210f29f32f2dfa30631bd3e1d1b9e56250ac50a",
+      "summary_sha256": "83e3ab9ffb36cd2f5eeb184a79ea10e5875dfbda5a9a3705806f6873ae9620e8",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "longtutor_teaching/judge-deepseek-v4-flash/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "05dc0be9259f56782fab80dfd97bf2c011eff5d6c6704894d3dee07fa2f0b04f",
+      "summary_sha256": "de56b73a78259b2bebee358551b2369ac642f5180eb05cccb644a91843a4230d",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "longtutor_teaching/judge-deepseek-v4-flash/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "422d8367af5f39596044b4655c8cd2ca346b6ddc90f71e761bd1612a452b7e85",
+      "summary_sha256": "869e47e0e5b4b3172893373b108fb535161426c05305fb8b648712cac51ba2da",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "longtutor_teaching/judge-deepseek-v4-flash/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "15c9082f6bdd4cb79837b5d91505c8d8280634b57d9e3f457de6679c1c4c6417",
+      "summary_sha256": "6c0284e12da06f3ca93b0112ad988aaa102bfe97749700082c9b47eb41dfa41f",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "longtutor_teaching/judge-deepseek-v4-flash/minimax3/predictions.jsonl",
+      "prediction_sha256": "fece9415d6bb3c1cd216718343e6073e1a7b597c5b2e6246a52116b009137952",
+      "summary_sha256": "3e2fec79b78a8f49f120ef2a3c20fd552412142139be3087be3dea51f355917e",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "longtutor_teaching/judge-minimax3/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "b4313c878beba4483f671a910fc400dcdd195c22caa4744f729bb853f60eeaf7",
+      "summary_sha256": "d13b03c59ab09780e32bf54a864386e4151a110a50e65854c3d713d0f4cb14f8",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "longtutor_teaching/judge-minimax3/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "fc5a5011365aaebb20e48a64aeec63374eb42312f1b1cfec93e07e472ec68a77",
+      "summary_sha256": "bec090b132ef0e1beae39e5c7fb3093f3e8e70b93eb7fa44b80872eb61907fb6",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "longtutor_teaching/judge-minimax3/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "7d8c2bedf8914334ca709ea22210f29f32f2dfa30631bd3e1d1b9e56250ac50a",
+      "summary_sha256": "eeb868583eaf6829c2b705b99206d08969474d3e2dc15f3c733c4b6845d8c77f",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "longtutor_teaching/judge-minimax3/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "05dc0be9259f56782fab80dfd97bf2c011eff5d6c6704894d3dee07fa2f0b04f",
+      "summary_sha256": "c0394661023a210ab84c2cbee8e4d3e7979acfead7d220d9749043073a91a505",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "longtutor_teaching/judge-minimax3/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "422d8367af5f39596044b4655c8cd2ca346b6ddc90f71e761bd1612a452b7e85",
+      "summary_sha256": "34081431743647670d413cf913b36b62e415c85205d19c298082616949ea909d",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "longtutor_teaching/judge-minimax3/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "15c9082f6bdd4cb79837b5d91505c8d8280634b57d9e3f457de6679c1c4c6417",
+      "summary_sha256": "00ac05386033b95e048438b8dfedcd9d0102527b0c87e86687de8bb638318cdf",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "longtutor_teaching/judge-minimax3/minimax3/predictions.jsonl",
+      "prediction_sha256": "fece9415d6bb3c1cd216718343e6073e1a7b597c5b2e6246a52116b009137952",
+      "summary_sha256": "2ac4193aeea58e33565b93fe03b46749679813ae7e0d00cb94d09601847cc36c",
+      "benchmark": "longtutor_teaching",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1000,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1000,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-deepseek-v4-flash/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "c04b44aab37a5e90a2d8503655899f5b53f1586b15560b30f08525ec6eecc2da",
+      "summary_sha256": "6d3ddd61eae05f25790e900128c7fffdb00beb67d2b1ca5c4c797b0ecc7ce97a",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-deepseek-v4-flash/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "a2c7c075a18f50a84793baa103ac3dd38e34116682eaed17687b4121450e944b",
+      "summary_sha256": "6420dca67061ab3b93656a45e6c83f6d21444c3cdae2afc7f3bcf703f7098d1f",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-deepseek-v4-flash/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "1672ec2817204e4425b4138517019ee8df1e1b948e4cd78d988c9bcfae3893c5",
+      "summary_sha256": "40fdbf1b4ba823bf4176badce830fbe1eb3424a63dd211ee87d55772456193fd",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-deepseek-v4-flash/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "04abfcceac9af16c1ae601203c53dcce3e7b2466920a3c17363af2e31ad76e39",
+      "summary_sha256": "af3ca9cb13130dc4e28d2a45ec9208c9c0d10851ff4f3f922fe54316cad0bc1c",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-deepseek-v4-flash/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "cdf45be784f1db536363dcad8f53a24df71bbeb520d78097b7a8e5d2364d8da3",
+      "summary_sha256": "2a3c7f0a0bdda116f1fb0d694c1027431efc654f483d8a0a8d3a9cb61e189914",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-deepseek-v4-flash/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "12c58f309f1e62054a0af3d6c9517dc96995d8f004f78118b05a7dedb99eb637",
+      "summary_sha256": "cd98ea2ea8ed6e1e0d85380e5a071c76fda515147a4d4b93fa7e6f57176c5ccb",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-deepseek-v4-flash/minimax3/predictions.jsonl",
+      "prediction_sha256": "17ab302d106a4f3d62a01227dcd4056d5fad99c4525c382c3f483842bbcdc8be",
+      "summary_sha256": "39725462db498f8e17932a07fcd4ae4c5b046b8ec0aa05bb4324d767d6e00d36",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-minimax3/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "c04b44aab37a5e90a2d8503655899f5b53f1586b15560b30f08525ec6eecc2da",
+      "summary_sha256": "1e561b49f8d594a706b6288874cba246a1672f44adb008d9a61a6105f5ca3c73",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-minimax3/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "a2c7c075a18f50a84793baa103ac3dd38e34116682eaed17687b4121450e944b",
+      "summary_sha256": "37f243b0e795e06fb3670baf96aa221a2dbd594196d121e731d504297c24dde6",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-minimax3/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "1672ec2817204e4425b4138517019ee8df1e1b948e4cd78d988c9bcfae3893c5",
+      "summary_sha256": "59747e0ceb0a79145a358fa527469ecedbb60cbccda08374df197a084975edd5",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-minimax3/deepseek-v4-flash/predictions.jsonl",
+      "prediction_sha256": "3c9e685f3bb4f75a7b800bc5ecb574ae418e1d7dae5fef2616508828d95c6aa1",
+      "summary_sha256": "8a7ad21578a73f4ad6a555141ef4361a13aef1e09ea04831f4bd56dc29c12fa8",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 0
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-minimax3/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "04abfcceac9af16c1ae601203c53dcce3e7b2466920a3c17363af2e31ad76e39",
+      "summary_sha256": "db2ccbf1ea521937a8bd07aea91c29633a3f95a0fa63a61f7ec405ae8033dc99",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-minimax3/doubao-seed-2.0-lite/predictions.jsonl",
+      "prediction_sha256": "b5b1c495756da7408012e1f7af8eea2d21ecd368a9e584bcbed2d4acea664a97",
+      "summary_sha256": "12a9d919d8ca90afd9aa199eb4ec8c871a4d0c4ec030228185f422ea1cd98166",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 0
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-minimax3/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "cdf45be784f1db536363dcad8f53a24df71bbeb520d78097b7a8e5d2364d8da3",
+      "summary_sha256": "81dce4950204542f60d89b1d4305f8f70c95d9dd854c9d64f8e9a9d86a56a692",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-minimax3/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "12c58f309f1e62054a0af3d6c9517dc96995d8f004f78118b05a7dedb99eb637",
+      "summary_sha256": "9be061addd766dda98887e1a6397b668c61c0da2469c47342026741fbe5ecf01",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy/judge-minimax3/minimax3/predictions.jsonl",
+      "prediction_sha256": "678dda9930fddf368c3fef53bef678c4c96024a6a5c50cd65e992e253caaed7a",
+      "summary_sha256": "5c3afd821d92aad570cda9cf95ea80d94161f4e55d8f3c39fe2feb6905a66554",
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-deepseek-v4-flash/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "a71d233eca2cad37f3dd49e7c9d903b7643c39659039c2ec444caa38b59538e7",
+      "summary_sha256": "7bcc14f94d8985aa4e6efd18371a2aec11b9a6013e9cce0970800805f581ed84",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-deepseek-v4-flash/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "4adc673fecea1fb355dac3e75417c9c70866641ccac03545fcccaccc0e0e8f85",
+      "summary_sha256": "168d09904c262adc334065af1d4e224f57fd7295a8bb8275e2b700c4592098c8",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-deepseek-v4-flash/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "7fad8396af19e689b5be4b8efe89278a0d8528b48a53c8b23b901d5b3f5fb0f1",
+      "summary_sha256": "d8731cba308815c872f6a9b233f75660c32b1115f8d00e821bd6b6a4414e7b73",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-deepseek-v4-flash/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "9a1bb81b5c418ad88894c3238e9cd6ec057003928d6341b7c45c69bdead2139e",
+      "summary_sha256": "4f0c3c61a307cca5a14621d1e6fc7f980135b7ae7896dc025b9054d8515a6a05",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-deepseek-v4-flash/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "d8fec21d18213d9c137aec0804361eb3b03889d513bca7a644a44463a75c2bf4",
+      "summary_sha256": "a5b40fe48326299625926dfb71d4dcc5386e375147a0f5d2ffd9bf25e473d558",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-deepseek-v4-flash/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "cb983d230cf31c229335b2a684c9c7a0d0cc4c790b2c00bd05092d508be3d5b1",
+      "summary_sha256": "daaea603e294a40ca617e8d567677231f00481316a3f8f9702e1c69077977a2b",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-deepseek-v4-flash/minimax3/predictions.jsonl",
+      "prediction_sha256": "08bd6e62adc4a08cf09d838ebd554f2e8a0ba90cb3f5f45eac0a7ba32cda7201",
+      "summary_sha256": "2fcea842dbcab8d9437e4f3925acd6a5717809a8056f2cde6c7325bcf209537e",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-minimax3/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "a71d233eca2cad37f3dd49e7c9d903b7643c39659039c2ec444caa38b59538e7",
+      "summary_sha256": "225a3ecde56d82da89e965c996c4929ede303d79e60c48c20b5857450b6aaaf8",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-minimax3/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "4adc673fecea1fb355dac3e75417c9c70866641ccac03545fcccaccc0e0e8f85",
+      "summary_sha256": "e41320b2ba3cf2f4ffe90663a67cb761a112ac0cdd9ee9b83114d2b51be469da",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-minimax3/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "7fad8396af19e689b5be4b8efe89278a0d8528b48a53c8b23b901d5b3f5fb0f1",
+      "summary_sha256": "96007e4fd3e52e88f5c97d6325f2ea4754c230911e1b6e477929c0ff417e6962",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-minimax3/deepseek-v4-flash/predictions.jsonl",
+      "prediction_sha256": "b0fb2ef0cc1588212669b26d3629031ef6b78b76679baf9eebb58f1db9407dbf",
+      "summary_sha256": "9bfa4eed4068c4323b98f9f988edb2996e86c94f5697da3db36b2c70fb20ed69",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 0
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-minimax3/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "9a1bb81b5c418ad88894c3238e9cd6ec057003928d6341b7c45c69bdead2139e",
+      "summary_sha256": "0f809e3a7bf56013711161779706f4a661e3c6a4b30a8c37e9cfdcd60b5f0edf",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-minimax3/doubao-seed-2.0-lite/predictions.jsonl",
+      "prediction_sha256": "e21a25e6a9ccaa0fc40e20760b4acb4ba6e38bf77ab2d23a5034f33ddd8e84a2",
+      "summary_sha256": "c06a5c5ec5596ea4d6bf018c23b7d519f5c98cc0a2ee6a09a334bbbe29d8c002",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 0
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-minimax3/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "d8fec21d18213d9c137aec0804361eb3b03889d513bca7a644a44463a75c2bf4",
+      "summary_sha256": "86c76cf958b34bd6154596b3525982e98f61e3454a497b44b90c9f4bac3a66a1",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-minimax3/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "cb983d230cf31c229335b2a684c9c7a0d0cc4c790b2c00bd05092d508be3d5b1",
+      "summary_sha256": "c92aa8c67a80bcff35fd3aba5dc14561fedc3a56b4cb9c470c304335ea03db99",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_pedagogy_hard/judge-minimax3/minimax3/predictions.jsonl",
+      "prediction_sha256": "08bd6e62adc4a08cf09d838ebd554f2e8a0ba90cb3f5f45eac0a7ba32cda7201",
+      "summary_sha256": "440cd9443151b9c44ff3e17e8b9c3e614875bc25853280439234de809ba4cf35",
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-deepseek-v4-flash/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "5dfe33a793c0bff2c00eeed9621e42aaaa09b374f111e1e7b8e34d43aebf07a8",
+      "summary_sha256": "4429db4100790b69dad1e50b24da339196f3b6ec6b3dbd95ea685f2b3a8423ee",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-deepseek-v4-flash/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "028a928311ce1e616c0aaee5b588ff593e32dbc2f7cf147414c2ee593f41636b",
+      "summary_sha256": "1cbebcc14057680c7e5f4ff8ccb3551c7eded9ac994b897ddd48ee73f06bb69d",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-deepseek-v4-flash/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "fec3c2340d509884893116d350caeeffae7a862e0a205f7a5d72c2c3f5a90f13",
+      "summary_sha256": "17e0b958b7106a985b6dba608ccf5a4860eb81cb1baa0ccd828d63e81d3d8f74",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-deepseek-v4-flash/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "c692765fc87eb0854e9a803cf301c7e3ece885bb625c02589e2c73cefdab57c1",
+      "summary_sha256": "0997f2a0031000bb11b266c6764850957aa32a32aa63da2b6bc503f79d338039",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-deepseek-v4-flash/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "07e45f69d4d9b579136eee359e350515e5dcfaf0865077a16f120f6308cb2141",
+      "summary_sha256": "ead0b4df7a2e4b992fa0453ff10353ea16d71c29abced342bc025d70c412a8fc",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-deepseek-v4-flash/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "7ab60fe1cbcda5dcfe6c1685e22fe796e39f5eba03faa8073c6863b288ddf3d6",
+      "summary_sha256": "bf5a5f9b58569825e45a4e32763c3fa48976b62a72d43b3ffb471658d4d3efc0",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-deepseek-v4-flash/minimax3/predictions.jsonl",
+      "prediction_sha256": "738e62089aaebceb22a74491b1d485a1443badf0e54e6e46a17522bcb62d7544",
+      "summary_sha256": "03895f1cd8c0346112fd04ec157686f55c35f64594f2390be635dc534dd00e0d",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-minimax3/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "5dfe33a793c0bff2c00eeed9621e42aaaa09b374f111e1e7b8e34d43aebf07a8",
+      "summary_sha256": "80c4dffb77ae2fbf0950f5cbfba5fa2ed4ebf663592f7864977fe4b10d4df296",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-minimax3/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "028a928311ce1e616c0aaee5b588ff593e32dbc2f7cf147414c2ee593f41636b",
+      "summary_sha256": "d8437bbe2bff3dfd156725af131fc3945d1c7e9178b84c56870430d8bc7bc20b",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-minimax3/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "fec3c2340d509884893116d350caeeffae7a862e0a205f7a5d72c2c3f5a90f13",
+      "summary_sha256": "8b79025add353b9046797751885ce101e28e994698fe027b5df83bf49ee00cd1",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-minimax3/deepseek-v4-flash/predictions.jsonl",
+      "prediction_sha256": "f84c4de219550d2c0b772e1185ec7cf3ac5e37acf8013f262f19b85cd8a40e42",
+      "summary_sha256": "44ccaa72c882464f10719d666967008e10e0b22f329a04fd552a47520e75f522",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 0
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-minimax3/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "c692765fc87eb0854e9a803cf301c7e3ece885bb625c02589e2c73cefdab57c1",
+      "summary_sha256": "db5503528a7c2e9e1f9df2b199b662cb3ddd5f564715bc719d41e24a508eee18",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-minimax3/doubao-seed-2.0-lite/predictions.jsonl",
+      "prediction_sha256": "4b8ba119c138e3809ebb9da2c6ed08355f632635133d15ee080ec0776490216e",
+      "summary_sha256": "257ab18c70749b33c7e1fb25b6d9482a20443d71d23d75cb028b548c197bd072",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 0
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-minimax3/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "07e45f69d4d9b579136eee359e350515e5dcfaf0865077a16f120f6308cb2141",
+      "summary_sha256": "2e1a1b9516dff1637caeed35dc760d64847996e143c38678abe7539cf4bbdf4b",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-minimax3/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "7ab60fe1cbcda5dcfe6c1685e22fe796e39f5eba03faa8073c6863b288ddf3d6",
+      "summary_sha256": "07f76c35e98505a80091ee082a1840e116a5059171d26aabbefc728559408be3",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding/judge-minimax3/minimax3/predictions.jsonl",
+      "prediction_sha256": "738e62089aaebceb22a74491b1d485a1443badf0e54e6e46a17522bcb62d7544",
+      "summary_sha256": "b09deeac83c4069d281a7ddc14560fa5ada3bc63387676fe11b3d164072a44a8",
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 1150,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1150,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-deepseek-v4-flash/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "ed1bca8f453ff187e5d7f42e8b1c1f96f548e5dd3c0ea134e352bb3c8cbdef6d",
+      "summary_sha256": "0cdc50fe2bffbfbfe2405ed3c416d29431929cda019f52e8ab74d34990295be9",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-deepseek-v4-flash/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "ef0714c26692e036852452fa6a161fc5ebe9741400a0d59da1a75fecb8542253",
+      "summary_sha256": "0dfdd5c802fafa3fe3a3482a8cf5c819e5b710e392ffa5d32cf4d0a57ee0684f",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-deepseek-v4-flash/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "0b2d0dcb59144aead4cda0dbc1246cd4ef1322c9e0e0e5fded9cd8e9bafaacd3",
+      "summary_sha256": "bd133273fc087fedbd69fe5f7f6db42d8bffac71505ef3ea6ad50699cc069e9d",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-deepseek-v4-flash/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "9bb2181b683c96db5741b073db9ffa1b8ca34626ef0efd9d16e36d183219f59e",
+      "summary_sha256": "07a013f8a4991974d8f0cb48c583cb67754651564fdc0d93f8baec20ab7c8432",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-deepseek-v4-flash/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "f2932f7b979bb50f7d0b732133bdd518c90b6f17652630f20233f15501836f44",
+      "summary_sha256": "698b74ca4ed278b28c8b4b79597ba4219cf8380b83570775c174980716de8fc9",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-deepseek-v4-flash/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "177bdb704eff908c70dae6159da9b300a509152d15eced64011590a4d6ba25d8",
+      "summary_sha256": "2e7f361f342e9e5d24460de53490e8779211bea0418fe2428840fd8a2c589a61",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-deepseek-v4-flash/minimax3/predictions.jsonl",
+      "prediction_sha256": "164334d078c0e37be9d698faf4efc272acccad56400987bacb8c9fe6c00f85cf",
+      "summary_sha256": "ec497dc0b064c9be9cc442fb9eba57628ebbcb99c09b99d3f14f7d582d3665b1",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-minimax3/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "ed1bca8f453ff187e5d7f42e8b1c1f96f548e5dd3c0ea134e352bb3c8cbdef6d",
+      "summary_sha256": "c90299550311a2caf1984d64732d39a0165a41d0d6e9a4104620d22fe235d9bd",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-minimax3/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "ef0714c26692e036852452fa6a161fc5ebe9741400a0d59da1a75fecb8542253",
+      "summary_sha256": "dee6827e9433544dcba7bc613734df94f31f6513276f31e47db58def267f4c90",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-minimax3/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "0b2d0dcb59144aead4cda0dbc1246cd4ef1322c9e0e0e5fded9cd8e9bafaacd3",
+      "summary_sha256": "f5c5182d9bb551f3933cc4208304ab378bae618b820187000139d1cb24afcd61",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-minimax3/deepseek-v4-flash/predictions.jsonl",
+      "prediction_sha256": "71a8fb16e11e4e72f023501e5ca905d1bed938db1c8fcd90cd946caeb6683bd5",
+      "summary_sha256": "5e3e7d81d07e4c99b5174602d331ad826bc7b92ad2921add40c2d9cf99160621",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 0
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-minimax3/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "9bb2181b683c96db5741b073db9ffa1b8ca34626ef0efd9d16e36d183219f59e",
+      "summary_sha256": "c7a3a68cf55613cc2b1910c2bfacfb944cb84464e9d6950252c176dab48a0328",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-minimax3/doubao-seed-2.0-lite/predictions.jsonl",
+      "prediction_sha256": "f779818a7b036f9d42c2ce231cf69101c6913e7f7102c6b0f570951d169c49a8",
+      "summary_sha256": "2b48de2654083c0078c59d5e07d79cdb5895ae92f7c86e288f19bcea982aa5d6",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 0
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-minimax3/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "f2932f7b979bb50f7d0b732133bdd518c90b6f17652630f20233f15501836f44",
+      "summary_sha256": "cb5dcc32fb378f0d3994c82a379dc80e99d5491f300e11ba75fb4276119fef05",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-minimax3/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "0a77eaa0d7ff7e46842344500161eaf37feb64e088f94728a8235b99d2d0dcac",
+      "summary_sha256": "aa0bc33de04db4dc9810424f626f0ec92c1d3712f595fa7c322bc44f34ad430d",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mathtutorbench_scaffolding_hard/judge-minimax3/minimax3/predictions.jsonl",
+      "prediction_sha256": "164334d078c0e37be9d698faf4efc272acccad56400987bacb8c9fe6c00f85cf",
+      "summary_sha256": "b719341e95148dc19bda4e6f1b643716684c7882cd6e3ffd2f60c9e735c9001b",
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 327,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 327,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mmtutorbench/judge-deepseek-v4-flash/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "4ff62f1d614de5d7e4d4c19f785ce883b5a53ece0c66ab875f14116b71387529",
+      "summary_sha256": "510ed38c01b033d5c98efb7e8becc917e7d25772d6f805a3df9feedfd52ad6a4",
+      "benchmark": "mmtutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 770,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 770,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mmtutorbench/judge-deepseek-v4-flash/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "7fa79a51ee053246faaa04c44d9e563c1b96a3e632f6d67b9d978a1e11b05f56",
+      "summary_sha256": "ac684282d5d92e1d2dd3f9ea5c7ce588146a1711e6f85496a99c0c5925331aa6",
+      "benchmark": "mmtutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 770,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 770,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mmtutorbench/judge-deepseek-v4-flash/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "27db827a9923d229233c8189f064b6d12eb335250fbbd2cc27408592e98465b2",
+      "summary_sha256": "523618ee7fa1200791b7c0b7cc4a6c8c372ffac556c499a03270cfcbb44d5a76",
+      "benchmark": "mmtutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 770,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 770,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mmtutorbench/judge-deepseek-v4-flash/minimax3/predictions.jsonl",
+      "prediction_sha256": "f55a9e1fe6d45aa995ef08d8b4f581be66d31e7414b843aa1b949b8ae80becf4",
+      "summary_sha256": "94741a6ebe467bfeb81fac3f000a591a0e472140a914e1161b920b20a098dacb",
+      "benchmark": "mmtutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 769,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 769,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mmtutorbench/judge-minimax3/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "4ff62f1d614de5d7e4d4c19f785ce883b5a53ece0c66ab875f14116b71387529",
+      "summary_sha256": "db1c52b4e9a515b95b860272ebb0da346cd1956f1372319457fe761f16d8a989",
+      "benchmark": "mmtutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 770,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 770,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mmtutorbench/judge-minimax3/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "7fa79a51ee053246faaa04c44d9e563c1b96a3e632f6d67b9d978a1e11b05f56",
+      "summary_sha256": "a398771584b4acce7c32290513a1615ed651ee2e5f2a13dedc4b8177a714d099",
+      "benchmark": "mmtutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 770,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 770,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mmtutorbench/judge-minimax3/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "27db827a9923d229233c8189f064b6d12eb335250fbbd2cc27408592e98465b2",
+      "summary_sha256": "ba72f089332dbfd170ad181759dca08a7691141dcbcc410f61d39844622d03e0",
+      "benchmark": "mmtutorbench",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 770,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 770,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mmtutorbench/judge-minimax3/minimax3/predictions.jsonl",
+      "prediction_sha256": "f55a9e1fe6d45aa995ef08d8b4f581be66d31e7414b843aa1b949b8ae80becf4",
+      "summary_sha256": "103077432a2deab115007b5d32a7e7b62a28fe68d22808d1a4b8b82f080a7e57",
+      "benchmark": "mmtutorbench",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 769,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 769,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mrbench_tutor/judge-deepseek-v4-flash/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "712d7eab5ae33e6974418d451d03e1ef05b84b7903fffeef2a413f21d0bfa6b3",
+      "summary_sha256": "220d5ee48ffeeb6d8fe742bb88c4f8cbdd0ab83ee1aaf71e82c3637f7e057c7b",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mrbench_tutor/judge-deepseek-v4-flash/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "2d7274a6dd62cd50ffe369e9896793549867c7114696ee4f2f9f57d5d8e4393f",
+      "summary_sha256": "e5ff65bd8791e7982da6616321cb88bdd3f5f0044b0d940670a1dde901eb71fe",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mrbench_tutor/judge-deepseek-v4-flash/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "b51077264be3d65f84e2c2249140327f48c929d718ec71480ddfb1c8e6216eb5",
+      "summary_sha256": "890a78a25f684b5d13e7f802509188e0d501540030bcbfe3f34ffd9b77ec99b5",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mrbench_tutor/judge-deepseek-v4-flash/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "5a024ca8550d5589cf39fb6b9b2cbf32c2284f92955e3c02ec5ef261e7500883",
+      "summary_sha256": "deda4bfd4547d1eebf7bbdae718bbb0724f5e5616daf58e796a9f04f3e487d07",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mrbench_tutor/judge-deepseek-v4-flash/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "6733cca9f8afa6a0fb31a1769680dfe666cd12b4f4b5d601b805d0a1bd9f529a",
+      "summary_sha256": "d87b63c843348ded0e60cc87e2053e68d84039f6c6db8b4b21e11ef85984cb71",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mrbench_tutor/judge-deepseek-v4-flash/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "ab52770b2886f2051facca6857f9071cc6d4dfec873a3ab1c38d5ca7dd5ea00f",
+      "summary_sha256": "b0029b813c1ac6ad8ba4e87903b8681eb08311ff0fc45a57c9b4ef33d81da6ee",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mrbench_tutor/judge-deepseek-v4-flash/minimax3/predictions.jsonl",
+      "prediction_sha256": "237281659e245c54c338f0315f08322ed901d270ba1551823096d11bfa7f9f0d",
+      "summary_sha256": "c685f5f8d452e9a060bb50cfdcdb780653a9a6f474282df37b831babe7276d09",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mrbench_tutor/judge-minimax3/MiniMax-M2.7/predictions.jsonl",
+      "prediction_sha256": "712d7eab5ae33e6974418d451d03e1ef05b84b7903fffeef2a413f21d0bfa6b3",
+      "summary_sha256": "3b23acbd6294eb50412329acd0a60f8eb574c9b7ced3cd180ee78f1e80c51bb0",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mrbench_tutor/judge-minimax3/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "2d7274a6dd62cd50ffe369e9896793549867c7114696ee4f2f9f57d5d8e4393f",
+      "summary_sha256": "86e785fbfe62feb884399a8cb6a91fa300125634ea0693c48f592e2bd7668183",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mrbench_tutor/judge-minimax3/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "b51077264be3d65f84e2c2249140327f48c929d718ec71480ddfb1c8e6216eb5",
+      "summary_sha256": "6b07767dbd3060c8c919fd5b6727c4bc3811258932b5c418af666383d565573c",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mrbench_tutor/judge-minimax3/deepseek-v4-pro/predictions.jsonl",
+      "prediction_sha256": "5a024ca8550d5589cf39fb6b9b2cbf32c2284f92955e3c02ec5ef261e7500883",
+      "summary_sha256": "c895a01144b486016b544d95e0b6beb57115a74158035f04926d99e4e9f6e360",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mrbench_tutor/judge-minimax3/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "6733cca9f8afa6a0fb31a1769680dfe666cd12b4f4b5d601b805d0a1bd9f529a",
+      "summary_sha256": "ab348bb5463e49bb31f588b8397600f3d9ec2d405a25f972d2f47d240970566a",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "mrbench_tutor/judge-minimax3/glm-5.2/predictions.jsonl",
+      "prediction_sha256": "ab52770b2886f2051facca6857f9071cc6d4dfec873a3ab1c38d5ca7dd5ea00f",
+      "summary_sha256": "00fee0b474b3f223805fa28312aaa471c6853986d848061d680a102f90eb8557",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "mrbench_tutor/judge-minimax3/minimax3/predictions.jsonl",
+      "prediction_sha256": "237281659e245c54c338f0315f08322ed901d270ba1551823096d11bfa7f9f0d",
+      "summary_sha256": "4abb09de5e7180b68e035377d68b3d4d3f8a6745a2d689f2d89afb91dcbc72ba",
+      "benchmark": "mrbench_tutor",
+      "input_variant": "unspecified",
+      "coverage": {
+        "latest_successful_file_items": 200,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 200,
+        "prediction_files": 1,
+        "summary_generation_parameters": 0,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": []
+    },
+    {
+      "path": "tutorbench/judge-deepseek-v4-flash/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "47f15bf970f83a6c0672b8a2de064b1a4aac3e7b42c617999a148d310b6598eb",
+      "summary_sha256": "7fc777a6423249ca9ba6ddc5e7345b188fcfa68a6d6d039176a18f3c237571a7",
+      "benchmark": "tutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1472,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1472,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "tutorbench/judge-deepseek-v4-flash/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "ffc70d76622b334850fee6b72c2396c80ef448ae24fbcf9b475c3d819b1c2970",
+      "summary_sha256": "95a20adb51871627f904e6ea7eff6dd3af448f893d2558dff9b951b89fde63d4",
+      "benchmark": "tutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1471,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1471,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "tutorbench/judge-deepseek-v4-flash/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "90c756223eb6fdd997da884b8a163fbc6e370c6554335a21f811ae41ca3640c0",
+      "summary_sha256": "95dbba32eb9aecfd4cddcfe7024050c8cda7f6f7db0053faf95318d1b118cb67",
+      "benchmark": "tutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1442,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1442,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "tutorbench/judge-deepseek-v4-flash/minimax3/predictions.jsonl",
+      "prediction_sha256": "38f424ad6911f92f6a0474a150215ade54753011f6a2efacec2a17bb8e29a2a2",
+      "summary_sha256": "d910f5c5d0ec024257ddf10c344f22f53b5eb92b423794d1b6d8b751e0453323",
+      "benchmark": "tutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1440,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1440,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "tutorbench/judge-minimax3/Qwen-Qwen3.5-4B/predictions.jsonl",
+      "prediction_sha256": "47f15bf970f83a6c0672b8a2de064b1a4aac3e7b42c617999a148d310b6598eb",
+      "summary_sha256": "9534d618286cf34b78ddcf209a04b43c286b7dc11a08c93a59f88d015adc3b3b",
+      "benchmark": "tutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1472,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1472,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "tutorbench/judge-minimax3/Qwen-Qwen3.8-27B/predictions.jsonl",
+      "prediction_sha256": "ffc70d76622b334850fee6b72c2396c80ef448ae24fbcf9b475c3d819b1c2970",
+      "summary_sha256": "702f31c61b3c512bfec4f55a935e1cd178858c29cfa3d266c988844ba84da6f8",
+      "benchmark": "tutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1471,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1471,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "tutorbench/judge-minimax3/doubao-seed-2.0-pro/predictions.jsonl",
+      "prediction_sha256": "90c756223eb6fdd997da884b8a163fbc6e370c6554335a21f811ae41ca3640c0",
+      "summary_sha256": "057713e3c85f85103435c17ba44f915041eb1d93b630921a4477dee52925d412",
+      "benchmark": "tutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1442,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1442,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    },
+    {
+      "path": "tutorbench/judge-minimax3/minimax3/predictions.jsonl",
+      "prediction_sha256": "38f424ad6911f92f6a0474a150215ade54753011f6a2efacec2a17bb8e29a2a2",
+      "summary_sha256": "a1296f1ef14bd3a490236003fd3fef7e1ceb00d97ffa16549d57a0d1bd60896b",
+      "benchmark": "tutorbench",
+      "input_variant": "standard",
+      "coverage": {
+        "latest_successful_file_items": 1440,
+        "stored_messages": 0,
+        "stored_prompt_text": 0,
+        "generation_prompt_hash": 0,
+        "provider_request_id": 0,
+        "returned_model_identity": 0,
+        "generation_timestamp": 0,
+        "finish_reason": 0,
+        "usage": 1440,
+        "prediction_files": 1,
+        "summary_generation_parameters": 1,
+        "summary_generation_prompt_hash": 0,
+        "summary_judge_prompt_hash": 1
+      },
+      "generation_parameter_keys": [
+        "max_tokens",
+        "temperature"
+      ]
+    }
+  ],
+  "limitations": [
+    "Metadata coverage counts use latest-successful file items before cross-directory deduplication.",
+    "Only named provenance fields are checked; missing fields can require external logs or source reconstruction.",
+    "Summary generation parameters may describe a later scoring run and do not prove original request settings.",
+    "Judge prompt hashes describe evaluation, not tutor-generation prompts.",
+    "Shared item IDs are candidates for comparison, not verified common input messages or independent sources.",
+    "Identical model/item/response text across directories is not proof of the same generation event.",
+    "No archived reasoning field is treated as an observable tutor answer or used for behavior coding."
+  ]
+}

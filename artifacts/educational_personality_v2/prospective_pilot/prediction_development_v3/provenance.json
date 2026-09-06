@@ -1,0 +1,23 @@
+{
+  "status": "development source CV; not prospective confirmation",
+  "source_groups": 4,
+  "penalty_grid": [
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "inputs": {
+    "artifacts/educational_personality_v2/prospective_pilot/natural_diagnostics_v2_2_repaired/consensus.csv": "ef3366d64396af9e8892f8c4b2bcbdb90bbfa869e0ea84dcdf39e7cafd87a8d6",
+    "artifacts/educational_personality_v2/prospective_pilot/judge/v2_2/unblinding.jsonl": "bee1238ac3e370b58286224e1d183e0a636d0d104243536b5e604651389c17a3",
+    "artifacts/educational_personality_v2/prospective_pilot/generation_audit.json": "4302832427d620218594e5fb782e52776d7142d495111cf1ea3f261c3744eded",
+    "/home/likefallwind/code/llm-persona/scripts/predict_personality_events_v3.py": "46a9500bc08b96fa87b830eb3209746bb50e5cbf0da3db8c43462abecd3234ba"
+  },
+  "features": "domain x student state; model main; model x domain; model x student state, in nested order",
+  "limitations": [
+    "Pilot has four source templates and domain is confounded with template.",
+    "Small-fold model selection is unstable; no inferential thresholds are asserted.",
+    "L2 does not eliminate finite-sample interaction overfitting; assess held-out loss.",
+    "No held-out labels or response-derived features enter the predictor."
+  ]
+}

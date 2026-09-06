@@ -1,0 +1,27 @@
+{
+  "status": "confirmation continuation and sensitivity policy fixed before confirmation generation",
+  "created_at": "2026-09-05T06:04:21.221484+00:00",
+  "planned_confirmation_generation_calls": 4040,
+  "planned_confirmation_judge_calls": 12120,
+  "confirmation_requires": [
+    "complete existing training pipeline",
+    "main prediction lock",
+    "eight judge-panel sensitivity locks",
+    "five generator-deletion sensitivity locks",
+    "source/payload lineage audits"
+  ],
+  "new_api_calls_for_sensitivity_fitting": 0,
+  "training_source_resamples": 200,
+  "generator_deletion_is_not_unseen_model_prediction": true,
+  "primary_comparisons_unchanged": true,
+  "new_case_generation_outside_frozen_manifest": false,
+  "extra_identical_input_repair_pass_limit": 2,
+  "files": {
+    "scripts/complete_personality_confirmation_v3.py": "71e313f29e3f6659cb186ebbaf0d9db092ce2cc12a20104a241f858928948b71",
+    "scripts/lock_personality_judge_sensitivity_v3.py": "2ee5a5fe24ae613fb6a4db3132ca63ca65d2ba9519ad4555bc4552319623854a",
+    "scripts/lock_personality_generator_deletion_v3.py": "6d79d65a57c04ac1851af187faf6cde9ffaf8bb0e3d699a1632bc9bca8fc03e4",
+    "scripts/audit_personality_judge_lineage_v3.py": "837427d7c9d339cc0cd5a958581dcba693a125a81705d36f6ad2df4ff7f87971",
+    "scripts/analyze_personality_confirmation_v3.py": "451bce2b6941c319d95e0bcf6bac936789e83b684894547a86271d8d8fd9430e",
+    "scripts/analyze_personality_robustness_v3.py": "1ac843d119adbdeef9d53b0ba1add8f707253f6a0a54ff1c4eaba409e2b3adb2"
+  }
+}

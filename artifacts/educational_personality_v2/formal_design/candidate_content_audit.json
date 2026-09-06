@@ -1,0 +1,182 @@
+{
+  "status": "candidate-content checks passed; not a formal-design freeze",
+  "templates": 32,
+  "declared_source_families": 30,
+  "domains": {
+    "mathematics": 8,
+    "science": 8,
+    "language": 8,
+    "logic_and_data": 8
+  },
+  "source_families_with_multiple_templates": {
+    "averaging": [
+      {
+        "template": "arithmetic_mean",
+        "domain": "mathematics"
+      },
+      {
+        "template": "weighted_mean",
+        "domain": "logic_and_data"
+      }
+    ],
+    "unit_conversion": [
+      {
+        "template": "speed_units",
+        "domain": "mathematics"
+      },
+      {
+        "template": "map_scale",
+        "domain": "mathematics"
+      }
+    ]
+  },
+  "numeric_checks": [
+    {
+      "template": "ratio_partition",
+      "computed": 15.0,
+      "expected": 15,
+      "pass": true
+    },
+    {
+      "template": "discount_price",
+      "computed": 68.0,
+      "expected": 68,
+      "pass": true
+    },
+    {
+      "template": "rectangle_width",
+      "computed": 7.0,
+      "expected": 7,
+      "pass": true
+    },
+    {
+      "template": "arithmetic_mean",
+      "computed": 9.0,
+      "expected": 9,
+      "pass": true
+    },
+    {
+      "template": "single_draw_probability",
+      "computed": 0.6,
+      "expected": 0.6,
+      "pass": true
+    },
+    {
+      "template": "speed_units",
+      "computed": 20.0,
+      "expected": 20,
+      "pass": true
+    },
+    {
+      "template": "arithmetic_sequence",
+      "computed": 29,
+      "expected": 29,
+      "pass": true
+    },
+    {
+      "template": "map_scale",
+      "computed": 9.0,
+      "expected": 9,
+      "pass": true
+    },
+    {
+      "template": "circuit_current",
+      "computed": 2.0,
+      "expected": 2,
+      "pass": true
+    },
+    {
+      "template": "net_force",
+      "computed": 12,
+      "expected": 12,
+      "pass": true
+    },
+    {
+      "template": "thermal_energy",
+      "computed": 21000.0,
+      "expected": 21000,
+      "pass": true
+    },
+    {
+      "template": "wave_speed",
+      "computed": 10,
+      "expected": 10,
+      "pass": true
+    },
+    {
+      "template": "simple_inheritance",
+      "computed": 0.25,
+      "expected": 0.25,
+      "pass": true
+    },
+    {
+      "template": "conservation_of_mass",
+      "computed": 44,
+      "expected": 44,
+      "pass": true
+    },
+    {
+      "template": "classifier_precision",
+      "computed": 0.8,
+      "expected": 0.8,
+      "pass": true
+    },
+    {
+      "template": "expected_points",
+      "computed": 5.0,
+      "expected": 5,
+      "pass": true
+    },
+    {
+      "template": "weighted_mean",
+      "computed": 84.0,
+      "expected": 84,
+      "pass": true
+    }
+  ],
+  "numeric_normalized_pilot_overlap": [],
+  "question_sha256": {
+    "ratio_partition": "c2e772105488b1f2fd0e83470afea3e161be00851348458bf0c7870182256dbe",
+    "discount_price": "ccc03c5828319ebdd74112b55967a9b5f33a050cba2c9a86376ae49c69f2a985",
+    "rectangle_width": "c175693c449f0d0ec8dc88df1a143c1fa7af932b243446f1141d36f0ad3f36ce",
+    "arithmetic_mean": "664c4cb15bf85f5d38d66b7ec3358029c68f53150414588b24e6c1bd7753ea30",
+    "single_draw_probability": "6b439c3fb375bf3ea6bb89a94160f2b1c6574aa00b9b4a47d1e1ed79f150df6a",
+    "speed_units": "93845b525b2c673a046ab324996f890bbb3f3a2690cc18891b265f87906e7010",
+    "arithmetic_sequence": "e16928f116c684223209f13cda207084602603c4ede91849c9bc28515335e3b0",
+    "map_scale": "b896aa9d8a87a18e083295552e07efc77abd2bd3bcbdc0c80d32005ef744048b",
+    "circuit_current": "c849385c883ac941621c3b0b12f220d6a2109c0b54e0c3279a5afecca81dcde6",
+    "net_force": "319a88b4c7746803566aeb4e491ed133066ac202844a4bcae7a502afc497610d",
+    "thermal_energy": "9e7f341e0113c0587f6295ae773ab64fef11ca6476ef898f7706bf3e705d70e7",
+    "wave_speed": "534c158f8ca72d73a0d700575d5484916c239dda77b64e0507cc7158b60e7178",
+    "simple_inheritance": "69580b7a5977c726f7c4efff166215ff927938ed013f5d803b59d2d2412d2a0a",
+    "experimental_variable": "10d79997918bc6d5bc35a8850dc67d8c133b8d0ef57a56a85783e8eac05c541e",
+    "conservation_of_mass": "dfc3db0513048628cbc7c08a635414209b8def76eeeba4c80d4938da92761b41",
+    "food_chain": "1faa69e31951d246ef07eccbb0b4756e24aa3335f294d46042ee7873d0324b38",
+    "subject_verb_agreement": "575930463b2669a1f5abc41ebf5c6c147102fa565003e43fb59c4471ed97f944",
+    "pronoun_reference": "9ee2becd809b16f8685827f91084bb631858b16a458e6e95b7520f30cc8fb366",
+    "comma_splice": "d300b43767b4e8ee41d521f0881ad04dfa53fe0bd689882dfe5f3f3b715470b9",
+    "main_idea": "8e6a10761d4c545f80d6532a628e0c176ea53d722d21f5715fb49f7212c5e263",
+    "fact_opinion": "a7fe7346e9fa59ade7055695016950e1b2085d7008b8d2e607b65083ea8963ac",
+    "relevant_support": "0dd485f3e76917c64247cdea049830f824f015fdaefc4e156b35b1a8d7b4bf66",
+    "past_tense": "a17b7b79c99ade456eacc7cdf220a40291c8ef95a2509f43cdcecfb30d2e84fe",
+    "modifier_attachment": "4c34a56cc0162c0e968d50e680b69411572aa23bb9a6ebe2fb98a958204ee817",
+    "conditional_inference": "209f68d9ca2172571accb58bd6f4ac788ca4f8eaf1183ee7359db028390d656a",
+    "conjunctive_rule": "8ca19d23c44eb02027a8a17ccca685f062427fc83998610033bdc9669edf7785",
+    "set_entailment": "a9461190900bd16b5a73a2529feb198cd2ec67d4fb7f1f3ccaca6562940c4cab",
+    "universal_counterexample": "7110fb1fd59fdf3e85e113a68ae29c72d2500d8f5e414a6e9433f3adddd296a7",
+    "classifier_precision": "d73b81da60a31087ce38355ff289228616488b341e07641b3fb682ed63e17340",
+    "expected_points": "ce0b28c8368b08c07f8141cd671c1f144931aa1503ab87390401644eb2a7e059",
+    "ordering_constraints": "b5c85e33d960c9b53454bcc0011d54ce5e3a46c34e617c6aca3b194c3b09736a",
+    "weighted_mean": "319481327e9a64be91df248dd6cdbbf848c9fca0caa8a86d15288e16f8ff5046"
+  },
+  "bank_sha256": "9fe8cde65d0bf8ba5e8826fdbd1c68712b28c465487263a80cf149cc4bbc40eb",
+  "pilot_scenarios_sha256": "9733e2d6da4f25fd2eb8cd0bd0e5707095c9f4d40d04664c8082a80e46d92ae6",
+  "limitations": [
+    "Arithmetic is checked from structured quantities, not automatically parsed from prose.",
+    "No overlap here means no exact numeric-normalized text match, not semantic or pretraining independence.",
+    "Paired learner-state plausibility and reference prose still require separate content review.",
+    "Every declared source family must remain in one train/test partition, including cross-domain families.",
+    "No new model generations have been run on this bank.",
+    "Four domains with eight templates each do not establish representativeness of all education."
+  ]
+}

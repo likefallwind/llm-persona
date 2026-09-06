@@ -1,0 +1,30 @@
+{
+  "status": "bounded neutral interpretation fixed before confirmation generation",
+  "fixed_at": "2026-09-05T08:06:21.708277+00:00",
+  "reason": "Synthetic sparse-boundary examples show nominal paired-t undercoverage even when source variance is nonzero.",
+  "timing_disclosure": "After archive exploration, measurement pilot and synthetic precision diagnostics, during training coding, before confirmation answers.",
+  "rule": "Retain frozen numerical and nondegenerate t flags. Require the bounded-source interval as well before any population-equivalence claim.",
+  "family_comparisons": 30,
+  "source_range": [
+    -1,
+    1
+  ],
+  "family_noncoverage": 0.05,
+  "half_width_formula": "sqrt(2 * log(2 * 30 / 0.05) / sources)",
+  "source_assumption": "Independent bounded source observations under a source-sampling approximation; authored sources are not a representative probability sample.",
+  "primary_prediction_tests_changed": 0,
+  "new_api_calls": 0,
+  "sample_size_changes": 0,
+  "manual_after_confirmation_command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/audit_personality_neutral_bounds_v3.py",
+  "files": {
+    "scripts/audit_personality_neutral_bounds_v3.py": "0096dad403f7444a5ad3335b3c7f2416b0a7659bad822f88391753d690b30256",
+    "scripts/check_personality_design_precision_v3.py": "393432ec41699d8d96191ec4e4e59f8facc6cdcb0114e97c080f9f9bd1543d96",
+    "scripts/audit_personality_inference_edges_v3.py": "bb5ca52c254e456bf56fc2a9ac36afac656af2f1963aa80c8c6572b10ce0435a",
+    "scripts/analyze_personality_confirmation_v3.py": "451bce2b6941c319d95e0bcf6bac936789e83b684894547a86271d8d8fd9430e",
+    "research/57_design_precision_and_neutral_coverage.md": "1e2d9e745a8092f9ca30d83f152414ce9fe623a72102a37b7dd5aa4ab0667a20",
+    "artifacts/educational_personality_v2/prospective_formal/inference_edge_policy.json": "56f95ef01916f0382d8b25fb1f6b34c00f3e55b4570d5ffdff767b36d00fabd0",
+    "artifacts/educational_personality_v2/prospective_formal/design_freeze.json": "ec53b09f74d0f241f3de9eee7f9591521b723dac0cbb9ee1cca8cb14a8c719ac",
+    "artifacts/educational_personality_v2/prospective_formal/design_precision/summary.json": "d587509d4143f5ed771b27c9be40e05ab13f5c826a2bcb2b5486ced9e2bb8743",
+    "artifacts/educational_personality_v2/prospective_formal/design_precision/synthetic_neutral_precision.csv": "787821bb5af5620422459c692ccb8b8b2ebf79da481b5e5ae8a40846da5ae61e"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "status": "outcome-aware exploratory internal diagnostic",
+  "input_sha256": "3046ee17abc924808761f2fe68502d7308fcc1b7c24ca54e7fc2a53752973083",
+  "script_sha256": "7575c512a09f52ce9daf4d65f61b1180753483b494f14e52b12ab4aab2fa49fa",
+  "repeated_two_fold_splits": 100,
+  "models": [
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-pro",
+    "glm-5.2",
+    "minimax-m2.7",
+    "minimax-m3",
+    "qwen3.5-4b"
+  ],
+  "tasks": [
+    "longtutor",
+    "mathdial_hard",
+    "mathdial_standard",
+    "socratic"
+  ],
+  "context_arms": 239,
+  "split_groups": 237,
+  "response_units": 1434,
+  "limitations": [
+    "All data and dimensions were previously analyzed; no confirmatory holdout.",
+    "Repeated split quantiles are sensitivity ranges, NOT confidence intervals.",
+    "Scores are within-item contrasts using the entire observed model panel.",
+    "Equal task weighting; model profiles learned only from training contexts.",
+    "Prediction is within the same four task/prompt settings, not unseen tasks.",
+    "Socratic/longitudinal/generic settings confound task and prompt.",
+    "Split groups use context IDs, not verified underlying problem/dialogue lineage.",
+    "Shared standard/hard MathDial context IDs stay in the same split.",
+    "Common judge and six-candidate-slate artifacts can explain some structure.",
+    "Failed historical reliability and trait-validation decisions remain unchanged."
+  ]
+}

@@ -1,0 +1,13 @@
+# Gateway outage and recovery, 2026-09-06
+
+The confirmation coder runner (PID 1023699, parent 985581) was paused with SIGSTOP after the local Gateway listener on port 8111 was found absent. The cause of the original Gateway process exit has not been established. Saved transport failures are not behavioral measurements.
+
+The existing Gateway application and validated configuration were relaunched in persistent tmux socket `persona-gateway-20260906`, session `gateway`. The only intentional configuration changes were loopback binding and a task-local usage-statistics path. Source and launcher hashes are recorded in `launch_record.json`; no credentials were written into that record or launcher. `/healthz` returned `ok` and the authenticated `/v1/models` route advertised the required models. These checks establish local availability and authentication, not upstream inference success.
+
+Automatic approval rejected the proposed SIGCONT twice, including a second submission with the existing task authorization and frozen manifest evidence. The stated reason was insufficient explicit user authorization for these payloads and external destinations. The runner was held paused pending user confirmation. The user subsequently explicitly confirmed the listed payloads and destinations; the same original child was resumed at 2026-09-06 01:03:07 UTC, as recorded in `resume_record.json`. No workaround, replacement inference runner, reset, additional retry allowance, or measurement-policy change was applied.
+
+The byte-prefix snapshot in `incident_record.json` preserves the pre-resumption record counts, transport-error counts, timestamps, and SHA256. Existing failures will remain part of the execution trace. Once authorized, resume the same verified child; the frozen controller retains responsibility for the already specified repair passes. Do not interpret local health checks or a live process as completed confirmation coding.
+
+## Interpretation boundary
+
+All 4,040 confirmation tutor generations finished at 2026-09-05 12:00:08 UTC, before the first saved Gateway coding failure at 12:24:02 UTC. The outage and restart therefore affect the measurement-call schedule, not the already saved tutor generations or locked forecasts. Do not describe the tutor-generation collection as spanning the outage. Conversely, the training-source sentinels are tutor-generation probes; they do not establish that coder behavior was stable across the later measurement-service interruption. Report coder observation dates and returned deployment names separately, preserve failed attempts, and assess the frozen alternative-coder sensitivities once all labels are available. Agreement and stable model aliases cannot certify immutable coder weights.

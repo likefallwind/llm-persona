@@ -1,0 +1,17 @@
+{
+  "status": "descriptive implementation fixed before confirmation outputs; primary comparisons unchanged",
+  "fixed_at": "2026-09-05T06:23:31.141768+00:00",
+  "script": "scripts/describe_personality_confirmation_v3.py",
+  "script_sha256": "64d93cefe19e2b85a3a672740a9544d6f08d2e23419bf8f071dcc709c0fe63d8",
+  "new_api_calls": 0,
+  "new_primary_tests": 0,
+  "manual_after_confirmation_command": "PYTHONDONTWRITEBYTECODE=1 .venv/bin/python scripts/describe_personality_confirmation_v3.py --diagnostics <confirmation measurement_selection diagnostics>",
+  "scope": [
+    "joint answer/elicitation states, without temporal order",
+    "matched sixteen-source prompt dispersion and state changes",
+    "repeated five-configuration profiles",
+    "paired four-template cross-stage sentinels",
+    "paired eight-source information opportunity probes"
+  ],
+  "timing_disclosure": "Implemented after pilot and during training judging; no confirmation responses exist."
+}

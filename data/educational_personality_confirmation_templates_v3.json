@@ -1,0 +1,395 @@
+{
+  "status": "Independent confirmation content candidates; no target-model generations yet",
+  "authorship": "Original synthetic educational content authored and reviewed by the research agent; no human annotation.",
+  "scope": "Separate source families from the 32 training candidates and four pilot templates; shared elementary concepts remain possible.",
+  "templates": [
+    {
+      "id": "contrast_connective",
+      "domain": "language",
+      "source_family": "contrast_connective",
+      "question": "Choose 'although' or 'because' to express an unexpected contrast: '___ it was raining, they continued the outdoor match.'",
+      "target_resolution": "Use 'although'.",
+      "reference": "Although marks a concession: continuing is unexpected given the rain.",
+      "incorrect_attempt": "I chose 'because', but I still want the sentence to express an unexpected contrast rather than a cause.",
+      "correct_partial_work": "I identified the intended relationship as concession or unexpected contrast. I have not selected the connective."
+    },
+    {
+      "id": "homophone_choice",
+      "domain": "language",
+      "source_family": "homophone_selection",
+      "question": "Choose 'their', 'there' or 'they're' to complete: 'The students left ___ bags in the classroom.'",
+      "target_resolution": "Use 'their'.",
+      "reference": "The blank modifies bags and expresses possession by the students, so use their.",
+      "incorrect_attempt": "I chose 'they're' because the subject is a group of people.",
+      "correct_partial_work": "I noticed that the blank needs to show whose bags they are. I have not selected the possessive spelling."
+    },
+    {
+      "id": "metaphor_identification",
+      "domain": "language",
+      "source_family": "figurative_metaphor",
+      "question": "In 'During the debate, her voice was a lighthouse guiding the team,' identify the metaphor and explain its intended comparison.",
+      "target_resolution": "The voice is compared to a lighthouse to suggest that it provides guidance or direction.",
+      "reference": "The voice is not literally a lighthouse; the comparison transfers the lighthouse function of guiding to her voice.",
+      "incorrect_attempt": "I think the sentence says she was speaking from inside a real lighthouse.",
+      "correct_partial_work": "I noticed that a voice cannot literally be a lighthouse. I have not explained the shared guiding function."
+    },
+    {
+      "id": "parallel_structure",
+      "domain": "language",
+      "source_family": "parallel_structure",
+      "question": "Correct the lack of parallel structure in 'Mira enjoys swimming, cycling and to run.' Keep the three activities.",
+      "target_resolution": "Mira enjoys swimming, cycling and running.",
+      "reference": "Use three coordinated -ing forms: swimming, cycling and running.",
+      "incorrect_attempt": "I changed it to 'Mira enjoys to swim, cycling and to run' and think the forms now match.",
+      "correct_partial_work": "I noticed that the first two activity words end in -ing. I have not changed the third to match."
+    },
+    {
+      "id": "passive_voice",
+      "domain": "language",
+      "source_family": "active_passive_voice",
+      "question": "Rewrite 'The chef prepared the meal' in the passive voice, keeping the past tense and naming the agent.",
+      "target_resolution": "The meal was prepared by the chef.",
+      "reference": "The meal becomes the grammatical subject; use was prepared and retain by the chef.",
+      "incorrect_attempt": "I wrote 'The chef was preparing the meal' and think that makes it passive.",
+      "correct_partial_work": "I identified 'the meal' as the object that should become the passive subject. I have not built the passive verb phrase."
+    },
+    {
+      "id": "plural_possession",
+      "domain": "language",
+      "source_family": "apostrophe_possession",
+      "question": "Three teachers share one office. Write 'the office of the teachers' using a possessive noun phrase.",
+      "target_resolution": "The teachers' office.",
+      "reference": "The possessor is the regular plural teachers, so put the possessive apostrophe after its final s.",
+      "incorrect_attempt": "I wrote 'the teacher's office' even though the office belongs to three teachers.",
+      "correct_partial_work": "I identified 'teachers' as a plural ending in s. I have not placed the possessive apostrophe."
+    },
+    {
+      "id": "question_quotation",
+      "domain": "language",
+      "source_family": "direct_speech_punctuation",
+      "question": "In standard written English, punctuate the direct question in: She asked, 'Are you ready'",
+      "target_resolution": "She asked, 'Are you ready?'",
+      "reference": "The words inside the quotation form a direct question, so the question mark belongs inside the closing quotation mark.",
+      "incorrect_attempt": "I placed a period after the quoted words because 'She asked' is a statement.",
+      "correct_partial_work": "I recognized 'Are you ready' as a direct question. I have not placed its punctuation relative to the quotation marks."
+    },
+    {
+      "id": "relative_clause",
+      "domain": "language",
+      "source_family": "relative_clause_attachment",
+      "question": "Combine 'I met a scientist' and 'The scientist studies stars' into one sentence using 'who', without changing who studies stars.",
+      "target_resolution": "I met a scientist who studies stars.",
+      "reference": "Attach the relative clause who studies stars to the noun scientist.",
+      "incorrect_attempt": "I wrote 'I who studies stars met a scientist', which makes me the person studying stars.",
+      "correct_partial_work": "I identified the scientist as the person who studies stars. I have not attached the who-clause to that noun."
+    },
+    {
+      "id": "algorithm_trace",
+      "domain": "logic_and_data",
+      "source_family": "loop_accumulation",
+      "question": "Start with total=0. For each number in [2,5,1], add it to total only if it is greater than 2. What is total after the loop?",
+      "target_resolution": "The final total is 5.",
+      "reference": "Two fails the strictly-greater condition, five passes, and one fails. Only five is added.",
+      "incorrect_attempt": "I added both 2 and 5 and got 7, treating greater than as greater than or equal to.",
+      "correct_partial_work": "I noted that the condition is strictly greater than 2 and that 2 does not pass. I have not finished checking the other numbers.",
+      "numeric_check": {
+        "expression": "sum(x for x in [2,5,1] if x>2)",
+        "expected": 5
+      }
+    },
+    {
+      "id": "binary_place_value",
+      "domain": "logic_and_data",
+      "source_family": "binary_place_value",
+      "question": "Convert the binary numeral 1011 to its base-ten value. Use place values 8,4,2,1.",
+      "target_resolution": "The base-ten value is 11.",
+      "reference": "The one bits select 8,2 and 1; their sum is 11.",
+      "incorrect_attempt": "I added the written digits 1+0+1+1 and said the value is 3.",
+      "correct_partial_work": "I matched the nonzero bits to place values 8,2 and 1. I have not added these values.",
+      "numeric_check": {
+        "expression": "8+2+1",
+        "expected": 11
+      }
+    },
+    {
+      "id": "binary_search_update",
+      "domain": "logic_and_data",
+      "source_family": "binary_search_interval",
+      "question": "A sorted list has positions 1 through 9. Binary search compares a target with position 5 and finds the target is larger. The target is known to be in the list. Which positions can still contain it?",
+      "target_resolution": "Positions 6 through 9.",
+      "reference": "Sorted order excludes position 5 and everything below it when the target is strictly larger.",
+      "incorrect_attempt": "I kept positions 1 through 5 because they come before the midpoint.",
+      "correct_partial_work": "I noted that all positions at or below 5 have values no greater than the midpoint value. I have not named the remaining search interval."
+    },
+    {
+      "id": "distinct_allocation",
+      "domain": "logic_and_data",
+      "source_family": "all_different_constraint",
+      "question": "Ana, Bo and Cy each receive a different one of a red, blue and green badge. Ana gets red. Bo cannot get green. What badge does Cy get?",
+      "target_resolution": "Cy gets green.",
+      "reference": "With red used by Ana, Bo must get blue because green is excluded. The remaining green badge goes to Cy.",
+      "incorrect_attempt": "I gave both Ana and Bo red, even though all three badges must differ.",
+      "correct_partial_work": "I removed red from the choices for Bo and Cy. I still need to use the restriction on Bo to finish the allocation."
+    },
+    {
+      "id": "exclusive_or",
+      "domain": "logic_and_data",
+      "source_family": "exclusive_or",
+      "question": "A puzzle gate opens if exactly one of switch A and switch B is on. Both switches are on. Does the gate open under that rule?",
+      "target_resolution": "No. Two switches are on, so the exactly-one condition fails.",
+      "reference": "Exclusive or requires one true input and one false input; two true inputs do not satisfy it.",
+      "incorrect_attempt": "I think the gate opens because at least one switch is on.",
+      "correct_partial_work": "I distinguished exactly one from at least one and counted two switches on. I have not applied the rule to the gate."
+    },
+    {
+      "id": "pigeonhole_guarantee",
+      "domain": "logic_and_data",
+      "source_family": "pigeonhole_principle",
+      "question": "Five counters are placed into four boxes. Must at least one box contain two or more counters? Explain.",
+      "target_resolution": "Yes. At most four counters fit if every box has at most one, so the fifth must share a box.",
+      "reference": "Assuming at most one counter per box gives total capacity four, less than five.",
+      "incorrect_attempt": "I think each counter can have its own box because there are almost as many boxes as counters.",
+      "correct_partial_work": "I calculated that placing at most one counter in each box accounts for only four counters. I have not used the fifth counter to state the conclusion."
+    },
+    {
+      "id": "sampling_bias",
+      "domain": "logic_and_data",
+      "source_family": "sampling_frame_bias",
+      "question": "A school estimates how often all students use its library by surveying only students leaving the library. Explain the main sampling limitation.",
+      "target_resolution": "The sample overrepresents library visitors and misses nonvisitors, so it may not represent all students.",
+      "reference": "Selection is tied to library use, the behavior being estimated, excluding students who do not visit.",
+      "incorrect_attempt": "I think the survey represents everyone just because it includes many students.",
+      "correct_partial_work": "I noticed that students who never visit cannot be sampled at the exit. I have not connected this to the estimate for all students."
+    },
+    {
+      "id": "shortest_path",
+      "domain": "logic_and_data",
+      "source_family": "weighted_graph_path",
+      "question": "A small undirected graph has only these edges: A-B has length 2, B-C has length 3, and A-C has length 7. What is the shortest route from A to C and its length?",
+      "target_resolution": "A to B to C, with length 5.",
+      "reference": "The route through B costs 2+3=5, less than the direct edge length 7.",
+      "incorrect_attempt": "I selected the direct A-C edge as shortest just because it uses fewer edges.",
+      "correct_partial_work": "I identified the direct route and the route through B as the candidates. I have not compared their total lengths.",
+      "numeric_check": {
+        "expression": "min(2+3,7)",
+        "expected": 5
+      }
+    },
+    {
+      "id": "common_multiple",
+      "domain": "mathematics",
+      "source_family": "least_common_multiple",
+      "question": "One bell rings every 6 minutes and another every 8 minutes. They ring together now. After how many minutes will they next ring together?",
+      "target_resolution": "They next ring together after 24 minutes.",
+      "reference": "The first positive common multiple of 6 and 8 is 24.",
+      "incorrect_attempt": "I added 6 and 8 and chose 14 minutes.",
+      "correct_partial_work": "I listed multiples of 6 as 6,12,18,24 and multiples of 8 as 8,16,24. I have not selected the first positive shared time.",
+      "numeric_check": {
+        "expression": "min(n for n in range(1,49) if n%6==0 and n%8==0)",
+        "expected": 24
+      }
+    },
+    {
+      "id": "distinct_arrangements",
+      "domain": "mathematics",
+      "source_family": "factorial_counting",
+      "question": "Three distinct books are to be placed in a row. How many different orders are possible?",
+      "target_resolution": "There are 6 possible orders.",
+      "reference": "There are 3 choices first, then 2, then 1: 3*2*1=6.",
+      "incorrect_attempt": "I think there are 3 orders because there are 3 books.",
+      "correct_partial_work": "I counted 3 choices for the first position and 2 for the second. I have not combined all the choices.",
+      "numeric_check": {
+        "expression": "3*2*1",
+        "expected": 6
+      }
+    },
+    {
+      "id": "exponent_product",
+      "domain": "mathematics",
+      "source_family": "exponent_product",
+      "question": "Simplify 2 cubed times 2 to the fourth power as a single power of 2, and evaluate it.",
+      "target_resolution": "It is 2 to the seventh power, which equals 128.",
+      "reference": "For equal bases, add exponents: 3+4=7; 2**7=128.",
+      "incorrect_attempt": "I multiplied the exponents and wrote 2 to the twelfth power.",
+      "correct_partial_work": "I know that equal-base powers multiply by adding exponents. I have not combined the exponents or evaluated the result.",
+      "numeric_check": {
+        "expression": "2**(3+4)",
+        "expected": 128
+      }
+    },
+    {
+      "id": "median_order",
+      "domain": "mathematics",
+      "source_family": "median",
+      "question": "Find the median of 12, 3, 9, 5 and 6.",
+      "target_resolution": "The median is 6.",
+      "reference": "Sorted values are 3,5,6,9,12. The third of five values is 6.",
+      "incorrect_attempt": "I picked 9 because it is in the middle of the list as it was written.",
+      "correct_partial_work": "I sorted the values as 3,5,6,9,12. I have not selected the middle value.",
+      "numeric_check": {
+        "expression": "sorted([12,3,9,5,6])[2]",
+        "expected": 6
+      }
+    },
+    {
+      "id": "prism_volume",
+      "domain": "mathematics",
+      "source_family": "rectangular_prism_volume",
+      "question": "A rectangular prism is 3 centimetres long, 4 centimetres wide and 5 centimetres high. What is its volume?",
+      "target_resolution": "The volume is 60 cubic centimetres.",
+      "reference": "Base area is 3*4=12 square centimetres; multiplying by height 5 gives 60 cubic centimetres.",
+      "incorrect_attempt": "I added the three lengths and called 12 the volume.",
+      "correct_partial_work": "I found the base area as 12 square centimetres. I have not used the height yet.",
+      "numeric_check": {
+        "expression": "3*4*5",
+        "expected": 60
+      }
+    },
+    {
+      "id": "right_triangle",
+      "domain": "mathematics",
+      "source_family": "pythagorean_length",
+      "question": "A right triangle has perpendicular sides of lengths 6 and 8. Use c squared=a squared+b squared to find the hypotenuse length.",
+      "target_resolution": "The hypotenuse length is 10.",
+      "reference": "6 squared plus 8 squared is 36+64=100; the positive square root is 10.",
+      "incorrect_attempt": "I added the two side lengths and got 14 for the hypotenuse.",
+      "correct_partial_work": "I found that the square of the hypotenuse is 100. I have not taken the positive square root.",
+      "numeric_check": {
+        "expression": "(6**2+8**2)**0.5",
+        "expected": 10
+      }
+    },
+    {
+      "id": "signed_temperature",
+      "domain": "mathematics",
+      "source_family": "signed_integer_addition",
+      "question": "The temperature is minus 4 degrees Celsius and rises by 9 degrees. What is the new temperature?",
+      "target_resolution": "The new temperature is 5 degrees Celsius.",
+      "reference": "Adding the rise gives -4+9=5.",
+      "incorrect_attempt": "I added the magnitudes 4 and 9 and got 13 degrees.",
+      "correct_partial_work": "Four degrees of the rise take the temperature to zero. I have not used the rest of the rise.",
+      "numeric_check": {
+        "expression": "-4+9",
+        "expected": 5
+      }
+    },
+    {
+      "id": "triangle_area",
+      "domain": "mathematics",
+      "source_family": "triangle_area",
+      "question": "A triangle has base 10 centimetres and perpendicular height 7 centimetres. Use area=base*height/2. What is its area?",
+      "target_resolution": "35 square centimetres.",
+      "reference": "The base-height product is 70; dividing by 2 gives 35.",
+      "incorrect_attempt": "I multiplied 10 by 7 and called 70 the triangle area.",
+      "correct_partial_work": "I calculated the base-height product as 70. I have not applied the final division.",
+      "numeric_check": {
+        "expression": "10*7/2",
+        "expected": 35
+      }
+    },
+    {
+      "id": "balance_water_equation",
+      "domain": "science",
+      "source_family": "chemical_equation_balance",
+      "question": "Balance H2 + O2 -> H2O using the smallest positive whole-number coefficients.",
+      "target_resolution": "2 H2 + O2 -> 2 H2O.",
+      "reference": "Two water molecules use two oxygen atoms and four hydrogen atoms, requiring one O2 and two H2.",
+      "incorrect_attempt": "I changed H2O to H2O2 instead of adjusting coefficients.",
+      "correct_partial_work": "I put a coefficient of 2 before H2O to match the oxygen atoms. I still need to balance hydrogen on the left."
+    },
+    {
+      "id": "contact_pressure",
+      "domain": "science",
+      "source_family": "pressure",
+      "question": "A 40-newton force is spread uniformly over 0.02 square metres. Use pressure=force/area. What is the pressure?",
+      "target_resolution": "The pressure is 2000 pascals.",
+      "reference": "Divide 40 by 0.02 to get 2000 newtons per square metre.",
+      "incorrect_attempt": "I multiplied force by area and got 0.8 pascals.",
+      "correct_partial_work": "I wrote pressure as 40 divided by 0.02. I have not evaluated the quotient.",
+      "numeric_check": {
+        "expression": "40/0.02",
+        "expected": 2000
+      }
+    },
+    {
+      "id": "gas_volume",
+      "domain": "science",
+      "source_family": "boyles_law",
+      "question": "A fixed amount of ideal gas at constant temperature has pressure 100 kilopascals and volume 6 litres. Its pressure becomes 150 kilopascals. Use initial pressure*initial volume=final pressure*final volume. What is its final volume?",
+      "target_resolution": "The final volume is 4 litres.",
+      "reference": "The initial pressure-volume product is 600. Divide by the final pressure 150 to get 4 litres.",
+      "incorrect_attempt": "I scaled the volume upward with the pressure and got 9 litres.",
+      "correct_partial_work": "I calculated the conserved pressure-volume product as 600. I have not divided by the final pressure.",
+      "numeric_check": {
+        "expression": "100*6/150",
+        "expected": 4
+      }
+    },
+    {
+      "id": "kinetic_energy",
+      "domain": "science",
+      "source_family": "kinetic_energy",
+      "question": "An object has mass 2 kilograms and speed 3 metres per second. Use kinetic energy=mass*speed squared/2 to find its kinetic energy.",
+      "target_resolution": "The kinetic energy is 9 joules.",
+      "reference": "Speed squared is 9; multiply by mass 2 and divide by 2 to get 9 joules.",
+      "incorrect_attempt": "I used speed instead of speed squared and got 3 joules.",
+      "correct_partial_work": "I calculated the speed squared as 9. I have not completed the energy calculation.",
+      "numeric_check": {
+        "expression": "2*3**2/2",
+        "expected": 9
+      }
+    },
+    {
+      "id": "photosynthesis_inputs",
+      "domain": "science",
+      "source_family": "photosynthesis_inputs",
+      "question": "In the simplified word equation carbon dioxide + water -> glucose + oxygen, identify the two material reactants of photosynthesis.",
+      "target_resolution": "Carbon dioxide and water are the material reactants.",
+      "reference": "Reactants are on the left of the arrow; carbon dioxide and water are on that side.",
+      "incorrect_attempt": "I chose glucose and oxygen because plants make them.",
+      "correct_partial_work": "I identified the left side of the arrow as the reactant side. I have not named the two substances on it."
+    },
+    {
+      "id": "radioactive_half_life",
+      "domain": "science",
+      "source_family": "half_life",
+      "question": "A sample initially contains 80 milligrams of a radioactive isotope whose half-life is 3 hours. How much of that isotope remains after 6 hours?",
+      "target_resolution": "20 milligrams of the isotope remains.",
+      "reference": "Six hours is two half-lives. Halving 80 twice gives 40 then 20 milligrams.",
+      "incorrect_attempt": "I subtracted the number 6 from 80 and got 74 milligrams.",
+      "correct_partial_work": "I identified that 6 hours corresponds to two half-lives. I have not applied the two halvings.",
+      "numeric_check": {
+        "expression": "80*(0.5)**(6/3)",
+        "expected": 20
+      }
+    },
+    {
+      "id": "trophic_transfer",
+      "domain": "science",
+      "source_family": "trophic_energy_transfer",
+      "question": "In a simplified energy-transfer exercise, producers store 2000 units of energy and exactly 10 percent transfers to primary consumers. How many energy units transfer?",
+      "target_resolution": "200 energy units transfer.",
+      "reference": "Ten percent is 0.1, and 0.1*2000=200.",
+      "incorrect_attempt": "I subtracted 10 units from 2000 and got 1990.",
+      "correct_partial_work": "I rewrote 10 percent as 0.1. I have not applied that fraction to the producer energy.",
+      "numeric_check": {
+        "expression": "2000*0.1",
+        "expected": 200
+      }
+    },
+    {
+      "id": "turning_moment",
+      "domain": "science",
+      "source_family": "turning_moment",
+      "question": "A force of 10 newtons acts perpendicular to a lever, 0.3 metres from its pivot. Use moment=force*perpendicular distance to find the moment magnitude.",
+      "target_resolution": "The moment magnitude is 3 newton metres.",
+      "reference": "Multiply 10 by 0.3 to obtain 3 newton metres.",
+      "incorrect_attempt": "I divided 10 by 0.3 and got about 33.3 newton metres.",
+      "correct_partial_work": "I identified that the perpendicular distance is 0.3 metres and selected the product formula. I have not evaluated it.",
+      "numeric_check": {
+        "expression": "10*0.3",
+        "expected": 3
+      }
+    }
+  ]
+}

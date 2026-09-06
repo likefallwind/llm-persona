@@ -1,0 +1,13 @@
+{
+  "status": "complete training measurement",
+  "diagnostics": "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/combined_diagnostics",
+  "final_run": null,
+  "source_runs": [
+    "artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/run_repair2",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/judge/run"
+  ],
+  "completed_at": "2026-09-05T11:00:18.134736+00:00",
+  "original_and_repair_runs_retained": true,
+  "coverage_sha256": "9d4ee877ac384f7a23ab776cf75ea96ad0742b6dc473a6dd6c05c8f1fa2b9f15",
+  "budget_amendment": "artifacts/educational_personality_v2/prospective_formal/training_budget_amendment.json"
+}

@@ -1,0 +1,16 @@
+{
+  "archive_fixture": "pass: nested paths, text dedup, metadata variants, aliases, latest failure, underscore exclusion",
+  "profile_positive_control_relative_mse_reduction": 0.9681638839453356,
+  "profile_null_control_relative_mse_reduction": {
+    "affective_warmth": -0.0334422174875845,
+    "autonomy_support": -0.0326386338225273,
+    "cognitive_load": -0.0348039821644029,
+    "diagnostic_specificity": -0.0366827247032174,
+    "elicitation": -0.0376558661532823,
+    "epistemic_caution": -0.0442883536588398,
+    "help_directness": -0.0331724156965984,
+    "personalization": -0.024771465472971
+  },
+  "null_interpretation": "One fixed label-scramble sanity check, not a permutation significance test",
+  "status": "passed"
+}

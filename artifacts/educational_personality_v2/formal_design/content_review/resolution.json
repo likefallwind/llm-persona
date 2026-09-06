@@ -1,0 +1,142 @@
+{
+  "status": "content review resolved before formal generation",
+  "reviews": 128,
+  "all_five_boolean_checks_true": 128,
+  "nonempty_issue_arrays": 25,
+  "new_human_annotation": false,
+  "adjudicator": "research agent inspecting source text and reviewer objections",
+  "content_changes": [],
+  "resolutions": [
+    {
+      "request_id": "confirmation:radioactive_half_life:deepseek-v4-pro",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:modifier_attachment:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:conditional_inference:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:simple_inheritance:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:conjunctive_rule:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:past_tense:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:food_chain:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted. The reviewer calls grass prey, an imprecise reviewer phrase absent from the original problem; the original direct food link is unambiguous in context."
+    },
+    {
+      "request_id": "confirmation:passive_voice:deepseek-v4-pro",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "confirmation:trophic_transfer:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "confirmation:turning_moment:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:pronoun_reference:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "confirmation:balance_water_equation:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:map_scale:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "confirmation:parallel_structure:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:fact_opinion:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:set_entailment:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:arithmetic_sequence:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "confirmation:shortest_path:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "confirmation:relative_clause:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:universal_counterexample:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:experimental_variable:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "confirmation:sampling_bias:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "confirmation:gas_volume:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    },
+    {
+      "request_id": "training:ratio_partition:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted. The reviewer second bullet incorrectly calls eight the count of red ratio parts; the original question states five red parts. The original reference correctly uses eight total parts. Reviewer prose is not treated as ground truth."
+    },
+    {
+      "request_id": "training:expected_points:MiniMax-M3",
+      "resolution": "retain content; intentional learner-state contrast",
+      "reason": "Reviewed the stated issue against the question and both learner states: it describes the deliberately erroneous attempt or deliberately unfinished correct work. Neither is a defect in the intended contrast. No target tutor output was consulted."
+    }
+  ],
+  "content_audit_sha256": "21a296cf0d317b42c5435f259cee6b385ea832a2644c9fe5b6755ff4f18114d4",
+  "limitations": [
+    "Two model reviews and agent adjudication are not human gold validation.",
+    "Correct-partial and wrong-attempt conditions differ in correctness and supplied reasoning; no pure progress effect is identified.",
+    "Elementary tasks can make the remaining inference short; do not infer latent student proficiency."
+  ]
+}

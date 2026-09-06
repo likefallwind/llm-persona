@@ -1,0 +1,6 @@
+blind_id,judge_requested,judge_returned,event,present,anchor,expected
+d4dd2e236676a7caac27,deepseek-v4-pro,deepseek-v4-pro,worked_explanation,1,rhetorical_step,0
+057cc0ee14a95dd0ed1c,glm-5.2,glm-5.3,reasoning_elicitation,1,procedural_hedge,0
+057cc0ee14a95dd0ed1c,deepseek-v4-pro,deepseek-v4-pro,reasoning_elicitation,1,procedural_hedge,0
+d4dd2e236676a7caac27,MiniMax-M3,MiniMax-M3,worked_explanation,1,rhetorical_step,0
+057cc0ee14a95dd0ed1c,MiniMax-M3,MiniMax-M3,reasoning_elicitation,1,procedural_hedge,0

@@ -1,0 +1,11 @@
+{
+  "status": "rendered completed pilot measurement; no confirmatory personality claim",
+  "responses": 160,
+  "judge_outputs": 480,
+  "figure": "measurement_pilot",
+  "inputs": {
+    "artifacts/educational_personality_v2/prospective_pilot/measurement_summary/event_measurement.csv": "daa1e98f218bec2d1e2191102a44068563ef88722e1e3556c93fac43c9ab7d0c",
+    "artifacts/educational_personality_v2/prospective_pilot/natural_diagnostics_v2_2_repaired/pairwise_agreement.csv": "04c4038e3c44b0c55b380253e6280dfdb12504a2b4d32586602728bba638ee0f",
+    "scripts/plot_personality_measurement_v3.py": "93aa9b7dab220a7ee133f985202b6a3266ef8316789837b5abb0de3d3af33297"
+  }
+}

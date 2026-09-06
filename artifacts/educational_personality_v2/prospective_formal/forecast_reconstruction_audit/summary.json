@@ -1,0 +1,40 @@
+{
+  "status": "all locked probabilities reconstructed without refitting",
+  "verified_at": "2026-09-05T11:07:17.195054+00:00",
+  "fitted_models_checked": 235,
+  "probabilities_checked": 281600,
+  "maximum_absolute_probability_error": 2.220446049250313e-16,
+  "maximum_reconstructed_gradient_inf": 0.00020739410293302285,
+  "constant_label_models": 0,
+  "confirmation_outputs_read": false,
+  "api_calls": 0,
+  "optimizer_calls": 0,
+  "input_hashes": {
+    "artifacts/educational_personality_v2/prospective_formal/design_freeze.json": "ec53b09f74d0f241f3de9eee7f9591521b723dac0cbb9ee1cca8cb14a8c719ac",
+    "artifacts/educational_personality_v2/prospective_formal/training_execution_policy.json": "63676a3cf29e7132998e9dc77d8a4f4538ad8f3ca28f12de079229d338df8edd",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_execution_policy.json": "3aecb3b4d37c6b8359df8ee52077caa7ab82045f52846fa2cdba1c8a37cf484d",
+    "artifacts/educational_personality_v2/prospective_formal/prediction_lock.json": "ad6650f9776e16cde29440d8a67f6e0873d98c70846c8fe93dd89ee571c1642c",
+    "artifacts/educational_personality_v2/prospective_formal/judge_sensitivity_lock.json": "f856d1860f925ca649d8765bef33283697392a9e6d47b01c0d0ed38c3385eda9",
+    "artifacts/educational_personality_v2/prospective_formal/generator_deletion_lock.json": "05689321d69532f1df39a7b6ff191d0d3e1662cf3daf3b8b9165c87fcac0d848",
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/models.json": "4402bab4462718a12e70fa865ea7e6b378e0c1581d010fdf8723b31a7a6ed992",
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/predictions.csv": "1e3ca4a647ad672041c207e366eb947cb857eb85204ad9280fc659f95ca0bd98",
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/style_models.json": "ff74498485deb7fd12227461d398d7c9864af4b0f9011ccbef6efede7fbc32c4",
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/style_predictions.csv": "e505be792957dd2a395ca567f39b0d5cf7c3a06de37c93d3052f9f3e6d2143db",
+    "artifacts/educational_personality_v2/prospective_formal/locked_judge_sensitivity/models.json": "978528af73e77479228142432518f9a55384c2d7590a717cc3ad19d63bba4fd6",
+    "artifacts/educational_personality_v2/prospective_formal/locked_judge_sensitivity/predictions.csv": "f7e0f09b81b982cf6eefee99902c21f5da2a2fbb63aada39e96e3e11ab67afe6",
+    "artifacts/educational_personality_v2/prospective_formal/locked_generator_deletion/models.json": "32b3233277f85d36e3a918254c34200455e59884a86894b04821b7be20b541ed",
+    "artifacts/educational_personality_v2/prospective_formal/locked_generator_deletion/predictions.csv": "f49caea935e6e1cfced218523ce5ed49e6fa62468f3f0e680edd85d289bb07ec",
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/training_frame.csv": "4a52a28fad285c0623010003ada9fc83ae39bd7ad8e4f62330d8ac58a1951b4f",
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/confirmation_input_frame.csv": "d74460b83a9181e32a4737ad90e96269b80ff0c48af1531861a30f5441725eb7",
+    "artifacts/educational_personality_v2/prospective_formal/locked_judge_sensitivity/training_panel_labels.csv": "9471899701ffb553b63a24f05dbe364e00abc8c9fb4061c72a20f7ea0fd88dd1",
+    "scripts/verify_personality_forecast_artifacts_v3.py": "607cefe504175fd4a904f8b9fa3d1605962a9d4d14d7378d6f1612890fa2b50b",
+    "scripts/predict_personality_events_v3.py": "46a9500bc08b96fa87b830eb3209746bb50e5cbf0da3db8c43462abecd3234ba",
+    "scripts/personality_style_competitor_v3.py": "e08c621ba1aec198e7bbc7e1ad953060f4e7d417941336506f064764cca1b079"
+  },
+  "limitations": [
+    "Reuses frozen design builders; this checks artifact export, not independent implementation of the scientific model.",
+    "Selected penalties are checked against saved CV losses; CV is not rerun.",
+    "Successful optimizer termination in the frozen code can have gradient above 1e-6; actual gradients are reported, not silently reclassified.",
+    "No predictive accuracy or personality inference follows from this numerical audit."
+  ]
+}

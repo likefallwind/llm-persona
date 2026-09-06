@@ -1,0 +1,41 @@
+{
+  "status": "persisted-usage snapshot; active jobs and unsaved work prevent final resource totals",
+  "snapshot_at": "2026-09-05T12:14:52.856217+00:00",
+  "input_files": 16,
+  "raw_saved_row_copies": 18466,
+  "unique_saved_records": 10859,
+  "reused_row_copies_excluded": 7607,
+  "saved_attempts": 10903,
+  "complete_attempts": 10842,
+  "failed_attempts": 61,
+  "single_attempt_top_level_usage_used": 475,
+  "reported_prompt_tokens": 7226462,
+  "reported_completion_tokens": 16068742,
+  "reported_total_tokens": 23295204,
+  "prompt_tokens_unknown_attempts": 41,
+  "completion_tokens_unknown_attempts": 41,
+  "total_tokens_unknown_attempts": 41,
+  "phases": {
+    "material_review": 128,
+    "confirmation_coding": 490,
+    "confirmation_generation": 4040,
+    "training_coding": 3850,
+    "training_generation": 1280,
+    "pilot_measurement_development": 906,
+    "pilot_generation": 160,
+    "runtime_diagnostic": 5
+  },
+  "script_sha256": "48d0740e68f2f70e6a39745b5bcf5bfbd7d8d3f7b719f889fc058e27ecc0ff90",
+  "input_prefix_manifest_sha256": "d6005c6fcaf03cf17e4adfc9090cc8ebf030e79037f5b64d2191878d8bd66485",
+  "limitations": [
+    "Snapshot input files are read sequentially, not as a simultaneous transaction.",
+    "Only complete persisted JSONL rows are counted; in-flight or interrupted unsaved attempts are not measurable here.",
+    "Per-attempt usage is summed once. Sole-success legacy records may use top-level usage when their only attempt has no usage field; this fallback is counted explicitly.",
+    "Top-level usage is never added to existing per-attempt usage or used to impute separate costs for multiple attempts. Reused row copies are excluded.",
+    "Provider-reported total tokens are reported separately; reasoning tokens are not added on top of completion tokens.",
+    "Missing usage is explicitly counted, not imputed as zero cost. Tokenization and billing conventions vary by provider.",
+    "Model groups identify requested configurations for accounting; returned deployment identities are governed by the separate generation/coding audits.",
+    "Pilot measurement includes anchors, failed measurement protocols and preflight development, not just final valid pilot labels.",
+    "This snapshot is not a dollar-cost estimate, invoice reconciliation, final wall-clock total or independent-observation count."
+  ]
+}

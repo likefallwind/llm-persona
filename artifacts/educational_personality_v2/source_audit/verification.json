@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "checks": [
+    "normalized shared problem across three task names",
+    "empty source remains unresolved",
+    "duplicate conversation deduplicated",
+    "same learner histories share group",
+    "no raw learner or conversation text in outputs",
+    "actual script hash and audit counts"
+  ]
+}

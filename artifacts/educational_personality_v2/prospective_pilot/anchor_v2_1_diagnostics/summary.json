@@ -1,0 +1,24 @@
+{
+  "status": "measurement diagnostics, not confirmatory personality inference",
+  "expected_judge_requests": 96,
+  "valid_judge_requests": 96,
+  "invalid_or_missing": 0,
+  "judge_requested_to_returned": {
+    "MiniMax-M3": [
+      "MiniMax-M3"
+    ],
+    "glm-5.2": [
+      "glm-5.3"
+    ],
+    "deepseek-v4-pro": [
+      "deepseek-v4-pro"
+    ]
+  },
+  "complete_consensus_event_items": 256,
+  "limitations": [
+    "Quoted evidence validates provenance, not semantic truth.",
+    "Only items with all three valid coders contribute to consensus.",
+    "Agent-authored anchor agreement is not human gold accuracy.",
+    "Pilot repetition agreement can be high from near-constant event prevalence."
+  ]
+}

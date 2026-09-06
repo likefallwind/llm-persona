@@ -1,0 +1,37 @@
+{
+  "status": "judge-panel sensitivity forecasts locked before confirmation generation",
+  "locked_at": "2026-09-05T11:00:52.204075+00:00",
+  "primary_prediction_lock_sha256": "ad6650f9776e16cde29440d8a67f6e0873d98c70846c8fe93dd89ee571c1642c",
+  "judge_panels": [
+    "all_three_soft",
+    "exclude_generator_family",
+    "single_MiniMax-M3",
+    "single_deepseek-v4-pro",
+    "single_glm-5.3",
+    "without_MiniMax-M3",
+    "without_deepseek-v4-pro",
+    "without_glm-5.3"
+  ],
+  "primary_events": [
+    "answer_reveal",
+    "reasoning_elicitation",
+    "affect_acknowledgement"
+  ],
+  "fitted_models": 120,
+  "prediction_rows": 153600,
+  "files": {
+    "artifacts/educational_personality_v2/prospective_formal/locked_judge_sensitivity/predictions.csv": "f7e0f09b81b982cf6eefee99902c21f5da2a2fbb63aada39e96e3e11ab67afe6",
+    "artifacts/educational_personality_v2/prospective_formal/locked_judge_sensitivity/training_panel_labels.csv": "9471899701ffb553b63a24f05dbe364e00abc8c9fb4061c72a20f7ea0fd88dd1",
+    "artifacts/educational_personality_v2/prospective_formal/locked_judge_sensitivity/models.json": "978528af73e77479228142432518f9a55384c2d7590a717cc3ad19d63bba4fd6",
+    "artifacts/educational_personality_v2/prospective_formal/prediction_lock.json": "ad6650f9776e16cde29440d8a67f6e0873d98c70846c8fe93dd89ee571c1642c",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/combined_diagnostics/event_codes.csv": "0452199f8860a98439106185e3f50705c09db195f28a719e9e363831e33b99ff",
+    "scripts/lock_personality_judge_sensitivity_v3.py": "2ee5a5fe24ae613fb6a4db3132ca63ca65d2ba9519ad4555bc4552319623854a"
+  },
+  "limitations": [
+    "These panels reuse the same responses and are not independent replications.",
+    "Two-coder ties are 0.5; none is silently changed to absence.",
+    "Excluding the generator family changes the judge panel by generator and cannot be treated as ground truth.",
+    "Forecasts are evaluated against the corresponding confirmation judge panel, not automatically against majority labels.",
+    "The six primary comparisons remain the majority-label comparisons; sensitivity panels cannot replace them."
+  ]
+}

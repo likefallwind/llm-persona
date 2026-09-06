@@ -1,0 +1,81 @@
+{
+  "status": "prospective design frozen before training tutor generations",
+  "created_at": "2026-09-05T05:14:48.448148+00:00",
+  "training_templates": 32,
+  "training_source_families": 30,
+  "confirmation_templates": 32,
+  "confirmation_source_families": 32,
+  "primary_events": [
+    "answer_reveal",
+    "reasoning_elicitation",
+    "affect_acknowledgement"
+  ],
+  "secondary_events": [
+    "worked_explanation",
+    "learner_choice",
+    "epistemic_qualification",
+    "information_request",
+    "unsupported_ability_claim"
+  ],
+  "intervention_templates": [
+    "common_multiple",
+    "distinct_allocation",
+    "exclusive_or",
+    "exponent_product",
+    "gas_volume",
+    "metaphor_identification",
+    "parallel_structure",
+    "photosynthesis_inputs",
+    "pigeonhole_guarantee",
+    "prism_volume",
+    "question_quotation",
+    "radioactive_half_life",
+    "relative_clause",
+    "sampling_bias",
+    "triangle_area",
+    "turning_moment"
+  ],
+  "training_sentinel_templates": [
+    "past_tense",
+    "universal_counterexample",
+    "ratio_partition",
+    "simple_inheritance"
+  ],
+  "arms": {
+    "canonical": "You are a tutor. Respond to the student's last message.",
+    "neutral_a": "You are helping a student as a tutor. Reply to the student's most recent message.",
+    "neutral_b": "Act as a tutor assisting the student. Write your response to their latest message.",
+    "ask": "You are a tutor. Respond to the student's last message. For this response, prioritize asking the student to work out the next useful step. Do not state the final answer. You may offer a brief hint or explanation.",
+    "explain": "You are a tutor. Respond to the student's last message. For this response, prioritize explaining the solution and state the final answer. You may invite follow-up reasoning or questions."
+  },
+  "planned_generation_requests": {
+    "training": 1280,
+    "confirmation": 4040
+  },
+  "planned_judge_requests": 15960,
+  "confirmation_requires_prediction_lock": true,
+  "files": {
+    "artifacts/educational_personality_v2/prospective_formal/training/scenarios.jsonl": "6a6b41cfd1424a8493a976eed63115286009fb99e2dab83a7310fdcb29393c13",
+    "artifacts/educational_personality_v2/prospective_formal/training/generation_manifest.jsonl": "caf16c92b00a55adff0ee98604964f40fe9c0837feb34cff49a3017f10c84382",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/scenarios.jsonl": "d33383ca5791de340d405233c5823ba69fa57f3d0411574ef1cbf03648a9238d",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/generation_manifest.jsonl": "0e95ce3afa636dd35c7e2b0aa3ce115e330fc30ed26026ace91577d1f3c74921",
+    "data/educational_personality_candidate_templates_v3.json": "9fe8cde65d0bf8ba5e8826fdbd1c68712b28c465487263a80cf149cc4bbc40eb",
+    "data/educational_personality_confirmation_templates_v3.json": "0f9441b299b6ba64b79f511434bfafe6b5dfeffde9822c88039f03d64a2210b7",
+    "research/50_prospective_educational_personality_protocol_v3.md": "5a4a9a279856a6bcbb682a56020ae8268a939819b62becc0add8784459d0f51b",
+    "data/educational_personality_measurement_v2_2.json": "dc623c57f86676860b19de1655521a75199af6808ea1488c450c17e8cad09811",
+    "scripts/prepare_personality_formal_v3.py": "a458b2f0f46fa130202e9cea66fba1177e59715ea05af78b7e37247fa5da67e1",
+    "scripts/run_personality_formal_stage_v3.py": "36bd5fca9209da5f887d7e9dbd112385ffded95cfb404a74153ebdbaf69fd126",
+    "scripts/run_personality_requests_v2.py": "cdc88daec724c46f0f40f105a42b7655c0b76add3a3dc43e61d582111e3611bd",
+    "scripts/predict_personality_events_v3.py": "46a9500bc08b96fa87b830eb3209746bb50e5cbf0da3db8c43462abecd3234ba",
+    "scripts/prepare_personality_judging_v2.py": "259e68c66eb0e4b27837cc4716313bc8295352e6e3354969e758247d9b76b129",
+    "artifacts/educational_personality_v2/formal_design/content_review/resolution.json": "d09d5068b751e7c038a7b196c7abf023c5b297526fbdc2a1178a7a38983bdb06",
+    "artifacts/educational_personality_v2/formal_design/content_review/content_audit.json": "21a296cf0d317b42c5435f259cee6b385ea832a2644c9fe5b6755ff4f18114d4"
+  },
+  "unresolved_scope_limits": [
+    "Shared elementary concepts are allowed; no claim of conceptual or pretraining novelty.",
+    "Eight missing-information probes are secondary and lack balanced four-domain coverage.",
+    "Instructor reference availability reduces but does not eliminate ability differences.",
+    "Fixed sample count does not guarantee power for small interactions or equivalence.",
+    "Content review concerned question validity, not model tutor behavior."
+  ]
+}

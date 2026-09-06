@@ -1,0 +1,49 @@
+{
+  "status": "measurement diagnostics, not confirmatory personality inference",
+  "natural_response_preflight": false,
+  "evidence_format": "line_ids",
+  "rubric_sha256": "dc623c57f86676860b19de1655521a75199af6808ea1488c450c17e8cad09811",
+  "expected_judge_requests": 3840,
+  "valid_judge_requests": 3840,
+  "invalid_or_missing": 0,
+  "judge_requested_to_returned": {
+    "MiniMax-M3": [
+      "MiniMax-M3"
+    ],
+    "deepseek-v4-pro": [
+      "deepseek-v4-pro"
+    ],
+    "glm-5.3": [
+      "glm-5.3"
+    ]
+  },
+  "complete_consensus_event_items": 10240,
+  "limitations": [
+    "Evidence references validate provenance, not semantic truth.",
+    "Only items with all three valid coders contribute to consensus.",
+    "Agent-authored anchor agreement is not human gold accuracy.",
+    "Pilot repetition agreement can be high from near-constant event prevalence.",
+    "One structurally missing training code used a disclosed larger completion budget; budgets were audited separately. This is a protocol deviation, not an original frozen-design result."
+  ],
+  "original_budget_valid_requests": 3839,
+  "expanded_budget_valid_requests": 1,
+  "amendment": "artifacts/educational_personality_v2/prospective_formal/training_budget_amendment.json",
+  "input_hashes": {
+    "artifacts/educational_personality_v2/prospective_formal/training_budget_amendment.json": "20e062c76a4f0bb1a136c8a1b8759ebf5196df9b533a5e8ff6ee6458ad617795",
+    "artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/run_repair2/responses.jsonl": "cec7b8b0e3bae43476f9cc8cb89b9e98e8d1692fcfbfdd4f1b8270854a59cd01",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/judge/manifest.jsonl": "edb1e7e080005cb754b59fba06c106d01899a74e6ed90eea2ed553b1eb6b0100",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/judge/freeze.json": "e5964cfadf85a3abbe313730f5eec4cd9619c5acf5974ec6b8d386aacc0b08f9",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/judge/run/responses.jsonl": "344dc05e57e119d893c84f9f96ec44da56362da45a117fd04d6ccd5532b9b912",
+    "scripts/complete_personality_training_budget_recovery_v3.py": "36d09ae60e3d35f3481e9c410819f68605d517af3f9ef3b525f3f913f4eed0c0",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/original_diagnostics/event_codes.csv": "1d148f7b8780b6ab51216eb92d30393dc4c4f0374200fada3f59c68530c30adc",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/original_diagnostics/coverage.csv": "a7d843016598628af8452112980165d78b0035813e00d877a55ad36c825a3324",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/original_diagnostics/consensus.csv": "b9eb234a166a3390e12e4826e9a82a61f943a1cd90b754d33f066652511af2d5",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/original_diagnostics/pairwise_agreement.csv": "e9515d55663d0a1b9c0bf11cba5cced7af78a2c0547b9cc9644f9b64841ab0e9",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/original_diagnostics/summary.json": "c971048fef45ba1e213bc1669cf0645f06b087e8ad7bfd2e951cda2827058cca",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/expanded_budget_diagnostics/event_codes.csv": "e1fc6696020f47de901a98f6b752b21d79f2c3213d7ced0ae55ad037e473226f",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/expanded_budget_diagnostics/coverage.csv": "eac4ea1b13947123310e889979a1b129ba539fd271badc01928198e3b7455d7a",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/expanded_budget_diagnostics/consensus.csv": "d35ac9e33bdb56009c34417abaa0fa578ade581c209a0d88821bd08d9bd506e3",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/expanded_budget_diagnostics/pairwise_agreement.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/expanded_budget_diagnostics/summary.json": "f6a63dfd60fa0568ba642631daf8ce7960bc4530ccab94f328cbcc4c614b4bd0"
+  }
+}

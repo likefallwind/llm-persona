@@ -1,0 +1,17 @@
+{
+  "mode": "anchors",
+  "items": 32,
+  "judges": [
+    "MiniMax-M3",
+    "glm-5.3",
+    "deepseek-v4-pro"
+  ],
+  "expected_calls": 96,
+  "rubric_sha256": "dc623c57f86676860b19de1655521a75199af6808ea1488c450c17e8cad09811",
+  "manifest_sha256": "e9bf5863322b3eb7de801441bddd953f7ea4943c30c6bb92142fb2585f0dd205",
+  "label_provenance": "Agent-authored operational diagnostic anchors; not human labels or population ground truth.",
+  "temperature": 0,
+  "max_tokens": 16384,
+  "natural_response_preflight": false,
+  "evidence_format": "line_ids"
+}

@@ -1,0 +1,684 @@
+                     Do Language Models Have Educational Personalities?
+                     Testing Recurring Behavior on New Tutoring Problems
+
+
+                                                Anonymous ACL submission
+
+
+
+
+001      Incomplete working draft. Introduction, related work,            adapting instruction to an assigned or inferred stu-     041
+002      methods, archive audit, measurement development, and             dent personality, as in personality-aware teaching       042
+003    limitations. Prospective confirmation results, the empirical
+004   abstract, discussion, and conclusion remain to be completed.        systems (Rooein et al., 2026).                           043
+                                                                             Prior studies identify model differences through      044
+
+005   1   Introduction                                                    personality-oriented scenarios and situated behav-       045
+                                                                          ioral probes (Lee et al., 2025; Liu et al., 2026).       046
+006   Two language models can solve the same exer-                        Educational studies already compare characteristic       047
+007   cise correctly while teaching very differently. One                 tutoring-action mixtures and learn tutor-persona         048
+008   gives the answer and explains it; another asks the                  variation from dialogue (Kucheria et al., 2025; Lee      049
+009   student to complete a step; a third acknowledges                    et al., 2026). Building on these observations, we        050
+010   the student’s frustration before doing either. Such                 test the incremental predictive information in de-       051
+011   differences motivate a question about educational                   ployed models’ defaults and student-state response       052
+012   personality: do deployed models exhibit recurring                   patterns. The comparison is against the educational      053
+013   teaching tendencies that help predict how they will                 situation, model-specific subject habits, and simple     054
+014   respond in a new educational situation?                             training-output style profiles, with forecasts locked    055
+015      Answering this question requires more than dis-                  before new responses are generated.                      056
+016   tinguishing the models’ text. Length, formatting,                      We organize the investigation around three ques-      057
+017   task instructions, and access to the solution can                   tions. RQ1: Under the same educational input,            058
+018   all produce recognizable differences. Nor does a                    do models show distinguishable defaults that recur       059
+019   model need to behave identically in every situation                 across repeated generations? RQ2: Can those de-          060
+020   to have a recurring tendency. A tutor may consis-                   faults, or model-specific responses to student state,    061
+021   tently explain more after an erroneous attempt, or                  predict actions on independent source problems?          062
+022   acknowledge difficulty specifically when a student                  RQ3: How do the resulting profiles change under          063
+023   expresses frustration. The empirical question is                    neutral rewordings of the tutor role and explicit        064
+024   whether a model’s defaults or its conditional re-                   teaching instructions? These questions form one          065
+025   sponse patterns recur sufficiently to predict new                   evidence chain. The first establishes recurring dif-     066
+026   behavior. An observed difference, a repeatable                      ferences; the second tests their predictive value; the   067
+027   measurement, and a successful prediction are dis-                   third identifies conditions under which they persist     068
+028   tinct steps in that argument.                                       or move.                                                 069
+029      Education provides concrete choices through                         The study connects an existing educational-           070
+030   which to test this question without assuming a hu-                  output archive to a separate prospective experiment.     071
+031   man personality taxonomy. Revealing a solution                      The archive contains more than one million raw           072
+032   and inviting the student to reason are observable                   prediction records, with different roles, coverage,      073
+033   actions; they can co-occur, and neither is univer-                  and repetition histories. We audit those distinc-        074
+034   sally the better teaching move. Acknowledging                       tions before using the archive for exploration. We       075
+035   expressed frustration is also observable without in-                then develop observable event measures on a small,       076
+036   ferring that the model experiences empathy. These                   permanently excluded pilot and freeze a source-          077
+037   behaviors let us distinguish how a model tends to                   separated training and confirmation design. Predic-      078
+038   teach from how accurately it solves a problem or                    tions are fitted and saved before confirmation re-       079
+039   how much a learner benefits. Our object of study is                 sponses are generated. Model-by-subject baselines        080
+040   the tutor model’s recurring behavior. It differs from               prevent subject-specific habits from being mistaken      081
+
+
+                                                                      1
+082   for student-state response patterns, while neutral            establishing that the resulting labels are ground       132
+083   role wording and explicit teaching policies are ma-           truth.                                                  133
+084   nipulated separately on the same inputs.
+                                                                    Teaching quality and the predictive ques-               134
+085      The resulting claims concern observable tenden-
+                                                                    tion. MRBench and MathTutorBench organize               135
+086   cies of specified deployments. They do not estab-
+                                                                    pedagogical-capability evaluation (Maurya et al.,       136
+087   lish human-equivalent traits, a latent psychological
+                                                                    2025; Macina et al., 2025). PATS studies teaching       137
+088   mechanism, or learning gains. In particular, a suc-
+                                                                    adapted to student personality (Rooein et al., 2026).   138
+089   cessful default profile does not imply that a more
+                                                                    Our primary target is the probability of the tutor’s    139
+090   elaborate conditional profile will improve predic-
+                                                                    next observable behavior under specified condi-         140
+091   tion, and a large instruction effect does not by itself
+                                                                    tions. Predicting that behavior does not rank its ed-   141
+092   establish or refute educational personality. The
+                                                                    ucational value. The empirical addition sought here     142
+093   final conclusions must follow these comparisons,
+                                                                    is a joint account of which default and conditional     143
+094   including measurement failures and limits on trans-
+                                                                    profiles predict new-source actions, how those pro-     144
+095   fer.
+                                                                    files compare with simpler explanations, and how        145
+
+096   2   Related Work                                              neutral wording and explicit policies change them       146
+                                                                    on matched inputs. Source separation and advance        147
+097   Personality and situated behavior. TRAIT ex-                  prediction locks make these comparisons auditable;      148
+098   tends personality inventories into scenario-based             their substantive contribution depends on the result-   149
+099   choices and evaluates distinctiveness, consistency,           ing evidence rather than on the procedure alone.        150
+100   and prompting effects (Lee et al., 2025). Be-
+101   havioral Mode Axes uses situated choices across               3     Study Design and Tests                            151
+102   interaction registers, also evaluates open-ended
+                                                                    We define educational personality operationally as      152
+103   generations, and studies activation-based control
+                                                                    recurring defaults and conditional response pat-        153
+104   (Liu et al., 2026). Separate construction and eval-
+                                                                    terns that help predict a deployment’s behavior         154
+105   uation scenarios are already part of that frame-
+                                                                    on new educational inputs. The unit is a deploy-        155
+106   work. Internal-feature interventions further con-
+                                                                    ment configuration, including the requested and         156
+107   nect personality-related representations to behavior
+                                                                    returned model names, provider, observation pe-         157
+108   across situations (Zhang et al., 2026); conversa-
+                                                                    riod, and generation settings. We study MiniMax-        158
+109   tional studies examine contextual variation under
+                                                                    M3, MiniMax-M2.7, GLM-5.3, DeepSeek-V4-Pro,             159
+110   the same assigned personality (Han et al., 2026).
+                                                                    and Doubao-Seed-2.0-Lite. This definition neither       160
+111   Together these studies motivate examining both re-
+                                                                    assumes human traits nor requires an invariant rank-    161
+112   curring defaults and conditional expression. Our
+                                                                    ing across contexts. Figure 1 shows how the design      162
+113   deployment-level forecasts test observable educa-
+                                                                    connects recurrence, prediction, and prompt effects.    163
+114   tional actions and do not identify the internal mech-
+                                                                    Complete materials, measurement rules, estimation       164
+115   anisms responsible for them.
+                                                                    details, and protocol history appear in Appendix B.     165
+116   Tutor behavior and educational personas. The
+117   CIMA comparison studies three LLMs in language-               3.1    Exploration, Measurement Development,            166
+
+118   learning dialogues, reporting characteristic action                  and Confirmation                                 167
+
+119   mixtures and response complexity. Its generation              The million-record archive informed exploration.        168
+120   prompt requests both a response and action labels             Its 899,025 successful, variant-preserving dedupli-     169
+121   (Kucheria et al., 2025). Thus, describing model-              cated records span different roles; 68,799 belong       170
+122   specific teaching styles is an existing research di-          to nine tutor-response settings under the current-      171
+123   rection. Tutor-persona steering learns from human             adapter role audit. Historical prompt and deploy-       172
+124   tutoring dialogues and evaluates persona alignment            ment provenance is incomplete (Appendix A). We          173
+125   on held-out dialogues (Lee et al., 2026). Our ex-             therefore keep archive findings separate from the       174
+126   periment instead measures the default behavior of             prospective experiment. An excluded pilot of 160        175
+127   multiple deployed configurations and compares                 answers develops the event measures reported in         176
+128   changes caused by controlled student cues and                 Section 4.                                              177
+129   teaching instructions. We code the visible answers               The prospective experiment contains 32 training      178
+130   after generation and retain cross-coder sensitivity;          questions in 30 conservative source families and        179
+131   this changes the measurement procedure without                32 confirmation questions in 32 separate families.      180
+
+
+                                                                2
+              Prospective design: separate sources, predictions saved before generation
+
+
+               Training answers                              Forecast lock                         New-source answers
+          32 questions / 30 source families          Fit and tune on training sources              32 separate source families
+            Four domains / canonical role           Save forecasts and fitting choices         Same four domains / canonical role
+           5 models · 4 states · 2 requests           Primary and sensitivity panels             5 models · 4 states · 2 requests
+               1,280 planned answers                 Before confirmation generation                 1,280 planned answers
+
+
+
+                                Three questions evaluated on the confirmation responses
+
+
+          RQ1 · Recurring defaults                  RQ2 · Behavior prediction                    RQ3 · Prompt plasticity
+           Repeat agreement and profiles                 Four nested forecasts:                   16 matched source families
+         Two requests under identical inputs           situation; model defaults;             Canonical; neutral A/B; ASK; EXPLAIN
+          Behavior rates reported alongside          model × domain; model × state              Crossed with states and repeats
+               32 new source families                 Losses averaged by source                    2,560 additional answers
+
+
+                          Supplementary probes: 160 complete/missing-information answers + 40 sentinel answers.
+                 All counts describe the fixed design. Repeated requests and prompt variants do not add independent sources.
+
+
+
+      Figure 1: Prospective design, with planned response counts. Each main question crosses five configurations, four
+      student-work/affect conditions, and two requests. Main training and confirmation source families are separate. RQ1
+      and RQ2 use the 32 canonical confirmation sources; RQ3 reuses 16 of them under additional role arms. Repetitions
+      and prompt variants do not add independent sources. The four nested forecasts are accompanied by the training-only
+      style competitor and the sensitivity analyses described below.
+
+
+181   Each partition has eight questions in mathemat-                    tions and variants do not add independent sources.          208
+182   ics, science, language, and logic/data reasoning.
+183   Related training questions remain grouped during                   3.2    Observable Behavior and Recurrence                   209
+184   validation, and the four pilot templates and their nu-                    (RQ1)                                                210
+185   merical substitutions are excluded. Research agents                The three pilot-selected primary events are answer          211
+186   authored the problems and student messages; two                    revelation, an explicit final resolution regardless         212
+187   model reviewers checked all 64 question packages                   of correctness; reasoning elicitation, an invitation        213
+188   before freezing. The confirmation target is new                    for the student to perform reasoning that the tutor         214
+189   sources within these four domains, not unseen do-                  has not immediately answered; and affect acknowl-           215
+190   mains or representative classroom interactions.                    edgement, explicit recognition of feeling or diffi-         216
+191      Each question crosses an erroneous attempt ver-                 culty beyond generic praise or politeness. These            217
+192   sus correct unfinished work with an explicitly calm                co-occurring actions are endpoints, not indepen-            218
+193   versus frustrated student statement. The work con-                 dent latent factors. Five secondary events remain           219
+194   trast bundles correctness and progress; the affect                 reported regardless of their results.                       220
+195   contrast manipulates a textual cue. Every main                         MiniMax-M3, DeepSeek-V4-Pro, and GLM-5.3                221
+196   condition supplies the same instructor reference                   each code every visible response using student con-         222
+197   solution, marked as unseen by the student. This                    text, the reference target, and original answer lines.      223
+198   equalizes solution availability without eliminating                Generator identity, role arm, repetition, and par-          224
+199   ability or instruction-following differences. Each                 tition labels are withheld; output style may still          225
+200   model–input cell receives two requests at tempera-                 reveal identity. Positive codes require existing            226
+201   ture 0.7 and an 8,192-token output budget. Training                nonempty evidence lines. Primary labels use the             227
+202   and canonical confirmation each contain 1,280 re-                  majority of three structurally valid codes; traceabil-      228
+203   sponses. Additional prompt arms contribute 2,560                   ity and agreement do not establish semantic ground          229
+204   responses on 16 confirmation sources. Secondary                    truth. Repairs address completion or structure fail-        230
+205   information-opportunity probes and cross-stage                     ures, never event labels or disagreement. One miss-         231
+206   sentinels add 160 and 40 responses, respectively,                  ing training code required a disclosed larger-budget        232
+207   for 5,320 planned tutor generations. These repeti-                 amendment before prediction locking; Appendix B             233
+
+
+                                                                     3
+234   preserves its exact scope and the original failures.             Pre-confirmation sensitivity specifications in-       284
+235     RQ1 reports model event rates, state-specific               clude eight coding panels, five leave-one-generator      285
+236   profiles, and positive, negative, and total agree-            analyses, and 200 training-source resamples. Math-       286
+237   ment across the two requests, with source cluster-            ematics and content-error screens evaluate the           287
+238   ing. Constant behavior can yield perfect agreement,           locked forecasts without refitting; flagged answers      288
+239   so recurrence is interpreted alongside prevalence             remove the complete five-model comparison slot.          289
+240   and predictive value.                                         Two content reviewers also receive twelve agent-         290
+                                                                    authored diagnostic controls. These checks assess        291
+241   3.3   Locked Prediction on New Sources (RQ2)                  dependence on measurement, configurations, train-        292
+242   For each event, four nested logistic predictors suc-          ing material, and errors; they do not establish hu-      293
+243   cessively include subject-by-student-state context,           man ground truth or causal control of ability. Their     294
+244   model identity, model-by-subject interactions, and            precise timing, retained coverage rules, and inter-      295
+245   model-by-student-state interactions. Training-only            pretation limits are given in Appendix B.                296
+246   orthogonalization and standardization preserve the
+247   ridge geometry of earlier feature blocks. Source-             4   Measurement Development Results                      297
+248   grouped training validation selects the penalty from
+                                                                    This section reports the completed, excluded pi-         298
+249   {0.1, 1, 10, 100}; the intercept is unpenalized. All
+                                                                    lot, not the prospective confirmation study. Its 160     299
+250   fitted parameters, tuning choices, and confirmation
+                                                                    tutor responses cover only four templates and there-     300
+251   probabilities are locked before any confirmation tu-
+                                                                    fore do not justify education-wide prevalence or         301
+252   tor response is generated. No confirmation answer
+                                                                    uncertainty estimates. All responses received three      302
+253   or label enters prediction fitting. A descriptive style
+                                                                    complete event codes after the recorded structural       303
+254   competitor uses only training profiles of log word
+                                                                    repairs. Figure 2 separates agreement on event           304
+255   count and marked-line fraction.
+                                                                    presence from agreement on absence, rather than          305
+256       For each primary event, we test two Brier-loss
+                                                                    allowing abundant negative examples to dominate          306
+257   improvements: adding model defaults to context,
+                                                                    a single agreement statistic.                            307
+258   and adding student-state interactions to the model-
+                                                                       The three selected primary endpoints have             308
+259   by-subject predictor. Losses are averaged within
+                                                                    majority-positive counts of 129 for answer revela-       309
+260   source and equally across 32 confirmation sources.
+                                                                    tion, 61 for reasoning elicitation, and 111 for affect   310
+261   Six one-sided paired source-level tests use Holm
+                                                                    acknowledgement. Their pairwise positive agree-          311
+262   correction; absolute losses, all gain signs, and
+                                                                    ment ranges are 98.04–99.23%, 89.43–92.19%,              312
+263   source-bootstrap intervals are reported. Intervals
+                                                                    and 97.32–98.63%, respectively. In contrast, re-         313
+264   condition on the fitted training profiles and a source-
+                                                                    quests for missing facts have only one majority-         314
+265   sampling approximation, not uncertainty over all
+                                                                    positive example: positive agreement ranges from         315
+266   educational settings or model families.
+                                                                    0–40% despite high overall agreement. Unsup-             316
+
+267   3.4   Prompt Effects and Alternative                          ported ability attribution also has weaker positive      317
+
+268         Explanations (RQ3)                                      agreement, ranging from 33.33–51.16%. These re-          318
+                                                                    sults support different measurement priorities; they     319
+269   On 16 sources selected by a frozen hash, each
+                                                                    do not validate a fixed-dimensional personality tax-     320
+270   model receives every student state under the canon-
+                                                                    onomy.                                                   321
+271   ical role, two neutral role paraphrases, and explicit
+                                                                       Pilot model profiles suggest potentially useful       322
+272   ASK and EXPLAIN instructions. Paired source-
+                                                                    defaults, but adding student-state interactions does     323
+273   level event-rate differences measure both average
+                                                                    not consistently improve source-held-out predic-         324
+274   displacement and model/state heterogeneity. The
+                                                                    tion over model-by-subject profiles during method        325
+275   neutral equivalence reference is ±0.10. Nomi-
+                                                                    development. These exploratory observations moti-        326
+276   nal multiplicity-adjusted paired-t intervals are re-
+                                                                    vated separate sources, within-domain replication,       327
+277   tained, but the additional bounded-source check
+                                                                    and locked prospective comparisons. They are not         328
+278   is too imprecise at sixteen sources to establish
+                                                                    substituted for the missing confirmation outcomes.       329
+279   population equivalence. Nonsignificance does not
+280   establish stability. ASK/EXPLAIN effects quan-                5   Limitations                                          330
+281   tify instruction-driven behavior, not better teaching.
+282   Joint revelation/elicitation rates allow both actions         Scope of the construct. Educational personality          331
+283   to co-occur without inferring their order.                    denotes behavior observed in this educational set-       332
+
+
+                                                                4
+                                                   Measurement-development pilot
+                                                                                                                              Majority
+                                            Agreement on presence                           Agreement on absence              positives
+
+
+              Answer revelation                                                                                               129/160
+
+
+           Reasoning elicitation                                                                                              61/160
+
+
+       Affect acknowledgement                                                                                                 111/160
+
+
+               Worked explanation                                                                                             151/160
+
+
+                    Learner choice                                                                                            23/160
+
+
+            Epistemic qualification                                                                                           40/160
+
+
+              Missing-fact request                                                                                            1/160
+
+
+         Unsupported ability claim                                                                                            11/160
+
+
+                                      0         .25      .50    .75          1.00      0       .25      .50    .75     1.00
+                                                 Pairwise agreement                             Pairwise agreement
+                                          Dots: the three coder pairs. Lines: their range, not confidence intervals.
+
+
+      Figure 2: Completed measurement-development pilot: 160 tutor responses and 480 valid coder outputs. Each dot
+      represents one of the three coder pairs; lines span the observed pairs and are not confidence intervals. Blue labels
+      identify the three endpoints selected before formal generation. Agreement does not establish semantic ground truth,
+      and rare events require separate attention.
+
+
+333   ting. We do not compare matched educational and                       Measurement and deployment. Automated con-                    358
+334   non-educational interactions, so the study cannot                     tent review and three answer coders avoid new                 359
+335   establish that a recurring tendency is unique to ed-                  human annotation, but share possible model bi-                360
+336   ucation. The three primary events cover a small set                   ases. Evidence-line checks verify location, and               361
+337   of actions, can co-occur, and do not constitute an                    coder-family exclusions test a particular depen-              362
+338   independently validated latent trait structure. More                  dence; neither guarantees semantic validity. Rare             363
+339   predictable behavior also need not be more helpful:                   or absent events require expression opportunities             364
+340   answer revelation includes incorrect conclusions,                     before their absence can be interpreted. Five se-             365
+341   and elicitation can be appropriate or unhelpful de-                   lected deployments are also not a random sample               366
+342   pending on the learner’s needs. No learning out-                      of model families. Provider aliases and short-term            367
+343   come is measured.                                                     repeated requests cannot demonstrate long-term                368
+                                                                            stability of weights or behavior. The cross-stage             369
+344   Materials and transfer. The prospective sources                       sentinels mix generation variability, coding vari-            370
+345   are agent-authored English problems with scripted                     ability, and any deployment drift, so they cannot             371
+346   student messages and supplied instructor refer-                       identify those causes separately.                             372
+347   ences. They are not a probability sample of class-
+348   room interactions. Four domains and two explicit                      Inference and research history. There are 32                  373
+349   student-cue factors provide controlled comparisons,                   confirmation source groups, not thousands of in-              374
+350   while leaving multilingual teaching, extended dia-                    dependent educational situations. Source inter-               375
+351   logue, implicit learner cues, and advanced subject                    vals rely on an approximation to variation across             376
+352   matter outside the confirmation target. References                    problems resembling this constructed bank. Small              377
+353   equalize solution availability but cannot eliminate                   gains may remain unresolved, and the conserva-                378
+354   differences in understanding or instruction follow-                   tive neutral-wording check cannot establish pop-              379
+355   ing. The source split prevents the specified problem                  ulation equivalence with sixteen sources. Con-                380
+356   families from crossing partitions; it does not estab-                 ditional prediction is limited to the selected stu-           381
+357   lish novelty relative to model pretraining.                           dent cues, feature blocks, and regularized model              382
+
+
+                                                                        5
+383   class; a weak incremental gain does not disprove            Donya Rooein, Sankalan Pal Chowdhury, Mariia Ere-         437
+384   all context-sensitive behavior. The archive analysis          meeva, Yuan Qin, Debora Nozza, Mrinmaya Sachan,         438
+                                                                    and Dirk Hovy. 2026. PATS: Personality-aware            439
+385   and pilot informed the study, and some sensitivity
+                                                                    teaching strategies with large language model tutors.   440
+386   and interpretation rules were fixed during training.          In Findings of the Association for Computational        441
+387   We disclose their timing and retain failed measure-           Linguistics: EACL 2026, pages 4186–4211.                442
+388   ments. Local hashes and execution timestamps
+                                                                  Ruikang Zhang, Shuo Wang, and Qi Su. 2026.                443
+389   support an inspectable sequence, but are not inde-            From representations to behaviors: Exploring the        444
+390   pendent third-party preregistration or tamper-proof           person–situation–behavior triad in LLMs. Preprint,      445
+391   timestamping.                                                 arXiv:2607.26853.                                       446
+
+
+
+392   References
+393   Bin Han, Deuksin Kwon, and Jonathan Gratch. 2026.
+394     Personality expression across contexts: Linguistic
+395     and behavioral variation in LLM agents. Preprint,
+396     arXiv:2602.01063.
+397   Wassily Hoeffding. 1963. Probability inequalities for
+398    sums of bounded random variables. Journal of the
+399    American Statistical Association, 58(301):13–30.
+400   Aayush Kucheria, Nitin Sawhney, and Arto Hellas.
+401     2025. Comparing behavioral patterns of LLM and
+402     human tutors: A population-level analysis with the
+403     CIMA dataset. In Proceedings of the 20th Workshop
+404     on Innovative Use of NLP for Building Educational
+405     Applications (BEA 2025), pages 873–881.
+406   Jaewook Lee, Alexander Scarlatos, Simon Woodhead,
+407      and Andrew Lan. 2026. Letting tutor personas speak
+408      up for LLMs: Learning steering vectors from dia-
+409      logue via preference optimization. In Proceedings
+410      of the 21st Workshop on Innovative Use of NLP
+411      for Building Educational Applications (BEA 2026),
+412      pages 78–92.
+413   Seungbeen Lee, Seungwon Lim, Seungju Han, Giyeong
+414     Oh, Hyungjoo Chae, Jiwan Chung, Minju Kim,
+415     Beong-woo Kwak, Yeonsoo Lee, Dongha Lee, Jiny-
+416     oung Yeo, and Youngjae Yu. 2025. Do LLMs have
+417     distinct and consistent personality? TRAIT: Person-
+418     ality testset designed for LLMs with psychometrics.
+419     In Findings of the Association for Computational
+420     Linguistics: NAACL 2025, pages 8412–8452.
+421   Haoze Liu, Run Liu, Haiying Xu, Jiahui Han, Siyuan
+422     Fang, Siyu Yan, Huiqi Deng, Guanchu Wang, and
+423     Na Zou. 2026. Your LLM, your style: Behavioral
+424     mode axes for LLM behavioral control. Preprint,
+425     arXiv:2608.10703.
+426   Jakub Macina, Nico Daheim, Ido Hakimi, Manu Ka-
+427     pur, Iryna Gurevych, and Mrinmaya Sachan. 2025.
+428     MathTutorBench: A benchmark for measuring open-
+429     ended pedagogical capabilities of LLM tutors. In
+430     Proceedings of EMNLP 2025, pages 204–221.
+431   Kaushal Kumar Maurya, Kv Aditya Srivatsa, Kseniia
+432     Petukhova, and Ekaterina Kochmar. 2025. Unify-
+433     ing AI tutor evaluation: An evaluation taxonomy for
+434     pedagogical ability assessment of LLM-powered AI
+435     tutors. In Proceedings of NAACL-HLT 2025, pages
+436     1234–1251.
+
+
+                                                              6
+447   A    Archive Scope and Historical                               needed for its own narrower confirmation.              498
+448        Provenance
+                                                                      B Detailed Methods and Protocol History                499
+449   The frozen archive census contains 1,028,822
+450   raw records. Successful text deduplication yields               We use educational personality operationally for       500
+
+451   899,025 model–benchmark–item–response records                   recurring default behavior and conditional response    501
+
+452   when recorded input variants remain distinct, and               patterns of a deployed model in educational inter-     502
+                                                                                     (k)
+453   837,704 when variants are ignored for text inven-               action. Let Ymqsar denote whether model configu-       503
+454   tory only. Neither count estimates independent gen-             ration m expresses behavior k on source problem q,     504
+455   eration events. Table 1 classifies all 39 benchmark             student state s, instruction arm a, and independent    505
+456   settings using a review of current adapter contracts.           request r. A default profile summarizes behav-         506
+457   Each assignment retains a source file, class, line,             ior under the canonical tutor role over a specified    507
+458   hash, and interpretation note. Current contracts                distribution of educational inputs. A conditional      508
+459   guide role interpretation but do not establish the              profile additionally represents how that behavior      509
+460   exact prompts used by every historical request.                 varies with student state. We test both descriptions   510
+461      Evaluation and test/option outputs comprise                  through predictions on separate source problems.       511
+462   73.48% of these records. For example, the Peda-                 This operationalization does not require a fixed       512
+463   gogy Benchmark requests pedagogical-knowledge                   cross-context model ranking, and it does not treat     513
+464   multiple-choice answers, while ASAP and SAS ask                 any identifiable linguistic signature as a validated   514
+465   the candidate model to score student work. MR-                  personality construct.                                 515
+466   Bench and BEA judge settings likewise evaluate                     The unit m is a deployment configuration, in-       516
+467   existing tutor text; that text is not the candidate eval-       cluding its requested and returned model names,        517
+468   uator’s own tutoring. Even among tutor settings,                provider, observation period, and generation set-      518
+469   instructions differ: TutorBench use cases request               tings. The five prospective configurations re-         519
+470   different actions, MMTutorBench requires image-                 quest MiniMax-M3, MiniMax-M2.7, GLM-5.3,               520
+471   conditioned guidance in three prescribed sections,              DeepSeek-V4-Pro, and Doubao-Seed-2.0-Lite. In          521
+472   and LongTutor explicitly requests scaffolding with-             the measurement pilot, the request alias GLM-5.2       522
+473   out the full answer.                                            returned GLM-5.3 throughout; those responses are       523
+474      A second pass verifies all 122 prediction files              identified by the returned name and are not pooled     524
+475   and corresponding summaries in the nine tutor-                  with historical GLM-5.2 results. Provider model        525
+476   response settings against the census hashes. Their              names do not attest to immutable weights, so ver-      526
+477   86,072 latest successful file items reproduce 68,799            sion and temporal uncertainty remain limitations       527
+478   variant-preserving deduplicated records. None of                of deployment-level inference.                         528
+479   those file items contains the inspected fields for
+480   complete messages, prompt text or input hashes,                 B.1   Archive Exploration and Prospective              529
+
+481   provider request identifiers, returned model names,                   Separation                                       530
+
+482   generation timestamps, or finish reasons. All                   The archive audit distinguishes raw records from       531
+483   contain usage metadata. Of the 122 summaries,                   successful deduplicated responses, and distin-         532
+484   83 contain generation parameters and 114 con-                   guishes tutors from solvers and evaluators. Re-        533
+485   tain a judge-prompt hash; none contains the in-                 peated questions and conversations can occur under     534
+486   spected generation-prompt hash fields. A judge-                 different benchmark names and prompt variants.         535
+487   prompt hash is not evidence of the tutor’s genera-              Consequently, benchmark names and local item           536
+488   tion prompt, and later scoring summaries do not                 identifiers are not sufficient independence units.     537
+489   necessarily attest to the original generation param-            Related source material must stay together when        538
+490   eters.                                                          estimating transfer. Analyses informed by previ-       539
+491      This is a field-coverage finding, not proof that             ous archive results remain exploratory; starting a     540
+492   provenance is unavailable in external logs or origi-            new conversational context does not make them          541
+493   nal sources. Reconstructed historical inputs must               prospective.                                           542
+494   be identified as reconstructions. Consequently,                    Across the 899,025 variant-preserving text          543
+495   the archive provides discovery and confound au-                 records, a current-adapter role review identifies      544
+496   dits, while the prospective study records the input,            68,799 records in nine tutor-response settings; most   545
+497   output, source, version, and timing relationships               other records come from evaluation or test-answer      546
+
+
+                                                                  7
+                                      Current task role                 Settings   Records
+                                      Evaluation of existing work             7    354,308
+                                      Test or option answering               10    306,307
+                                      Mixed educational assistance            2     78,322
+                                      Tutor response                          9     68,799
+                                      Learner history or diagnosis            2     42,997
+                                      Safety response                         2     13,974
+                                      Metacognitive problem solving           3     11,188
+                                      Constrained question generation         1      9,233
+                                      Assigned solution repair                1      8,015
+                                      General instruction following           1      3,782
+                                      Knowledge-structure reasoning           1      2,100
+                                      Total                                  39    899,025
+
+      Table 1: Variant-preserving text inventory, not counts of independent tutoring contexts or personality labels. Mixed
+      educational assistance requires item-level role separation; it is not automatically excluded from later research.
+
+
+547   tasks. Tutor-role membership does not itself es-             calm and frustrated. These are four controlled in-        583
+548   tablish neutral prompts or equivalent historical re-         put conditions. The work-state contrast bundles           584
+549   quests. Appendix A reports the complete role                 correctness and progress; it does not isolate a pure      585
+550   inventory and a hash-verified inspection of the              progress or latent student-ability effect. The affect     586
+551   122 tutor prediction files, including their missing          statement is an input manipulation, not an observa-       587
+552   generation-provenance fields.                                tion of a real learner’s emotion.                         588
+553      The controlled protocol uses 32 training ques-               All prospective main conditions provide the tutor      589
+554   tions in 30 conservative source families and 32 con-         with the same correct instructor reference for that       590
+555   firmation questions in 32 separate source families.          question, specifying that the student has not seen        591
+556   Each partition has eight questions in each of mathe-         it. This equalizes the availability of the solution       592
+557   matics, science, language, and logic/data reasoning.         but does not fully control comprehension, attention,      593
+558   Two training question pairs share an averaging or            or instruction-following ability. Results under this      594
+559   unit- conversion family and remain grouped in in-            controlled reference condition are reported sepa-         595
+560   ternal validation. The four pilot templates and their        rately from the historical archive.                       596
+561   numerical substitutions are excluded. Confirmation              The training stage uses the canonical tutor role       597
+562   tests new sources within these four domains, rather          on all 32 questions. The confirmation stage first         598
+563   than transfer to entirely new academic domains               repeats this design on its 32 new questions. Within       599
+564   or proof that a model has never encountered the              each confirmation domain, four questions are se-          600
+565   underlying concepts.                                         lected by a fixed hash for four additional role arms:     601
+566      The questions, correct references, erroneous stu-         two neutral paraphrases, an instruction to priori-        602
+567   dent attempts, and correct unfinished work were              tize student reasoning without revealing the final        603
+568   authored by the research agent. Two model review-            answer, and an instruction to explain the solution        604
+569   ers checked 64 question packages before freez-               and state the answer. Each selected question re-          605
+570   ing, yielding 128 complete reviews. All five                 ceives every arm and student state. The neutral           606
+571   Boolean content checks were positive in every re-            arms change only the role wording; the two pol-           607
+572   view. Twenty-five reviews nevertheless included              icy arms explicitly change the requested teaching         608
+573   issue text, mostly describing the deliberately incor-        behavior.                                                 609
+574   rect attempt or the deliberately unfinished work;               Every model–input cell receives two requests at        610
+575   these comments and their agent adjudication are re-          temperature 0.7 with an 8,192-token output bud-           611
+576   tained. This is content quality control without new          get. The fixed design specifies 1,280 training re-        612
+577   human annotation, not a human-gold validation                sponses, 1,280 canonical confirmation responses,          613
+578   claim.                                                       and 2,560 additional intervention responses. It           614
+                                                                   also includes 160 secondary responses to paired           615
+579   B.2   Crossed Educational Inputs                             complete/missing- information probes on eight con-        616
+580   Each main question has two student-work states,              firmation sources, plus 40 cross-stage responses          617
+581   an erroneous attempt and correct but unfinished              to four training-source sentinels. Sentinels and          618
+582   work, crossed with two explicit affect statements,           prompt variants do not increase the count of inde-        619
+
+
+                                                               8
+620   pendent confirmation sources. Request manifests,             after two structure/completion failures were retried   671
+621   input hashes, parameters, timestamps, and failure            under identical inputs. Formal structure failures      672
+622   histories are recorded. Requests are interleaved             are likewise recorded and retried without select-      673
+623   within shared provider concurrency limits rather             ing by event label or coder agreement. A train-        674
+624   than run as separate model blocks.                           ing coding interruption was recovered using saved      675
+                                                                   valid outputs and the existing two-pass repair al-     676
+625   B.3   Observable Events and Measurement                      lowance. This yielded 3,839 of 3,840 valid codes.      677
+626         Development                                            One GLM coding request repeatedly exhausted its        678
+627   Three primary events are fixed from the                      16,384-token completion budget without visible         679
+628   measurement-development pilot. Answer revela-                output. Before forecast locking or confirmation        680
+629   tion records an explicit final resolution, including         generation, a disclosed amendment allowed this         681
+630   an incorrect resolution or a correct statement that          single missing code a 32,768-token ceiling and at      682
+631   information is insufficient. It therefore measures           most two attempts, keeping its model, input, rubric,   683
+632   disclosure, not correctness. Reasoning elicitation           and temperature fixed. It completed on the first at-   684
+633   records an invitation for the student to perform             tempt using 3,511 completion tokens; this does not     685
+634   unanswered reasoning, including imperatives and              identify the cause of the preceding failures. The      686
+635   indirect suggestions; rhetorical questions immedi-           original and expanded-budget groups were vali-         687
+636   ately answered by the tutor do not qualify. Affect           dated separately before their disjoint codes were      688
+637   acknowledgement records explicit recognition of              combined. All 1,280 training answers consequently      689
+638   feeling or difficulty, excluding generic politeness          have three valid codes. The interrupted run, failed    690
+639   and praise. These are behavior endpoints, not three          attempts, and amendment receipt are retained; the      691
+640   assumed independent personality factors.                     single expanded-budget code is an explicit devia-      692
+641      Five secondary events cover worked explanation,           tion from the original uniform-budget protocol.        693
+642   learner choice, epistemic qualification, requests for
+643   missing facts, and unsupported ability attribution.          B.4   Prediction Before Confirmation                   694
+
+644   All are retained regardless of their results. The pi-              Generation                                       695
+
+645   lot showed why a high aggregate agreement rate is            For each behavior, four nested logistic predictors     696
+646   insufficient: requesting missing facts had only one          model the probability of its occurrence: a subject-    697
+647   majority-coded positive example among 160 re-                by-student-state baseline; that baseline plus model    698
+648   sponses, while unsupported ability attribution had           identity; an additional model-by-subject block; and    699
+649   weak positive agreement. Neither is promoted to              an additional model-by-student-state block. New        700
+650   a primary endpoint based on subsequent confirma-             feature blocks are orthogonalized against existing     701
+651   tion results.                                                blocks using training data and standardized un-        702
+652      MiniMax-M3, DeepSeek-V4-Pro, and GLM-5.3                  der source-equal weights. This prevents duplicate      703
+653   each code every visible tutor response. Coders re-           main-effect encodings from changing their ridge        704
+654   ceive the student conversation, the reference target,        penalty when interactions are introduced. The in-      705
+655   and the answer with original line identifiers. They          tercept is unpenalized. The penalty is selected from   706
+656   do not receive the generating model name, system-            {0.1, 1, 10, 100} by source-grouped training-only      707
+657   role assignment, repeat number, or partition label.          validation. Constant training outcomes use the         708
+658   Natural output style can still reveal identity. Posi-        same smoothed constant across all four predictors.     709
+659   tive codes must reference existing nonempty source              The fitted models, tuning choices, input hashes,    710
+660   lines; negative codes have no references. Valid ref-         and confirmation probabilities are saved before any    711
+661   erences establish traceability, not semantic truth.          confirmation tutor response is generated. The gen-     712
+662   We use majority labels when all three coders are             eration runner checks this prediction lock. No         713
+663   structurally valid, and retain individual and leave-         confirmation label, answer length, or same-item        714
+664   one-coder analyses, including fractional means for           cross-model score enters a primary predictor. A        715
+665   two-coder ties.                                              secondary competing forecast uses only training-       716
+666      The initial exact-quotation protocol failed on nat-       source profiles of log word count and marked-line      717
+667   urally formatted answers, which motivated line ref-          fraction, recomputing those profiles within training   718
+668   erences during measurement development. Origi-               validation. Such style competition is descriptive:     719
+669   nal failures remain archived. The finalized pilot has        teaching policy may itself influence length and for-   720
+670   480 valid codes for 160 unchanged tutor responses            matting, so it is not a causal adjustment for style.   721
+
+
+                                                               9
+722      For each of the three primary events, the two pri-        Their evidence lines do not identify which action       773
+723   mary comparisons are the Brier improvement from              occurred first, and we do not infer action order from   774
+724   a default model profile over the situation baseline          them.                                                   775
+725   and from a student-state profile over the model-
+726   by-subject baseline. We average losses within                B.6   Sensitivity Analyses and Their Timing             776
+
+727   source and then equally across the 32 confirma-              During training coding, after measurement devel-        777
+728   tion sources. The six one-sided paired source-level          opment but before confirmation responses exist,         778
+729   tests use Holm correction. We report absolute Brier          we additionally fix eight alternative coding panels:    779
+730   losses, source-bootstrap intervals, and all compar-          the three-coder mean, each individual coder, each       780
+731   ison signs. These intervals condition on the fitted          two-coder mean, and the mean after excluding the        781
+732   training profiles and a source-sampling approxi-             generator’s model family. For each panel, forecasts     782
+733   mation; they do not describe uncertainty over all            are refitted using its training labels and locked be-   783
+734   models or all educational contexts.                          fore confirmation generation. They are evaluated        784
+                                                                   against the corresponding confirmation labels; two-     785
+735   B.5   Repetition and Prompt Plasticity                       coder ties remain 0.5. This checks dependence on        786
+736   Repetition analyses report positive, negative, and           coding choices but cannot remove biases shared by       787
+737   total event agreement and profile correspondence,            all coders or supply an external ground truth.          788
+738   retaining source clustering. Constant behavior can              Five further forecast sets each remove one gener-    789
+739   produce perfect repeat agreement and is reported as          ator configuration from both training and the con-      790
+740   such. On the 16 fully crossed intervention sources,          firmation target, refitting the baselines and tuning    791
+741   we estimate each model’s event-rate difference be-           within the retained training data. This checks de-      792
+742   tween an alternative role and the canonical role. We         pendence on a single configuration; it changes the      793
+743   report average shifts alongside model and student-           target model mixture and does not test prediction       794
+744   state heterogeneity.                                         of an unseen model. Neither sensitivity family re-      795
+745      For neutral wording, the fixed equivalence ref-           places the six primary comparisons.                     796
+746   erence is ±0.10 in event probability. We retain                 We also resample the 30 training source families     797
+747   the nominal Bonferroni paired-t intervals across             200 times, preserving the multiplicity of repeated      798
+748   the 30 model–event–neutral-arm comparisons. A                source draws. We retain the selected regulariza-        799
+749   nonsignificant difference does not establish equiva-         tion relative to total loss weight, without repeating   800
+750   lence, and constant source differences receive a de-         hyperparameter selection, and recompute training-       801
+751   generacy flag. Further synthetic diagnostics during          style profiles in each resample. The resulting gain     802
+752   training show undercoverage in a sparse boundary             quantiles describe training-source sensitivity con-     803
+753   case even with nonzero source variance. Before               ditional on the confirmation material and selected      804
+754   confirmation generation, we therefore additionally           regularization. They are separate from the primary      805
+755   require a bounded-source interval to support any             confirmation- source intervals. These extensions        806
+756   population-equivalence statement. Scaling Hoeffd-            were specified before confirmation outputs, not pre-    807
+757   ing’s bound to source differences in [−1, 1] and             registered before the entire research project began.    808
+758   allocating error across bothptails and all 30 com-
+759   parisons gives half-width 2 log(2 · 30/0.05)/n               B.7   Mathematics and Content-Error                     809
+
+760   (Hoeffding, 1963). At n = 16 this is approximately                 Sensitivity                                       810
+
+761   0.941, too wide to support the chosen tolerance.             The protocol also requires a mathematics subset         811
+762   This conservative sensitivity still assumes indepen-         and a check of dependence on obvious content er-        812
+763   dent source observations and does not make the               rors. Its implementation is fixed during training       813
+764   authored bank representative. We can describe ob-            coding, before confirmation generation. We evalu-       814
+765   served neutral shifts and nominal intervals, while           ate the existing forecasts on all eight mathematics     815
+766   withholding population equivalence. These dis-               sources, covering 320 canonical responses, without      816
+767   closed interpretation additions preserve the frozen          refitting. Separately, MiniMax-M3 and DeepSeek-         817
+768   numerical output and the six primary prediction              V4-Pro review all 1,280 canonical responses for         818
+769   tests. The explicit ASK and EXPLAIN arms quan-               checkable content errors using the student input,       819
+770   tify policy displacement rather than better teaching.        reference, and original answer lines. They distin-      820
+771   Finally, answer revelation and reasoning elicitation         guish a clear error, no clear error identified, and     821
+772   are analyzed jointly as four possible combinations.          uncertainty. Withholding a solution, asking a ques-     822
+
+
+                                                              10
+823   tion, or correctly quoting and correcting an error is
+824   not itself an error. Positive error judgments require
+825   a category and source-line evidence.
+826      Twelve agent-authored controls accompany the
+827   responses, giving 2,584 planned secondary review
+828   requests. Each reviewer must match at least five of
+829   six controls in each of the clear-error and no-clear-
+830   error classes to meet the limited diagnostic rule.
+831   If either reviewer fails, screened results remain
+832   measurement-limited diagnostics. These controls
+833   do not establish correctness on natural responses,
+834   even when the rule is met.
+835      We retain the full primary results and report
+836   three additional screens: excluding unanimously
+837   identified errors; excluding errors identified by ei-
+838   ther reviewer; and excluding either errors or un-
+839   certainty. A flagged response removes its entire
+840   five-model source–student-state–repeat slot so that
+841   model comparisons remain paired. We report re-
+842   tained coverage and source-equal losses with de-
+843   scriptive source intervals, without new hypothesis
+844   tests. These screens condition on generated re-
+845   sponses and change the target distribution; they
+846   are not causal controls for ability. The content
+847   review covers the canonical panel, not all prompt-
+848   intervention responses.
+
+
+
+
+                                                              11
+

@@ -1,0 +1,2627 @@
+{
+  "status": "content diagnostics; objections require resolution before formal freeze",
+  "expected": 128,
+  "valid": 128,
+  "flagged": 25,
+  "flagged_reviews": [
+    {
+      "request_id": "confirmation:radioactive_half_life:deepseek-v4-pro",
+      "template": "radioactive_half_life",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt subtracts hours from milligrams instead of applying halving.",
+          "Partial work identifies two half-lives but does not complete the halving to find the remaining amount."
+        ]
+      }
+    },
+    {
+      "request_id": "training:modifier_attachment:MiniMax-M3",
+      "template": "modifier_attachment",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt's proposed fix (adding a comma after 'rain') would not resolve the dangling modifier; the participial phrase 'Walking to school' would still grammatically attach to the subject 'the rain'.",
+          "A comma placement change alone cannot make a misplaced participial phrase attach to a different noun without restructuring the clause.",
+          "The partial work correctly diagnoses the dangling modifier problem but does not perform the actual rewrite, leaving the requested revision undone."
+        ]
+      }
+    },
+    {
+      "request_id": "training:conditional_inference:MiniMax-M3",
+      "template": "conditional_inference",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt commits the converse fallacy: 'every red card is a circle' does not imply 'every circle is red'.",
+          "Partial work correctly identifies that the selected card is red but has not yet applied modus ponens to conclude its shape.",
+          "Target resolution (the selected card is a circle) has not been reached by the partial work."
+        ]
+      }
+    },
+    {
+      "request_id": "training:simple_inheritance:MiniMax-M3",
+      "template": "simple_inheritance",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt errs by treating the probability as 1/2; it fails to recognize that BOTH parents must independently pass 'a', giving (1/2)*(1/2)=1/4, not 1/2.",
+          "The learner's correct partial work correctly enumerates the four equally likely allele combinations (AA, Aa, aA, aa) but stops short of stating the proportion (1/4) that is aa, so the requested probability calculation is not yet complete."
+        ]
+      }
+    },
+    {
+      "request_id": "training:conjunctive_rule:MiniMax-M3",
+      "template": "conjunctive_rule",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt ignores the test-score requirement entirely and treats the rule as a single-condition check rather than a conjunction.",
+          "Partial work correctly identifies the conjunction structure and confirms attendance but explicitly leaves the test-score comparison undone."
+        ]
+      }
+    },
+    {
+      "request_id": "training:past_tense:MiniMax-M3",
+      "template": "past_tense",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Learner's incorrect reasoning conflates the continued existence of the bread with the timing of the buying action; past tense marks when the action occurred, not whether its object still exists.",
+          "Partial work correctly identifies 'yesterday' and 'walked' as past-time cues but does not provide the corrected past form 'bought', leaving the requested correction unfinished."
+        ]
+      }
+    },
+    {
+      "request_id": "training:food_chain:MiniMax-M3",
+      "template": "food_chain",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt confuses grass (prey of rabbits) with the direct food of foxes (rabbits), violating the stated direct food link.",
+          "The partial work correctly identifies rabbits as foxes' direct food but leaves the final inference (fewer rabbits \u2192 less food for foxes) undone."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:passive_voice:deepseek-v4-pro",
+      "template": "passive_voice",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt uses past continuous active voice, not passive voice.",
+          "The incorrect attempt does not name the agent with 'by the chef'.",
+          "The partial work correctly identifies the object but does not yet form the passive verb phrase."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:trophic_transfer:MiniMax-M3",
+      "template": "trophic_transfer",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt confuses '10 percent' with '10 units' and uses subtraction instead of multiplication to find a percentage of a quantity.",
+          "Partial work correctly identifies 0.1 as the decimal form of 10% but has not yet multiplied 0.1 by 2000 to reach the final answer."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:turning_moment:MiniMax-M3",
+      "template": "turning_moment",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt: learner divided 10 by 0.3 instead of multiplying, yielding the reciprocal operation.",
+          "Partial work correctly identifies the perpendicular distance and selects the product formula but does not yet evaluate 10 \u00d7 0.3, so the final moment is not supplied."
+        ]
+      }
+    },
+    {
+      "request_id": "training:pronoun_reference:MiniMax-M3",
+      "template": "pronoun_reference",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt wrongly asserts the sentence is already clear; in standard grammar, proximity/first-mention does not reliably determine pronoun reference.",
+          "The correct partial work correctly identifies the ambiguity but does not provide the required unambiguous revision, so the task is unfinished."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:balance_water_equation:MiniMax-M3",
+      "template": "balance_water_equation",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt changes the chemical formula (H2O to H2O2), which is not a valid balancing technique\u2014balancing only allows adjusting coefficients, not changing substances.",
+          "H2O2 is hydrogen peroxide, a completely different chemical species from water, so this approach changes the chemistry rather than balancing the equation.",
+          "Partial work correctly balances oxygen (2 O on each side) by placing coefficient 2 before H2O but still needs coefficient 2 before H2 to balance the 4 H atoms on the right."
+        ]
+      }
+    },
+    {
+      "request_id": "training:map_scale:MiniMax-M3",
+      "template": "map_scale",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt fails to convert 900 centimetres to metres, leaving the answer as 900 metres instead of 9 metres."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:parallel_structure:MiniMax-M3",
+      "template": "parallel_structure",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt 'to swim, cycling and to run' still lacks parallel structure: it mixes two infinitives with one gerund.",
+          "'Enjoys' must be followed by a gerund, not an infinitive, so 'to swim' is grammatically wrong in this sentence.",
+          "The partial work correctly identifies the -ing mismatch but has not yet performed the required correction."
+        ]
+      }
+    },
+    {
+      "request_id": "training:fact_opinion:MiniMax-M3",
+      "template": "fact_opinion",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The learner's incorrect attempt misclassifies 'best room' as the factual part; it is a subjective evaluation and therefore the opinion.",
+          "The learner's reasoning ('the speaker sounds certain') is a flawed criterion for factuality; speaker certainty does not make a claim objectively verifiable.",
+          "The correct partial work identifies the opening time as checkable against a schedule but does not classify both parts as the question requests."
+        ]
+      }
+    },
+    {
+      "request_id": "training:set_entailment:MiniMax-M3",
+      "template": "set_entailment",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt commits the undistributed middle fallacy by treating 'blue objects' as a distributed middle term that forces overlap between norks and triangles.",
+          "The partial work correctly identifies that sharing membership in the blue group does not force norks and triangles to overlap, but fails to state the final answer ('No, some norks need not be triangles')."
+        ]
+      }
+    },
+    {
+      "request_id": "training:arithmetic_sequence:MiniMax-M3",
+      "template": "arithmetic_sequence",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Learner's incorrect attempt uses 6*5 instead of 4 + (6-1)*5, omitting the first term and using n instead of n-1 as the multiplier.",
+          "Correct partial work identifies a_1=4, d=5, and 5 increments from term 1 to term 6, but does not complete the final computation 4 + 5*5 = 29."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:shortest_path:MiniMax-M3",
+      "template": "shortest_path",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt confuses 'fewer edges' with 'shorter path' in a weighted graph; shortest path is determined by total weight, not edge count.",
+          "Partial work has not yet summed the edge weights for either candidate route (2+3=5 vs. 7) and therefore has not identified the shortest route."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:relative_clause:MiniMax-M3",
+      "template": "relative_clause",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt attaches the relative clause 'who studies stars' to 'I' instead of 'scientist', which both changes the meaning (making the speaker the one studying stars) and creates a subject-verb agreement error ('I who studies' should be 'I who study').",
+          "The partial work correctly identifies the antecedent (scientist) but has not yet performed the required step of attaching the relative clause to that noun, so the task remains unfinished."
+        ]
+      }
+    },
+    {
+      "request_id": "training:universal_counterexample:MiniMax-M3",
+      "template": "universal_counterexample",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt chose 9, which is odd (consistent with the claim) and also not prime (9 = 3\u00d73), so it fails as a counterexample on two counts.",
+          "Partial work correctly identifies 2 as prime but does not yet state that 2 is even or explain how this contradicts the universal claim, leaving the refutation incomplete."
+        ]
+      }
+    },
+    {
+      "request_id": "training:experimental_variable:MiniMax-M3",
+      "template": "experimental_variable",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt misidentifies water as the independent variable, but the scenario explicitly states water is held constant, making it a controlled variable.",
+          "The learner's justification ('plants need water to grow') is irrelevant to what is being deliberately changed in this experiment.",
+          "The correct partial work accurately lists all controlled variables but does not yet name the independent variable (light duration), leaving the core task unfinished."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:sampling_bias:MiniMax-M3",
+      "template": "sampling_bias",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt confuses sample size with representativeness, failing to recognize selection bias tied to the behavior of interest.",
+          "Partial work correctly identifies that nonvisitors cannot be sampled at the exit but does not link this to overrepresentation of visitors or bias in the estimate for all students, which the question asks to explain."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:gas_volume:MiniMax-M3",
+      "template": "gas_volume",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt applies a direct (proportional) scaling of volume with pressure instead of the required inverse (Boyle's law) relationship.",
+          "Incorrect answer of 9 litres contradicts the conserved P*V product of 600; correct final volume is 4 litres.",
+          "Partial work correctly identifies the conserved product P1*V1 = 600 but has not yet divided by the final pressure of 150 kPa to obtain the final volume."
+        ]
+      }
+    },
+    {
+      "request_id": "training:ratio_partition:MiniMax-M3",
+      "template": "ratio_partition",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt divides 40 by 5 (the red ratio) instead of by 8 (the total parts), producing 8 instead of the correct 15.",
+          "Incorrect attempt confuses the count of red ratio parts (8) with the number of blue counters."
+        ]
+      }
+    },
+    {
+      "request_id": "training:expected_points:MiniMax-M3",
+      "template": "expected_points",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt conflates certainty (no variance) with higher expectation; E[A]=4 and E[B]=5, so B has the higher expectation despite being risky.",
+          "The partial work correctly writes E[B]=0.5*10+0.5*0 but does not evaluate the sum to 5 nor compare it with A's 4, so it does not yet answer the question."
+        ]
+      }
+    }
+  ],
+  "results": [
+    {
+      "request_id": "training:relevant_support:MiniMax-M3",
+      "template": "relevant_support",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:radioactive_half_life:deepseek-v4-pro",
+      "template": "radioactive_half_life",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt subtracts hours from milligrams instead of applying halving.",
+          "Partial work identifies two half-lives but does not complete the halving to find the remaining amount."
+        ]
+      }
+    },
+    {
+      "request_id": "training:modifier_attachment:MiniMax-M3",
+      "template": "modifier_attachment",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt's proposed fix (adding a comma after 'rain') would not resolve the dangling modifier; the participial phrase 'Walking to school' would still grammatically attach to the subject 'the rain'.",
+          "A comma placement change alone cannot make a misplaced participial phrase attach to a different noun without restructuring the clause.",
+          "The partial work correctly diagnoses the dangling modifier problem but does not perform the actual rewrite, leaving the requested revision undone."
+        ]
+      }
+    },
+    {
+      "request_id": "training:conjunctive_rule:deepseek-v4-pro",
+      "template": "conjunctive_rule",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:homophone_choice:MiniMax-M3",
+      "template": "homophone_choice",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:classifier_precision:MiniMax-M3",
+      "template": "classifier_precision",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:metaphor_identification:MiniMax-M3",
+      "template": "metaphor_identification",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:conditional_inference:deepseek-v4-pro",
+      "template": "conditional_inference",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:prism_volume:deepseek-v4-pro",
+      "template": "prism_volume",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:universal_counterexample:deepseek-v4-pro",
+      "template": "universal_counterexample",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:rectangle_width:MiniMax-M3",
+      "template": "rectangle_width",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:shortest_path:deepseek-v4-pro",
+      "template": "shortest_path",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:binary_search_update:deepseek-v4-pro",
+      "template": "binary_search_update",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:conditional_inference:MiniMax-M3",
+      "template": "conditional_inference",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt commits the converse fallacy: 'every red card is a circle' does not imply 'every circle is red'.",
+          "Partial work correctly identifies that the selected card is red but has not yet applied modus ponens to conclude its shape.",
+          "Target resolution (the selected card is a circle) has not been reached by the partial work."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:right_triangle:deepseek-v4-pro",
+      "template": "right_triangle",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:subject_verb_agreement:deepseek-v4-pro",
+      "template": "subject_verb_agreement",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:conservation_of_mass:deepseek-v4-pro",
+      "template": "conservation_of_mass",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:simple_inheritance:MiniMax-M3",
+      "template": "simple_inheritance",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt errs by treating the probability as 1/2; it fails to recognize that BOTH parents must independently pass 'a', giving (1/2)*(1/2)=1/4, not 1/2.",
+          "The learner's correct partial work correctly enumerates the four equally likely allele combinations (AA, Aa, aA, aa) but stops short of stating the proportion (1/4) that is aa, so the requested probability calculation is not yet complete."
+        ]
+      }
+    },
+    {
+      "request_id": "training:wave_speed:deepseek-v4-pro",
+      "template": "wave_speed",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:contrast_connective:MiniMax-M3",
+      "template": "contrast_connective",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:common_multiple:MiniMax-M3",
+      "template": "common_multiple",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:modifier_attachment:deepseek-v4-pro",
+      "template": "modifier_attachment",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:parallel_structure:deepseek-v4-pro",
+      "template": "parallel_structure",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:conjunctive_rule:MiniMax-M3",
+      "template": "conjunctive_rule",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt ignores the test-score requirement entirely and treats the rule as a single-condition check rather than a conjunction.",
+          "Partial work correctly identifies the conjunction structure and confirms attendance but explicitly leaves the test-score comparison undone."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:algorithm_trace:deepseek-v4-pro",
+      "template": "algorithm_trace",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:past_tense:MiniMax-M3",
+      "template": "past_tense",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Learner's incorrect reasoning conflates the continued existence of the bread with the timing of the buying action; past tense marks when the action occurred, not whether its object still exists.",
+          "Partial work correctly identifies 'yesterday' and 'walked' as past-time cues but does not provide the corrected past form 'bought', leaving the requested correction unfinished."
+        ]
+      }
+    },
+    {
+      "request_id": "training:main_idea:deepseek-v4-pro",
+      "template": "main_idea",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:main_idea:MiniMax-M3",
+      "template": "main_idea",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:food_chain:MiniMax-M3",
+      "template": "food_chain",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt confuses grass (prey of rabbits) with the direct food of foxes (rabbits), violating the stated direct food link.",
+          "The partial work correctly identifies rabbits as foxes' direct food but leaves the final inference (fewer rabbits \u2192 less food for foxes) undone."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:passive_voice:deepseek-v4-pro",
+      "template": "passive_voice",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt uses past continuous active voice, not passive voice.",
+          "The incorrect attempt does not name the agent with 'by the chef'.",
+          "The partial work correctly identifies the object but does not yet form the passive verb phrase."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:kinetic_energy:MiniMax-M3",
+      "template": "kinetic_energy",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:distinct_allocation:deepseek-v4-pro",
+      "template": "distinct_allocation",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:ordering_constraints:MiniMax-M3",
+      "template": "ordering_constraints",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:binary_place_value:MiniMax-M3",
+      "template": "binary_place_value",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:contrast_connective:deepseek-v4-pro",
+      "template": "contrast_connective",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:discount_price:MiniMax-M3",
+      "template": "discount_price",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:relative_clause:deepseek-v4-pro",
+      "template": "relative_clause",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:triangle_area:MiniMax-M3",
+      "template": "triangle_area",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:net_force:deepseek-v4-pro",
+      "template": "net_force",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:trophic_transfer:MiniMax-M3",
+      "template": "trophic_transfer",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt confuses '10 percent' with '10 units' and uses subtraction instead of multiplication to find a percentage of a quantity.",
+          "Partial work correctly identifies 0.1 as the decimal form of 10% but has not yet multiplied 0.1 by 2000 to reach the final answer."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:signed_temperature:deepseek-v4-pro",
+      "template": "signed_temperature",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:exponent_product:deepseek-v4-pro",
+      "template": "exponent_product",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:turning_moment:MiniMax-M3",
+      "template": "turning_moment",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt: learner divided 10 by 0.3 instead of multiplying, yielding the reciprocal operation.",
+          "Partial work correctly identifies the perpendicular distance and selects the product formula but does not yet evaluate 10 \u00d7 0.3, so the final moment is not supplied."
+        ]
+      }
+    },
+    {
+      "request_id": "training:arithmetic_sequence:deepseek-v4-pro",
+      "template": "arithmetic_sequence",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:single_draw_probability:deepseek-v4-pro",
+      "template": "single_draw_probability",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:expected_points:deepseek-v4-pro",
+      "template": "expected_points",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:arithmetic_mean:MiniMax-M3",
+      "template": "arithmetic_mean",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:pronoun_reference:MiniMax-M3",
+      "template": "pronoun_reference",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt wrongly asserts the sentence is already clear; in standard grammar, proximity/first-mention does not reliably determine pronoun reference.",
+          "The correct partial work correctly identifies the ambiguity but does not provide the required unambiguous revision, so the task is unfinished."
+        ]
+      }
+    },
+    {
+      "request_id": "training:thermal_energy:MiniMax-M3",
+      "template": "thermal_energy",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:balance_water_equation:MiniMax-M3",
+      "template": "balance_water_equation",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt changes the chemical formula (H2O to H2O2), which is not a valid balancing technique\u2014balancing only allows adjusting coefficients, not changing substances.",
+          "H2O2 is hydrogen peroxide, a completely different chemical species from water, so this approach changes the chemistry rather than balancing the equation.",
+          "Partial work correctly balances oxygen (2 O on each side) by placing coefficient 2 before H2O but still needs coefficient 2 before H2 to balance the 4 H atoms on the right."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:metaphor_identification:deepseek-v4-pro",
+      "template": "metaphor_identification",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:binary_place_value:deepseek-v4-pro",
+      "template": "binary_place_value",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:map_scale:MiniMax-M3",
+      "template": "map_scale",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt fails to convert 900 centimetres to metres, leaving the answer as 900 metres instead of 9 metres."
+        ]
+      }
+    },
+    {
+      "request_id": "training:weighted_mean:MiniMax-M3",
+      "template": "weighted_mean",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:parallel_structure:MiniMax-M3",
+      "template": "parallel_structure",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt 'to swim, cycling and to run' still lacks parallel structure: it mixes two infinitives with one gerund.",
+          "'Enjoys' must be followed by a gerund, not an infinitive, so 'to swim' is grammatically wrong in this sentence.",
+          "The partial work correctly identifies the -ing mismatch but has not yet performed the required correction."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:trophic_transfer:deepseek-v4-pro",
+      "template": "trophic_transfer",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:contact_pressure:MiniMax-M3",
+      "template": "contact_pressure",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:subject_verb_agreement:MiniMax-M3",
+      "template": "subject_verb_agreement",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:pigeonhole_guarantee:MiniMax-M3",
+      "template": "pigeonhole_guarantee",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:photosynthesis_inputs:deepseek-v4-pro",
+      "template": "photosynthesis_inputs",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:plural_possession:deepseek-v4-pro",
+      "template": "plural_possession",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:net_force:MiniMax-M3",
+      "template": "net_force",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:fact_opinion:MiniMax-M3",
+      "template": "fact_opinion",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The learner's incorrect attempt misclassifies 'best room' as the factual part; it is a subjective evaluation and therefore the opinion.",
+          "The learner's reasoning ('the speaker sounds certain') is a flawed criterion for factuality; speaker certainty does not make a claim objectively verifiable.",
+          "The correct partial work identifies the opening time as checkable against a schedule but does not classify both parts as the question requests."
+        ]
+      }
+    },
+    {
+      "request_id": "training:circuit_current:deepseek-v4-pro",
+      "template": "circuit_current",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:pigeonhole_guarantee:deepseek-v4-pro",
+      "template": "pigeonhole_guarantee",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:question_quotation:MiniMax-M3",
+      "template": "question_quotation",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:past_tense:deepseek-v4-pro",
+      "template": "past_tense",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:map_scale:deepseek-v4-pro",
+      "template": "map_scale",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:right_triangle:MiniMax-M3",
+      "template": "right_triangle",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:median_order:deepseek-v4-pro",
+      "template": "median_order",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:balance_water_equation:deepseek-v4-pro",
+      "template": "balance_water_equation",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:set_entailment:deepseek-v4-pro",
+      "template": "set_entailment",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:radioactive_half_life:MiniMax-M3",
+      "template": "radioactive_half_life",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:experimental_variable:deepseek-v4-pro",
+      "template": "experimental_variable",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:algorithm_trace:MiniMax-M3",
+      "template": "algorithm_trace",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:set_entailment:MiniMax-M3",
+      "template": "set_entailment",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt commits the undistributed middle fallacy by treating 'blue objects' as a distributed middle term that forces overlap between norks and triangles.",
+          "The partial work correctly identifies that sharing membership in the blue group does not force norks and triangles to overlap, but fails to state the final answer ('No, some norks need not be triangles')."
+        ]
+      }
+    },
+    {
+      "request_id": "training:speed_units:deepseek-v4-pro",
+      "template": "speed_units",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:wave_speed:MiniMax-M3",
+      "template": "wave_speed",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:conservation_of_mass:MiniMax-M3",
+      "template": "conservation_of_mass",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:question_quotation:deepseek-v4-pro",
+      "template": "question_quotation",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:arithmetic_sequence:MiniMax-M3",
+      "template": "arithmetic_sequence",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Learner's incorrect attempt uses 6*5 instead of 4 + (6-1)*5, omitting the first term and using n instead of n-1 as the multiplier.",
+          "Correct partial work identifies a_1=4, d=5, and 5 increments from term 1 to term 6, but does not complete the final computation 4 + 5*5 = 29."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:plural_possession:MiniMax-M3",
+      "template": "plural_possession",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:classifier_precision:deepseek-v4-pro",
+      "template": "classifier_precision",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:common_multiple:deepseek-v4-pro",
+      "template": "common_multiple",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:homophone_choice:deepseek-v4-pro",
+      "template": "homophone_choice",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:contact_pressure:deepseek-v4-pro",
+      "template": "contact_pressure",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:thermal_energy:deepseek-v4-pro",
+      "template": "thermal_energy",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:median_order:MiniMax-M3",
+      "template": "median_order",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:gas_volume:deepseek-v4-pro",
+      "template": "gas_volume",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:arithmetic_mean:deepseek-v4-pro",
+      "template": "arithmetic_mean",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:ratio_partition:deepseek-v4-pro",
+      "template": "ratio_partition",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:food_chain:deepseek-v4-pro",
+      "template": "food_chain",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:prism_volume:MiniMax-M3",
+      "template": "prism_volume",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:exclusive_or:MiniMax-M3",
+      "template": "exclusive_or",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:shortest_path:MiniMax-M3",
+      "template": "shortest_path",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt confuses 'fewer edges' with 'shorter path' in a weighted graph; shortest path is determined by total weight, not edge count.",
+          "Partial work has not yet summed the edge weights for either candidate route (2+3=5 vs. 7) and therefore has not identified the shortest route."
+        ]
+      }
+    },
+    {
+      "request_id": "training:relevant_support:deepseek-v4-pro",
+      "template": "relevant_support",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:photosynthesis_inputs:MiniMax-M3",
+      "template": "photosynthesis_inputs",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:passive_voice:MiniMax-M3",
+      "template": "passive_voice",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:ordering_constraints:deepseek-v4-pro",
+      "template": "ordering_constraints",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:comma_splice:deepseek-v4-pro",
+      "template": "comma_splice",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:simple_inheritance:deepseek-v4-pro",
+      "template": "simple_inheritance",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:triangle_area:deepseek-v4-pro",
+      "template": "triangle_area",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:relative_clause:MiniMax-M3",
+      "template": "relative_clause",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt attaches the relative clause 'who studies stars' to 'I' instead of 'scientist', which both changes the meaning (making the speaker the one studying stars) and creates a subject-verb agreement error ('I who studies' should be 'I who study').",
+          "The partial work correctly identifies the antecedent (scientist) but has not yet performed the required step of attaching the relative clause to that noun, so the task remains unfinished."
+        ]
+      }
+    },
+    {
+      "request_id": "training:discount_price:deepseek-v4-pro",
+      "template": "discount_price",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:distinct_arrangements:MiniMax-M3",
+      "template": "distinct_arrangements",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:exclusive_or:deepseek-v4-pro",
+      "template": "exclusive_or",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:comma_splice:MiniMax-M3",
+      "template": "comma_splice",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:pronoun_reference:deepseek-v4-pro",
+      "template": "pronoun_reference",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:distinct_arrangements:deepseek-v4-pro",
+      "template": "distinct_arrangements",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:sampling_bias:deepseek-v4-pro",
+      "template": "sampling_bias",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:speed_units:MiniMax-M3",
+      "template": "speed_units",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:universal_counterexample:MiniMax-M3",
+      "template": "universal_counterexample",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt chose 9, which is odd (consistent with the claim) and also not prime (9 = 3\u00d73), so it fails as a counterexample on two counts.",
+          "Partial work correctly identifies 2 as prime but does not yet state that 2 is even or explain how this contradicts the universal claim, leaving the refutation incomplete."
+        ]
+      }
+    },
+    {
+      "request_id": "training:experimental_variable:MiniMax-M3",
+      "template": "experimental_variable",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt misidentifies water as the independent variable, but the scenario explicitly states water is held constant, making it a controlled variable.",
+          "The learner's justification ('plants need water to grow') is irrelevant to what is being deliberately changed in this experiment.",
+          "The correct partial work accurately lists all controlled variables but does not yet name the independent variable (light duration), leaving the core task unfinished."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:turning_moment:deepseek-v4-pro",
+      "template": "turning_moment",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:fact_opinion:deepseek-v4-pro",
+      "template": "fact_opinion",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:single_draw_probability:MiniMax-M3",
+      "template": "single_draw_probability",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:distinct_allocation:MiniMax-M3",
+      "template": "distinct_allocation",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:weighted_mean:deepseek-v4-pro",
+      "template": "weighted_mean",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:signed_temperature:MiniMax-M3",
+      "template": "signed_temperature",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:binary_search_update:MiniMax-M3",
+      "template": "binary_search_update",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:sampling_bias:MiniMax-M3",
+      "template": "sampling_bias",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt confuses sample size with representativeness, failing to recognize selection bias tied to the behavior of interest.",
+          "Partial work correctly identifies that nonvisitors cannot be sampled at the exit but does not link this to overrepresentation of visitors or bias in the estimate for all students, which the question asks to explain."
+        ]
+      }
+    },
+    {
+      "request_id": "confirmation:gas_volume:MiniMax-M3",
+      "template": "gas_volume",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt applies a direct (proportional) scaling of volume with pressure instead of the required inverse (Boyle's law) relationship.",
+          "Incorrect answer of 9 litres contradicts the conserved P*V product of 600; correct final volume is 4 litres.",
+          "Partial work correctly identifies the conserved product P1*V1 = 600 but has not yet divided by the final pressure of 150 kPa to obtain the final volume."
+        ]
+      }
+    },
+    {
+      "request_id": "training:ratio_partition:MiniMax-M3",
+      "template": "ratio_partition",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "Incorrect attempt divides 40 by 5 (the red ratio) instead of by 8 (the total parts), producing 8 instead of the correct 15.",
+          "Incorrect attempt confuses the count of red ratio parts (8) with the number of blue counters."
+        ]
+      }
+    },
+    {
+      "request_id": "training:circuit_current:MiniMax-M3",
+      "template": "circuit_current",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "training:expected_points:MiniMax-M3",
+      "template": "expected_points",
+      "partition": "training",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": [
+          "The incorrect attempt conflates certainty (no variance) with higher expectation; E[A]=4 and E[B]=5, so B has the higher expectation despite being risky.",
+          "The partial work correctly writes E[B]=0.5*10+0.5*0 but does not evaluate the sum to 5 nor compare it with A's 4, so it does not yet answer the question."
+        ]
+      }
+    },
+    {
+      "request_id": "training:rectangle_width:deepseek-v4-pro",
+      "template": "rectangle_width",
+      "partition": "training",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:exponent_product:MiniMax-M3",
+      "template": "exponent_product",
+      "partition": "confirmation",
+      "reviewer": "MiniMax-M3",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    },
+    {
+      "request_id": "confirmation:kinetic_energy:deepseek-v4-pro",
+      "template": "kinetic_energy",
+      "partition": "confirmation",
+      "reviewer": "deepseek-v4-pro",
+      "valid": true,
+      "error": "",
+      "review": {
+        "question_valid": true,
+        "reference_correct": true,
+        "incorrect_attempt_has_error": true,
+        "partial_work_correct": true,
+        "partial_work_incomplete": true,
+        "issues": []
+      }
+    }
+  ],
+  "source_hashes": {
+    "manifest.jsonl": "6bea76f631c898e57a659c88b64ca62b0dd06b6f5cc94c45b4ab3060a955296e",
+    "run/responses.jsonl": "baf751cc1f31477897f2397d2e45ff5a7d9e3a7c29d75fda7daebecd9fa709f8",
+    "freeze.json": "06f571d63e71f4415448a58d90a3aca085e272205840d3e6ef35d4890d10d632"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "frozen prospective confirmation inputs; not completed generations",
+  "stage": "confirmation",
+  "models": [
+    "MiniMax-M3",
+    "MiniMax-M2.7",
+    "glm-5.3",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite"
+  ],
+  "generation_temperature": 0.7,
+  "max_tokens": 8192,
+  "repeats": 2,
+  "scenarios": 404,
+  "expected_calls": 4040,
+  "hashes": {
+    "scenarios.jsonl": "d33383ca5791de340d405233c5823ba69fa57f3d0411574ef1cbf03648a9238d",
+    "generation_manifest.jsonl": "0e95ce3afa636dd35c7e2b0aa3ce115e330fc30ed26026ace91577d1f3c74921"
+  }
+}

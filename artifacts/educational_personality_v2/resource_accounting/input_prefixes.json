@@ -1,0 +1,130 @@
+[
+  {
+    "path": "artifacts/educational_personality_v2/formal_design/content_review/run/responses.jsonl",
+    "bytes_read": 213645,
+    "complete_prefix_bytes": 213645,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "baf751cc1f31477897f2397d2e45ff5a7d9e3a7c29d75fda7daebecd9fa709f8",
+    "snapshot_rows": 128
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_formal/confirmation/judge/v2_2/run/responses.jsonl",
+    "bytes_read": 1026579,
+    "complete_prefix_bytes": 1026579,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "02609bd6e9aa2700dac4c061c957f6cd7a742acfe91adc2dba5747d5508fbb59",
+    "snapshot_rows": 490
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_formal/confirmation/run/responses.jsonl",
+    "bytes_read": 9044537,
+    "complete_prefix_bytes": 9044537,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "54ffd80b64f09030267f08881178146ee51d0552e758e91daf790e89a3a855cf",
+    "snapshot_rows": 4040
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/judge/run/responses.jsonl",
+    "bytes_read": 1935,
+    "complete_prefix_bytes": 1935,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "344dc05e57e119d893c84f9f96ec44da56362da45a117fd04d6ccd5532b9b912",
+    "snapshot_rows": 1
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/run/responses.jsonl",
+    "bytes_read": 6650854,
+    "complete_prefix_bytes": 6650854,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "55d8aa3f6d75845ebf02d2c62a5331d98b692125978d6bec27b5f165ebb8e3e5",
+    "snapshot_rows": 3238
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/run_repair1/responses.jsonl",
+    "bytes_read": 7865431,
+    "complete_prefix_bytes": 7865431,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "f2bbee9dfbec6c6fbdc404a9c36cb0569d378e629479954000a0e135afc2c605",
+    "snapshot_rows": 3840
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/run_repair2/responses.jsonl",
+    "bytes_read": 7865421,
+    "complete_prefix_bytes": 7865421,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "cec7b8b0e3bae43476f9cc8cb89b9e98e8d1692fcfbfdd4f1b8270854a59cd01",
+    "snapshot_rows": 3840
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_formal/training/run/responses.jsonl",
+    "bytes_read": 2902467,
+    "complete_prefix_bytes": 2902467,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "a80a8a08e0419ba900bd4e31cecc0c43788b07eb07d773b49104d1c7aa635abf",
+    "snapshot_rows": 1280
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_pilot/judge/anchors_run/responses.jsonl",
+    "bytes_read": 82896,
+    "complete_prefix_bytes": 82896,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "ab7f60aa9ab67b93153954d0890dcd98b695580aabb5fc07043ed6ebff1a7a8c",
+    "snapshot_rows": 48
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_pilot/judge/anchors_v2_1_run/responses.jsonl",
+    "bytes_read": 165746,
+    "complete_prefix_bytes": 165746,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "6f7dc1b22a02f13b840ad80dc021161cd9519af595aad8d26784f23cca9ba548",
+    "snapshot_rows": 96
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_pilot/judge/v2_1/run/responses.jsonl",
+    "bytes_read": 385501,
+    "complete_prefix_bytes": 385501,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "143ec4b00da278fd6bc916bcdbcae698985500b60fe34cd36323ce4c1c96e9ae",
+    "snapshot_rows": 184
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_pilot/judge/v2_2/run/responses.jsonl",
+    "bytes_read": 987395,
+    "complete_prefix_bytes": 987395,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "6678e5abc321a83d9cdb2417240525e8eef82f25ad367d44dbaf98a366450a3b",
+    "snapshot_rows": 480
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_pilot/judge/v2_2/run_repair1/responses.jsonl",
+    "bytes_read": 987647,
+    "complete_prefix_bytes": 987647,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "0808b880aa15f9debd523cb8178f02a433fa516581f1c8a4708fc7225af9bd26",
+    "snapshot_rows": 480
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_pilot/judge/v2_2_preflight_combined/run/responses.jsonl",
+    "bytes_read": 314443,
+    "complete_prefix_bytes": 314443,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "c60807b29fcd57faca11ff726fc4edbe6f679e6ac4345ed81695cc9f509e43f3",
+    "snapshot_rows": 156
+  },
+  {
+    "path": "artifacts/educational_personality_v2/prospective_pilot/run/responses.jsonl",
+    "bytes_read": 356282,
+    "complete_prefix_bytes": 356282,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "c617c4e1e31ee685dcf846ab49ca628c53e6cec364d38796e33ae4148518d77b",
+    "snapshot_rows": 160
+  },
+  {
+    "path": "artifacts/educational_personality_v2/runtime/smoke/responses.jsonl",
+    "bytes_read": 5393,
+    "complete_prefix_bytes": 5393,
+    "trailing_partial_bytes_ignored": 0,
+    "complete_prefix_sha256": "09d1cccfcd68aa9c1565fa67778cecb0b95752647e59129de337678c8c7b2ef0",
+    "snapshot_rows": 5
+  }
+]

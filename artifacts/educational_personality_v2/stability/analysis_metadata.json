@@ -1,0 +1,72 @@
+{
+  "status": "outcome-aware exploratory reanalysis",
+  "repetitions": 100,
+  "excluded_tasks": [],
+  "coverage": [
+    {
+      "source_policy": "exclude",
+      "score_panel": "consensus",
+      "contexts": 224,
+      "source_groups": 210
+    },
+    {
+      "source_policy": "exclude",
+      "score_panel": "without_MiniMax-M3",
+      "contexts": 224,
+      "source_groups": 210
+    },
+    {
+      "source_policy": "exclude",
+      "score_panel": "without_deepseek-v4-pro",
+      "contexts": 224,
+      "source_groups": 210
+    },
+    {
+      "source_policy": "exclude",
+      "score_panel": "without_glm-5.2",
+      "contexts": 224,
+      "source_groups": 210
+    },
+    {
+      "source_policy": "conservative_cohort",
+      "score_panel": "consensus",
+      "contexts": 239,
+      "source_groups": 211
+    },
+    {
+      "source_policy": "conservative_cohort",
+      "score_panel": "without_MiniMax-M3",
+      "contexts": 239,
+      "source_groups": 211
+    },
+    {
+      "source_policy": "conservative_cohort",
+      "score_panel": "without_deepseek-v4-pro",
+      "contexts": 239,
+      "source_groups": 211
+    },
+    {
+      "source_policy": "conservative_cohort",
+      "score_panel": "without_glm-5.2",
+      "contexts": 239,
+      "source_groups": 211
+    }
+  ],
+  "source_leakage_detected": 0,
+  "input_hashes": {
+    "artifacts/semantic_panel/response_consensus.csv": "3046ee17abc924808761f2fe68502d7308fcc1b7c24ca54e7fc2a53752973083",
+    "artifacts/educational_personality_v2/source_audit/semantic_source_groups.csv": "3a30a63367ecd4d567c651ae1d4565a7ffd9d7e8564c376fc61975f1847b3dd6",
+    "artifacts/semantic_panel/unblinded_ratings.csv": "21dacc5775b35d8b91545d04f55e139dd5abeab4493f094562a5171120fb0605"
+  },
+  "script_sha256": "c2e8ccdcc567a424d6e4fa3cf893b5dd8a95847d5cf6ed5e95955db671c292c5",
+  "limitations": [
+    "Fixed task/prompt settings; task and prompt remain confounded.",
+    "Source grouping covers exact normalized matches, not every paraphrase lineage.",
+    "Unknown Bridge sources are excluded primarily and grouped together in sensitivity.",
+    "Equal source-group weight within task; equal task weight across tasks.",
+    "Split quantiles are sensitivity ranges, not confidence intervals.",
+    "Leave-one-judge-out is robustness, not independent measurement validation.",
+    "No repeated generation or previously unseen confirmation set.",
+    "Within-item centering evaluates relative panel behavior, not absolute unseen answers."
+  ]
+}

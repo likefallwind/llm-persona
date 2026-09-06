@@ -50,3 +50,22 @@ artifacts/factorial_detector_validation_v1/run/
 artifacts/two_stage_routing_trial_v1/run/
 artifacts/affiliation_stability_pilot_v1/run/
 artifacts/affiliation_stability_pilot_v1/judge/
+
+# Current educational-personality provider output and local service state.
+artifacts/educational_personality_v2/runtime/
+artifacts/educational_personality_v2/prospective_pilot/run/
+artifacts/educational_personality_v2/prospective_pilot/judge/
+artifacts/educational_personality_v2/prospective_formal/run/
+artifacts/educational_personality_v2/prospective_formal/judge/
+artifacts/educational_personality_v2/formal_design/content_review/run/
+artifacts/educational_personality_v2/prospective_formal/**/run/
+artifacts/educational_personality_v2/prospective_formal/**/judge/
+
+# Secondary content review: provider payloads, free-text coding and runtime state.
+artifacts/educational_personality_v2/prospective_formal/content_sensitivity/manifest.jsonl
+artifacts/educational_personality_v2/prospective_formal/content_sensitivity/unblinding.jsonl
+artifacts/educational_personality_v2/prospective_formal/content_sensitivity/run_repair*/
+artifacts/educational_personality_v2/prospective_formal/content_sensitivity/diagnostics/**/codes.jsonl
+artifacts/educational_personality_v2/prospective_formal/content_sensitivity/pipeline_logs/
+artifacts/educational_personality_v2/prospective_formal/content_sensitivity/content_pipeline.lock
+artifacts/educational_personality_v2/prospective_formal/content_sensitivity/pipeline_state.json

@@ -1,0 +1,4052 @@
+[
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "affect_acknowledgement",
+    "baseline": "context",
+    "penalty": 10.0,
+    "coefficients": [
+      0.5778415642300273,
+      -0.6236197832609895,
+      -0.4436476048528719,
+      -0.038689797857141904,
+      -0.26164672854592713,
+      -0.6556222552321169,
+      -0.1276707991964669,
+      0.4180110132607606,
+      -0.03012897463958043,
+      0.5556130433671997,
+      0.15636192386341768,
+      0.419843751209978,
+      0.03537131434578746,
+      0.5608478345258644,
+      0.0723571225523293,
+      -0.12898458300876411
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "64db7f0c5eddca03ccca0d1b492e28a0cb307e1c5db3f7ca252f3c7ad1cb8178",
+    "test_design_sha256": "ff3dc9d9c961ca64b83cdfeeafec7f163cc1b58fb28aab140c6f6210c3f42e0e",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.976598601566293e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.15684730360710886,
+        "1.0": 0.15678140661726006,
+        "10.0": 0.15659581415453874,
+        "100.0": 0.1672651106515151
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "affect_acknowledgement",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      0.5967908534486082,
+      -0.6467752487835715,
+      -0.4603425333613602,
+      -0.0350566265028066,
+      -0.2671779545740845,
+      -0.6788833733617179,
+      -0.1290205251904029,
+      0.4327865787442265,
+      -0.031138514747186985,
+      0.5745377973819538,
+      0.15767267922323613,
+      0.4363004231061036,
+      0.03439078658710615,
+      0.5829752734122597,
+      0.0766636652138763,
+      -0.13337446313659065,
+      -0.4138824691712914,
+      0.1629307733741549,
+      0.09809139580676758
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "0ef2b3db53324e7ed99213c169987b5ee71998aac28cbffbfbd8c656dbc0b425",
+    "test_design_sha256": "58fabac50b963223a5875e92bc2c41ffc01b8eb5b8ec45639fad77fdbccb313d",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.29480456838127e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.1525313735107102,
+        "1.0": 0.15241041608787634,
+        "10.0": 0.1519574112336121,
+        "100.0": 0.16332069145012787
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "affect_acknowledgement",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      0.6108967510676809,
+      -0.6513086365130786,
+      -0.46828088033234944,
+      -0.02769684646361809,
+      -0.28287875675075286,
+      -0.700329571894971,
+      -0.12746246605721784,
+      0.43855135134611034,
+      -0.0342795010116306,
+      0.5858611231523637,
+      0.16055094240143733,
+      0.4468493185643699,
+      0.034589454634688384,
+      0.5958311247777413,
+      0.08065749395780089,
+      -0.13555282148967734,
+      -0.43108313792983466,
+      0.16059638664467837,
+      0.09777854588263264,
+      -0.17003215949413678,
+      0.24699094559257018,
+      -0.004196152403141865,
+      0.054984765774350824,
+      -0.038743135797080205,
+      0.05517424684846877,
+      0.061389699334395434,
+      -0.05714027561246884,
+      -0.06741427359538682
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "fcdeec915e597c1142a660f32f557c55fc6858cc5b4384702dabb5cffb5ed783",
+    "test_design_sha256": "8bf0f7b70ae2a2ffdc5cd97538c3a25266e73df88bf4e533f66636e772c6e497",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.352743510205315e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.15072126869899996,
+        "1.0": 0.15060656747804174,
+        "10.0": 0.15029929290340382,
+        "100.0": 0.16231610307270186
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "affect_acknowledgement",
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      0.7048224055888686,
+      -0.7033419157010039,
+      -0.5364315698348124,
+      -0.03404015939147892,
+      -0.24016604441888173,
+      -0.7538904536706883,
+      -0.0776234690565088,
+      0.5378973692162591,
+      -0.009741529228662482,
+      0.6568350121851357,
+      0.16032574622003457,
+      0.5236794367004576,
+      0.0750921787321133,
+      0.6779887707911515,
+      0.09204285660431917,
+      -0.12677163341246173,
+      -0.28225669348835036,
+      0.2823407113323396,
+      0.1588083366787122,
+      -0.1516173865873656,
+      0.24222043151442238,
+      -0.017072833037847394,
+      0.07624974325667586,
+      -0.030624807117919983,
+      0.04959353399627612,
+      0.07706029789927786,
+      -0.07851150164660345,
+      -0.07896262039888635,
+      -0.34113753834899174,
+      0.21418629421398705,
+      0.2617272274190613,
+      0.43629962207954076,
+      -0.26654452612042645,
+      -0.11646113242315698,
+      -0.1529550009836643,
+      -0.02036954136270536,
+      -0.385602831024843
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "3fafe30b75d7359846f6736cf6ea5d2ee470bffa70c00726d7a0c3626ae7db1a",
+    "test_design_sha256": "ccd2ada9bb175bd3701b583856adf27ea015826fb4eb70c563d8d76313792206",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.683354046821961e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.1419426125022561,
+        "1.0": 0.14149289248073774,
+        "10.0": 0.14013475344120635,
+        "100.0": 0.15234006761228097
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "affect_acknowledgement",
+    "baseline": "training_style_profile",
+    "penalty": 10.0,
+    "profiles": {
+      "MiniMax-M3": {
+        "raw_log_words": 5.264319301760469,
+        "raw_structure": 0.3147438319962353
+      },
+      "deepseek-v4-pro": {
+        "raw_log_words": 4.541836232908781,
+        "raw_structure": 0.14543679097687098
+      },
+      "doubao-seed-2.0-lite": {
+        "raw_log_words": 4.988873164015988,
+        "raw_structure": 0.09457228535353535
+      },
+      "glm-5.3": {
+        "raw_log_words": 5.0266616955965215,
+        "raw_structure": 0.154315503575372
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      0.5942592473167967,
+      -0.64344546399891,
+      -0.4582532959786129,
+      -0.03577348912195015,
+      -0.26668119928292294,
+      -0.6757501496215531,
+      -0.12921076962242387,
+      0.4309494346772445,
+      -0.031118438438110785,
+      0.5720501611153719,
+      0.15785299535064434,
+      0.43425769347319665,
+      0.03461773348093183,
+      0.5800131611566693,
+      0.07574427354279673,
+      -0.13287622002816352,
+      -0.4019429859948089,
+      0.12762340598314248
+    ],
+    "gradient_inf": 2.4866432197401256e-05,
+    "tuning": {
+      "0.1": 0.15337296132730716,
+      "1.0": 0.1532478858380262,
+      "10.0": 0.1527468237170123,
+      "100.0": 0.16383223584425013
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "answer_reveal",
+    "baseline": "context",
+    "penalty": 100.0,
+    "coefficients": [
+      1.050006905880948,
+      -0.028623303973130815,
+      -0.012883034833049338,
+      -0.024773958812626087,
+      -0.007147882378964273,
+      0.049627686028211035,
+      0.03706094312599842,
+      0.1078959463119095,
+      0.07955803125639617,
+      0.0024008134931837568,
+      -0.015048751380257585,
+      0.028215746301211927,
+      0.09930865890949563,
+      0.041579762402410264,
+      -0.028457930980501533,
+      0.02489361245988383
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "64db7f0c5eddca03ccca0d1b492e28a0cb307e1c5db3f7ca252f3c7ad1cb8178",
+    "test_design_sha256": "ff3dc9d9c961ca64b83cdfeeafec7f163cc1b58fb28aab140c6f6210c3f42e0e",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 9.6601831978127e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.19537285492615666,
+        "1.0": 0.19532610990079644,
+        "10.0": 0.19491636263578868,
+        "100.0": 0.1933222838411795
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "answer_reveal",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      1.9861781757292105,
+      -0.08431828454445661,
+      -0.03759742747569436,
+      -0.07159742900881809,
+      -0.02049844801176159,
+      0.145095823933465,
+      0.10937091146326591,
+      0.31587189376011465,
+      0.23185818348628254,
+      0.00699721259392958,
+      -0.04262188653376085,
+      0.08028753507864118,
+      0.2904555420729021,
+      0.12210703518667083,
+      -0.08312621341471925,
+      0.07353506529881688,
+      0.33986864165671743,
+      1.1589207362154696,
+      -1.8647154148796552
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "0ef2b3db53324e7ed99213c169987b5ee71998aac28cbffbfbd8c656dbc0b425",
+    "test_design_sha256": "58fabac50b963223a5875e92bc2c41ffc01b8eb5b8ec45639fad77fdbccb313d",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.456989637877882e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.0880476076628165,
+        "1.0": 0.08723298318298828,
+        "10.0": 0.08499381202167397,
+        "100.0": 0.10153426097085323
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "answer_reveal",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      1.9514608569569905,
+      -0.09605279574295651,
+      -0.03895644776633061,
+      -0.0393402621454606,
+      -0.051746135177938093,
+      0.14369934087310154,
+      0.0772459581622328,
+      0.2897835908337071,
+      0.15422634679465536,
+      0.006919638889170952,
+      -0.04248352281868501,
+      0.07992318620934522,
+      0.16551905168587372,
+      0.13201594304047695,
+      -0.09013548920423,
+      0.07922739976743483,
+      0.30904248010223057,
+      1.1468553916784154,
+      -1.8542721739903265,
+      0.014447975141247913,
+      0.02687541323252557,
+      -0.10537173122358638,
+      -0.05895755255554193,
+      -0.10204009328810038,
+      0.06375386294304324,
+      -0.10216238295033749,
+      -0.03978231208641209,
+      -0.16085377481760568
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "fcdeec915e597c1142a660f32f557c55fc6858cc5b4384702dabb5cffb5ed783",
+    "test_design_sha256": "8bf0f7b70ae2a2ffdc5cd97538c3a25266e73df88bf4e533f66636e772c6e497",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.3796509621986104e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.0889533615583499,
+        "1.0": 0.08829899838096776,
+        "10.0": 0.08637903943640318,
+        "100.0": 0.10239955043393459
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "answer_reveal",
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      1.9243758939224231,
+      -0.06548574381079053,
+      -0.003846851697240401,
+      -0.12002595678390747,
+      -0.0628419217273186,
+      0.1588490271597107,
+      0.1096885197317916,
+      0.22491072271117016,
+      0.16301082514052284,
+      -0.010603371092989988,
+      -0.00811557889421154,
+      -0.020716363273225864,
+      0.17952645076912788,
+      0.0897085626868028,
+      -0.06997164080229984,
+      0.04119430116757203,
+      0.29963661049945267,
+      1.1509107702932138,
+      -1.8730470657824603,
+      0.0027200257642878054,
+      0.016963822615677943,
+      -0.11098958226608435,
+      -0.06248466599052955,
+      -0.09672246508332018,
+      0.06611158974163328,
+      -0.09429907319625752,
+      -0.035767815292611124,
+      -0.16486600904728574,
+      -0.005363813990842095,
+      0.13699973451348535,
+      0.08832871459289411,
+      -0.03811465054387771,
+      0.08956304270795815,
+      -0.10216529659504503,
+      0.10137298848716073,
+      -0.045759367820758914,
+      -0.1152130471279815
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "3fafe30b75d7359846f6736cf6ea5d2ee470bffa70c00726d7a0c3626ae7db1a",
+    "test_design_sha256": "ccd2ada9bb175bd3701b583856adf27ea015826fb4eb70c563d8d76313792206",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.0800800813006743e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.08979922485430246,
+        "1.0": 0.08901764288754284,
+        "10.0": 0.08735971661992173,
+        "100.0": 0.10269673569334872
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "answer_reveal",
+    "baseline": "training_style_profile",
+    "penalty": 100.0,
+    "profiles": {
+      "MiniMax-M3": {
+        "raw_log_words": 5.264319301760469,
+        "raw_structure": 0.3147438319962353
+      },
+      "deepseek-v4-pro": {
+        "raw_log_words": 4.541836232908781,
+        "raw_structure": 0.14543679097687098
+      },
+      "doubao-seed-2.0-lite": {
+        "raw_log_words": 4.988873164015988,
+        "raw_structure": 0.09457228535353535
+      },
+      "glm-5.3": {
+        "raw_log_words": 5.0266616955965215,
+        "raw_structure": 0.154315503575372
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      1.1100737250207402,
+      -0.029203499358051402,
+      -0.013068019003063674,
+      -0.025358169275851956,
+      -0.007305987540890839,
+      0.050826963408233096,
+      0.037790513345211274,
+      0.1104576646135473,
+      0.08126528765659476,
+      0.0024476660437334824,
+      -0.015297464891829954,
+      0.028695635460254377,
+      0.10153195771803408,
+      0.04260855902657325,
+      -0.029194068065631438,
+      0.025473864645277202,
+      0.45171637185774804,
+      0.20480987112348914
+    ],
+    "gradient_inf": 4.783055723933671e-06,
+    "tuning": {
+      "0.1": 0.18427373890702928,
+      "1.0": 0.18398352917647395,
+      "10.0": 0.18225305685295096,
+      "100.0": 0.18143971402845302
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "reasoning_elicitation",
+    "baseline": "context",
+    "penalty": 100.0,
+    "coefficients": [
+      -0.471883886638658,
+      0.008455301331224779,
+      0.052627798206140254,
+      -0.06211811486232813,
+      0.0690803162249312,
+      -0.05233385438699069,
+      0.012894579305765123,
+      -0.015846169813707706,
+      -0.15268360062947478,
+      0.05493270121738032,
+      0.026082223633269,
+      -0.011704469633170242,
+      0.0001365012057636272,
+      -0.02489915407534705,
+      0.027136220212104076,
+      -0.029906802931225905
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "64db7f0c5eddca03ccca0d1b492e28a0cb307e1c5db3f7ca252f3c7ad1cb8178",
+    "test_design_sha256": "ff3dc9d9c961ca64b83cdfeeafec7f163cc1b58fb28aab140c6f6210c3f42e0e",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 7.045830224150507e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.2366138335650185,
+        "1.0": 0.23658349233362125,
+        "10.0": 0.23631713959266254,
+        "100.0": 0.23541511016160613
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "reasoning_elicitation",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -0.7597915420459228,
+      0.026219689487810387,
+      0.1524642841448999,
+      -0.18495451924632403,
+      0.20369307805930695,
+      -0.15215051555219686,
+      0.037409759149907594,
+      -0.05006327670982058,
+      -0.45204106852785725,
+      0.1677728227907218,
+      0.07863822557530892,
+      -0.0363941347511206,
+      -0.004200778551599366,
+      -0.07475495119026182,
+      0.08042643005558699,
+      -0.08943139974998185,
+      -0.39624112056829985,
+      -1.0317151255746075,
+      2.0170029720430374
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "0ef2b3db53324e7ed99213c169987b5ee71998aac28cbffbfbd8c656dbc0b425",
+    "test_design_sha256": "58fabac50b963223a5875e92bc2c41ffc01b8eb5b8ec45639fad77fdbccb313d",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.316957944007106e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.09198434761515224,
+        "1.0": 0.09169813816035116,
+        "10.0": 0.09169449476796934,
+        "100.0": 0.11472179017273863
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "reasoning_elicitation",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -0.7599386185616855,
+      0.049410565498149414,
+      0.15703444952919732,
+      -0.21517005101132766,
+      0.22830092264859272,
+      -0.15737923055293002,
+      0.06455477526370497,
+      -0.019048487181554528,
+      -0.3280564546667928,
+      0.17664940291291842,
+      0.07926390990652034,
+      -0.04037736007721184,
+      0.028735840830688246,
+      -0.07274976660780656,
+      0.07862136153281551,
+      -0.08715433305101754,
+      -0.38857320609409374,
+      -1.0058873457914816,
+      2.0028176044618884,
+      -0.09156972560396313,
+      -0.05500037542805038,
+      -0.014698706320766431,
+      0.011980995492427133,
+      0.1913522992167634,
+      -0.02647009259716179,
+      0.045771988080042514,
+      0.06851792647995614,
+      -0.014617835412326426
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "fcdeec915e597c1142a660f32f557c55fc6858cc5b4384702dabb5cffb5ed783",
+    "test_design_sha256": "8bf0f7b70ae2a2ffdc5cd97538c3a25266e73df88bf4e533f66636e772c6e497",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.4536958692745738e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.09258806629968763,
+        "1.0": 0.0922684983865167,
+        "10.0": 0.09186108165174366,
+        "100.0": 0.11353795016815103
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "reasoning_elicitation",
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -0.747010402452619,
+      0.040086236176805665,
+      0.15944843008936627,
+      -0.18112634077616363,
+      0.1845118011387477,
+      -0.14933291232637888,
+      0.07553002403246371,
+      -0.027442260985465466,
+      -0.32857331047781135,
+      0.18010014598586432,
+      0.04931241807704772,
+      -0.018791203230859237,
+      0.02607379081985329,
+      -0.05519320126562067,
+      0.08073850944693658,
+      -0.05883496064399991,
+      -0.3806731877592284,
+      -1.0248617772863566,
+      2.0484244377614043,
+      -0.07293294210315072,
+      -0.05125663181016933,
+      -0.0017155694105568551,
+      0.02603427429508921,
+      0.1932272751943239,
+      -0.026365485703365724,
+      0.045342510091284226,
+      0.05667087315538501,
+      -0.010224747169427477,
+      0.0024379209355130074,
+      -0.06151641033598291,
+      -0.25675297618182824,
+      -0.04222966671857593,
+      -0.01969952567668288,
+      0.10941745136835287,
+      0.005011443432073423,
+      0.008343749018285825,
+      0.18604761328074
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "3fafe30b75d7359846f6736cf6ea5d2ee470bffa70c00726d7a0c3626ae7db1a",
+    "test_design_sha256": "ccd2ada9bb175bd3701b583856adf27ea015826fb4eb70c563d8d76313792206",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.502809230937487e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.09475047552522477,
+        "1.0": 0.09399113805536177,
+        "10.0": 0.09301528919026489,
+        "100.0": 0.1137704144695358
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M2.7",
+    "event": "reasoning_elicitation",
+    "baseline": "training_style_profile",
+    "penalty": 10.0,
+    "profiles": {
+      "MiniMax-M3": {
+        "raw_log_words": 5.264319301760469,
+        "raw_structure": 0.3147438319962353
+      },
+      "deepseek-v4-pro": {
+        "raw_log_words": 4.541836232908781,
+        "raw_structure": 0.14543679097687098
+      },
+      "doubao-seed-2.0-lite": {
+        "raw_log_words": 4.988873164015988,
+        "raw_structure": 0.09457228535353535
+      },
+      "glm-5.3": {
+        "raw_log_words": 5.0266616955965215,
+        "raw_structure": 0.154315503575372
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      -0.6465242669166779,
+      0.013450367195383816,
+      0.08469201190884525,
+      -0.09971525042810858,
+      0.11109576557381719,
+      -0.08408768326662251,
+      0.020643226767750846,
+      -0.025260900931964165,
+      -0.24563507041095395,
+      0.08927782187195002,
+      0.04188314678327188,
+      -0.01926050535832443,
+      -0.00022470829017890207,
+      -0.039945578593926986,
+      0.043411245162237974,
+      -0.047923013425923595,
+      -1.0545547437637317,
+      -0.15810326658301987
+    ],
+    "gradient_inf": 1.9761691991693198e-06,
+    "tuning": {
+      "0.1": 0.1993112060703731,
+      "1.0": 0.199138405041508,
+      "10.0": 0.19814159137420467,
+      "100.0": 0.20213063682947977
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "affect_acknowledgement",
+    "baseline": "context",
+    "penalty": 1.0,
+    "coefficients": [
+      -0.029627941338814315,
+      0.15394788431311268,
+      -0.10988811732977263,
+      -0.12326474555949934,
+      -0.741159950811492,
+      -0.6798149664229215,
+      -0.36722970310240316,
+      0.7582021068024957,
+      -0.018156749899027453,
+      0.24320262049727942,
+      -0.03444803163402713,
+      0.8057840240140716,
+      0.0811081193467801,
+      -0.46771230426681787,
+      -0.371224218351506,
+      -0.5124492762891121
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "24297c452c764f4e709432904aacc781c6512c7e7df2e287bfaa933075ff6230",
+    "test_design_sha256": "6daf4de06a4ff21b3fbf7664c182d4f2698c6799ede49730aac4c9b5075b2f13",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.8123825161884284e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.1537366466879465,
+        "1.0": 0.153683444888725,
+        "10.0": 0.15370618344788856,
+        "100.0": 0.16651449026658802
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "affect_acknowledgement",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -0.0084276742447828,
+      0.16734566489914152,
+      -0.1302843674153176,
+      -0.1322082950639049,
+      -0.6940729679424903,
+      -0.6282250453809429,
+      -0.37630969472393105,
+      0.7168750272224333,
+      -0.012338279389840882,
+      0.24211044222986836,
+      -0.054466039039109446,
+      0.7872467082413103,
+      0.06400377660102745,
+      -0.462685085901711,
+      -0.3314303497772367,
+      -0.5007488996293751,
+      -0.20069370275037793,
+      -0.564313942218237,
+      0.02681785724123751
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "ab284ce510d1e8afd2afe275dca4e0e141892f0dd109be7e855b95b2d20781b9",
+    "test_design_sha256": "153e6edae1fa1e7ee9e6637a11ecc16fb3edb16f5128b51c793e1cdb1ed8b6b6",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.3780365941750148e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.14433512175643382,
+        "1.0": 0.1442115132135732,
+        "10.0": 0.14402140303709396,
+        "100.0": 0.15890023491643307
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "affect_acknowledgement",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -0.01280406967282929,
+      0.16904819369439106,
+      -0.16650349313489488,
+      -0.13647479178979294,
+      -0.7347459207330238,
+      -0.6334710207817412,
+      -0.4040774173534933,
+      0.7250591923941926,
+      -0.010367031581771621,
+      0.23589087621579866,
+      -0.05126840500983834,
+      0.7781222129717519,
+      0.0621634202326293,
+      -0.4613278979172604,
+      -0.3311401193831934,
+      -0.4994097179226647,
+      -0.19689109609053015,
+      -0.5742943482040865,
+      0.023449280242191593,
+      0.19799174254688656,
+      0.1617985584568815,
+      -0.08723720284777048,
+      -0.12985477173884222,
+      0.07442645961870602,
+      0.04161664038453211,
+      -0.0747438069260135,
+      -0.0035349018510609466,
+      0.05708732760700692
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "6f3f1153110580a6e7c828f5ff124a429223fb0cd448346630def458e89bb189",
+    "test_design_sha256": "82fb8690408347e9251f742c069c9980fa9b5db9ef56d6928719f585163cca7e",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.0999908469866426e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.14140066017114003,
+        "1.0": 0.14127708395272226,
+        "10.0": 0.14119930859581423,
+        "100.0": 0.15706418208835238
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "affect_acknowledgement",
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      0.11543130827856117,
+      0.21910621062638855,
+      -0.21366227163788662,
+      -0.13525458321373304,
+      -0.7476245050573583,
+      -0.659546292597017,
+      -0.47168866955699146,
+      0.742974362530628,
+      0.010600919244345787,
+      0.25128595319727526,
+      -0.10242745567924974,
+      0.8399054924983134,
+      0.07970773956379018,
+      -0.523854112307728,
+      -0.32631384966878413,
+      -0.5248266842158147,
+      -0.2936384754231642,
+      -0.6303520211858376,
+      0.02913540415906881,
+      0.18201052921598496,
+      0.13261282060708582,
+      -0.12382600085082449,
+      -0.11907438833757085,
+      0.06672688914343863,
+      0.05912028739367441,
+      -0.06948897755374182,
+      0.007145829966729839,
+      0.07078584341845147,
+      -0.13831977167732312,
+      -0.1475224285638609,
+      -0.002675244841470375,
+      0.4083849046163953,
+      0.43628690143397647,
+      -0.14446194267128953,
+      0.26396236794089883,
+      0.20564685307818598,
+      0.03480754085308528
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "b380a23f9691656c0dd047a882252d4d3dc5f71cd6099ade417dc690569239a9",
+    "test_design_sha256": "34dfecd03e088cd7f2ce702bd1ccac5bbb6d96250155bb97c7433b130634a153",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 0.00013360973910625518,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.1357320627933595,
+        "1.0": 0.13530865998112412,
+        "10.0": 0.13419038965721697,
+        "100.0": 0.14905701221601875
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "affect_acknowledgement",
+    "baseline": "training_style_profile",
+    "penalty": 10.0,
+    "profiles": {
+      "MiniMax-M2.7": {
+        "raw_log_words": 4.796364856319338,
+        "raw_structure": 0.22664187946565703
+      },
+      "deepseek-v4-pro": {
+        "raw_log_words": 4.541836232908781,
+        "raw_structure": 0.14543679097687098
+      },
+      "doubao-seed-2.0-lite": {
+        "raw_log_words": 4.988873164015988,
+        "raw_structure": 0.09457228535353535
+      },
+      "glm-5.3": {
+        "raw_log_words": 5.0266616955965215,
+        "raw_structure": 0.154315503575372
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      -0.009571487989843409,
+      0.16942300645250893,
+      -0.12888007944204108,
+      -0.13310323843166152,
+      -0.6944646819327742,
+      -0.6278103603049473,
+      -0.3760834997300441,
+      0.7114886952651926,
+      -0.012464778020491382,
+      0.23894564732626025,
+      -0.0526270423745405,
+      0.7859114728618528,
+      0.06376585723959034,
+      -0.46098170489918044,
+      -0.3333650615881292,
+      -0.49959813909444273,
+      -0.24776043003008427,
+      0.5264067550348006
+    ],
+    "gradient_inf": 7.999340007192046e-05,
+    "tuning": {
+      "0.1": 0.1447541095431301,
+      "1.0": 0.144654856706606,
+      "10.0": 0.14460184579634758,
+      "100.0": 0.1594473138174848
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "answer_reveal",
+    "baseline": "context",
+    "penalty": 100.0,
+    "coefficients": [
+      1.326616871336805,
+      0.02768458985703482,
+      0.0017792418292005307,
+      -0.0004203077613243511,
+      -0.03634572029506415,
+      0.019862599944417077,
+      -0.062167521183498206,
+      -0.007236112748379742,
+      0.044691546327036695,
+      -0.0020231483447592457,
+      -0.01766860224093043,
+      0.04887589977493525,
+      0.04670353043294828,
+      -0.031775623790753826,
+      -0.003015222890795106,
+      -0.014854391076640196
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "24297c452c764f4e709432904aacc781c6512c7e7df2e287bfaa933075ff6230",
+    "test_design_sha256": "6daf4de06a4ff21b3fbf7664c182d4f2698c6799ede49730aac4c9b5075b2f13",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.931506547731999e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.16750689452268835,
+        "1.0": 0.16748143547444763,
+        "10.0": 0.1672629187305256,
+        "100.0": 0.1664615588439135
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "answer_reveal",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      2.6832655675413264,
+      0.11759088556320117,
+      0.012518760765028916,
+      -0.0004796839133902059,
+      -0.15327607632964266,
+      0.08393853865552924,
+      -0.250310741608415,
+      -0.03544774189517148,
+      0.17506495566993976,
+      -0.005250821550214321,
+      -0.059203201654753,
+      0.1806994542125118,
+      0.18627669880154227,
+      -0.13657280905634145,
+      -0.01278112742635485,
+      -0.06696494469843839,
+      -0.34097770455951343,
+      0.5894820060568943,
+      -2.2296907097420537
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "ab284ce510d1e8afd2afe275dca4e0e141892f0dd109be7e855b95b2d20781b9",
+    "test_design_sha256": "153e6edae1fa1e7ee9e6637a11ecc16fb3edb16f5128b51c793e1cdb1ed8b6b6",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 8.98829859519168e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.046007558517347606,
+        "1.0": 0.04558154017858868,
+        "10.0": 0.04483603189392791,
+        "100.0": 0.06634565668149531
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "answer_reveal",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      2.6824154189192555,
+      0.13343795395589908,
+      0.00032993232013170073,
+      -0.07232296963983613,
+      -0.16859522201519334,
+      0.10642826359783902,
+      -0.15047010498163768,
+      0.007818611364789339,
+      0.09144477696923296,
+      -0.005371279439695878,
+      -0.055384875546273624,
+      0.163029766545763,
+      0.013316637233521018,
+      -0.17899364983826316,
+      -0.016528044808995977,
+      -0.09166534927020045,
+      -0.3365783144556427,
+      0.6293156899575006,
+      -2.2435515535254518,
+      0.06861614270249956,
+      -0.07169484770544836,
+      -0.2621585626985803,
+      0.025660610498657404,
+      0.02723544989495683,
+      -0.07027977949376168,
+      -0.08632552486281139,
+      0.15041356177436535,
+      0.14290989602726922
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "6f3f1153110580a6e7c828f5ff124a429223fb0cd448346630def458e89bb189",
+    "test_design_sha256": "82fb8690408347e9251f742c069c9980fa9b5db9ef56d6928719f585163cca7e",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 8.918308580074807e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.045973620229088755,
+        "1.0": 0.045661912215217766,
+        "10.0": 0.04554139196761723,
+        "100.0": 0.06726093644926048
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "answer_reveal",
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      2.6761520725618677,
+      -0.015236152646973245,
+      0.046509901374914404,
+      -0.0935449606910225,
+      -0.12428103174370946,
+      0.07447447214027068,
+      -0.12790570710196641,
+      -0.05222911667392774,
+      0.09109964388245252,
+      0.0485628635862833,
+      0.044602987647834234,
+      0.08698253915487415,
+      0.0257573901076133,
+      -0.07512608897813211,
+      -0.012486736696337507,
+      -0.10566049083939506,
+      -0.33011656462488764,
+      0.6618755171817093,
+      -2.2497716420195295,
+      0.07165996545347328,
+      -0.07962831806355727,
+      -0.24584797491934168,
+      0.025474225082534496,
+      0.029099955374230938,
+      -0.07331824072686369,
+      -0.08529829251920533,
+      0.14984174808943576,
+      0.1467194141327957,
+      -0.13670142520606562,
+      0.16707617812764478,
+      0.012988717930236548,
+      0.1036261436050932,
+      0.03433361165997438,
+      -0.06198817685651398,
+      -0.1558008789862875,
+      0.026541816225841713,
+      -0.12441272384340549
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "b380a23f9691656c0dd047a882252d4d3dc5f71cd6099ade417dc690569239a9",
+    "test_design_sha256": "34dfecd03e088cd7f2ce702bd1ccac5bbb6d96250155bb97c7433b130634a153",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.7097781486619112e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.04671964742409228,
+        "1.0": 0.046029044072751144,
+        "10.0": 0.045479649022367605,
+        "100.0": 0.06663573238640869
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "answer_reveal",
+    "baseline": "training_style_profile",
+    "penalty": 0.1,
+    "profiles": {
+      "MiniMax-M2.7": {
+        "raw_log_words": 4.796364856319338,
+        "raw_structure": 0.22664187946565703
+      },
+      "deepseek-v4-pro": {
+        "raw_log_words": 4.541836232908781,
+        "raw_structure": 0.14543679097687098
+      },
+      "doubao-seed-2.0-lite": {
+        "raw_log_words": 4.988873164015988,
+        "raw_structure": 0.09457228535353535
+      },
+      "glm-5.3": {
+        "raw_log_words": 5.0266616955965215,
+        "raw_structure": 0.154315503575372
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      7.142271828271938,
+      0.17711068416850198,
+      0.026503145221362382,
+      0.00027855858890938636,
+      -0.23262636256906596,
+      0.12772229303120183,
+      -0.35781169645413397,
+      -0.0636980093267627,
+      0.24773376901089947,
+      -0.0056713439969925915,
+      -0.07007446718284242,
+      0.23512007529427095,
+      0.26616713508982237,
+      -0.21089107594503145,
+      -0.019320347392158287,
+      -0.11067742808153593,
+      7.991640654957504,
+      3.4779333507300616
+    ],
+    "gradient_inf": 2.5263169682668285e-06,
+    "tuning": {
+      "0.1": 0.04595392696016996,
+      "1.0": 0.047287519167961214,
+      "10.0": 0.07382299638153024,
+      "100.0": 0.12792744635347156
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "reasoning_elicitation",
+    "baseline": "context",
+    "penalty": 100.0,
+    "coefficients": [
+      -0.9201283803408468,
+      -0.004277644391703717,
+      0.0471256376546858,
+      0.0872507654890009,
+      0.021872477961159396,
+      -0.05933679588656801,
+      -0.018324616268254643,
+      -0.007104863716239419,
+      -0.05586819479658831,
+      0.019993254842758816,
+      0.02402148514432334,
+      -0.04322805949989216,
+      0.034595486089104566,
+      0.0376910631192991,
+      0.01995490549876378,
+      0.009501428421147609
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "24297c452c764f4e709432904aacc781c6512c7e7df2e287bfaa933075ff6230",
+    "test_design_sha256": "6daf4de06a4ff21b3fbf7664c182d4f2698c6799ede49730aac4c9b5075b2f13",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.644485726539415e-07,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.20639889643947557,
+        "1.0": 0.20636357003903416,
+        "10.0": 0.2060476626210515,
+        "100.0": 0.20469567110491202
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "reasoning_elicitation",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -1.3917261102810627,
+      -0.030597137376222786,
+      0.16385922711180723,
+      0.3303804174323853,
+      0.09784295857733483,
+      -0.24068415843258478,
+      -0.07683615678413387,
+      -0.025597055463520334,
+      -0.2101095016028789,
+      0.09157685113257326,
+      0.11108586539055085,
+      -0.18967445826086482,
+      0.13338432448876908,
+      0.1705586595731443,
+      0.08539059368135218,
+      0.03968466037828226,
+      0.13813366173701583,
+      -0.5306199291302038,
+      2.2631552357934015
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "ab284ce510d1e8afd2afe275dca4e0e141892f0dd109be7e855b95b2d20781b9",
+    "test_design_sha256": "153e6edae1fa1e7ee9e6637a11ecc16fb3edb16f5128b51c793e1cdb1ed8b6b6",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.8948946061666554e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.05563216003784232,
+        "1.0": 0.05538972085432961,
+        "10.0": 0.05526043482305724,
+        "100.0": 0.07792923883273331
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "reasoning_elicitation",
+    "baseline": "domain_profile",
+    "penalty": 1.0,
+    "coefficients": [
+      -1.491142522979156,
+      -0.0747928805302423,
+      0.23977438205343227,
+      0.5373871404359516,
+      0.20402015985712166,
+      -0.4034666841794844,
+      -0.18698866515159995,
+      -0.07830515493214535,
+      -0.3425209739884796,
+      0.14249553918452829,
+      0.1751156365880116,
+      -0.28522837878903823,
+      0.2512174746311223,
+      0.3547444477927986,
+      0.1557452114996053,
+      0.06962484013672447,
+      0.0753960730094841,
+      -0.6659163228010904,
+      2.9232197994700484,
+      0.0803362752288264,
+      -0.11110530919663084,
+      -0.07222231411111217,
+      -0.08003917547294574,
+      -0.0910828720023678,
+      0.08778694293066391,
+      0.13149650491156994,
+      -0.17052531108128632,
+      0.056068117409346356
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "6f3f1153110580a6e7c828f5ff124a429223fb0cd448346630def458e89bb189",
+    "test_design_sha256": "82fb8690408347e9251f742c069c9980fa9b5db9ef56d6928719f585163cca7e",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.5916315430408723e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.05577903443227775,
+        "1.0": 0.055647103860626976,
+        "10.0": 0.056082281544508596,
+        "100.0": 0.07941597586674538
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "reasoning_elicitation",
+    "baseline": "conditional_profile",
+    "penalty": 1.0,
+    "coefficients": [
+      -1.4718409563961885,
+      -0.08782178162951824,
+      0.4042017993329885,
+      0.48959379829052,
+      0.050645709957518166,
+      -0.47722856288733073,
+      -0.28062697716880936,
+      0.10815542200484277,
+      -0.29143797376749075,
+      0.03308417216106939,
+      0.16787300575301722,
+      -0.09699299675832172,
+      0.2301463385310005,
+      0.15723762482071804,
+      0.08204203842006694,
+      0.016142112810134043,
+      0.0005695649451710398,
+      -0.700330128959304,
+      3.2345105662715476,
+      0.004220288466689818,
+      -0.24415175668580197,
+      -0.05490614097663374,
+      -0.046124034507148574,
+      -0.2008500910947362,
+      0.03874094788516374,
+      0.05691081379187056,
+      -0.20875723314191905,
+      0.0862962640455542,
+      0.21172649177694777,
+      -0.3423755740602426,
+      0.030109295705937615,
+      -0.5442428827091856,
+      -0.27976440956927473,
+      0.3243092177942238,
+      -0.021836637603003632,
+      0.16585015309715231,
+      0.2945762012462856
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "b380a23f9691656c0dd047a882252d4d3dc5f71cd6099ade417dc690569239a9",
+    "test_design_sha256": "34dfecd03e088cd7f2ce702bd1ccac5bbb6d96250155bb97c7433b130634a153",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.575284235373232e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.0565050897411573,
+        "1.0": 0.05625209020809079,
+        "10.0": 0.056486937765716526,
+        "100.0": 0.0794060549462818
+      }
+    }
+  },
+  {
+    "deleted_generator": "MiniMax-M3",
+    "event": "reasoning_elicitation",
+    "baseline": "training_style_profile",
+    "penalty": 0.1,
+    "profiles": {
+      "MiniMax-M2.7": {
+        "raw_log_words": 4.796364856319338,
+        "raw_structure": 0.22664187946565703
+      },
+      "deepseek-v4-pro": {
+        "raw_log_words": 4.541836232908781,
+        "raw_structure": 0.14543679097687098
+      },
+      "doubao-seed-2.0-lite": {
+        "raw_log_words": 4.988873164015988,
+        "raw_structure": 0.09457228535353535
+      },
+      "glm-5.3": {
+        "raw_log_words": 5.0266616955965215,
+        "raw_structure": 0.154315503575372
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      -3.846883287709352,
+      -0.021122619625715922,
+      0.1529393341594836,
+      0.29631736566105094,
+      0.08167103496291651,
+      -0.20905259531460874,
+      -0.06554990012734667,
+      -0.023072820302226828,
+      -0.18914001228894167,
+      0.07523604675494644,
+      0.09084347702095179,
+      -0.15905023314852912,
+      0.11863095197751797,
+      0.14086796956563957,
+      0.07248070678345414,
+      0.034075560484809815,
+      -5.357557808992414,
+      -2.196870045247009
+    ],
+    "gradient_inf": 6.577360198989357e-06,
+    "tuning": {
+      "0.1": 0.06227559797924396,
+      "1.0": 0.06591895615397717,
+      "10.0": 0.09745371085573051,
+      "100.0": 0.15061801557834748
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "affect_acknowledgement",
+    "baseline": "context",
+    "penalty": 1.0,
+    "coefficients": [
+      0.5136910265680409,
+      -0.6958960332107288,
+      -1.0284984085839617,
+      -0.0023122465932020313,
+      -0.5932588632823665,
+      -0.8813836007516422,
+      -0.12222603747157904,
+      -0.2231493740726718,
+      -0.04065456629227116,
+      0.5891026932563576,
+      0.536021653725853,
+      -0.14250279059814688,
+      0.11527384330279222,
+      0.2689927876224372,
+      -0.5244554512222146,
+      0.3330142193883452
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "bf3b52dad7ea17d4410279c4206ba3300158a16453f3ff2d02f16bc99370245d",
+    "test_design_sha256": "5c9580c12efcea9dd58b9f77c8e7800f005bec032f63d563f2016565de40d530",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.2106660416510984e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.14953240667549675,
+        "1.0": 0.14948884621322212,
+        "10.0": 0.14957229981904527,
+        "100.0": 0.16277693488131342
+      }
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "affect_acknowledgement",
+    "baseline": "default_profile",
+    "penalty": 1.0,
+    "coefficients": [
+      0.5830114937130698,
+      -0.8091156416389894,
+      -1.141575512947163,
+      0.04541764325077123,
+      -0.7372255081740061,
+      -0.9815089573318714,
+      -0.14380709731948993,
+      -0.22007712426888199,
+      -0.026899036145815954,
+      0.708461886912383,
+      0.6603066210116124,
+      -0.1641353030921841,
+      0.12044391959850405,
+      0.32085896944581227,
+      -0.6372045212309531,
+      0.41776164207208705,
+      -0.38380145846571173,
+      -0.9669052123525768,
+      0.21835059649913055
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "453b701be859fa9a8349e4f73113fb0df1a47c465ef491d2952aa19deeb6026a",
+    "test_design_sha256": "04f07c6367e4f2d6e6f6630d29e04a873c946ef4b914987e1b3d11e1bc8aa39c",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.04090543446134e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.12939609361111643,
+        "1.0": 0.12927689653056648,
+        "10.0": 0.12966211158310978,
+        "100.0": 0.1483117951866087
+      }
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "affect_acknowledgement",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      0.43877873992152694,
+      -0.6795407695971953,
+      -0.8142047312330344,
+      0.12437407671863522,
+      -0.7422190824984558,
+      -0.6569484767055128,
+      -0.16739503732505132,
+      -0.1009128793476779,
+      0.030398978247734503,
+      0.5991977015649734,
+      0.5538808022269919,
+      -0.1266663654071315,
+      0.06103806178681214,
+      0.2977454298347615,
+      -0.5818288916727042,
+      0.37875106160744104,
+      -0.35101324685119795,
+      -0.8238246049543666,
+      0.19425951520102586,
+      0.2294449112002472,
+      0.06202996399809134,
+      -0.1578329538079162,
+      0.0037529306110739968,
+      -0.11335775731865803,
+      -0.008286539514508626,
+      -0.06676832845094507,
+      0.0794572641118068,
+      -0.0014661710923162448
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "1f50178b09606f50580c3f9547abb4213ff7abbc274991639c052bbf75fbbed3",
+    "test_design_sha256": "9f814d81821c30fa26c648b5ade4068932ae1d2a3100f1857b56766ce3ff766a",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 0.0001882767391361284,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.12994266341672583,
+        "1.0": 0.12966390181421264,
+        "10.0": 0.12936934686621587,
+        "100.0": 0.1477147907821935
+      }
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "affect_acknowledgement",
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      0.4436334501839356,
+      -0.7099545462871827,
+      -0.843375325195926,
+      0.17161375036142992,
+      -0.7813868394517396,
+      -0.6459165311982304,
+      -0.22117804329925553,
+      -0.09464791132293603,
+      0.03491600516480243,
+      0.6394578095844202,
+      0.5735174839493818,
+      -0.10947221852015303,
+      0.07665649500599116,
+      0.33515580446705134,
+      -0.5978631183858913,
+      0.3786489500127113,
+      -0.15855168505241335,
+      -0.7900446159211454,
+      0.2094495438204878,
+      0.2020227151273063,
+      0.07844737230424453,
+      -0.12217639382118847,
+      0.017005323803746256,
+      -0.10846576388291823,
+      0.0078001466541286054,
+      -0.0693418553654842,
+      0.07541255821543968,
+      0.015597454849675152,
+      0.25682161272597614,
+      0.10351708710307793,
+      -0.19913328583878798,
+      -0.37228783320280046,
+      -0.17712934680640924,
+      -0.13605624677286354,
+      0.003996013017659143,
+      0.23871160284581935,
+      0.1177150896558762
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "cb1af425f58367bdf1660d301ae5cc62fb504d083323f550e13b705f6966b841",
+    "test_design_sha256": "06271089ff773fde3178feeb32e47838e76224984272808de6f8bd3ab1779cb4",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 7.702580295054773e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.13022849916156648,
+        "1.0": 0.129692625974038,
+        "10.0": 0.12851005656602973,
+        "100.0": 0.14420684135332942
+      }
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "affect_acknowledgement",
+    "baseline": "training_style_profile",
+    "penalty": 1.0,
+    "profiles": {
+      "MiniMax-M2.7": {
+        "raw_log_words": 4.796364856319338,
+        "raw_structure": 0.22664187946565703
+      },
+      "MiniMax-M3": {
+        "raw_log_words": 5.264319301760469,
+        "raw_structure": 0.3147438319962353
+      },
+      "doubao-seed-2.0-lite": {
+        "raw_log_words": 4.988873164015988,
+        "raw_structure": 0.09457228535353535
+      },
+      "glm-5.3": {
+        "raw_log_words": 5.0266616955965215,
+        "raw_structure": 0.154315503575372
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      0.5843348853644451,
+      -0.8061143043733549,
+      -1.141609453739087,
+      0.04478921407792443,
+      -0.733729236238073,
+      -0.9821498524456798,
+      -0.1408670305022977,
+      -0.21995673367032179,
+      -0.026925247021802674,
+      0.7065439014824039,
+      0.6600187978452715,
+      -0.16505414450178485,
+      0.12075111999287147,
+      0.31905438265093433,
+      -0.6353624520320952,
+      0.4175053682580291,
+      -0.9581853604888833,
+      -0.4361053779718546
+    ],
+    "gradient_inf": 2.047866881504934e-05,
+    "tuning": {
+      "0.1": 0.1295574127815869,
+      "1.0": 0.12944101718049356,
+      "10.0": 0.12982712438846974,
+      "100.0": 0.14841649236957458
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "answer_reveal",
+    "baseline": "context",
+    "penalty": 100.0,
+    "coefficients": [
+      1.0342770569668869,
+      -0.05330873557250943,
+      -0.037975270393274196,
+      0.06928855288278633,
+      -0.027566935144243736,
+      0.044958967822058854,
+      0.028253704085448864,
+      0.08546400886919439,
+      0.07908765666118055,
+      0.023957702068229277,
+      0.021704254998917708,
+      0.02220189817792161,
+      0.0935907471832212,
+      0.029492535842210125,
+      -0.0007445572531275141,
+      0.047734616224769086
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "bf3b52dad7ea17d4410279c4206ba3300158a16453f3ff2d02f16bc99370245d",
+    "test_design_sha256": "5c9580c12efcea9dd58b9f77c8e7800f005bec032f63d563f2016565de40d530",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.58372065925694e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.19744132197145006,
+        "1.0": 0.19738732794792263,
+        "10.0": 0.19691293323893044,
+        "100.0": 0.19502451503656185
+      }
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "answer_reveal",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      1.8814715718216906,
+      -0.15361313622863135,
+      -0.10876064542335857,
+      0.1985436211184052,
+      -0.07982945297657856,
+      0.13046321214123657,
+      0.08002043629735017,
+      0.24509211181065557,
+      0.22688815795570857,
+      0.06831661194801764,
+      0.061269975163244055,
+      0.06250814990501674,
+      0.2689844810284293,
+      0.085442721836461,
+      -0.001820716736778557,
+      0.13673042200911836,
+      0.3984104816291492,
+      0.9543728367535794,
+      1.874040556821724
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "453b701be859fa9a8349e4f73113fb0df1a47c465ef491d2952aa19deeb6026a",
+    "test_design_sha256": "04f07c6367e4f2d6e6f6630d29e04a873c946ef4b914987e1b3d11e1bc8aa39c",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.741582568357217e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.09211644658100172,
+        "1.0": 0.09131079057026148,
+        "10.0": 0.08881733751682391,
+        "100.0": 0.10436861139939936
+      }
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "answer_reveal",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      1.8708108631545433,
+      -0.18275570290312948,
+      -0.07569767097650626,
+      0.09222504447365971,
+      -0.10679838004315356,
+      0.06347886144975416,
+      0.12141262510613345,
+      0.25981019173134345,
+      0.13701161168439713,
+      0.06668194546019056,
+      0.060136280655836614,
+      0.06142445229404906,
+      0.12923894414220663,
+      0.0938926569941964,
+      -0.0022519883653205454,
+      0.15135355742555442,
+      0.3678078757753889,
+      0.9702087731213179,
+      1.876546930757748,
+      0.08144089631796943,
+      0.2421095300932404,
+      0.07717169671183086,
+      -0.07356022335879008,
+      0.0680135649891538,
+      -0.1061871589228911,
+      -0.11278913530675239,
+      -0.09118716662882233,
+      0.19295526798277038
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "1f50178b09606f50580c3f9547abb4213ff7abbc274991639c052bbf75fbbed3",
+    "test_design_sha256": "9f814d81821c30fa26c648b5ade4068932ae1d2a3100f1857b56766ce3ff766a",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.240433040017308e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.09236682214285419,
+        "1.0": 0.09166789980448312,
+        "10.0": 0.08950991812662099,
+        "100.0": 0.10484305164336513
+      }
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "answer_reveal",
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      1.853206796312851,
+      -0.1755793606905511,
+      -0.12329196362174229,
+      0.0888335704946887,
+      -0.052035767003329535,
+      0.11262823914272639,
+      0.12399171386484466,
+      0.209695892433047,
+      0.14219114982110598,
+      0.0602958564254287,
+      -0.015840120071946337,
+      0.018939971973898198,
+      0.14097459856651787,
+      0.07714352442614243,
+      -0.029124737421639412,
+      0.11404552755429619,
+      0.35946315213533564,
+      0.9984958801784629,
+      1.888388937258979,
+      0.08992633718387624,
+      0.2149433333639735,
+      0.07302181939709003,
+      -0.07710980784004408,
+      0.07284285830455442,
+      -0.10258269641232445,
+      -0.11977998970176773,
+      -0.08597755312873359,
+      0.18846471258759995,
+      -0.013540248118923796,
+      0.16581449222599942,
+      -0.0627150939452803,
+      0.05827840472358922,
+      0.05267202325814646,
+      0.04125668444506713,
+      -0.11251582858304963,
+      -0.038356243319564685,
+      -0.12022492699290224
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "cb1af425f58367bdf1660d301ae5cc62fb504d083323f550e13b705f6966b841",
+    "test_design_sha256": "06271089ff773fde3178feeb32e47838e76224984272808de6f8bd3ab1779cb4",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.680983967147e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.09342314194399418,
+        "1.0": 0.09267564670136623,
+        "10.0": 0.09066217705843974,
+        "100.0": 0.10527842799455271
+      }
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "answer_reveal",
+    "baseline": "training_style_profile",
+    "penalty": 100.0,
+    "profiles": {
+      "MiniMax-M2.7": {
+        "raw_log_words": 4.796364856319338,
+        "raw_structure": 0.22664187946565703
+      },
+      "MiniMax-M3": {
+        "raw_log_words": 5.264319301760469,
+        "raw_structure": 0.3147438319962353
+      },
+      "doubao-seed-2.0-lite": {
+        "raw_log_words": 4.988873164015988,
+        "raw_structure": 0.09457228535353535
+      },
+      "glm-5.3": {
+        "raw_log_words": 5.0266616955965215,
+        "raw_structure": 0.154315503575372
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      1.0787889088895604,
+      -0.05428118593736953,
+      -0.03866864218701826,
+      0.07062356119159847,
+      -0.027963733015367004,
+      0.04568755454021624,
+      0.028774424529098792,
+      0.08707048795284379,
+      0.08047716965392569,
+      0.02431108029755859,
+      0.02200242875672382,
+      0.02250150695802328,
+      0.0952534788018397,
+      0.030043281303310895,
+      -0.0007736470172444465,
+      0.04868930466377575,
+      0.28753465585422694,
+      0.3185013134634843
+    ],
+    "gradient_inf": 2.822131363267033e-06,
+    "tuning": {
+      "0.1": 0.18947100898416172,
+      "1.0": 0.1892642147718006,
+      "10.0": 0.18778798772329486,
+      "100.0": 0.185898537255819
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "reasoning_elicitation",
+    "baseline": "context",
+    "penalty": 100.0,
+    "coefficients": [
+      -0.4062401247105537,
+      0.04284391564384761,
+      -0.06396502419704853,
+      0.02686720478795942,
+      0.08682528105658269,
+      -0.020403580683507117,
+      -0.05684377583091709,
+      -0.07084234070237659,
+      -0.15583034134550292,
+      -0.004905299949810499,
+      -0.019017401856424962,
+      -0.03986160973493436,
+      0.01678532139291308,
+      -0.020209312042217802,
+      -0.002681569001507527,
+      -0.04936820083794784
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "bf3b52dad7ea17d4410279c4206ba3300158a16453f3ff2d02f16bc99370245d",
+    "test_design_sha256": "5c9580c12efcea9dd58b9f77c8e7800f005bec032f63d563f2016565de40d530",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.5468464891199574e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.23932102965135088,
+        "1.0": 0.23928405206780196,
+        "10.0": 0.23896051492429196,
+        "100.0": 0.23791933554326727
+      }
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "reasoning_elicitation",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -0.5462033932351564,
+      0.11344302015655226,
+      -0.16302868695695616,
+      0.07692607595636534,
+      0.23423853724197985,
+      -0.049707652396676995,
+      -0.1510175276233768,
+      -0.19753232428537168,
+      -0.4212678383237087,
+      -0.014876495093210197,
+      -0.05633423870886649,
+      -0.11651127663202392,
+      0.038224817232253794,
+      -0.05839584504550998,
+      -0.007881499758016906,
+      -0.13688181244679218,
+      -0.38558036654633476,
+      -0.9736875179065132,
+      -1.849105895776633
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "453b701be859fa9a8349e4f73113fb0df1a47c465ef491d2952aa19deeb6026a",
+    "test_design_sha256": "04f07c6367e4f2d6e6f6630d29e04a873c946ef4b914987e1b3d11e1bc8aa39c",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.8682981518812767e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.1057469627228072,
+        "1.0": 0.10551790060319224,
+        "10.0": 0.10535106243450484,
+        "100.0": 0.125781038472936
+      }
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "reasoning_elicitation",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -0.546491824676373,
+      0.1288064673381087,
+      -0.1916098284188932,
+      0.10770738513558481,
+      0.244775183850966,
+      -0.04481041835098528,
+      -0.16558144089381574,
+      -0.20687615825117794,
+      -0.313086912248687,
+      -0.01588965579109594,
+      -0.05814052854933115,
+      -0.11781477369972246,
+      0.081181881081227,
+      -0.058690765203914703,
+      -0.007872153835793098,
+      -0.13970598538573245,
+      -0.3721703763353101,
+      -0.9827408224460688,
+      -1.8305877497615586,
+      0.034039597960153586,
+      -0.06678649695889599,
+      -0.06459449044688712,
+      0.012740054630068302,
+      -0.09601754751781902,
+      0.18163624605983344,
+      -0.04257626832231567,
+      0.013026595604900248,
+      -0.15510474379849987
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "1f50178b09606f50580c3f9547abb4213ff7abbc274991639c052bbf75fbbed3",
+    "test_design_sha256": "9f814d81821c30fa26c648b5ade4068932ae1d2a3100f1857b56766ce3ff766a",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.544922306821576e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.10583445886800744,
+        "1.0": 0.10555358923349632,
+        "10.0": 0.10504856220887443,
+        "100.0": 0.12456889043213124
+      }
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "reasoning_elicitation",
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -0.5208764108349494,
+      0.11668447823167984,
+      -0.1906661336516402,
+      0.057436957210799625,
+      0.26915439933455937,
+      -0.04240919088799471,
+      -0.1546597051379198,
+      -0.21195183760321717,
+      -0.31941765560257773,
+      -0.02481862633227249,
+      -0.07373610330373717,
+      -0.09573137804279647,
+      0.08666954958053792,
+      -0.056982856616778266,
+      0.029790443268891048,
+      -0.1521448303896799,
+      -0.36684589628884645,
+      -0.9977081543227863,
+      -1.8757637725318734,
+      0.018683077683623723,
+      -0.0727077722579752,
+      -0.05181573736013575,
+      0.015468059619188452,
+      -0.09726054199963773,
+      0.18104656578817327,
+      -0.036438426947176236,
+      0.01690077211636122,
+      -0.1534964131110696,
+      -0.024555332122998756,
+      -0.017288605038163436,
+      0.19575309653299924,
+      0.013361105002174557,
+      0.06302022699868648,
+      0.009872154309825193,
+      0.11687284689313607,
+      0.056501332078303476,
+      0.11895823143244039
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "cb1af425f58367bdf1660d301ae5cc62fb504d083323f550e13b705f6966b841",
+    "test_design_sha256": "06271089ff773fde3178feeb32e47838e76224984272808de6f8bd3ab1779cb4",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 0.00011729050168929334,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.10834602870522919,
+        "1.0": 0.10799270440232692,
+        "10.0": 0.10722447879506423,
+        "100.0": 0.12559310887167952
+      }
+    }
+  },
+  {
+    "deleted_generator": "deepseek-v4-pro",
+    "event": "reasoning_elicitation",
+    "baseline": "training_style_profile",
+    "penalty": 10.0,
+    "profiles": {
+      "MiniMax-M2.7": {
+        "raw_log_words": 4.796364856319338,
+        "raw_structure": 0.22664187946565703
+      },
+      "MiniMax-M3": {
+        "raw_log_words": 5.264319301760469,
+        "raw_structure": 0.3147438319962353
+      },
+      "doubao-seed-2.0-lite": {
+        "raw_log_words": 4.988873164015988,
+        "raw_structure": 0.09457228535353535
+      },
+      "glm-5.3": {
+        "raw_log_words": 5.0266616955965215,
+        "raw_structure": 0.154315503575372
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      -0.4814903694582916,
+      0.06454060467150874,
+      -0.09614806330267218,
+      0.04093526089774291,
+      0.1314838133321073,
+      -0.030693034977289185,
+      -0.08553871882090816,
+      -0.1079267240123329,
+      -0.23560917256581232,
+      -0.00783635886932467,
+      -0.02987160705617981,
+      -0.06201679121095959,
+      0.024481048933677616,
+      -0.031023732044341588,
+      -0.004139390904365295,
+      -0.0747941828527002,
+      -0.6930074668061633,
+      -0.3051363316905267
+    ],
+    "gradient_inf": 4.396247457627567e-06,
+    "tuning": {
+      "0.1": 0.21473947088510806,
+      "1.0": 0.21464988988259165,
+      "10.0": 0.21402325472331274,
+      "100.0": 0.21592560196187513
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "affect_acknowledgement",
+    "baseline": "context",
+    "penalty": 10.0,
+    "coefficients": [
+      0.19822002118654752,
+      -0.3115079026554973,
+      -0.5173278967385904,
+      -0.056375696111388554,
+      0.21138066378566234,
+      0.48538638532669465,
+      0.5422211293003371,
+      -0.2797364754322641,
+      0.0010733253002608671,
+      0.04345327819911245,
+      0.3854896341191577,
+      -0.4600557755966265,
+      0.023337292463742273,
+      -0.07957742995084412,
+      -0.3038735806047908,
+      0.33970759683990936
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "f39b2f4ae40a10519d697d0c9c521003ddb6fbb0f76b448c823052b4b843ed44",
+    "test_design_sha256": "26d96167e9297240314e39c6adba72f0d1bfc5730cb958f620171a3281634c9b",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.1268538430586617e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.18260676940575785,
+        "1.0": 0.18253787123415716,
+        "10.0": 0.18222660075082436,
+        "100.0": 0.1899003497172344
+      }
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "affect_acknowledgement",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      0.21544589995917782,
+      -0.34834101012683405,
+      -0.5662874244421883,
+      -0.06724385502309645,
+      0.22989300459554995,
+      0.5359689759051194,
+      0.5832789950019432,
+      -0.30083092094934677,
+      0.0017417796717459342,
+      0.04990932265334743,
+      0.428241813285741,
+      -0.5044978793387099,
+      0.022821228475036565,
+      -0.08965386029333276,
+      -0.336839807473182,
+      0.3766498123475372,
+      -0.420400070263748,
+      -0.5980189598777309,
+      -0.019606441659185063
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "12fd0e7d3ce77c9b4577b83b4e29889c8b9809f1580ac69f3d0da6660b726038",
+    "test_design_sha256": "c3073d87980267630fc17b6b9cbbac68225f24bf480ed14ffbf0f94406ec8f6e",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.2043711591201998e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.16597346957059725,
+        "1.0": 0.1658385162169292,
+        "10.0": 0.16531727310678052,
+        "100.0": 0.17605161012770026
+      }
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "affect_acknowledgement",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      0.22299151929996425,
+      -0.36382909059165003,
+      -0.5791891330347866,
+      -0.0767916559222556,
+      0.24370802470871122,
+      0.5585578151063567,
+      0.6014508460662752,
+      -0.3223766605987014,
+      -0.003087231880238269,
+      0.04772617903226235,
+      0.42224111105764295,
+      -0.4952170009386048,
+      0.021992314526258768,
+      -0.08912824573458977,
+      -0.34302257221678034,
+      0.38290975371535313,
+      -0.43496036252909753,
+      -0.6117457030414328,
+      -0.008575113844717843,
+      0.13006875807319676,
+      0.006067350743617995,
+      0.22907898020078302,
+      0.07972181902209816,
+      0.0034239608354329786,
+      -0.12475241212758428,
+      0.08976225303453562,
+      -0.015881110800219218,
+      -0.005731808522437551
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "654db09dbb077f08220cb66dc4bb443daa619eb21d7110b95afd713eb3d4ebee",
+    "test_design_sha256": "ad90631d828629430a8f48835019e5a58d5ffd35d2da784b48e3f52f00e91629",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.266682889686457e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.16403995678026637,
+        "1.0": 0.16389325263491,
+        "10.0": 0.1634270002273438,
+        "100.0": 0.1748228705055994
+      }
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "affect_acknowledgement",
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      0.18973143985254,
+      -0.41714023844739634,
+      -0.6028662337260373,
+      -0.0716657864140368,
+      0.20604644581745873,
+      0.6046878416453927,
+      0.5958231909457437,
+      -0.3179372927902789,
+      0.01069224460110406,
+      0.05029583669956353,
+      0.44697191057961944,
+      -0.5259142143721123,
+      0.04181712110934167,
+      -0.08893354986532938,
+      -0.360434261278387,
+      0.40440816149000286,
+      -0.3848710034777982,
+      -0.6734256492388607,
+      -0.07512686348175214,
+      0.12498041437969819,
+      0.061160726530014406,
+      0.2379394710282663,
+      0.07841098395879077,
+      0.005202947404154649,
+      -0.1330872251100759,
+      0.11606699017099499,
+      -0.021839651062407858,
+      0.008706948773439353,
+      0.02798249217715698,
+      0.18791312878301838,
+      0.1559795736238115,
+      0.11032343891567392,
+      0.016612292769213492,
+      0.35362176925862915,
+      -0.05390861310118007,
+      0.27088467795024734,
+      0.01996547725886951
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "20f559519b1e3c0a372f34d0943fad0ceb9dcd8fd55b1349a3c0280fd84a9f9c",
+    "test_design_sha256": "e1a274d2f47c89885cf9297202d77439a44a7998e0c8e13d67567efb79ebcd43",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.687182695033542e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.15960820753338828,
+        "1.0": 0.15928961845076633,
+        "10.0": 0.1579998078683288,
+        "100.0": 0.16861389051696127
+      }
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "affect_acknowledgement",
+    "baseline": "training_style_profile",
+    "penalty": 10.0,
+    "profiles": {
+      "MiniMax-M2.7": {
+        "raw_log_words": 4.796364856319338,
+        "raw_structure": 0.22664187946565703
+      },
+      "MiniMax-M3": {
+        "raw_log_words": 5.264319301760469,
+        "raw_structure": 0.3147438319962353
+      },
+      "deepseek-v4-pro": {
+        "raw_log_words": 4.541836232908781,
+        "raw_structure": 0.14543679097687098
+      },
+      "glm-5.3": {
+        "raw_log_words": 5.0266616955965215,
+        "raw_structure": 0.154315503575372
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      0.20567067201428704,
+      -0.3277736881448076,
+      -0.5388244485133783,
+      -0.06125839841472332,
+      0.21958720434616816,
+      0.507766054837144,
+      0.5604155139255187,
+      -0.2889497059301834,
+      0.001300318579544063,
+      0.04644359861637966,
+      0.4044303577720392,
+      -0.4797579052688572,
+      0.023130763702982893,
+      -0.08417751247929,
+      -0.31845248415001787,
+      0.356075260365188,
+      -0.4736090589374804,
+      -0.06702622479827293
+    ],
+    "gradient_inf": 5.1435861099236035e-06,
+    "tuning": {
+      "0.1": 0.17575309367473355,
+      "1.0": 0.1756329573400115,
+      "10.0": 0.17505726335462962,
+      "100.0": 0.18366035058661975
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "answer_reveal",
+    "baseline": "context",
+    "penalty": 100.0,
+    "coefficients": [
+      1.0285443071158975,
+      -0.09997749653359798,
+      -0.05131118132250946,
+      -0.0009561079903434382,
+      0.030071646142356676,
+      -0.05689810916975284,
+      -0.004755012666197374,
+      0.03935680960209258,
+      0.08219947892904131,
+      0.0037111300895937803,
+      0.03901114100934717,
+      0.00028967795377528223,
+      0.09190956580144655,
+      -0.03487785430092782,
+      -0.04388421633989588,
+      -0.0017991251674095955
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "f39b2f4ae40a10519d697d0c9c521003ddb6fbb0f76b448c823052b4b843ed44",
+    "test_design_sha256": "26d96167e9297240314e39c6adba72f0d1bfc5730cb958f620171a3281634c9b",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.741026990773278e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.19796250174816635,
+        "1.0": 0.19790990395442665,
+        "10.0": 0.19744631938234558,
+        "100.0": 0.19556624306888423
+      }
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "answer_reveal",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      1.838364279468531,
+      -0.2853482111883782,
+      -0.1466531892203757,
+      -0.003415832653501073,
+      0.08497753021138438,
+      -0.1615224023418858,
+      -0.014954540750604985,
+      0.11089874411940653,
+      0.23388467946564528,
+      0.010061939015041065,
+      0.1098869663663909,
+      0.0003955206052275733,
+      0.26203209134010935,
+      -0.09860515996428759,
+      -0.12542054014745746,
+      -0.0055364156718690095,
+      0.24498109999026646,
+      0.9699985729191984,
+      1.846242853102604
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "12fd0e7d3ce77c9b4577b83b4e29889c8b9809f1580ac69f3d0da6660b726038",
+    "test_design_sha256": "c3073d87980267630fc17b6b9cbbac68225f24bf480ed14ffbf0f94406ec8f6e",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 0.00014141746726714644,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.09275927656405887,
+        "1.0": 0.09202629583556622,
+        "10.0": 0.08972660349167669,
+        "100.0": 0.10525374736543229
+      }
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "answer_reveal",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      1.8315938587302065,
+      -0.2126676387882532,
+      -0.1656041605732354,
+      -0.056963230013213,
+      0.13657387617608674,
+      -0.1322942562705374,
+      -0.0041109392619964455,
+      0.10180038269557555,
+      0.16363155767853463,
+      0.010108325701081958,
+      0.10814491625571401,
+      0.00059506088656729,
+      0.11585686409474881,
+      -0.11042144071085976,
+      -0.1394719409474602,
+      -0.005859925023705272,
+      0.21883482254272155,
+      0.9832449943995244,
+      1.8492462008057708,
+      0.013367096598522765,
+      0.26148083999403,
+      0.047420097279235476,
+      0.08337911446494663,
+      0.03236247205353459,
+      0.08039661880607345,
+      0.11368268067911648,
+      0.12276629988842527,
+      0.18598420258081236
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "654db09dbb077f08220cb66dc4bb443daa619eb21d7110b95afd713eb3d4ebee",
+    "test_design_sha256": "ad90631d828629430a8f48835019e5a58d5ffd35d2da784b48e3f52f00e91629",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 3.555222655243773e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.09294107967222306,
+        "1.0": 0.09236800794917241,
+        "10.0": 0.09055992089584995,
+        "100.0": 0.10589636086926354
+      }
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "answer_reveal",
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      1.8204504947459113,
+      -0.20893884831782883,
+      -0.15309624151407433,
+      -0.043358894846136496,
+      0.05753701369731053,
+      -0.19872826734440352,
+      0.031453895170348675,
+      0.04641540329413452,
+      0.16824414699167137,
+      -0.0555176748817523,
+      0.026913191216865202,
+      -0.014264071512889267,
+      0.13147612839820275,
+      -0.07062902659431666,
+      -0.09712949829553255,
+      0.026654233661746726,
+      0.21342331864988695,
+      1.0101040258468674,
+      1.8687804559551175,
+      0.02930047907960531,
+      0.2403522720499612,
+      0.04352730340445572,
+      0.08206549665423207,
+      0.026754665001062147,
+      0.08680275123792769,
+      0.11880855396781838,
+      0.11461161498061348,
+      0.1834177154837558,
+      0.037603230500617014,
+      -0.10369020067456469,
+      0.20503791716931977,
+      -0.0107421217113978,
+      0.03330877165973693,
+      0.12351349545128787,
+      -0.1255297283953865,
+      0.08672904890770992,
+      0.010717879091012645
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "20f559519b1e3c0a372f34d0943fad0ceb9dcd8fd55b1349a3c0280fd84a9f9c",
+    "test_design_sha256": "e1a274d2f47c89885cf9297202d77439a44a7998e0c8e13d67567efb79ebcd43",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.9202141584916408e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.09458707101286973,
+        "1.0": 0.09366553518531967,
+        "10.0": 0.09167477764907184,
+        "100.0": 0.10623376851494447
+      }
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "answer_reveal",
+    "baseline": "training_style_profile",
+    "penalty": 10.0,
+    "profiles": {
+      "MiniMax-M2.7": {
+        "raw_log_words": 4.796364856319338,
+        "raw_structure": 0.22664187946565703
+      },
+      "MiniMax-M3": {
+        "raw_log_words": 5.264319301760469,
+        "raw_structure": 0.3147438319962353
+      },
+      "deepseek-v4-pro": {
+        "raw_log_words": 4.541836232908781,
+        "raw_structure": 0.14543679097687098
+      },
+      "glm-5.3": {
+        "raw_log_words": 5.0266616955965215,
+        "raw_structure": 0.154315503575372
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      1.841978149010911,
+      -0.28476964602323107,
+      -0.1463737147940096,
+      -0.0032850512909883105,
+      0.08493767603197465,
+      -0.16128483044361797,
+      -0.014843464930680998,
+      0.1108287092386901,
+      0.23340007011804934,
+      0.010035868734583913,
+      0.10957127751501596,
+      0.0003985440597043517,
+      0.26150312650180196,
+      -0.09853320451128782,
+      -0.1252203042963959,
+      -0.005494106252587919,
+      1.302706066775691,
+      1.6470969686462755
+    ],
+    "gradient_inf": 2.9958710478339423e-05,
+    "tuning": {
+      "0.1": 0.09286872838451793,
+      "1.0": 0.09214429299962368,
+      "10.0": 0.08988582043021089,
+      "100.0": 0.10585830831267264
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "reasoning_elicitation",
+    "baseline": "context",
+    "penalty": 100.0,
+    "coefficients": [
+      -0.43457098505337827,
+      -0.0011480423131681053,
+      0.034977850729509034,
+      0.1073347073118609,
+      -0.04707428991772941,
+      0.0165514559285631,
+      0.04015397926763382,
+      -0.01440172970261228,
+      -0.155725950346937,
+      -0.007786145703922729,
+      -0.025244542514577323,
+      -0.042854995813343934,
+      0.02572500743413305,
+      0.052738901879870306,
+      0.031967633243615456,
+      0.026523275348458556
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "f39b2f4ae40a10519d697d0c9c521003ddb6fbb0f76b448c823052b4b843ed44",
+    "test_design_sha256": "26d96167e9297240314e39c6adba72f0d1bfc5730cb958f620171a3281634c9b",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.5154479659228457e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.23876450022670725,
+        "1.0": 0.23872360300069964,
+        "10.0": 0.23836354737870577,
+        "100.0": 0.23708673061823848
+      }
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "reasoning_elicitation",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -0.6542021741044803,
+      -0.0009070677896222629,
+      0.09645488498307347,
+      0.2946210109529129,
+      -0.13785512830040397,
+      0.04268672106901958,
+      0.11117689415255726,
+      -0.039753247338971676,
+      -0.43826433466147086,
+      -0.02354551612432736,
+      -0.07589383822968679,
+      -0.12581678800856902,
+      0.06844476435608784,
+      0.15043825287456866,
+      0.09405205480621974,
+      0.07643483541473743,
+      -0.37466144341792784,
+      -0.9177940988826115,
+      -1.9922049772349257
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "12fd0e7d3ce77c9b4577b83b4e29889c8b9809f1580ac69f3d0da6660b726038",
+    "test_design_sha256": "c3073d87980267630fc17b6b9cbbac68225f24bf480ed14ffbf0f94406ec8f6e",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 8.191383766842364e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.10021486617593157,
+        "1.0": 0.09992833034884042,
+        "10.0": 0.099734425240494,
+        "100.0": 0.12105612075188768
+      }
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "reasoning_elicitation",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -0.6669368149828769,
+      -0.03944318373964548,
+      0.11724089729643712,
+      0.32748641911587234,
+      -0.15638397008215277,
+      0.02774453263529289,
+      0.11998983796394086,
+      -0.03992529069178423,
+      -0.3193879465520661,
+      -0.02469450242657847,
+      -0.07869326686068041,
+      -0.12430428822782162,
+      0.13431451969534347,
+      0.16143991256075174,
+      0.09837330912417534,
+      0.0812785028938111,
+      -0.3719367626395657,
+      -0.9168977052011184,
+      -1.9792117932407225,
+      0.10013068224526757,
+      -0.039296813585691294,
+      -0.04102943482800078,
+      -0.11820575783602286,
+      -0.13156587360501973,
+      -0.0888036580453781,
+      -0.0186569975505866,
+      -0.0727861236939839,
+      -0.13713660260726546
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "654db09dbb077f08220cb66dc4bb443daa619eb21d7110b95afd713eb3d4ebee",
+    "test_design_sha256": "ad90631d828629430a8f48835019e5a58d5ffd35d2da784b48e3f52f00e91629",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 9.020069573328904e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.10029967880863092,
+        "1.0": 0.09999934204585557,
+        "10.0": 0.09957359531989286,
+        "100.0": 0.11995865635378121
+      }
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "reasoning_elicitation",
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -0.6483732637046541,
+      -0.042474336438838016,
+      0.08956907649095852,
+      0.2963479688813473,
+      -0.12713702554447076,
+      0.02164579571798253,
+      0.12282711022675218,
+      -0.06420647823250507,
+      -0.3159142536223199,
+      -0.021638427727109343,
+      -0.040069481890876606,
+      -0.12150026686661582,
+      0.12079411603927362,
+      0.16032011542841665,
+      0.06935567010240651,
+      0.06759552545891867,
+      -0.3660510673251714,
+      -0.9263357078317593,
+      -2.0265376156438393,
+      0.08009256076843518,
+      -0.045321231554830366,
+      -0.04489570348999749,
+      -0.12104030569051275,
+      -0.13422076921592557,
+      -0.08800887903168146,
+      -0.021236318373381875,
+      -0.06354309071896155,
+      -0.14158995319390486,
+      -0.04555869664181744,
+      0.020363337723285732,
+      -0.22321225159866442,
+      0.09105723508135838,
+      -0.035493495344409494,
+      -0.1223657249869375,
+      0.1733347559931036,
+      -0.060687835729676266,
+      -0.04353985573481076
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "20f559519b1e3c0a372f34d0943fad0ceb9dcd8fd55b1349a3c0280fd84a9f9c",
+    "test_design_sha256": "e1a274d2f47c89885cf9297202d77439a44a7998e0c8e13d67567efb79ebcd43",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 2.6874531631193577e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.10324368213677791,
+        "1.0": 0.10255667307678297,
+        "10.0": 0.1014669893033497,
+        "100.0": 0.12060270541941029
+      }
+    }
+  },
+  {
+    "deleted_generator": "doubao-seed-2.0-lite",
+    "event": "reasoning_elicitation",
+    "baseline": "training_style_profile",
+    "penalty": 10.0,
+    "profiles": {
+      "MiniMax-M2.7": {
+        "raw_log_words": 4.796364856319338,
+        "raw_structure": 0.22664187946565703
+      },
+      "MiniMax-M3": {
+        "raw_log_words": 5.264319301760469,
+        "raw_structure": 0.3147438319962353
+      },
+      "deepseek-v4-pro": {
+        "raw_log_words": 4.541836232908781,
+        "raw_structure": 0.14543679097687098
+      },
+      "glm-5.3": {
+        "raw_log_words": 5.0266616955965215,
+        "raw_structure": 0.154315503575372
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      -0.6572599073696294,
+      -0.001437525462912824,
+      0.0970595287492118,
+      0.29625285408566204,
+      -0.13700415091107881,
+      0.04333280119019764,
+      0.11171048487647851,
+      -0.04007719266286885,
+      -0.43862947843186967,
+      -0.02310069567971263,
+      -0.07459886035493608,
+      -0.12461470917874565,
+      0.0694003642836587,
+      0.150227000555089,
+      0.09310014131767487,
+      0.07613379664547622,
+      -1.4346668161047489,
+      -1.6501287785556982
+    ],
+    "gradient_inf": 2.557501116884353e-06,
+    "tuning": {
+      "0.1": 0.10057096758954792,
+      "1.0": 0.10034433898995113,
+      "10.0": 0.10029234388855554,
+      "100.0": 0.12158330696344676
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "affect_acknowledgement",
+    "baseline": "context",
+    "penalty": 10.0,
+    "coefficients": [
+      0.24074297220354293,
+      -0.6252073280302617,
+      0.03178543628756799,
+      0.37901217845769253,
+      -0.11899529800725794,
+      0.15676245994944996,
+      -0.6380638577052129,
+      0.41181537307809984,
+      0.0047828255354898,
+      0.5949746374825429,
+      0.18750899253570033,
+      -0.16871285047543233,
+      0.0074669890442453715,
+      0.12340388125023974,
+      0.46262390591057295,
+      0.061593683569923875
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "6a3822269cd018022d1344b08af8c1ba5aec32b0646990893ffbf21c4c860795",
+    "test_design_sha256": "675dbdfd86dc3872f0822ccd8f2733d3be4b8dd17e2ea952eec7c4efbab4ccf8",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 4.306414540011794e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.17352906219833827,
+        "1.0": 0.1734761938935986,
+        "10.0": 0.17333534618264154,
+        "100.0": 0.18263119166639896
+      }
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "affect_acknowledgement",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      0.26677941332517,
+      -0.6861100530665611,
+      0.03524144883081354,
+      0.4198580481378829,
+      -0.12192409501584778,
+      0.17782568294308518,
+      -0.7135351561962003,
+      0.44597565772872855,
+      0.005630728301385268,
+      0.6645009337014095,
+      0.21249228880898335,
+      -0.1839740922377499,
+      0.01004281200531753,
+      0.14066609479296519,
+      0.5196600288073052,
+      0.06808021735207655,
+      -0.4063029250267808,
+      -0.658777032430005,
+      -0.12143394035959193
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "64ff98e50ce19aedf9ba61aff452d8e024167d539094f4eae32024b1c3c5d6e2",
+    "test_design_sha256": "b3ecb842428087d8cf0645115f1fb2e3ef271558a7894958c46d204f1302bbc0",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.346932065375398e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.15592049594149163,
+        "1.0": 0.1557889247540488,
+        "10.0": 0.15543131343967342,
+        "100.0": 0.16819020504617668
+      }
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "affect_acknowledgement",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      0.2719951895265211,
+      -0.6956197962803043,
+      0.04104854707376189,
+      0.43323597676883724,
+      -0.12635032372241276,
+      0.18410268523803427,
+      -0.7334080328068083,
+      0.4580826864380518,
+      0.000895651433011637,
+      0.6556121565314551,
+      0.20588329959361376,
+      -0.1803235002059293,
+      0.009899772635202014,
+      0.1407150241827425,
+      0.523256015603456,
+      0.06905114479976372,
+      -0.41421603306865873,
+      -0.6672885733187068,
+      -0.11464996664875936,
+      -0.01128404158860413,
+      -0.02857267082818576,
+      0.18164945827555706,
+      0.014259155089500436,
+      0.08539798426298635,
+      -0.12361311179455163,
+      -0.05132004552231392,
+      -0.01243453466394994,
+      -0.0157537703670759
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "678dcaa4b79f156ac8fc1a73e8df6b14297eeb2a8f21cd34ef340e94284b82b9",
+    "test_design_sha256": "f87174cc012e3443cda1e7712caa897941d22c58c512e74874c7120368c1fc7f",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.853447095134797e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.1555094634558794,
+        "1.0": 0.15536052850899576,
+        "10.0": 0.15498890378764685,
+        "100.0": 0.16793578214299437
+      }
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "affect_acknowledgement",
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      0.3044941774404077,
+      -0.7500606893610198,
+      0.014575231454019393,
+      0.48980255424288743,
+      -0.07247878352346243,
+      0.17199245419989953,
+      -0.8112622942932333,
+      0.446371504650824,
+      0.02366594363319311,
+      0.7428818796691496,
+      0.23100455156924196,
+      -0.16512501358668352,
+      -0.0033521452167518053,
+      0.15091380612491465,
+      0.594254606707926,
+      0.05636315719586317,
+      -0.3167257649944454,
+      -0.7336758869041391,
+      -0.25978167570854493,
+      0.03831674998011351,
+      -0.015470169992433567,
+      0.15567933677574056,
+      0.030390635714915796,
+      0.08550402157111149,
+      -0.1203301347084971,
+      -0.0632027215553583,
+      -0.016208998345498445,
+      -0.005345875701024298,
+      0.16690877697182807,
+      -0.21825477511450622,
+      -0.29072636604047963,
+      -0.04439655730920516,
+      -0.30346936545100267,
+      0.300631194986651,
+      0.15025397145314837,
+      0.4890688712569312,
+      0.053239149740203176
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "08e9f7ead0c5ea0c08e09b3604f33c6902e013f0e8bb69bc19323a196c11fda3",
+    "test_design_sha256": "4bcccd2f5fd22e6d225d44c92c7440474b20c4ac90e8c08cff4ba1b4c9d6a078",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 5.4180060493180804e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.14862700341328014,
+        "1.0": 0.14812920003657898,
+        "10.0": 0.1465918469421571,
+        "100.0": 0.15904660792514272
+      }
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "affect_acknowledgement",
+    "baseline": "training_style_profile",
+    "penalty": 10.0,
+    "profiles": {
+      "MiniMax-M2.7": {
+        "raw_log_words": 4.796364856319338,
+        "raw_structure": 0.22664187946565703
+      },
+      "MiniMax-M3": {
+        "raw_log_words": 5.264319301760469,
+        "raw_structure": 0.3147438319962353
+      },
+      "deepseek-v4-pro": {
+        "raw_log_words": 4.541836232908781,
+        "raw_structure": 0.14543679097687098
+      },
+      "doubao-seed-2.0-lite": {
+        "raw_log_words": 4.988873164015988,
+        "raw_structure": 0.09457228535353535
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      0.2537733280739229,
+      -0.655697932182459,
+      0.03342591960729794,
+      0.39930979080408974,
+      -0.12017937395398251,
+      0.16691789096585322,
+      -0.6756853887596218,
+      0.42788322853097505,
+      0.005234889986370994,
+      0.6295725485522473,
+      0.1995284295193193,
+      -0.17601356924049855,
+      0.008972705018826252,
+      0.13170570352921587,
+      0.4910696735996879,
+      0.06499492997354353,
+      -0.5123707408041286,
+      -0.18146150773373976
+    ],
+    "gradient_inf": 1.6877416372018672e-05,
+    "tuning": {
+      "0.1": 0.16554098467166484,
+      "1.0": 0.1654250067797381,
+      "10.0": 0.16497904659537396,
+      "100.0": 0.1754409715595505
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "answer_reveal",
+    "baseline": "context",
+    "penalty": 100.0,
+    "coefficients": [
+      2.773516759892181,
+      -0.07517409597073085,
+      -0.009756430312700093,
+      0.05225750906296909,
+      0.06185161608703128,
+      0.05548122110453603,
+      0.08743988388626377,
+      0.05576168578740385,
+      0.09067225804391138,
+      0.0007139588890324817,
+      -0.028341439824292155,
+      0.015611346254331453,
+      -0.07947036209739419,
+      0.002458322163798668,
+      0.01923661204524291,
+      -0.054865753674708036
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "6a3822269cd018022d1344b08af8c1ba5aec32b0646990893ffbf21c4c860795",
+    "test_design_sha256": "675dbdfd86dc3872f0822ccd8f2733d3be4b8dd17e2ea952eec7c4efbab4ccf8",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.4108448924687877e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.05892410017911708,
+        "1.0": 0.058835014674226985,
+        "10.0": 0.05825169134785962,
+        "100.0": 0.05688816236023105
+      }
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "answer_reveal",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      3.7058907550917985,
+      -0.18678869905372522,
+      -0.027459433712019234,
+      0.16049236418573035,
+      0.14125746072245615,
+      0.1495293294314409,
+      0.2524867479298459,
+      0.11071774838154225,
+      0.24468529298554959,
+      0.003767113610661047,
+      -0.10395174375486577,
+      0.05094561059007711,
+      -0.22554360896462758,
+      0.004865057229322015,
+      0.05140749011153107,
+      -0.1315542440261144,
+      1.253933820447134,
+      0.19559187553901103,
+      -0.2754674789083886
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "64ff98e50ce19aedf9ba61aff452d8e024167d539094f4eae32024b1c3c5d6e2",
+    "test_design_sha256": "b3ecb842428087d8cf0645115f1fb2e3ef271558a7894958c46d204f1302bbc0",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 9.853023062333932e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.05601969312306213,
+        "1.0": 0.055327313604967704,
+        "10.0": 0.05260494754339592,
+        "100.0": 0.05288422591086097
+      }
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "answer_reveal",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      3.75025270144163,
+      -0.2297343788505357,
+      0.04733067114686735,
+      0.10173184376530464,
+      0.09522828064369776,
+      0.1574955339235323,
+      0.22169424808690055,
+      0.13349584265542838,
+      0.11598123784689883,
+      0.004156942683188682,
+      -0.11025802335013882,
+      0.05311095492207875,
+      -0.009415637096685456,
+      0.005171453668268312,
+      0.05096553297441439,
+      -0.13350151965930454,
+      1.234266477854488,
+      0.2356072923547002,
+      -0.26485733430733494,
+      0.3001938484705274,
+      0.00011121640281141629,
+      -0.09428449809118941,
+      -0.12310619620257669,
+      0.0519603957864822,
+      0.05652335424625003,
+      0.011867017774027827,
+      0.1684623210336566,
+      0.1718933174459197
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "678dcaa4b79f156ac8fc1a73e8df6b14297eeb2a8f21cd34ef340e94284b82b9",
+    "test_design_sha256": "f87174cc012e3443cda1e7712caa897941d22c58c512e74874c7120368c1fc7f",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 9.828543386242172e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.055124480397936236,
+        "1.0": 0.05456318636699956,
+        "10.0": 0.052202408403873836,
+        "100.0": 0.052363792747538114
+      }
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "answer_reveal",
+    "baseline": "conditional_profile",
+    "penalty": 100.0,
+    "coefficients": [
+      2.9509584821840287,
+      -0.08159606824522549,
+      -0.0035063173189219987,
+      0.04508716995643995,
+      0.04612677637912009,
+      0.059863275396898355,
+      0.08694376223109836,
+      0.056521348889779284,
+      0.07639168616201018,
+      -0.0007268298475723605,
+      -0.030340775763207428,
+      0.014001155252536849,
+      -0.052949710031320416,
+      0.00012465600987942834,
+      0.014851567177410964,
+      -0.04636505989290497,
+      0.517744975032699,
+      0.1413622785669459,
+      -0.09510346442047082,
+      0.0808553128951308,
+      0.04578714153420669,
+      -0.035563370064596485,
+      -0.07713553864170335,
+      0.06730127215639999,
+      0.030916527053346212,
+      0.022620042613709087,
+      0.11541978839312603,
+      0.0646339796496443,
+      -0.002147193780168557,
+      0.022846582052389933,
+      0.06617016657339311,
+      -0.006148322469286977,
+      -0.03282150185718803,
+      0.0012930994736480791,
+      -0.004048169951627954,
+      0.020584041978873518,
+      -0.0539308182247862
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "08e9f7ead0c5ea0c08e09b3604f33c6902e013f0e8bb69bc19323a196c11fda3",
+    "test_design_sha256": "4bcccd2f5fd22e6d225d44c92c7440474b20c4ac90e8c08cff4ba1b4c9d6a078",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.9306311155986577e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.05688020710526468,
+        "1.0": 0.056047716196223486,
+        "10.0": 0.053411706002595045,
+        "100.0": 0.05292364656310296
+      }
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "answer_reveal",
+    "baseline": "training_style_profile",
+    "penalty": 10.0,
+    "profiles": {
+      "MiniMax-M2.7": {
+        "raw_log_words": 4.796364856319338,
+        "raw_structure": 0.22664187946565703
+      },
+      "MiniMax-M3": {
+        "raw_log_words": 5.264319301760469,
+        "raw_structure": 0.3147438319962353
+      },
+      "deepseek-v4-pro": {
+        "raw_log_words": 4.541836232908781,
+        "raw_structure": 0.14543679097687098
+      },
+      "doubao-seed-2.0-lite": {
+        "raw_log_words": 4.988873164015988,
+        "raw_structure": 0.09457228535353535
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      3.7209598166555593,
+      -0.1849424687377337,
+      -0.027237181582158806,
+      0.15960058723862736,
+      0.1395219995776366,
+      0.14838278872645133,
+      0.25073350643174686,
+      0.10890661063372116,
+      0.24271795139714447,
+      0.003770003944477675,
+      -0.10364324580373346,
+      0.050722833875437086,
+      -0.2240166876236212,
+      0.004785270720223838,
+      0.05101729425584387,
+      -0.1301768382199429,
+      1.1641658678851623,
+      -0.7231374764701307
+    ],
+    "gradient_inf": 5.044607138016133e-06,
+    "tuning": {
+      "0.1": 0.05601358943485662,
+      "1.0": 0.05528095894463292,
+      "10.0": 0.05263881632533658,
+      "100.0": 0.05335186122123063
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "reasoning_elicitation",
+    "baseline": "context",
+    "penalty": 100.0,
+    "coefficients": [
+      -1.6225839525999595,
+      0.04015617050131742,
+      -0.09045634665608049,
+      0.07653761500355732,
+      -0.05539880479186751,
+      -0.09799800924275964,
+      0.02874253606306691,
+      0.042557712576183175,
+      -0.2185899149582304,
+      -0.0338812441158549,
+      0.02390488851884167,
+      -0.0431624657435494,
+      -0.02687080680344381,
+      -0.022754540769893267,
+      -0.010494194713136343,
+      0.034478138841371644
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "6a3822269cd018022d1344b08af8c1ba5aec32b0646990893ffbf21c4c860795",
+    "test_design_sha256": "675dbdfd86dc3872f0822ccd8f2733d3be4b8dd17e2ea952eec7c4efbab4ccf8",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 9.264174628764721e-06,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.1424447899484307,
+        "1.0": 0.14236778815244697,
+        "10.0": 0.14173509405893162,
+        "100.0": 0.13984637826743554
+      }
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "reasoning_elicitation",
+    "baseline": "default_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -2.1563705603518835,
+      0.08147019332456859,
+      -0.18740073926149864,
+      0.1497152917123339,
+      -0.11518944790043424,
+      -0.19284342774915864,
+      0.05861609168522314,
+      0.08093114150451794,
+      -0.46485659357837833,
+      -0.08570349000855698,
+      0.05552034888387426,
+      -0.10953937820000177,
+      -0.04114195772853007,
+      -0.04727601868962909,
+      -0.023236440923188353,
+      0.07404727916757607,
+      -1.208836185649875,
+      -0.13461896077570462,
+      0.03147037090873218
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "64ff98e50ce19aedf9ba61aff452d8e024167d539094f4eae32024b1c3c5d6e2",
+    "test_design_sha256": "b3ecb842428087d8cf0645115f1fb2e3ef271558a7894958c46d204f1302bbc0",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.227202761199813e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.10591723658650445,
+        "1.0": 0.10576354718760736,
+        "10.0": 0.10504746979894666,
+        "100.0": 0.11174650682501977
+      }
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "reasoning_elicitation",
+    "baseline": "domain_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -2.159703585646053,
+      0.11365869360518324,
+      -0.25423784428339824,
+      0.20155109587485287,
+      -0.10624518315508713,
+      -0.20294484255574907,
+      0.07678511996142189,
+      0.08788913041859199,
+      -0.31386849543069445,
+      -0.08113046552921446,
+      0.05129794327118271,
+      -0.10378586867627806,
+      -0.11887275386212172,
+      -0.04965805979862136,
+      -0.02407297920948326,
+      0.07719864281822626,
+      -1.2008004249398585,
+      -0.14744821138734038,
+      0.007248335262716893,
+      -0.03807165100266639,
+      -0.13126943157094842,
+      -0.010878890312757105,
+      0.13221033891376907,
+      -0.12964987530490607,
+      -0.07962859241760119,
+      0.07237403420650411,
+      -0.0641215932757787,
+      -0.16473952559570887
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "678dcaa4b79f156ac8fc1a73e8df6b14297eeb2a8f21cd34ef340e94284b82b9",
+    "test_design_sha256": "f87174cc012e3443cda1e7712caa897941d22c58c512e74874c7120368c1fc7f",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 1.795071060306519e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.10554252272379583,
+        "1.0": 0.10537252501186946,
+        "10.0": 0.10448383952095362,
+        "100.0": 0.1097929295298163
+      }
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "reasoning_elicitation",
+    "baseline": "conditional_profile",
+    "penalty": 10.0,
+    "coefficients": [
+      -2.201906827430171,
+      0.09296300480837297,
+      -0.21136628370178268,
+      0.20650902622161674,
+      -0.08590626948445027,
+      -0.22718152209472697,
+      0.06900586859651933,
+      0.08812367749833666,
+      -0.315867054377322,
+      -0.06247121552777784,
+      0.038276688312549434,
+      -0.07054848690572861,
+      -0.12266504838373317,
+      -0.06564913721258678,
+      -0.013655474806619258,
+      0.03355031599049991,
+      -1.2316269182068547,
+      -0.13920304303350486,
+      -0.002064347431728367,
+      -0.04063521966316612,
+      -0.125932816919021,
+      -0.022391096117834932,
+      0.12838565820874934,
+      -0.14493857516206995,
+      -0.06923687032749387,
+      0.06228939645304122,
+      -0.06451238428714526,
+      -0.1628292364009373,
+      -0.025650400995148825,
+      -0.031063942371192366,
+      0.01787152376613196,
+      -0.015565625303848203,
+      0.13254311583667458,
+      -0.14131650993066777,
+      0.08130765728740193,
+      -0.25174320521020077,
+      0.1763618450587934
+    ],
+    "constant_probability": null,
+    "block_ranks": [
+      15,
+      3,
+      9,
+      9
+    ],
+    "design_reconstruction": "Frozen predictor.design using the locked training input order and metadata.",
+    "training_design_sha256": "08e9f7ead0c5ea0c08e09b3604f33c6902e013f0e8bb69bc19323a196c11fda3",
+    "test_design_sha256": "4bcccd2f5fd22e6d225d44c92c7440474b20c4ac90e8c08cff4ba1b4c9d6a078",
+    "constant_training_label": null,
+    "converged": true,
+    "gradient_inf": 6.992696217672512e-05,
+    "tuning": {
+      "selection": "three source-fold training-only Brier CV",
+      "scores": {
+        "0.1": 0.10846229286948501,
+        "1.0": 0.108002799743587,
+        "10.0": 0.1063273405493268,
+        "100.0": 0.1103640670053159
+      }
+    }
+  },
+  {
+    "deleted_generator": "glm-5.3",
+    "event": "reasoning_elicitation",
+    "baseline": "training_style_profile",
+    "penalty": 10.0,
+    "profiles": {
+      "MiniMax-M2.7": {
+        "raw_log_words": 4.796364856319338,
+        "raw_structure": 0.22664187946565703
+      },
+      "MiniMax-M3": {
+        "raw_log_words": 5.264319301760469,
+        "raw_structure": 0.3147438319962353
+      },
+      "deepseek-v4-pro": {
+        "raw_log_words": 4.541836232908781,
+        "raw_structure": 0.14543679097687098
+      },
+      "doubao-seed-2.0-lite": {
+        "raw_log_words": 4.988873164015988,
+        "raw_structure": 0.09457228535353535
+      }
+    },
+    "style_columns": [
+      "raw_log_words",
+      "raw_structure"
+    ],
+    "constant_probability": null,
+    "coefficients": [
+      -2.184259405999675,
+      0.0804280430597964,
+      -0.1852630512213089,
+      0.14786780297584573,
+      -0.11386439969048225,
+      -0.19059103339840755,
+      0.05790789623646571,
+      0.07999509051871594,
+      -0.45987341439994084,
+      -0.08512077195954215,
+      0.05503994578633683,
+      -0.10880205700139504,
+      -0.040357500302945506,
+      -0.04670260170262861,
+      -0.023001765133046352,
+      0.07322817971712287,
+      -1.1516349157914214,
+      0.5351734274955579
+    ],
+    "gradient_inf": 2.2353075806336165e-05,
+    "tuning": {
+      "0.1": 0.10619876778817186,
+      "1.0": 0.1060455791331923,
+      "10.0": 0.10542781706111558,
+      "100.0": 0.11330650132525098
+    }
+  }
+]

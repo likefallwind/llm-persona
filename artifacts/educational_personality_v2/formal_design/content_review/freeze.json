@@ -1,0 +1,126 @@
+{
+  "status": "content review before formal freeze; no tutor generations",
+  "created_at": "2026-09-05T05:04:18.333737+00:00",
+  "training_templates": 32,
+  "training_families": 30,
+  "confirmation_templates": 32,
+  "confirmation_families": 32,
+  "shared_declared_families": [],
+  "numeric_confirmation_checks": [
+    {
+      "template": "algorithm_trace",
+      "computed": 5,
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "template": "binary_place_value",
+      "computed": 11,
+      "expected": 11,
+      "passed": true
+    },
+    {
+      "template": "shortest_path",
+      "computed": 5,
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "template": "common_multiple",
+      "computed": 24,
+      "expected": 24,
+      "passed": true
+    },
+    {
+      "template": "distinct_arrangements",
+      "computed": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "template": "exponent_product",
+      "computed": 128,
+      "expected": 128,
+      "passed": true
+    },
+    {
+      "template": "median_order",
+      "computed": 6,
+      "expected": 6,
+      "passed": true
+    },
+    {
+      "template": "prism_volume",
+      "computed": 60,
+      "expected": 60,
+      "passed": true
+    },
+    {
+      "template": "right_triangle",
+      "computed": 10.0,
+      "expected": 10,
+      "passed": true
+    },
+    {
+      "template": "signed_temperature",
+      "computed": 5,
+      "expected": 5,
+      "passed": true
+    },
+    {
+      "template": "triangle_area",
+      "computed": 35.0,
+      "expected": 35,
+      "passed": true
+    },
+    {
+      "template": "contact_pressure",
+      "computed": 2000.0,
+      "expected": 2000,
+      "passed": true
+    },
+    {
+      "template": "gas_volume",
+      "computed": 4.0,
+      "expected": 4,
+      "passed": true
+    },
+    {
+      "template": "kinetic_energy",
+      "computed": 9.0,
+      "expected": 9,
+      "passed": true
+    },
+    {
+      "template": "radioactive_half_life",
+      "computed": 20.0,
+      "expected": 20,
+      "passed": true
+    },
+    {
+      "template": "trophic_transfer",
+      "computed": 200.0,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "template": "turning_moment",
+      "computed": 3.0,
+      "expected": 3,
+      "passed": true
+    }
+  ],
+  "expected_review_requests": 128,
+  "temperature": 0,
+  "max_tokens": 8192,
+  "manifest_sha256": "6bea76f631c898e57a659c88b64ca62b0dd06b6f5cc94c45b4ab3060a955296e",
+  "banks": {
+    "data/educational_personality_candidate_templates_v3.json": "9fe8cde65d0bf8ba5e8826fdbd1c68712b28c465487263a80cf149cc4bbc40eb",
+    "data/educational_personality_confirmation_templates_v3.json": "0f9441b299b6ba64b79f511434bfafe6b5dfeffde9822c88039f03d64a2210b7"
+  },
+  "limitations": [
+    "Authored source-family separation is not proof of conceptual independence or absence from pretraining.",
+    "Arithmetic checks use declared quantities; reference prose also receives two-model review.",
+    "Reviewer agreement is a content diagnostic, not human gold validity."
+  ]
+}

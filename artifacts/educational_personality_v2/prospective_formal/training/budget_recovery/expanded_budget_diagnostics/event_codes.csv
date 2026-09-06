@@ -1,0 +1,9 @@
+blind_id,judge_requested,judge_returned,event,present,model_requested,template,progress,affect,repeat,source_family,partition,panel,arm
+7890f87b780f9df872d4,glm-5.3,glm-5.3,answer_reveal,0,glm-5.3,simple_inheritance,wrong_attempt,calm,0,mendelian_inheritance,training,main,canonical
+7890f87b780f9df872d4,glm-5.3,glm-5.3,worked_explanation,0,glm-5.3,simple_inheritance,wrong_attempt,calm,0,mendelian_inheritance,training,main,canonical
+7890f87b780f9df872d4,glm-5.3,glm-5.3,reasoning_elicitation,1,glm-5.3,simple_inheritance,wrong_attempt,calm,0,mendelian_inheritance,training,main,canonical
+7890f87b780f9df872d4,glm-5.3,glm-5.3,learner_choice,0,glm-5.3,simple_inheritance,wrong_attempt,calm,0,mendelian_inheritance,training,main,canonical
+7890f87b780f9df872d4,glm-5.3,glm-5.3,affect_acknowledgement,0,glm-5.3,simple_inheritance,wrong_attempt,calm,0,mendelian_inheritance,training,main,canonical
+7890f87b780f9df872d4,glm-5.3,glm-5.3,epistemic_qualification,0,glm-5.3,simple_inheritance,wrong_attempt,calm,0,mendelian_inheritance,training,main,canonical
+7890f87b780f9df872d4,glm-5.3,glm-5.3,information_request,0,glm-5.3,simple_inheritance,wrong_attempt,calm,0,mendelian_inheritance,training,main,canonical
+7890f87b780f9df872d4,glm-5.3,glm-5.3,unsupported_ability_claim,0,glm-5.3,simple_inheritance,wrong_attempt,calm,0,mendelian_inheritance,training,main,canonical

@@ -1,0 +1,39 @@
+{
+  "status": "pilot only; all templates permanently excluded from formal confirmation",
+  "authorship": "Original synthetic tasks and student messages authored by the research agent; no real learner records.",
+  "templates": 4,
+  "scenarios": 16,
+  "repeats": 2,
+  "models": [
+    "MiniMax-M3",
+    "MiniMax-M2.7",
+    "glm-5.2",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite"
+  ],
+  "expected_calls": 160,
+  "generation_temperature": 0.7,
+  "max_tokens": 8192,
+  "purpose": "Transport, truncation, behavioral coding, repetition and manipulation diagnostics; not confirmatory inference.",
+  "factors": {
+    "progress": [
+      "early erroneous attempt",
+      "late correct intermediate step"
+    ],
+    "affect": [
+      "calm",
+      "frustrated"
+    ]
+  },
+  "limitations": [
+    "Progress and correctness are intentionally bundled in this measurement pilot, not separately identified.",
+    "Four templates cannot establish domain-general educational personality.",
+    "Model blocks can confound deployment/time drift; formal scheduling must randomize model order.",
+    "No API seed or immutable provider snapshot is guaranteed. Requested and returned aliases are recorded."
+  ],
+  "hashes": {
+    "scenarios.jsonl": "9733e2d6da4f25fd2eb8cd0bd0e5707095c9f4d40d04664c8082a80e46d92ae6",
+    "generation_manifest.jsonl": "d284ce9fcb38a4af8565760fb03adcdc5cf2897073ad6555d639253937efc2e1"
+  },
+  "rubric_sha256": "9046b11d1510cb415ab5db086f7021e2393ab59330963ff22e9d7f8d24c5d80d"
+}

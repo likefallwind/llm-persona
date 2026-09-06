@@ -1,0 +1,19 @@
+{
+  "snapshot_at": "2026-09-05T07:19:38.365312+00:00",
+  "source": "artifacts/educational_personality_v2/prospective_formal/training/judge/v2_2/run/responses.jsonl",
+  "snapshot_sha256": "48079260c3af8db293a96aecf37524e61e41b346dbc5b3c204391b0748e7e272",
+  "snapshot_bytes": 4513451,
+  "trailing_unterminated_bytes_excluded": 0,
+  "rows": 2172,
+  "snapshot_directory": "/tmp/personality_training_structure__w3x2wav",
+  "live_writer_untouched": true,
+  "status": "partial structural monitoring only; no labels used for model fitting or selection",
+  "valid_returned_requests": 2171,
+  "missing_requests": 1668,
+  "invalid_returned_requests": 1,
+  "error_categories": {
+    "invalid_completion_Empty visible completion": 1
+  },
+  "no_api_calls": true,
+  "live_pipelines_unchanged": true
+}

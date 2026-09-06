@@ -1,0 +1,17 @@
+{
+  "updated_at": "2026-09-06T01:15:02.418648+00:00",
+  "previous_english_methods_words": 2335,
+  "new_english_main_methods_words": 956,
+  "previous_english_methods_sha256": "167bbb11271c06981075e92529c894b092af62e51a08ef5dcf1dca1fabb21007",
+  "previous_chinese_methods_sha256": "05b1baf0c00cecad23b39a74435802c9ad6201699fb69057a2360048af348674",
+  "scope": "Editorial main-text condensation; full methods retained in bilingual appendices, design figure moved to main exactly once. No experiment or statistical code changed.",
+  "empirical_results_added": false,
+  "render_review_pending": false,
+  "review_record": "paper/educational_personality_v3/build/render_review.json",
+  "current_pdf_sha256": {
+    "working_draft_en.pdf": "8f91aee097056411d1d2201c38d9135653d1dd3542280cc7c479999c6d6d9140",
+    "working_draft_zh.pdf": "a1ef03627e9c60fbbcff62e235de1549711e405e9e6baea3c8ac745d0c503901"
+  },
+  "frozen_confirmation_inputs_check": "passed after editorial changes",
+  "scientific_results_pending": true
+}

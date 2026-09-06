@@ -1,0 +1,25 @@
+{
+  "status": "generator-deletion forecasts locked before confirmation generation",
+  "locked_at": "2026-09-05T11:01:03.509705+00:00",
+  "deleted_configurations": [
+    "MiniMax-M2.7",
+    "MiniMax-M3",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-lite",
+    "glm-5.3"
+  ],
+  "fitted_models": 75,
+  "prediction_rows": 76800,
+  "primary_prediction_lock_sha256": "ad6650f9776e16cde29440d8a67f6e0873d98c70846c8fe93dd89ee571c1642c",
+  "files": {
+    "artifacts/educational_personality_v2/prospective_formal/locked_generator_deletion/predictions.csv": "f49caea935e6e1cfced218523ce5ed49e6fa62468f3f0e680edd85d289bb07ec",
+    "artifacts/educational_personality_v2/prospective_formal/locked_generator_deletion/models.json": "32b3233277f85d36e3a918254c34200455e59884a86894b04821b7be20b541ed",
+    "artifacts/educational_personality_v2/prospective_formal/prediction_lock.json": "ad6650f9776e16cde29440d8a67f6e0873d98c70846c8fe93dd89ee571c1642c",
+    "scripts/lock_personality_generator_deletion_v3.py": "6d79d65a57c04ac1851af187faf6cde9ffaf8bb0e3d699a1632bc9bca8fc03e4"
+  },
+  "limitations": [
+    "The omitted generator is not evaluated; this is not unseen-generator generalization.",
+    "Removing a generator changes the target mixture, so the difference is not a causal contribution.",
+    "The five-generator majority-label comparisons remain primary regardless of these results."
+  ]
+}

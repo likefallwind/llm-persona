@@ -1,0 +1,204 @@
+{
+  "reviewed_at": "2026-09-06T01:16:51.955956+00:00",
+  "status": "Condensed bilingual main methods and detailed appendices built; seven changed-page samples visually reviewed. Empirical and final full-paper review incomplete.",
+  "pdf_sha256": {
+    "working_draft_en.pdf": "8f91aee097056411d1d2201c38d9135653d1dd3542280cc7c479999c6d6d9140",
+    "working_draft_zh.pdf": "a1ef03627e9c60fbbcff62e235de1549711e405e9e6baea3c8ac745d0c503901"
+  },
+  "reviewed_pages": {
+    "working_draft_en.pdf": [
+      3,
+      4,
+      5,
+      9
+    ],
+    "working_draft_zh.pdf": [
+      3,
+      4,
+      6
+    ]
+  },
+  "page_counts": {
+    "en": 13,
+    "zh": 10
+  },
+  "observations": [
+    "Main methods follow recurrence, locked prediction, and prompt effects, with full protocol detail in appendices.",
+    "English cross-references to Appendix B and the pilot section resolve.",
+    "The design figure appears exactly once in each language and remains legible.",
+    "No overlapping or clipped content on the seven inspected pages; no overfull, missing-glyph, undefined-reference or multiply-defined-label warnings in final TeX logs.",
+    "The Chinese appendix is explicitly named and numbered by the existing reading-draft renderer; final venue formatting remains outstanding."
+  ],
+  "paper_complete": false,
+  "previous_review": {
+    "reviewed_at": "2026-09-05T11:03:39.922037+00:00",
+    "status": "single-code budget amendment pages visually inspected; final manuscript review pending",
+    "pdf_sha256": {
+      "working_draft_en.pdf": "d43fc5c4e4b0cb00586f7cd4fd4878746cfd542392ffe48522c30ca568ede0e9",
+      "working_draft_zh.pdf": "105ee576ef1c626ddb8a154e113cb53e52386d7d21a65a18540e15e867e2fe7b"
+    },
+    "reviewed_pages": {
+      "working_draft_en.pdf": [
+        5
+      ],
+      "working_draft_zh.pdf": [
+        4
+      ]
+    },
+    "observations": [
+      "Budget deviation is visible and legible in both languages.",
+      "No clipped text, overlapping layout, missing glyphs, or undefined references on the revised pages."
+    ],
+    "page_counts": {
+      "en": 11,
+      "zh": 8
+    },
+    "paper_complete": false,
+    "previous_review": {
+      "status": "selected updated pages inspected; empirical and final full-paper review incomplete",
+      "checked_at": "2026-09-05T09:41:43.575877+00:00",
+      "english_pages": 11,
+      "chinese_pages": 8,
+      "inspected_current_pages": {
+        "en": [
+          4,
+          5
+        ],
+        "zh": [
+          3,
+          4
+        ]
+      },
+      "pixel_equivalence_verified_after_final_rebuild": [
+        "en:4",
+        "zh:3"
+      ],
+      "checks": {
+        "design_schematic_legible_in_both_pdfs": true,
+        "interruption_disclosure_legible_in_both_pdfs": true,
+        "planned_counts_match_frozen_manifests": true,
+        "no_overfull_missing_glyph_or_undefined_citation_in_final_build_logs": true
+      },
+      "remaining": [
+        "Final prospective primary, robustness and content-review results",
+        "Empirical abstract, discussion, conclusion and final bilingual result figures",
+        "Venue layout and full final document inspection"
+      ],
+      "pdf_sha256": {
+        "working_draft_en.pdf": "91983419e6fa2e75c0b85d6de87c144ef3d2d4df8f88a6bf87fcd3932bfe5c3a",
+        "working_draft_zh.pdf": "bdc18ff7cff9635937632464f979b81df2dc0613b28dc9cb9eb2c5c1a0f9abd8"
+      },
+      "figure_sha256": {
+        "study_design.pdf": "38ffd55456256f96283b74e524d2b84ad429e1b90b09c733f9c0a911cabaa053"
+      },
+      "previous_review": {
+        "status": "selected updated pages inspected; empirical and final full-paper review incomplete",
+        "checked_at": "2026-09-05T09:26:20.493218+00:00",
+        "english_pages": 11,
+        "chinese_pages": 8,
+        "inspected_current_pages": {
+          "en": [
+            4
+          ],
+          "zh": [
+            3
+          ]
+        },
+        "checks": {
+          "design_schematic_legible_in_both_pdfs": true,
+          "planned_counts_match_frozen_manifests": true,
+          "training_and_main_confirmation_source_families_disjoint": true,
+          "no_overfull_missing_glyph_or_undefined_citation_in_final_build_logs": true
+        },
+        "remaining": [
+          "Final prospective primary, robustness and content-review results",
+          "Empirical abstract, discussion, conclusion and final bilingual result figures",
+          "Venue layout and full final document inspection"
+        ],
+        "pdf_sha256": {
+          "working_draft_en.pdf": "3c505c66672fcdbd3a691fe101726ba6448f18f139d7cd1e82a8db1ab7aaf718",
+          "working_draft_zh.pdf": "e71ca429bc859003a158daef0569e0624d2a4f167286a842fbe6540d638b0a0a"
+        },
+        "figure_sha256": {
+          "study_design.pdf": "38ffd55456256f96283b74e524d2b84ad429e1b90b09c733f9c0a911cabaa053"
+        },
+        "previous_review": {
+          "status": "selected updated pages inspected; empirical and final full-paper review incomplete",
+          "checked_at": "2026-09-05T08:16:31.154672+00:00",
+          "english_pages": 11,
+          "chinese_pages": 8,
+          "inspected_current_pages": {
+            "en": [
+              5,
+              9
+            ],
+            "zh": [
+              4,
+              7
+            ]
+          },
+          "checks": {
+            "neutral_bound_methods_and_formula_legible": true,
+            "limitations_and_Hoeffding_reference_legible": true,
+            "no_overfull_missing_glyph_or_undefined_citation_in_final_build_logs": true
+          },
+          "remaining": [
+            "Final prospective primary, robustness and content-review results",
+            "Empirical abstract, discussion, conclusion and final bilingual result figures",
+            "Venue layout and full final document inspection"
+          ],
+          "pdf_sha256": {
+            "working_draft_en.pdf": "217f81c8318a2e742369735030064489d54732783126576a9a82462be86421eb",
+            "working_draft_zh.pdf": "052525fd46eb29983ffc119a0858c1b47ea438003d2e9c41c9a8daf2e953e91e"
+          },
+          "previous_review": {
+            "status": "selected updated pages inspected; empirical and final full-paper review incomplete",
+            "checked_at": "2026-09-05T07:44:36.332791+00:00",
+            "english_pages": 10,
+            "chinese_pages": 8,
+            "inspected_current_pages": {
+              "en": [
+                6,
+                7,
+                8
+              ],
+              "zh": [
+                2,
+                4,
+                5,
+                6
+              ]
+            },
+            "pixel_equivalence_verified_after_final_rebuild": [
+              "en:6",
+              "en:7",
+              "en:8",
+              "zh:2",
+              "zh:4"
+            ],
+            "checks": {
+              "content_sensitivity_methods_legible": true,
+              "chinese_method_subsections_grouped": true,
+              "pilot_figure_precedes_following_sections": true,
+              "citations_resolved": true,
+              "no_overfull_or_missing_glyphs_in_build_logs": true
+            },
+            "remaining": [
+              "Final prospective primary, robustness and content-review results",
+              "Empirical abstract, discussion, conclusion and final bilingual result figures",
+              "Venue layout and full final document inspection"
+            ],
+            "pdf_sha256": {
+              "working_draft_en.pdf": "23367971cd6578ef04d313937ce60778c3911084279c7fab5e97c00b27f8b16b",
+              "working_draft_zh.pdf": "99f65191780609918b2da9d30b2092b156b9670d0cb69e8b7772c8932abeaa4a"
+            },
+            "previous_review_pdf_sha256": {
+              "working_draft_en.pdf": "3732387f90fb59d7fb6a6a2d3eaf5f20731e6778d64213509bcb053cf68c6595",
+              "working_draft_zh.pdf": "fdbcf21288f837f6304b6343e0550f4df976e63e572288a1cf47841d19bbd50f"
+            }
+          }
+        }
+      }
+    }
+  }
+}

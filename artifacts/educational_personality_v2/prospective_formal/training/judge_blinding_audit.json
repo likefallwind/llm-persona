@@ -1,0 +1,9 @@
+{
+  "status": "pass",
+  "checked_at": "2026-09-05T05:37:37.657415+00:00",
+  "requests": 3840,
+  "explicit_generator_role_and_partition_metadata_in_coder_payload": false,
+  "teacher_system_messages_in_student_conversation": false,
+  "manifest_sha256": "97796b2095d37916dde375dcb694da29e0d89e2f8ab508edbed1bf4ef187571a",
+  "limitation": "Output content/style may still reveal generator or instruction; only explicit metadata exclusion is verified."
+}

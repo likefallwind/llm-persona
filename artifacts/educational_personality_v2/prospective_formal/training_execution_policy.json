@@ -1,0 +1,16 @@
+{
+  "status": "operational continuation policy fixed before any formal judge calls",
+  "created_at": "2026-09-05T05:22:36.689477+00:00",
+  "generation_extra_repair_pass_limit": 2,
+  "judge_extra_structural_repair_pass_limit": 2,
+  "rule": "Same inputs and parameters. Reuse every valid response. Retry only transport/completion/schema/evidence failures, never semantic disagreement or observed behavior. Preserve every original attempt.",
+  "confirmation_auto_start": false,
+  "files": {
+    "scripts/finish_personality_training_v3.py": "708b3fb5976f41501371ec8acd17d137e0f9ba4e22c40b91f2fdac13fab3a6d6",
+    "scripts/lock_personality_predictions_v3.py": "eb9793fd31e76194fdb7f1efd87d9982059420a7d3e14f9805b43e6849aeff27",
+    "scripts/personality_style_competitor_v3.py": "e08c621ba1aec198e7bbc7e1ad953060f4e7d417941336506f064764cca1b079",
+    "scripts/seed_personality_judge_run_v2.py": "f1a76e9c6ad71d2d69834d5bb01add05c601179e0589f1bbc8c1b6d44fd83edf",
+    "scripts/analyze_personality_coding_v2.py": "7c52c5202e01f4fa70ca7d4cfa7338bbc1a8836b0b56f920c7ef06f85502d219",
+    "scripts/audit_personality_generation_v2.py": "e3488188c44085586f30112107c7082500b7e1b9ac267041de7d28b0f9a069bc"
+  }
+}
