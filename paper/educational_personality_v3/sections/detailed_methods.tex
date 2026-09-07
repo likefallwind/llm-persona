@@ -148,6 +148,31 @@ The interrupted run, failed attempts, and amendment receipt are retained; the
 single expanded-budget code is an explicit deviation from the original
 uniform-budget protocol.
 
+Confirmation coding subsequently exhausted its two repair passes with 12,114
+of 12,120 codes valid. All six remaining GLM requests produced empty visible
+outputs after both 16,384-token attempts in each repair pass. Before computing
+primary confirmation results, a separate amendment permitted these six requests
+a 32,768-token ceiling and at most two attempts each, with unchanged inputs,
+model, rubric, temperature, and parser. It selects every remaining missing code,
+without selecting by event label or agreement; all prior valid codes are retained.
+The two budget groups require separate validation and an exact disjoint union.
+Two affected answers belong to the canonical prediction panel, one to a neutral
+wording arm, and three to the missing-information opportunity panel. The
+supplemental sensitivity enumerates all binary assignments for the two missing
+canonical GLM codes while fixing the other coders and locked predictions, and
+bounds the affected descriptive contrasts. This is an explicitly amended
+measurement protocol; it does not reset the original frozen repair allowance.
+Five requests completed under this amendment. The remaining opportunity-probe
+request returned HTTP 502 at approximately 300 seconds on both attempts,
+matching the local Gateway's upstream read timeout. A separate transport
+amendment retained those five completed codes, increased only the idle
+Gateway's read timeout from 300 to 660 seconds, and permitted at most two
+additional attempts for that one request under the same 32,768-token budget.
+The client timeout remained 720 seconds. This extra transport allowance is
+also retained in the protocol history rather than counted as part of either
+earlier repair allowance.
+
+
 \subsection{Prediction Before Confirmation Generation}
 
 For each behavior, four nested logistic predictors model the probability of its
@@ -250,7 +275,7 @@ uncertainty. Withholding a solution, asking a question, or correctly quoting
 and correcting an error is not itself an error. Positive error judgments
 require a category and source-line evidence.
 
-Twelve agent-authored controls accompany the responses, giving 2,584 planned
+Twelve agent-authored controls accompany the responses, giving 2,584
 secondary review requests. Each reviewer must match at least five of six
 controls in each of the clear-error and no-clear-error classes to meet the
 limited diagnostic rule. If either reviewer fails, screened results remain
@@ -266,3 +291,16 @@ with descriptive source intervals, without new hypothesis tests. These screens
 condition on generated responses and change the target distribution; they are
 not causal controls for ability. The content review covers the canonical panel,
 not all prompt-intervention responses.
+
+The first content pass returned all 2,584 records, but its initial validator
+reconstructed a zero temperature as JSON integer \texttt{0}, whereas the
+request runner had serialized float \texttt{0.0}. A separately recorded
+correction reconstructs the exact payload from the verified recorded numeric
+value. All prompt, response and corrected payload hashes match; no sampling
+parameter, input, verdict rule, or original file changes. The unchanged parser
+accepts 2,577 initial reviews. The first of the original two allowed repair
+passes resolves all seven structural failures: two invalid concise explanations
+and five invalid evidence-line references. All seven complete on their first
+HTTP attempts; the 2,577 valid original reviews remain unchanged. The correction,
+original failed diagnostic, and repair history are retained. Both reviewers'
+twelve control judgments are valid and match the expected verdicts.

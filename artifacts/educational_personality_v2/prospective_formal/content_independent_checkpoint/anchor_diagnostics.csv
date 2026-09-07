@@ -1,0 +1,5 @@
+judge,expected_verdict,n,matches
+MiniMax-M3,clear_error,6,6
+MiniMax-M3,no_clear_error,6,6
+deepseek-v4-pro,clear_error,6,6
+deepseek-v4-pro,no_clear_error,6,6

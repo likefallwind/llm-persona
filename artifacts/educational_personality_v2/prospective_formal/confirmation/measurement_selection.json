@@ -1,0 +1,13 @@
+{
+  "status": "complete confirmation measurement",
+  "diagnostics": "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/combined_diagnostics",
+  "final_run": null,
+  "source_runs": [
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/judge/v2_2/run_repair2",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/judge/run"
+  ],
+  "completed_at": "2026-09-07T01:29:23.438975+00:00",
+  "original_and_repair_runs_retained": true,
+  "coverage_sha256": "9e9fcd008b094915a973cf5c4de83deb56288df5ad1933c9f89df09c025dfb7b",
+  "budget_amendment": "artifacts/educational_personality_v2/prospective_formal/confirmation_transport_amendment.json"
+}

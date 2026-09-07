@@ -1,0 +1,33 @@
+{
+  "status": "secondary mathematics and content-selection sensitivity complete; primary results unchanged",
+  "canonical_responses": 1280,
+  "agent_authored_anchors": 12,
+  "reviewers": [
+    "MiniMax-M3",
+    "deepseek-v4-pro"
+  ],
+  "diagnostic_anchor_rule_met": true,
+  "new_hypothesis_tests": 0,
+  "new_tutor_generations": 0,
+  "new_fit_or_tuning": false,
+  "selected_responses": {
+    "all_canonical": 1280,
+    "mathematics": 320,
+    "without_unanimous_error_slots": 1255,
+    "without_any_error_slots": 1065,
+    "without_error_or_uncertain_slots": 1065
+  },
+  "limits": [
+    "Content screening conditions on generated responses and changes the target distribution; it is not causal ability control.",
+    "Both reviewers may share errors; no_clear_error is not guaranteed correctness.",
+    "Agent-authored anchors provide limited diagnostic evidence, not human gold validation.",
+    "If either reviewer misses more than one anchor in either class, screened findings are measurement-limited diagnostics only.",
+    "Mathematics has only eight source groups; no additional significance claims are made."
+  ],
+  "files": {
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/validation_recovery/diagnostics/pass1/codes.jsonl": "1a3912d5e2ee2d82674789c48fbf9769dfb1db916f202452dde61c09df02f38a",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/scored_locked_predictions.csv": "196ce859f55837c036463d8efc668339065bc9a83d279843104dddcb9bc6222b",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/freeze.json": "4ccf8107c346512d9fee1b82e8f1cd5a9af8679e658c83475a5f3d4224125a25",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity_policy.json": "64da5dd7cd0cd748b41127e1dd86d14e97b88e25e7041d48361ea585c5d7c1e4"
+  }
+}

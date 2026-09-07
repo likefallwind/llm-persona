@@ -1,0 +1,1 @@
+Canonical event rates in the four controlled student-state conditions on 32 confirmation sources. Each point averages 64 responses. Lines connect calm/frustrated inputs within a work state. Wrong attempt versus correct partial work bundles correctness and progress. These descriptive curves do not replace the locked test of incremental conditional prediction.

@@ -1,0 +1,19 @@
+{
+  "status": "descriptive tables complete; no new primary tests or predictor fitting",
+  "completed_at": "2026-09-07T01:30:29.835278+00:00",
+  "matched_prompt_sources": 16,
+  "new_primary_tests": 0,
+  "input_hashes": {
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/combined_diagnostics/consensus.csv": "68fd0ff21921662c34470df67ec4dc42ace23e6db854d91f5a2aa240852cd0dc",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/combined_diagnostics/consensus.csv": "83d928fde474de55ea33a7933454ab99784a0c44a930e0d15b40c929b890d0b3",
+    "artifacts/educational_personality_v2/prospective_formal/descriptive_analysis_policy.json": "477fcc936bac44c5e8a5de9647afc969d28115968befb0333efed1166c462b4f",
+    "scripts/describe_personality_confirmation_v3.py": "64d93cefe19e2b85a3a672740a9544d6f08d2e23419bf8f071dcc709c0fe63d8"
+  },
+  "limitations": [
+    "Joint actions do not identify temporal action order.",
+    "Prompt dispersion uses five fixed configurations on sixteen matched sources.",
+    "Sentinel changes mix generation variation, coding variation, and possible deployment drift.",
+    "Four sentinel templates with two requests cannot establish absence of drift.",
+    "Opportunity probes change available facts; eight sources do not establish a general trait."
+  ]
+}

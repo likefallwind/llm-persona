@@ -1,7 +1,10 @@
 phase,provider,requested_model,max_tokens,saved_attempts,complete_attempts,failed_attempts,single_attempt_top_level_usage_used,reported_prompt_tokens,reported_completion_tokens,reported_total_tokens,prompt_tokens_unknown_attempts,completion_tokens_unknown_attempts,total_tokens_unknown_attempts,unique_saved_records
-confirmation_coding,gateway,deepseek-v4-pro,16384,67,67,0,0,78614,236665,315279,0,0,0,67
-confirmation_coding,gateway,glm-5.3,16384,62,62,0,0,67447,164439,231886,0,0,0,62
-confirmation_coding,minimax,MiniMax-M3,16384,366,361,5,0,446735,365774,812509,5,5,5,361
+confirmation_coding,gateway,deepseek-v4-pro,16384,5837,4042,1795,0,4725366,14862564,19587930,1794,1794,1794,4933
+confirmation_coding,gateway,glm-5.3,16384,5880,4038,1842,0,4523109,11660031,16183140,1748,1748,1748,4916
+confirmation_coding,gateway,glm-5.3,32768,10,6,4,0,7601,89814,97415,4,4,4,7
+confirmation_coding,minimax,MiniMax-M3,16384,4046,4040,6,0,4994927,4086854,9081781,6,6,6,4040
+confirmation_content_review,gateway,deepseek-v4-pro,16384,1298,1297,1,0,1126764,648256,1775020,1,1,1,1297
+confirmation_content_review,minimax,MiniMax-M3,16384,1294,1294,0,0,1213531,335668,1549199,0,0,0,1294
 confirmation_generation,gateway,deepseek-v4-pro,8192,808,808,0,0,163758,432039,595797,0,0,0,808
 confirmation_generation,gateway,doubao-seed-2.0-lite,8192,808,808,0,0,133454,539698,673152,0,0,0,808
 confirmation_generation,gateway,glm-5.3,8192,808,808,0,0,108510,630080,738590,0,0,0,808

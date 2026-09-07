@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2026.6.26)  6 SEP 2026 09:15
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Debian) (preloaded format=xelatex 2026.6.26)  7 SEP 2026 10:20
 entering extended mode
  %&-line parsing enabled.
 **build/reading_zh.tex
@@ -639,12 +639,16 @@ File: figures/study_design.pdf Graphic file (type pdf)
 LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/sl' in size <10.95> 
 not available
 (Font)              Font shape `TU/FandolSong-Regular(0)/m/it' tried instead on
- input line 63.
- [2] [3]
+ input line 59.
+ [2] [3] [4]
+File: figures/confirmation_prediction_gains_publication.pdf Graphic file (type 
+pdf)
+<use figures/confirmation_prediction_gains_publication.pdf>
+
+[5] [6] [7]
 File: figures/measurement_pilot.pdf Graphic file (type pdf)
 <use figures/measurement_pilot.pdf>
- [4]
-[5] [6] [7]
+ [8] [9] [10] [11]
 
 Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
 (fontspec)                Script "CJK".
@@ -661,21 +665,40 @@ Package fontspec Info: Font family 'FandolFang-Regular(0)' created for font
 (fontspec)             <->"[FandolFang-Regular.otf]/OT:language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 
-[8] (build/working_draft_zh.bbl [9]) [10] (build/working_draft_zh.aux)
+[12] [13] [14]
+File: figures/confirmation_default_repetition_publication.pdf Graphic file (typ
+e pdf)
+<use figures/confirmation_default_repetition_publication.pdf>
+File: figures/confirmation_student_states_publication.pdf Graphic file (type pd
+f)
+<use figures/confirmation_student_states_publication.pdf>
+ [15]
+File: figures/confirmation_prompt_changes_publication.pdf Graphic file (type pd
+f)
+<use figures/confirmation_prompt_changes_publication.pdf>
+ [16] [17]
+Underfull \hbox (badness 1082) in paragraph at lines 436--437
+[]\TU/FandolSong-Regular(0)/m/n/10.95 完 整 \TU/lmr/m/n/10.95 4,040 \TU/FandolSon
+g-Regular(0)/m/n/10.95 条 面 板 上 的 认 识 限 定 正 例 编 码 一 致 率 为 \TU/lmr/m/n/10.95 39.6
+2% |\TU/FandolSong-Regular(0)/m/n/10.95 —| \TU/lmr/m/n/10.95 61.26%\TU/FandolSo
+ng-Regular(0)/m/n/10.95 ，|  无 依 据 能 力 归 因 为
+ []
+
+[18] (build/working_draft_zh.bbl [19]) [20] (build/working_draft_zh.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
 Package rerunfilecheck Info: File `working_draft_zh.out' has not changed.
-(rerunfilecheck)             Checksum: F1DA3D94342AE52187AF2419355FD32F;2100.
+(rerunfilecheck)             Checksum: F0BE2FD18BF4F3CD5FD048B548D5E64A;4606.
  ) 
 Here is how much of TeX's memory you used:
- 16312 strings out of 476415
- 366045 string characters out of 5792682
- 1958627 words of memory out of 5000000
- 38042 multiletter control sequences out of 15000+600000
- 564853 words of font info for 84 fonts, out of 8000000 for 9000
+ 16539 strings out of 476415
+ 381755 string characters out of 5792682
+ 1955627 words of memory out of 5000000
+ 38259 multiletter control sequences out of 15000+600000
+ 565339 words of font info for 90 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 93i,6n,97p,407b,477s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,6n,97p,658b,477s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/working_draft_zh.pdf (10 pages).
+Output written on build/working_draft_zh.pdf (20 pages).

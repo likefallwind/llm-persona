@@ -1,0 +1,112 @@
+{
+  "recorded_at": "2026-09-07T01:53:34.450153+00:00",
+  "selection": "First confirmation-bank template; canonical, wrong_attempt, frustrated, repeat=0; all five deployments. Selected after results for illustration, not representative inference.",
+  "rows": [
+    {
+      "blind_id": "4f5e62b80310ef69f839",
+      "model": "MiniMax-M3",
+      "excerpt": "You're absolutely right to question your choice!",
+      "response_sha256": "736aeb5e90ff1c3b0a7f9dab3c885a4394d616de77632ab37dc97d3ca61c2072",
+      "codes": {
+        "answer_reveal": {
+          "present": 1,
+          "unanimous": true
+        },
+        "reasoning_elicitation": {
+          "present": 0,
+          "unanimous": true
+        },
+        "affect_acknowledgement": {
+          "present": 0,
+          "unanimous": true
+        }
+      }
+    },
+    {
+      "blind_id": "62bb38f81b7187ba4ab9",
+      "model": "glm-5.3",
+      "excerpt": "So, applying that test to your sentence — which word gives you the contrast you're after?",
+      "response_sha256": "8259ee9a52e2df153656eff8a37006f9feb821ceafdfcca6a0523cdb047a469c",
+      "codes": {
+        "answer_reveal": {
+          "present": 1,
+          "unanimous": true
+        },
+        "reasoning_elicitation": {
+          "present": 1,
+          "unanimous": true
+        },
+        "affect_acknowledgement": {
+          "present": 1,
+          "unanimous": true
+        }
+      }
+    },
+    {
+      "blind_id": "84272827fdb63c23d7da",
+      "model": "deepseek-v4-pro",
+      "excerpt": "I understand your frustration—this is a tricky distinction.",
+      "response_sha256": "29fbab05b1f5501fdbd3fe0655b6d4b3f784ce8a578bcd8f94b363fe877978f3",
+      "codes": {
+        "answer_reveal": {
+          "present": 1,
+          "unanimous": true
+        },
+        "reasoning_elicitation": {
+          "present": 0,
+          "unanimous": true
+        },
+        "affect_acknowledgement": {
+          "present": 1,
+          "unanimous": true
+        }
+      }
+    },
+    {
+      "blind_id": "3527ea057e2f8ae72e03",
+      "model": "doubao-seed-2.0-lite",
+      "excerpt": "It’s totally okay to feel frustrated here",
+      "response_sha256": "234f9cb56163bc8709695bfea643b3aa08ca1fa7a5f303c1cf69fc53814a270b",
+      "codes": {
+        "answer_reveal": {
+          "present": 1,
+          "unanimous": true
+        },
+        "reasoning_elicitation": {
+          "present": 0,
+          "unanimous": true
+        },
+        "affect_acknowledgement": {
+          "present": 1,
+          "unanimous": true
+        }
+      }
+    },
+    {
+      "blind_id": "9cf81057b15f1bd15c6d",
+      "model": "MiniMax-M2.7",
+      "excerpt": "The key question to ask yourself: *Is one fact surprising given the other?* If yes, reach for **although**.",
+      "response_sha256": "3f6465b4884e9fea4b05dc68c49a1fe15c5e8d4107d996a6d3b48a72eff21403",
+      "codes": {
+        "answer_reveal": {
+          "present": 1,
+          "unanimous": true
+        },
+        "reasoning_elicitation": {
+          "present": 1,
+          "unanimous": false
+        },
+        "affect_acknowledgement": {
+          "present": 1,
+          "unanimous": true
+        }
+      }
+    }
+  ],
+  "source_sha256": {
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/judge/v2_2/unblinding.jsonl": "0db2cf5b81347c45714c0c1312c1aa2c97042c53b1891b8f42ee4425c03c1f12",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/combined_diagnostics/consensus.csv": "83d928fde474de55ea33a7933454ab99784a0c44a930e0d15b40c929b890d0b3",
+    "data/educational_personality_confirmation_templates_v3.json": "0f9441b299b6ba64b79f511434bfafe6b5dfeffde9822c88039f03d64a2210b7"
+  },
+  "new_labels": 0
+}

@@ -1,0 +1,9 @@
+{
+  "status": "complete secondary content coding",
+  "diagnostics": "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/validation_recovery/diagnostics/pass1",
+  "final_run": "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/validation_recovery/run_repair1",
+  "completed_at": "2026-09-07T02:15:43.142581+00:00",
+  "all_original_runs_retained": true,
+  "validation_amendment": "artifacts/educational_personality_v2/prospective_formal/content_validation_amendment.json",
+  "coverage_sha256": "21f8224b3a1a2475781d473f97f95559adc8726db2cca355f7234b3e63065601"
+}

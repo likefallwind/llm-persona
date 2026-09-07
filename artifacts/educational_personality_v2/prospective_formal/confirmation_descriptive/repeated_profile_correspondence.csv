@@ -1,0 +1,9 @@
+event,configurations,profile_mae,profile_spearman,note
+affect_acknowledgement,5,0.021875,0.9999999999999999,descriptive five-configuration correlation; no population p-value
+answer_reveal,5,0.0046875,0.9176629354822471,descriptive five-configuration correlation; no population p-value
+epistemic_qualification,5,0.015625,0.5642880936468347,descriptive five-configuration correlation; no population p-value
+information_request,5,0.0,,undefined rank correlation: at least one constant profile
+learner_choice,5,0.0203125,0.9176629354822471,descriptive five-configuration correlation; no population p-value
+reasoning_elicitation,5,0.01875,0.9999999999999999,descriptive five-configuration correlation; no population p-value
+unsupported_ability_claim,5,0.0234375,0.9210526315789475,descriptive five-configuration correlation; no population p-value
+worked_explanation,5,0.0140625,0.9999999999999999,descriptive five-configuration correlation; no population p-value

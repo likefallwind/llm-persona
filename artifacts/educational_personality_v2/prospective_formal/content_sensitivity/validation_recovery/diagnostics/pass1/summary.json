@@ -1,0 +1,15 @@
+{
+  "expected_requests": 2584,
+  "valid_requests": 2584,
+  "invalid_or_missing": 0,
+  "status": "content-review structural diagnostics; no correctness ground truth",
+  "files": {
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/freeze.json": "4ccf8107c346512d9fee1b82e8f1cd5a9af8679e658c83475a5f3d4224125a25",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/validation_recovery/run_repair1/responses.jsonl": "ab38638a5c86e960b8b0f86f07eb8d696859ca2e6cba3fa2457d6b1794e86791",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/validation_recovery/diagnostics/pass1/coverage.csv": "21f8224b3a1a2475781d473f97f95559adc8726db2cca355f7234b3e63065601",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/validation_recovery/diagnostics/pass1/codes.jsonl": "1a3912d5e2ee2d82674789c48fbf9769dfb1db916f202452dde61c09df02f38a",
+    "artifacts/educational_personality_v2/prospective_formal/content_validation_amendment.json": "1a87da184aec092c8617e33650aa77864d51f8ceeac2c3f3a380fb8e1ef5a9bf",
+    "scripts/recover_personality_content_validation_v3.py": "1e946bdf6f2e509bbaf8f661693ae3e964128655a629c9c853fbdac13cfb78e0"
+  },
+  "validation_amendment": "artifacts/educational_personality_v2/prospective_formal/content_validation_amendment.json"
+}

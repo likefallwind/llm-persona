@@ -1,0 +1,39 @@
+{
+  "completed_at": "2026-09-07T01:31:01.011334+00:00",
+  "status": "complete main-panel checkpoint; full study remains incomplete",
+  "valid_main_judge_codes": 11520,
+  "main_answers": 3840,
+  "canonical_answers": 1280,
+  "main_consensus_events": 30720,
+  "canonical_source_families": 32,
+  "paired_prompt_source_families": 16,
+  "primary_tests": 6,
+  "judge_sensitivity_panels": 8,
+  "generator_deletion_panels": 5,
+  "new_models_fitted": 0,
+  "new_api_calls": 0,
+  "missing_values_imputed": 0,
+  "original_estimator_functions_reused": true,
+  "official_results_written": false,
+  "paper_complete": false,
+  "pending": [
+    "Auxiliary probe completion",
+    "200 training-source resamples",
+    "Content sensitivity",
+    "Budget sensitivity",
+    "Full scientific synthesis and paper review"
+  ],
+  "inputs": {
+    "scripts/analyze_personality_complete_main_checkpoint_v3.py": "6014c6b965e9727c1f01a2b1bf993b333c5cfcbfd4a46094388a6a14beebc6ab",
+    "data/educational_personality_measurement_v2_2.json": "dc623c57f86676860b19de1655521a75199af6808ea1488c450c17e8cad09811",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/judge/v2_2/manifest.jsonl": "7329b605614721b9e08323730872f55a28d08f26bed762c628a319911b059696",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/judge/v2_2/unblinding.jsonl": "0db2cf5b81347c45714c0c1312c1aa2c97042c53b1891b8f42ee4425c03c1f12",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/judge/v2_2/run_repair2/responses.jsonl": "7f4ebb3a91e5d85a5a41bda6cbcf0267ff0ed8624626d09de55bdb034e5d3abc",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/budget_recovery/judge/run/responses.jsonl": "35c66868e06991e16da4ea3525e66334a991746b308c76a0f0381d4f83b5f851",
+    "artifacts/educational_personality_v2/prospective_formal/prediction_lock.json": "ad6650f9776e16cde29440d8a67f6e0873d98c70846c8fe93dd89ee571c1642c",
+    "artifacts/educational_personality_v2/prospective_formal/judge_sensitivity_lock.json": "f856d1860f925ca649d8765bef33283697392a9e6d47b01c0d0ed38c3385eda9",
+    "artifacts/educational_personality_v2/prospective_formal/generator_deletion_lock.json": "05689321d69532f1df39a7b6ff191d0d3e1662cf3daf3b8b9165c87fcac0d848",
+    "scripts/analyze_personality_confirmation_v3.py": "451bce2b6941c319d95e0bcf6bac936789e83b684894547a86271d8d8fd9430e",
+    "scripts/analyze_personality_robustness_v3.py": "1ac843d119adbdeef9d53b0ba1add8f707253f6a0a54ff1c4eaba409e2b3adb2"
+  }
+}

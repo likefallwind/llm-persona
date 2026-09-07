@@ -1,0 +1,19 @@
+{
+  "input_hashes": {
+    "artifacts/educational_personality_v2/stability/source_safe_summary.csv": "0c7c8f53b09f41c0bc39414bc011ec58617e6ed3be98f35e89b91328860f5d84",
+    "artifacts/educational_personality_v2/stability/analysis_metadata.json": "d5082568103581eb8a77e68eb59f40aa04cf3181fe12db2c19491bec3e189265",
+    "artifacts/educational_personality_v2/stability_without_socratic/source_safe_summary.csv": "a0014d4fe5f5e1cbbf4b610697c123616b9a6ba304362a25367b5c53668961b2",
+    "artifacts/educational_personality_v2/stability_without_socratic/analysis_metadata.json": "a9645192dbd038a46c8f3781b5382445c718f619ada4376016ae211c026e1a3c"
+  },
+  "dimensions_reported": [
+    "affective_warmth",
+    "autonomy_support",
+    "cognitive_load",
+    "diagnostic_specificity",
+    "elicitation",
+    "epistemic_caution",
+    "help_directness",
+    "personalization"
+  ],
+  "interpretation": "Outcome-aware legacy sensitivity, not prospective confirmation; no causal task-exclusion effect claimed."
+}

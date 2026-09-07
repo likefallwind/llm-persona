@@ -1,0 +1,383 @@
+{
+  "reviewed_at": "2026-09-07T03:16:54.823991+00:00",
+  "status": "research analyses, bilingual scientific synthesis and final rendered manuscripts complete",
+  "paper_complete": true,
+  "new_human_annotation": false,
+  "reviewer": "Research agent; this is not independent external peer review.",
+  "scientific_assessment": "research/69_completed_content_and_final_scientific_assessment.md",
+  "evidence_ledger": "paper/educational_personality_v3/evidence_ledger.md",
+  "hash_checks_passed": 144,
+  "bilingual_numerical_checks": 16,
+  "central_claim_review": [
+    {
+      "section": "results",
+      "paragraph": 1,
+      "evidence_ids": [
+        "E07",
+        "E12",
+        "E13"
+      ],
+      "row_selector_and_denominator": "complete confirmation coverage and three primary event pairwise positive-agreement ranges; 4040 answers/12120 codes/32320 event rows",
+      "english": "All 4,040 confirmation responses received three valid event codes, yielding\n12,120 coder outputs and 32,320 majority-coded response--event observations.\nThe six disclosed larger-budget codes are included; the original failures are\nretained. On this complete panel, pairwise positive coder agreement is\n99.05--99.29\\% for answer revelation, 91.38--92.52\\% for reasoning elicitation,\nand 96.29--98.15\\% for affect acknowledgement. These are measurement diagnostics\nover all arms, distinct from the repeated-generation agreement below.",
+      "chinese": "全部 4,040 条确认回答均取得三份有效编码，共 12,120 份评审输出和 32,320 个多数标签的回答—事件观测。六份扩大预算编码按已披露修订纳入，原失败保留。完整混合角色面板上的两两正例编码一致率为：答案揭示 99.05%—99.29%，推理邀请 91.38%—92.52%，情绪／困难承接 96.29%—98.15%。这是编码测量的一致性，须与同模型重复生成的行为一致性区分。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 2,
+      "evidence_ids": [
+        "Q01"
+      ],
+      "row_selector_and_denominator": "default_profiles.csv: five models x three primary events, 256 answers/model; joint_action_counts.csv: MiniMax-M3/main/canonical/both=81",
+      "english": "On the 32 canonical source problems, the deployments differ substantially in\ntheir action frequencies (Table~\\ref{tab:default-rates}). GLM reveals an answer\nin 22.3\\% of responses and elicits reasoning in 96.5\\%; DeepSeek and Doubao\nreveal answers in every response, with elicitation below 5\\%. M3 combines\nboth actions in 81/256 responses (31.6\\%). These pooled profiles need not distinguish every\nmodel pair: DeepSeek and Doubao have the same observed answer-revelation rate.",
+      "chinese": "在 32 个标准角色确认来源上，GLM 的答案揭示率为 22.3%，推理邀请率为 96.5%；DeepSeek 和 Doubao 每次都揭示答案，但推理邀请不足 5%。M3 的 81/256 条回答同时包含两类动作（31.6%）。下表每格基于每部署 256 条回答、每来源 8 条；动作可共存，名称指本实验中的指定部署。这些汇总画像并不意味着任意两模型都不同，例如 DeepSeek 与 Doubao 的答案揭示率完全相同。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 3,
+      "evidence_ids": [
+        "Q01",
+        "E14"
+      ],
+      "row_selector_and_denominator": "repeated_default_profiles.csv/repeat_diagnostics.csv: canonical reasoning_elicitation, 128 pairs/model, source intervals; positive/negative agreement separate",
+      "english": "Recurring distributions do not imply identical actions on repeated requests.\nM3's elicitation agreement is only 57.8\\% across 128 matched input pairs\n(95\\% source-bootstrap interval 50.0--66.4\\%). Conversely, DeepSeek and Doubao\nhave 96.1\\% and 91.4\\% elicitation agreement but zero positive agreement:\ntheir few positive occurrences do not recur in both requests. Perfect answer\nagreement for these two deployments reflects an observed ceiling. We therefore\ninterpret recurrence through prevalence, agreement on presence and absence,\nand prospective prediction together (Appendix~\\ref{app:confirmation-details}).\nAppendix~\\ref{app:materials-examples} provides a same-input response set,\nincluding a coding disagreement, to illustrate the event distinctions.",
+      "chinese": "行为分布可预测，不等于每次请求都采取相同动作。M3 在 128 对相同输入上的推理邀请重复一致率只有 57.8%，来源 bootstrap 的 95% 区间为 50.0%—66.4%。反之，DeepSeek 与 Doubao 的推理邀请总一致率为 96.1% 和 91.4%，但正例一致率均为零：少数正例没有在两次请求中同时出现。这两个部署的答案完全一致则来自观测上的天花板。因此，重复性必须结合发生率、正负例一致性及前瞻预测解释。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 4,
+      "evidence_ids": [
+        "Q02"
+      ],
+      "row_selector_and_denominator": "primary_prediction_comparisons.csv: comparison=default_vs_context, all three events; prediction_brier.csv: context/default_profile",
+      "english": "All three model-default predictors improve over the situation-only baseline\non new sources (Figure~\\ref{fig:primary-gains}). The absolute Brier reductions\nare 0.09127 for revelation, 0.12970 for elicitation, and 0.01982 for\nacknowledgement; all pass the six-test Holm correction. Absolute losses fall\nfrom 0.15359 to 0.06232, 0.21873 to 0.08903, and 0.18242 to 0.16260,\nrespectively. Thus the identity-specific information learned before confirmation\npredicts actions beyond the supplied subject and student-state context.",
+      "chinese": "三项模型默认画像都在新来源上优于情境基线，并通过六项检验的 Holm 校正。答案揭示的绝对 Brier 损失从 0.15359 降至 0.06232，推理邀请从 0.21873 降至 0.08903，承接从 0.18242 降至 0.16260。确认前学习的模型信息因而能在学科及学生状态之外预测行为。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 5,
+      "evidence_ids": [
+        "Q03"
+      ],
+      "row_selector_and_denominator": "primary_prediction_comparisons.csv: comparison=student_state_vs_domain, all three events; prediction_brier.csv: domain_profile/conditional_profile",
+      "english": "Adding model-specific student-state responses to model-by-subject profiles\ngives a different result. Acknowledgement improves by 0.00973\n(95\\% interval [0.00536, 0.01395], adjusted $p=0.000192$), reducing Brier loss\nfrom 0.16046 to 0.15072. Revelation gains only 0.00043\n([-0.00037, 0.00130], $p=0.326$); elicitation changes by -0.00016\n([-0.00101, 0.00073], $p=0.641$). These unresolved increments concern\nthe specified cues and predictor class, not every possible form of adaptation.",
+      "chinese": "在模型—领域画像之上增加模型特有学生状态响应，结果不同。承接增益为 0.00973，95% 区间 [0.00536, 0.01395]，校正 p=0.000192，损失从 0.16046 降至 0.15072。答案揭示仅增加 0.00043，区间 [-0.00037, 0.00130]，p=0.326；推理邀请变化为 -0.00016，区间 [-0.00101, 0.00073]，p=0.641。后二者不能据此推断完全不具有适应能力：约束的是指定学生线索和预测方法下的额外预测价值。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 6,
+      "evidence_ids": [
+        "Q06"
+      ],
+      "row_selector_and_denominator": "student_state_profiles.csv: affect_acknowledgement, deepseek-v4-pro/doubao-seed-2.0-lite, four student states, 64 answers/cell",
+      "english": "The acknowledgement profiles clarify the positive conditional result. For\ncorrect unfinished work, Doubao acknowledges difficulty in 0/64 calm responses\nand 60/64 frustrated responses; DeepSeek changes from 22/64 to 34/64.\nFor erroneous work, their corresponding changes are 32/64 to 64/64 and\n46/64 to 49/64. These are responses to scripted text cues, not measurements\nof empathy or learner understanding. The descriptive curves appear in\nAppendix~\\ref{app:confirmation-details}; the locked prediction comparison\nprovides the test that such model-specific patterns recur on new sources.",
+      "chinese": "承接曲线说明了条件结果的含义。在正确但未完成的作答下，Doubao 从平静条件的 0/64 增至挫败条件的 60/64，DeepSeek 从 22/64 增至 34/64；错误作答下，两者分别从 32/64 增至 64/64、46/64 增至 49/64。这是对脚本化文本线索的响应，不是共情或学习者理解的测量。描述性曲线与锁定预测检验承担不同作用，后者才检验这种响应模式是否提供新来源上的额外信息。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 7,
+      "evidence_ids": [
+        "Q04"
+      ],
+      "row_selector_and_denominator": "prediction_brier.csv: training_style_profile/default_profile, all three events; descriptive only",
+      "english": "The training-only length/formatting competitor yields losses of 0.13861,\n0.17826, and 0.17864 for the three events, exceeding the model-default losses\nin each case. This descriptive comparison shows that two simple style summaries\ndo not reproduce the predictive result. It neither excludes richer stylistic\nexplanations nor identifies a causal effect of model identity.",
+      "chinese": "只使用训练回答长度和格式画像的竞争模型，在三项行为上的损失为 0.13861、0.17826、0.17864，均高于模型默认画像。这个描述性比较表明两项简单风格特征不足以复现预测结果，但没有排除更丰富的风格解释，也不是模型身份的因果效应估计。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 8,
+      "evidence_ids": [
+        "Q05"
+      ],
+      "row_selector_and_denominator": "matched_prompt_profiles.csv: ask/explain, five models x three events; same16 sources/128 answers per model/arm",
+      "english": "The matched prompt comparison uses 16 sources and 128 answers per deployment\nper arm. ASK requires eliciting a next step without stating the final answer.\nAll five deployments elicit reasoning in all 128 ASK responses. Revelation\nfalls to zero for DeepSeek, Doubao, and GLM, but remains in 9/128 M2.7 and\n4/128 M3 responses. EXPLAIN instead requires a solution and final answer,\nwhile explicitly permitting follow-up reasoning or questions. Every deployment\nreveals the answer in every EXPLAIN response.",
+      "chinese": "提示比较使用相同 16 个来源，每部署每臂 128 条回答。ASK 要求邀请学生完成下一步且不提供最终答案。五个部署在所有 ASK 回答中都邀请了推理；DeepSeek、Doubao、GLM 不再揭示答案，但 M2.7 的 9/128、M3 的 4/128 条仍有答案揭示。EXPLAIN 要求解释并给最终答案，明确允许后续推理或问题；五个部署在全部 EXPLAIN 回答中都揭示答案。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 9,
+      "evidence_ids": [
+        "Q06"
+      ],
+      "row_selector_and_denominator": "matched_prompt_profiles.csv: explain/reasoning_elicitation and explain/answer_reveal; exact EXPLAIN instruction permits questions",
+      "english": "Convergence on the requested action does not eliminate all observed differences.\nUnder EXPLAIN, elicitation occurs in 62.5\\% of GLM and 45.3\\% of M3 responses,\ncompared with 1.6--5.5\\% for the other three deployments. Since all these\nresponses reveal the answer, those rates also describe joint revelation and\nelicitation. This permitted behavior is not an instruction violation, and the\nevent codes do not establish its temporal order. A single answer-versus-question\naxis would hide it. Matched rates and paired prompt changes are reported in\nAppendix~\\ref{app:confirmation-details}.",
+      "chinese": "被要求动作的一致，不意味着其他行为全部相同。在 EXPLAIN 下，GLM 和 M3 仍分别在 62.5%、45.3% 的回答中邀请推理，其他三个部署为 1.6%—5.5%。由于这些回答全部给出答案，该比例也等于两项动作共同出现的比例。这是允许出现的行为，不构成指令违背；事件编码也不能确定动作顺序。将人格压缩为单一“给答案还是提问”的轴，会遗漏这种共存。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 10,
+      "evidence_ids": [
+        "Q05",
+        "E10"
+      ],
+      "row_selector_and_denominator": "matched_prompt_profiles.csv: glm-5.3 neutral_b versus canonical; confirmation_neutral_bounds, 30 comparisons/16 sources/halfwidth .9414136203",
+      "english": "Neutral role paraphrases place a further limit on stable-type interpretations.\nFor GLM, neutral B raises both revelation and acknowledgement by 15.6 percentage\npoints relative to the matched canonical arm. These are observed shifts, not\nadditional primary tests. No neutral comparison establishes population\nequivalence within $\\pm 0.10$ under the disclosed bounded-source check: with\n16 sources its simultaneous half-width is 0.9414. This lack of precision\ncannot be used as evidence for either universal stability or universal wording\nsensitivity.",
+      "chinese": "中性角色改写进一步限制了恒定类型解释。GLM 的 neutral B 相对同来源标准角色，在答案揭示和承接上均增加 15.6 个百分点。这是实际观测位移，不是新增主要检验。按已披露的保守有界来源规则，30 个中性对比没有任何一个能在 ±0.10 内建立总体等效；16 个来源下同时区间半宽为 0.9414。精度不足既不能证明普遍稳定，也不能证明普遍措辞敏感。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 11,
+      "evidence_ids": [
+        "Q07"
+      ],
+      "row_selector_and_denominator": "judge_gain_ranges.csv: default_vs_context/student_state_vs_domain, three events, eight panels; same observations",
+      "english": "Eight coding panels preserve the broad separation between default and\nstudent-state increments. Default-gain estimates range from 0.08571--0.09562\nfor revelation, 0.12442--0.13111 for elicitation, and 0.01699--0.02017 for\nacknowledgement. Conditional acknowledgement gains range from\n0.00697--0.01052; conditional revelation and elicitation remain near zero.\nThese reuse the same outputs and are sensitivity estimates, not independent\nreplications.",
+      "chinese": "八种编码面板保留了默认增益与学生状态增益的总体区别：答案揭示默认增益为 0.08571—0.09562，推理邀请为 0.12442—0.13111，承接为 0.01699—0.02017；承接条件增益为 0.00697—0.01052，另外两项接近零。这些重复使用同一批回答，是敏感性估计而非独立复制。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 12,
+      "evidence_ids": [
+        "Q07"
+      ],
+      "row_selector_and_denominator": "generator_deletion_comparisons.csv: without glm-5.3/default revelation+elicitation, without MiniMax-M2.7/default acknowledgement; training_resampling_quantiles.csv all200 resamples",
+      "english": "Effect strength depends materially on which deployments are included.\nDeleting GLM reduces default gains to 0.00394 for revelation and 0.03080 for\nelicitation. Deleting M2.7 reduces the acknowledgement default gain to 0.00175,\nwith an interval crossing zero [-0.00174, 0.00547]. The full-panel findings\ntherefore do not imply equally strong differences among every subset of models.\nAcross 200 training-source resamples, the descriptive 2.5--97.5 percentile\nrange for conditional acknowledgement gain is [0.00542, 0.01039]; revelation\nspans zero and elicitation remains slightly negative. These distributions\ncondition on fixed confirmation labels and the original regularization ratio.",
+      "chinese": "效果强度明显依赖纳入哪些部署。删除 GLM 后，答案揭示默认增益降至 0.00394，推理邀请降至 0.03080。删除 M2.7 后，承接默认增益降至 0.00175，区间 [-0.00174, 0.00547] 跨过零。因此不能将全面板结果概括为任何模型子集都有同样强的区别。200 次训练来源整组重抽样中，承接条件增益的 2.5—97.5 百分位范围为 [0.00542, 0.01039]；答案揭示跨零，推理邀请略为负。该分布固定确认标签和原正则化比例，不能替代主要检验区间。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 13,
+      "evidence_ids": [
+        "E13"
+      ],
+      "row_selector_and_denominator": "confirmation_budget_sensitivity/primary_ranges.csv: six estimates and Holm values invariant across four assignments/event; other two coders agree",
+      "english": "The six confirmation budget exceptions do not determine the primary findings.\nFor either binary value of each affected canonical GLM code, all six primary\nestimates and adjusted $p$-values are exactly unchanged: the other two coders\nagree on the three primary events. This fixed-prediction enumeration addresses\nthose missing codes only. It does not validate coder behavior across the\nGateway interruption. Complete secondary results and sensitivity ranges are\nretained in Appendix~\\ref{app:confirmation-details}.",
+      "chinese": "六份扩大预算确认编码不决定主要发现。对受影响的两条标准角色回答，无论将其 GLM 编码赋为何种二元值，全部六项主要估计及校正 p 值都严格不变，因为另外两位评审在主要事件上一致。枚举固定其余标签和已锁定预测，仅约束这几项缺失编码的影响，不能验证 Gateway 中断前后编码模型的稳定性。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 14,
+      "evidence_ids": [
+        "Q08"
+      ],
+      "row_selector_and_denominator": "content_sensitivity/analysis/subset_comparisons.csv: all5 subsets x all6 gains and intervals; retained32 sources except mathematics8, 1280/320/1255/1065/1065 answers",
+      "english": "The mathematics subset (eight sources, 320 responses) retains default gains\nof 0.11624, 0.13892, and 0.01992; student-state increments are 0.00062,\n0.00030, and 0.01380 for revelation, elicitation, and acknowledgement.\nAll 2,584 content reviews are valid after the disclosed structural repairs.\nExcluding five-model slots flagged by either reviewer retains 1,065 responses\non all 32 sources. Default gains are 0.09535, 0.13179, and 0.02068;\nconditional acknowledgement gains 0.00989 [0.00510, 0.01472], while the\nother two conditional intervals span zero. The unanimous-error screen retains\n1,255 responses and the same qualitative pattern. No uncertainty verdicts\noccur, so the error-or-uncertainty screen is identical to the either-error\nscreen (Appendix~\\ref{app:content-results}).",
+      "chinese": "**数学与内容筛选。** 数学子集有 8 个来源、320 条回答，三项默认增益为 0.11624、0.13892、0.01992，对应学生状态增益为 0.00062、0.00030、0.01380。结构修复后，全部 2,584 份内容审核有效。排除被任一评审标错的完整五模型比较单元，保留全部 32 个来源的 1,065 条回答：默认增益为 0.09535、0.13179、0.02068，承接条件增益为 0.00989，区间 [0.00510, 0.01472]；另外两项条件区间仍跨零。只排除两评审一致标错单元时保留 1,255 条，模式相同。没有不确定判断，因此“排除错误或不确定”与“排除任一错误”的子集完全一致。五组完整比较见附录。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "results",
+      "paragraph": 15,
+      "evidence_ids": [
+        "Q08"
+      ],
+      "row_selector_and_denominator": "content_sensitivity/analysis/anchor_diagnostics.csv: all4 reviewer/class rows6/6; response_flags.csv: 5 unanimous/49 either/0 uncertain, positive10/54; selected-target caveat",
+      "english": "These are descriptive selected-subset estimates, with no new tests. Both\nreviewers match all twelve diagnostic controls, yet agree on an error in only\n5 of the 49 natural responses flagged by either (positive agreement 18.5\\%).\nScreening thus tests sensitivity to these judgments; it neither guarantees\ncorrect remaining answers nor causally separates behavior from ability.",
+      "chinese": "以上均为不新增检验的筛选子集描述。两位评审各自匹配全部 12 个诊断控制，但在自然回答中，任一评审标错的 49 条只有 5 条共同标错，错误正例一致率仅 18.5%。筛选检验的是对这些判断的敏感性，不能保证剩余回答正确，也不能实现行为与能力的因果分离。",
+      "review": "Both versions checked against the cited complete evidence; scope and unfavorable results retained."
+    },
+    {
+      "section": "abstract",
+      "english": "\\begin{abstract}\nDo language models have recurring ways of teaching that predict their behavior\non new problems? We investigate educational personality through observable\nactions rather than self-reported human traits. An audit of a million-record\neducational archive motivates a separate prospective study of five deployments,\nfour domains, controlled student cues, and repeated requests. We generate\n5,320 tutor responses and lock behavior forecasts before confirmation\ngeneration, using three model coders without new human annotation. On 32 new\nsource problems, model-default profiles reduce Brier loss beyond educational\ncontext by 0.0913 for answer revelation, 0.1297 for reasoning elicitation, and\n0.0198 for affect acknowledgement. Model-specific student-state patterns add\n0.0097 beyond model-by-domain profiles for acknowledgement, with no resolved\ngain for the other two actions. Explicit teaching instructions make demanded\nactions converge, while permissible accompanying actions remain different.\nRepetition, model-deletion, and neutral-wording analyses constrain stronger\nclaims of uniform or invariant traits. The findings support recurring,\nprompt-dependent behavioral profiles of specified deployments, without inferring\ninner psychology or learning gains. The pattern persists in content-screened\nmatched subsets, subject to limited agreement on natural errors.\n\\end{abstract}\n",
+      "chinese": "\n语言模型是否具有能够预测新问题输出的、反复出现的教学倾向？本研究通过可观察动作检验教育人格，而不套用自报式人类人格量表。对百万级教育输出档案的审计促成了独立的前瞻实验：五个部署、四个领域、交叉学生线索和重复请求，共生成 5,320 条导师回答，在确认生成前锁定行为预测，使用三个模型编码且不新增人工标注。在 32 个独立确认来源上，模型默认画像相对情境基线将答案揭示、推理邀请和情绪／困难承接的 Brier 损失分别降低 0.0913、0.1297、0.0198。模型特有的学生状态响应在模型—领域画像之外，为承接行为再提供 0.0097 的增益；另外两项没有得到明确的额外增益。明确教学指令使被要求的动作趋同，但允许出现的伴随动作仍有差异。重复波动、删除模型和中性措辞结果限制了统一、恒定人格类型的解释。结果支持特定部署中反复出现且依赖提示的行为画像，不推断内在心理或学习收益。内容筛选后的匹配子集保留了该预测模式，但自然错误判断一致性有限。\n\n",
+      "evidence_ids": [
+        "E01",
+        "E03",
+        "E06",
+        "E07",
+        "E09",
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q10"
+      ],
+      "review": "Synthesis of the mapped results, not a new psychological, learning-gain, universal-pair or education-unique claim."
+    },
+    {
+      "section": "conclusion",
+      "english": "\\section{Conclusion}\n\nFor the five deployments and educational settings studied here, recurring\nteaching tendencies have prospective predictive value. Model defaults improve\nforecasts of answer revelation, reasoning elicitation, and affect\nacknowledgement on new problems; model-specific student-state patterns provide\nan additional gain for acknowledgement, with no resolved gain for the other\ntwo actions. Explicit teaching instructions make demanded actions converge\nwhile leaving differences in permissible accompanying behavior. These findings\nsupport describing educational personality as a deployment's recurring,\nprompt-dependent action profile. They do not support immutable human-like\ntypes, universal differences between all model pairs, or claims about learning\nbenefits. Content-screened subsets preserve the predictive pattern, while\nlimited natural-error agreement prevents treating screening as a guarantee\nof correctness.\n",
+      "chinese": "\n在本研究的五个部署和教育情境中，反复出现的教学倾向具有前瞻预测价值：默认画像改善新题上的答案揭示、推理邀请和情绪／困难承接预测；模型特有学生状态模式仅在承接上取得明确额外增益。明确教学指令使被要求的动作趋同，仍允许不同的伴随行为。结果支持将教育人格描述为部署中反复出现、依赖提示的动作画像，不支持不可变的人类式类型、任意模型之间都存在差异或学习收益主张。内容筛选子集保留了预测模式，但自然错误判断的一致性限制了正确性解释。\n\n\n",
+      "evidence_ids": [
+        "E01",
+        "E03",
+        "E06",
+        "E07",
+        "E09",
+        "Q01",
+        "Q02",
+        "Q03",
+        "Q05",
+        "Q06",
+        "Q07",
+        "Q08",
+        "Q10"
+      ],
+      "review": "Synthesis of the mapped results, not a new psychological, learning-gain, universal-pair or education-unique claim."
+    }
+  ],
+  "empirical_figure_caption_review": [
+    {
+      "figure": "confirmation_default_repetition_publication",
+      "evidence_ids": [
+        "Q01"
+      ],
+      "english_block": "\\begin{figure}[htbp]\\centering\n\\includegraphics[width=\\linewidth]{figures/confirmation_default_repetition_publication.pdf}\n\\caption{Canonical behavior rates and repeated-generation agreement (cells in\n\\%, color scale in probability units), with\n256 answers and 128 input pairs per deployment on 32 sources. NA indicates\nno denominator for agreement on absence, not zero agreement. Positive and\nnegative agreement prevent a large number of absent events from being\nmistaken for recurrence of rare positive behavior. Source uncertainty is\nretained in the accompanying numerical tables.}\n\\label{fig:default-repetition}\\end{figure}",
+      "chinese_caption_line": "![标准角色行为率及正负例重复一致性，格内单位为百分比，色标为概率：每部署 256 条回答、128 对输入，来自 32 个来源。NA 表示没有相应一致性分母，并非零一致率；百分数保留一位小数，避免把 99.6% 画成完全一致。区间保留在数值表中。](figures/confirmation_default_repetition_publication.pdf)",
+      "review": "Counts, scales, rounding, interval types and inference limits checked; rendered labels inspected."
+    },
+    {
+      "figure": "confirmation_student_states_publication",
+      "evidence_ids": [
+        "Q06"
+      ],
+      "english_block": "\\begin{figure}[htbp]\\centering\n\\includegraphics[width=\\linewidth]{figures/confirmation_student_states_publication.pdf}\n\\caption{Canonical action rates for the four student-cue conditions. Each\npoint averages 64 responses over 32 sources. C denotes calm and F frustrated.\nLines connect calm and frustrated\ninputs within a work state; work-state differences bundle correctness and\nprogress. These curves are descriptive and do not replace the locked\nincremental prediction tests.}\n\\label{fig:student-states}\\end{figure}",
+      "chinese_caption_line": "![四种学生线索条件下的标准角色行为率。每点为 32 个来源、64 条回答；C 为平静，F 为挫败，线连接同一作答状态内两种情绪线索。错误尝试与正确部分作答同时改变正确性和进展。曲线为描述性结果，不能代替锁定的增量预测检验。](figures/confirmation_student_states_publication.pdf)",
+      "review": "Counts, scales, rounding, interval types and inference limits checked; rendered labels inspected."
+    },
+    {
+      "figure": "confirmation_prompt_changes_publication",
+      "evidence_ids": [
+        "Q05",
+        "Q06",
+        "E10"
+      ],
+      "english_block": "\\begin{figure}[htbp]\\centering\n\\includegraphics[width=\\linewidth]{figures/confirmation_prompt_changes_publication.pdf}\n\\caption{Paired changes relative to canonical wording on the same 16 sources.\nNeutral arms show nominal Bonferroni simultaneous 95\\% paired-$t$ intervals\nover 30 contrasts, with a $\\pm0.10$ reference band. Explicit instruction arms\nshow descriptive 95\\% paired-$t$ intervals. Crosses identify zero-variance\nintervals; sparse-outcome undercoverage is not limited to those cases. These\nintervals cannot establish population equivalence; the bounded-source check\nbelow controls that interpretation.}\n\\label{fig:prompt-changes}\\end{figure}",
+      "chinese_caption_line": "![相对标准角色的同来源配对变化。中性臂展示跨 30 项 Bonferroni 校正的名义 95% 配对 t 区间和 ±0.10 参考带；明确指令臂为描述性 95% 配对 t 区间。叉号标记零方差区间，稀疏事件的覆盖不足不限于这些情况。总体等效解释须服从另行报告的有界来源检查。](figures/confirmation_prompt_changes_publication.pdf)",
+      "review": "Counts, scales, rounding, interval types and inference limits checked; rendered labels inspected."
+    },
+    {
+      "figure": "measurement_pilot",
+      "evidence_ids": [
+        "E03",
+        "E04",
+        "E05"
+      ],
+      "english_block": "\\begin{figure}[tb]\n\\centering\n\\includegraphics[width=\\linewidth]{figures/measurement_pilot.pdf}\n\\caption{Completed measurement-development pilot: 160 tutor responses and 480\nvalid coder outputs. Each dot represents one of the three coder pairs; lines\nspan the observed pairs and are not confidence intervals. Blue labels identify\nthe three endpoints selected before formal generation. Agreement does not\nestablish semantic ground truth, and rare events require separate attention.}\n\\label{fig:pilot-measurement}\n\\end{figure}",
+      "chinese_caption_line": "![测量开发试验：160 条导师回答、480 份有效编码。每个点表示一种评审配对，线段表示配对之间的范围；蓝色为正式生成前选定的三个主要终点。编码一致不能当作语义真值。](figures/measurement_pilot.pdf)",
+      "review": "Counts, scales, rounding, interval types and inference limits checked; rendered labels inspected."
+    },
+    {
+      "figure": "study_design",
+      "evidence_ids": [
+        "E06",
+        "E07",
+        "E09"
+      ],
+      "english_block": "\\begin{figure}[t]\n\\centering\n\\includegraphics[width=\\linewidth]{figures/study_design.pdf}\n\\caption{Prospective design, with realized response counts. Each main question\ncrosses five configurations, four student-work/affect conditions, and two\nrequests. Main training and confirmation source families are separate.\nRQ1 and RQ2 use the 32 canonical confirmation sources; RQ3 reuses 16 of them\nunder additional role arms. Repetitions and prompt variants do not add\nindependent sources. The four nested forecasts are accompanied by the\ntraining-only style competitor and the sensitivity analyses described below.}\n\\label{fig:study-design}\n\\end{figure}",
+      "chinese_caption_line": "![前瞻性设计示意，数字表示实际回答量。每道主实验题交叉五个部署、四种学生作答／情绪条件和两次请求。训练与主确认来源家族分开；RQ1、RQ2 使用 32 个标准角色确认来源，RQ3 在其中 16 个来源上增加角色臂。重复请求和提示变体不增加独立来源数。四个嵌套预测器另与只用训练数据的风格预测器及后述敏感性分析比较。](figures/study_design.pdf)",
+      "review": "Counts, scales, rounding, interval types and inference limits checked; rendered labels inspected."
+    },
+    {
+      "figure": "confirmation_prediction_gains_publication",
+      "evidence_ids": [
+        "Q02",
+        "Q03"
+      ],
+      "english_block": "\\begin{figure}[t]\n\\centering\n\\includegraphics[width=\\linewidth]{figures/confirmation_prediction_gains_publication.pdf}\n\\caption{All six primary predictive comparisons on 32 new source problems.\nPositive values denote lower Brier loss. Lines show 95\\% source-bootstrap\nintervals conditional on the fitted training profiles; they are not simultaneous\nintervals. The panels use different horizontal scales. Exact gains, intervals,\nand six-test Holm-adjusted one-sided $p$-values appear in\nTable~\\ref{tab:primary-tests}.}\n\\label{fig:primary-gains}\n\\end{figure}",
+      "chinese_caption_line": "![六项主要预测比较。正值表示 Brier 损失下降；线段为以已拟合训练画像为条件的来源 bootstrap 95% 区间，并非同时区间。左右面板横轴尺度不同；全部六项估计、区间和 Holm 校正单侧 p 值见附录数值表。](figures/confirmation_prediction_gains_publication.pdf)",
+      "review": "Counts, scales, rounding, interval types and inference limits checked; rendered labels inspected."
+    }
+  ],
+  "pdfs": {
+    "en": {
+      "path": "paper/educational_personality_v3/build/working_draft_en.pdf",
+      "sha256": "2f93f765cf5aae5fd5e9dae27c9b7dbffdb76c23db72c7f298c455441d3fb07e",
+      "pages": 26,
+      "all_pages_layout_inspected": true,
+      "inspection_method": "Rendered page overview sheets; dense final content tables additionally inspected at page resolution.",
+      "fonts_embedded": true,
+      "unresolved_citations_or_overfull_or_missing_glyphs": false
+    },
+    "zh": {
+      "path": "paper/educational_personality_v3/build/working_draft_zh.pdf",
+      "sha256": "3f071cd31ac79c0ff27e53731138777baa9fea947293ecaece12415081af91f0",
+      "pages": 20,
+      "all_pages_layout_inspected": true,
+      "inspection_method": "Rendered page overview sheets; dense final content tables additionally inspected at page resolution.",
+      "fonts_embedded": true,
+      "unresolved_citations_or_overfull_or_missing_glyphs": false
+    },
+    "acl": {
+      "path": "paper/educational_personality_v3/build/acl/anonymous_acl_draft.pdf",
+      "sha256": "26eac06bb854f760f618a5bd1780ff321c4116eb612a9701e011e975fadb4b77",
+      "pages": 21,
+      "all_pages_layout_inspected": true,
+      "inspection_method": "Rendered page overview sheets; dense final content tables additionally inspected at page resolution.",
+      "fonts_embedded": true,
+      "unresolved_citations_or_overfull_or_missing_glyphs": false
+    }
+  },
+  "evidence_sha256": {
+    "artifacts/educational_personality_v2/prospective_formal/training/measurement_selection.json": "687a619eaefa301719036792de5360917019a9a9b26a6f02cca3dfe3217ca151",
+    "artifacts/educational_personality_v2/prospective_formal/training/budget_recovery/combined_diagnostics/summary.json": "ae18c72572fb82a37ca6416eb2c939dc0ca31a25c279e4110de064505a7355d9",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/measurement_selection.json": "0731722172e9f5add57f8be1d7d83c640fac97ab9b90fa376065b0c0901f0821",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/combined_diagnostics/summary.json": "e088cba0a05c4d5bdd39379e81a6b20ba761cbb8895a13e0c207ff4baef6a50d",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/measurement_selection.json": "4ef44ce2a9f882f40dbb10e471a74a19d1d6109023be460adcb6276b6be41666",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/validation_recovery/diagnostics/pass1/summary.json": "d43e89ae2d1c674af6cbeffa48f52e83ff19e98c99f7be9ff180abaa13733f51",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/summary.json": "9b5dccfcd3ad4497968fc2e9d8f0c6e3a6fc84568a99bf3ba93504623e9b4d76",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_robustness/summary.json": "19fdf683e013af91f80cbee9f3bb35ab2fbb166cf054f444479589b29083067b",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/analysis/summary.json": "036f0a6ff80d706110832181be777901c9467bca4720272c468467ee4f1fd098",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_budget_sensitivity/summary.json": "96a62b37da5cd4d3a02df61865ecf99e8df32d13f3bcadcd5f347fdbee4add12",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_reporting/summary.json": "f614632de3ef632588ab03e3e45d3e0f1d24f0a50a32604e39d6d1b8cd0ab862",
+    "artifacts/educational_personality_v2/prospective_formal/content_independent_checkpoint/checkpoint_equivalence_audit.json": "ab7283db49efcf29b4664c57eb89ef6577e3cef59b3d6459939a6a22db7c28f9",
+    "artifacts/educational_personality_v2/prospective_formal/complete_main_checkpoint/checkpoint_equivalence_audit.json": "6be6b46659e70475c6ac0f3e907e93d0e116fd23dc79dc64b54ff990b002e78b",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/run/pipeline_state.json": "8b058ec57da8aa90e0c5c812a44acaff20cdd78f69136dbe98f8f5253e549aa3",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_reporting/run/pipeline_state.json": "db7765f6c6080d7fa5394a62834477a2c17cdaca865b4caa6730031fe6f0a97e",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/pipeline_state.json": "848c6f88d928f4d88cf3889fe3efc0ee98846dcd590d677386481c987e002d04",
+    "artifacts/educational_personality_v2/manuscript_structure_review/bilingual_table_audit_20260907.json": "ee94bed17410a220505271e893b1ee14d6787ea8fee1fb060652d60c80045f67",
+    "paper/educational_personality_v3/build/build_provenance.json": "f47aa4dfb4ba87aecea369d315c29856f618455b11d6625611179e8849fce67e",
+    "paper/educational_personality_v3/build/acl/build_provenance.json": "e16adf0f60f7787df5ddcbda4d8e1a66df664bb79fb9b6d5dfd1e58603b4be0a"
+  },
+  "source_sha256": {
+    "paper/educational_personality_v3/main.tex": "a067b67bd0bf3612bbf6b4f0a8effc3035051c54fdadd6dbc4b371dfb90df155",
+    "paper/educational_personality_v3/manuscript_zh.md": "5788f1904f5478bb21304a790322755ad85bc2e71120ebe3f7c5b7385f2e2064",
+    "paper/educational_personality_v3/references.bib": "9c996919883e0977eba48267070276d0c4a0878d6dd0525b9a956ec45ebf1d06",
+    "paper/educational_personality_v3/sections/abstract.tex": "9e9a9242f5de44383b5a9038f1aadb48692f483ac14c3e8a9bb1ccfd01bc5c8d",
+    "paper/educational_personality_v3/sections/archive_scope.tex": "89cdadad9c5123c6d8110169f06ba797ccc9e6b44f56e83b54314175e96f3b76",
+    "paper/educational_personality_v3/sections/conclusion.tex": "94343dcbf87da504daafc65799a1ec4e3001f5d4a1efd060a7c850841a9f917d",
+    "paper/educational_personality_v3/sections/confirmation_details.tex": "663aee18e21a264e0bc9907b3a299d5133ea3813b31315005df0e09ac005c856",
+    "paper/educational_personality_v3/sections/detailed_methods.tex": "8f8625ba958cbbd839bf2b736d30f6cbcce36974ed1e9d804d3f024aaef1dd9b",
+    "paper/educational_personality_v3/sections/discussion.tex": "6c17564135a4572d81dbce0a73604ed11fb456e967c29d0804b67e8ebc783a7e",
+    "paper/educational_personality_v3/sections/introduction.tex": "cb1250dc98d41a3f0fb64a7b9e998648d992afeff676b27a0630b7ac34dc9877",
+    "paper/educational_personality_v3/sections/limitations.tex": "9865b1c91e3143e061b91964bfdbe30a6e33113d9a7bae6c288f74871c2d7850",
+    "paper/educational_personality_v3/sections/materials_examples.tex": "3e06a911561ca2de5934428d46e72a966ab32c128dc97f5fc0d2517b4eed8567",
+    "paper/educational_personality_v3/sections/measurement_development.tex": "0eeebd31749f1073bd35777299e635a5746344cffa5d125bca723aa786bb9b9f",
+    "paper/educational_personality_v3/sections/methods.tex": "e9f98208bc06551736eef01ff7a1378e57380f1966d98c4d83a52242be046a89",
+    "paper/educational_personality_v3/sections/related_work.tex": "9abee7c9b68fdf82c529f81307cc8adb1fb4986c6bad1d0c3407dd8caa1d56f1",
+    "paper/educational_personality_v3/sections/results.tex": "e1d92008abd514b4b04712988c4436c8f0a606a459909fb529104efa6fbe0fa8",
+    "paper/educational_personality_v3/figures/confirmation_default_repetition.pdf": "a04ddab5d419bcfb406d2489d24f7adc5fb9520103b073b23d4bac90e278a8ec",
+    "paper/educational_personality_v3/figures/confirmation_default_repetition_precise.pdf": "560dd7834920da871f87cbd82202f32419a3e1d7ccc6aeb8943e3813b237cbda",
+    "paper/educational_personality_v3/figures/confirmation_default_repetition_publication.pdf": "ec1eec2c5e8047d4d349344ca2cd278949e124701c572618c6c679985690da94",
+    "paper/educational_personality_v3/figures/confirmation_prediction_gains.pdf": "619161478cc56d1410e4d96e3909c777748a522c36d7d4e0aaed1a3e6fc27d62",
+    "paper/educational_personality_v3/figures/confirmation_prediction_gains_publication.pdf": "12bca95bd82f0d3cee2e4dd1005bc0850bb39805828dc568adc2029913051d3e",
+    "paper/educational_personality_v3/figures/confirmation_prediction_losses.pdf": "2b002eec8dee02c455556bf0cbaaef7c7399700223b3c5ef739c20337b6ed6e1",
+    "paper/educational_personality_v3/figures/confirmation_prompt_changes.pdf": "40d69f0cb8ccb0d7adf265e3b31ddff4a0a8917399c70535148220f66e2077eb",
+    "paper/educational_personality_v3/figures/confirmation_prompt_changes_publication.pdf": "254775f40f940787c3ed86e94f3ec759fad0bebe42c381b055b769a3ec915784",
+    "paper/educational_personality_v3/figures/confirmation_student_states.pdf": "470bd4b370140703459e9b8d84ae00174a6cfbe7bf03cced2a35f9052cb01f5f",
+    "paper/educational_personality_v3/figures/confirmation_student_states_publication.pdf": "0f58875d12d8376fe177b6a7f57d4d04c0a5d5889a4741f2e4bde00527713cd6",
+    "paper/educational_personality_v3/figures/measurement_pilot.pdf": "8df3463256fe8df7a6703dce3f65a363766b2a0a00f564114e3bf6a63888386b",
+    "paper/educational_personality_v3/figures/study_design.pdf": "38ffd55456256f96283b74e524d2b84ad429e1b90b09c733f9c0a911cabaa053",
+    "research/69_completed_content_and_final_scientific_assessment.md": "06b76c4fb8a3d19129654e0a93149c9ea9a82d7ee994659c0e3faba46c85a91c",
+    "scripts/finalize_personality_manuscript_v3.py": "e5aac658964358a7c9c49a41087f3f51bf34a99f6df165968060a005d7efd73e"
+  },
+  "retained_scientific_limits": [
+    "Only five deployed configurations, four authored English domains, and one wording for each affect cue.",
+    "No human personality, learning gain, education-unique mechanism, universal pairwise separation or unseen-model inference.",
+    "Generator deletion attenuates effects; neutral equivalence unresolved; natural-error positive agreement only18.5%.",
+    "Content screens select on outputs and do not causally control ability; repeated analyses are not independent replications.",
+    "Budget, transport and serialization deviations and original failures remain preserved."
+  ],
+  "not_performed": [
+    "External conference submission",
+    "Public release of all raw API histories",
+    "Independent peer review"
+  ],
+  "conference_acceptance_guaranteed": false,
+  "legacy_controller_paper_complete_flags": "Remain false by design; this separate manuscript-level receipt records final synthesis."
+}

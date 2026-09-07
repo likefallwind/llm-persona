@@ -1,0 +1,7 @@
+{
+  "pipeline_pid": 2240495,
+  "stage": "stopped_for_review",
+  "updated_at": "2026-09-07T01:53:48.634512+00:00",
+  "status": "failed",
+  "error": "RuntimeError: seed_content_repair_1 exited 1; inspect its durable log"
+}

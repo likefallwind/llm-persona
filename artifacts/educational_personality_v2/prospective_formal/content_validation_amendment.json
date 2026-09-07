@@ -1,0 +1,67 @@
+{
+  "recorded_at": "2026-09-07T01:57:55.111112+00:00",
+  "type": "payload serialization validator correction; no sampling change",
+  "reason": "Runner transmits float 0.0; original validator hashed integer 0.",
+  "expected_initial_valid": 2577,
+  "initial_pending_request_ids": [
+    "cbf6aa54b88cd899d987:MiniMax-M3",
+    "75b59ed8b09b11069a23:deepseek-v4-pro",
+    "d75aa5757bdbe4708b44:MiniMax-M3",
+    "8d0a500eb342d6d7604f:deepseek-v4-pro",
+    "d75aa5757bdbe4708b44:deepseek-v4-pro",
+    "3f371ead197f0c759e2e:deepseek-v4-pro",
+    "6fc7fed3697aad544c7b:deepseek-v4-pro"
+  ],
+  "initial_structural_failures": [
+    {
+      "request_id": "cbf6aa54b88cd899d987:MiniMax-M3",
+      "judge": "MiniMax-M3",
+      "reason": "Invalid concise explanation"
+    },
+    {
+      "request_id": "75b59ed8b09b11069a23:deepseek-v4-pro",
+      "judge": "deepseek-v4-pro",
+      "reason": "Evidence references absent, repeated, or empty source lines"
+    },
+    {
+      "request_id": "d75aa5757bdbe4708b44:MiniMax-M3",
+      "judge": "MiniMax-M3",
+      "reason": "Invalid concise explanation"
+    },
+    {
+      "request_id": "8d0a500eb342d6d7604f:deepseek-v4-pro",
+      "judge": "deepseek-v4-pro",
+      "reason": "Evidence references absent, repeated, or empty source lines"
+    },
+    {
+      "request_id": "d75aa5757bdbe4708b44:deepseek-v4-pro",
+      "judge": "deepseek-v4-pro",
+      "reason": "Evidence references absent, repeated, or empty source lines"
+    },
+    {
+      "request_id": "3f371ead197f0c759e2e:deepseek-v4-pro",
+      "judge": "deepseek-v4-pro",
+      "reason": "Evidence references absent, repeated, or empty source lines"
+    },
+    {
+      "request_id": "6fc7fed3697aad544c7b:deepseek-v4-pro",
+      "judge": "deepseek-v4-pro",
+      "reason": "Evidence references absent, repeated, or empty source lines"
+    }
+  ],
+  "remaining_structural_repair_passes": 2,
+  "new_repair_allowance": 0,
+  "original_scripts_modified": false,
+  "new_primary_tests": 0,
+  "files": {
+    "scripts/recover_personality_content_validation_v3.py": "1e946bdf6f2e509bbaf8f661693ae3e964128655a629c9c853fbdac13cfb78e0",
+    "research/68_content_payload_validation_correction.md": "c1c5e634888b203966db465b97ba24251dc9b368ed34d18f81c59e83fdeab8e8",
+    "tests/test_personality_content_validation_recovery_v3.py": "383c01b90f2b7f5a0acdc635fb51de96f3235caf6851d1dd6373b9cceb6c1e35",
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v2/prospective_formal/content_sensitivity/run/responses.jsonl": "2a94009d3ca52685a6b48dc106f24f53b46864479614b69ca4b7a7d16d09d90c",
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v2/prospective_formal/content_sensitivity/run/contract.json": "3a158fe7535c9fb9e4d0a9b4660fc54f2ae4423f925ff6880e0f7c20d2f9d369",
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v2/prospective_formal/content_sensitivity/run/summary.json": "d0d551ed7d4916101c2518e5c9ca5b10ac5e878028923282c6e9888dfcc7678a",
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v2/prospective_formal/content_sensitivity/diagnostics/pass0/summary.json": "6cbbd0f3886413f2464c1d685938c7f07108f938b93dcf7cb2512d30b3d1fee4",
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v2/prospective_formal/content_sensitivity_policy.json": "64da5dd7cd0cd748b41127e1dd86d14e97b88e25e7041d48361ea585c5d7c1e4",
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v2/prospective_formal/content_sensitivity/validation_recovery/original_pipeline_state.json": "ca70a6584278c1f60b9558a9b626f3881e0801cfbb15c52ed95d83fa4447ea8a"
+  }
+}

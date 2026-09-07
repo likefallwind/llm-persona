@@ -1,0 +1,7 @@
+event,comparison,min,max
+affect_acknowledgement,default_vs_context,0.016988522612246704,0.020170543116199553
+affect_acknowledgement,student_state_vs_domain,0.00696994734476397,0.010522442228293582
+answer_reveal,default_vs_context,0.08570522376798291,0.09561581738275723
+answer_reveal,student_state_vs_domain,0.0003686386287913144,0.000592954779815847
+reasoning_elicitation,default_vs_context,0.1244151707156482,0.13110612863684323
+reasoning_elicitation,student_state_vs_domain,-0.0003006504091022763,2.2573970661688737e-06

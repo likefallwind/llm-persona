@@ -1,0 +1,19 @@
+{
+  "rendered_at": "2026-09-07T01:41:54.751374+00:00",
+  "change": "Only percentage label precision changes from zero to one decimal place.",
+  "labels": 45,
+  "new_api_calls": 0,
+  "frozen_reporting_files_changed": false,
+  "source_sha256": {
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/default_profiles.csv": "e20076118a9d3d25abaeb6d5370477b6749672be058301a6a7acd82834dbac05",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/repeat_diagnostics.csv": "26d6088c63b8cac17411604b0d2597f3bf6cbda8c8230bceb5bc5d08e30de93b",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_reporting/summary.json": "f614632de3ef632588ab03e3e45d3e0f1d24f0a50a32604e39d6d1b8cd0ab862",
+    "scripts/plot_personality_confirmation_v3.py": "4dc0655de8172feeb98b3617f8bf149b520e2630958660279b203abc936459d3",
+    "scripts/render_personality_profile_precision_v3.py": "5bec1b3c4235076eb27c55b7f110d493e1b89cb2cd30165b76d7ca29cabf5d13"
+  },
+  "output_sha256": {
+    "paper/educational_personality_v3/figures/confirmation_default_repetition_precise.pdf": "560dd7834920da871f87cbd82202f32419a3e1d7ccc6aeb8943e3813b237cbda",
+    "paper/educational_personality_v3/figures/confirmation_default_repetition_precise.png": "3df0352b8a545d31eb7f0184bb2f861a256e7815a4c2fc118d0326972d74d4b8",
+    "paper/educational_personality_v3/figures/confirmation_default_repetition_precise.svg": "7ceccb01503985ee023d54843b315b19df906b5a417eff375cc34cad0111c96a"
+  }
+}

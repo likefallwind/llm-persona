@@ -87,17 +87,18 @@ For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 (build/working_draft_zh.out) (build/working_draft_zh.out) [1] [2] [3] [4]
-[5] [6] [7]
+[5] [6] [7] [8] [9] [10] [11]
 
 Package fontspec Warning: Font "FandolFang-Regular" does not contain requested
 (fontspec)                Script "CJK".
 
-[8] (build/working_draft_zh.bbl [9]) [10] (build/working_draft_zh.aux)
-
-Package rerunfilecheck Warning: File `working_draft_zh.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
- )
-Output written on build/working_draft_zh.pdf (10 pages).
+[12] [13] [14] [15] [16] [17]
+Underfull \hbox (badness 1082) in paragraph at lines 436--437
+[]\TU/FandolSong-Regular(0)/m/n/10.95 完 整 \TU/lmr/m/n/10.95 4,040 \TU/FandolSon
+g-Regular(0)/m/n/10.95 条 面 板 上 的 认 识 限 定 正 例 编 码 一 致 率 为 \TU/lmr/m/n/10.95 39.6
+2% |\TU/FandolSong-Regular(0)/m/n/10.95 —| \TU/lmr/m/n/10.95 61.26%\TU/FandolSo
+ng-Regular(0)/m/n/10.95 ，|  无 依 据 能 力 归 因 为
+[18] (build/working_draft_zh.bbl [19]) [20] (build/working_draft_zh.aux) )
+(see the transcript file for additional information)
+Output written on build/working_draft_zh.pdf (20 pages).
 Transcript written on build/working_draft_zh.log.

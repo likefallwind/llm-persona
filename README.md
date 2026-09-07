@@ -1,55 +1,53 @@
 # Educational Personality in Language Models
 
-The current research question is whether different deployed language models
-exhibit distinct **educational personalities**: recurring behavioral tendencies
-and context-dependent patterns that predict their behavior in new educational
-situations. The three questions concern defaults, contextual stability, and
-prompt plasticity. Human-equivalent traits are not assumed, and educational
-effectiveness is a separate research question.
+> **Research goal active (2026-09-07).** The first experimental/manuscript checkpoint is complete; the top-conference quality goal remains open. See [quality reassessment and continuation](research/70_quality_goal_reopened.md).
 
-Current direction: [Educational personality charter v2](research/44_educational_personality_charter_v2.md).
-The [2026-09-05 reassessment](research/43_research_reassessment_20260905.md)
-documents the legacy evidence audit. The v2 source audit identifies shared
-problems and conversations across benchmark names before new validation splits
-are created. The [source-grouped reanalysis and evidence gaps](research/45_personality_evidence_gap_and_source_safe_results.md)
-report which predictive signals survive source grouping and exclusion of a
-forced-format task. This is ongoing research, not a new confirmed personality result.
-The [prospective measurement protocol](research/46_prospective_measurement_pilot_protocol.md)
-and [execution record](research/47_prospective_pilot_execution_status.md) document
-new synthetic generations, event-coding diagnostics, and the discovered
-GLM request/returned-version mismatch. Formal confirmation remains pending.
-The [natural-response measurement revision](research/48_natural_measurement_failure_and_line_evidence_revision.md)
-records why copied-quote judging was stopped and how source-line evidence,
-longer judge output budgets, and interleaved scheduling were checked.
-The [completed measurement pilot](research/49_measurement_pilot_complete_and_prediction_development.md)
-reports 480 valid judge outputs, uneven event reliability, and stronger prediction
-baselines. The [prospective protocol](research/50_prospective_educational_personality_protocol_v3.md)
-is now frozen for separate 32-question training and 32-question confirmation
-banks. All 1,280 training responses passed the generation audit and training
-judging is in progress; confirmation generation is gated on
-training-fitted predictions being saved first. The
-[related-work boundary and paper structure](research/51_related_work_boundary_and_paper_spine_v3.md)
-keep the new manuscript centered on the educational-personality question.
-The [confirmation continuation record](research/53_confirmation_continuation_and_sensitivity_policy.md)
-documents the running successor, which waits for complete training and locked
-primary and sensitivity forecasts before generating confirmation responses.
-The [content-error sensitivity supplement](research/56_content_error_sensitivity_completion.md)
-implements the protocol's remaining mathematics/content check. Its separate
-successor waits for the original confirmation controller to complete, then
-reviews canonical responses under rules fixed before confirmation generation.
-The [synthetic precision and coverage diagnostic](research/57_design_precision_and_neutral_coverage.md)
-records a sparse-outcome failure of the nominal neutral-wording t intervals and
-the added bounded-source interpretation check. It changes no primary prediction
-test and supplies no empirical model-personality result.
-The [new manuscript source](paper/educational_personality_v3/README.md) contains
-the rewritten English introduction, related work, methods, and limitations,
-a corresponding Chinese draft, and the completed pilot measurement figure. Empirical confirmation results,
-the abstract, conclusion, and submission checks remain unfinished.
-The [archive role and provenance audit](research/54_archive_role_and_tutor_provenance_audit.md)
-separates evaluation, test answers, and tutor responses across all 39 settings.
-The [English reading draft](paper/educational_personality_v3/build/working_draft_en.pdf)
-and [Chinese reading draft](paper/educational_personality_v3/build/working_draft_zh.pdf)
-are rendered working documents with explicit incomplete-result status.
+This study asks whether deployed language models have recurring educational
+behavior that predicts their actions on new tutoring problems. It separates
+model defaults, model-specific responses to student cues, and changes under
+teaching instructions, without new human annotation or human-equivalent trait
+claims.
+
+As of 2026-09-07, all 5,320 formal tutor generations and all 12,120 confirmation
+codes are complete. The six primary comparisons, eight coder-panel checks,
+five generator deletions, 200 training-source resamples and confirmation-budget
+sensitivity have finished. Default profiles predict all three primary actions;
+student-state profiles add a resolved increment for affect acknowledgement.
+Effect strength varies with model composition, and instruction-driven convergence
+does not eliminate differences in permissible accompanying actions.
+
+All 2,584 content reviews and all five content-sensitivity subsets are complete.
+The [English/Chinese manuscript](paper/educational_personality_v3/README.md)
+now includes the final empirical abstract, results, discussion, conclusion and
+appendices. Content-screened matched subsets preserve the predictive pattern;
+the low 18.5% natural-error positive agreement is explicitly retained as a
+measurement limitation. The [evidence ledger](paper/educational_personality_v3/evidence_ledger.md)
+and [final review](paper/educational_personality_v3/final_review.json) map claims
+to source counts, estimates, uncertainty and verified PDF hashes.
+
+Read the completed [English paper](paper/educational_personality_v3/build/working_draft_en.pdf),
+[Chinese paper](paper/educational_personality_v3/build/working_draft_zh.pdf), or
+[anonymous ACL layout](paper/educational_personality_v3/build/acl/anonymous_acl_draft.pdf).
+The first-stage research and manuscript checkpoint is complete; these are local artifacts,
+with no external submission or publication performed. The [scientific assessment](research/69_completed_content_and_final_scientific_assessment.md)
+retains the contribution boundaries and remaining peer-review risks.
+
+The [research charter](research/44_educational_personality_charter_v2.md),
+[archive reanalysis](research/45_personality_evidence_gap_and_source_safe_results.md),
+[measurement pilot](research/49_measurement_pilot_complete_and_prediction_development.md),
+[prospective protocol](research/50_prospective_educational_personality_protocol_v3.md),
+[related work](research/51_related_work_boundary_and_paper_spine_v3.md),
+[archive role audit](research/54_archive_role_and_tutor_provenance_audit.md),
+[content sensitivity policy](research/56_content_error_sensitivity_completion.md),
+and [neutral precision analysis](research/57_design_precision_and_neutral_coverage.md)
+remain the source records. Protocol deviations and failed runs are retained in
+[training recovery](research/59_training_single_code_budget_amendment.md),
+[Gateway recovery](research/63_gateway_outage_and_recovery.md),
+[confirmation budget amendment](research/64_confirmation_six_code_budget_amendment.md),
+and [single transport amendment](research/65_confirmation_single_transport_timeout_amendment.md).
+The complete-main checkpoint agrees with all nine corresponding official tables;
+its separate [record](research/66_complete_main_panel_checkpoint.md) does not
+replace the full-study completion artifacts.
 
 ## Archived policy-signature study and reproduction
 

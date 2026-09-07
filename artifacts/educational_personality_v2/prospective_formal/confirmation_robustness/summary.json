@@ -1,0 +1,21 @@
+{
+  "status": "judge and training-source sensitivity calculations complete; not independent replications",
+  "judge_panels": 8,
+  "training_resamples": 200,
+  "generator_deletion_panels": 5,
+  "training_resampling_comparisons": 1200,
+  "input_hashes": {
+    "artifacts/educational_personality_v2/prospective_formal/prediction_lock.json": "ad6650f9776e16cde29440d8a67f6e0873d98c70846c8fe93dd89ee571c1642c",
+    "artifacts/educational_personality_v2/prospective_formal/judge_sensitivity_lock.json": "f856d1860f925ca649d8765bef33283697392a9e6d47b01c0d0ed38c3385eda9",
+    "artifacts/educational_personality_v2/prospective_formal/generator_deletion_lock.json": "05689321d69532f1df39a7b6ff191d0d3e1662cf3daf3b8b9165c87fcac0d848",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/combined_diagnostics/event_codes.csv": "85ddb543bb3ba7a6b14abe343e66ef2744912c57ce598f067c418314d841b242",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/combined_diagnostics/consensus.csv": "83d928fde474de55ea33a7933454ab99784a0c44a930e0d15b40c929b890d0b3",
+    "scripts/analyze_personality_robustness_v3.py": "1ac843d119adbdeef9d53b0ba1add8f707253f6a0a54ff1c4eaba409e2b3adb2"
+  },
+  "limitations": [
+    "Judge panels reuse responses; alternative consensus does not create external validity.",
+    "Training resampling keeps the originally selected regularization ratio fixed, without reselecting hyperparameters.",
+    "Training quantiles condition on these confirmation labels and are not the primary source-bootstrap confidence intervals.",
+    "This analysis cannot remove unmeasured common biases shared by the judges."
+  ]
+}

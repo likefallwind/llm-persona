@@ -1,0 +1,12 @@
+{
+  "expected_requests": 2584,
+  "valid_requests": 0,
+  "invalid_or_missing": 2584,
+  "status": "content-review structural diagnostics; no correctness ground truth",
+  "files": {
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/freeze.json": "4ccf8107c346512d9fee1b82e8f1cd5a9af8679e658c83475a5f3d4224125a25",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/run/responses.jsonl": "2a94009d3ca52685a6b48dc106f24f53b46864479614b69ca4b7a7d16d09d90c",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/diagnostics/pass0/coverage.csv": "420e3dddb8301cb6f639dd0b072cf9a0c5396f40f0fe1d71f9b2038404b0674e",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/diagnostics/pass0/codes.jsonl": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  }
+}

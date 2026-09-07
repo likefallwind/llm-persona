@@ -1,0 +1,22 @@
+{
+  "computed_at": "2026-09-07T02:03:21.797555+00:00",
+  "status": "complete content-independent mathematics/all-canonical checkpoint and all diagnostic controls; content screens pending",
+  "selected_responses": {
+    "all_canonical": 1280,
+    "mathematics": 320
+  },
+  "diagnostic_controls_complete": 24,
+  "control_rule_met": true,
+  "new_calls": 0,
+  "new_estimates_beyond_original_helpers": false,
+  "partial_content_labels_used_for_screening": false,
+  "formal_content_outputs_replaced": false,
+  "input_hashes": {
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/scored_locked_predictions.csv": "196ce859f55837c036463d8efc668339065bc9a83d279843104dddcb9bc6222b",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/unblinding.jsonl": "250d9a0851acff7ab133495a7ba8d973b0db1a163b4c3b591af365d18d29dfd4",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/validation_recovery/preflight_diagnostics/codes.jsonl": "077690cf3fec24323688f15a2315a2d3235bae7e795aefdc82303db125aaaa55",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/freeze.json": "4ccf8107c346512d9fee1b82e8f1cd5a9af8679e658c83475a5f3d4224125a25",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity_policy.json": "64da5dd7cd0cd748b41127e1dd86d14e97b88e25e7041d48361ea585c5d7c1e4",
+    "scripts/personality_content_sensitivity_v3.py": "d853989fa2411a41c2dfc51e805fe8e4c536da966463ca2a3c2a35aaae5e5092"
+  }
+}

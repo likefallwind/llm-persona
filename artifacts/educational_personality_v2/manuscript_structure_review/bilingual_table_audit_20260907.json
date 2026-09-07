@@ -1,0 +1,186 @@
+{
+  "checked_at": "2026-09-07T02:21:56.609470+00:00",
+  "status": "six empirical tables in both languages agree with complete analysis values",
+  "checks": [
+    {
+      "table": "default_rates",
+      "language": "en",
+      "cells": 15,
+      "max_abs_rounding_difference": 0.046875,
+      "absolute_tolerance": 0.05
+    },
+    {
+      "table": "default_rates",
+      "language": "zh",
+      "cells": 15,
+      "max_abs_rounding_difference": 0.046875,
+      "absolute_tolerance": 0.05
+    },
+    {
+      "table": "absolute_losses",
+      "language": "en",
+      "cells": 15,
+      "max_abs_rounding_difference": 4.7187537369208776e-07,
+      "absolute_tolerance": 5e-07
+    },
+    {
+      "table": "absolute_losses",
+      "language": "zh",
+      "cells": 15,
+      "max_abs_rounding_difference": 4.7187537369208776e-07,
+      "absolute_tolerance": 5e-07
+    },
+    {
+      "table": "matched_prompt_rates",
+      "language": "en",
+      "cells": 75,
+      "max_abs_rounding_difference": 0.04999999999999716,
+      "absolute_tolerance": 0.05
+    },
+    {
+      "table": "matched_prompt_rates",
+      "language": "zh",
+      "cells": 75,
+      "max_abs_rounding_difference": 0.04999999999999716,
+      "absolute_tolerance": 0.05
+    },
+    {
+      "table": "secondary_rates",
+      "language": "en",
+      "cells": 25,
+      "max_abs_rounding_difference": 0.046875,
+      "absolute_tolerance": 0.05
+    },
+    {
+      "table": "secondary_rates",
+      "language": "zh",
+      "cells": 25,
+      "max_abs_rounding_difference": 0.046875,
+      "absolute_tolerance": 0.05
+    },
+    {
+      "table": "content_subset_gains",
+      "language": "en",
+      "cells": 30,
+      "max_abs_rounding_difference": 4.850908191397774e-06,
+      "absolute_tolerance": 5e-06
+    },
+    {
+      "table": "content_subset_gains",
+      "language": "zh",
+      "cells": 30,
+      "max_abs_rounding_difference": 4.850908191397774e-06,
+      "absolute_tolerance": 5e-06
+    },
+    {
+      "table": "primary_tests",
+      "event": "answer_reveal",
+      "comparison": "default_vs_context",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "estimates": [
+        0.091275,
+        0.071365,
+        0.109169,
+        5.12e-10
+      ],
+      "status": "verified"
+    },
+    {
+      "table": "primary_tests",
+      "event": "answer_reveal",
+      "comparison": "student_state_vs_domain",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "estimates": [
+        0.000431,
+        -0.000373,
+        0.001299,
+        0.325749
+      ],
+      "status": "verified"
+    },
+    {
+      "table": "primary_tests",
+      "event": "reasoning_elicitation",
+      "comparison": "default_vs_context",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "estimates": [
+        0.129698,
+        0.121308,
+        0.137834,
+        3.879999999999999e-24
+      ],
+      "status": "verified"
+    },
+    {
+      "table": "primary_tests",
+      "event": "reasoning_elicitation",
+      "comparison": "student_state_vs_domain",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "estimates": [
+        -0.000163,
+        -0.001007,
+        0.000726,
+        0.640847
+      ],
+      "status": "verified"
+    },
+    {
+      "table": "primary_tests",
+      "event": "affect_acknowledgement",
+      "comparison": "default_vs_context",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "estimates": [
+        0.019821,
+        0.01402,
+        0.02527,
+        3e-07
+      ],
+      "status": "verified"
+    },
+    {
+      "table": "primary_tests",
+      "event": "affect_acknowledgement",
+      "comparison": "student_state_vs_domain",
+      "languages": [
+        "en",
+        "zh"
+      ],
+      "estimates": [
+        0.009734,
+        0.005363,
+        0.013947,
+        0.000192
+      ],
+      "status": "verified"
+    }
+  ],
+  "new_estimates": 0,
+  "limitation": "This checks table values and fixed row ordering, not every prose claim or semantic validity.",
+  "input_sha256": {
+    "paper/educational_personality_v3/sections/results.tex": "e1d92008abd514b4b04712988c4436c8f0a606a459909fb529104efa6fbe0fa8",
+    "paper/educational_personality_v3/sections/confirmation_details.tex": "663aee18e21a264e0bc9907b3a299d5133ea3813b31315005df0e09ac005c856",
+    "paper/educational_personality_v3/manuscript_zh.md": "5788f1904f5478bb21304a790322755ad85bc2e71120ebe3f7c5b7385f2e2064",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/measurement_selection.json": "0731722172e9f5add57f8be1d7d83c640fac97ab9b90fa376065b0c0901f0821",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/default_profiles.csv": "e20076118a9d3d25abaeb6d5370477b6749672be058301a6a7acd82834dbac05",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/prediction_brier.csv": "718b3e4719ad4c746f71249283a3004440f1be116cc3b0ddf75475778a002f31",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_descriptive/matched_prompt_profiles.csv": "c5b44c1ebb3486039da9e1684b3207aceca40fb56047f7ec1b7042d31978c23f",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/primary_prediction_comparisons.csv": "314d36f5fd478bb5e48d6cb79faff2f3aec026456cdfd20ed8ac256f110919ad",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/analysis/subset_comparisons.csv": "7470169cd4fcab33894e67de54a939e49c71b3f02ec0f90b3275531cee6031bf",
+    "scripts/audit_personality_manuscript_tables_v3.py": "d4d28fb543a5c462f2598f0a602a0d54a1920f0c7ffdb271afb0d48fb329de49"
+  }
+}

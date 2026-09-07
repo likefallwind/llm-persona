@@ -1,0 +1,37 @@
+{
+  "rendered_at": "2026-09-07T01:49:03.558607+00:00",
+  "changes": [
+    "6.3-inch source width and 8.5-point labels for two-column placement",
+    "Shorter deployment/action labels and removal of repeated figure notes",
+    "Profile cells are percentages to one decimal; color scale remains probability",
+    "Gain p-values retained in the numeric manuscript table instead of tiny plot labels"
+  ],
+  "new_api_calls": 0,
+  "new_estimates": 0,
+  "frozen_reporting_files_changed": false,
+  "source_sha256": {
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/primary_prediction_comparisons.csv": "314d36f5fd478bb5e48d6cb79faff2f3aec026456cdfd20ed8ac256f110919ad",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/default_profiles.csv": "e20076118a9d3d25abaeb6d5370477b6749672be058301a6a7acd82834dbac05",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/repeat_diagnostics.csv": "26d6088c63b8cac17411604b0d2597f3bf6cbda8c8230bceb5bc5d08e30de93b",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/student_state_profiles.csv": "73c986616803d5235c7f04927421be29bfd451ca6690e4daa67a2fbd4b3338c7",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/paired_prompt_effects.csv": "83bb44e495510b51d02185b2677fce1140f66aefbe92d50c9e2af99cfdf91d24",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_neutral_bounds/neutral_equivalence_interpretation.csv": "cf3c60796ac33cd7e58136e8842471882758c6c82ef0d8bd7d5ddaf37d5ed2f2",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_reporting/summary.json": "f614632de3ef632588ab03e3e45d3e0f1d24f0a50a32604e39d6d1b8cd0ab862",
+    "scripts/plot_personality_confirmation_v3.py": "4dc0655de8172feeb98b3617f8bf149b520e2630958660279b203abc936459d3",
+    "scripts/render_personality_publication_figures_v3.py": "420f0f8eaf2464efaaadf007f06026ff9cf369bfb5f23043e58e04bf2b0304c1"
+  },
+  "output_sha256": {
+    "paper/educational_personality_v3/figures/confirmation_prediction_gains_publication.pdf": "12bca95bd82f0d3cee2e4dd1005bc0850bb39805828dc568adc2029913051d3e",
+    "paper/educational_personality_v3/figures/confirmation_prediction_gains_publication.png": "1d791e8bed0372c4d042c8cb3be7254742b51511a81a353f83fa46b6709a577a",
+    "paper/educational_personality_v3/figures/confirmation_prediction_gains_publication.svg": "03ad5fe40e5f227df9de26f39115f2a35f14fd57b782a1889fa43456e865fee5",
+    "paper/educational_personality_v3/figures/confirmation_default_repetition_publication.pdf": "ec1eec2c5e8047d4d349344ca2cd278949e124701c572618c6c679985690da94",
+    "paper/educational_personality_v3/figures/confirmation_default_repetition_publication.png": "1f978a98a123a539879d4642decb45eb991ac91c262d6428539615b5d24c32e9",
+    "paper/educational_personality_v3/figures/confirmation_default_repetition_publication.svg": "07a43570b812430e2dde3930ee8cb19b1f9120b497b521372c16002ab2096f28",
+    "paper/educational_personality_v3/figures/confirmation_student_states_publication.pdf": "0f58875d12d8376fe177b6a7f57d4d04c0a5d5889a4741f2e4bde00527713cd6",
+    "paper/educational_personality_v3/figures/confirmation_student_states_publication.png": "5db7e1461a09760cd870a20ff375e444d7deb7a8dfd6b2de12e8710566eb2d70",
+    "paper/educational_personality_v3/figures/confirmation_student_states_publication.svg": "508a11205d73ae4b664d050eb3db7dca078a4deccf8a6836a29eeb9b96fe9ab2",
+    "paper/educational_personality_v3/figures/confirmation_prompt_changes_publication.pdf": "254775f40f940787c3ed86e94f3ec759fad0bebe42c381b055b769a3ec915784",
+    "paper/educational_personality_v3/figures/confirmation_prompt_changes_publication.png": "189d85edd1cde7c5655d7178c2d7c23bc85bef502685ea36ec26edaf9732da1b",
+    "paper/educational_personality_v3/figures/confirmation_prompt_changes_publication.svg": "a81a64717fcbc84f4760de4dbc4ee99fb7fd6748709ad6690d2436a7997411d8"
+  }
+}

@@ -61,3 +61,58 @@ external logs or original sources. Reconstructed historical inputs must be
 identified as reconstructions. Consequently, the archive provides discovery and
 confound audits, while the prospective study records the input, output, source,
 version, and timing relationships needed for its own narrower confirmation.
+
+\subsection{What the Existing Scores Contribute}
+\label{app:archive-reanalysis}
+
+We also reanalyze the legacy scored panel with its original eight semantic
+dimensions and six model configurations. These are exploratory measurements,
+not labels assigned to the entire archive, and are not pooled with the new
+binary event codes. Excluding 15 contexts without recoverable source groups
+leaves 224 contexts from 210 source families across four task settings. Each
+source stays in one fold; contexts share their source's weight within a task,
+and tasks receive equal weight. Across 100 deterministic two-fold splits, we
+compare a global model profile with a separate model profile for each known
+task, predicting scores centered within each context. This tests new sources
+within known task settings, not transfer to a new task or prediction of absolute
+scores.
+
+The task-conditioned increment depends on which instructional settings are
+included (Table~\ref{tab:archive-profile-sensitivity}). Excluding the Socratic
+setting, whose current adapter requires question-only output, reduces the
+direct-help increment from 6.57\% to 0.34\%. This does not eliminate predictive
+information in the global model profile: in the reduced panel, its direct-help
+MSE is 0.66754, compared with 0.88413 for zero relative model differences.
+Personalization retains a larger task-conditioned increment, but that legacy
+score does not establish learner understanding or a validated personality factor.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{lrr}
+\toprule
+Legacy dimension & Four tasks & Without Socratic\\
+\midrule
+Affective warmth & 11.27\% & 2.81\%\\
+Autonomy support & 9.58\% & 4.49\%\\
+Cognitive load & 2.05\% & 1.83\%\\
+Diagnostic specificity & 3.93\% & 2.51\%\\
+Elicitation & 10.73\% & 3.23\%\\
+Epistemic caution & $-0.86$\% & $-1.11$\%\\
+Help directness & 6.57\% & 0.34\%\\
+Personalization & 12.15\% & 10.52\%\\
+\bottomrule
+\end{tabular}
+\caption{Exploratory relative MSE reduction from task-specific model profiles
+over a global model profile, averaged over split-specific ratios. The full
+panel has 224 contexts/210 source families; the reduced panel has 144/133.
+Negative values mean worse predictions. The 100 overlapping splits are not
+independent experiments and their dispersion is not a confidence interval.}
+\label{tab:archive-profile-sensitivity}
+\end{table}
+
+This exclusion was chosen after observing task results. It changes the target
+task distribution and its weights, so the difference between columns is not a
+causal effect of question-only formatting. We retain both analyses. Their role
+is to motivate separating problem content, student cues, and output instructions
+in the prospective experiment; neither the archive's size nor favorable legacy
+scores substitute for that confirmation.

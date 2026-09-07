@@ -1,0 +1,23 @@
+{
+  "status": "complete primary calculations on prospective confirmation; scientific synthesis and sensitivity analyses still required",
+  "prediction_sources": 32,
+  "prompt_sources": 16,
+  "source_bootstrap_repetitions": 10000,
+  "seed": 20260905,
+  "primary_hypothesis_tests": 6,
+  "primary_p_adjustment": "Holm; one-sided positive Brier gain",
+  "neutral_equivalence": "Bonferroni simultaneous 95% paired-t intervals across 30 comparisons inside +/-0.10",
+  "prediction_lock_precedes_all_confirmation_requests": true,
+  "inputs": {
+    "artifacts/educational_personality_v2/prospective_formal/prediction_lock.json": "ad6650f9776e16cde29440d8a67f6e0873d98c70846c8fe93dd89ee571c1642c",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/combined_diagnostics/consensus.csv": "83d928fde474de55ea33a7933454ab99784a0c44a930e0d15b40c929b890d0b3",
+    "scripts/analyze_personality_confirmation_v3.py": "451bce2b6941c319d95e0bcf6bac936789e83b684894547a86271d8d8fd9430e"
+  },
+  "limitations": [
+    "Intervals condition on the fitted training profiles and use source sampling approximations.",
+    "The 32 authored confirmation sources are not a representative random sample of education.",
+    "Two source-level observations of zero variance do not establish equality or statistical power.",
+    "Style competition is descriptive and does not establish causal separation from style or ability.",
+    "Single/leave-one judge, training-resampling, content-error and version-drift sensitivities remain separate requirements."
+  ]
+}

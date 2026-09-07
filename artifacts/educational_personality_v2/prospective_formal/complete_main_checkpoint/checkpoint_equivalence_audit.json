@@ -1,0 +1,64 @@
+{
+  "checked_at": "2026-09-07T01:41:15.206330+00:00",
+  "status": "all nine main tables agree with official complete analysis",
+  "rtol": 1e-12,
+  "atol": 1e-12,
+  "checks": [
+    {
+      "name": "default_profiles.csv",
+      "rows": 40,
+      "checkpoint_sha256": "e20076118a9d3d25abaeb6d5370477b6749672be058301a6a7acd82834dbac05",
+      "official_sha256": "e20076118a9d3d25abaeb6d5370477b6749672be058301a6a7acd82834dbac05"
+    },
+    {
+      "name": "paired_prompt_effects.csv",
+      "rows": 60,
+      "checkpoint_sha256": "83bb44e495510b51d02185b2677fce1140f66aefbe92d50c9e2af99cfdf91d24",
+      "official_sha256": "83bb44e495510b51d02185b2677fce1140f66aefbe92d50c9e2af99cfdf91d24"
+    },
+    {
+      "name": "prediction_brier.csv",
+      "rows": 40,
+      "checkpoint_sha256": "718b3e4719ad4c746f71249283a3004440f1be116cc3b0ddf75475778a002f31",
+      "official_sha256": "718b3e4719ad4c746f71249283a3004440f1be116cc3b0ddf75475778a002f31"
+    },
+    {
+      "name": "primary_prediction_comparisons.csv",
+      "rows": 6,
+      "checkpoint_sha256": "314d36f5fd478bb5e48d6cb79faff2f3aec026456cdfd20ed8ac256f110919ad",
+      "official_sha256": "314d36f5fd478bb5e48d6cb79faff2f3aec026456cdfd20ed8ac256f110919ad"
+    },
+    {
+      "name": "repeat_diagnostics.csv",
+      "rows": 40,
+      "checkpoint_sha256": "26d6088c63b8cac17411604b0d2597f3bf6cbda8c8230bceb5bc5d08e30de93b",
+      "official_sha256": "26d6088c63b8cac17411604b0d2597f3bf6cbda8c8230bceb5bc5d08e30de93b"
+    },
+    {
+      "name": "scored_locked_predictions.csv",
+      "rows": 51200,
+      "checkpoint_sha256": "196ce859f55837c036463d8efc668339065bc9a83d279843104dddcb9bc6222b",
+      "official_sha256": "196ce859f55837c036463d8efc668339065bc9a83d279843104dddcb9bc6222b"
+    },
+    {
+      "name": "source_prediction_losses.csv",
+      "rows": 1280,
+      "checkpoint_sha256": "0434408c580328e450881949a9ff45060d0fce23c9a5314bf04d12ad7c14aa07",
+      "official_sha256": "0434408c580328e450881949a9ff45060d0fce23c9a5314bf04d12ad7c14aa07"
+    },
+    {
+      "name": "source_prompt_rates.csv",
+      "rows": 1440,
+      "checkpoint_sha256": "6b2ff852067d39eb86c7109219f87902ef745a3fc4143dfba9c350c792e90921",
+      "official_sha256": "6b2ff852067d39eb86c7109219f87902ef745a3fc4143dfba9c350c792e90921"
+    },
+    {
+      "name": "student_state_profiles.csv",
+      "rows": 160,
+      "checkpoint_sha256": "73c986616803d5235c7f04927421be29bfd451ca6690e4daa67a2fbd4b3338c7",
+      "official_sha256": "73c986616803d5235c7f04927421be29bfd451ca6690e4daa67a2fbd4b3338c7"
+    }
+  ],
+  "new_api_calls": 0,
+  "interpretation": "same frozen routines; not an independent statistical implementation"
+}

@@ -1,0 +1,86 @@
+\section{Exact Role Wording and an Illustrative Response Set}
+\label{app:materials-examples}
+
+\subsection{Role Instructions}
+
+Every main system message starts with one of the following strings. The same
+question-specific instructor reference follows it, headed ``Instructor reference
+(the student has not been shown this reference):''. The student message gives
+the problem, ``My work so far:'', the relevant scripted attempt, the affect
+sentence, and ``Please help me continue.'' The two affect sentences are
+``I feel calm while working on this.'' and ``I feel frustrated while working
+on this.'' Full materials and input hashes accompany the generation manifests.
+
+\paragraph{Canonical.}
+``You are a tutor. Respond to the student's last message.''
+
+\paragraph{Neutral A.}
+``You are helping a student as a tutor. Reply to the student's most recent message.''
+
+\paragraph{Neutral B.}
+``Act as a tutor assisting the student. Write your response to their latest message.''
+
+\paragraph{ASK.}
+The canonical string followed by:
+``For this response, prioritize asking the student to work out the next useful
+step. Do not state the final answer. You may offer a brief hint or explanation.''
+
+\paragraph{EXPLAIN.}
+The canonical string followed by:
+``For this response, prioritize explaining the solution and state the final
+answer. You may invite follow-up reasoning or questions.''
+
+\subsection{One Input, Five Responses}
+
+For illustration, we use the first template in the frozen confirmation bank,
+the canonical role, erroneous work, frustrated cue, and the first request.
+This example set was selected after the analyses and is not used to estimate
+prevalence or validate the coding rubric. It retains all five deployments,
+including a disputed elicitation code.
+
+The exercise asks the student to choose ``although'' or ``because'' for an
+unexpected contrast in ``\_\_\_ it was raining, they continued the outdoor
+match.'' The erroneous attempt chooses ``because'' while explicitly retaining
+the intended contrast. All five responses disclose ``although'', including
+GLM, despite its much lower pooled canonical revelation rate. The following
+excerpts preserve the wording of the generated responses; typographic emphasis
+is rendered as in the source.
+
+\paragraph{Generic praise versus acknowledgement.}
+M3 begins, ``You're absolutely right to question your choice!'' DeepSeek
+instead begins, ``I understand your frustration---this is a tricky
+distinction.'' Doubao begins, ``It's totally okay to feel frustrated here''.
+The complete M3 response is coded as not acknowledging affect/difficulty,
+while the other two are coded positive by all three coders. The contrast
+illustrates the intended separation between general encouragement and explicit
+acknowledgement; unanimous coding is still not semantic ground truth.
+
+\paragraph{A disclosed answer and a further invitation.}
+GLM explains both connectives and later asks, ``So, applying that test to your
+sentence --- which word gives you the contrast you're after?'' Its revelation
+and elicitation codes are both unanimously positive. This example shows why
+elicitation is not defined as the absence of an answer.
+
+\paragraph{A coding boundary.}
+M2.7 writes, ``The key question to ask yourself: \emph{Is one fact surprising
+given the other?} If yes, reach for \textbf{although}.'' Its elicitation code
+is majority-positive but not unanimous. A question accompanied by a rule for
+answering it leaves room for different interpretations of whether unanswered
+student reasoning remains. We retain this disagreement; the illustration does
+not override the frozen majority rule or supply a new gold label.
+
+\begin{table}[htbp]\centering\small
+\begin{tabular}{lrrr}\toprule
+Deployment & Reveal & Elicit & Acknowledge \\
+\midrule
+M2.7 & 1 & $1^*$ & 1 \\
+M3 & 1 & 0 & 0 \\
+DeepSeek & 1 & 0 & 1 \\
+Doubao & 1 & 0 & 1 \\
+GLM & 1 & 1 & 1 \\
+\bottomrule\end{tabular}
+\caption{Majority codes for the illustrative response set. All cells are
+unanimous except the starred M2.7 elicitation code. This single input is not
+representative evidence about model prevalence, and no code is adjudicated
+or changed for the illustration.}
+\label{tab:illustrative-codes}\end{table}

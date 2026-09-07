@@ -15,7 +15,7 @@ in Appendix~\ref{app:detailed-methods}.
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{figures/study_design.pdf}
-\caption{Prospective design, with planned response counts. Each main question
+\caption{Prospective design, with realized response counts. Each main question
 crosses five configurations, four student-work/affect conditions, and two
 requests. Main training and confirmation source families are separate.
 RQ1 and RQ2 use the 32 canonical confirmation sources; RQ3 reuses 16 of them
@@ -55,7 +55,7 @@ receives two requests at temperature 0.7 and an 8,192-token output budget.
 Training and canonical confirmation each contain 1,280 responses. Additional
 prompt arms contribute 2,560 responses on 16 confirmation sources. Secondary
 information-opportunity probes and cross-stage sentinels add 160 and 40
-responses, respectively, for 5,320 planned tutor generations. These repetitions
+responses, respectively, for 5,320 tutor generations. These repetitions
 and variants do not add independent sources.
 
 \subsection{Observable Behavior and Recurrence (RQ1)}
@@ -76,8 +76,10 @@ lines. Primary labels use the majority of three structurally valid codes;
 traceability and agreement do not establish semantic ground truth. Repairs
 address completion or structure failures, never event labels or disagreement.
 One missing training code required a disclosed larger-budget amendment before
-prediction locking; Appendix~\ref{app:detailed-methods} preserves its exact
-scope and the original failures.
+prediction locking. Six missing confirmation codes later required a separately
+recorded amendment after the original repair limit. Appendix~\ref{app:detailed-methods}
+preserves their scope and failures; a supplemental missing-code sensitivity
+checks whether the primary conclusions depend on the amended measurements.
 
 RQ1 reports model event rates, state-specific profiles, and positive, negative,
 and total agreement across the two requests, with source clustering. Constant

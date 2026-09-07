@@ -1,0 +1,20 @@
+{
+  "items": 1292,
+  "canonical_items": 1280,
+  "anchor_items": 12,
+  "expected_calls": 2584,
+  "temperature": 0,
+  "max_tokens": 16384,
+  "judges": [
+    "MiniMax-M3",
+    "deepseek-v4-pro"
+  ],
+  "files": {
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/judge/v2_2/unblinding.jsonl": "0db2cf5b81347c45714c0c1312c1aa2c97042c53b1891b8f42ee4425c03c1f12",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/manifest.jsonl": "2afcd73df9bbbd9003dce741e7d4a00a22c9ad30569464a18dbb7ad313533ff8",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity/unblinding.jsonl": "250d9a0851acff7ab133495a7ba8d973b0db1a163b4c3b591af365d18d29dfd4",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/scored_locked_predictions.csv": "196ce859f55837c036463d8efc668339065bc9a83d279843104dddcb9bc6222b",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/prediction_brier.csv": "718b3e4719ad4c746f71249283a3004440f1be116cc3b0ddf75475778a002f31",
+    "artifacts/educational_personality_v2/prospective_formal/content_sensitivity_policy.json": "64da5dd7cd0cd748b41127e1dd86d14e97b88e25e7041d48361ea585c5d7c1e4"
+  }
+}

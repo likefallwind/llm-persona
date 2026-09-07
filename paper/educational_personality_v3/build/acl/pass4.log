@@ -78,39 +78,60 @@ For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg)
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd)
-(./sections/introduction.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.m
-ap}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}])
-(./sections/related_work.tex) (./sections/methods.tex
+(./sections/abstract.tex) (./sections/introduction.tex [1{/var/lib/texmf/fonts/
+map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/bas
+e/8r.enc}]) (./sections/related_work.tex) (./sections/methods.tex
 Underfull \hbox (badness 2799) in paragraph at lines 31--1
  []\T1/ptm/b/n/10.95 (+20) Teaching qual-ity and the pre-dic-tive ques-
-[2]
-Underfull \vbox (badness 10000) has occurred while \output is active [3 <./figu
-res/study_design.pdf>]) (./sections/measurement_development.tex
-Underfull \hbox (badness 1292) in paragraph at lines 12--21
-[]\T1/ptm/m/n/10.95 (+20) The three se-lected pri-mary end-points have
-) (./sections/limitations.tex [4]) [5 <./figures/measurement_pilot.pdf>]
+[2] [3]
+Underfull \vbox (badness 10000) has occurred while \output is active)
+(./sections/results.tex [4 <./figures/study_design.pdf>] [5]
+Underfull \vbox (badness 10000) has occurred while \output is active
+Underfull \vbox (badness 3098) has occurred while \output is active [6 <./figur
+es/confirmation_prediction_gains_publication.pdf>]) (./sections/discussion.tex)
+ (./sections/conclusion.tex [7]) (./sections/limitations.tex)
 (build/acl/anonymous_acl_draft.bbl
+Underfull \vbox (badness 5288) has occurred while \output is active [8]
 Underfull \hbox (badness 2269) in paragraph at lines 82--86
 []\T1/ptm/m/n/10 (+20) Ruikang Zhang, Shuo Wang, and Qi Su. 2026.
-) [6] (./sections/archive_scope.tex) (./sections/detailed_methods.tex
+) [9] (./sections/archive_scope.tex) (./sections/measurement_development.tex
+[10]
+Underfull \hbox (badness 1292) in paragraph at lines 12--21
+[]\T1/ptm/m/n/10.95 (+20) The three se-lected pri-mary end-points have
+) (./sections/detailed_methods.tex
+Underfull \vbox (badness 2418) has occurred while \output is active [11]
 Underfull \hbox (badness 1221) in paragraph at lines 30--38
 \T1/ptm/m/n/10.95 (+20) suc-cess-ful dedu-pli-cated re-sponses, and dis-tin-
 
 Underfull \hbox (badness 2065) in paragraph at lines 39--45
 []\T1/ptm/m/n/10.95 (+20) Across the 899,025 variant-preserving text
-[7] [8]
+
+Underfull \vbox (badness 10000) has occurred while \output is active [12 <./fig
+ures/measurement_pilot.pdf>]
 Underfull \hbox (badness 7907) in paragraph at lines 103--112
 \T1/ptm/m/n/10.95 (+20) Three pri-mary events are fixed from the
-[9] [10]) [11] (build/acl/anonymous_acl_draft.aux) )
+[13] [14] [15] (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd))
+(./sections/materials_examples.tex [16]) (./sections/confirmation_details.tex
+Underfull \hbox (badness 2393) in paragraph at lines 182--188
+\T1/ptm/m/n/10.95 (+20) Positive coder agree-ment on the full 4,040-
+[17] [18 <./figures/confirmation_default_repetition_publication.pdf>] [19 <./fi
+gures/confirmation_student_states_publication.pdf>] [20 <./figures/confirmation
+_prompt_changes_publication.pdf>]) [21] (build/acl/anonymous_acl_draft.aux) )
 (see the transcript file for additional information)</usr/share/texlive/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/times/utmri8a.pfb>
-Output written on build/acl/anonymous_acl_draft.pdf (11 pages, 239261 bytes).
+lic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
+w/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
+8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on build/acl/anonymous_acl_draft.pdf (21 pages, 418131 bytes).
 Transcript written on build/acl/anonymous_acl_draft.log.

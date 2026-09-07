@@ -1,0 +1,28 @@
+{
+  "completed_at": "2026-09-07T01:30:31.660113+00:00",
+  "status": "complete supplemental missing-code sensitivity",
+  "missing_judge_codes": 6,
+  "affected_canonical_answers": 2,
+  "assignments_per_primary_event": 4,
+  "primary_effects": 6,
+  "primary_effect_signs_all_unchanged": true,
+  "holm_upper_bound_rule": "Holm applied to per-test maximum raw p-values; monotonicity bounds all joint assignments conservatively.",
+  "primary_results_replaced": false,
+  "fitted_models_changed": false,
+  "new_api_calls": 0,
+  "limitations": [
+    "Bounds allow either binary GLM code while fixing the other two coders. They do not validate semantic truth.",
+    "Descriptive ranges quantify coding uncertainty, not population sampling uncertainty.",
+    "This supplemental analysis follows the disclosed completion-budget amendment."
+  ],
+  "input_hashes": {
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_budget_amendment.json": "08266ba802c44e65e830687c7641d48bf9d4350d83620a9d3a52df0e7456bc62",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/measurement_selection.json": "0731722172e9f5add57f8be1d7d83c640fac97ab9b90fa376065b0c0901f0821",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/combined_diagnostics/consensus.csv": "83d928fde474de55ea33a7933454ab99784a0c44a930e0d15b40c929b890d0b3",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/combined_diagnostics/summary.json": "e088cba0a05c4d5bdd39379e81a6b20ba761cbb8895a13e0c207ff4baef6a50d",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/budget_recovery/original_diagnostics/event_codes.csv": "a201a2aed2a20bcac393938bef63618af959f31a85279debc0dfed0e45954962",
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/predictions.csv": "1e3ca4a647ad672041c207e366eb947cb857eb85204ad9280fc659f95ca0bd98",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/primary_prediction_comparisons.csv": "314d36f5fd478bb5e48d6cb79faff2f3aec026456cdfd20ed8ac256f110919ad",
+    "scripts/audit_personality_confirmation_budget_sensitivity_v3.py": "d247ca18a9b34aa9d6129a05ceec85ab662cfa55bf395a05af94fde68011f766"
+  }
+}

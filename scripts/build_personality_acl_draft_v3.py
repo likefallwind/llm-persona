@@ -50,9 +50,9 @@ def main():
 \renewenvironment{figure}[1][t]{\begin{figure*}[#1]}{\end{figure*}}
 \renewenvironment{table}[1][t]{\begin{table*}[#1]}{\end{table*}}
 \title{TITLE}
-\author{Anonymous working draft}
+\author{Anonymous}
 \date{}
-\hypersetup{pdfauthor={},pdfsubject={Incomplete research draft}}
+\hypersetup{pdfauthor={},pdfsubject={Educational personality research manuscript}}
 \begin{document}
 '''.replace('TITLE', title[1]) + body
     BUILD.mkdir(parents=True, exist_ok=True)
@@ -88,8 +88,8 @@ def main():
     pdf = BUILD / (JOB + '.pdf')
     subprocess.run(['pdftotext', '-layout', str(pdf), str(BUILD / (JOB + '.txt'))], check=True)
     extracted = (BUILD / (JOB + '.txt')).read_text()
-    if 'Incomplete working draft' not in extracted:
-        raise ValueError('Incomplete-draft status was lost')
+    if 'Educational Personalities?' not in extracted:
+        raise ValueError('Manuscript title missing from extracted PDF')
     log = (BUILD / (JOB + '.log')).read_text()
     fatal = re.findall(r'^.*(?:Missing character|Citation .+ undefined|There were undefined references|multiply defined).*$', log, re.M)
     if fatal:
@@ -106,13 +106,14 @@ def main():
         raise ValueError('Unexpected page size; requires A4')
     sources = [PAPER / 'main.tex', PAPER / 'references.bib',
                *sorted((PAPER / 'sections').glob('*.tex')),
-               PAPER / 'figures/study_design.pdf', PAPER / 'figures/measurement_pilot.pdf',
+               *sorted((PAPER / 'figures').glob('*.pdf')),
                *sorted(STYLE.iterdir()), tex, Path(__file__).resolve()]
     result = {'built_at': datetime.datetime.now(datetime.timezone.utc).isoformat(),
-              'status': 'Anonymous ACL-layout working draft built; empirical results and full submission review pending',
+              'status': 'Anonymous ACL-layout PDF built; scientific and visual review recorded separately',
               'template_commit': receipt['commit'], 'official_style_files_modified': False,
-              'shared_chapter_sources': True, 'paper_complete': False,
-              'empirical_abstract_results_discussion_conclusion_pending': True,
+              'shared_chapter_sources': True, 'build_certifies_scientific_completion': False,
+              'empirical_sections_present': all((PAPER / 'sections' / (name + '.tex')).is_file()
+                                                for name in ['abstract', 'results', 'discussion', 'conclusion']),
               'visual_inspection_required': True, 'fonts_embedded': True, 'a4_page_size': True,
               'line_number_and_cross_references_stable': True, 'latex_passes': pass_number,
               'pages': int(re.search(r'Pages:\s+(\d+)', info)[1]),

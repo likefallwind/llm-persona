@@ -1,0 +1,20 @@
+{
+  "status": "local reporting supplements complete; scientific and visual review required",
+  "completed_at": "2026-09-07T01:30:35.960911+00:00",
+  "scripts": {
+    "scripts/describe_personality_confirmation_v3.py": "64d93cefe19e2b85a3a672740a9544d6f08d2e23419bf8f071dcc709c0fe63d8",
+    "scripts/audit_personality_inference_edges_v3.py": "bb5ca52c254e456bf56fc2a9ac36afac656af2f1963aa80c8c6572b10ce0435a",
+    "scripts/audit_personality_neutral_bounds_v3.py": "0096dad403f7444a5ad3335b3c7f2416b0a7659bad822f88391753d690b30256",
+    "scripts/plot_personality_confirmation_v3.py": "4dc0655de8172feeb98b3617f8bf149b520e2630958660279b203abc936459d3",
+    "scripts/finish_personality_reporting_v3.py": "6c186f524298e1f06e8e492e351c654716770c9f8aa65b40adcc75cc935dea32"
+  },
+  "report_hashes": {
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_descriptive/summary.json": "905d8da298e5e2ab24df900f98a84dff571590d8e2caac42129e367e97efdc20",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_inference_edges/summary.json": "ef7486fde5456be8d42ac69645d83f6460f56846356a870aa9ed8fcce9f2fdfd",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_neutral_bounds/summary.json": "fa0c2cfb0d0e17e2b6dfbf152e4f9239bb289b4f2fc909c220b27dea36989d72",
+    "paper/educational_personality_v3/figures/confirmation_figures_provenance.json": "2eb2fb48145a9cc1a1244c2934a8e36e02e0b095fb2707807b8c7424b603bb15"
+  },
+  "content_review_completion_required": true,
+  "paper_complete": false,
+  "new_api_calls": 0
+}

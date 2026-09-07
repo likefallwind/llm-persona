@@ -1,0 +1,56 @@
+{
+  "checked_at": "2026-09-07T02:18:40.671026+00:00",
+  "status": "all three content-independent checkpoint tables match completed analysis",
+  "tolerance": 1e-12,
+  "checks": [
+    {
+      "table": "subset_comparisons.csv",
+      "rows": 12,
+      "numeric_columns": [
+        "sources",
+        "responses",
+        "mean_difference",
+        "bootstrap_95_low",
+        "bootstrap_95_high"
+      ],
+      "max_absolute_difference": 0.0,
+      "checkpoint_sha256": "b04485f5045bcb0f88bf8209616a81ddd72acaa1bdbc2377c2f9fe81abb67724",
+      "completed_sha256": "7470169cd4fcab33894e67de54a939e49c71b3f02ec0f90b3275531cee6031bf"
+    },
+    {
+      "table": "subset_losses.csv",
+      "rows": 30,
+      "numeric_columns": [
+        "brier",
+        "sources",
+        "responses"
+      ],
+      "max_absolute_difference": 0.0,
+      "checkpoint_sha256": "74a300741cf68ae3cb80e4097f85dd5bc2388b9358a6ee9c80778ccd4b167659",
+      "completed_sha256": "b8ff15d213a48a4b68916aa6da6291801dc8650fc32e9e2214d25ec387406f7b"
+    },
+    {
+      "table": "anchor_diagnostics.csv",
+      "rows": 4,
+      "numeric_columns": [
+        "n",
+        "matches"
+      ],
+      "max_absolute_difference": 0.0,
+      "checkpoint_sha256": "e9a49de1fe575bd5f842b3efe2e42987b96768d8b76bea469a283b960adf3783",
+      "completed_sha256": "e9a49de1fe575bd5f842b3efe2e42987b96768d8b76bea469a283b960adf3783"
+    }
+  ],
+  "same_implementation_not_independent_replication": true,
+  "natural_error_agreement": {
+    "responses": 1280,
+    "unanimous": 5,
+    "either": 49,
+    "uncertain": 0,
+    "positive_agreement": 0.18518518518518517,
+    "overall_verdict_agreement": 0.965625,
+    "either_error_slots": 43,
+    "unanimous_error_slots": 5
+  },
+  "response_flags_sha256": "d35e669ba6d1b6c7e87a1addc3df20200601df1eb74aaffdee7b1b95ccdfd070"
+}

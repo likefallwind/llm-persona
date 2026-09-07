@@ -1,0 +1,35 @@
+{
+  "recorded_at": "2026-09-07T01:18:38.403172+00:00",
+  "source_run": "artifacts/educational_personality_v2/prospective_formal/confirmation/judge/v2_2/run_repair2",
+  "expanded_source_run": "artifacts/educational_personality_v2/prospective_formal/confirmation/budget_recovery/judge/run",
+  "allowed_request_ids": [
+    "01e7a6ef07903ca67941:glm-5.3",
+    "357b6fe64cd5463b893f:glm-5.3",
+    "37540fcbc506f35f7359:glm-5.3",
+    "41cf7dbe7593311e1eaf:glm-5.3",
+    "7edbfd1d7922420efb01:glm-5.3",
+    "fddc15713d9544eb2fd0:glm-5.3"
+  ],
+  "transport_retry_request_ids": [
+    "37540fcbc506f35f7359:glm-5.3"
+  ],
+  "max_tokens": 32768,
+  "timeout": 720,
+  "attempts": 2,
+  "maximum_new_http_attempts": 2,
+  "gateway_previous_timeout": 300,
+  "gateway_new_timeout": 660,
+  "additional_repair_passes": 0,
+  "primary_results_computed": false,
+  "files": {
+    "scripts/complete_personality_confirmation_transport_recovery_v3.py": "aac81c5fc709997be795105ae3aa96c3ea202b67f4b81663d1ea98589eb8464a",
+    "scripts/seed_personality_judge_run_v2.py": "f1a76e9c6ad71d2d69834d5bb01add05c601179e0589f1bbc8c1b6d44fd83edf",
+    "research/65_confirmation_single_transport_timeout_amendment.md": "83482c93a394749717c5a6c1808b43d93fa5734930db3bedaae58c57c79c063f",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_budget_amendment.json": "08266ba802c44e65e830687c7641d48bf9d4350d83620a9d3a52df0e7456bc62",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/budget_recovery/judge/run/responses.jsonl": "35c66868e06991e16da4ea3525e66334a991746b308c76a0f0381d4f83b5f851",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/budget_recovery/expanded_budget_diagnostics/summary.json": "e355b7e4eefefd4ad3ea6aa3b0579794ff8bca3845ea4848687e86b0c5c51398",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/budget_recovery/expanded_budget_diagnostics/coverage.csv": "c0cb1bd241713b18da66ae2d50686ae024756ae9f6147b78428297b8c198e4bd",
+    "artifacts/educational_personality_v2/runtime/confirmation_transport_amendment_20260907/sensitivity_previous_terminal.json": "fbd59b3cb9e2fc77f4412702804f2a0b3fb488283acfb625a9cbacd8316cd8b4",
+    "artifacts/educational_personality_v2/runtime/confirmation_transport_amendment_20260907/confirmation_previous_terminal.json": "21727b8188016335f98d6a49ef9901d313e23602278501b269ed029c427e6256"
+  }
+}

@@ -1,0 +1,13 @@
+subset,event,comparison,sources,responses,mean_difference,bootstrap_95_low,bootstrap_95_high,status
+all_canonical,answer_reveal,default_vs_context,32,1280,0.09127483878141295,0.07136539623033074,0.10916929111270368,descriptive selected-subset interval; no new hypothesis test
+all_canonical,answer_reveal,student_state_vs_domain,32,1280,0.0004308814861143692,-0.00037307510516526544,0.0012986780535074376,descriptive selected-subset interval; no new hypothesis test
+all_canonical,reasoning_elicitation,default_vs_context,32,1280,0.1296979184346838,0.12130829588097213,0.13783411909224677,descriptive selected-subset interval; no new hypothesis test
+all_canonical,reasoning_elicitation,student_state_vs_domain,32,1280,-0.0001626175046628806,-0.001006885310835268,0.0007257563838958339,descriptive selected-subset interval; no new hypothesis test
+all_canonical,affect_acknowledgement,default_vs_context,32,1280,0.019820985591232097,0.01402024049312898,0.02526957850429687,descriptive selected-subset interval; no new hypothesis test
+all_canonical,affect_acknowledgement,student_state_vs_domain,32,1280,0.009733918438119972,0.005363285345355982,0.013946583743703393,descriptive selected-subset interval; no new hypothesis test
+mathematics,answer_reveal,default_vs_context,8,320,0.11623631526705727,0.09042596485745871,0.13960735839127536,descriptive selected-subset interval; no new hypothesis test
+mathematics,answer_reveal,student_state_vs_domain,8,320,0.0006190782488853007,-0.0005891853372272556,0.0019356667426932404,descriptive selected-subset interval; no new hypothesis test
+mathematics,reasoning_elicitation,default_vs_context,8,320,0.1389244858989538,0.1235769631026671,0.15289601460923904,descriptive selected-subset interval; no new hypothesis test
+mathematics,reasoning_elicitation,student_state_vs_domain,8,320,0.0003015334933660768,-0.0012720737644708723,0.0018835684074574892,descriptive selected-subset interval; no new hypothesis test
+mathematics,affect_acknowledgement,default_vs_context,8,320,0.01991879417770368,0.005556475786949497,0.03238867255552452,descriptive selected-subset interval; no new hypothesis test
+mathematics,affect_acknowledgement,student_state_vs_domain,8,320,0.0138032830123996,0.008520371584642661,0.018665317503177,descriptive selected-subset interval; no new hypothesis test

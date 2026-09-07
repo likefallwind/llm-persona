@@ -1,0 +1,54 @@
+{
+  "status": "measurement diagnostics, not confirmatory personality inference",
+  "natural_response_preflight": false,
+  "evidence_format": "line_ids",
+  "rubric_sha256": "dc623c57f86676860b19de1655521a75199af6808ea1488c450c17e8cad09811",
+  "expected_judge_requests": 12120,
+  "valid_judge_requests": 12120,
+  "invalid_or_missing": 0,
+  "judge_requested_to_returned": {
+    "MiniMax-M3": [
+      "MiniMax-M3"
+    ],
+    "deepseek-v4-pro": [
+      "deepseek-v4-pro"
+    ],
+    "glm-5.3": [
+      "glm-5.3"
+    ]
+  },
+  "complete_consensus_event_items": 32320,
+  "limitations": [
+    "Evidence references validate provenance, not semantic truth.",
+    "Only items with all three valid coders contribute to consensus.",
+    "Agent-authored anchor agreement is not human gold accuracy.",
+    "Pilot repetition agreement can be high from near-constant event prevalence.",
+    "One of six expanded-budget codes required a separately disclosed transport retry after the local 300-second Gateway timeout. The other five amended codes were retained unchanged.",
+    "Six structurally missing GLM codes used a disclosed larger completion budget after the frozen repair limit. This is a protocol deviation; dependence of primary conclusions on the amended codes requires separate sensitivity analysis."
+  ],
+  "original_budget_valid_requests": 12114,
+  "expanded_budget_valid_requests": 6,
+  "amendment": "artifacts/educational_personality_v2/prospective_formal/confirmation_transport_amendment.json",
+  "input_hashes": {
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_transport_amendment.json": "58a3e933899d119cd2ac484a961901e986ddfc4a9d10bcc856d9e0d79e3b3de9",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_budget_amendment.json": "08266ba802c44e65e830687c7641d48bf9d4350d83620a9d3a52df0e7456bc62",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/budget_recovery/judge/run/responses.jsonl": "35c66868e06991e16da4ea3525e66334a991746b308c76a0f0381d4f83b5f851",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/judge/v2_2/run_repair2/responses.jsonl": "7f4ebb3a91e5d85a5a41bda6cbcf0267ff0ed8624626d09de55bdb034e5d3abc",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/judge/manifest.jsonl": "c0465392c967a8795f39eaa1a464d0767f7fb8a3d3622cae3a054d80507f96e6",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/judge/freeze.json": "7196077c1b84d7d966c1bfeeb759782a8b300e95478d10ccc7d2b4db41ea5d51",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/judge/run/responses.jsonl": "d6bd5d391b644dcc979f0e5a83541652d69d2cf75d8259c4ac07a6c7bc9bd4cf",
+    "scripts/complete_personality_confirmation_transport_recovery_v3.py": "aac81c5fc709997be795105ae3aa96c3ea202b67f4b81663d1ea98589eb8464a",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/original_diagnostics/event_codes.csv": "a201a2aed2a20bcac393938bef63618af959f31a85279debc0dfed0e45954962",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/original_diagnostics/coverage.csv": "5ef761a54e5bc70c91922c4ab3d444e84a9293eea742f00816dca2ca4ad6cb8f",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/original_diagnostics/consensus.csv": "cb782fd87091bf18db073a75fe5f4ca16b645e0b740920d7595c1a60f96c8965",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/original_diagnostics/pairwise_agreement.csv": "9c80b00a7e330a61aad96f2e64cf582bcc966d3855cb181cbdf7af3c3fa72102",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/original_diagnostics/summary.json": "3623c26a08e0ac21ccb2c04171a48cf8861525f98282e78d44be115d497c4544",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/expanded_budget_diagnostics/event_codes.csv": "6570b449e37f2c78fa2cefa772e71aaee86680edec715d8ae8f6b2454ccef28e",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/expanded_budget_diagnostics/coverage.csv": "4fabc3431af61834f3a3220fbf25306c650bc484d0aec07e538f803c3b41e66e",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/expanded_budget_diagnostics/consensus.csv": "e8455de61ba42c1d939735e43d341436649cb0d69ece55a8e369ac6efec72b8d",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/expanded_budget_diagnostics/pairwise_agreement.csv": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/expanded_budget_diagnostics/summary.json": "c7bfac8514480a47b7b094a98fab896a8a2373a740fc6b673cb8a2d24c387a32"
+  },
+  "transport_retry_requests": 1,
+  "reused_expanded_budget_requests": 5
+}

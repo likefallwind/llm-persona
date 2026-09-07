@@ -1,0 +1,1 @@
+Six primary predictive comparisons. Positive values indicate lower Brier loss than the specified baseline. Lines are 95% source-bootstrap intervals conditional on the fitted training profiles, not simultaneous intervals; p-values are one-sided and Holm-adjusted across the six tests. A nonsignificant gain does not establish equivalence.

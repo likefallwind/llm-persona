@@ -1,0 +1,9 @@
+{
+  "status": "degenerate-interval interpretation audit complete; frozen calculations retained",
+  "degenerate_neutral_comparisons": 3,
+  "numerical_flags_withheld_from_equivalence_claim": 3,
+  "effects_sha256": "83bb44e495510b51d02185b2677fce1140f66aefbe92d50c9e2af99cfdf91d24",
+  "policy_sha256": "56f95ef01916f0382d8b25fb1f6b34c00f3e55b4570d5ffdff767b36d00fabd0",
+  "new_hypothesis_tests": 0,
+  "limitation": "Nondegenerate intervals still rely on source-sampling and paired-t approximations."
+}

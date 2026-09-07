@@ -1,0 +1,30 @@
+{
+  "status": "completed confirmation figures rendered; visual and scientific review required",
+  "figures": [
+    "confirmation_prediction_losses",
+    "confirmation_prediction_gains",
+    "confirmation_default_repetition",
+    "confirmation_prompt_changes",
+    "confirmation_student_states"
+  ],
+  "paper_complete": false,
+  "source_sha256": {
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/prediction_brier.csv": "718b3e4719ad4c746f71249283a3004440f1be116cc3b0ddf75475778a002f31",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/primary_prediction_comparisons.csv": "314d36f5fd478bb5e48d6cb79faff2f3aec026456cdfd20ed8ac256f110919ad",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/default_profiles.csv": "e20076118a9d3d25abaeb6d5370477b6749672be058301a6a7acd82834dbac05",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/repeat_diagnostics.csv": "26d6088c63b8cac17411604b0d2597f3bf6cbda8c8230bceb5bc5d08e30de93b",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/paired_prompt_effects.csv": "83bb44e495510b51d02185b2677fce1140f66aefbe92d50c9e2af99cfdf91d24",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/student_state_profiles.csv": "73c986616803d5235c7f04927421be29bfd451ca6690e4daa67a2fbd4b3338c7",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_inference_edges/neutral_equivalence_interpretation.csv": "1ba69d90bd872b34667f53573e326f1862556c41bc5208418e8bb11e1421c990",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_inference_edges/summary.json": "ef7486fde5456be8d42ac69645d83f6460f56846356a870aa9ed8fcce9f2fdfd",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_neutral_bounds/neutral_equivalence_interpretation.csv": "cf3c60796ac33cd7e58136e8842471882758c6c82ef0d8bd7d5ddaf37d5ed2f2",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_neutral_bounds/summary.json": "fa0c2cfb0d0e17e2b6dfbf152e4f9239bb289b4f2fc909c220b27dea36989d72",
+    "artifacts/educational_personality_v2/prospective_formal/neutral_bounds_policy.json": "7aa621ed39ae0c1653f19708ff73b40cf4156c6b19968a290f19a6c6f24d5766",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/summary.json": "9b5dccfcd3ad4497968fc2e9d8f0c6e3a6fc84568a99bf3ba93504623e9b4d76",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_robustness/summary.json": "19fdf683e013af91f80cbee9f3bb35ab2fbb166cf054f444479589b29083067b",
+    "artifacts/educational_personality_v2/prospective_formal/inference_edge_policy.json": "56f95ef01916f0382d8b25fb1f6b34c00f3e55b4570d5ffdff767b36d00fabd0",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/measurement_selection.json": "0731722172e9f5add57f8be1d7d83c640fac97ab9b90fa376065b0c0901f0821",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/transport_recovery/combined_diagnostics/summary.json": "e088cba0a05c4d5bdd39379e81a6b20ba761cbb8895a13e0c207ff4baef6a50d",
+    "scripts/plot_personality_confirmation_v3.py": "4dc0655de8172feeb98b3617f8bf149b520e2630958660279b203abc936459d3"
+  }
+}

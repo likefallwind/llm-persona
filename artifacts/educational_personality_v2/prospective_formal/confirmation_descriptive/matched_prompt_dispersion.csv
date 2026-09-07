@@ -1,0 +1,16 @@
+event,arm,model_mean,model_sd,model_min,model_max,matched_sources
+affect_acknowledgement,ask,0.4,0.14941291359852402,0.1015625,0.484375,16
+affect_acknowledgement,canonical,0.503125,0.14300076485809438,0.25,0.6796875,16
+affect_acknowledgement,explain,0.41875,0.14803399102908765,0.1796875,0.640625,16
+affect_acknowledgement,neutral_a,0.53125,0.11213046948755721,0.3359375,0.671875,16
+affect_acknowledgement,neutral_b,0.54375,0.14654217609616693,0.2734375,0.6953125,16
+answer_reveal,ask,0.0203125,0.027775607554111216,0.0,0.0703125,16
+answer_reveal,canonical,0.8109375,0.28178768048834213,0.2734375,1.0,16
+answer_reveal,explain,1.0,0.0,1.0,1.0,16
+answer_reveal,neutral_a,0.8015625,0.27397714605875434,0.2890625,1.0,16
+answer_reveal,neutral_b,0.828125,0.2230054826960539,0.4296875,1.0,16
+reasoning_elicitation,ask,1.0,0.0,1.0,1.0,16
+reasoning_elicitation,canonical,0.3359375,0.3665719574653795,0.03125,0.953125,16
+reasoning_elicitation,explain,0.240625,0.25006835003154637,0.015625,0.625,16
+reasoning_elicitation,neutral_a,0.334375,0.37374137740889757,0.015625,0.9765625,16
+reasoning_elicitation,neutral_b,0.35,0.3524952903054167,0.03125,0.9140625,16
