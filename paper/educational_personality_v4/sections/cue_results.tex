@@ -62,31 +62,15 @@ independent replications. The failure concerns transported conditional
 probabilities: models still exhibit acknowledgement differences between cue
 poles, and the implicit arm changes more than affect wording alone.
 
-\paragraph{Relative advantage is distinct from absolute accuracy.}
-A post-result diagnostic separates the two expression arms. Under explicit
-synonyms, the conditional acknowledgement Brier loss slightly improves from
-0.145806 to 0.144501, but the domain-profile baseline improves more, from
-0.158289 to 0.140840. Under implicit cues, conditional loss instead rises to
-0.155411 while baseline loss falls to 0.149134. Thus both arms lose incremental
-advantage, but only the latter has worse absolute conditional prediction error.
-An exact decomposition shows that overall acknowledgement-rate shifts contribute
-less than 0.000003 to either gain change: the two predictors have nearly identical
-mean probabilities. The remaining change covaries with their differing
-cell-level predictions. This descriptive accounting does not rule out richer
-calibration or semantic explanations (Appendix~\ref{app:cue-diagnosis}).
-A separate source-held-out, post-result check applies shared or model-specific
-logistic calibration equally to both forecasts. None of the tested schemes
-restores a positive new-expression incremental point estimate, although absolute
-loss can improve and some gain intervals include zero
-(Appendix~\ref{app:cue-calibration}).
+\paragraph{Alternative explanations.}
+The explicit arm loses relative advantage while slightly improving its own
+conditional loss; the implicit arm also worsens absolute conditional loss.
+Post-result accounting and source-held-out calibration constrain simple
+prevalence-shift and logistic-calibration explanations, without excluding
+richer semantic or modeling alternatives
+(Appendices~\ref{app:cue-diagnosis}--\ref{app:cue-calibration}).
 
-\paragraph{Peer-context control.}
-Keeping the current student explicitly calm, changing a peer's quote yields
-acknowledgement-rate changes of +30.47, +25.00, +26.56, +23.44, and -4.69
-percentage points for M2.7, M3, DeepSeek, GLM, and Doubao, respectively. The
-first four source intervals exclude zero; Doubao's includes it. These are
-secondary descriptive contrasts. One deterministically selected 0-to-1 example
-per model helps interpret the event: the first four models explicitly affirm
-the current student's calmness, sometimes correctly distinguishing the peer's
-frustration. The event-rate contrast therefore cannot itself establish
-misattribution. Outcome-selected examples do not estimate its prevalence.
+In the secondary peer control, social context changes acknowledgement of a
+fixed current-student state. Selected examples show that this can happen with
+correct emotion attribution; the contrast alone does not identify misattribution
+(Appendix~\ref{app:cue-transfer}).

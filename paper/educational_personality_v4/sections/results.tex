@@ -51,24 +51,14 @@ including a coding disagreement, to illustrate the event distinctions.
 \subsection{New-Problem Transfer Under Original Wording (RQ2)}
 
 All three model-default predictors improve over the situation-only baseline
-on new sources (Figure~\ref{fig:primary-gains}). The absolute Brier reductions
+on new sources (Appendix Figure~\ref{fig:primary-gains}). The absolute Brier reductions
 are 0.09127 for revelation, 0.12970 for elicitation, and 0.01982 for
 acknowledgement; all pass the six-test Holm correction. Absolute losses fall
 from 0.15359 to 0.06232, 0.21873 to 0.08903, and 0.18242 to 0.16260,
 respectively. Thus the identity-specific information learned before confirmation
 predicts actions beyond the supplied subject and student-state context.
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=\linewidth]{figures/confirmation_prediction_gains_publication.pdf}
-\caption{All six primary predictive comparisons on 32 new source problems.
-Positive values denote lower Brier loss. Lines show 95\% source-bootstrap
-intervals conditional on the fitted training profiles; they are not simultaneous
-intervals. The panels use different horizontal scales. Exact gains, intervals,
-and six-test Holm-adjusted one-sided $p$-values appear in
-Table~\ref{tab:primary-tests}.}
-\label{fig:primary-gains}
-\end{figure}
+
 
 Adding model-specific student-state responses to model-by-subject profiles
 gives a different result. Acknowledgement improves by 0.00973
@@ -77,15 +67,6 @@ from 0.16046 to 0.15072. Revelation gains only 0.00043
 ([-0.00037, 0.00130], $p=0.326$); elicitation changes by -0.00016
 ([-0.00101, 0.00073], $p=0.641$). These unresolved increments concern
 the specified cues and predictor class, not every possible form of adaptation.
-
-The acknowledgement profiles clarify the positive conditional result. For
-correct unfinished work, Doubao acknowledges difficulty in 0/64 calm responses
-and 60/64 frustrated responses; DeepSeek changes from 22/64 to 34/64.
-For erroneous work, their corresponding changes are 32/64 to 64/64 and
-46/64 to 49/64. These are responses to scripted text cues, not measurements
-of empathy or learner understanding. The descriptive curves appear in
-Appendix~\ref{app:confirmation-details}; the locked prediction comparison
-provides the test that such model-specific patterns recur on new sources.
 
 The training-only length/formatting competitor yields losses of 0.13861,
 0.17826, and 0.17864 for the three events, exceeding the model-default losses
@@ -125,47 +106,20 @@ sensitivity.
 
 \subsection{Dependence on Measurement and Model Composition}
 
-Eight coding panels preserve the broad separation between default and
-student-state increments. Default-gain estimates range from 0.08571--0.09562
-for revelation, 0.12442--0.13111 for elicitation, and 0.01699--0.02017 for
-acknowledgement. Conditional acknowledgement gains range from
-0.00697--0.01052; conditional revelation and elicitation remain near zero.
-These reuse the same outputs and are sensitivity estimates, not independent
-replications.
+The first-stage default/conditional distinction persists across eight coding
+panels, but its strength depends on model composition. Removing GLM reduces
+default gains to 0.00394 for revelation and 0.03080 for elicitation; removing
+M2.7 reduces default acknowledgement gain to 0.00175 with an interval spanning
+zero. The findings therefore do not imply equally strong differences among
+all deployment subsets. Two hundred training-source resamples and enumeration
+of the disclosed missing confirmation votes preserve the main predictive
+pattern (Appendix~\ref{app:confirmation-details}).
 
-Effect strength depends materially on which deployments are included.
-Deleting GLM reduces default gains to 0.00394 for revelation and 0.03080 for
-elicitation. Deleting M2.7 reduces the acknowledgement default gain to 0.00175,
-with an interval crossing zero [-0.00174, 0.00547]. The full-panel findings
-therefore do not imply equally strong differences among every subset of models.
-Across 200 training-source resamples, the descriptive 2.5--97.5 percentile
-range for conditional acknowledgement gain is [0.00542, 0.01039]; revelation
-spans zero and elicitation remains slightly negative. These distributions
-condition on fixed confirmation labels and the original regularization ratio.
-
-The six confirmation budget exceptions do not determine the primary findings.
-For either binary value of each affected canonical GLM code, all six primary
-estimates and adjusted $p$-values are exactly unchanged: the other two coders
-agree on the three primary events. This fixed-prediction enumeration addresses
-those missing codes only. It does not validate coder behavior across the
-Gateway interruption. Complete secondary results and sensitivity ranges are
-retained in Appendix~\ref{app:confirmation-details}.
-
-\paragraph{Mathematics and content screening.}
-The mathematics subset (eight sources, 320 responses) retains default gains
-of 0.11624, 0.13892, and 0.01992; student-state increments are 0.00062,
-0.00030, and 0.01380 for revelation, elicitation, and acknowledgement.
-All 2,584 content reviews are valid after the disclosed structural repairs.
-Excluding five-model slots flagged by either reviewer retains 1,065 responses
-on all 32 sources. Default gains are 0.09535, 0.13179, and 0.02068;
-conditional acknowledgement gains 0.00989 [0.00510, 0.01472], while the
-other two conditional intervals span zero. The unanimous-error screen retains
-1,255 responses and the same qualitative pattern. No uncertainty verdicts
-occur, so the error-or-uncertainty screen is identical to the either-error
-screen (Appendix~\ref{app:content-results}).
-
-These are descriptive selected-subset estimates, with no new tests. Both
-reviewers match all twelve diagnostic controls, yet agree on an error in only
-5 of the 49 natural responses flagged by either (positive agreement 18.5\%).
-Screening thus tests sensitivity to these judgments; it neither guarantees
-correct remaining answers nor causally separates behavior from ability.
+Content-screened matched subsets retain the predictive pattern, including a
+conditional acknowledgement gain of 0.00989 [0.00510, 0.01472] after excluding
+all five-model slots flagged by either reviewer. This retains 1,065 responses
+on all 32 sources. However, the reviewers share only 5 of the 49 error flags,
+with 18.5\% positive agreement despite passing the diagnostic controls.
+Screening tests dependence on those judgments; it neither guarantees correctness
+nor causally separates behavior from ability. Full rates, sensitivity ranges,
+and mathematics/content subsets appear in Appendix~\ref{app:content-results}.

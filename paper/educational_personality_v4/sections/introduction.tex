@@ -1,86 +1,57 @@
 \section{Introduction}
 
-Two language models can solve the same exercise correctly while teaching very
-differently. One gives the answer and explains it; another asks the student to
-complete a step; a third acknowledges the student's frustration before doing
-either. Such differences motivate a question about \emph{educational
-personality}: do deployed models exhibit recurring teaching tendencies that help
-predict how they will respond in a new educational situation?
+Language models can teach differently even when responding to the same exercise.
+One reveals the answer; another asks the student to complete a step; a third
+acknowledges frustration. Do these differences reflect recurring teaching
+tendencies that predict behavior in a new educational situation? This is the
+behavioral question about \emph{educational personality} examined here.
 
-Answering this question requires more than distinguishing the models' text.
-Length, formatting, task instructions, and access to the solution can all produce
-recognizable differences. Nor does a model need to behave identically in every
-situation to have a recurring tendency. A tutor may consistently explain more
-after an erroneous attempt, or acknowledge difficulty specifically when a student
-expresses frustration. The empirical question is whether a model's defaults or
-its conditional response patterns recur sufficiently to predict new behavior.
-An observed difference, a repeatable measurement, and a successful prediction
-are distinct steps in that argument.
+Distinguishing models' text is insufficient. Length, formatting, task
+instructions, and solution access can all produce recognizable differences.
+Conversely, a recurring tendency need not imply identical behavior in every
+situation: a tutor may consistently elicit more reasoning after an erroneous
+attempt. We therefore distinguish a model's default action profile from its
+conditional response to student state, and test both through predictions beyond
+the educational context. Observed differences, repeated behavior, and successful
+transfer provide different kinds of evidence.
 
-Education provides concrete choices through which to test this question without
-assuming a human personality taxonomy. Revealing a solution and inviting the
-student to reason are observable actions; they can co-occur, and neither is
-universally the better teaching move. Acknowledging expressed frustration is
-also observable without inferring that the model experiences empathy. These
-behaviors let us distinguish how a model tends to teach from how accurately it
-solves a problem or how much a learner benefits. Our object of study is the
-\emph{tutor model's} recurring behavior. It differs from adapting instruction to
-an assigned or inferred \emph{student personality}, as in personality-aware
-teaching systems \citep{rooein2026pats}.
+Educational actions make this question testable without assuming a human
+personality taxonomy. Revealing a solution and inviting reasoning are observable,
+can co-occur, and are not universally good or bad teaching moves. Acknowledging
+expressed frustration does not establish empathy. Our target is the \emph{tutor
+model's} behavior, distinct from adapting instruction to a \emph{student's}
+assigned personality \citep{rooein2026pats}. Neither behavior predictability nor
+its failure measures learning benefit.
 
-Prior studies identify model differences through personality-oriented
-scenarios and situated behavioral probes \citep{lee2025trait,liu2026bma}.
-Educational studies already compare characteristic tutoring-action mixtures
-and learn tutor-persona variation from dialogue
-\citep{kucheria2025cima,lee2026tutorpersonas}. Building on these observations,
-we test the incremental predictive information in deployed models' defaults
-and student-state response patterns. The comparison is against the educational
-situation, model-specific subject habits, and simple training-output style
-profiles, with forecasts locked before new responses are generated.
+Prior studies already investigate personality-oriented scenarios and situated
+behavioral profiles \citep{lee2025trait,liu2026bma}, characteristic tutoring-action
+mixtures, and learned tutor-persona variation
+\citep{kucheria2025cima,lee2026tutorpersonas}. We examine a specific boundary in
+these interpretations: does information that transfers to new problems also
+transfer when students express themselves differently?
 
-We organize the investigation around three questions. \textbf{RQ1:} Under the
-same educational input, do models show distinguishable defaults that recur
-across repeated generations? \textbf{RQ2:} Can those defaults, or model-specific
-responses to student state, predict actions on independent source problems and then under new student expressions?
-\textbf{RQ3:} How do the resulting profiles change under neutral rewordings of
-the tutor role and explicit teaching instructions? These questions form one
-evidence chain. The first establishes recurring differences; the second tests
-their predictive value; the third identifies conditions under which they persist
-or move.
+Three linked questions organize the study. \textbf{RQ1:} Under matched input,
+do models show distinguishable defaults that recur across requests?
+\textbf{RQ2:} Do defaults or model-specific student-state responses predict
+new problems and new expressions? \textbf{RQ3:} How do neutral role rewordings
+and explicit teaching instructions change those profiles?
 
-The study connects an existing educational-output archive to a separate
-prospective experiment. The archive contains more than one million raw
-prediction records, with different roles, coverage, and repetition histories.
-We audit those distinctions before using the archive for exploration. We then
-develop observable event measures on a small, permanently excluded pilot and
-freeze a source-separated training and confirmation design. Predictions are
-fitted and saved before confirmation responses are generated. Model-by-subject
-baselines prevent subject-specific habits from being mistaken for student-state
-response patterns, while neutral role wording and explicit teaching policies
-are manipulated separately on the same inputs.
+An audit of a million-record educational-output archive motivates the controlled
+study: different roles, repeated sources, and instructional settings can produce
+apparent model differences (Appendix~\ref{app:archive-reanalysis}). We develop
+observable measures on an excluded pilot, then fit profiles on training sources
+and lock predictions before generating responses to new problems. Model-by-subject
+baselines distinguish subject habits from student-state increments. After
+observing this confirmation, a separately frozen expression extension reuses
+its 32 problems and original forecasts, with contemporary original wording as
+a control. The extension tests an expression shift without adding new sources.
 
-The archive motivates this separation empirically: the task-conditioned
-prediction increment for a legacy direct-help score shrinks from 6.57\% to
-0.34\% when a question-only instructional setting is excluded, while the
-global model profile retains predictive information
-(Appendix~\ref{app:archive-reanalysis}). This outcome-aware sensitivity is not a
-causal estimate or an independent confirmation. It illustrates why recognizing
-task-specific text patterns alone cannot establish model-specific responses to
-student state.
-
-
-The first confirmation stage supports default prediction for all three primary
-actions and additional student-state prediction for acknowledgement. We then
-challenge the latter result in an extension designed after observing that stage,
-but with its own materials and forecasts frozen before new generation. Reusing
-the 32 confirmation problems separates an expression shift from a problem shift.
-Default revelation and elicitation gains persist under new wording, whereas the
-acknowledgement state profile loses its incremental gain. A contemporary
-original-wording control retains a positive gain. Together with instruction-driven
-convergence, these results distinguish three claims often conflated in a
-personality description: recurring default behavior, transportable responses to
-student state, and persistence under an explicit teaching policy. Our contribution
-is this empirical separation, including the failure of the stronger transfer
-claim. The constructed materials and finite expression bank constrain its scope;
-neither behavior predictability nor its failure establishes inner psychology,
-emotional understanding, or learning gains.
+Default revelation and elicitation gains survive both transfer tests. The
+acknowledgement state profile improves new-problem prediction under original
+wording, but loses its increment under explicit synonyms and implicit cues;
+the contemporary original-wording control remains positive. Explicit teaching
+instructions also make demanded actions converge while permissible accompanying
+actions remain different. This separation of default recurrence, conditional
+transfer, and instructional constraint is the central empirical contribution.
+The finite constructed materials limit the supported interpretation to
+prompt-dependent action profiles of the specified deployments.

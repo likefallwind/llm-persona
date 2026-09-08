@@ -26,9 +26,9 @@ with v4 output paths. The figure receipt maps all 12 points to completed analysi
 tables. Build receipts record source and PDF hashes; they do not certify the science.
 
 At the reviewed checkpoint the reading PDFs have 31 English and 25 Chinese pages.
-The ACL-layout draft has 26 pages including references and appendices; the
-conclusion is on page 9. Layout is inspectable, but the main text still needs
-compression against the eventual venue requirements. No venue-specific compliance
+The ACL-layout draft has 25 pages including references and appendices; the
+conclusion is on page 8 and references begin on page 9 after the main-text
+reorganization. Final archive-result integration and venue-specific review remain. No venue-specific compliance
 claim is made. The source-specific old checks in v3 are not silently reused as a
 quality verdict on this changed draft.
 
@@ -42,3 +42,7 @@ Eleven targeted tests pass; no new API calls or human annotations are added.
 
 The input-only scope audit (research/81) verifies the original sample and explains
 short-context, eligibility and upstream-provenance limits without reading new codes.
+
+The [structure review](../../research/82_manuscript_structure_v4.md) records which
+details moved to appendices. No estimates, frozen forecasts, or study scripts
+were changed to obtain the more focused main text.

@@ -1,6 +1,18 @@
 \section{Additional Confirmation Results}
 \label{app:confirmation-details}
 
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/confirmation_prediction_gains_publication.pdf}
+\caption{All six primary predictive comparisons on 32 new source problems.
+Positive values denote lower Brier loss. Lines show 95\% source-bootstrap
+intervals conditional on the fitted training profiles; they are not simultaneous
+intervals. The panels use different horizontal scales. Exact gains, intervals,
+and six-test Holm-adjusted one-sided $p$-values appear in
+Table~\ref{tab:primary-tests}.}
+\label{fig:primary-gains}
+\end{figure}
+
 \subsection{Prediction, Repetition, and Student Cues}
 
 Table~\ref{tab:absolute-losses} reports the absolute losses for all five
@@ -232,3 +244,59 @@ and retains source-equal weighting; it does not remove ability as a cause.
 The full primary tests are unchanged. The content-independent checkpoint's
 all-canonical and mathematics tables agree with their completed counterparts
 within $10^{-12}$, using the same routines rather than an independent implementation.
+
+\subsection{Interpretation of State Profiles and Sensitivities}
+
+The acknowledgement profiles clarify the positive conditional result. For
+correct unfinished work, Doubao acknowledges difficulty in 0/64 calm responses
+and 60/64 frustrated responses; DeepSeek changes from 22/64 to 34/64.
+For erroneous work, their corresponding changes are 32/64 to 64/64 and
+46/64 to 49/64. These are responses to scripted text cues, not measurements
+of empathy or learner understanding. The descriptive curves appear in
+Appendix~\ref{app:confirmation-details}; the locked prediction comparison
+provides the test that such model-specific patterns recur on new sources.
+
+Eight coding panels preserve the broad separation between default and
+student-state increments. Default-gain estimates range from 0.08571--0.09562
+for revelation, 0.12442--0.13111 for elicitation, and 0.01699--0.02017 for
+acknowledgement. Conditional acknowledgement gains range from
+0.00697--0.01052; conditional revelation and elicitation remain near zero.
+These reuse the same outputs and are sensitivity estimates, not independent
+replications.
+
+Effect strength depends materially on which deployments are included.
+Deleting GLM reduces default gains to 0.00394 for revelation and 0.03080 for
+elicitation. Deleting M2.7 reduces the acknowledgement default gain to 0.00175,
+with an interval crossing zero [-0.00174, 0.00547]. The full-panel findings
+therefore do not imply equally strong differences among every subset of models.
+Across 200 training-source resamples, the descriptive 2.5--97.5 percentile
+range for conditional acknowledgement gain is [0.00542, 0.01039]; revelation
+spans zero and elicitation remains slightly negative. These distributions
+condition on fixed confirmation labels and the original regularization ratio.
+
+The six confirmation budget exceptions do not determine the primary findings.
+For either binary value of each affected canonical GLM code, all six primary
+estimates and adjusted $p$-values are exactly unchanged: the other two coders
+agree on the three primary events. This fixed-prediction enumeration addresses
+those missing codes only. It does not validate coder behavior across the
+Gateway interruption. Complete secondary results and sensitivity ranges are
+retained in Appendix~\ref{app:confirmation-details}.
+
+\paragraph{Mathematics and content screening.}
+The mathematics subset (eight sources, 320 responses) retains default gains
+of 0.11624, 0.13892, and 0.01992; student-state increments are 0.00062,
+0.00030, and 0.01380 for revelation, elicitation, and acknowledgement.
+All 2,584 content reviews are valid after the disclosed structural repairs.
+Excluding five-model slots flagged by either reviewer retains 1,065 responses
+on all 32 sources. Default gains are 0.09535, 0.13179, and 0.02068;
+conditional acknowledgement gains 0.00989 [0.00510, 0.01472], while the
+other two conditional intervals span zero. The unanimous-error screen retains
+1,255 responses and the same qualitative pattern. No uncertainty verdicts
+occur, so the error-or-uncertainty screen is identical to the either-error
+screen (Appendix~\ref{app:content-results}).
+
+These are descriptive selected-subset estimates, with no new tests. Both
+reviewers match all twelve diagnostic controls, yet agree on an error in only
+5 of the 49 natural responses flagged by either (positive agreement 18.5\%).
+Screening thus tests sensitivity to these judgments; it neither guarantees
+correct remaining answers nor causally separates behavior from ability.

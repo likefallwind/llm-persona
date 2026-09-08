@@ -23,79 +23,54 @@
 
 
 1    Introduction
-Two language models can solve the same exercise correctly while teaching very differently. One gives
-the answer and explains it; another asks the student to complete a step; a third acknowledges the
-student’s frustration before doing either. Such differences motivate a question about educational
-personality: do deployed models exhibit recurring teaching tendencies that help predict how they
-will respond in a new educational situation?
-    Answering this question requires more than distinguishing the models’ text. Length, formatting,
-task instructions, and access to the solution can all produce recognizable differences. Nor does a
-model need to behave identically in every situation to have a recurring tendency. A tutor may
-consistently explain more after an erroneous attempt, or acknowledge difficulty specifically when a
-student expresses frustration. The empirical question is whether a model’s defaults or its conditional
-response patterns recur sufficiently to predict new behavior. An observed difference, a repeatable
-measurement, and a successful prediction are distinct steps in that argument.
-    Education provides concrete choices through which to test this question without assuming a
-human personality taxonomy. Revealing a solution and inviting the student to reason are observable
-actions; they can co-occur, and neither is universally the better teaching move. Acknowledging
-expressed frustration is also observable without inferring that the model experiences empathy. These
-behaviors let us distinguish how a model tends to teach from how accurately it solves a problem or
-how much a learner benefits. Our object of study is the tutor model’s recurring behavior. It differs
+Language models can teach differently even when responding to the same exercise. One reveals the
+answer; another asks the student to complete a step; a third acknowledges frustration. Do these
+differences reflect recurring teaching tendencies that predict behavior in a new educational situation?
+This is the behavioral question about educational personality examined here.
+    Distinguishing models’ text is insufficient. Length, formatting, task instructions, and solution
+access can all produce recognizable differences. Conversely, a recurring tendency need not imply
+identical behavior in every situation: a tutor may consistently elicit more reasoning after an erroneous
+attempt. We therefore distinguish a model’s default action profile from its conditional response
+to student state, and test both through predictions beyond the educational context. Observed
+differences, repeated behavior, and successful transfer provide different kinds of evidence.
+    Educational actions make this question testable without assuming a human personality taxonomy.
+Revealing a solution and inviting reasoning are observable, can co-occur, and are not universally good
+or bad teaching moves. Acknowledging expressed frustration does not establish empathy. Our target
+is the tutor model’s behavior, distinct from adapting instruction to a student’s assigned personality
+(Rooein et al., 2026). Neither behavior predictability nor its failure measures learning benefit.
+    Prior studies already investigate personality-oriented scenarios and situated behavioral profiles
+(Lee et al., 2025; Liu et al., 2026), characteristic tutoring-action mixtures, and learned tutor-persona
+variation (Kucheria et al., 2025; Lee et al., 2026). We examine a specific boundary in these
 
 
 
                                                      1
-from adapting instruction to an assigned or inferred student personality, as in personality-aware
-teaching systems (Rooein et al., 2026).
-    Prior studies identify model differences through personality-oriented scenarios and situated behav-
-ioral probes (Lee et al., 2025; Liu et al., 2026). Educational studies already compare characteristic
-tutoring-action mixtures and learn tutor-persona variation from dialogue (Kucheria et al., 2025;
-Lee et al., 2026). Building on these observations, we test the incremental predictive information
-in deployed models’ defaults and student-state response patterns. The comparison is against the
-educational situation, model-specific subject habits, and simple training-output style profiles, with
-forecasts locked before new responses are generated.
-    We organize the investigation around three questions. RQ1: Under the same educational input,
-do models show distinguishable defaults that recur across repeated generations? RQ2: Can those
-defaults, or model-specific responses to student state, predict actions on independent source problems
-and then under new student expressions? RQ3: How do the resulting profiles change under neutral
-rewordings of the tutor role and explicit teaching instructions? These questions form one evidence
-chain. The first establishes recurring differences; the second tests their predictive value; the third
-identifies conditions under which they persist or move.
-    The study connects an existing educational-output archive to a separate prospective experiment.
-The archive contains more than one million raw prediction records, with different roles, coverage,
-and repetition histories. We audit those distinctions before using the archive for exploration. We
-then develop observable event measures on a small, permanently excluded pilot and freeze a source-
-separated training and confirmation design. Predictions are fitted and saved before confirmation
-responses are generated. Model-by-subject baselines prevent subject-specific habits from being
-mistaken for student-state response patterns, while neutral role wording and explicit teaching policies
-are manipulated separately on the same inputs.
-    The archive motivates this separation empirically: the task-conditioned prediction increment for
-a legacy direct-help score shrinks from 6.57% to 0.34% when a question-only instructional setting
-is excluded, while the global model profile retains predictive information (Appendix A.1). This
-outcome-aware sensitivity is not a causal estimate or an independent confirmation. It illustrates why
-recognizing task-specific text patterns alone cannot establish model-specific responses to student
-state.
-    The first confirmation stage supports default prediction for all three primary actions and additional
-student-state prediction for acknowledgement. We then challenge the latter result in an extension
-designed after observing that stage, but with its own materials and forecasts frozen before new
-generation. Reusing the 32 confirmation problems separates an expression shift from a problem shift.
-Default revelation and elicitation gains persist under new wording, whereas the acknowledgement
-state profile loses its incremental gain. A contemporary original-wording control retains a positive
-gain. Together with instruction-driven convergence, these results distinguish three claims often
-conflated in a personality description: recurring default behavior, transportable responses to student
-state, and persistence under an explicit teaching policy. Our contribution is this empirical separation,
-including the failure of the stronger transfer claim. The constructed materials and finite expression
-bank constrain its scope; neither behavior predictability nor its failure establishes inner psychology,
-emotional understanding, or learning gains.
+interpretations: does information that transfers to new problems also transfer when students express
+themselves differently?
+    Three linked questions organize the study. RQ1: Under matched input, do models show
+distinguishable defaults that recur across requests? RQ2: Do defaults or model-specific student-state
+responses predict new problems and new expressions? RQ3: How do neutral role rewordings and
+explicit teaching instructions change those profiles?
+    An audit of a million-record educational-output archive motivates the controlled study: dif-
+ferent roles, repeated sources, and instructional settings can produce apparent model differences
+(Appendix A.1). We develop observable measures on an excluded pilot, then fit profiles on training
+sources and lock predictions before generating responses to new problems. Model-by-subject baselines
+distinguish subject habits from student-state increments. After observing this confirmation, a sepa-
+rately frozen expression extension reuses its 32 problems and original forecasts, with contemporary
+original wording as a control. The extension tests an expression shift without adding new sources.
+    Default revelation and elicitation gains survive both transfer tests. The acknowledgement state
+profile improves new-problem prediction under original wording, but loses its increment under
+explicit synonyms and implicit cues; the contemporary original-wording control remains positive.
+Explicit teaching instructions also make demanded actions converge while permissible accompanying
+actions remain different. This separation of default recurrence, conditional transfer, and instructional
+constraint is the central empirical contribution. The finite constructed materials limit the supported
+interpretation to prompt-dependent action profiles of the specified deployments.
 
 
 2    Related Work
 Personality and situated behavior. TRAIT extends personality inventories into scenario-based
 choices and evaluates distinctiveness, consistency, and prompting effects (Lee et al., 2025). Behavioral
-
-
-                                                   2
-Mode Axes uses situated choices across interaction registers, also evaluates open-ended generations,
+Mode Axes uses situated choices across interaction registers, also evaluates open-ended generations,
 and studies activation-based control (Liu et al., 2026). Separate construction and evaluation scenarios
 are already part of that framework. Internal-feature interventions further connect personality-related
 representations to behavior across situations (Zhang et al., 2026); conversational studies examine
@@ -117,7 +92,10 @@ without establishing that the resulting labels are ground truth.
 Teaching quality and the predictive question. MRBench and MathTutorBench organize
 pedagogical-capability evaluation (Maurya et al., 2025; Macina et al., 2025). PATS studies teaching
 adapted to student personality (Rooein et al., 2026). Our primary target is the probability of the
-tutor’s next observable behavior under specified conditions. Predicting that behavior does not rank
+
+
+                                                   2
+tutor’s next observable behavior under specified conditions. Predicting that behavior does not rank
 its educational value. The empirical addition sought here is a joint account of which default and
 conditional profiles predict new-source actions, how those profiles compare with simpler explanations,
 and how neutral wording and explicit policies change them on matched inputs. Source separation and
@@ -135,16 +113,14 @@ unit is a deployment configuration, including the requested and returned model n
 observation period, and generation settings. We study MiniMax-M3, MiniMax-M2.7, GLM-5.3,
 DeepSeek-V4-Pro, and Doubao-Seed-2.0-Lite. This definition neither assumes human traits nor
 requires an invariant ranking across contexts. The first-stage design is summarized in Appendix
-Figure 4. Complete materials, measurement rules, estimation details, and protocol history appear in
+Figure 3. Complete materials, measurement rules, estimation details, and protocol history appear in
 Appendix C.
 
 3.1   Exploration, Measurement Development, and Confirmation
 The million-record archive informed exploration. Its 899,025 successful, variant-preserving dedupli-
 cated records span different roles; 68,799 belong to nine tutor-response settings under the current-
 adapter role audit. Historical prompt and deployment provenance is incomplete (Appendix A). We
-
-                                                  3
-therefore keep archive findings separate from the prospective experiment. An excluded pilot of 160
+therefore keep archive findings separate from the prospective experiment. An excluded pilot of 160
 answers develops the event measures reported in Section B.
     The prospective experiment contains 32 training questions in 30 conservative source families and
 32 confirmation questions in 32 separate families. Each partition has eight questions in mathematics,
@@ -164,7 +140,11 @@ Secondary information-opportunity probes and cross-stage sentinels add 160 and 4
 respectively, for 5,320 tutor generations. These repetitions and variants do not add independent
 sources.
 
-3.2   Observable Behavior and Recurrence (RQ1)
+
+
+
+                                                   3
+3.2   Observable Behavior and Recurrence (RQ1)
 The three pilot-selected primary events are answer revelation, an explicit final resolution regardless
 of correctness; reasoning elicitation, an invitation for the student to perform reasoning that the tutor
 has not immediately answered; and affect acknowledgement, explicit recognition of feeling or difficulty
@@ -175,11 +155,9 @@ context, the reference target, and original answer lines. Generator identity, ro
 and partition labels are withheld; output style may still reveal identity. Positive codes require
 existing nonempty evidence lines. Primary labels use the majority of three structurally valid codes;
 traceability and agreement do not establish semantic ground truth. Repairs address completion or
-structure failures, never event labels or disagreement. One missing training code required a disclosed
-larger-budget amendment before prediction locking. Six missing confirmation codes later required a
-separately recorded amendment after the original repair limit. Appendix C preserves their scope
-and failures; a supplemental missing-code sensitivity checks whether the primary conclusions depend
-on the amended measurements.
+structure failures, never event labels or disagreement. Budget amendments, original failures, and
+missing-vote sensitivities are reported in Appendix C; they are not selected by label agreement or
+the direction of results.
     RQ1 reports model event rates, state-specific profiles, and positive, negative, and total agreement
 across the two requests, with source clustering. Constant behavior can yield perfect agreement, so
 recurrence is interpreted alongside prevalence and predictive value.
@@ -190,12 +168,9 @@ model identity, model-by-subject interactions, and model-by-student-state intera
 orthogonalization and standardization preserve the ridge geometry of earlier feature blocks. Source-
 grouped training validation selects the penalty from {0.1, 1, 10, 100}; the intercept is unpenalized. All
 fitted parameters, tuning choices, and confirmation probabilities are locked before any confirmation
-
-
-                                                   4
-tutor response is generated. No confirmation answer or label enters prediction fitting. A descriptive
-style competitor uses only training profiles of log word count and marked-line fraction.
-    For each primary event, we test two Brier-loss improvements: adding model defaults to context,
+tutor response is generated. No confirmation answer or label enters original predictor fitting. A
+descriptive style competitor uses only training profiles of log word count and marked-line fraction.
+     For each primary event, we test two Brier-loss improvements: adding model defaults to context,
 and adding student-state interactions to the model-by-subject predictor. Losses are averaged within
 source and equally across 32 confirmation sources. Six one-sided paired source-level tests use Holm
 correction; absolute losses, all gain signs, and source-bootstrap intervals are reported. Intervals
@@ -208,14 +183,16 @@ problems, original model forecasts, five deployments, two student-work states, a
 per cell. Four expression arms each produce 1,280 answers: the original calm/frustrated wording
 generated again; new explicit synonyms; implicit cues; and a peer-context control. The extension
 adds 5,120 answers, for 10,440 tutor generations across the two stages, excluding the measurement
-pilot. It adds expression conditions, not independent problem sources. No predictor is refitted to
-either stage’s confirmation labels.
+pilot. It adds expression conditions, not independent problem sources. For the primary transfer
+tests, no predictor is refitted to either stage’s confirmation labels.
     Explicit and implicit arms each use four fixed cue pairs, with two sources per domain assigned to
 each pair. This nested arrangement is not a fully crossed source-by-phrase design. Implicit pairs
 additionally change actions, willingness, or time-related information; they do not isolate a pure
 latent affect change. In the peer control, the current student remains explicitly calm while another
 student working on a different problem is quoted as calm or frustrated.
-    The six primary positive-gain tests cover default revelation and elicitation, and conditional
+
+                                                   4
+    The six primary positive-gain tests cover default revelation and elicitation, and conditional
 acknowledgement, under each new expression arm. Source-level paired tests use Holm correction
 within this new six-test family and 10,000 source bootstrap draws stratified by domain. Contemporary
 original wording, paired differences from that arm, and peer effects are secondary. Individual coder
@@ -241,18 +218,6 @@ human ground truth or causal control of ability. Their precise timing, retained 
 interpretation limits are given in Appendix C.
 
 
-                                                  5
-                         Deployment             Reveal    Elicit   Acknowledge
-                         MiniMax-M2.7              99.6     8.2           27.0
-                         MiniMax-M3                83.2    48.4           69.9
-                         DeepSeek-V4-Pro          100.0     2.0           59.0
-                         Doubao-Seed-2.0-Lite     100.0     4.3           60.9
-                         GLM-5.3                   22.3    96.5           51.2
-
-Table 1: Canonical event rates (%): 256 answers per deployment, eight per source, on 32 sources.
-Events can co-occur. Abbreviated deployment names in the text refer to these configurations, not
-all releases in their model families.
-
 4     Results
 All 4,040 first-stage confirmation responses received three valid event codes, yielding 12,120 coder
 outputs and 32,320 majority-coded response–event observations. The six disclosed larger-budget
@@ -273,51 +238,35 @@ Conversely, DeepSeek and Doubao have 96.1% and 91.4% elicitation agreement but z
 agreement: their few positive occurrences do not recur in both requests. Perfect answer agreement
 for these two deployments reflects an observed ceiling. We therefore interpret recurrence through
 prevalence, agreement on presence and absence, and prospective prediction together (Appendix E).
+
+
+                                                  5
+                         Deployment             Reveal    Elicit   Acknowledge
+                         MiniMax-M2.7              99.6     8.2           27.0
+                         MiniMax-M3                83.2    48.4           69.9
+                         DeepSeek-V4-Pro          100.0     2.0           59.0
+                         Doubao-Seed-2.0-Lite     100.0     4.3           60.9
+                         GLM-5.3                   22.3    96.5           51.2
+
+Table 1: Canonical event rates (%): 256 answers per deployment, eight per source, on 32 sources.
+Events can co-occur. Abbreviated deployment names in the text refer to these configurations, not
+all releases in their model families.
+
 Appendix D provides a same-input response set, including a coding disagreement, to illustrate the
 event distinctions.
 
 4.2   New-Problem Transfer Under Original Wording (RQ2)
-All three model-default predictors improve over the situation-only baseline on new sources (Figure 1).
-The absolute Brier reductions are 0.09127 for revelation, 0.12970 for elicitation, and 0.01982 for
-acknowledgement; all pass the six-test Holm correction. Absolute losses fall from 0.15359 to 0.06232,
-0.21873 to 0.08903, and 0.18242 to 0.16260, respectively. Thus the identity-specific information
-learned before confirmation predicts actions beyond the supplied subject and student-state context.
+All three model-default predictors improve over the situation-only baseline on new sources (Appendix
+Figure 4). The absolute Brier reductions are 0.09127 for revelation, 0.12970 for elicitation, and
+0.01982 for acknowledgement; all pass the six-test Holm correction. Absolute losses fall from
+0.15359 to 0.06232, 0.21873 to 0.08903, and 0.18242 to 0.16260, respectively. Thus the identity-
+specific information learned before confirmation predicts actions beyond the supplied subject and
+student-state context.
     Adding model-specific student-state responses to model-by-subject profiles gives a different result.
 Acknowledgement improves by 0.00973 (95% interval [0.00536, 0.01395], adjusted p = 0.000192),
 reducing Brier loss from 0.16046 to 0.15072. Revelation gains only 0.00043 ([-0.00037, 0.00130],
 p = 0.326); elicitation changes by -0.00016 ([-0.00101, 0.00073], p = 0.641). These unresolved
 increments concern the specified cues and predictor class, not every possible form of adaptation.
-
-
-                                                   6
-                          Default increment                          Student-state increment
-
-
-        Reveal
-
-
-          Elicit
-
-
- Acknowledge
-
-
-                   0.00      0.05      0.10      0.15              0.000       0.005    0.010   0.015
-                          Brier improvement                                Brier improvement
-
-
-Figure 1: All six primary predictive comparisons on 32 new source problems. Positive values denote
-lower Brier loss. Lines show 95% source-bootstrap intervals conditional on the fitted training profiles;
-they are not simultaneous intervals. The panels use different horizontal scales. Exact gains, intervals,
-and six-test Holm-adjusted one-sided p-values appear in Table 7.
-
-
-    The acknowledgement profiles clarify the positive conditional result. For correct unfinished work,
-Doubao acknowledges difficulty in 0/64 calm responses and 60/64 frustrated responses; DeepSeek
-changes from 22/64 to 34/64. For erroneous work, their corresponding changes are 32/64 to 64/64
-and 46/64 to 49/64. These are responses to scripted text cues, not measurements of empathy
-or learner understanding. The descriptive curves appear in Appendix E; the locked prediction
-comparison provides the test that such model-specific patterns recur on new sources.
     The training-only length/formatting competitor yields losses of 0.13861, 0.17826, and 0.17864 for
 the three events, exceeding the model-default losses in each case. This descriptive comparison shows
 that two simple style summaries do not reproduce the predictive result. It neither excludes richer
@@ -334,15 +283,13 @@ synonyms and -0.00628 for implicit cues. The contemporary original-wording gain 
 [0.00888, 0.01624]. Paired new-minus-contemporary gain differences are -0.01614 [-0.02254, -0.00990]
 and -0.01876 [-0.02384, -0.01358], respectively. These secondary paired contrasts weaken a simple
 explanation in which all profiles cease working across deployments at the later observation time.
-Figure 2 separates the two transfer tests.
+Figure 1 separates the two transfer tests.
     All three individual-coder panels have positive contemporary and negative new-expression
 acknowledgement state-gain estimates. Both new-expression point estimates also remain negative in
 all five generator-deletion panels; some intervals include zero. These are sensitivities of the same
-responses, not independent replications. The failure concerns transported conditional probabilities:
-models still exhibit acknowledgement differences between cue poles, and the implicit arm changes
 
 
-                                                   7
+                                                   6
                     Expression            Forecast increment                          Gain [95% CI]                  Holm p
                     Explicit              Default: reveal              .09730 [.08095, .11320]               7.63×10−11
                     Explicit              Default: elicit              .13070 [.12266, .13825]               4.97×10−24
@@ -381,44 +328,30 @@ confidence intervals are not simultaneous intervals.
 
 
 
-Figure 2: Transfer depends on what is changed. First-stage confirmation tests new source problems
+Figure 1: Transfer depends on what is changed. First-stage confirmation tests new source problems
 with original wording. The three extension rows reuse those same 32 problems and original forecasts.
 Default revelation and elicitation gains persist, while the conditional acknowledgement gain loses its
 positive sign under new expressions. Bars are source bootstrap 95% intervals conditional on frozen
 fits, not four independent replications or simultaneous intervals. Horizontal scales differ by panel.
 
-
+responses, not independent replications. The failure concerns transported conditional probabilities:
+models still exhibit acknowledgement differences between cue poles, and the implicit arm changes
 more than affect wording alone.
 
-Relative advantage is distinct from absolute accuracy. A post-result diagnostic separates the
-two expression arms. Under explicit synonyms, the conditional acknowledgement Brier loss slightly
-improves from 0.145806 to 0.144501, but the domain-profile baseline improves more, from 0.158289
-to 0.140840. Under implicit cues, conditional loss instead rises to 0.155411 while baseline loss falls
-to 0.149134. Thus both arms lose incremental advantage, but only the latter has worse absolute
-conditional prediction error. An exact decomposition shows that overall acknowledgement-rate
-shifts contribute less than 0.000003 to either gain change: the two predictors have nearly identical
-mean probabilities. The remaining change covaries with their differing cell-level predictions. This
-descriptive accounting does not rule out richer calibration or semantic explanations (Appendix H).
-A separate source-held-out, post-result check applies shared or model-specific logistic calibration
-equally to both forecasts. None of the tested schemes restores a positive new-expression incremental
-point estimate, although absolute loss can improve and some gain intervals include zero (Appendix I).
+Alternative explanations. The explicit arm loses relative advantage while slightly improving its
+own conditional loss; the implicit arm also worsens absolute conditional loss. Post-result accounting
+and source-held-out calibration constrain simple prevalence-shift and logistic-calibration explanations,
+without excluding richer semantic or modeling alternatives (Appendices H–I).
+    In the secondary peer control, social context changes acknowledgement of a fixed current-student
+state. Selected examples show that this can happen with correct emotion attribution; the contrast
+alone does not identify misattribution (Appendix F).
 
-
-
-                                                                      8
-Peer-context control. Keeping the current student explicitly calm, changing a peer’s quote yields
-acknowledgement-rate changes of +30.47, +25.00, +26.56, +23.44, and -4.69 percentage points for
-M2.7, M3, DeepSeek, GLM, and Doubao, respectively. The first four source intervals exclude zero;
-Doubao’s includes it. These are secondary descriptive contrasts. One deterministically selected
-0-to-1 example per model helps interpret the event: the first four models explicitly affirm the current
-student’s calmness, sometimes correctly distinguishing the peer’s frustration. The event-rate contrast
-therefore cannot itself establish misattribution. Outcome-selected examples do not estimate its
-prevalence.
-
-4.4   Instructions Converge on Demanded Actions (RQ3)
+4.4     Instructions Converge on Demanded Actions (RQ3)
 The matched prompt comparison uses 16 sources and 128 answers per deployment per arm. ASK
 requires eliciting a next step without stating the final answer. All five deployments elicit reasoning
-in all 128 ASK responses. Revelation falls to zero for DeepSeek, Doubao, and GLM, but remains in
+
+                                                                      7
+in all 128 ASK responses. Revelation falls to zero for DeepSeek, Doubao, and GLM, but remains in
 9/128 M2.7 and 4/128 M3 responses. EXPLAIN instead requires a solution and final answer, while
 explicitly permitting follow-up reasoning or questions. Every deployment reveals the answer in every
 EXPLAIN response.
@@ -436,44 +369,22 @@ sources its simultaneous half-width is 0.9414. This lack of precision cannot be 
 either universal stability or universal wording sensitivity.
 
 4.5   Dependence on Measurement and Model Composition
-Eight coding panels preserve the broad separation between default and student-state increments.
-Default-gain estimates range from 0.08571–0.09562 for revelation, 0.12442–0.13111 for elicitation,
-and 0.01699–0.02017 for acknowledgement. Conditional acknowledgement gains range from 0.00697–
-0.01052; conditional revelation and elicitation remain near zero. These reuse the same outputs and
-are sensitivity estimates, not independent replications.
-    Effect strength depends materially on which deployments are included. Deleting GLM reduces
-default gains to 0.00394 for revelation and 0.03080 for elicitation. Deleting M2.7 reduces the
-acknowledgement default gain to 0.00175, with an interval crossing zero [-0.00174, 0.00547]. The
-full-panel findings therefore do not imply equally strong differences among every subset of models.
-Across 200 training-source resamples, the descriptive 2.5–97.5 percentile range for conditional
-acknowledgement gain is [0.00542, 0.01039]; revelation spans zero and elicitation remains slightly
-negative. These distributions condition on fixed confirmation labels and the original regularization
-ratio.
-    The six confirmation budget exceptions do not determine the primary findings. For either binary
-value of each affected canonical GLM code, all six primary estimates and adjusted p-values are
-exactly unchanged: the other two coders agree on the three primary events. This fixed-prediction
+The first-stage default/conditional distinction persists across eight coding panels, but its strength
+depends on model composition. Removing GLM reduces default gains to 0.00394 for revelation
+and 0.03080 for elicitation; removing M2.7 reduces default acknowledgement gain to 0.00175 with
+an interval spanning zero. The findings therefore do not imply equally strong differences among
+all deployment subsets. Two hundred training-source resamples and enumeration of the disclosed
+missing confirmation votes preserve the main predictive pattern (Appendix E).
+    Content-screened matched subsets retain the predictive pattern, including a conditional acknowl-
+edgement gain of 0.00989 [0.00510, 0.01472] after excluding all five-model slots flagged by either
+reviewer. This retains 1,065 responses on all 32 sources. However, the reviewers share only 5 of
+the 49 error flags, with 18.5% positive agreement despite passing the diagnostic controls. Screen-
+ing tests dependence on those judgments; it neither guarantees correctness nor causally separates
+behavior from ability. Full rates, sensitivity ranges, and mathematics/content subsets appear in
+Appendix E.5.
 
 
-                                                  9
-enumeration addresses those missing codes only. It does not validate coder behavior across the
-Gateway interruption. Complete secondary results and sensitivity ranges are retained in Appendix E.
-
-Mathematics and content screening. The mathematics subset (eight sources, 320 responses)
-retains default gains of 0.11624, 0.13892, and 0.01992; student-state increments are 0.00062, 0.00030,
-and 0.01380 for revelation, elicitation, and acknowledgement. All 2,584 content reviews are valid
-after the disclosed structural repairs. Excluding five-model slots flagged by either reviewer retains
-1,065 responses on all 32 sources. Default gains are 0.09535, 0.13179, and 0.02068; conditional
-acknowledgement gains 0.00989 [0.00510, 0.01472], while the other two conditional intervals span
-zero. The unanimous-error screen retains 1,255 responses and the same qualitative pattern. No
-uncertainty verdicts occur, so the error-or-uncertainty screen is identical to the either-error screen
-(Appendix E.5).
-    These are descriptive selected-subset estimates, with no new tests. Both reviewers match all
-twelve diagnostic controls, yet agree on an error in only 5 of the 49 natural responses flagged by
-either (positive agreement 18.5%). Screening thus tests sensitivity to these judgments; it neither
-guarantees correct remaining answers nor causally separates behavior from ability.
-
-
-5    Discussion
+5     Discussion
 Defaults and state responses require different transfer claims. The evidence supports
 recurring educational behavior in these deployments. Default action profiles learned on one source
 set improve predictions on another; revelation and elicitation gains also survive the tested expression
@@ -487,7 +398,9 @@ wording do not improve forecasts under these new inputs. The explicit arm loses 
 tage despite slightly lower absolute conditional loss; the implicit arm has higher conditional loss.
 Expression-specific calibration, the additional information in implicit cues, and changes in what the
 acknowledgement event captures are plausible explanations. The study does not identify an internal
-mechanism or establish failure of every possible conditional predictor. Educational personality is
+
+                                                  8
+mechanism or establish failure of every possible conditional predictor. Educational personality is
 consequently useful here as a testable action profile with specified transfer boundaries, rather than a
 psychological type.
 
@@ -502,10 +415,7 @@ a deployment’s behavior.
 
 Increment over existing personality and tutoring research. Situated personality probes
 and behavioral profiles already exist (Lee et al., 2025; Liu et al., 2026), as do comparisons of
-
-
-                                                  10
-tutoring-action mixtures and learned tutor-persona variation (Kucheria et al., 2025; Lee et al., 2026).
+tutoring-action mixtures and learned tutor-persona variation (Kucheria et al., 2025; Lee et al., 2026).
 The contribution here is the joint observation, within a linked experimental design, of default transfer,
 expression-limited conditional transfer, and convergence under explicit instructions. The unchanged
 forecasts and contemporary control make the boundary more informative than a difference in output
@@ -535,7 +445,10 @@ human-like types, emotional understanding, or learning benefits. Transfer to arc
 dialogue remains untested in this draft.
 
 
-7    Limitations
+
+
+                                                   9
+7    Limitations
 Scope of the construct. Educational personality denotes behavior observed in this educational
 setting. We do not compare matched educational and non-educational interactions, so the study
 cannot establish that a recurring tendency is unique to education. The three primary events cover
@@ -552,9 +465,7 @@ confirmation target. The first stage uses one calm/frustrated wording pair. The 
 fixed pairs in each new expression arm on reused problems; sources and phrase pairs are nested, and
 the implicit cues bundle affect-related expression with other information. Neither stage samples a
 population of student expressions. The extension was designed after the original results, and its
-
-                                                   11
-negative transfer finding does not identify which aspect of the new inputs caused the degradation.
+negative transfer finding does not identify which aspect of the new inputs caused the degradation.
 References equalize solution availability but cannot eliminate differences in understanding or instruc-
 tion following. The source split prevents the specified problem families from crossing partitions; it
 does not establish novelty relative to model pretraining.
@@ -581,7 +492,10 @@ support an inspectable sequence, but are not independent third-party preregistra
 timestamping.
 
 
-References
+
+
+                                                    10
+References
 Bin Han, Deuksin Kwon, and Jonathan Gratch. Personality expression across contexts: Linguistic
   and behavioral variation in LLM agents, 2026. URL https://arxiv.org/abs/2602.01063.
 
@@ -603,55 +517,45 @@ Jaewook Lee, Alexander Scarlatos, Simon Woodhead, and Andrew Lan. Letting tutor 
 Seungbeen Lee, Seungwon Lim, Seungju Han, Giyeong Oh, Hyungjoo Chae, Jiwan Chung, Minju
   Kim, Beong-woo Kwak, Yeonsoo Lee, Dongha Lee, Jinyoung Yeo, and Youngjae Yu. Do LLMs
   have distinct and consistent personality? TRAIT: Personality testset designed for LLMs with
-
-                                                    12
-  psychometrics. In Findings of the Association for Computational Linguistics: NAACL 2025, pages
+  psychometrics. In Findings of the Association for Computational Linguistics: NAACL 2025, pages
   8412–8452, 2025. doi: 10.18653/v1/2025.findings-naacl.469. URL https://aclanthology.org/
   2025.findings-naacl.469/.
+
 Haoze Liu, Run Liu, Haiying Xu, Jiahui Han, Siyuan Fang, Siyu Yan, Huiqi Deng, Guanchu Wang,
   and Na Zou. Your LLM, your style: Behavioral mode axes for LLM behavioral control, 2026. URL
   https://arxiv.org/abs/2608.10703.
+
 Jakub Macina, Nico Daheim, Ido Hakimi, Manu Kapur, Iryna Gurevych, and Mrinmaya Sachan.
   MathTutorBench: A benchmark for measuring open-ended pedagogical capabilities of LLM tutors.
   In Proceedings of EMNLP 2025, pages 204–221, 2025. doi: 10.18653/v1/2025.emnlp-main.11.
   URL https://aclanthology.org/2025.emnlp-main.11/.
+
 Kaushal Kumar Maurya, Kv Aditya Srivatsa, Kseniia Petukhova, and Ekaterina Kochmar. Unifying
  AI tutor evaluation: An evaluation taxonomy for pedagogical ability assessment of LLM-powered
  AI tutors. In Proceedings of NAACL-HLT 2025, pages 1234–1251, 2025. doi: 10.18653/v1/2025.
  naacl-long.57. URL https://aclanthology.org/2025.naacl-long.57/.
+
 Donya Rooein, Sankalan Pal Chowdhury, Mariia Eremeeva, Yuan Qin, Debora Nozza, Mrinmaya
  Sachan, and Dirk Hovy. PATS: Personality-aware teaching strategies with large language model
  tutors. In Findings of the Association for Computational Linguistics: EACL 2026, pages 4186–4211,
  2026. URL https://aclanthology.org/2026.findings-eacl.219/.
+
 Ruikang Zhang, Shuo Wang, and Qi Su. From representations to behaviors: Exploring the person–
  situation–behavior triad in LLMs, 2026. URL https://arxiv.org/abs/2607.26853.
 
 
-A     Archive Scope and Historical Provenance
+
+
+                                               11
+A     Archive Scope and Historical Provenance
 The frozen archive census contains 1,028,822 raw records. Successful text deduplication yields 899,025
 model–benchmark–item–response records when recorded input variants remain distinct, and 837,704
 when variants are ignored for text inventory only. Neither count estimates independent generation
 events. Table 3 classifies all 39 benchmark settings using a review of current adapter contracts. Each
 assignment retains a source file, class, line, hash, and interpretation note. Current contracts guide
 role interpretation but do not establish the exact prompts used by every historical request.
-    Evaluation and test/option outputs comprise 73.48% of these records. For example, the Pedagogy
-Benchmark requests pedagogical-knowledge multiple-choice answers, while ASAP and SAS ask
-the candidate model to score student work. MRBench and BEA judge settings likewise evaluate
-existing tutor text; that text is not the candidate evaluator’s own tutoring. Even among tutor
-settings, instructions differ: TutorBench use cases request different actions, MMTutorBench requires
-image-conditioned guidance in three prescribed sections, and LongTutor explicitly requests scaffolding
-without the full answer.
-    A second pass verifies all 122 prediction files and corresponding summaries in the nine tutor-
-response settings against the census hashes. Their 86,072 latest successful file items reproduce 68,799
-variant-preserving deduplicated records. None of those file items contains the inspected fields for
-complete messages, prompt text or input hashes, provider request identifiers, returned model names,
-generation timestamps, or finish reasons. All contain usage metadata. Of the 122 summaries, 83
-contain generation parameters and 114 contain a judge-prompt hash; none contains the inspected
-generation-prompt hash fields. A judge-prompt hash is not evidence of the tutor’s generation prompt,
-and later scoring summaries do not necessarily attest to the original generation parameters.
 
-                                                  13
-                         Current task role                 Settings   Records
+                         Current task role                 Settings   Records
                          Evaluation of existing work             7    354,308
                          Test or option answering               10    306,307
                          Mixed educational assistance            2     78,322
@@ -669,12 +573,31 @@ Table 3: Variant-preserving text inventory, not counts of independent tutoring c
 labels. Mixed educational assistance requires item-level role separation; it is not automatically
 excluded from later research.
 
+    Evaluation and test/option outputs comprise 73.48% of these records. For example, the Pedagogy
+Benchmark requests pedagogical-knowledge multiple-choice answers, while ASAP and SAS ask
+the candidate model to score student work. MRBench and BEA judge settings likewise evaluate
+existing tutor text; that text is not the candidate evaluator’s own tutoring. Even among tutor
+settings, instructions differ: TutorBench use cases request different actions, MMTutorBench requires
+image-conditioned guidance in three prescribed sections, and LongTutor explicitly requests scaffolding
+without the full answer.
+    A second pass verifies all 122 prediction files and corresponding summaries in the nine tutor-
+response settings against the census hashes. Their 86,072 latest successful file items reproduce 68,799
+variant-preserving deduplicated records. None of those file items contains the inspected fields for
+complete messages, prompt text or input hashes, provider request identifiers, returned model names,
+generation timestamps, or finish reasons. All contain usage metadata. Of the 122 summaries, 83
+contain generation parameters and 114 contain a judge-prompt hash; none contains the inspected
+generation-prompt hash fields. A judge-prompt hash is not evidence of the tutor’s generation prompt,
+and later scoring summaries do not necessarily attest to the original generation parameters.
     This is a field-coverage finding, not proof that provenance is unavailable in external logs or
 original sources. Reconstructed historical inputs must be identified as reconstructions. Consequently,
 the archive provides discovery and confound audits, while the prospective study records the input,
 output, source, version, and timing relationships needed for its own narrower confirmation.
 
-A.1    What the Existing Scores Contribute
+
+
+
+                                                  12
+A.1    What the Existing Scores Contribute
 We also reanalyze the legacy scored panel with its original eight semantic dimensions and six model
 configurations. These are exploratory measurements, not labels assigned to the entire archive, and
 are not pooled with the new binary event codes. Excluding 15 contexts without recoverable source
@@ -689,17 +612,8 @@ direct-help increment from 6.57% to 0.34%. This does not eliminate predictive in
 global model profile: in the reduced panel, its direct-help MSE is 0.66754, compared with 0.88413
 for zero relative model differences. Personalization retains a larger task-conditioned increment, but
 that legacy score does not establish learner understanding or a validated personality factor.
-    This exclusion was chosen after observing task results. It changes the target task distribution
-and its weights, so the difference between columns is not a causal effect of question-only formatting.
-We retain both analyses. Their role is to motivate separating problem content, student cues, and
-output instructions in the prospective experiment; neither the archive’s size nor favorable legacy
-scores substitute for that confirmation.
 
-
-
-
-                                                 14
-                         Legacy dimension         Four tasks   Without Socratic
+                         Legacy dimension         Four tasks   Without Socratic
                          Affective warmth           11.27%              2.81%
                          Autonomy support            9.58%              4.49%
                          Cognitive load              2.05%              1.83%
@@ -714,30 +628,25 @@ profile, averaged over split-specific ratios. The full panel has 224 contexts/21
 reduced panel has 144/133. Negative values mean worse predictions. The 100 overlapping splits are
 not independent experiments and their dispersion is not a confidence interval.
 
+    This exclusion was chosen after observing task results. It changes the target task distribution
+and its weights, so the difference between columns is not a causal effect of question-only formatting.
+We retain both analyses. Their role is to motivate separating problem content, student cues, and
+output instructions in the prospective experiment; neither the archive’s size nor favorable legacy
+scores substitute for that confirmation.
+
 
 B     Measurement Development Results
 This section reports the completed, excluded pilot, not the prospective confirmation study. Its 160
 tutor responses cover only four templates and therefore do not justify education-wide prevalence or
 uncertainty estimates. All responses received three complete event codes after the recorded structural
-repairs. Figure 3 separates agreement on event presence from agreement on absence, rather than
+repairs. Figure 2 separates agreement on event presence from agreement on absence, rather than
 allowing abundant negative examples to dominate a single agreement statistic.
     The three selected primary endpoints have majority-positive counts of 129 for answer revelation,
 61 for reasoning elicitation, and 111 for affect acknowledgement. Their pairwise positive agreement
 ranges are 98.04–99.23%, 89.43–92.19%, and 97.32–98.63%, respectively. In contrast, requests for
 missing facts have only one majority-positive example: positive agreement ranges from 0–40% despite
-high overall agreement. Unsupported ability attribution also has weaker positive agreement, ranging
-from 33.33–51.16%. These results support different measurement priorities; they do not validate a
-fixed-dimensional personality taxonomy.
-    Pilot model profiles suggest potentially useful defaults, but adding student-state interactions does
-not consistently improve source-held-out prediction over model-by-subject profiles during method
-development. These exploratory observations motivated separate sources, within-domain replication,
-and locked prospective comparisons. They remain distinct from the confirmation outcomes in
-Section 4.
 
-
-
-
-                                                   15
+                                                   13
                                              Measurement-development pilot
                                                                                                                         Majority
                                       Agreement on presence                           Agreement on absence              positives
@@ -773,10 +682,20 @@ Section 4.
 
 
 
-Figure 3: Completed measurement-development pilot: 160 tutor responses and 480 valid coder
+Figure 2: Completed measurement-development pilot: 160 tutor responses and 480 valid coder
 outputs. Each dot represents one of the three coder pairs; lines span the observed pairs and are
 not confidence intervals. Blue labels identify the three endpoints selected before formal generation.
 Agreement does not establish semantic ground truth, and rare events require separate attention.
+
+
+high overall agreement. Unsupported ability attribution also has weaker positive agreement, ranging
+from 33.33–51.16%. These results support different measurement priorities; they do not validate a
+fixed-dimensional personality taxonomy.
+    Pilot model profiles suggest potentially useful defaults, but adding student-state interactions does
+not consistently improve source-held-out prediction over model-by-subject profiles during method
+development. These exploratory observations motivated separate sources, within-domain replication,
+and locked prospective comparisons. They remain distinct from the confirmation outcomes in
+Section 4.
 
 
 C      Detailed Methods and Protocol History
@@ -790,17 +709,8 @@ behavior varies with student state. We test both descriptions through prediction
 problems. This operationalization does not require a fixed cross-context model ranking, and it does
 not treat any identifiable linguistic signature as a validated personality construct.
     The unit m is a deployment configuration, including its requested and returned model names,
-provider, observation period, and generation settings. The five prospective configurations request
-MiniMax-M3, MiniMax-M2.7, GLM-5.3, DeepSeek-V4-Pro, and Doubao-Seed-2.0-Lite. In the
-measurement pilot, the request alias GLM-5.2 returned GLM-5.3 throughout; those responses are
-identified by the returned name and are not pooled with historical GLM-5.2 results. Provider model
-names do not attest to immutable weights, so version and temporal uncertainty remain limitations
-of deployment-level inference.
 
-
-
-
-                                                                 16
+                                                                 14
          Prospective design: separate sources, predictions saved before generation
 
 
@@ -827,7 +737,7 @@ of deployment-level inference.
 
 
 
-Figure 4: Prospective design, with realized response counts. Each main question crosses five
+Figure 3: Prospective design, with realized response counts. Each main question crosses five
 configurations, four student-work/affect conditions, and two requests. Main training and confirmation
 source families are separate. This diagram covers the first stage (5,320 responses); the subsequent
 expression extension adds 5,120 responses on the same 32 confirmation sources. RQ1 and the first-
@@ -835,6 +745,13 @@ stage RQ2 test use the 32 canonical confirmation sources; RQ3 reuses 16 of them 
 arms. Repetitions and prompt variants do not add independent sources. The four nested forecasts
 are accompanied by the training-only style competitor and the sensitivity analyses described below.
 
+
+provider, observation period, and generation settings. The five prospective configurations request
+MiniMax-M3, MiniMax-M2.7, GLM-5.3, DeepSeek-V4-Pro, and Doubao-Seed-2.0-Lite. In the
+measurement pilot, the request alias GLM-5.2 returned GLM-5.3 throughout; those responses are
+identified by the returned name and are not pooled with historical GLM-5.2 results. Provider model
+names do not attest to immutable weights, so version and temporal uncertainty remain limitations
+of deployment-level inference.
 
 C.1      Archive Exploration and Prospective Separation
 The archive audit distinguishes raw records from successful deduplicated responses, and distinguishes
@@ -848,17 +765,17 @@ records in nine tutor-response settings; most other records come from evaluation
 Tutor-role membership does not itself establish neutral prompts or equivalent historical requests.
 Appendix A reports the complete role inventory and a hash-verified inspection of the 122 tutor
 prediction files, including their missing generation-provenance fields.
-    The controlled protocol uses 32 training questions in 30 conservative source families and 32
+
+
+                                                               15
+    The controlled protocol uses 32 training questions in 30 conservative source families and 32
 confirmation questions in 32 separate source families. Each partition has eight questions in each
 of mathematics, science, language, and logic/data reasoning. Two training question pairs share
 an averaging or unit- conversion family and remain grouped in internal validation. The four pilot
 templates and their numerical substitutions are excluded. Confirmation tests new sources within
 these four domains, rather than transfer to entirely new academic domains or proof that a model
 has never encountered the underlying concepts.
-
-
-                                                               17
-    The questions, correct references, erroneous student attempts, and correct unfinished work
+    The questions, correct references, erroneous student attempts, and correct unfinished work
 were authored by the research agent. Two model reviewers checked 64 question packages before
 freezing, yielding 128 complete reviews. All five Boolean content checks were positive in every
 review. Twenty-five reviews nevertheless included issue text, mostly describing the deliberately
@@ -897,17 +814,17 @@ Three primary events are fixed from the measurement-development pilot. Answer re
 an explicit final resolution, including an incorrect resolution or a correct statement that information
 is insufficient. It therefore measures disclosure, not correctness. Reasoning elicitation records an
 invitation for the student to perform unanswered reasoning, including imperatives and indirect
-suggestions; rhetorical questions immediately answered by the tutor do not qualify. Affect acknowl-
+
+
+                                                  16
+suggestions; rhetorical questions immediately answered by the tutor do not qualify. Affect acknowl-
 edgement records explicit recognition of feeling or difficulty, excluding generic politeness and praise.
 These are behavior endpoints, not three assumed independent personality factors.
     Five secondary events cover worked explanation, learner choice, epistemic qualification, requests
 for missing facts, and unsupported ability attribution. All are retained regardless of their results. The
 pilot showed why a high aggregate agreement rate is insufficient: requesting missing facts had only
 one majority-coded positive example among 160 responses, while unsupported ability attribution
-
-
-                                                   18
-had weak positive agreement. Neither is promoted to a primary endpoint based on subsequent
+had weak positive agreement. Neither is promoted to a primary endpoint based on subsequent
 confirmation results.
     MiniMax-M3, DeepSeek-V4-Pro, and GLM-5.3 each code every visible tutor response. Coders
 receive the student conversation, the reference target, and the answer with original line identifiers.
@@ -949,15 +866,13 @@ most two additional attempts for that one request under the same 32,768-token bu
 timeout remained 720 seconds. This extra transport allowance is also retained in the protocol history
 rather than counted as part of either earlier repair allowance.
 
-C.4    Prediction Before Confirmation Generation
+                                                   17
+C.4    Prediction Before Confirmation Generation
 For each behavior, four nested logistic predictors model the probability of its occurrence: a subject-
 by-student-state baseline; that baseline plus model identity; an additional model-by-subject block;
 and an additional model-by-student-state block. New feature blocks are orthogonalized against
 existing blocks using training data and standardized under source-equal weights. This prevents
-
-
-                                                 19
-duplicate main-effect encodings from changing their ridge penalty when interactions are introduced.
+duplicate main-effect encodings from changing their ridge penalty when interactions are introduced.
 The intercept is unpenalized. The penalty is selected from {0.1, 1, 10, 100} by source-grouped
 training-only validation. Constant training outcomes use the same smoothed constant across all four
 predictors.
@@ -999,22 +914,23 @@ better teaching. Finally, answer revelation and reasoning elicitation are analyz
 possible combinations. Their evidence lines do not identify which action occurred first, and we do
 not infer action order from them.
 
-C.6    Sensitivity Analyses and Their Timing
+
+
+
+                                                   18
+C.6    Sensitivity Analyses and Their Timing
 During training coding, after measurement development but before confirmation responses exist,
 we additionally fix eight alternative coding panels: the three-coder mean, each individual coder,
 each two-coder mean, and the mean after excluding the generator’s model family. For each panel,
 forecasts are refitted using its training labels and locked before confirmation generation. They are
-
-
-                                                   20
-evaluated against the corresponding confirmation labels; two-coder ties remain 0.5. This checks
+evaluated against the corresponding confirmation labels; two-coder ties remain 0.5. This checks
 dependence on coding choices but cannot remove biases shared by all coders or supply an external
 ground truth.
-   Five further forecast sets each remove one generator configuration from both training and the
+    Five further forecast sets each remove one generator configuration from both training and the
 confirmation target, refitting the baselines and tuning within the retained training data. This
 checks dependence on a single configuration; it changes the target model mixture and does not test
 prediction of an unseen model. Neither sensitivity family replaces the six primary comparisons.
-   We also resample the 30 training source families 200 times, preserving the multiplicity of repeated
+    We also resample the 30 training source families 200 times, preserving the multiplicity of repeated
 source draws. We retain the selected regularization relative to total loss weight, without repeating
 hyperparameter selection, and recompute training-style profiles in each resample. The resulting gain
 quantiles describe training-source sensitivity conditional on the confirmation material and selected
@@ -1048,15 +964,15 @@ recorded correction reconstructs the exact payload from the verified recorded nu
 prompt, response and corrected payload hashes match; no sampling parameter, input, verdict rule,
 or original file changes. The unchanged parser accepts 2,577 initial reviews. The first of the original
 two allowed repair passes resolves all seven structural failures: two invalid concise explanations and
-five invalid evidence-line references. All seven complete on their first HTTP attempts; the 2,577
+
+
+                                                   19
+five invalid evidence-line references. All seven complete on their first HTTP attempts; the 2,577
 valid original reviews remain unchanged. The correction, original failed diagnostic, and repair history
 are retained. Both reviewers’ twelve control judgments are valid and match the expected verdicts.
 
 
-
-
-                                                   21
-D     Exact Role Wording and an Illustrative Response Set
+D     Exact Role Wording and an Illustrative Response Set
 D.1    Role Instructions
 Every main system message starts with one of the following strings. The same question-specific
 instructor reference follows it, headed “Instructor reference (the student has not been shown this
@@ -1095,16 +1011,16 @@ acknowledging affect/difficulty, while the other two are coded positive by all t
 illustrates the intended separation between general encouragement and explicit acknowledgement;
 unanimous coding is still not semantic ground truth.
 
-A disclosed answer and a further invitation. GLM explains both connectives and later asks,
+
+
+
+                                                   20
+A disclosed answer and a further invitation. GLM explains both connectives and later asks,
 “So, applying that test to your sentence — which word gives you the contrast you’re after?” Its
 revelation and elicitation codes are both unanimously positive. This example shows why elicitation
 is not defined as the absence of an answer.
 
-
-
-
-                                                   22
-A coding boundary. M2.7 writes, “The key question to ask yourself: Is one fact surprising given
+A coding boundary. M2.7 writes, “The key question to ask yourself: Is one fact surprising given
 the other? If yes, reach for although.” Its elicitation code is majority-positive but not unanimous.
 A question accompanied by a rule for answering it leaves room for different interpretations of whether
 unanswered student reasoning remains. We retain this disagreement; the illustration does not
@@ -1146,22 +1062,17 @@ E.2    Prompt Arms and Joint Actions
 Table 8 uses the same 16 source problems in every arm; its canonical rates differ from the full
 32-source profile. In EXPLAIN, revelation is always present, so the elicitation rates equal the
 proportion with both actions. In ASK, elicitation is always present, so the revelation rates equal the
-proportion with both actions. Neither implication establishes the order or pedagogical value of the
-actions.
-     Three nominal neutral comparisons are degenerate. After excluding these, seven comparisons
-still meet a nominal t-based tolerance criterion. None meets the separate bounded-source rule: its
-simultaneous half-width is 0.9414 for the 30 contrasts. We therefore make no population-equivalence
-claim for any neutral arm. The GLM neutral-B shifts are descriptive examples of observed wording
-sensitivity, not proof of a population effect from a selected unadjusted interval.
 
-                                                 23
-             Event               Increment        Brier gain            95% bootstrap interval                  Holm p
-             Reveal              Default           0.091275                  [0.071365, 0.109169]       5.12 × 10−10
-             Reveal              Student state     0.000431                 [-0.000373, 0.001299]           0.325749
-             Elicit              Default           0.129698                  [0.121308, 0.137834]       3.88 × 10−24
-             Elicit              Student state    -0.000163                 [-0.001007, 0.000726]           0.640847
-             Acknowledge         Default           0.019821                  [0.014020, 0.025270]        3.00 × 10−7
-             Acknowledge         Student state     0.009734                  [0.005363, 0.013947]           0.000192
+
+
+                                                 21
+           Event          Increment       Brier gain    95% bootstrap interval        Holm p
+           Reveal         Default          0.091275        [0.071365, 0.109169]   5.12 × 10−10
+           Reveal         Student state    0.000431       [-0.000373, 0.001299]       0.325749
+           Elicit         Default          0.129698        [0.121308, 0.137834]   3.88 × 10−24
+           Elicit         Student state   -0.000163       [-0.001007, 0.000726]       0.640847
+           Acknowledge    Default          0.019821        [0.014020, 0.025270]    3.00 × 10−7
+           Acknowledge    Student state    0.009734        [0.005363, 0.013947]       0.000192
 
 Table 7: Six primary comparisons on 32 sources. Default adds model identity to context; student
 state adds model-specific student-state responses to the model-by-subject predictor. Tests are
@@ -1171,26 +1082,103 @@ intervals.
 
 
 
-                      Occurrence                           Repeat: present                          Repeat: absent
-                                                                                                                             1.0
-      M2.7    99.6         8.2         27.0       99.6           19.0         46.4             0.0       92.8         80.2
+         Deployment    Event          Canonical    Neutral A     Neutral B    ASK    EXPLAIN
+         M2.7          Reveal              100.0          98.4        97.7     7.0         100.0
+                       Elicit                9.4          10.9        15.6   100.0           5.5
+                       Acknowledge          25.0          33.6        27.3    10.2          18.0
+         M3            Reveal               78.1          74.2        73.4     3.1         100.0
+                       Elicit               56.2          53.9        60.9   100.0          45.3
+                       Acknowledge          68.0          67.2        69.5    48.4          64.1
+         DeepSeek      Reveal              100.0          99.2       100.0     0.0         100.0
+                       Elicit                3.1           1.6         3.9   100.0           5.5
+                       Acknowledge          50.8          50.0        53.9    46.1          38.3
+         Doubao        Reveal              100.0         100.0       100.0     0.0         100.0
+                       Elicit                3.9           3.1         3.1   100.0           1.6
+                       Acknowledge          58.6          58.6        56.2    47.7          43.0
+         GLM           Reveal               27.3          28.9        43.0     0.0         100.0
+                       Elicit               95.3          97.7        91.4   100.0          62.5
+                       Acknowledge          49.2          56.2        64.8    47.7          46.1
 
-        M3    83.2        48.4         69.9       87.3           56.5         79.3         37.2          59.1         51.9
+Table 8: Matched prompt-arm event rates (%). Every cell has 128 answers on the same 16 sources.
+Abbreviations refer to the five specified deployments.
 
- DeepSeek     100.0        2.0         59.0      100.0            0.0         75.5             NA        98.0         64.8   0.5
 
-   Doubao     100.0        4.3         60.9      100.0            0.0         92.3             NA        95.5         88.0
 
-      GLM     22.3        96.5         51.2       49.1           97.2         71.8         85.4          22.2         70.4
-                                                                                                                             0.0
-                 al       cit           ge            al         cit           ge              al        cit           ge
-         Re
-            ve         Eli           led      Re
-                                                 ve           Eli           led        Re
-                                                                                          ve          Eli           led
-                             o   w                                  o   w                                   o   w
-                          kn                                     kn                                      kn
-                        Ac                                     Ac                                      Ac
+
+                                                   22
+                          Default increment                          Student-state increment
+
+
+        Reveal
+
+
+          Elicit
+
+
+ Acknowledge
+
+
+                   0.00      0.05      0.10      0.15              0.000       0.005    0.010   0.015
+                          Brier improvement                                Brier improvement
+
+
+Figure 4: All six primary predictive comparisons on 32 new source problems. Positive values denote
+lower Brier loss. Lines show 95% source-bootstrap intervals conditional on the fitted training profiles;
+they are not simultaneous intervals. The panels use different horizontal scales. Exact gains, intervals,
+and six-test Holm-adjusted one-sided p-values appear in Table 7.
+
+
+proportion with both actions. Neither implication establishes the order or pedagogical value of the
+actions.
+     Three nominal neutral comparisons are degenerate. After excluding these, seven comparisons
+still meet a nominal t-based tolerance criterion. None meets the separate bounded-source rule: its
+simultaneous half-width is 0.9414 for the 30 contrasts. We therefore make no population-equivalence
+claim for any neutral arm. The GLM neutral-B shifts are descriptive examples of observed wording
+sensitivity, not proof of a population effect from a selected unadjusted interval.
+
+E.3    Sensitivity to Coders, Deployments, and Training Sources
+The eight coding panels comprise three single coders, three leave-one-coder panels, all-three soft
+labels, and exclusion of the generator’s coder family. Their default-gain ranges are reported in
+Section 4. Conditional gain ranges are [0.000369, 0.000593] for revelation, [-0.000301, 0.000002] for
+elicitation, and [0.006970, 0.010522] for acknowledgement. Panel-specific forecasts were locked before
+confirmation; labels and predictions are compared within their corresponding panel.
+     Across the five generator deletions, default-gain estimates span [0.003942, 0.115447], [0.030800,
+0.156526], and [0.001748, 0.028750] for revelation, elicitation, and acknowledgement. These changes
+include refitting the specified predictor on the reduced training-model panel before confirmation;
+they are not predictions for unseen model identities. Conditional acknowledgement gains span
+[0.002844, 0.012928]. The corresponding individual source-bootstrap intervals exclude zero in all five
+deletions, but these are supplemental intervals, not five additional primary hypothesis tests. The
+default acknowledgement interval crosses zero without M2.7, and the revelation default gain without
+GLM is small; the full-panel result is not a claim of equal robustness across subsets.
+     The 200 training-source resamples yield 2.5–97.5 percentile ranges of [0.086539, 0.092425],
+[0.126473, 0.131030], and [0.016673, 0.021398] for the three default gains. Conditional ranges are
+[-0.001067, 0.000641], [-0.002126, -0.000058], and [0.005422, 0.010389]. Sources are resampled as
+groups with multiplicity weights; the original regularization ratio and confirmation labels remain
+fixed. These ranges describe training-set sensitivity and are not replacement confidence intervals for
+the six tests.
+
+
+                                                  23
+                                            Occurrence                            Repeat: present                           Repeat: absent
+                                                                                                                                                         1.0
+                          M2.7     99.6         8.2        27.0          99.6            19.0      46.4                0.0        92.8       80.2
+
+                              M3   83.2        48.4        69.9          87.3            56.5      79.3            37.2           59.1       51.9
+
+   DeepSeek                        100.0        2.0        59.0          100.0            0.0      75.5                NA         98.0       64.8        0.5
+
+                        Doubao     100.0        4.3        60.9          100.0            0.0      92.3                NA         95.5       88.0
+
+                          GLM      22.3        96.5        51.2          49.1            97.2      71.8            85.4           22.2       70.4
+                                                                                                                                                         0.0
+                                       al       cit       dg
+                                                            e                al          cit       dg
+                                                                                                     e                 al          cit       dg
+                                                                                                                                               e
+                                  ve         Eli                        ve            Eli                         ve            Eli
+                               Re                   o wle            Re                      o wle             Re                      o wle
+                                                 kn                                       kn                                        kn
+                                              Ac                                       Ac                                        Ac
 
 
 Figure 5: Canonical behavior rates and repeated-generation agreement (cells in %, color scale in
@@ -1202,13 +1190,12 @@ Source uncertainty is retained in the accompanying numerical tables.
 
 
 
-                                                                24
-                                               M2.7        M3        DeepSeek             Doubao              GLM
+                                                      M2.7          M3             DeepSeek              Doubao                 GLM
 
 
 
 
-                                   Answer revelation                Reasoning elicitation                 Affect acknowledgement
+                                   Answer revelation                              Reasoning elicitation                      Affect acknowledgement
                         1.0
  Observed probability
 
@@ -1224,8 +1211,8 @@ Source uncertainty is retained in the accompanying numerical tables.
                         0.2
 
                         0.0
-                              C      F          C      F        C      F            C         F           C       F          C         F
-                              Wrong              Partial        Wrong                   Partial           Wrong                  Partial
+                              C         F              C        F        C           F              C      F                C       F               C     F
+                               Wrong                   Partial           Wrong                       Partial                 Wrong                  Partial
 
 
 Figure 6: Canonical action rates for the four student-cue conditions. Each point averages 64 responses
@@ -1236,30 +1223,7 @@ and do not replace the locked incremental prediction tests.
 
 
 
-                              Deployment     Event          Canonical      Neutral A      Neutral B       ASK         EXPLAIN
-                              M2.7           Reveal             100.0            98.4              97.7     7.0          100.0
-                                             Elicit               9.4            10.9              15.6   100.0            5.5
-                                             Acknowledge         25.0            33.6              27.3    10.2           18.0
-                              M3             Reveal              78.1            74.2              73.4     3.1          100.0
-                                             Elicit              56.2            53.9              60.9   100.0           45.3
-                                             Acknowledge         68.0            67.2              69.5    48.4           64.1
-                              DeepSeek       Reveal             100.0            99.2             100.0     0.0          100.0
-                                             Elicit               3.1             1.6               3.9   100.0            5.5
-                                             Acknowledge         50.8            50.0              53.9    46.1           38.3
-                              Doubao         Reveal             100.0           100.0             100.0     0.0          100.0
-                                             Elicit               3.9             3.1               3.1   100.0            1.6
-                                             Acknowledge         58.6            58.6              56.2    47.7           43.0
-                              GLM            Reveal              27.3            28.9              43.0     0.0          100.0
-                                             Elicit              95.3            97.7              91.4   100.0           62.5
-                                             Acknowledge         49.2            56.2              64.8    47.7           46.1
-
-Table 8: Matched prompt-arm event rates (%). Every cell has 128 answers on the same 16 sources.
-Abbreviations refer to the five specified deployments.
-
-
-
-
-                                                                           25
+                                                                                         24
                               Neutral A          Neutral B               ASK        EXPLAIN
 
 
@@ -1302,29 +1266,8 @@ establish population equivalence; the bounded-source check below controls that i
 
 
 
-                                                    26
-E.3    Sensitivity to Coders, Deployments, and Training Sources
-The eight coding panels comprise three single coders, three leave-one-coder panels, all-three soft
-labels, and exclusion of the generator’s coder family. Their default-gain ranges are reported in
-Section 4. Conditional gain ranges are [0.000369, 0.000593] for revelation, [-0.000301, 0.000002] for
-elicitation, and [0.006970, 0.010522] for acknowledgement. Panel-specific forecasts were locked before
-confirmation; labels and predictions are compared within their corresponding panel.
-     Across the five generator deletions, default-gain estimates span [0.003942, 0.115447], [0.030800,
-0.156526], and [0.001748, 0.028750] for revelation, elicitation, and acknowledgement. These changes
-include refitting the specified predictor on the reduced training-model panel before confirmation;
-they are not predictions for unseen model identities. Conditional acknowledgement gains span
-[0.002844, 0.012928]. The corresponding individual source-bootstrap intervals exclude zero in all five
-deletions, but these are supplemental intervals, not five additional primary hypothesis tests. The
-default acknowledgement interval crosses zero without M2.7, and the revelation default gain without
-GLM is small; the full-panel result is not a claim of equal robustness across subsets.
-     The 200 training-source resamples yield 2.5–97.5 percentile ranges of [0.086539, 0.092425],
-[0.126473, 0.131030], and [0.016673, 0.021398] for the three default gains. Conditional ranges are
-[-0.001067, 0.000641], [-0.002126, -0.000058], and [0.005422, 0.010389]. Sources are resampled as
-groups with multiplicity weights; the original regularization ratio and confirmation labels remain
-fixed. These ranges describe training-set sensitivity and are not replacement confidence intervals for
-the six tests.
-
-E.4    Secondary Events, Expression Opportunities, and Sentinels
+                                                    25
+E.4    Secondary Events, Expression Opportunities, and Sentinels
 
                   Deployment     Explain   Choice        Qualify    Request       Ability claim
                   M2.7              98.0        11.7          4.7        0.0               6.6
@@ -1351,9 +1294,7 @@ and acknowledgement. Entries are source-equal Brier gains, not new hypothesis te
 
     Positive coder agreement on the full 4,040-response panel is 39.62–61.26% for epistemic quali-
 fication and 26.54–40.93% for unsupported ability claims. Their rates require particular caution.
-
-                                                       27
-Information requests have 75.51–88.89% positive agreement over the mixed full panel, which includes
+Information requests have 75.51–88.89% positive agreement over the mixed full panel, which includes
 the opportunity probes; this does not resolve the lack of natural pilot positive examples or validate
 all missing-information detection.
     No deployment requests missing information in the fully specified canonical responses. On eight
@@ -1374,7 +1315,9 @@ Table 10 reports every selected subset. Of 1,280 natural responses, five receive
 judgments and 49 receive at least one; none receives an uncertainty judgment. The five unanimous
 errors occupy five comparison slots. The 49 either-reviewer errors occupy 43 slots, whose exclusion
 removes 215 answers because all five models are removed together. All 32 sources retain observations.
-Per-model counts (unanimous/either) are M2.7 2/17, M3 3/20, DeepSeek 0/0, Doubao 0/2, and GLM
+
+                                                       26
+Per-model counts (unanimous/either) are M2.7 2/17, M3 3/20, DeepSeek 0/0, Doubao 0/2, and GLM
 0/10, each out of 256 responses. These are reviewer flags, not an accuracy ranking. Overall reviewer
 verdict agreement is 96.6%, but error-positive agreement is only 2(5)/(49 + 5) = 18.5%, illustrating
 the effect of rare positives. Each reviewer matches all six error and six no-error agent-authored
@@ -1388,8 +1331,51 @@ does not remove ability as a cause. The full primary tests are unchanged. The co
 checkpoint’s all-canonical and mathematics tables agree with their completed counterparts within
 10−12 , using the same routines rather than an independent implementation.
 
+E.6    Interpretation of State Profiles and Sensitivities
+The acknowledgement profiles clarify the positive conditional result. For correct unfinished work,
+Doubao acknowledges difficulty in 0/64 calm responses and 60/64 frustrated responses; DeepSeek
+changes from 22/64 to 34/64. For erroneous work, their corresponding changes are 32/64 to 64/64
+and 46/64 to 49/64. These are responses to scripted text cues, not measurements of empathy
+or learner understanding. The descriptive curves appear in Appendix E; the locked prediction
+comparison provides the test that such model-specific patterns recur on new sources.
+    Eight coding panels preserve the broad separation between default and student-state increments.
+Default-gain estimates range from 0.08571–0.09562 for revelation, 0.12442–0.13111 for elicitation,
+and 0.01699–0.02017 for acknowledgement. Conditional acknowledgement gains range from 0.00697–
+0.01052; conditional revelation and elicitation remain near zero. These reuse the same outputs and
+are sensitivity estimates, not independent replications.
+    Effect strength depends materially on which deployments are included. Deleting GLM reduces
+default gains to 0.00394 for revelation and 0.03080 for elicitation. Deleting M2.7 reduces the
+acknowledgement default gain to 0.00175, with an interval crossing zero [-0.00174, 0.00547]. The
+full-panel findings therefore do not imply equally strong differences among every subset of models.
+Across 200 training-source resamples, the descriptive 2.5–97.5 percentile range for conditional
+acknowledgement gain is [0.00542, 0.01039]; revelation spans zero and elicitation remains slightly
+negative. These distributions condition on fixed confirmation labels and the original regularization
+ratio.
+    The six confirmation budget exceptions do not determine the primary findings. For either binary
+value of each affected canonical GLM code, all six primary estimates and adjusted p-values are
+exactly unchanged: the other two coders agree on the three primary events. This fixed-prediction
+enumeration addresses those missing codes only. It does not validate coder behavior across the
+Gateway interruption. Complete secondary results and sensitivity ranges are retained in Appendix E.
 
-F     Expression-Transfer Extension and Measurement History
+Mathematics and content screening. The mathematics subset (eight sources, 320 responses)
+retains default gains of 0.11624, 0.13892, and 0.01992; student-state increments are 0.00062, 0.00030,
+and 0.01380 for revelation, elicitation, and acknowledgement. All 2,584 content reviews are valid
+after the disclosed structural repairs. Excluding five-model slots flagged by either reviewer retains
+1,065 responses on all 32 sources. Default gains are 0.09535, 0.13179, and 0.02068; conditional
+acknowledgement gains 0.00989 [0.00510, 0.01472], while the other two conditional intervals span
+zero. The unanimous-error screen retains 1,255 responses and the same qualitative pattern. No
+
+
+                                                 27
+uncertainty verdicts occur, so the error-or-uncertainty screen is identical to the either-error screen
+(Appendix E.5).
+    These are descriptive selected-subset estimates, with no new tests. Both reviewers match all
+twelve diagnostic controls, yet agree on an error in only 5 of the 49 natural responses flagged by
+either (positive agreement 18.5%). Screening thus tests sensitivity to these judgments; it neither
+guarantees correct remaining answers nor causally separates behavior from ability.
+
+
+F    Expression-Transfer Extension and Measurement History
 The extension protocol and forecast table were frozen on 7 September 2026 before its first tutor
 generation. Its 32 problem sources had already been observed in the first confirmation stage; they
 are not a second independent source holdout. Each of four expression arms crosses 32 sources,
@@ -1399,10 +1385,7 @@ sources per domain and phrase pair. Student-work text and reference targets are 
 peer arm assigns the current student the calm state in the frozen predictor regardless of the peer’s
 quote. Exact materials, the 61,440-row forecast table covering all endpoints and predictors, and
 their hashes are retained with the executable analysis.
-
-
-                                                 28
-    The extension uses the original three event coders and evidence-line rubric. Of 15,360 requested
+    The extension uses the original three event coders and evidence-line rubric. Of 15,360 requested
 codes, 15,359 pass the original strict parser after the fixed repair budget. The remaining final
 response contains all eight complete event objects but lacks one root closing brace. A separately
 recorded amendment appends exactly that brace to a derived copy, preserving raw responses, earlier
@@ -1420,8 +1403,20 @@ on the fixed training fit and the finite source/phrase assignment. The individua
 measurements; generator-deletion panels remove scored observations without refitting the original
 predictors.
 
+Peer-context control. Keeping the current student explicitly calm, changing a peer’s quote yields
+acknowledgement-rate changes of +30.47, +25.00, +26.56, +23.44, and -4.69 percentage points for
+M2.7, M3, DeepSeek, GLM, and Doubao, respectively. The first four source intervals exclude zero;
+Doubao’s includes it. These are secondary descriptive contrasts. One deterministically selected
+0-to-1 example per model helps interpret the event: the first four models explicitly affirm the current
+student’s calmness, sometimes correctly distinguishing the peer’s frustration. The event-rate contrast
+therefore cannot itself establish misattribution. Outcome-selected examples do not estimate its
+prevalence.
 
-G     Recovered Archive Inputs: Evidence Available and Pending
+
+
+
+                                                  28
+G     Recovered Archive Inputs: Evidence Available and Pending
 A local reconstruction of six tutor-dialogue settings recovers 3,454 task items and 960 exact ques-
 tion/conversation source groups, including 940 groups shared across benchmark settings. Of these,
 551 items in 250 groups lack a separately recovered target question; the remaining 710 groups have
@@ -1449,10 +1444,7 @@ the eligible pool, and 429 in the selection. These summaries do not establish re
 classroom interactions or the full archive.
     The upstream collection combines Bridge and MathDial, including both real tutoring snippets
 and teacher–simulated-student dialogues (Macina et al., 2025). All selected problem strings exactly
-
-
-                                                  29
-match questions in the local MathDial inventory, but bridge records lack per-item upstream dataset
+match questions in the local MathDial inventory, but bridge records lack per-item upstream dataset
 identifiers. Question overlap does not attest exact dialogue lineage or actual learner participation.
 Accordingly, we refer to archived benchmark dialogue rather than real-classroom validation. Existing
 inputs and references may be human-authored; upstream human quality/preference labels and the
@@ -1467,22 +1459,22 @@ model, student-work state, cue pole, and repetition index. Peer controls are exc
 own-student affect assignments differ.
    For baseline probability b, conditional probability e, contemporary label y0 , and new-expression
 label y1 , let d = e − b and z = y1 − y0 . The change in Brier-loss gain has the finite-panel identity
-
-                              ∆G = 2 E[zd] = 2 E[z] E[d] + 2 Cov(z, d).                            (1)
-
+                              ∆G = 2 E[zd] = 2 E[z] E[d] + 2 Cov(z, d).                             (1)
 Expectations and covariance use equally weighted observed cells, not a causal model. For acknowl-
 edgement, mean conditional-minus-domain probability is 0.000009812. The overall-rate terms are
-approximately -0.000001043 for explicit synonyms and -0.000002162 for implicit cues, compared with
+
+                                                  29
+approximately -0.000001043 for explicit synonyms and -0.000002162 for implicit cues, compared with
 total gain changes of -0.016144 and -0.018761. A common prevalence shift alone therefore cannot
 account for this relative contrast. This does not evaluate the generalization of any recalibrated
 predictor or exclude model/cue-specific recalibration.
 
-                 Deployment             Frozen cue gap   Original   Explicit   Implicit
-                 MiniMax-M2.7                    .5417      .3516     .4375      .4531
-                 MiniMax-M3                      .3597      .3281     .7656      .7500
-                 DeepSeek-V4-Pro                 .2625      .1875     .4844      .5078
-                 Doubao-Seed-2.0-Lite            .7455      .7500     .7422      .6484
-                 GLM-5.3                         .6788      .6094     .6406      .8438
+                 Deployment              Frozen cue gap   Original   Explicit   Implicit
+                 MiniMax-M2.7                     .5417      .3516     .4375      .4531
+                 MiniMax-M3                       .3597      .3281     .7656      .7500
+                 DeepSeek-V4-Pro                  .2625      .1875     .4844      .5078
+                 Doubao-Seed-2.0-Lite             .7455      .7500     .7422      .6484
+                 GLM-5.3                          .6788      .6094     .6406      .8438
 
 Table 11: Acknowledgement-rate gaps: frustrated pole minus calm pole, averaged across matched
 problems, work states, and requests. The frozen conditional probability gap is identical across
@@ -1500,10 +1492,7 @@ learner’s trajectory. The two expression arms’ different absolute-loss chang
 continue to limit a single-mechanism interpretation.
 
 
-
-
-                                                  30
-I   Source-Held-Out Calibration Diagnosis
+I   Source-Held-Out Calibration Diagnosis
 After inspecting the primary results and absolute-loss diagnostic, we specify a separate
 acknowledgement-only check. The domain and conditional predictors receive identical cali-
 bration procedures. The identity map retains original probabilities. Shared logistic calibration fits
@@ -1518,24 +1507,27 @@ wording labels; the target-arm regime uses labels from the target expression. Th
 adaptation to source-held-out inputs, not zero-shot expression transfer. Source separation does not
 guarantee phrase separation in this nested material bank. Tests verify that held-out source labels
 cannot change their predictions and target-arm labels cannot affect original-wording calibration.
+    Under target-arm per-model calibration, explicit conditional loss improves from 0.144501 to
+0.132657, while domain loss improves from 0.140840 to 0.129123. Implicit conditional loss improves
+from 0.155411 to 0.133293, while domain loss improves from 0.149134 to 0.125062. Adaptation can
+therefore improve absolute prediction without restoring the old interaction’s incremental advantage.
+Per-model calibration can itself absorb model-dependent cue responses, so successful baseline
 
-                   Training arm    Map                  Original   Explicit   Implicit
-                   None            Identity             .012483    -.003661   -.006277
-                   Original        Shared logistic      .012130    -.002864   -.005871
-                   Original        Per-model logistic   .005646    -.000846   -.003864
-                   Target          Shared logistic           —     -.005239   -.010456
-                   Target          Per-model logistic        —     -.003534   -.008231
+
+                                                   30
+                  Training arm   Map                  Original   Explicit   Implicit
+                  None           Identity             .012483    -.003661   -.006277
+                  Original       Shared logistic      .012130    -.002864   -.005871
+                  Original       Per-model logistic   .005646    -.000846   -.003864
+                  Target         Shared logistic           —     -.005239   -.010456
+                  Target         Per-model logistic        —     -.003534   -.008231
 
 Table 12: Post-result acknowledgement Brier gains: calibrated domain loss minus calibrated condi-
 tional loss, with the same map class applied to both. Original means contemporary original wording.
 Target-arm calibration uses target labels from other sources. Negative estimates do not all have
 intervals excluding zero.
 
-    Under target-arm per-model calibration, explicit conditional loss improves from 0.144501 to
-0.132657, while domain loss improves from 0.140840 to 0.129123. Implicit conditional loss improves
-from 0.155411 to 0.133293, while domain loss improves from 0.149134 to 0.125062. Adaptation can
-therefore improve absolute prediction without restoring the old interaction’s incremental advantage.
-Per-model calibration can itself absorb model-dependent cue responses, so successful baseline
+
 adaptation is not evidence of their absence.
     All absolute losses, parameters, source predictions, and domain-stratified source bootstrap
 intervals are retained. The 10,000 draws use seed 20260908; intervals condition on cross-fitted
@@ -1547,5 +1539,5 @@ adaptation samples.
 
 
 
-                                                   31
+                                                 31
 
