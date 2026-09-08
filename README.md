@@ -2,6 +2,19 @@
 
 > **Research goal active (2026-09-07).** The first experimental/manuscript checkpoint is complete; the top-conference quality goal remains open. See [quality reassessment and continuation](research/70_quality_goal_reopened.md).
 
+**Update, 2026-09-08:** the [completed cue-transfer study](research/74_cue_transfer_results_v4.md)
+changes the interpretation: answer-revelation and reasoning-elicitation defaults
+retain predictive gains under new expressions, but the acknowledgement
+student-state profile does not, despite a positive contemporary original-wording
+control. The [integrated v4 bilingual draft](paper/educational_personality_v4/README.md)
+now incorporates this finding in the abstract, design, results, discussion, and conclusion.
+The v3 PDFs below preserve the earlier checkpoint.
+[Archive inputs have been reconstructed](research/72_archive_input_reconstruction_v4.md);
+natural-dialogue behavioral validation is frozen but unexecuted, pending specific
+authorization for external coding of archived dialogue, references, and replies.
+No archive-validation API job is running at this checkpoint. The research quality
+goal remains incomplete; see the [v4 assessment](research/76_integrated_draft_quality_v4.md).
+
 This study asks whether deployed language models have recurring educational
 behavior that predicts their actions on new tutoring problems. It separates
 model defaults, model-specific responses to student cues, and changes under

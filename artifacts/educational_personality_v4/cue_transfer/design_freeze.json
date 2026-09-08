@@ -1,0 +1,40 @@
+{
+  "status": "post-v3 extension frozen before new generations",
+  "locked_at": "2026-09-07T03:33:43.064947+00:00",
+  "sources": 32,
+  "new_source_problems": 0,
+  "generation_requests": 5120,
+  "judge_requests": 15360,
+  "prediction_rows": 61440,
+  "prediction_fitting_calls": 0,
+  "provider_caps": {
+    "minimax": 4,
+    "gateway": 8
+  },
+  "files": {
+    "data/educational_personality_confirmation_templates_v3.json": "0f9441b299b6ba64b79f511434bfafe6b5dfeffde9822c88039f03d64a2210b7",
+    "data/educational_personality_cue_transfer_v4.json": "a7ec3c4d738166c0e41ed46160422d22b245beeb0c7d76bee67f91c60f4b83af",
+    "data/educational_personality_measurement_v2_2.json": "dc623c57f86676860b19de1655521a75199af6808ea1488c450c17e8cad09811",
+    "research/71_cue_transfer_protocol_v4.md": "7b862241d3ef95c6a16d24852e73813ff083c72bd97a586558d4a0cb9e9cecca",
+    "artifacts/educational_personality_v2/prospective_formal/design_freeze.json": "ec53b09f74d0f241f3de9eee7f9591521b723dac0cbb9ee1cca8cb14a8c719ac",
+    "artifacts/educational_personality_v2/prospective_formal/prediction_lock.json": "ad6650f9776e16cde29440d8a67f6e0873d98c70846c8fe93dd89ee571c1642c",
+    "artifacts/educational_personality_v2/prospective_formal/locked_predictions/predictions.csv": "1e3ca4a647ad672041c207e366eb947cb857eb85204ad9280fc659f95ca0bd98",
+    "artifacts/educational_personality_v4/cue_transfer/scenarios.jsonl": "b1d20a706de531d95de3ae11c56407d63343be2eaeaf42adf6b7822eef4f21f1",
+    "artifacts/educational_personality_v4/cue_transfer/predictions.csv": "8669e131cb3c7501faec32fde06246ecbe6423431e44c496067a775a39e30291",
+    "artifacts/educational_personality_v4/cue_transfer/input_frame.csv": "0347bea85b10907d105d976df6fc0d7b79409afe326bf70efcbe6d2e889ee25f",
+    "artifacts/educational_personality_v4/cue_transfer/generation_manifest.jsonl": "187a864b22cb2e02d410c725d35f8f0f962e1003dfb6fc2e9e95242af5c3bb94",
+    "artifacts/educational_personality_v4/cue_transfer/freeze.json": "63c49f1c3e9b4221e985d30a51cd9c48b07bef1e87b28e9bab497d1191b0a5ee",
+    "scripts/prepare_personality_cue_transfer_v4.py": "a1b049d3c7c45ccd1694bf226eeed4447d80a9110f0a2b94bab1db3498a9c3fb",
+    "scripts/analyze_personality_cue_transfer_v4.py": "bc2b9c3326a2ab0587c2657e3f43dc3a4d57bc9b1d6b066f15d46ced4233ee28",
+    "scripts/complete_personality_cue_transfer_v4.py": "da84692b2b50b69ba545de718794cbe9872f7af5cc70e14547378c69f27d9900",
+    "scripts/prepare_personality_formal_v3.py": "a458b2f0f46fa130202e9cea66fba1177e59715ea05af78b7e37247fa5da67e1",
+    "scripts/run_personality_requests_v2.py": "cdc88daec724c46f0f40f105a42b7655c0b76add3a3dc43e61d582111e3611bd",
+    "scripts/run_personality_formal_stage_v3.py": "36bd5fca9209da5f887d7e9dbd112385ffded95cfb404a74153ebdbaf69fd126",
+    "scripts/prepare_personality_pilot_v2.py": "43518822cd8f3eea14d90a2bbc54207fbb47628a32e3c5c9e427c1ee43aa13a8",
+    "scripts/prepare_personality_judging_v2.py": "259e68c66eb0e4b27837cc4716313bc8295352e6e3354969e758247d9b76b129",
+    "scripts/analyze_personality_coding_v2.py": "7c52c5202e01f4fa70ca7d4cfa7338bbc1a8836b0b56f920c7ef06f85502d219",
+    "scripts/audit_personality_generation_v2.py": "e3488188c44085586f30112107c7082500b7e1b9ac267041de7d28b0f9a069bc",
+    "scripts/audit_personality_judge_lineage_v3.py": "837427d7c9d339cc0cd5a958581dcba693a125a81705d36f6ad2df4ff7f87971",
+    "scripts/seed_personality_judge_run_v2.py": "f1a76e9c6ad71d2d69834d5bb01add05c601179e0589f1bbc8c1b6d44fd83edf"
+  }
+}

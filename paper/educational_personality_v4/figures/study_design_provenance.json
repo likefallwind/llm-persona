@@ -1,0 +1,27 @@
+{
+  "status": "frozen design schematic; no outcome data or completion claim",
+  "counts": {
+    "training_questions": 32,
+    "training_source_families": 30,
+    "confirmation_source_families": 32,
+    "intervention_source_families": 16,
+    "training_answers": 1280,
+    "canonical_confirmation_answers": 1280,
+    "additional_intervention_answers": 2560,
+    "opportunity_answers": 160,
+    "sentinel_answers": 40
+  },
+  "models": 5,
+  "repeats": 2,
+  "student_states": 4,
+  "new_api_calls": 0,
+  "empirical": false,
+  "input_hashes": {
+    "artifacts/educational_personality_v2/prospective_formal/design_freeze.json": "ec53b09f74d0f241f3de9eee7f9591521b723dac0cbb9ee1cca8cb14a8c719ac",
+    "artifacts/educational_personality_v2/prospective_formal/training/scenarios.jsonl": "6a6b41cfd1424a8493a976eed63115286009fb99e2dab83a7310fdcb29393c13",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/scenarios.jsonl": "d33383ca5791de340d405233c5823ba69fa57f3d0411574ef1cbf03648a9238d",
+    "artifacts/educational_personality_v2/prospective_formal/training/generation_manifest.jsonl": "caf16c92b00a55adff0ee98604964f40fe9c0837feb34cff49a3017f10c84382",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation/generation_manifest.jsonl": "0e95ce3afa636dd35c7e2b0aa3ce115e330fc30ed26026ace91577d1f3c74921",
+    "scripts/plot_personality_design_v3.py": "261e494324fddd7d52efbf29f2bef23ef18c389dec5d5dad128099cf1082d5da"
+  }
+}

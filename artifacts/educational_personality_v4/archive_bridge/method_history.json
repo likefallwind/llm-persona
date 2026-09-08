@@ -1,0 +1,158 @@
+[
+  {
+    "path": "scripts/eval/benchmarks/mrbench.py",
+    "class": "MRBenchTutorAdapter",
+    "method": "load_items",
+    "current_method_sha256": "1db04acaef34221b1f253297ee4943546fb26c6ffb6a5235567ce3a4711ba443",
+    "historical_versions": [
+      {
+        "commit": "fb3b938cac4cad7e026e2a9e17a18477a0c2f871",
+        "method_sha256": "1db04acaef34221b1f253297ee4943546fb26c6ffb6a5235567ce3a4711ba443",
+        "matches_current": true
+      },
+      {
+        "commit": "65b4c0b6c65edf4741b688c7fd6df2575b70de0f",
+        "method_sha256": "1db04acaef34221b1f253297ee4943546fb26c6ffb6a5235567ce3a4711ba443",
+        "matches_current": true
+      },
+      {
+        "commit": "ed4ba0cf1231b8ef9582c3e8bf4a33aca15dd0d1",
+        "method_sha256": "1db04acaef34221b1f253297ee4943546fb26c6ffb6a5235567ce3a4711ba443",
+        "matches_current": true
+      },
+      {
+        "commit": "c09c707979c08d655140f95780bab8ace8ab3668",
+        "method_sha256": "1db04acaef34221b1f253297ee4943546fb26c6ffb6a5235567ce3a4711ba443",
+        "matches_current": true
+      },
+      {
+        "commit": "44009b5a6eac9132a309bccb65280f3ac28a9a51",
+        "method_sha256": "1db04acaef34221b1f253297ee4943546fb26c6ffb6a5235567ce3a4711ba443",
+        "matches_current": true
+      },
+      {
+        "commit": "faf066ef272cdb68d07358bce9125a2db84e07a3",
+        "method_sha256": "1db04acaef34221b1f253297ee4943546fb26c6ffb6a5235567ce3a4711ba443",
+        "matches_current": true
+      }
+    ],
+    "limit": "AST stability of this method is not execution provenance, data identity, or a complete client/provider audit."
+  },
+  {
+    "path": "scripts/eval/benchmarks/bea2025.py",
+    "class": "BEA2025TutorAdapter",
+    "method": "load_items",
+    "current_method_sha256": "cca2eb9a020d46ec07c4c71d4966a13b49a4907c98dc9bbc82903280d45066a5",
+    "historical_versions": [
+      {
+        "commit": "fb3b938cac4cad7e026e2a9e17a18477a0c2f871",
+        "method_sha256": "cca2eb9a020d46ec07c4c71d4966a13b49a4907c98dc9bbc82903280d45066a5",
+        "matches_current": true
+      },
+      {
+        "commit": "65b4c0b6c65edf4741b688c7fd6df2575b70de0f",
+        "method_sha256": "cca2eb9a020d46ec07c4c71d4966a13b49a4907c98dc9bbc82903280d45066a5",
+        "matches_current": true
+      },
+      {
+        "commit": "ed4ba0cf1231b8ef9582c3e8bf4a33aca15dd0d1",
+        "method_sha256": "cca2eb9a020d46ec07c4c71d4966a13b49a4907c98dc9bbc82903280d45066a5",
+        "matches_current": true
+      },
+      {
+        "commit": "c09c707979c08d655140f95780bab8ace8ab3668",
+        "method_sha256": "cca2eb9a020d46ec07c4c71d4966a13b49a4907c98dc9bbc82903280d45066a5",
+        "matches_current": true
+      },
+      {
+        "commit": "44009b5a6eac9132a309bccb65280f3ac28a9a51",
+        "method_sha256": "cca2eb9a020d46ec07c4c71d4966a13b49a4907c98dc9bbc82903280d45066a5",
+        "matches_current": true
+      },
+      {
+        "commit": "faf066ef272cdb68d07358bce9125a2db84e07a3",
+        "method_sha256": "cca2eb9a020d46ec07c4c71d4966a13b49a4907c98dc9bbc82903280d45066a5",
+        "matches_current": true
+      }
+    ],
+    "limit": "AST stability of this method is not execution provenance, data identity, or a complete client/provider audit."
+  },
+  {
+    "path": "scripts/eval/benchmarks/mathtutorbench.py",
+    "class": "_WinRateBase",
+    "method": "load_items",
+    "current_method_sha256": "8da0bddfaba31fb4299ee5f0d59e9f736d7485172c2ab783a6802e285d8ce127",
+    "historical_versions": [
+      {
+        "commit": "65b4c0b6c65edf4741b688c7fd6df2575b70de0f",
+        "method_sha256": "8da0bddfaba31fb4299ee5f0d59e9f736d7485172c2ab783a6802e285d8ce127",
+        "matches_current": true
+      },
+      {
+        "commit": "ed4ba0cf1231b8ef9582c3e8bf4a33aca15dd0d1",
+        "method_sha256": "8da0bddfaba31fb4299ee5f0d59e9f736d7485172c2ab783a6802e285d8ce127",
+        "matches_current": true
+      },
+      {
+        "commit": "44009b5a6eac9132a309bccb65280f3ac28a9a51",
+        "method_sha256": "8da0bddfaba31fb4299ee5f0d59e9f736d7485172c2ab783a6802e285d8ce127",
+        "matches_current": true
+      },
+      {
+        "commit": "faf066ef272cdb68d07358bce9125a2db84e07a3",
+        "method_sha256": "8da0bddfaba31fb4299ee5f0d59e9f736d7485172c2ab783a6802e285d8ce127",
+        "matches_current": true
+      }
+    ],
+    "limit": "AST stability of this method is not execution provenance, data identity, or a complete client/provider audit."
+  },
+  {
+    "path": "scripts/eval/base.py",
+    "class": "BenchmarkAdapter",
+    "method": "build_messages",
+    "current_method_sha256": "5582923c68e11bacc5f5ed7520e36cffc010082d69f24b383da8111498e729e0",
+    "historical_versions": [
+      {
+        "commit": "9187b81f4e588e60c241cf156f5212e48b8d1c3d",
+        "method_sha256": "5582923c68e11bacc5f5ed7520e36cffc010082d69f24b383da8111498e729e0",
+        "matches_current": true
+      },
+      {
+        "commit": "22f009dd65fe3f26c0ca89ebc42724b88dbc7e7e",
+        "method_sha256": "5582923c68e11bacc5f5ed7520e36cffc010082d69f24b383da8111498e729e0",
+        "matches_current": true
+      },
+      {
+        "commit": "65b4c0b6c65edf4741b688c7fd6df2575b70de0f",
+        "method_sha256": "5582923c68e11bacc5f5ed7520e36cffc010082d69f24b383da8111498e729e0",
+        "matches_current": true
+      },
+      {
+        "commit": "dbd251a06afe24e3d48b5a71186a676ec6e981b5",
+        "method_sha256": "5582923c68e11bacc5f5ed7520e36cffc010082d69f24b383da8111498e729e0",
+        "matches_current": true
+      },
+      {
+        "commit": "44009b5a6eac9132a309bccb65280f3ac28a9a51",
+        "method_sha256": "5582923c68e11bacc5f5ed7520e36cffc010082d69f24b383da8111498e729e0",
+        "matches_current": true
+      },
+      {
+        "commit": "6aecf98de34f1c47f9d3bf4813a2d01ce08f1833",
+        "method_sha256": "5582923c68e11bacc5f5ed7520e36cffc010082d69f24b383da8111498e729e0",
+        "matches_current": true
+      },
+      {
+        "commit": "cd2ea19159a4e0b083f6859cbf8d56c3826bf96d",
+        "method_sha256": "5582923c68e11bacc5f5ed7520e36cffc010082d69f24b383da8111498e729e0",
+        "matches_current": true
+      },
+      {
+        "commit": "cfa92ed4973ebe8a47c54d4be32d8c48aa9785fc",
+        "method_sha256": "5582923c68e11bacc5f5ed7520e36cffc010082d69f24b383da8111498e729e0",
+        "matches_current": true
+      }
+    ],
+    "limit": "AST stability of this method is not execution provenance, data identity, or a complete client/provider audit."
+  }
+]

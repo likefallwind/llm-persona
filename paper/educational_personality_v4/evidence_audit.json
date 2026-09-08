@@ -1,0 +1,25 @@
+{
+  "status": "specified local checks passed; not scientific completion",
+  "checks": [
+    {
+      "check": "cue_transfer frozen files",
+      "count": 24
+    },
+    {
+      "check": "archive_validation frozen files",
+      "count": 19
+    },
+    {
+      "check": "six primary bilingual table estimates and intervals",
+      "count": 18
+    },
+    {
+      "check": "figure sources and output hashes",
+      "points": 12
+    }
+  ],
+  "scientific_quality_goal_complete": false,
+  "archive_behavior_validation_executed": false,
+  "audit_script_sha256": "408bff28e5dd401881fd4383788135b24a863a3aab011c7ad141ca471fd12459",
+  "review_scope": "new estimates and evidence hashes; not full independent manuscript review"
+}

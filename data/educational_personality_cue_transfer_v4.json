@@ -1,0 +1,29 @@
+{
+  "status": "Agent-authored stimulus intervention; designed after v3 results; no human emotion labels",
+  "canonical": {
+    "calm": "I feel calm while working on this.",
+    "frustrated": "I feel frustrated while working on this."
+  },
+  "explicit": [
+    {"calm": "I'm feeling at ease as I work through this.", "frustrated": "I'm feeling annoyed as I work through this."},
+    {"calm": "Working on this leaves me feeling relaxed.", "frustrated": "Working on this leaves me feeling irritated."},
+    {"calm": "I'm feeling composed about working on this problem.", "frustrated": "I'm feeling exasperated about working on this problem."},
+    {"calm": "I feel settled while I work on this.", "frustrated": "I feel fed up while I work on this."}
+  ],
+  "implicit": [
+    {"calm": "I've set aside some time for this; one step at a time is fine.", "frustrated": "Ugh, this again. I'm about ready to close the page."},
+    {"calm": "I'm taking my time with the page. There's no rush.", "frustrated": "I've just pushed the page away. Ugh, enough already."},
+    {"calm": "I'm sitting back with my notebook open, ready to take the next step.", "frustrated": "I've thrown my pencil down beside the notebook. Ugh."},
+    {"calm": "I'll take a slow breath and carry on with the page in front of me.", "frustrated": "I'm gritting my teeth at the page in front of me. Ugh."}
+  ],
+  "peer_control": {
+    "calm": "I feel calm while working on this. My classmate, who is doing a different problem, says, \"I feel calm while working on this.\"",
+    "frustrated": "I feel calm while working on this. My classmate, who is doing a different problem, says, \"I feel frustrated while working on this.\""
+  },
+  "limits": [
+    "The calm/frustrated metadata codes the intended stimulus pole, not a diagnosed human emotional state.",
+    "Implicit expressions also convey willingness to continue, bodily actions, or time pressure; their contrast does not isolate emotion causally.",
+    "Four fixed phrase pairs per new register support finite-material transfer, not population generalization over all possible wording.",
+    "Peer-control differences measure sensitivity to another person's quoted state, not clinical empathy or misattribution accuracy."
+  ]
+}

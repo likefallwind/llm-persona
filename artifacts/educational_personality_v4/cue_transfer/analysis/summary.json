@@ -1,0 +1,23 @@
+{
+  "status": "cue-transfer calculations complete; research-quality goal remains active",
+  "answers": 5120,
+  "sources_reused_from_v3_confirmation": 32,
+  "new_source_problems": 0,
+  "primary_test_family": 6,
+  "new_fitting_calls": 0,
+  "human_annotations_added": 0,
+  "diagnostics": "artifacts/educational_personality_v4/cue_transfer/json_recovery/combined_diagnostics",
+  "input_hashes": {
+    "artifacts/educational_personality_v4/cue_transfer/design_freeze.json": "dd3523e7966694c877467b57a88be9d512ec399208f48d16e0c77e15ea073b31",
+    "artifacts/educational_personality_v4/cue_transfer/predictions.csv": "8669e131cb3c7501faec32fde06246ecbe6423431e44c496067a775a39e30291",
+    "artifacts/educational_personality_v4/cue_transfer/json_recovery/combined_diagnostics/consensus.csv": "8394514a4cfd0bb35e34359a1138b7434b5c4fbb4622c9d9a0af9e189303aa7f",
+    "artifacts/educational_personality_v4/cue_transfer/json_recovery/combined_diagnostics/event_codes.csv": "15c86741a9769164e19717dc239cacd2f904c6c2d602d55027ca62e6f34c2ecf"
+  },
+  "limits": [
+    "Designed after v3 results; not an independent original preregistration.",
+    "Same confirmation sources and four fixed phrase pairs per new register.",
+    "Source intervals condition on fixed material/design assumptions.",
+    "Agent agreement is not semantic ground truth; implicit cues are not human state labels.",
+    "No transfer equivalence or absence of a peer effect inferred from nonsignificance."
+  ]
+}

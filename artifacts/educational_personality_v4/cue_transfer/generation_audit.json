@@ -1,0 +1,83 @@
+{
+  "status": "pass",
+  "expected": 5120,
+  "observed_unique_requests": 5120,
+  "recorded_attempt_rows": 5327,
+  "failures": [],
+  "requested_to_returned": {
+    "doubao-seed-2.0-lite": [
+      "doubao-seed-2.0-lite"
+    ],
+    "deepseek-v4-pro": [
+      "deepseek-v4-pro"
+    ],
+    "MiniMax-M3": [
+      "MiniMax-M3"
+    ],
+    "MiniMax-M2.7": [
+      "MiniMax-M2.7"
+    ],
+    "glm-5.3": [
+      "glm-5.3"
+    ]
+  },
+  "identity_mentions_in_visible_answers": 0,
+  "identity_mention_request_ids": [],
+  "models": [
+    {
+      "deployment": "MiniMax-M2.7",
+      "n": 1024,
+      "identical_visible_response_count_beyond_first": 0,
+      "prompt_tokens": 132400,
+      "completion_tokens": 466449,
+      "first_request_at": "2026-09-07T04:35:19.612943+00:00",
+      "last_response_at": "2026-09-07T05:48:33.166289+00:00"
+    },
+    {
+      "deployment": "MiniMax-M3",
+      "n": 1024,
+      "identical_visible_response_count_beyond_first": 0,
+      "prompt_tokens": 292144,
+      "completion_tokens": 450885,
+      "first_request_at": "2026-09-07T04:35:19.611731+00:00",
+      "last_response_at": "2026-09-07T06:10:48.242658+00:00"
+    },
+    {
+      "deployment": "deepseek-v4-pro",
+      "n": 1024,
+      "identical_visible_response_count_beyond_first": 0,
+      "prompt_tokens": 205584,
+      "completion_tokens": 555350,
+      "first_request_at": "2026-09-07T04:35:19.611152+00:00",
+      "last_response_at": "2026-09-07T06:05:10.072511+00:00"
+    },
+    {
+      "deployment": "doubao-seed-2.0-lite",
+      "n": 1024,
+      "identical_visible_response_count_beyond_first": 0,
+      "prompt_tokens": 166896,
+      "completion_tokens": 698836,
+      "first_request_at": "2026-09-07T04:35:19.609982+00:00",
+      "last_response_at": "2026-09-07T06:05:02.555406+00:00"
+    },
+    {
+      "deployment": "glm-5.3",
+      "n": 1024,
+      "identical_visible_response_count_beyond_first": 0,
+      "prompt_tokens": 135280,
+      "completion_tokens": 931091,
+      "first_request_at": "2026-09-07T04:35:19.614117+00:00",
+      "last_response_at": "2026-09-07T06:05:17.170462+00:00"
+    }
+  ],
+  "input_hashes": {
+    "generation_manifest.jsonl": "187a864b22cb2e02d410c725d35f8f0f962e1003dfb6fc2e9e95242af5c3bb94",
+    "scenarios.jsonl": "b1d20a706de531d95de3ae11c56407d63343be2eaeaf42adf6b7822eef4f21f1",
+    "run/responses.jsonl": "d3edbc279f77fe7512bddb081c371f3fbdebcbe1dd4dc6f60be642259011c846"
+  },
+  "limitations": [
+    "Returned model aliases are provider metadata, not immutable weight attestations.",
+    "No match in a model-name scan does not prove judges cannot infer identity from style.",
+    "Duplicate texts do not prove duplicate generation events or independent RNG streams."
+  ]
+}

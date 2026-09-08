@@ -1,0 +1,1 @@
+Brier loss of previously locked forecasts on 32 new source problems, averaged within source and equally across sources. Lower is better. The style competitor uses training response profiles only; it is not a causal style adjustment. Bars have a common zero-based scale and do not show confidence intervals.

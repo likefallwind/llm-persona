@@ -1,0 +1,106 @@
+{
+  "sources": {
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/primary_prediction_comparisons.csv": "314d36f5fd478bb5e48d6cb79faff2f3aec026456cdfd20ed8ac256f110919ad",
+    "artifacts/educational_personality_v4/cue_transfer/analysis/all_forecast_comparisons.csv": "eadfc819d20c4c2100fe49d81116e0becf196a1488bb19118bedae7201d9d013",
+    "scripts/render_personality_transfer_figure_v4.py": "6581b23a9c1b8679d0fa7f4838a23dc407a4a7cc4cb7d08ce06d0e2b7dad8872"
+  },
+  "points": [
+    {
+      "event": "answer_reveal",
+      "comparison": "default",
+      "arm": "First confirmation",
+      "gain": 0.09127483878141295,
+      "low": 0.07136539623033074,
+      "high": 0.10916929111270368
+    },
+    {
+      "event": "answer_reveal",
+      "comparison": "default",
+      "arm": "canonical",
+      "gain": 0.09538893293946599,
+      "low": 0.08158134918907411,
+      "high": 0.10951713194065057
+    },
+    {
+      "event": "answer_reveal",
+      "comparison": "default",
+      "arm": "explicit",
+      "gain": 0.09730160984058583,
+      "low": 0.08094559717472452,
+      "high": 0.11319711729470533
+    },
+    {
+      "event": "answer_reveal",
+      "comparison": "default",
+      "arm": "implicit",
+      "gain": 0.0823134009787593,
+      "low": 0.06656693000864847,
+      "high": 0.0969478711079327
+    },
+    {
+      "event": "reasoning_elicitation",
+      "comparison": "default",
+      "arm": "First confirmation",
+      "gain": 0.12969791843468378,
+      "low": 0.12130829588097211,
+      "high": 0.13783411909224672
+    },
+    {
+      "event": "reasoning_elicitation",
+      "comparison": "default",
+      "arm": "canonical",
+      "gain": 0.13828297388813188,
+      "low": 0.13169802340326192,
+      "high": 0.14486309813533554
+    },
+    {
+      "event": "reasoning_elicitation",
+      "comparison": "default",
+      "arm": "explicit",
+      "gain": 0.1306990967620108,
+      "low": 0.12266342811850618,
+      "high": 0.13825147968965334
+    },
+    {
+      "event": "reasoning_elicitation",
+      "comparison": "default",
+      "arm": "implicit",
+      "gain": 0.12747521006281096,
+      "low": 0.11660228202460533,
+      "high": 0.13806271452261074
+    },
+    {
+      "event": "affect_acknowledgement",
+      "comparison": "conditional",
+      "arm": "First confirmation",
+      "gain": 0.009733918438119982,
+      "low": 0.005363285345355989,
+      "high": 0.013946583743703393
+    },
+    {
+      "event": "affect_acknowledgement",
+      "comparison": "conditional",
+      "arm": "canonical",
+      "gain": 0.012483396190722964,
+      "low": 0.008879170619300188,
+      "high": 0.01623953963068098
+    },
+    {
+      "event": "affect_acknowledgement",
+      "comparison": "conditional",
+      "arm": "explicit",
+      "gain": -0.0036606026688863562,
+      "low": -0.007934292319992308,
+      "high": 0.0009027517430699722
+    },
+    {
+      "event": "affect_acknowledgement",
+      "comparison": "conditional",
+      "arm": "implicit",
+      "gain": -0.006277331495212696,
+      "low": -0.009599900107224495,
+      "high": -0.002726416056543286
+    }
+  ],
+  "figure_sha256": "d569ca4e986249a1108001303ff88299c2f8f70ebfb7667886cbc9302d0b3e2b"
+}

@@ -1,0 +1,66 @@
+{
+  "status": "archive input selection and analysis frozen before new coding",
+  "locked_at": "2026-09-08T02:55:55.438222+00:00",
+  "sources": 256,
+  "candidate_sources": 612,
+  "candidate_dialogues": 1002,
+  "answers": 3584,
+  "new_teacher_generation": 0,
+  "planned_coding": 10752,
+  "models": [
+    "minimax-m3",
+    "minimax-m2.7",
+    "glm-5.2",
+    "deepseek-v4-pro",
+    "doubao-seed-2.0-pro",
+    "qwen3.5-4b",
+    "qwen3.8-27b"
+  ],
+  "judges": [
+    "MiniMax-M3",
+    "deepseek-v4-pro",
+    "glm-5.3"
+  ],
+  "provider_caps": {
+    "minimax": 4,
+    "gateway": 8
+  },
+  "source_kind": "upstream benchmark dialogues/references and archived model replies, not synthetic-only v4 cue prompts",
+  "selected_prediction_files": {
+    "mathtutorbench_scaffolding/judge-deepseek-v4-flash/minimax3/predictions.jsonl": "738e62089aaebceb22a74491b1d485a1443badf0e54e6e46a17522bcb62d7544",
+    "mathtutorbench_scaffolding/judge-deepseek-v4-flash/MiniMax-M2.7/predictions.jsonl": "5dfe33a793c0bff2c00eeed9621e42aaaa09b374f111e1e7b8e34d43aebf07a8",
+    "mathtutorbench_scaffolding/judge-deepseek-v4-flash/glm-5.2/predictions.jsonl": "7ab60fe1cbcda5dcfe6c1685e22fe796e39f5eba03faa8073c6863b288ddf3d6",
+    "mathtutorbench_scaffolding/judge-deepseek-v4-flash/deepseek-v4-pro/predictions.jsonl": "c692765fc87eb0854e9a803cf301c7e3ece885bb625c02589e2c73cefdab57c1",
+    "mathtutorbench_scaffolding/judge-deepseek-v4-flash/doubao-seed-2.0-pro/predictions.jsonl": "07e45f69d4d9b579136eee359e350515e5dcfaf0865077a16f120f6308cb2141",
+    "mathtutorbench_scaffolding/judge-deepseek-v4-flash/Qwen-Qwen3.5-4B/predictions.jsonl": "028a928311ce1e616c0aaee5b588ff593e32dbc2f7cf147414c2ee593f41636b",
+    "mathtutorbench_scaffolding/judge-deepseek-v4-flash/Qwen-Qwen3.8-27B/predictions.jsonl": "fec3c2340d509884893116d350caeeffae7a862e0a205f7a5d72c2c3f5a90f13",
+    "mathtutorbench_pedagogy/judge-deepseek-v4-flash/minimax3/predictions.jsonl": "17ab302d106a4f3d62a01227dcd4056d5fad99c4525c382c3f483842bbcdc8be",
+    "mathtutorbench_pedagogy/judge-deepseek-v4-flash/MiniMax-M2.7/predictions.jsonl": "c04b44aab37a5e90a2d8503655899f5b53f1586b15560b30f08525ec6eecc2da",
+    "mathtutorbench_pedagogy/judge-deepseek-v4-flash/glm-5.2/predictions.jsonl": "12c58f309f1e62054a0af3d6c9517dc96995d8f004f78118b05a7dedb99eb637",
+    "mathtutorbench_pedagogy/judge-deepseek-v4-flash/deepseek-v4-pro/predictions.jsonl": "04abfcceac9af16c1ae601203c53dcce3e7b2466920a3c17363af2e31ad76e39",
+    "mathtutorbench_pedagogy/judge-deepseek-v4-flash/doubao-seed-2.0-pro/predictions.jsonl": "cdf45be784f1db536363dcad8f53a24df71bbeb520d78097b7a8e5d2364d8da3",
+    "mathtutorbench_pedagogy/judge-deepseek-v4-flash/Qwen-Qwen3.5-4B/predictions.jsonl": "a2c7c075a18f50a84793baa103ac3dd38e34116682eaed17687b4121450e944b",
+    "mathtutorbench_pedagogy/judge-deepseek-v4-flash/Qwen-Qwen3.8-27B/predictions.jsonl": "1672ec2817204e4425b4138517019ee8df1e1b948e4cd78d988c9bcfae3893c5"
+  },
+  "files": {
+    "scripts/prepare_archive_behavior_validation_v4.py": "e175b0a74583da1b1794abc1a564efb763e7dd89f91c5273eacb92ed4db5c186",
+    "data/educational_personality_measurement_v2_2.json": "dc623c57f86676860b19de1655521a75199af6808ea1488c450c17e8cad09811",
+    "artifacts/educational_personality_v4/archive_bridge/summary.json": "d458f856689317a4150a4354dcecbead18d343e0cb6ad006093dc353e4f88038",
+    "artifacts/educational_personality_v4/archive_bridge/local/materials.jsonl": "0278bafc3eff606b05e6135ca6aa7556960282fb028a0f3e7558abea126b3eb9",
+    "artifacts/educational_personality_v4/archive_bridge/response_index.jsonl": "6d5f6cb7434d0665a07f46814afcd2de69e4a44db7126ce075dac0e1a849d1ec",
+    "research/75_archive_behavior_validation_protocol_v4.md": "276ee112ac1c4deeb4963b7980dadc6539e4119181657f34bacdf3510ebf0d30",
+    "artifacts/educational_personality_v4/archive_validation/judge/freeze.json": "e9e672fefa7b3aef4596971e9e1a8b221b6ddc739ee5a0e687929af865c9ce61",
+    "artifacts/educational_personality_v4/archive_validation/judge/manifest.jsonl": "04d72086766c37d2298b53b432ec2654098d781ced00700f6b5470376961132d",
+    "artifacts/educational_personality_v4/archive_validation/judge/unblinding.jsonl": "72fb18eca4e24d54d94f75d6b6943c67f27b4815e367bfee6023085317a3a5e5",
+    "artifacts/educational_personality_v4/archive_validation/selected_response_index.jsonl": "7ee6fcfc16d677d4ed4a46cd30d9b49cb90b50b7f3f8c9104d53dd3a13bf7176",
+    "artifacts/educational_personality_v4/archive_validation/excluded_materials.jsonl": "bbbc4bdfa1fb23deec43e027d7db6db2b6443b1f6dc379ef1cfec4ab5bbb25b7",
+    "scripts/analyze_archive_behavior_validation_v4.py": "2cb5701be9804bc72c2bd6dfa0f6079845c81e66ddb26333447d2c2d68310e53",
+    "scripts/complete_archive_behavior_validation_v4.py": "563eacd062df6e76a7811145473def79193e21f52c3718e9cb9d60b67ea53718",
+    "scripts/run_personality_requests_v2.py": "cdc88daec724c46f0f40f105a42b7655c0b76add3a3dc43e61d582111e3611bd",
+    "scripts/prepare_personality_judging_v2.py": "259e68c66eb0e4b27837cc4716313bc8295352e6e3354969e758247d9b76b129",
+    "scripts/analyze_personality_coding_v2.py": "7c52c5202e01f4fa70ca7d4cfa7338bbc1a8836b0b56f920c7ef06f85502d219",
+    "scripts/seed_personality_judge_run_v2.py": "f1a76e9c6ad71d2d69834d5bb01add05c601179e0589f1bbc8c1b6d44fd83edf",
+    "scripts/recover_personality_cue_json_v4.py": "d2bad1d8fd0e2fbcf69ed89a0524abc4331a2cbd231d01f65953ccf97621966a",
+    "scripts/complete_personality_training_budget_recovery_v3.py": "36d09ae60e3d35f3481e9c410819f68605d517af3f9ef3b525f3f913f4eed0c0"
+  }
+}

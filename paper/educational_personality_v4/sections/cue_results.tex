@@ -1,0 +1,74 @@
+\subsection{Default Gains Survive New Expressions; the State Gain Does Not (RQ2)}
+\label{sec:cue-results}
+
+The extension yields all 5,120 answers and 15,360 usable codes. One code needs a
+disclosed one-character structural recovery; all three primary majority labels
+are unchanged under either possible value of that missing vote
+(Appendix~\ref{app:cue-transfer}). Pairwise positive coder agreement is
+99.25--99.41\% for revelation, 90.68--92.34\% for elicitation, and
+94.89--95.51\% for acknowledgement.
+
+Frozen default profiles retain substantial gains under both new expression
+arms (Table~\ref{tab:cue-primary}). In contrast, the acknowledgement state
+profile does not retain its incremental gain: -0.00366 for explicit synonyms
+and -0.00628 for implicit cues. The contemporary original-wording gain is
++0.01248 [0.00888, 0.01624]. Paired new-minus-contemporary gain differences are
+-0.01614 [-0.02254, -0.00990] and -0.01876 [-0.02384, -0.01358], respectively.
+These secondary paired contrasts weaken a simple explanation in which all
+profiles cease working across deployments at the later observation time.
+Figure~\ref{fig:expression-transfer} separates the two transfer tests.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{llrr}
+\toprule
+Expression & Forecast increment & Gain [95\% CI] & Holm $p$\\
+\midrule
+Explicit & Default: reveal & .09730 [.08095, .11320] & $7.63\!\times\!10^{-11}$\\
+Explicit & Default: elicit & .13070 [.12266, .13825] & $4.97\!\times\!10^{-24}$\\
+Explicit & State: acknowledge & -.00366 [-.00793, .00090] & 1.0\\
+Implicit & Default: reveal & .08231 [.06657, .09695] & $2.76\!\times\!10^{-9}$\\
+Implicit & Default: elicit & .12748 [.11660, .13806] & $8.51\!\times\!10^{-20}$\\
+Implicit & State: acknowledge & -.00628 [-.00960, -.00273] & 1.0\\
+\bottomrule
+\end{tabular}
+\caption{Six frozen-forecast primary expression-transfer tests. Gains are
+source-averaged reductions in Brier loss; intervals bootstrap 32 reused source
+problems, conditioning on fitted forecasts. The default baseline is educational
+context; the state baseline is the model-by-domain profile. One-sided tests
+ask whether the gain is positive: $p=1$ is not a separately specified test of
+harm, and the confidence intervals are not simultaneous intervals.}
+\label{tab:cue-primary}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/expression_transfer.pdf}
+\caption{Transfer depends on what is changed. First-stage confirmation tests
+new source problems with original wording. The three extension rows reuse
+those same 32 problems and original forecasts. Default revelation and
+elicitation gains persist, while the conditional acknowledgement gain loses
+its positive sign under new expressions. Bars are source bootstrap 95\%
+intervals conditional on frozen fits, not four independent replications or
+simultaneous intervals. Horizontal scales differ by panel.}
+\label{fig:expression-transfer}
+\end{figure}
+
+All three individual-coder panels have positive contemporary and negative
+new-expression acknowledgement state-gain estimates. Both new-expression point
+estimates also remain negative in all five generator-deletion panels; some
+intervals include zero. These are sensitivities of the same responses, not
+independent replications. The failure concerns transported conditional
+probabilities: models still exhibit acknowledgement differences between cue
+poles, and the implicit arm changes more than affect wording alone.
+
+\paragraph{Peer-context control.}
+Keeping the current student explicitly calm, changing a peer's quote yields
+acknowledgement-rate changes of +30.47, +25.00, +26.56, +23.44, and -4.69
+percentage points for M2.7, M3, DeepSeek, GLM, and Doubao, respectively. The
+first four source intervals exclude zero; Doubao's includes it. These are
+secondary descriptive contrasts. One deterministically selected 0-to-1 example
+per model helps interpret the event: the first four models explicitly affirm
+the current student's calmness, sometimes correctly distinguishing the peer's
+frustration. The event-rate contrast therefore cannot itself establish
+misattribution. Outcome-selected examples do not estimate its prevalence.

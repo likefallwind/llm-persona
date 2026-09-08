@@ -1,0 +1,14 @@
+{
+  "status": "complete cue-transfer measurement with disclosed syntax amendment",
+  "completed_at": "2026-09-08T02:39:20.015151+00:00",
+  "diagnostics": "artifacts/educational_personality_v4/cue_transfer/json_recovery/combined_diagnostics",
+  "final_run": null,
+  "source_runs": [
+    "artifacts/educational_personality_v4/cue_transfer/judge/run_repair2"
+  ],
+  "valid_judge_requests": 15360,
+  "coverage_sha256": "1611dddb00bca4e620b17d48742079155f4f5aa6c4a0045c9dbd4b164267adce",
+  "original_and_repair_runs_retained": true,
+  "mechanical_recovery": "artifacts/educational_personality_v4/cue_transfer/json_recovery",
+  "new_api_calls": 0
+}

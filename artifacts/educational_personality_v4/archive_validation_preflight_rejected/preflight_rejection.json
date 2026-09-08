@@ -1,0 +1,6 @@
+{
+  "status": "rejected before API execution",
+  "new_api_calls": 0,
+  "reason": "Persisting mappings with sorted JSON object keys changed nested conversation key order; strict judge payload re-render differed only in key order.",
+  "resolution": "Canonicalize source mapping before constructing judge payloads; freeze a new zero-call design."
+}

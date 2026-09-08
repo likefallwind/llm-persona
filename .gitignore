@@ -76,3 +76,22 @@ artifacts/educational_personality_v2/prospective_formal/content_sensitivity/vali
 artifacts/educational_personality_v2/prospective_formal/content_sensitivity/validation_recovery/pipeline_state.json
 artifacts/educational_personality_v2/prospective_formal/content_sensitivity/validation_recovery/started.json
 artifacts/educational_personality_v2/prospective_formal/content_sensitivity/validation_recovery/repair*.log
+
+# v4 new-study raw API outputs and durable mutable controller state.
+artifacts/educational_personality_v4/**/run/
+artifacts/educational_personality_v4/**/run_repair*/
+artifacts/educational_personality_v4/**/judge/
+artifacts/educational_personality_v4/**/runtime/
+artifacts/educational_personality_v4/archive_bridge/records.jsonl
+artifacts/educational_personality_v4/archive_bridge/local/
+
+# v4 manuscript build receipts and reading artifacts, excluding TeX intermediates.
+paper/educational_personality_v4/build/*
+!paper/educational_personality_v4/build/*.pdf
+!paper/educational_personality_v4/build/*.txt
+!paper/educational_personality_v4/build/*.json
+!paper/educational_personality_v4/build/acl/
+paper/educational_personality_v4/build/acl/*
+!paper/educational_personality_v4/build/acl/*.pdf
+!paper/educational_personality_v4/build/acl/*.txt
+!paper/educational_personality_v4/build/acl/*.json

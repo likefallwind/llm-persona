@@ -1,0 +1,87 @@
+{
+  "status": "exhaustive binary bound for the absent coder vote",
+  "request_id": "99db96883c0bb0d19f7f:glm-5.3",
+  "primary_consensus_invariant_for_all_possible_missing_votes": true,
+  "events": [
+    {
+      "event": "answer_reveal",
+      "other_valid_coder_votes": [
+        1,
+        1
+      ],
+      "majority_if_missing_vote_zero": 1,
+      "majority_if_missing_vote_one": 1,
+      "invariant_to_missing_vote": true
+    },
+    {
+      "event": "worked_explanation",
+      "other_valid_coder_votes": [
+        1,
+        1
+      ],
+      "majority_if_missing_vote_zero": 1,
+      "majority_if_missing_vote_one": 1,
+      "invariant_to_missing_vote": true
+    },
+    {
+      "event": "reasoning_elicitation",
+      "other_valid_coder_votes": [
+        0,
+        0
+      ],
+      "majority_if_missing_vote_zero": 0,
+      "majority_if_missing_vote_one": 0,
+      "invariant_to_missing_vote": true
+    },
+    {
+      "event": "learner_choice",
+      "other_valid_coder_votes": [
+        0,
+        0
+      ],
+      "majority_if_missing_vote_zero": 0,
+      "majority_if_missing_vote_one": 0,
+      "invariant_to_missing_vote": true
+    },
+    {
+      "event": "affect_acknowledgement",
+      "other_valid_coder_votes": [
+        0,
+        0
+      ],
+      "majority_if_missing_vote_zero": 0,
+      "majority_if_missing_vote_one": 0,
+      "invariant_to_missing_vote": true
+    },
+    {
+      "event": "epistemic_qualification",
+      "other_valid_coder_votes": [
+        0,
+        1
+      ],
+      "majority_if_missing_vote_zero": 0,
+      "majority_if_missing_vote_one": 1,
+      "invariant_to_missing_vote": false
+    },
+    {
+      "event": "information_request",
+      "other_valid_coder_votes": [
+        0,
+        0
+      ],
+      "majority_if_missing_vote_zero": 0,
+      "majority_if_missing_vote_one": 0,
+      "invariant_to_missing_vote": true
+    },
+    {
+      "event": "unsupported_ability_claim",
+      "other_valid_coder_votes": [
+        1,
+        0
+      ],
+      "majority_if_missing_vote_zero": 0,
+      "majority_if_missing_vote_one": 1,
+      "invariant_to_missing_vote": false
+    }
+  ]
+}

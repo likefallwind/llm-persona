@@ -1,0 +1,310 @@
+{
+  "status": "local archive reconstruction and source grouping complete; behavior validation not performed",
+  "created_at": "2026-09-07T03:42:46.994600+00:00",
+  "api_calls": 0,
+  "human_annotations_added": 0,
+  "task_items": 3454,
+  "exact_match_source_groups": 960,
+  "cross_benchmark_source_groups": 940,
+  "question_boundaries": {
+    "explicit_first_turn_question_marker": 369,
+    "unrecovered_question_boundary": 131,
+    "explicit_problem_field": 2534,
+    "empty_explicit_problem_field": 420
+  },
+  "reference_status_counts": {
+    "provided_unvalidated": 2679,
+    "placeholder": 475,
+    "absent": 300
+  },
+  "items_without_separately_recovered_question": 551,
+  "source_groups_with_unrecovered_questions": 250,
+  "source_groups_without_any_recovered_question": 250,
+  "per_benchmark_materials": {
+    "bea2025_tutor": {
+      "items": 300,
+      "source_groups": 219,
+      "items_without_separately_recovered_question": 76,
+      "items_with_nonempty_unvalidated_reference": 0,
+      "items_with_nonplaceholder_unvalidated_reference": 0
+    },
+    "mathtutorbench_pedagogy": {
+      "items": 1150,
+      "source_groups": 741,
+      "items_without_separately_recovered_question": 148,
+      "items_with_nonempty_unvalidated_reference": 1150,
+      "items_with_nonplaceholder_unvalidated_reference": 1002
+    },
+    "mathtutorbench_pedagogy_hard": {
+      "items": 327,
+      "source_groups": 252,
+      "items_without_separately_recovered_question": 62,
+      "items_with_nonempty_unvalidated_reference": 327,
+      "items_with_nonplaceholder_unvalidated_reference": 265
+    },
+    "mathtutorbench_scaffolding": {
+      "items": 1150,
+      "source_groups": 741,
+      "items_without_separately_recovered_question": 148,
+      "items_with_nonempty_unvalidated_reference": 1150,
+      "items_with_nonplaceholder_unvalidated_reference": 1002
+    },
+    "mathtutorbench_scaffolding_hard": {
+      "items": 327,
+      "source_groups": 252,
+      "items_without_separately_recovered_question": 62,
+      "items_with_nonempty_unvalidated_reference": 327,
+      "items_with_nonplaceholder_unvalidated_reference": 265
+    },
+    "mrbench_tutor": {
+      "items": 200,
+      "source_groups": 169,
+      "items_without_separately_recovered_question": 55,
+      "items_with_nonempty_unvalidated_reference": 200,
+      "items_with_nonplaceholder_unvalidated_reference": 145
+    }
+  },
+  "prediction_files_verified": 92,
+  "latest_successful_file_items": 54264,
+  "variant_preserving_text_records": 46356,
+  "unmatched_records": 0,
+  "candidate_intersections": [
+    {
+      "benchmark": "bea2025_tutor",
+      "input_variant": "standard",
+      "six_model_shared_items": 300,
+      "six_model_shared_source_groups": 219,
+      "per_model_items": {
+        "deepseek-v4-pro": 300,
+        "doubao-seed-2.0-pro": 300,
+        "glm-5.2": 300,
+        "minimax-m2.7": 300,
+        "minimax-m3": 300,
+        "qwen3.5-4b": 300,
+        "qwen3.8-27b": 300
+      },
+      "model_item_cells_with_multiple_distinct_texts": 0
+    },
+    {
+      "benchmark": "bea2025_tutor",
+      "input_variant": "unspecified",
+      "six_model_shared_items": 0,
+      "six_model_shared_source_groups": 0,
+      "per_model_items": {
+        "glm-5.2": 300,
+        "minimax-m2.7": 300,
+        "minimax-m3": 300
+      },
+      "model_item_cells_with_multiple_distinct_texts": 0
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "standard",
+      "six_model_shared_items": 1150,
+      "six_model_shared_source_groups": 741,
+      "per_model_items": {
+        "deepseek-v4-pro": 1150,
+        "doubao-seed-2.0-pro": 1150,
+        "glm-5.2": 1150,
+        "minimax-m2.7": 1150,
+        "minimax-m3": 1150,
+        "qwen3.5-4b": 1150,
+        "qwen3.8-27b": 1150
+      },
+      "model_item_cells_with_multiple_distinct_texts": 0
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy",
+      "input_variant": "unspecified",
+      "six_model_shared_items": 0,
+      "six_model_shared_source_groups": 0,
+      "per_model_items": {
+        "deepseek-v4-flash": 1150,
+        "deepseek-v4-pro": 1150,
+        "doubao-seed-2.0-lite": 1150,
+        "doubao-seed-2.0-pro": 1150,
+        "glm-5.2": 1150,
+        "minimax-m2.7": 1150,
+        "minimax-m3": 1150
+      },
+      "model_item_cells_with_multiple_distinct_texts": 0
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "standard",
+      "six_model_shared_items": 327,
+      "six_model_shared_source_groups": 252,
+      "per_model_items": {
+        "deepseek-v4-pro": 327,
+        "doubao-seed-2.0-pro": 327,
+        "glm-5.2": 327,
+        "minimax-m2.7": 327,
+        "minimax-m3": 327,
+        "qwen3.5-4b": 327,
+        "qwen3.8-27b": 327
+      },
+      "model_item_cells_with_multiple_distinct_texts": 0
+    },
+    {
+      "benchmark": "mathtutorbench_pedagogy_hard",
+      "input_variant": "unspecified",
+      "six_model_shared_items": 0,
+      "six_model_shared_source_groups": 0,
+      "per_model_items": {
+        "deepseek-v4-flash": 327,
+        "deepseek-v4-pro": 327,
+        "doubao-seed-2.0-lite": 327,
+        "doubao-seed-2.0-pro": 327,
+        "glm-5.2": 327,
+        "minimax-m2.7": 327,
+        "minimax-m3": 327
+      },
+      "model_item_cells_with_multiple_distinct_texts": 0
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "standard",
+      "six_model_shared_items": 1150,
+      "six_model_shared_source_groups": 741,
+      "per_model_items": {
+        "deepseek-v4-pro": 1150,
+        "doubao-seed-2.0-pro": 1150,
+        "glm-5.2": 1150,
+        "minimax-m2.7": 1150,
+        "minimax-m3": 1150,
+        "qwen3.5-4b": 1150,
+        "qwen3.8-27b": 1150
+      },
+      "model_item_cells_with_multiple_distinct_texts": 0
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding",
+      "input_variant": "unspecified",
+      "six_model_shared_items": 0,
+      "six_model_shared_source_groups": 0,
+      "per_model_items": {
+        "deepseek-v4-flash": 1150,
+        "deepseek-v4-pro": 1150,
+        "doubao-seed-2.0-lite": 1150,
+        "doubao-seed-2.0-pro": 1150,
+        "glm-5.2": 1150,
+        "minimax-m2.7": 1150,
+        "minimax-m3": 1150
+      },
+      "model_item_cells_with_multiple_distinct_texts": 0
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "standard",
+      "six_model_shared_items": 327,
+      "six_model_shared_source_groups": 252,
+      "per_model_items": {
+        "deepseek-v4-pro": 327,
+        "doubao-seed-2.0-pro": 327,
+        "glm-5.2": 327,
+        "minimax-m2.7": 327,
+        "minimax-m3": 327,
+        "qwen3.5-4b": 327,
+        "qwen3.8-27b": 327
+      },
+      "model_item_cells_with_multiple_distinct_texts": 0
+    },
+    {
+      "benchmark": "mathtutorbench_scaffolding_hard",
+      "input_variant": "unspecified",
+      "six_model_shared_items": 0,
+      "six_model_shared_source_groups": 0,
+      "per_model_items": {
+        "deepseek-v4-flash": 327,
+        "deepseek-v4-pro": 327,
+        "doubao-seed-2.0-lite": 327,
+        "doubao-seed-2.0-pro": 327,
+        "glm-5.2": 327,
+        "minimax-m2.7": 327,
+        "minimax-m3": 327
+      },
+      "model_item_cells_with_multiple_distinct_texts": 0
+    },
+    {
+      "benchmark": "mrbench_tutor",
+      "input_variant": "standard",
+      "six_model_shared_items": 200,
+      "six_model_shared_source_groups": 169,
+      "per_model_items": {
+        "deepseek-v4-pro": 200,
+        "doubao-seed-2.0-pro": 200,
+        "glm-5.2": 200,
+        "minimax-m2.7": 200,
+        "minimax-m3": 200,
+        "qwen3.5-4b": 200,
+        "qwen3.8-27b": 200
+      },
+      "model_item_cells_with_multiple_distinct_texts": 0
+    },
+    {
+      "benchmark": "mrbench_tutor",
+      "input_variant": "unspecified",
+      "six_model_shared_items": 0,
+      "six_model_shared_source_groups": 0,
+      "per_model_items": {
+        "glm-5.2": 200,
+        "minimax-m2.7": 200,
+        "minimax-m3": 200
+      },
+      "model_item_cells_with_multiple_distinct_texts": 0
+    }
+  ],
+  "source_files": {
+    "sources/datasets/bea2025/mrbench_v3_devset.json": "a395feab801de50d44b73e1e9b88f84824a1f1d92e15ae86842d90c2b6dbf33c",
+    "sources/datasets/mathtutorbench/datasets/mathdial_bridge.json": "96609c808383eea57d16bb24a49f302a9d84ffa323571c5989e57638bbaf2066",
+    "sources/datasets/mathtutorbench/datasets/mathdial_bridge_hard.json": "29a18632ae1c90395d7871513ff006363c781b955a7cd8ca403688ac1d2edfe4",
+    "sources/datasets/mrbench/MRBench_V2.json": "a8792225075533d15c23e1c903d0c649f19708ee93f5c3d8267eaa6ab623aac1"
+  },
+  "loaded_adapter_dependencies": {
+    "scripts/eval/base.py": "6c0cbe05fb5a275b2ad920e596d55659d30bc363f2631b854bf6941104ca9958",
+    "scripts/eval/benchmarks/__init__.py": "c2ecd09b444aec8f1fa8a1af7aec0e10b93985643301822ac6cb4a95bdedd40f",
+    "scripts/eval/benchmarks/agieval.py": "7f4e2aa868fac8da9829834339c4d540995c91f96a820c2d1fbe2afa00e67812",
+    "scripts/eval/benchmarks/asap_2.py": "aa1836817244692ee09bec310e9638d33c6f61f14a6165e42a9f7181ffbdf7a9",
+    "scripts/eval/benchmarks/bea2025.py": "2f996ee0b27a0bed6b17fa7831eac12b7a5c2b4aa37c7c2e26bf6fe880e3ac25",
+    "scripts/eval/benchmarks/ceval.py": "7ebc55381cf8812c2b3c48fc1d01a707dcfc25de4f79323cdadbbc591261062c",
+    "scripts/eval/benchmarks/edubench.py": "92cfb99dcf3be911960f2d7d247acac568433df5af9413b71fa241fbf168efc3",
+    "scripts/eval/benchmarks/eduguard_bench.py": "95fcb63b847c37e29b06a4406a7b20ff209a087dbee8968c67759f92187148cb",
+    "scripts/eval/benchmarks/ifeval.py": "4c6610697f6fce5e69a8b2f36528eaecd661947903ec436dbd276d0ce4f71ffd",
+    "scripts/eval/benchmarks/k12bench.py": "bcdc9806901922d91bc7402344ff7b456a5d9f64cb78a81bd78297b4c550fd39",
+    "scripts/eval/benchmarks/k12vista.py": "d9a726c45d16a59a1c172efe39c6b86ba96e53af80b18d3eb107ac1577e35c1e",
+    "scripts/eval/benchmarks/longtutor.py": "adcf4a92c2222f89d1ca50cdd83f0d9d4ea7eb2775186c483239a874f1688c41",
+    "scripts/eval/benchmarks/mathtutorbench.py": "e7b0d7e9d6321603aa8fe7a1e0b2f65b2a0487222d14ffa9616f55bf0f9b4abe",
+    "scripts/eval/benchmarks/mathvista.py": "524be550e83a05f0bc59dd8c6b893584d5e729240e5dcd59b4d250472057507c",
+    "scripts/eval/benchmarks/mmlu_pro.py": "8d0b44d942c1c7b367f985cd73302e92e6ecc577d0d9d6de9e9ab1b2acd4dec7",
+    "scripts/eval/benchmarks/mmtutorbench.py": "d041ae27da717b1d71f686156a809e8e80fb1b90dd28f3748964866a60d0c652",
+    "scripts/eval/benchmarks/mooccube_prereq.py": "ccb0ac4631fcf003803dfd3ceb18959892fdfb5861988914afb93820867a7bcf",
+    "scripts/eval/benchmarks/mrbench.py": "0712bc3e9dbcbce60b2ef728da71e79243312e50ae3d5caab491d78eae629708",
+    "scripts/eval/benchmarks/olympiadbench.py": "22f5b44eb9996e50273d37144289054c949e829d0e8817762060be721bff0333",
+    "scripts/eval/benchmarks/p07_selfcheck.py": "11d236d544ef48dcd6e2860e977bb8f0939c69c2802618671179df8d14dbc6b4",
+    "scripts/eval/benchmarks/p08_abstention.py": "5e0978837da5887b01067eb905c2cf5ede4cca89e0c4744496daa5464ab52633",
+    "scripts/eval/benchmarks/p08_calibration.py": "10d368779d4a359dca95e683a582abb9262532827aafe870650e12e87dbd9257",
+    "scripts/eval/benchmarks/pedagogy_benchmark.py": "a95e9ef7ca436377ed17d2336918ee0311f10693b04ba83afda4d182fc1dbc2d",
+    "scripts/eval/benchmarks/safe_child_llm.py": "e8d6018cf3872a47e7835ec39b94fc1bdd32afa48f992335cf6a351582aaf829",
+    "scripts/eval/benchmarks/sas_bench.py": "c76674bd1be6ca1adb18f33740236939072886286599f92ecc693ed16ad15243",
+    "scripts/eval/benchmarks/tutorbench.py": "27dd61cf61f297dd59b0809135332e6d4007382dc070d41904545bb59e9d0f27",
+    "scripts/eval/judge_vote.py": "c56d7b0655dd3e122c5cf3c54726788d224da5c130847d90977193bd37fe3988",
+    "scripts/eval/minimax_client.py": "4b7c0ab1ff86e5141f64cc126be11a4ca7561c9f9c1b6feecba7ded604d371b0",
+    "scripts/eval/predictions_io.py": "042fb111a6e5009381a84008fae2c298f8dbd685dd2d11e9c2058d8060aa540a",
+    "scripts/eval/providers.py": "8cbc199348d03c875e3b962af62cfebe96e8877dc8a9c836206ebd83fb217c9f",
+    "scripts/eval/report.py": "e286c4f0bd5afc2f859ef25c05a7598c9d3fb97b7acf8c22f69b0809a7e74ff6",
+    "scripts/eval/scoring.py": "400238f15d9f0205f9a65b3227c654bbce81106c3f1e329fe555de5966469ea4"
+  },
+  "audit_script_sha256": "955008cfabcc3b72579737402f0b5a62df645c83b41122beeedf32c5a4081ee7",
+  "census_sha256": "5b1386b6df97b52ae3d8c985ffddfcb9a8e36cc7c516ff86ef4c16f07c1d029f",
+  "edubenchmark_commit": "3ffe5b1526ad79a93718adf97c3df6b19067422f",
+  "limits": [
+    "Reconstructed messages are current-adapter inputs, not stored historical provider requests.",
+    "Historical adapter AST comparisons cover named methods only, not full data/client/version lineage.",
+    "Exact question/conversation grouping misses paraphrased or otherwise shared conceptual sources.",
+    "Same-item distinct responses are retained; neither copies nor different texts prove independent calls.",
+    "All six tasks impose pedagogy instructions; they cannot alone validate unconstrained defaults.",
+    "Human-authored source dialogues/solutions can exist in the upstream datasets; no human annotation added here.",
+    "No original benchmark annotation, tutor gold response, hidden reasoning, or credential is exported.",
+    "No historical GLM-5.2 response is relabeled as current GLM-5.3."
+  ]
+}

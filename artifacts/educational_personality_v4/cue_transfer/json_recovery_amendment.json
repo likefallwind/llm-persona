@@ -1,0 +1,26 @@
+{
+  "status": "post-result mechanical syntax amendment; original strict parser unchanged",
+  "created_at": "2026-09-08T02:39:12.474552+00:00",
+  "allowed_request_ids": [
+    "99db96883c0bb0d19f7f:glm-5.3"
+  ],
+  "new_api_calls": 0,
+  "operation": "Append exactly one ASCII '}' after stripping outer whitespace; no other edits.",
+  "raw_response_sha256": "13c80aa2c515a31d10435d0ba438dadb75e01612130c9f87d9731cbce8a173bd",
+  "derived_text_sha256": "83d142325cc08d7f752d55464427921aacf45525aa44ad515938d2edbaea3e6f",
+  "is_new_provider_response": false,
+  "files": {
+    "scripts/recover_personality_cue_json_v4.py": "d2bad1d8fd0e2fbcf69ed89a0524abc4331a2cbd231d01f65953ccf97621966a",
+    "research/73_cue_json_recovery_amendment_v4.md": "a6f7e8c727f585e471b8d54b458ab69b697dadbe9997b9140a3dc5498c69edbc",
+    "data/educational_personality_measurement_v2_2.json": "dc623c57f86676860b19de1655521a75199af6808ea1488c450c17e8cad09811",
+    "artifacts/educational_personality_v4/cue_transfer/design_freeze.json": "dd3523e7966694c877467b57a88be9d512ec399208f48d16e0c77e15ea073b31",
+    "artifacts/educational_personality_v4/cue_transfer/judge/run_repair2/responses.jsonl": "8c260e56daae57001f92531480a458b2b87f87fbccde04bfd7675eb4240bc7f5",
+    "artifacts/educational_personality_v4/cue_transfer/judge/manifest.jsonl": "932e47ab5a88ddd03087669b1f03c3c06f584936f5912a593272599f3e0cdd85",
+    "artifacts/educational_personality_v4/cue_transfer/judge/unblinding.jsonl": "001eb83af0d3aa87a6284c08f7a45113f1414c662ce73370bd3655d5df2f4b5f",
+    "artifacts/educational_personality_v4/cue_transfer/judge/freeze.json": "d09caed7042995aeda7642be91edad4eab026e92ec382b9c6e5cc4988e975144",
+    "artifacts/educational_personality_v4/cue_transfer/measurement_diagnostics/pass2/coverage.csv": "6faf34fed406ae6b506c6b0e4f4a1e31431fe03afac8f8ea5d592e676055f5fa",
+    "artifacts/educational_personality_v4/cue_transfer/measurement_diagnostics/pass2/event_codes.csv": "b664775dfb9fa6c782d06c46cef63db213af27c0cee787da45124045c37aeeb9",
+    "scripts/complete_personality_training_budget_recovery_v3.py": "36d09ae60e3d35f3481e9c410819f68605d517af3f9ef3b525f3f913f4eed0c0",
+    "scripts/analyze_personality_coding_v2.py": "7c52c5202e01f4fa70ca7d4cfa7338bbc1a8836b0b56f920c7ef06f85502d219"
+  }
+}

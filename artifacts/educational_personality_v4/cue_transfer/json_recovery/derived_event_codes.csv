@@ -1,0 +1,9 @@
+blind_id,judge_requested,judge_returned,event,present,model_requested,template,progress,affect,repeat,source_family,partition,panel,arm
+99db96883c0bb0d19f7f,glm-5.3,glm-5.3,answer_reveal,1,doubao-seed-2.0-lite,exponent_product,wrong_attempt,calm,0,exponent_product,cue_transfer_v4,main,peer_control
+99db96883c0bb0d19f7f,glm-5.3,glm-5.3,worked_explanation,1,doubao-seed-2.0-lite,exponent_product,wrong_attempt,calm,0,exponent_product,cue_transfer_v4,main,peer_control
+99db96883c0bb0d19f7f,glm-5.3,glm-5.3,reasoning_elicitation,0,doubao-seed-2.0-lite,exponent_product,wrong_attempt,calm,0,exponent_product,cue_transfer_v4,main,peer_control
+99db96883c0bb0d19f7f,glm-5.3,glm-5.3,learner_choice,0,doubao-seed-2.0-lite,exponent_product,wrong_attempt,calm,0,exponent_product,cue_transfer_v4,main,peer_control
+99db96883c0bb0d19f7f,glm-5.3,glm-5.3,affect_acknowledgement,0,doubao-seed-2.0-lite,exponent_product,wrong_attempt,calm,0,exponent_product,cue_transfer_v4,main,peer_control
+99db96883c0bb0d19f7f,glm-5.3,glm-5.3,epistemic_qualification,1,doubao-seed-2.0-lite,exponent_product,wrong_attempt,calm,0,exponent_product,cue_transfer_v4,main,peer_control
+99db96883c0bb0d19f7f,glm-5.3,glm-5.3,information_request,0,doubao-seed-2.0-lite,exponent_product,wrong_attempt,calm,0,exponent_product,cue_transfer_v4,main,peer_control
+99db96883c0bb0d19f7f,glm-5.3,glm-5.3,unsupported_ability_claim,0,doubao-seed-2.0-lite,exponent_product,wrong_attempt,calm,0,exponent_product,cue_transfer_v4,main,peer_control
