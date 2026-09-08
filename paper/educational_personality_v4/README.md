@@ -1,48 +1,51 @@
-# Integrated expression-transfer manuscript checkpoint
+# Educational personality: integrated research manuscript
 
-2026-09-08. This draft incorporates the completed cue-transfer extension while
-preserving the v3 manuscript and its first-stage evidence. It is not a submission
-readiness certificate. Archive-dialogue coding was authorized and launched on 2026-09-08; completed
-behavioral validation remains pending.
+2026-09-08. This version integrates the first-stage prospective study,
+expression-transfer extension, and identified-majority archive analysis.
+The v3 manuscript and frozen experimental records remain preserved.
 
 - [English reading PDF](build/working_draft_en.pdf)
 - [Chinese reading PDF](build/working_draft_zh.pdf)
 - [Anonymous ACL-layout PDF](build/acl/anonymous_acl_draft.pdf)
-- [Chinese editable source](manuscript_zh.md)
-- [Scientific assessment and remaining gaps](../../research/76_integrated_draft_quality_v4.md)
-- [Completed expression-transfer results](../../research/74_cue_transfer_results_v4.md)
+- [Editable Chinese manuscript](manuscript_zh.md)
+- [Scientific quality assessment](../../research/89_final_scientific_assessment_v4.md)
+- [Archive results and interpretation](../../research/87_archive_identified_majority_results_v4.md)
+- [Full-source missing-coder sensitivity](../../research/88_full_source_coder_bounds_v4.md)
 
-The central distinction is between transfer to new problems under the same
-wording and transfer to new student expressions. Answer-revelation and
-reasoning-elicitation defaults retain gains in both tests. The tested conditional
-acknowledgement profile helps under original wording but loses its incremental
-gain under the new expressions. This does not imply absence of cue response or
-demonstrate emotional misattribution.
+Default revelation and elicitation gains transfer across problems and tested
+expressions; the acknowledgement state profile loses its increment under new
+expressions. Archived replies show substantial model gains under general tutoring
+and much smaller gains under explicit probing. The supported object is an action
+profile with specified contextual boundaries, not a human personality taxonomy,
+emotion understanding, or learning benefit.
 
-Rebuild locally with `.venv/bin/python scripts/render_personality_transfer_figure_v4.py`
-and `.venv/bin/python scripts/build_personality_draft_v4.py` from the repository root.
-The renderers preserve the pinned official ACL style and reuse the v3 build logic
-with v4 output paths. The figure receipt maps all 12 points to completed analysis
-tables. Build receipts record source and PDF hashes; they do not certify the science.
+The study uses 10,440 newly generated tutor replies from five deployments and
+3,584 archived replies from seven historical configurations. The million-record
+archive supplies an audited exploration scope, not a million independent semantic
+personality measurements. No human annotation is added, and upstream human
+quality/preference labels are not the behavioral targets.
 
-At the reviewed checkpoint the reading PDFs have 31 English and 25 Chinese pages.
-The ACL-layout draft has 25 pages including references and appendices; the
-conclusion is on page 8 and references begin on page 9 after the main-text
-reorganization. Final archive-result integration and venue-specific review remain. No venue-specific compliance
-claim is made. The source-specific old checks in v3 are not silently reused as a
-quality verdict on this changed draft.
+Two archive coder labels remain absent after provider refusals. The original
+10,752-code coverage gate **did not pass**. Agreement of the other two votes
+identifies all affected majorities without imputing a third vote. Both the
+254-source complete-coder analysis and exhaustive full-256-source coder bounds
+are reported as post-hoc amendments. See research/85–88 and the archive appendix.
 
-The post-result diagnosis in research/78 is also integrated. Its eight targeted
-tests and all twelve comparisons against the unchanged transfer tables pass.
-It separates absolute loss from relative gain without fitting a new predictor.
+From the repository root, rebuild and verify locally:
 
-The source-held-out calibration check (research/79–80) is included with all
-methods, fitting parameters, and explicit target-label adaptation boundaries.
-Eleven targeted tests pass; no new API calls or human annotations are added.
+```bash
+PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/build_personality_draft_v4.py
+PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/audit_personality_draft_v4.py
+```
 
-The input-only scope audit (research/81) verifies the original sample and explains
-short-context, eligibility and upstream-provenance limits without reading new codes.
+These commands make no API calls. Source/PDF hashes, bilingual table checks,
+majority enumeration, and scenario-range checks are recorded separately from
+the scientific assessment. The pinned official ACL style is unchanged. The
+layout is not a declaration of compliance with an unspecified venue's rules.
 
-The [structure review](../../research/82_manuscript_structure_v4.md) records which
-details moved to appendices. No estimates, frozen forecasts, or study scripts
-were changed to obtain the more focused main text.
+Companion evidence is in `artifacts/educational_personality_v4/`: use
+`cue_transfer/analysis/` for expression results and
+`archive_validation/analysis_selection.json` for the explicit archive-analysis
+selection. Raw requests, answers, provider error bodies, and credentials are
+excluded from the tracked paper package; local frozen input hashes retain the
+connection to the authorized source archive.

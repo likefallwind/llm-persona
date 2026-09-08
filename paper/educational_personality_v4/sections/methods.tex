@@ -64,7 +64,7 @@ MiniMax-M3, DeepSeek-V4-Pro, and GLM-5.3 each code every visible response using
 student context, the reference target, and original answer lines. Generator
 identity, role arm, repetition, and partition labels are withheld; output style
 may still reveal identity. Positive codes require existing nonempty evidence
-lines. Primary labels use the majority of three structurally valid codes;
+lines. Prospective labels are majorities of three structurally valid codes;
 traceability and agreement do not establish semantic ground truth. Repairs
 address completion or structure failures, never event labels or disagreement.
 Budget amendments, original failures, and missing-vote sensitivities are
@@ -150,3 +150,14 @@ assess dependence on measurement, configurations, training material, and errors;
 they do not establish human ground truth or causal control of ability. Their
 precise timing, retained coverage rules, and interpretation limits are given in
 Appendix~\ref{app:detailed-methods}.
+
+\paragraph{Retrospective archived-dialogue extension.}
+We also analyze 256 exact source groups with paired general scaffolding and
+explicit probing instructions, each limited to two sentences, from seven
+historical deployments. Five-fold source-held-out Jeffreys rates compare an
+instruction-only baseline with same-instruction or other-instruction model
+rates. Two provider-blocked codes remain missing among 10,752 requested codes;
+the two available votes agree on every affected event, identifying the majority
+for any third vote. This post-hoc amendment preserves the missing labels and
+adds three-coder analyses on 254 fully observed sources. Details and all
+comparisons appear in Appendix~\ref{app:archive-validation}.

@@ -1,0 +1,153 @@
+\section{Archived Dialogue: Identified Majorities and Instruction Transfer}
+\label{app:archive-validation}
+
+\paragraph{Sample and analysis chronology.}
+The input-only audit above defines 256 exact source groups, one dialogue per
+group, paired across MathTutorBench standard scaffolding and pedagogy tasks.
+Both instructions require at most two sentences. Scaffolding asks for useful,
+caring mathematics tutoring; pedagogy explicitly requests stepwise guidance,
+probing, and one question at a time. Seven historical deployments yield 3,584
+archived replies. GLM-5.2 and Doubao-2.0-Pro are distinct from the GLM-5.3 and
+Doubao-Lite configurations in the prospective study. Historical model aliases
+are not evidence of immutable weights. No original tutor gold utterance or
+human teaching-quality label is used as a behavioral target.
+
+The selection, three core events, grouped prediction, and paired instruction
+contrasts were fixed before new coding, after the prospective study's results
+were known. This is retrospective analysis of existing output, not prediction
+locked before those tutor replies were generated. Current MiniMax-M3,
+DeepSeek-V4-Pro, and GLM-5.3 code the visible answers using the same event rubric.
+
+\paragraph{Two absent codes and exact majority identification.}
+Three fixed passes produced 10,750 structurally valid codes of 10,752 requested.
+Two DeepSeek requests retained HTTP 400 errors. A disclosed post-limit diagnostic
+allowed exactly one identical-payload attempt per missing request, preserving
+all valid codes. Both returned the provider code \texttt{SensitiveContentDetected}.
+No input was rewritten, no alternative route was used, and no further attempts
+were made. The original complete-coding gate therefore failed.
+
+For each of the two affected replies, the other two coders agree on all eight
+events. With $n$ observed votes and $s$ positives, a three-vote majority lies in
+$[\mathbf{1}(s\geq2),\mathbf{1}(s+3-n\geq2)]$. These endpoints coincide for
+all sixteen affected events. All 28,672 response--event majorities are thus
+identified without imputing the missing coder labels. Three-coder unanimity
+remains unknown for those sixteen events. This amendment was specified after
+inspecting the two available votes; it is not a preregistered missing-data rule.
+The original failed runs, incomplete coverage, and separate identified-majority
+analysis are retained.
+
+\paragraph{Prediction and uncertainty.}
+Five folds are assigned by sorting source hashes under a fixed salt and taking
+index modulo five. Every model, instruction, and event from a source shares its
+fold. Training rates use $(s+0.5)/(n+1)$ without tuning. The instruction-only
+baseline pools models in the target instruction; the same-instruction model
+rate uses that model and instruction. The other-instruction rate uses the same
+model under the other instruction, excluding the entire target source fold.
+The latter predictor does not use target-instruction labels, but its comparison
+baseline does. This is not a wholly target-instruction-unseen evaluation.
+
+Losses average equally over models within each source, then over 256 sources.
+Table~\ref{tab:archive-gains} reports all twelve pre-specified comparisons.
+Ten thousand source bootstrap draws use seed 20260908 and fixed cross-fit
+probabilities. These descriptive intervals omit refitting uncertainty and do
+not fully capture dependence induced by shared training folds; no additional
+confirmatory p-values are claimed. Negative other-instruction gains can reflect
+a shift in overall action rates, without establishing a reversal of model
+rankings.
+
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{llrrr}
+\toprule
+Historical deployment & Instruction & Reveal (\%) & Elicit (\%) & Acknowledge (\%) \\
+\midrule
+DeepSeek-V4-Pro & Scaffolding & 37.50 & 62.50 & 3.91 \\
+DeepSeek-V4-Pro & Pedagogy & 5.47 & 93.36 & 1.17 \\
+Doubao-2.0-Pro & Scaffolding & 59.38 & 30.47 & 1.56 \\
+Doubao-2.0-Pro & Pedagogy & 1.95 & 98.83 & 1.95 \\
+GLM-5.2 & Scaffolding & 22.27 & 73.44 & 1.56 \\
+GLM-5.2 & Pedagogy & 5.86 & 94.14 & 1.56 \\
+MiniMax-M2.7 & Scaffolding & 86.33 & 12.11 & 0.78 \\
+MiniMax-M2.7 & Pedagogy & 13.28 & 95.31 & 0.78 \\
+MiniMax-M3 & Scaffolding & 76.95 & 33.20 & 0.78 \\
+MiniMax-M3 & Pedagogy & 9.77 & 89.84 & 1.17 \\
+Qwen3.5-4B & Scaffolding & 59.38 & 30.47 & 1.56 \\
+Qwen3.5-4B & Pedagogy & 5.47 & 93.36 & 1.56 \\
+Qwen3.8-27B & Scaffolding & 80.47 & 19.14 & 0.39 \\
+Qwen3.8-27B & Pedagogy & 7.03 & 93.75 & 1.56 \\
+\bottomrule
+\end{tabular}
+\caption{Archived event rates: 256 replies per historical deployment and instruction.
+Events may co-occur. Pedagogy specifies probing; scaffolding gives a general
+useful/caring instruction. These aliases do not denote the same complete panel
+as in the prospective experiment.}
+\label{tab:archive-rates}
+\end{table*}
+
+\begin{table*}[t]
+\centering\small
+\begin{tabular}{lllrrr}
+\toprule
+Target instruction & Event & Model rate from & Brier gain & Lower & Upper \\
+\midrule
+Pedagogy & Acknowledge & Same instruction & -0.00004 & -0.00007 & 0.00001 \\
+Pedagogy & Acknowledge & Other instruction & -0.00012 & -0.00022 & 0.00000 \\
+Pedagogy & Reveal & Same instruction & 0.00081 & 0.00013 & 0.00156 \\
+Pedagogy & Reveal & Other instruction & -0.32304 & -0.34579 & -0.29884 \\
+Pedagogy & Elicit & Same instruction & 0.00041 & -0.00006 & 0.00092 \\
+Pedagogy & Elicit & Other instruction & -0.36563 & -0.38669 & -0.34182 \\
+Scaffolding & Acknowledge & Same instruction & 0.00005 & -0.00009 & 0.00021 \\
+Scaffolding & Acknowledge & Other instruction & -0.00003 & -0.00007 & 0.00002 \\
+Scaffolding & Reveal & Same instruction & 0.04681 & 0.03834 & 0.05528 \\
+Scaffolding & Reveal & Other instruction & -0.27443 & -0.31452 & -0.23383 \\
+Scaffolding & Elicit & Same instruction & 0.04193 & 0.03385 & 0.05011 \\
+Scaffolding & Elicit & Other instruction & -0.32111 & -0.36034 & -0.28184 \\
+\bottomrule
+\end{tabular}
+\caption{All archived prediction comparisons. Positive gain means lower Brier
+loss than the target instruction-only baseline. Bounds are descriptive 95\%
+source-bootstrap intervals conditional on the cross-fit predictions.}
+\label{tab:archive-gains}
+\end{table*}
+
+\paragraph{Absolute errors, coding, and sensitivity.}
+For scaffolding, baseline/model Brier losses are 0.24025/0.19344 for revelation
+and 0.23462/0.19269 for elicitation; pedagogy gives 0.06504/0.06423 and
+0.05577/0.05537. Complete three-coder replies number 3,582. Positive agreement
+is 96.53--98.29\% for revelation, 97.61--98.06\% for elicitation, but only
+65.55--66.67\% for acknowledgement. The latter occurs in 27/1,792 scaffolding
+and 25/1,792 pedagogy replies. High overall agreement on this rare event does
+not establish accurate positive detection or absence of affect responsiveness.
+
+Excluding the two affected source groups removes all their models and both
+instructions, leaving 254 complete sources. Each coder and the majority panel
+are separately refitted using the same five-fold hash rule, now applied to
+254 sources. Scaffolding revelation gains across individual coders are
+0.04429--0.04645 and elicitation gains 0.03980--0.04068; majority gains are
+0.04650 and 0.04116. Pedagogy gains remain small and revelation/elicitation
+cross-instruction gains remain negative. These are post-hoc complete-source
+sensitivities. On the full majority panel, excluding each generator while
+retaining the original forecasts yields scaffolding gains of 0.03055--0.05485
+and 0.02716--0.04910; all corresponding conditional interval lower bounds are
+positive. This fixed-forecast exclusion is not a smaller-panel refit.
+
+All 21 paired instruction differences, joint action rates, absolute losses,
+source predictions, and sensitivity panels are retained in the accompanying
+analysis tables. The mostly two-utterance benchmark contexts and incompletely
+attested historical requests support a limited archived-dialogue extension,
+not classroom validation, a human personality taxonomy, or learning benefits.
+
+\paragraph{Full-source individual-coder bounds.}
+A final post-hoc check restores the full 256-source panel for individual-coder
+sensitivity without claiming to recover the absent labels. For DeepSeek, each
+primary event has two unknown votes; we refit forecasts under all four possible
+assignments. Since event predictions and Brier losses are separable, these
+ranges cover all 64 joint assignments of the six missing primary labels.
+MiniMax-M3 and GLM-5.3 have complete observed labels. Across all coders and
+assignments, scaffolding revelation gains range from 0.04476 to 0.04667 and
+elicitation gains from 0.04046 to 0.04153; their conditional interval lower
+bounds remain positive. All cross-instruction revelation/elicitation gains
+remain negative. Pedagogy revelation gains are only 0.00074--0.00079; elicitation
+ranges from -0.00034 to 0.00054 across coders and assignments. The latter is
+therefore not a uniformly positive coder-level result. Hypothetical votes are
+stored separately as sensitivity scenarios, never as observed codes.

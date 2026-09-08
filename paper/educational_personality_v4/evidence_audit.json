@@ -2,6 +2,11 @@
   "status": "specified local checks passed; not scientific completion",
   "checks": [
     {
+      "check": "six first-stage tables preserve previously audited values; all source hashes verified",
+      "bilingual_tables": 12,
+      "prior_audit_checks": 16
+    },
+    {
       "check": "cue_transfer frozen files",
       "count": 24
     },
@@ -16,10 +21,30 @@
     {
       "check": "figure sources and output hashes",
       "points": 12
+    },
+    {
+      "check": "all archived majorities independently enumerated from observed votes",
+      "events": 28672,
+      "events_with_absent_third_vote": 16
+    },
+    {
+      "check": "all twelve archived bilingual gain estimates and intervals",
+      "numbers": 36
+    },
+    {
+      "check": "all archived bilingual event rates",
+      "numbers": 42
+    },
+    {
+      "check": "full-source coder ranges equal all saved scenario extrema",
+      "sources": 256,
+      "comparisons": 36,
+      "eventwise_scenarios": 18
     }
   ],
   "scientific_quality_goal_complete": false,
-  "archive_behavior_validation_complete": false,
-  "audit_script_sha256": "eaada9ff6665d518ff836baecd4ed4ddd41e6afb6a154e141f90c7db69fcde17",
-  "review_scope": "new estimates and evidence hashes; not full independent manuscript review"
+  "archive_identified_majority_analysis_complete": true,
+  "archive_original_complete_coding_gate_passed": false,
+  "audit_script_sha256": "8a0d189ace25964ba3ef626ac1b41e2e41b149ef09271802cca5505eb3ed48e0",
+  "review_scope": "new estimates, evidence hashes, and observed-vote majority enumeration; not full independent manuscript review"
 }

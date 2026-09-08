@@ -1,0 +1,19 @@
+{
+  "status": "complete full-source individual-coder sensitivity bounds",
+  "sources": 256,
+  "judges": 3,
+  "events": 3,
+  "scalar_gain_comparisons": 36,
+  "eventwise_scenarios": 18,
+  "actual_missing_labels_imputed": false,
+  "hypothetical_scenarios_are_not_observed_data": true,
+  "new_api_calls": 0,
+  "interpretation": "All four possible missing-vote assignments per event are evaluated for DeepSeek; events have separable forecasts and losses, so these cover all 64 joint assignments for the six missing primary labels. Each forecast uses the unchanged full 256-source fold rule.",
+  "limits": "Post-hoc exact range over missing votes, conditional on observed labels and original fixed-crossfit interval method; not a missingness model or semantic validity proof.",
+  "input_hashes": {
+    "scripts/bound_archive_missing_coder_v4.py": "6995d91431e9de7df8ca249950ee548cf529a8aa2bcd3655c61f7b0862ee1645",
+    "artifacts/educational_personality_v4/archive_validation/measurement_diagnostics/transport_diagnostic/event_codes.csv": "02f005756caf91295724e35f9862845660ed7c66f07f085b4b1db7b95e5d770f",
+    "artifacts/educational_personality_v4/archive_validation/analysis_identified/identified_consensus.csv": "724f387e40d288b80c98089ca731c47c1007850aa16630c7c782ff95d6c3a752",
+    "scripts/analyze_archive_behavior_validation_v4.py": "2cb5701be9804bc72c2bd6dfa0f6079845c81e66ddb26333447d2c2d68310e53"
+  }
+}
