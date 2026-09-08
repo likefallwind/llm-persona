@@ -1,0 +1,17 @@
+{
+  "status": "post-result calibration diagnosis complete",
+  "new_api_calls": 0,
+  "new_human_annotations": 0,
+  "new_hypothesis_tests": 0,
+  "fitted_calibrators": 240,
+  "boundary_hits": 0,
+  "prediction_rows": 38400,
+  "quality_goal_complete": false,
+  "interpretation": "Target-arm calibration uses target-expression labels; it is not zero-shot transfer. Intervals condition on crossfit forecasts.",
+  "input_hashes": {
+    "artifacts/educational_personality_v4/cue_transfer/predictions.csv": "8669e131cb3c7501faec32fde06246ecbe6423431e44c496067a775a39e30291",
+    "artifacts/educational_personality_v4/cue_transfer/json_recovery/combined_diagnostics/consensus.csv": "8394514a4cfd0bb35e34359a1138b7434b5c4fbb4622c9d9a0af9e189303aa7f",
+    "research/79_cue_calibration_protocol_v4.md": "f330712af1fee54e128d72b1ea57db4910de52ec65ac7aa0ee887e858b46c327",
+    "scripts/diagnose_cue_calibration_v4.py": "0c97db9ecf22f42954a0f5c4e572fc4284d65166ad22108e82bde2cb9fbeb4da"
+  }
+}

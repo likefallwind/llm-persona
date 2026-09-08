@@ -2,7 +2,8 @@
 
 2026-09-08. This draft incorporates the completed cue-transfer extension while
 preserving the v3 manuscript and its first-stage evidence. It is not a submission
-readiness certificate. Archive-dialogue validation has not been executed.
+readiness certificate. Archive-dialogue coding was authorized and launched on 2026-09-08; completed
+behavioral validation remains pending.
 
 - [English reading PDF](build/working_draft_en.pdf)
 - [Chinese reading PDF](build/working_draft_zh.pdf)
@@ -24,8 +25,8 @@ The renderers preserve the pinned official ACL style and reuse the v3 build logi
 with v4 output paths. The figure receipt maps all 12 points to completed analysis
 tables. Build receipts record source and PDF hashes; they do not certify the science.
 
-At the reviewed checkpoint the reading PDFs have 30 English and 24 Chinese pages.
-The ACL-layout draft has 25 pages including references and appendices; the
+At the reviewed checkpoint the reading PDFs have 31 English and 24 Chinese pages.
+The ACL-layout draft has 26 pages including references and appendices; the
 conclusion is on page 9. Layout is inspectable, but the main text still needs
 compression against the eventual venue requirements. No venue-specific compliance
 claim is made. The source-specific old checks in v3 are not silently reused as a
@@ -34,3 +35,7 @@ quality verdict on this changed draft.
 The post-result diagnosis in research/78 is also integrated. Its eight targeted
 tests and all twelve comparisons against the unchanged transfer tables pass.
 It separates absolute loss from relative gain without fitting a new predictor.
+
+The source-held-out calibration check (research/79–80) is included with all
+methods, fitting parameters, and explicit target-label adaptation boundaries.
+Eleven targeted tests pass; no new API calls or human annotations are added.

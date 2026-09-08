@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-09-08T05:50:46.188434+00:00",
+  "built_at": "2026-09-08T06:05:08.168746+00:00",
   "status": "Anonymous ACL-layout PDF built; scientific and visual review recorded separately",
   "template_commit": "d5adc823ff0f80f98c80405ca0ab66c68e684409",
   "official_style_files_modified": false,
@@ -11,7 +11,7 @@
   "a4_page_size": true,
   "line_number_and_cross_references_stable": true,
   "latex_passes": 4,
-  "pages": 25,
+  "pages": 26,
   "overfull_warnings": [],
   "source_sha256": {
     "paper/educational_personality_v4/main.tex": "6c8ffc7f5593322c8092db3b2dc3f28cfb662ab0639f53ff0f7d9190cd787dd6",
@@ -20,10 +20,10 @@
     "paper/educational_personality_v4/sections/archive_scope.tex": "89cdadad9c5123c6d8110169f06ba797ccc9e6b44f56e83b54314175e96f3b76",
     "paper/educational_personality_v4/sections/conclusion.tex": "5becf83dc0bad854c38679dcbf3e9bba58bdf2be4743186b9ffdf52667f64646",
     "paper/educational_personality_v4/sections/confirmation_details.tex": "663aee18e21a264e0bc9907b3a299d5133ea3813b31315005df0e09ac005c856",
-    "paper/educational_personality_v4/sections/cue_results.tex": "e2b340aeadf8c9fed9ef044c2d30f8a936e60a09c985043a9098a9d4ae24f805",
-    "paper/educational_personality_v4/sections/cue_transfer_details.tex": "150a2b398cff605ef698839ae3d8b290f13fbccd0b9074e2fc3427da8717553c",
+    "paper/educational_personality_v4/sections/cue_results.tex": "18ae2cc03d29771a8b2469d95d453ea2a92937c40a6460c045e13447b4b17aaf",
+    "paper/educational_personality_v4/sections/cue_transfer_details.tex": "1bca5cde1f1343964280d3550f593bf0efbba94a991fc39307b5151eb8d80ef1",
     "paper/educational_personality_v4/sections/detailed_methods.tex": "ee543879f161744763a6537550d9ad57bdfd6af09bc1000e6c8f51b59e77db61",
-    "paper/educational_personality_v4/sections/discussion.tex": "04b054c291075dddb8a17b2371b9881f72bf15cbb8f0a8b8535fc9352e7f01ad",
+    "paper/educational_personality_v4/sections/discussion.tex": "67b5d59af360ac7abf28e28c10e71eb6fe8379861bd00b7ceb61d49cd931aa11",
     "paper/educational_personality_v4/sections/introduction.tex": "c04896518799faaf247806f793c9a6d7c0bd515d79cdf68e5a1a49a56a461de2",
     "paper/educational_personality_v4/sections/limitations.tex": "69cef663d20a655a967b1eef454ef556e152cd5d8ca98204376784e0dc0cae4b",
     "paper/educational_personality_v4/sections/materials_examples.tex": "3e06a911561ca2de5934428d46e72a966ab32c128dc97f5fc0d2517b4eed8567",
@@ -53,8 +53,8 @@
     "paper/educational_personality_v4/build/acl/main_acl.tex": "d13b67aa053af99a9107932b4eb21e46d3cddde59a0ef7d6ab2a6d468a529baf",
     "scripts/build_personality_acl_draft_v3.py": "3878cf1267428e2a82f4b205a6908290a8a681da588622423b49f39c2d9910b2"
   },
-  "pdf_sha256": "1765a602ade5c9d3996a271d67a258b73a4bde0a50a9d097c6cf6c637a705e22",
-  "v4_wrapper_sha256": "fe99f16fa7e06b9536c1ae27f27ca2cfb6cdbddc5bcb1729f646b8c0d1f8f02c",
-  "checkpoint": "cue-transfer integrated; archive behavior validation unexecuted",
+  "pdf_sha256": "c9246b24ff79743143e29d800e32742b7d1e1bae91d34eb4655994c247254450",
+  "v4_wrapper_sha256": "b5bf2ee9a846ea31ba862d5a549558b0d4a876975831388b4ad0173cd131ca6d",
+  "checkpoint": "cue-transfer integrated; completed archive behavior validation pending",
   "scientific_quality_goal_complete": false
 }

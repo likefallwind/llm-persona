@@ -57,8 +57,8 @@ not attest all historic data, constants, client behavior, or deployed weights.
 A separate protocol selects 256 eligible exact source groups with paired
 scaffolding/pedagogy replies from seven historical model aliases: 3,584 existing
 answers, requiring 10,752 automated codes. Source-grouped cross-fitting and
-paired instruction effects are specified before coding. This validation has
-not been executed at the draft checkpoint; no natural-dialogue behavior result
+paired instruction effects are specified before coding. Coding was launched on 8 September 2026 after authorization; completed
+validation is pending at this checkpoint, and no natural-dialogue behavior result
 is claimed. The counts in this section describe recovered data and a planned
 sample, not additional completed experimental evidence.
 
@@ -118,3 +118,62 @@ replications. New and contemporary replies need not share random seeds for
 the accounting identity; their pairing does not represent a real learner's
 trajectory. The two expression arms' different absolute-loss changes and the
 finite cue bank continue to limit a single-mechanism interpretation.
+
+
+\section{Source-Held-Out Calibration Diagnosis}
+\label{app:cue-calibration}
+
+After inspecting the primary results and absolute-loss diagnostic, we specify a
+separate acknowledgement-only check. The domain and conditional predictors
+receive identical calibration procedures. The identity map retains original
+probabilities. Shared logistic calibration fits $\sigma(a+b\operatorname{logit}(p))$
+across models; model-specific calibration fits one such map per deployment.
+We clip input probabilities to $[10^{-6},1-10^{-6}]$ for logistic maps, minimize
+the summed binomial negative log likelihood plus
+$\tfrac12[a^2+(b-1)^2]$, and fix $a\in[-10,10]$, $b\in[0,5]$ without tuning.
+All 240 fitted maps converge without reaching these bounds.
+
+Each domain's eight source families are hash-ordered and assigned cyclically
+to four folds. Every model, state, repetition, and expression for a source
+shares its fold. Each fit uses 24 sources and predicts eight held-out sources.
+The original-wording training regime only uses contemporary original-wording
+labels; the target-arm regime uses labels from the target expression. The
+latter evaluates adaptation to source-held-out inputs, not zero-shot expression
+transfer. Source separation does not guarantee phrase separation in this nested
+material bank. Tests verify that held-out source labels cannot change their
+predictions and target-arm labels cannot affect original-wording calibration.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{llrrr}
+\toprule
+Training arm & Map & Original & Explicit & Implicit\\
+\midrule
+None & Identity & .012483 & -.003661 & -.006277\\
+Original & Shared logistic & .012130 & -.002864 & -.005871\\
+Original & Per-model logistic & .005646 & -.000846 & -.003864\\
+Target & Shared logistic & --- & -.005239 & -.010456\\
+Target & Per-model logistic & --- & -.003534 & -.008231\\
+\bottomrule
+\end{tabular}
+\caption{Post-result acknowledgement Brier gains: calibrated domain loss minus
+calibrated conditional loss, with the same map class applied to both. Original
+means contemporary original wording. Target-arm calibration uses target labels
+from other sources. Negative estimates do not all have intervals excluding zero.}
+\end{table}
+
+Under target-arm per-model calibration, explicit conditional loss improves from
+0.144501 to 0.132657, while domain loss improves from 0.140840 to 0.129123.
+Implicit conditional loss improves from 0.155411 to 0.133293, while domain loss
+improves from 0.149134 to 0.125062. Adaptation can therefore improve absolute
+prediction without restoring the old interaction's incremental advantage.
+Per-model calibration can itself absorb model-dependent cue responses, so
+successful baseline adaptation is not evidence of their absence.
+
+All absolute losses, parameters, source predictions, and domain-stratified
+source bootstrap intervals are retained. The 10,000 draws use seed 20260908;
+intervals condition on cross-fitted forecasts without refitting each bootstrap
+or accounting for the full post-result selection history. There are no new
+hypothesis tests. These two calibration families constrain a specific
+alternative explanation; they do not exclude nonlinear maps, other features,
+training objectives, or larger adaptation samples.

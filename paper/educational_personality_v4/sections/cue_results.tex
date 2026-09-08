@@ -74,6 +74,11 @@ less than 0.000003 to either gain change: the two predictors have nearly identic
 mean probabilities. The remaining change covaries with their differing
 cell-level predictions. This descriptive accounting does not rule out richer
 calibration or semantic explanations (Appendix~\ref{app:cue-diagnosis}).
+A separate source-held-out, post-result check applies shared or model-specific
+logistic calibration equally to both forecasts. None of the tested schemes
+restores a positive new-expression incremental point estimate, although absolute
+loss can improve and some gain intervals include zero
+(Appendix~\ref{app:cue-calibration}).
 
 \paragraph{Peer-context control.}
 Keeping the current student explicitly calm, changing a peer's quote yields

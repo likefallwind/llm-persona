@@ -19,7 +19,7 @@
     }
   ],
   "scientific_quality_goal_complete": false,
-  "archive_behavior_validation_executed": false,
-  "audit_script_sha256": "408bff28e5dd401881fd4383788135b24a863a3aab011c7ad141ca471fd12459",
+  "archive_behavior_validation_complete": false,
+  "audit_script_sha256": "eaada9ff6665d518ff836baecd4ed4ddd41e6afb6a154e141f90c7db69fcde17",
   "review_scope": "new estimates and evidence hashes; not full independent manuscript review"
 }

@@ -399,14 +399,17 @@ conditional prediction error. An exact decomposition shows that overall acknowle
 shifts contribute less than 0.000003 to either gain change: the two predictors have nearly identical
 mean probabilities. The remaining change covaries with their differing cell-level predictions. This
 descriptive accounting does not rule out richer calibration or semantic explanations (Appendix H).
+A separate source-held-out, post-result check applies shared or model-specific logistic calibration
+equally to both forecasts. None of the tested schemes restores a positive new-expression incremental
+point estimate, although absolute loss can improve and some gain intervals include zero (Appendix I).
 
-Peer-context control. Keeping the current student explicitly calm, changing a peer’s quote yields
-acknowledgement-rate changes of +30.47, +25.00, +26.56, +23.44, and -4.69 percentage points for
-M2.7, M3, DeepSeek, GLM, and Doubao, respectively. The first four source intervals exclude zero;
 
 
                                                                       8
-Doubao’s includes it. These are secondary descriptive contrasts. One deterministically selected
+Peer-context control. Keeping the current student explicitly calm, changing a peer’s quote yields
+acknowledgement-rate changes of +30.47, +25.00, +26.56, +23.44, and -4.69 percentage points for
+M2.7, M3, DeepSeek, GLM, and Doubao, respectively. The first four source intervals exclude zero;
+Doubao’s includes it. These are secondary descriptive contrasts. One deterministically selected
 0-to-1 example per model helps interpret the event: the first four models explicitly affirm the current
 student’s calmness, sometimes correctly distinguishing the peer’s frustration. The event-rate contrast
 therefore cannot itself establish misattribution. Outcome-selected examples do not estimate its
@@ -449,13 +452,13 @@ ratio.
     The six confirmation budget exceptions do not determine the primary findings. For either binary
 value of each affected canonical GLM code, all six primary estimates and adjusted p-values are
 exactly unchanged: the other two coders agree on the three primary events. This fixed-prediction
-enumeration addresses those missing codes only. It does not validate coder behavior across the
-Gateway interruption. Complete secondary results and sensitivity ranges are retained in Appendix E.
-
 
 
                                                   9
-Mathematics and content screening. The mathematics subset (eight sources, 320 responses)
+enumeration addresses those missing codes only. It does not validate coder behavior across the
+Gateway interruption. Complete secondary results and sensitivity ranges are retained in Appendix E.
+
+Mathematics and content screening. The mathematics subset (eight sources, 320 responses)
 retains default gains of 0.11624, 0.13892, and 0.01992; student-state increments are 0.00062, 0.00030,
 and 0.01380 for revelation, elicitation, and acknowledgement. All 2,584 content reviews are valid
 after the disclosed structural repairs. Excluding five-model slots flagged by either reviewer retains
@@ -499,13 +502,13 @@ a deployment’s behavior.
 
 Increment over existing personality and tutoring research. Situated personality probes
 and behavioral profiles already exist (Lee et al., 2025; Liu et al., 2026), as do comparisons of
-tutoring-action mixtures and learned tutor-persona variation (Kucheria et al., 2025; Lee et al., 2026).
+
+
+                                                  10
+tutoring-action mixtures and learned tutor-persona variation (Kucheria et al., 2025; Lee et al., 2026).
 The contribution here is the joint observation, within a linked experimental design, of default transfer,
 expression-limited conditional transfer, and convergence under explicit instructions. The unchanged
-
-
-                                                   10
-forecasts and contemporary control make the boundary more informative than a difference in output
+forecasts and contemporary control make the boundary more informative than a difference in output
 frequencies alone. Neither the number of API calls nor the use of automated coders constitutes the
 substantive novelty. We do not establish education-specific traits, internal persona representations,
 or superior teaching outcomes.
@@ -514,9 +517,9 @@ What the archive currently contributes. The archive supplies breadth and exposes
 analysis units and historical provenance matter. Tutor, grading, and test-taking outputs cannot
 be pooled as a million independent observations of a tutor’s personality. Local recovery now links
 task inputs and response records for six dialogue settings, but reconstructing them does not attest
-every historic request. A separately frozen natural-dialogue validation has not yet been executed and
-supplies no behavioral evidence in this draft. Its absence leaves generalization from the constructed
-student messages to archived dialogue unresolved.
+every historic request. A separately frozen natural-dialogue validation awaits completed coding and
+analysis and supplies no behavioral evidence in this draft. Its absence leaves generalization from the
+constructed student messages to archived dialogue unresolved.
 
 
 6    Conclusion
@@ -549,13 +552,11 @@ confirmation target. The first stage uses one calm/frustrated wording pair. The 
 fixed pairs in each new expression arm on reused problems; sources and phrase pairs are nested, and
 the implicit cues bundle affect-related expression with other information. Neither stage samples a
 population of student expressions. The extension was designed after the original results, and its
-negative transfer finding does not identify which aspect of the new inputs caused the degradation.
+
+                                                   11
+negative transfer finding does not identify which aspect of the new inputs caused the degradation.
 References equalize solution availability but cannot eliminate differences in understanding or instruc-
-
-
-
-                                                  11
-tion following. The source split prevents the specified problem families from crossing partitions; it
+tion following. The source split prevents the specified problem families from crossing partitions; it
 does not establish novelty relative to model pretraining.
 
 Measurement and deployment. Automated content review and three answer coders avoid
@@ -602,35 +603,28 @@ Jaewook Lee, Alexander Scarlatos, Simon Woodhead, and Andrew Lan. Letting tutor 
 Seungbeen Lee, Seungwon Lim, Seungju Han, Giyeong Oh, Hyungjoo Chae, Jiwan Chung, Minju
   Kim, Beong-woo Kwak, Yeonsoo Lee, Dongha Lee, Jinyoung Yeo, and Youngjae Yu. Do LLMs
   have distinct and consistent personality? TRAIT: Personality testset designed for LLMs with
-  psychometrics. In Findings of the Association for Computational Linguistics: NAACL 2025, pages
-
 
                                                     12
-  8412–8452, 2025. doi: 10.18653/v1/2025.findings-naacl.469. URL https://aclanthology.org/
+  psychometrics. In Findings of the Association for Computational Linguistics: NAACL 2025, pages
+  8412–8452, 2025. doi: 10.18653/v1/2025.findings-naacl.469. URL https://aclanthology.org/
   2025.findings-naacl.469/.
-
 Haoze Liu, Run Liu, Haiying Xu, Jiahui Han, Siyuan Fang, Siyu Yan, Huiqi Deng, Guanchu Wang,
   and Na Zou. Your LLM, your style: Behavioral mode axes for LLM behavioral control, 2026. URL
   https://arxiv.org/abs/2608.10703.
-
 Jakub Macina, Nico Daheim, Ido Hakimi, Manu Kapur, Iryna Gurevych, and Mrinmaya Sachan.
   MathTutorBench: A benchmark for measuring open-ended pedagogical capabilities of LLM tutors.
   In Proceedings of EMNLP 2025, pages 204–221, 2025. doi: 10.18653/v1/2025.emnlp-main.11.
   URL https://aclanthology.org/2025.emnlp-main.11/.
-
 Kaushal Kumar Maurya, Kv Aditya Srivatsa, Kseniia Petukhova, and Ekaterina Kochmar. Unifying
  AI tutor evaluation: An evaluation taxonomy for pedagogical ability assessment of LLM-powered
  AI tutors. In Proceedings of NAACL-HLT 2025, pages 1234–1251, 2025. doi: 10.18653/v1/2025.
  naacl-long.57. URL https://aclanthology.org/2025.naacl-long.57/.
-
 Donya Rooein, Sankalan Pal Chowdhury, Mariia Eremeeva, Yuan Qin, Debora Nozza, Mrinmaya
  Sachan, and Dirk Hovy. PATS: Personality-aware teaching strategies with large language model
  tutors. In Findings of the Association for Computational Linguistics: EACL 2026, pages 4186–4211,
  2026. URL https://aclanthology.org/2026.findings-eacl.219/.
-
 Ruikang Zhang, Shuo Wang, and Qi Su. From representations to behaviors: Exploring the person–
  situation–behavior triad in LLMs, 2026. URL https://arxiv.org/abs/2607.26853.
-
 
 
 A     Archive Scope and Historical Provenance
@@ -655,7 +649,6 @@ generation timestamps, or finish reasons. All contain usage metadata. Of the 122
 contain generation parameters and 114 contain a judge-prompt hash; none contains the inspected
 generation-prompt hash fields. A judge-prompt hash is not evidence of the tutor’s generation prompt,
 and later scoring summaries do not necessarily attest to the original generation parameters.
-
 
                                                   13
                          Current task role                 Settings   Records
@@ -1442,11 +1435,11 @@ preserving response-text records. A seven-model standard-variant panel contains 
 Reviewed historical adapter methods support reconstruction consistency, but do not attest all historic
 data, constants, client behavior, or deployed weights.
     A separate protocol selects 256 eligible exact source groups with paired scaffolding/pedagogy
-replies from seven historical model aliases: 3,584 existing answers, requiring 10,752 automated
-codes. Source-grouped cross-fitting and paired instruction effects are specified before coding. This
-validation has not been executed at the draft checkpoint; no natural-dialogue behavior result is
-claimed. The counts in this section describe recovered data and a planned sample, not additional
-completed experimental evidence.
+replies from seven historical model aliases: 3,584 existing answers, requiring 10,752 automated codes.
+Source-grouped cross-fitting and paired instruction effects are specified before coding. Coding was
+launched on 8 September 2026 after authorization; completed validation is pending at this checkpoint,
+and no natural-dialogue behavior result is claimed. The counts in this section describe recovered
+data and a planned sample, not additional completed experimental evidence.
 
 
 H     Post-Result Diagnosis of the Transfer Contrast
@@ -1462,7 +1455,7 @@ own-student affect assignments differ.
    For baseline probability b, conditional probability e, contemporary label y0 , and new-expression
 label y1 , let d = e − b and z = y1 − y0 . The change in Brier-loss gain has the finite-panel identity
 
-                              ∆G = 2 E[zd] = 2 E[z] E[d] + 2 Cov(z, d).                            (1)
+                              ∆G = 2 E[zd] = 2 E[z] E[d] + 2 Cov(z, d).                              (1)
 
 Expectations and covariance use equally weighted observed cells, not a causal model. For acknowl-
 edgement, mean conditional-minus-domain probability is 0.000009812. The overall-rate terms are
@@ -1471,12 +1464,12 @@ total gain changes of -0.016144 and -0.018761. A common prevalence shift alone t
 account for this relative contrast. This does not evaluate the generalization of any recalibrated
 predictor or exclude model/cue-specific recalibration.
 
-                 Deployment             Frozen cue gap   Original   Explicit   Implicit
-                 MiniMax-M2.7                    .5417     .3516      .4375      .4531
-                 MiniMax-M3                      .3597     .3281      .7656      .7500
-                 DeepSeek-V4-Pro                 .2625     .1875      .4844      .5078
-                 Doubao-Seed-2.0-Lite            .7455     .7500      .7422      .6484
-                 GLM-5.3                         .6788     .6094      .6406      .8438
+                 Deployment              Frozen cue gap   Original   Explicit   Implicit
+                 MiniMax-M2.7                     .5417      .3516     .4375      .4531
+                 MiniMax-M3                       .3597      .3281     .7656      .7500
+                 DeepSeek-V4-Pro                  .2625      .1875     .4844      .5078
+                 Doubao-Seed-2.0-Lite             .7455      .7500     .7422      .6484
+                 GLM-5.3                          .6788      .6094     .6406      .8438
 
 Table 11: Acknowledgement-rate gaps: frustrated pole minus calm pole, averaged across matched
 problems, work states, and requests. The frozen conditional probability gap is identical across
@@ -1494,7 +1487,52 @@ learner’s trajectory. The two expression arms’ different absolute-loss chang
 continue to limit a single-mechanism interpretation.
 
 
+I   Source-Held-Out Calibration Diagnosis
+After inspecting the primary results and absolute-loss diagnostic, we specify a separate
+acknowledgement-only check. The domain and conditional predictors receive identical cali-
+bration procedures. The identity map retains original probabilities. Shared logistic calibration fits
+σ(a + b logit(p)) across models; model-specific calibration fits one such map per deployment. We
+clip input probabilities to [10−6 , 1 − 10−6 ] for logistic maps, minimize the summed binomial negative
+log likelihood plus 12 [a2 + (b − 1)2 ], and fix a ∈ [−10, 10], b ∈ [0, 5] without tuning. All 240 fitted
+maps converge without reaching these bounds.
+    Each domain’s eight source families are hash-ordered and assigned cyclically to four folds. Every
+model, state, repetition, and expression for a source shares its fold. Each fit uses 24 sources and
+predicts eight held-out sources. The original-wording training regime only uses contemporary original-
+wording labels; the target-arm regime uses labels from the target expression. The latter evaluates
+adaptation to source-held-out inputs, not zero-shot expression transfer. Source separation does not
 
 
-                                                 30
+                                                   30
+guarantee phrase separation in this nested material bank. Tests verify that held-out source labels
+cannot change their predictions and target-arm labels cannot affect original-wording calibration.
+
+                  Training arm   Map                  Original   Explicit   Implicit
+                  None           Identity             .012483    -.003661   -.006277
+                  Original       Shared logistic      .012130    -.002864   -.005871
+                  Original       Per-model logistic   .005646    -.000846   -.003864
+                  Target         Shared logistic           —     -.005239   -.010456
+                  Target         Per-model logistic        —     -.003534   -.008231
+
+Table 12: Post-result acknowledgement Brier gains: calibrated domain loss minus calibrated condi-
+tional loss, with the same map class applied to both. Original means contemporary original wording.
+Target-arm calibration uses target labels from other sources. Negative estimates do not all have
+intervals excluding zero.
+
+    Under target-arm per-model calibration, explicit conditional loss improves from 0.144501 to
+0.132657, while domain loss improves from 0.140840 to 0.129123. Implicit conditional loss improves
+from 0.155411 to 0.133293, while domain loss improves from 0.149134 to 0.125062. Adaptation can
+therefore improve absolute prediction without restoring the old interaction’s incremental advantage.
+Per-model calibration can itself absorb model-dependent cue responses, so successful baseline
+adaptation is not evidence of their absence.
+    All absolute losses, parameters, source predictions, and domain-stratified source bootstrap
+intervals are retained. The 10,000 draws use seed 20260908; intervals condition on cross-fitted
+forecasts without refitting each bootstrap or accounting for the full post-result selection history.
+There are no new hypothesis tests. These two calibration families constrain a specific alternative
+explanation; they do not exclude nonlinear maps, other features, training objectives, or larger
+adaptation samples.
+
+
+
+
+                                                 31
 

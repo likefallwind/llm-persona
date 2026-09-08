@@ -54,11 +54,11 @@ def main():
         assert report['scientific_quality_goal_complete'] is False
         assert report['v4_wrapper_sha256'] == sha(ROOT / 'scripts/build_personality_draft_v4.py')
     appendix_text = ' '.join((PAPER / 'sections/cue_transfer_details.tex').read_text().split())
-    assert 'has not been executed' in appendix_text
-    assert '尚未执行' in chinese
+    assert 'completed validation is pending' in appendix_text
+    assert '尚无完整验证结果' in chinese
     report = {'status': 'specified local checks passed; not scientific completion',
               'checks': checks, 'scientific_quality_goal_complete': False,
-              'archive_behavior_validation_executed': False,
+              'archive_behavior_validation_complete': False,
               'audit_script_sha256': sha(Path(__file__)),
               'review_scope': 'new estimates and evidence hashes; not full independent manuscript review'}
     (PAPER / 'evidence_audit.json').write_text(json.dumps(report, indent=2) + '\n')

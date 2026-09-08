@@ -353,36 +353,37 @@
 490   95.51% for acknowledgement.                                    more than affect wording alone.                           514
 
 491       Frozen default profiles retain substantial gains
-492    under both new expression arms (Table 2). In con-
                                                                     Relative advantage is distinct from absolute ac-           515
-493    trast, the acknowledgement state profile does not re-
+492    under both new expression arms (Table 2). In con-
                                                                     curacy. A post-result diagnostic separates the             516
-494    tain its incremental gain: -0.00366 for explicit syn-
+493    trast, the acknowledgement state profile does not re-
                                                                     two expression arms. Under explicit synonyms, the          517
-495    onyms and -0.00628 for implicit cues. The contem-
+494    tain its incremental gain: -0.00366 for explicit syn-
                                                                     conditional acknowledgement Brier loss slightly            518
-496    porary original-wording gain is +0.01248 [0.00888,
+495    onyms and -0.00628 for implicit cues. The contem-
                                                                     improves from 0.145806 to 0.144501, but the                519
-497    0.01624]. Paired new-minus-contemporary gain
+496    porary original-wording gain is +0.01248 [0.00888,
                                                                     domain-profile baseline improves more, from                520
-498    differences are -0.01614 [-0.02254, -0.00990] and
+497    0.01624]. Paired new-minus-contemporary gain
                                                                     0.158289 to 0.140840. Under implicit cues, condi-          521
-499   -0.01876 [-0.02384, -0.01358], respectively. These
+498    differences are -0.01614 [-0.02254, -0.00990] and
                                                                     tional loss instead rises to 0.155411 while baseline       522
-500    secondary paired contrasts weaken a simple expla-
+499   -0.01876 [-0.02384, -0.01358], respectively. These
                                                                     loss falls to 0.149134. Thus both arms lose incre-         523
-501    nation in which all profiles cease working across
+500    secondary paired contrasts weaken a simple expla-
                                                                     mental advantage, but only the latter has worse            524
-502    deployments at the later observation time. Figure 2
+501    nation in which all profiles cease working across
                                                                     absolute conditional prediction error. An exact de-        525
-503    separates the two transfer tests.
+502    deployments at the later observation time. Figure 2
                                                                     composition shows that overall acknowledgement-            526
-504      All three individual-coder panels have positive            rate shifts contribute less than 0.000003 to either        527
-505   contemporary and negative new-expression ac-                  gain change: the two predictors have nearly iden-          528
-506   knowledgement state-gain estimates. Both new-                 tical mean probabilities. The remaining change             529
-507   expression point estimates also remain negative in            covaries with their differing cell-level predictions.      530
-508   all five generator-deletion panels; some intervals            This descriptive accounting does not rule out richer       531
-509   include zero. These are sensitivities of the same             calibration or semantic explanations (Appendix H).         532
+503    separates the two transfer tests.
+                                                                    rate shifts contribute less than 0.000003 to either        527
+504      All three individual-coder panels have positive            gain change: the two predictors have nearly iden-          528
+505   contemporary and negative new-expression ac-                  tical mean probabilities. The remaining change             529
+506   knowledgement state-gain estimates. Both new-                 covaries with their differing cell-level predictions.      530
+507   expression point estimates also remain negative in            This descriptive accounting does not rule out richer       531
+508   all five generator-deletion panels; some intervals            calibration or semantic explanations (Appendix H).         532
+509   include zero. These are sensitivities of the same             A separate source-held-out, post-result check ap-          533
 
 
                                                                 6
@@ -429,396 +430,393 @@
       intervals. Horizontal scales differ by panel.
 
 
-533   Peer-context control. Keeping the current stu-                             in all 128 ASK responses. Revelation falls to zero                 554
-534   dent explicitly calm, changing a peer’s quote yields                       for DeepSeek, Doubao, and GLM, but remains in                      555
-535   acknowledgement-rate changes of +30.47, +25.00,                            9/128 M2.7 and 4/128 M3 responses. EXPLAIN                         556
-536   +26.56, +23.44, and -4.69 percentage points for                            instead requires a solution and final answer, while                557
-537   M2.7, M3, DeepSeek, GLM, and Doubao, respec-                               explicitly permitting follow-up reasoning or ques-                 558
-538   tively. The first four source intervals exclude zero;                      tions. Every deployment reveals the answer in ev-                  559
-539   Doubao’s includes it. These are secondary descrip-                         ery EXPLAIN response.                                              560
-540   tive contrasts. One deterministically selected 0-to-1                         Convergence on the requested action does not                    561
-541   example per model helps interpret the event: the                           eliminate all observed differences. Under EX-                      562
-542   first four models explicitly affirm the current stu-                       PLAIN, elicitation occurs in 62.5% of GLM and                      563
-543   dent’s calmness, sometimes correctly distinguish-                          45.3% of M3 responses, compared with 1.6–5.5%                      564
-544   ing the peer’s frustration. The event-rate con-                            for the other three deployments. Since all these                   565
-545   trast therefore cannot itself establish misattribu-                        responses reveal the answer, those rates also de-                  566
-546   tion. Outcome-selected examples do not estimate                            scribe joint revelation and elicitation. This permit-              567
-547   its prevalence.                                                            ted behavior is not an instruction violation, and                  568
-                                                                                 the event codes do not establish its temporal order.               569
-548   4.4   Instructions Converge on Demanded                                    A single answer-versus-question axis would hide                    570
-549         Actions (RQ3)                                                        it. Matched rates and paired prompt changes are                    571
-
-550   The matched prompt comparison uses 16 sources                              reported in Appendix E.                                            572
-
-551   and 128 answers per deployment per arm. ASK                                  Neutral role paraphrases place a further limit                   573
-552   requires eliciting a next step without stating the                         on stable-type interpretations. For GLM, neutral                   574
-553   final answer. All five deployments elicit reasoning                        B raises both revelation and acknowledgement                       575
+534   plies shared or model-specific logistic calibration                        4.4        Instructions Converge on Demanded                       555
+535   equally to both forecasts. None of the tested                                         Actions (RQ3)                                           556
+536   schemes restores a positive new-expression incre-
+                                                                                 The matched prompt comparison uses 16 sources                      557
+537   mental point estimate, although absolute loss can
+                                                                                 and 128 answers per deployment per arm. ASK                        558
+538   improve and some gain intervals include zero (Ap-
+                                                                                 requires eliciting a next step without stating the                 559
+539   pendix I).
+                                                                                 final answer. All five deployments elicit reasoning                560
+                                                                                 in all 128 ASK responses. Revelation falls to zero                 561
+540   Peer-context control. Keeping the current stu-                             for DeepSeek, Doubao, and GLM, but remains in                      562
+541   dent explicitly calm, changing a peer’s quote yields                       9/128 M2.7 and 4/128 M3 responses. EXPLAIN                         563
+542   acknowledgement-rate changes of +30.47, +25.00,                            instead requires a solution and final answer, while                564
+543   +26.56, +23.44, and -4.69 percentage points for                            explicitly permitting follow-up reasoning or ques-                 565
+544   M2.7, M3, DeepSeek, GLM, and Doubao, respec-                               tions. Every deployment reveals the answer in ev-                  566
+545   tively. The first four source intervals exclude zero;                      ery EXPLAIN response.                                              567
+546   Doubao’s includes it. These are secondary descrip-                            Convergence on the requested action does not                    568
+547   tive contrasts. One deterministically selected 0-to-1                      eliminate all observed differences. Under EX-                      569
+548   example per model helps interpret the event: the                           PLAIN, elicitation occurs in 62.5% of GLM and                      570
+549   first four models explicitly affirm the current stu-                       45.3% of M3 responses, compared with 1.6–5.5%                      571
+550   dent’s calmness, sometimes correctly distinguish-                          for the other three deployments. Since all these                   572
+551   ing the peer’s frustration. The event-rate con-                            responses reveal the answer, those rates also de-                  573
+552   trast therefore cannot itself establish misattribu-                        scribe joint revelation and elicitation. This permit-              574
+553   tion. Outcome-selected examples do not estimate                            ted behavior is not an instruction violation, and                  575
+554   its prevalence.                                                            the event codes do not establish its temporal order.               576
 
 
                                                                             7
-576   by 15.6 percentage points relative to the matched          0.00030, and 0.01380 for revelation, elicitation,        626
-577   canonical arm. These are observed shifts, not ad-          and acknowledgement. All 2,584 content reviews           627
-578   ditional primary tests. No neutral comparison es-          are valid after the disclosed structural repairs. Ex-    628
-579   tablishes population equivalence within ±0.10 un-          cluding five-model slots flagged by either reviewer      629
-580   der the disclosed bounded-source check: with 16            retains 1,065 responses on all 32 sources. Default       630
-581   sources its simultaneous half-width is 0.9414. This        gains are 0.09535, 0.13179, and 0.02068; condi-          631
-582   lack of precision cannot be used as evidence for           tional acknowledgement gains 0.00989 [0.00510,           632
-583   either universal stability or universal wording sen-       0.01472], while the other two conditional inter-         633
-584   sitivity.                                                  vals span zero. The unanimous-error screen re-           634
-                                                                 tains 1,255 responses and the same qualitative pat-      635
-585   4.5   Dependence on Measurement and Model                  tern. No uncertainty verdicts occur, so the error-       636
-586         Composition                                          or-uncertainty screen is identical to the either-error   637
+577   A single answer-versus-question axis would hide            ranges are retained in Appendix E.                       628
+578   it. Matched rates and paired prompt changes are
+                                                                 Mathematics and content screening. The math-             629
+579   reported in Appendix E.
+                                                                 ematics subset (eight sources, 320 responses)            630
+580      Neutral role paraphrases place a further limit
+                                                                 retains default gains of 0.11624, 0.13892, and           631
+581   on stable-type interpretations. For GLM, neutral
+                                                                 0.01992; student-state increments are 0.00062,           632
+582   B raises both revelation and acknowledgement
+                                                                 0.00030, and 0.01380 for revelation, elicitation,        633
+583   by 15.6 percentage points relative to the matched
+                                                                 and acknowledgement. All 2,584 content reviews           634
+584   canonical arm. These are observed shifts, not ad-
+                                                                 are valid after the disclosed structural repairs. Ex-    635
+585   ditional primary tests. No neutral comparison es-
+                                                                 cluding five-model slots flagged by either reviewer      636
+586   tablishes population equivalence within ±0.10 un-
+                                                                 retains 1,065 responses on all 32 sources. Default       637
+587   der the disclosed bounded-source check: with 16
+                                                                 gains are 0.09535, 0.13179, and 0.02068; condi-          638
+588   sources its simultaneous half-width is 0.9414. This
+                                                                 tional acknowledgement gains 0.00989 [0.00510,           639
+589   lack of precision cannot be used as evidence for
+                                                                 0.01472], while the other two conditional inter-         640
+590   either universal stability or universal wording sen-
+                                                                 vals span zero. The unanimous-error screen re-           641
+591   sitivity.
+                                                                 tains 1,255 responses and the same qualitative pat-      642
+592   4.5   Dependence on Measurement and Model                  tern. No uncertainty verdicts occur, so the error-       643
+593         Composition                                          or-uncertainty screen is identical to the either-error   644
 
-587   Eight coding panels preserve the broad sepa-               screen (Appendix E.5).                                   638
+594   Eight coding panels preserve the broad sepa-               screen (Appendix E.5).                                   645
 
-588   ration between default and student-state incre-               These are descriptive selected-subset estimates,      639
-589   ments. Default-gain estimates range from 0.08571–          with no new tests. Both reviewers match all twelve       640
-590   0.09562 for revelation, 0.12442–0.13111 for elici-         diagnostic controls, yet agree on an error in only 5     641
-591   tation, and 0.01699–0.02017 for acknowledgement.           of the 49 natural responses flagged by either (pos-      642
-592   Conditional acknowledgement gains range from               itive agreement 18.5%). Screening thus tests sen-        643
-593   0.00697–0.01052; conditional revelation and elic-          sitivity to these judgments; it neither guarantees       644
-594   itation remain near zero. These reuse the same             correct remaining answers nor causally separates         645
-595   outputs and are sensitivity estimates, not indepen-        behavior from ability.                                   646
-596   dent replications.
-597      Effect strength depends materially on which de-         5   Discussion                                           647
-598   ployments are included. Deleting GLM reduces
-599   default gains to 0.00394 for revelation and 0.03080        Defaults and state responses require different           648
+595   ration between default and student-state incre-               These are descriptive selected-subset estimates,      646
 
-600   for elicitation. Deleting M2.7 reduces the ac-             transfer claims. The evidence supports recur-            649
+596   ments. Default-gain estimates range from 0.08571–          with no new tests. Both reviewers match all twelve       647
 
-601   knowledgement default gain to 0.00175, with an             ring educational behavior in these deployments.          650
+597   0.09562 for revelation, 0.12442–0.13111 for elici-         diagnostic controls, yet agree on an error in only 5     648
 
-602   interval crossing zero [-0.00174, 0.00547]. The            Default action profiles learned on one source set        651
+598   tation, and 0.01699–0.02017 for acknowledgement.           of the 49 natural responses flagged by either (pos-      649
 
-603   full-panel findings therefore do not imply equally         improve predictions on another; revelation and           652
+599   Conditional acknowledgement gains range from               itive agreement 18.5%). Screening thus tests sen-        650
 
-604   strong differences among every subset of models.           elicitation gains also survive the tested expression     653
+600   0.00697–0.01052; conditional revelation and elic-          sitivity to these judgments; it neither guarantees       651
 
-605   Across 200 training-source resamples, the descrip-         changes without refitting. The stronger claim about      654
+601   itation remain near zero. These reuse the same             correct remaining answers nor causally separates         652
 
-606   tive 2.5–97.5 percentile range for conditional ac-         student-state responses has a different outcome.         655
+602   outputs and are sensitivity estimates, not indepen-        behavior from ability.                                   653
 
-607   knowledgement gain is [0.00542, 0.01039]; reve-            Acknowledgement interactions help under the orig-        656
-
-608   lation spans zero and elicitation remains slightly         inal wording, including its contemporary repetition,     657
-
-609   negative. These distributions condition on fixed           but lose their increment under explicit synonyms         658
-
-610   confirmation labels and the original regularization        and implicit cues. A successful new-problem test         659
-
-611   ratio.                                                     therefore cannot by itself validate a transportable      660
-
-612      The six confirmation budget exceptions do not           student-state profile.                                   661
-
-613   determine the primary findings. For either binary             This does not imply that models ignore student        662
-
-614   value of each affected canonical GLM code, all six         emotion: acknowledgement rates still change be-          663
-
-615   primary estimates and adjusted p-values are exactly        tween cue poles. It means that the particular condi-     664
-
-616   unchanged: the other two coders agree on the three         tional probabilities learned under the old wording       665
-
-617   primary events. This fixed-prediction enumeration          do not improve forecasts under these new inputs.         666
-
-618   addresses those missing codes only. It does not            The explicit arm loses relative advantage despite        667
-
-619   validate coder behavior across the Gateway inter-          slightly lower absolute conditional loss; the im-        668
-
-620   ruption. Complete secondary results and sensitivity        plicit arm has higher conditional loss. Expression-      669
-
-621   ranges are retained in Appendix E.                         specific calibration, the additional information in      670
-                                                                 implicit cues, and changes in what the acknowl-          671
-622   Mathematics and content screening. The math-               edgement event captures are plausible explanations.      672
-623   ematics subset (eight sources, 320 responses)              The study does not identify an internal mechanism        673
-624   retains default gains of 0.11624, 0.13892, and             or establish failure of every possible conditional       674
-625   0.01992; student-state increments are 0.00062,             predictor. Educational personality is consequently       675
+603   dent replications.
+                                                                 5   Discussion                                           654
+604      Effect strength depends materially on which de-
+605   ployments are included. Deleting GLM reduces               Defaults and state responses require different           655
+606   default gains to 0.00394 for revelation and 0.03080        transfer claims. The evidence supports recur-            656
+607   for elicitation. Deleting M2.7 reduces the ac-             ring educational behavior in these deployments.          657
+608   knowledgement default gain to 0.00175, with an             Default action profiles learned on one source set        658
+609   interval crossing zero [-0.00174, 0.00547]. The            improve predictions on another; revelation and           659
+610   full-panel findings therefore do not imply equally         elicitation gains also survive the tested expression     660
+611   strong differences among every subset of models.           changes without refitting. The stronger claim about      661
+612   Across 200 training-source resamples, the descrip-         student-state responses has a different outcome.         662
+613   tive 2.5–97.5 percentile range for conditional ac-         Acknowledgement interactions help under the orig-        663
+614   knowledgement gain is [0.00542, 0.01039]; reve-            inal wording, including its contemporary repetition,     664
+615   lation spans zero and elicitation remains slightly         but lose their increment under explicit synonyms         665
+616   negative. These distributions condition on fixed           and implicit cues. A successful new-problem test         666
+617   confirmation labels and the original regularization        therefore cannot by itself validate a transportable      667
+618   ratio.                                                     student-state profile.                                   668
+619      The six confirmation budget exceptions do not              This does not imply that models ignore student        669
+620   determine the primary findings. For either binary          emotion: acknowledgement rates still change be-          670
+621   value of each affected canonical GLM code, all six         tween cue poles. It means that the particular condi-     671
+622   primary estimates and adjusted p-values are exactly        tional probabilities learned under the old wording       672
+623   unchanged: the other two coders agree on the three         do not improve forecasts under these new inputs.         673
+624   primary events. This fixed-prediction enumeration          The explicit arm loses relative advantage despite        674
+625   addresses those missing codes only. It does not            slightly lower absolute conditional loss; the im-        675
+626   validate coder behavior across the Gateway inter-          plicit arm has higher conditional loss. Expression-      676
+627   ruption. Complete secondary results and sensitivity        specific calibration, the additional information in      677
 
 
                                                              8
-676   useful here as a testable action profile with speci-         6   Conclusion                                          724
-677   fied transfer boundaries, rather than a psychologi-
-678   cal type.                                                    These deployments exhibit recurring teaching ten-       725
-                                                                   dencies, but their transfer boundaries differ. Model    726
-                                                                   defaults predict actions on new problems, and           727
-679   Prompt dependence has more than one form.                    the answer-revelation and reasoning-elicitation de-     728
-680   ASK and EXPLAIN instructions make demanded                   faults retain their gains under tested changes in       729
-681   actions nearly or fully shared, while other permis-          student expression. The acknowledgement state           730
-682   sible actions remain unevenly expressed. Neutral             profile, although predictive on new problems with       731
-683   role paraphrases cannot be declared population-              the original wording, does not retain its incremen-     732
-684   equivalent with sixteen sources. The peer control            tal gain under new expressions. Explicit teaching       733
-685   adds another distinction: social context can change          instructions further make demanded actions con-         734
-686   whether the tutor acknowledges a fixed current-              verge while allowing different accompanying be-         735
-687   student state. Selected examples show that such an           havior. A defensible educational-personality claim      736
-688   event can occur while correctly distinguishing the           must therefore specify which actions recur, un-         737
-689   peer’s emotion; its presence alone does not diag-            der which input changes, and beyond which con-          738
-690   nose emotional misattribution. Role wording, stu-            textual baseline. These results support prompt-         739
-691   dent expression, and instructional constraint thus           dependent action profiles; they do not establish im-    740
-692   belong in the empirical description of a deploy-             mutable human-like types, emotional understand-         741
-693   ment’s behavior.                                             ing, or learning benefits. Transfer to archived natu-   742
-                                                                   ral dialogue remains untested in this draft.            743
-694   Increment over existing personality and tutor-
-695   ing research. Situated personality probes and be-            7   Limitations                                         744
-696   havioral profiles already exist (Lee et al., 2025;
-697   Liu et al., 2026), as do comparisons of tutoring-            Scope of the construct. Educational personality         745
+678   implicit cues, and changes in what the acknowl-              supplies no behavioral evidence in this draft. Its      728
+679   edgement event captures are plausible explanations.          absence leaves generalization from the constructed      729
+680   The study does not identify an internal mechanism            student messages to archived dialogue unresolved.       730
+681   or establish failure of every possible conditional
+682   predictor. Educational personality is consequently           6   Conclusion                                          731
+683   useful here as a testable action profile with speci-
+684   fied transfer boundaries, rather than a psychologi-          These deployments exhibit recurring teaching ten-       732
 
-698   action mixtures and learned tutor-persona variation          denotes behavior observed in this educational set-      746
-
-699   (Kucheria et al., 2025; Lee et al., 2026). The contri-       ting. We do not compare matched educational and         747
-
-700   bution here is the joint observation, within a linked        non-educational interactions, so the study cannot       748
-
-701   experimental design, of default transfer, expression-        establish that a recurring tendency is unique to ed-    749
-
-702   limited conditional transfer, and convergence under          ucation. The three primary events cover a small set     750
-
-703   explicit instructions. The unchanged forecasts and           of actions, can co-occur, and do not constitute an      751
-
-704   contemporary control make the boundary more in-              independently validated latent trait structure. More    752
-
-705   formative than a difference in output frequencies            predictable behavior also need not be more helpful:     753
-
-706   alone. Neither the number of API calls nor the               answer revelation includes incorrect conclusions,       754
-
-707   use of automated coders constitutes the substantive          and elicitation can be appropriate or unhelpful de-     755
-
-708   novelty. We do not establish education-specific              pending on the learner’s needs. No learning out-        756
-
-709   traits, internal persona representations, or superior        come is measured.                                       757
-
-710   teaching outcomes.                                           Materials and transfer. The prospective sources         758
-                                                                   are agent-authored English problems with scripted       759
-711   What the archive currently contributes. The                  student messages and supplied instructor refer-         760
-712   archive supplies breadth and exposes why analy-              ences. They are not a probability sample of class-      761
-713   sis units and historical provenance matter. Tutor,           room interactions. Four domains and two student-        762
-714   grading, and test-taking outputs cannot be pooled            work states provide controlled comparisons, while       763
-715   as a million independent observations of a tutor’s           multilingual teaching, extended dialogue, and ad-       764
-716   personality. Local recovery now links task inputs            vanced subject matter remain outside the confirma-      765
-717   and response records for six dialogue settings, but          tion target. The first stage uses one calm/frustrated   766
-718   reconstructing them does not attest every historic           wording pair. The extension tests four fixed pairs      767
-719   request. A separately frozen natural-dialogue vali-          in each new expression arm on reused problems;          768
-720   dation has not yet been executed and supplies no             sources and phrase pairs are nested, and the im-        769
-721   behavioral evidence in this draft. Its absence leaves        plicit cues bundle affect-related expression with       770
-722   generalization from the constructed student mes-             other information. Neither stage samples a popu-        771
-723   sages to archived dialogue unresolved.                       lation of student expressions. The extension was        772
+685   cal type.                                                    dencies, but their transfer boundaries differ. Model    733
+                                                                   defaults predict actions on new problems, and           734
+686   Prompt dependence has more than one form.                    the answer-revelation and reasoning-elicitation de-     735
+687   ASK and EXPLAIN instructions make demanded                   faults retain their gains under tested changes in       736
+688   actions nearly or fully shared, while other permis-          student expression. The acknowledgement state           737
+689   sible actions remain unevenly expressed. Neutral             profile, although predictive on new problems with       738
+690   role paraphrases cannot be declared population-              the original wording, does not retain its incremen-     739
+691   equivalent with sixteen sources. The peer control            tal gain under new expressions. Explicit teaching       740
+692   adds another distinction: social context can change          instructions further make demanded actions con-         741
+693   whether the tutor acknowledges a fixed current-              verge while allowing different accompanying be-         742
+694   student state. Selected examples show that such an           havior. A defensible educational-personality claim      743
+695   event can occur while correctly distinguishing the           must therefore specify which actions recur, un-         744
+696   peer’s emotion; its presence alone does not diag-            der which input changes, and beyond which con-          745
+697   nose emotional misattribution. Role wording, stu-            textual baseline. These results support prompt-         746
+698   dent expression, and instructional constraint thus           dependent action profiles; they do not establish im-    747
+699   belong in the empirical description of a deploy-             mutable human-like types, emotional understand-         748
+700   ment’s behavior.                                             ing, or learning benefits. Transfer to archived natu-   749
+                                                                   ral dialogue remains untested in this draft.            750
+701   Increment over existing personality and tutor-
+702   ing research. Situated personality probes and be-            7   Limitations                                         751
+703   havioral profiles already exist (Lee et al., 2025;
+704   Liu et al., 2026), as do comparisons of tutoring-            Scope of the construct. Educational personality         752
+705   action mixtures and learned tutor-persona variation          denotes behavior observed in this educational set-      753
+706   (Kucheria et al., 2025; Lee et al., 2026). The contri-       ting. We do not compare matched educational and         754
+707   bution here is the joint observation, within a linked        non-educational interactions, so the study cannot       755
+708   experimental design, of default transfer, expression-        establish that a recurring tendency is unique to ed-    756
+709   limited conditional transfer, and convergence under          ucation. The three primary events cover a small set     757
+710   explicit instructions. The unchanged forecasts and           of actions, can co-occur, and do not constitute an      758
+711   contemporary control make the boundary more in-              independently validated latent trait structure. More    759
+712   formative than a difference in output frequencies            predictable behavior also need not be more helpful:     760
+713   alone. Neither the number of API calls nor the               answer revelation includes incorrect conclusions,       761
+714   use of automated coders constitutes the substantive          and elicitation can be appropriate or unhelpful de-     762
+715   novelty. We do not establish education-specific              pending on the learner’s needs. No learning out-        763
+716   traits, internal persona representations, or superior        come is measured.                                       764
+717   teaching outcomes.
+                                                                   Materials and transfer. The prospective sources         765
+718   What the archive currently contributes. The                  are agent-authored English problems with scripted       766
+719   archive supplies breadth and exposes why analy-              student messages and supplied instructor refer-         767
+720   sis units and historical provenance matter. Tutor,           ences. They are not a probability sample of class-      768
+721   grading, and test-taking outputs cannot be pooled            room interactions. Four domains and two student-        769
+722   as a million independent observations of a tutor’s           work states provide controlled comparisons, while       770
+723   personality. Local recovery now links task inputs            multilingual teaching, extended dialogue, and ad-       771
+724   and response records for six dialogue settings, but          vanced subject matter remain outside the confirma-      772
+725   reconstructing them does not attest every historic           tion target. The first stage uses one calm/frustrated   773
+726   request. A separately frozen natural-dialogue vali-          wording pair. The extension tests four fixed pairs      774
+727   dation awaits completed coding and analysis and              in each new expression arm on reused problems;          775
 
 
                                                                9
-773   designed after the original results, and its negative          and behavioral variation in LLM agents. Preprint,       821
-774   transfer finding does not identify which aspect of             arXiv:2602.01063.                                       822
+776   sources and phrase pairs are nested, and the im-             References                                                825
+777   plicit cues bundle affect-related expression with            Bin Han, Deuksin Kwon, and Jonathan Gratch. 2026.         826
+778   other information. Neither stage samples a popu-               Personality expression across contexts: Linguistic      827
+779   lation of student expressions. The extension was               and behavioral variation in LLM agents. Preprint,       828
+780   designed after the original results, and its negative          arXiv:2602.01063.                                       829
 
-775   the new inputs caused the degradation. References            Wassily Hoeffding. 1963. Probability inequalities for     823
-776   equalize solution availability but cannot eliminate           sums of bounded random variables. Journal of the         824
-777   differences in understanding or instruction follow-           American Statistical Association, 58(301):13–30.         825
-778   ing. The source split prevents the specified problem         Aayush Kucheria, Nitin Sawhney, and Arto Hellas.          826
-779   families from crossing partitions; it does not estab-          2025. Comparing behavioral patterns of LLM and          827
-780   lish novelty relative to model pretraining.                    human tutors: A population-level analysis with the      828
-                                                                     CIMA dataset. In Proceedings of the 20th Workshop       829
-781   Measurement and deployment. Automated con-                     on Innovative Use of NLP for Building Educational       830
-                                                                     Applications (BEA 2025), pages 873–881.                 831
-782   tent review and three answer coders avoid new
-783   human annotation, but share possible model bi-               Jaewook Lee, Alexander Scarlatos, Simon Woodhead,         832
-784   ases. Evidence-line checks verify location, and                 and Andrew Lan. 2026. Letting tutor personas speak     833
-785   coder-family exclusions test a particular depen-                up for LLMs: Learning steering vectors from dia-       834
-                                                                      logue via preference optimization. In Proceedings      835
-786   dence; neither guarantees semantic validity. Natu-              of the 21st Workshop on Innovative Use of NLP          836
-787   ral content-error positive agreement is only 18.5%,             for Building Educational Applications (BEA 2026),      837
-788   despite passing the diagnostic controls, limiting               pages 78–92.                                           838
-789   correctness-based interpretation of the screens.             Seungbeen Lee, Seungwon Lim, Seungju Han, Giyeong         839
-790   Rare or absent events require expression opportu-              Oh, Hyungjoo Chae, Jiwan Chung, Minju Kim,              840
-791   nities before their absence can be interpreted. Five           Beong-woo Kwak, Yeonsoo Lee, Dongha Lee, Jiny-          841
-792   selected deployments are also not a random sample              oung Yeo, and Youngjae Yu. 2025. Do LLMs have           842
-                                                                     distinct and consistent personality? TRAIT: Person-     843
-793   of model families. Provider aliases and short-term             ality testset designed for LLMs with psychometrics.     844
-794   repeated requests cannot demonstrate long-term                 In Findings of the Association for Computational        845
-795   stability of weights or behavior. The cross-stage              Linguistics: NAACL 2025, pages 8412–8452.               846
-796   sentinels mix generation variability, coding vari-
-                                                                   Haoze Liu, Run Liu, Haiying Xu, Jiahui Han, Siyuan        847
-797   ability, and any deployment drift, so they cannot              Fang, Siyu Yan, Huiqi Deng, Guanchu Wang, and           848
-798   identify those causes separately.                              Na Zou. 2026. Your LLM, your style: Behavioral          849
-                                                                     mode axes for LLM behavioral control. Preprint,         850
-799   Inference and research history. There are 32                   arXiv:2608.10703.                                       851
-800   confirmation source groups, not thousands of in-             Jakub Macina, Nico Daheim, Ido Hakimi, Manu Ka-           852
-801   dependent educational situations. Source inter-                pur, Iryna Gurevych, and Mrinmaya Sachan. 2025.         853
-802   vals rely on an approximation to variation across              MathTutorBench: A benchmark for measuring open-         854
-803   problems resembling this constructed bank. Small               ended pedagogical capabilities of LLM tutors. In        855
-                                                                     Proceedings of EMNLP 2025, pages 204–221.               856
-804   gains may remain unresolved, and the conserva-
-805   tive neutral-wording check cannot establish pop-             Kaushal Kumar Maurya, Kv Aditya Srivatsa, Kseniia         857
-806   ulation equivalence with sixteen sources. Con-                 Petukhova, and Ekaterina Kochmar. 2025. Unify-          858
-807   ditional prediction is limited to the selected stu-            ing AI tutor evaluation: An evaluation taxonomy for     859
-                                                                     pedagogical ability assessment of LLM-powered AI        860
-808   dent cues, feature blocks, and regularized model               tutors. In Proceedings of NAACL-HLT 2025, pages         861
-809   class; a weak incremental gain does not disprove               1234–1251.                                              862
-810   all context-sensitive behavior. The archive analysis
-                                                                   Donya Rooein, Sankalan Pal Chowdhury, Mariia Ere-         863
-811   and pilot informed the study, and some sensitivity             meeva, Yuan Qin, Debora Nozza, Mrinmaya Sachan,         864
-812   and interpretation rules were fixed during training.           and Dirk Hovy. 2026. PATS: Personality-aware            865
-813   We disclose their timing and retain failed measure-            teaching strategies with large language model tutors.   866
-814   ments. Local hashes and execution timestamps                   In Findings of the Association for Computational        867
-                                                                     Linguistics: EACL 2026, pages 4186–4211.                868
-815   support an inspectable sequence, but are not inde-
-816   pendent third-party preregistration or tamper-proof          Ruikang Zhang, Shuo Wang, and Qi Su. 2026.                869
-817   timestamping.                                                  From representations to behaviors: Exploring the        870
-                                                                     person–situation–behavior triad in LLMs. Preprint,      871
-                                                                     arXiv:2607.26853.                                       872
+781   transfer finding does not identify which aspect of           Wassily Hoeffding. 1963. Probability inequalities for     830
+782   the new inputs caused the degradation. References             sums of bounded random variables. Journal of the         831
+783   equalize solution availability but cannot eliminate           American Statistical Association, 58(301):13–30.         832
 
-818   References
-819   Bin Han, Deuksin Kwon, and Jonathan Gratch. 2026.
-820     Personality expression across contexts: Linguistic
+784   differences in understanding or instruction follow-          Aayush Kucheria, Nitin Sawhney, and Arto Hellas.          833
+785   ing. The source split prevents the specified problem           2025. Comparing behavioral patterns of LLM and          834
+786   families from crossing partitions; it does not estab-          human tutors: A population-level analysis with the      835
+787   lish novelty relative to model pretraining.                    CIMA dataset. In Proceedings of the 20th Workshop       836
+                                                                     on Innovative Use of NLP for Building Educational       837
+                                                                     Applications (BEA 2025), pages 873–881.                 838
+788   Measurement and deployment. Automated con-
+789   tent review and three answer coders avoid new                Jaewook Lee, Alexander Scarlatos, Simon Woodhead,         839
+                                                                      and Andrew Lan. 2026. Letting tutor personas speak     840
+790   human annotation, but share possible model bi-
+                                                                      up for LLMs: Learning steering vectors from dia-       841
+791   ases. Evidence-line checks verify location, and                 logue via preference optimization. In Proceedings      842
+792   coder-family exclusions test a particular depen-                of the 21st Workshop on Innovative Use of NLP          843
+793   dence; neither guarantees semantic validity. Natu-              for Building Educational Applications (BEA 2026),      844
+794   ral content-error positive agreement is only 18.5%,             pages 78–92.                                           845
+
+795   despite passing the diagnostic controls, limiting            Seungbeen Lee, Seungwon Lim, Seungju Han, Giyeong         846
+796   correctness-based interpretation of the screens.               Oh, Hyungjoo Chae, Jiwan Chung, Minju Kim,              847
+797   Rare or absent events require expression opportu-              Beong-woo Kwak, Yeonsoo Lee, Dongha Lee, Jiny-          848
+                                                                     oung Yeo, and Youngjae Yu. 2025. Do LLMs have           849
+798   nities before their absence can be interpreted. Five           distinct and consistent personality? TRAIT: Person-     850
+799   selected deployments are also not a random sample              ality testset designed for LLMs with psychometrics.     851
+800   of model families. Provider aliases and short-term             In Findings of the Association for Computational        852
+801   repeated requests cannot demonstrate long-term                 Linguistics: NAACL 2025, pages 8412–8452.               853
+
+802   stability of weights or behavior. The cross-stage            Haoze Liu, Run Liu, Haiying Xu, Jiahui Han, Siyuan        854
+803   sentinels mix generation variability, coding vari-             Fang, Siyu Yan, Huiqi Deng, Guanchu Wang, and           855
+804   ability, and any deployment drift, so they cannot              Na Zou. 2026. Your LLM, your style: Behavioral          856
+805   identify those causes separately.                              mode axes for LLM behavioral control. Preprint,         857
+                                                                     arXiv:2608.10703.                                       858
+
+806   Inference and research history. There are 32                 Jakub Macina, Nico Daheim, Ido Hakimi, Manu Ka-           859
+807   confirmation source groups, not thousands of in-               pur, Iryna Gurevych, and Mrinmaya Sachan. 2025.         860
+                                                                     MathTutorBench: A benchmark for measuring open-         861
+808   dependent educational situations. Source inter-                ended pedagogical capabilities of LLM tutors. In        862
+809   vals rely on an approximation to variation across              Proceedings of EMNLP 2025, pages 204–221.               863
+810   problems resembling this constructed bank. Small
+811   gains may remain unresolved, and the conserva-               Kaushal Kumar Maurya, Kv Aditya Srivatsa, Kseniia         864
+                                                                     Petukhova, and Ekaterina Kochmar. 2025. Unify-          865
+812   tive neutral-wording check cannot establish pop-               ing AI tutor evaluation: An evaluation taxonomy for     866
+813   ulation equivalence with sixteen sources. Con-                 pedagogical ability assessment of LLM-powered AI        867
+814   ditional prediction is limited to the selected stu-            tutors. In Proceedings of NAACL-HLT 2025, pages         868
+815   dent cues, feature blocks, and regularized model               1234–1251.                                              869
+
+816   class; a weak incremental gain does not disprove             Donya Rooein, Sankalan Pal Chowdhury, Mariia Ere-         870
+817   all context-sensitive behavior. The archive analysis           meeva, Yuan Qin, Debora Nozza, Mrinmaya Sachan,         871
+818   and pilot informed the study, and some sensitivity             and Dirk Hovy. 2026. PATS: Personality-aware            872
+                                                                     teaching strategies with large language model tutors.   873
+819   and interpretation rules were fixed during training.
+                                                                     In Findings of the Association for Computational        874
+820   We disclose their timing and retain failed measure-            Linguistics: EACL 2026, pages 4186–4211.                875
+821   ments. Local hashes and execution timestamps
+822   support an inspectable sequence, but are not inde-           Ruikang Zhang, Shuo Wang, and Qi Su. 2026.                876
+                                                                     From representations to behaviors: Exploring the        877
+823   pendent third-party preregistration or tamper-proof            person–situation–behavior triad in LLMs. Preprint,      878
+824   timestamping.                                                  arXiv:2607.26853.                                       879
+
+
 
 
                                                               10
-873   A    Archive Scope and Historical                                needed for its own narrower confirmation.               924
-874        Provenance
-                                                                       A.1    What the Existing Scores Contribute              925
-875   The frozen archive census contains 1,028,822
-                                                                       We also reanalyze the legacy scored panel with its      926
-876   raw records. Successful text deduplication yields
-                                                                       original eight semantic dimensions and six model        927
-877   899,025 model–benchmark–item–response records
-                                                                       configurations. These are exploratory measure-          928
-878   when recorded input variants remain distinct, and
-                                                                       ments, not labels assigned to the entire archive,       929
-879   837,704 when variants are ignored for text inven-
-                                                                       and are not pooled with the new binary event            930
-880   tory only. Neither count estimates independent gen-
-                                                                       codes. Excluding 15 contexts without recoverable        931
-881   eration events. Table 3 classifies all 39 benchmark
-                                                                       source groups leaves 224 contexts from 210 source       932
-882   settings using a review of current adapter contracts.
-                                                                       families across four task settings. Each source         933
-883   Each assignment retains a source file, class, line,
-                                                                       stays in one fold; contexts share their source’s        934
-884   hash, and interpretation note. Current contracts
-                                                                       weight within a task, and tasks receive equal weight.   935
-885   guide role interpretation but do not establish the
-                                                                       Across 100 deterministic two-fold splits, we com-       936
-886   exact prompts used by every historical request.
-                                                                       pare a global model profile with a separate model       937
-887      Evaluation and test/option outputs comprise
-                                                                       profile for each known task, predicting scores cen-     938
-888   73.48% of these records. For example, the Peda-
-                                                                       tered within each context. This tests new sources       939
-889   gogy Benchmark requests pedagogical-knowledge
-                                                                       within known task settings, not transfer to a new       940
-890   multiple-choice answers, while ASAP and SAS ask
-                                                                       task or prediction of absolute scores.                  941
-891   the candidate model to score student work. MR-
-                                                                          The task-conditioned increment depends on            942
-892   Bench and BEA judge settings likewise evaluate
-                                                                       which instructional settings are included (Table 4).    943
-893   existing tutor text; that text is not the candidate eval-
-                                                                       Excluding the Socratic setting, whose current           944
-894   uator’s own tutoring. Even among tutor settings,
-                                                                       adapter requires question-only output, reduces          945
-895   instructions differ: TutorBench use cases request
-                                                                       the direct-help increment from 6.57% to 0.34%.          946
-896   different actions, MMTutorBench requires image-
-                                                                       This does not eliminate predictive information in       947
-897   conditioned guidance in three prescribed sections,
-                                                                       the global model profile: in the reduced panel,         948
-898   and LongTutor explicitly requests scaffolding with-
-                                                                       its direct-help MSE is 0.66754, compared with           949
-899   out the full answer.
-                                                                       0.88413 for zero relative model differences. Per-       950
-900      A second pass verifies all 122 prediction files               sonalization retains a larger task-conditioned in-      951
-901   and corresponding summaries in the nine tutor-                   crement, but that legacy score does not establish       952
-902   response settings against the census hashes. Their               learner understanding or a validated personality        953
-903   86,072 latest successful file items reproduce 68,799             factor.                                                 954
-904   variant-preserving deduplicated records. None of
-                                                                          This exclusion was chosen after observing task       955
-905   those file items contains the inspected fields for
-                                                                       results. It changes the target task distribution and    956
-906   complete messages, prompt text or input hashes,
-                                                                       its weights, so the difference between columns is       957
-907   provider request identifiers, returned model names,
-                                                                       not a causal effect of question-only formatting. We     958
-908   generation timestamps, or finish reasons. All
-                                                                       retain both analyses. Their role is to motivate sep-    959
-909   contain usage metadata. Of the 122 summaries,
-                                                                       arating problem content, student cues, and output       960
-910   83 contain generation parameters and 114 con-
-                                                                       instructions in the prospective experiment; neither     961
-911   tain a judge-prompt hash; none contains the in-
-                                                                       the archive’s size nor favorable legacy scores sub-     962
-912   spected generation-prompt hash fields. A judge-
-                                                                       stitute for that confirmation.                          963
-913   prompt hash is not evidence of the tutor’s genera-
-914   tion prompt, and later scoring summaries do not                  B     Measurement Development Results                   964
-915   necessarily attest to the original generation param-
-916   eters.                                                           This section reports the completed, excluded pi-        965
-917      This is a field-coverage finding, not proof that              lot, not the prospective confirmation study. Its 160    966
-918   provenance is unavailable in external logs or origi-             tutor responses cover only four templates and there-    967
-919   nal sources. Reconstructed historical inputs must                fore do not justify education-wide prevalence or        968
-920   be identified as reconstructions. Consequently,                  uncertainty estimates. All responses received three     969
-921   the archive provides discovery and confound au-                  complete event codes after the recorded structural      970
-922   dits, while the prospective study records the input,             repairs. Figure 3 separates agreement on event          971
-923   output, source, version, and timing relationships                presence from agreement on absence, rather than         972
+880   A    Archive Scope and Historical                                needed for its own narrower confirmation.               931
+881        Provenance
+                                                                       A.1    What the Existing Scores Contribute              932
+882   The frozen archive census contains 1,028,822
+                                                                       We also reanalyze the legacy scored panel with its      933
+883   raw records. Successful text deduplication yields
+                                                                       original eight semantic dimensions and six model        934
+884   899,025 model–benchmark–item–response records
+                                                                       configurations. These are exploratory measure-          935
+885   when recorded input variants remain distinct, and
+                                                                       ments, not labels assigned to the entire archive,       936
+886   837,704 when variants are ignored for text inven-
+                                                                       and are not pooled with the new binary event            937
+887   tory only. Neither count estimates independent gen-
+                                                                       codes. Excluding 15 contexts without recoverable        938
+888   eration events. Table 3 classifies all 39 benchmark
+                                                                       source groups leaves 224 contexts from 210 source       939
+889   settings using a review of current adapter contracts.
+                                                                       families across four task settings. Each source         940
+890   Each assignment retains a source file, class, line,
+                                                                       stays in one fold; contexts share their source’s        941
+891   hash, and interpretation note. Current contracts
+                                                                       weight within a task, and tasks receive equal weight.   942
+892   guide role interpretation but do not establish the
+                                                                       Across 100 deterministic two-fold splits, we com-       943
+893   exact prompts used by every historical request.
+                                                                       pare a global model profile with a separate model       944
+894      Evaluation and test/option outputs comprise
+                                                                       profile for each known task, predicting scores cen-     945
+895   73.48% of these records. For example, the Peda-
+                                                                       tered within each context. This tests new sources       946
+896   gogy Benchmark requests pedagogical-knowledge
+                                                                       within known task settings, not transfer to a new       947
+897   multiple-choice answers, while ASAP and SAS ask
+                                                                       task or prediction of absolute scores.                  948
+898   the candidate model to score student work. MR-
+                                                                          The task-conditioned increment depends on            949
+899   Bench and BEA judge settings likewise evaluate
+                                                                       which instructional settings are included (Table 4).    950
+900   existing tutor text; that text is not the candidate eval-
+                                                                       Excluding the Socratic setting, whose current           951
+901   uator’s own tutoring. Even among tutor settings,
+                                                                       adapter requires question-only output, reduces          952
+902   instructions differ: TutorBench use cases request
+                                                                       the direct-help increment from 6.57% to 0.34%.          953
+903   different actions, MMTutorBench requires image-
+                                                                       This does not eliminate predictive information in       954
+904   conditioned guidance in three prescribed sections,
+                                                                       the global model profile: in the reduced panel,         955
+905   and LongTutor explicitly requests scaffolding with-
+                                                                       its direct-help MSE is 0.66754, compared with           956
+906   out the full answer.
+                                                                       0.88413 for zero relative model differences. Per-       957
+907      A second pass verifies all 122 prediction files               sonalization retains a larger task-conditioned in-      958
+908   and corresponding summaries in the nine tutor-                   crement, but that legacy score does not establish       959
+909   response settings against the census hashes. Their               learner understanding or a validated personality        960
+910   86,072 latest successful file items reproduce 68,799             factor.                                                 961
+911   variant-preserving deduplicated records. None of
+                                                                          This exclusion was chosen after observing task       962
+912   those file items contains the inspected fields for
+                                                                       results. It changes the target task distribution and    963
+913   complete messages, prompt text or input hashes,
+                                                                       its weights, so the difference between columns is       964
+914   provider request identifiers, returned model names,
+                                                                       not a causal effect of question-only formatting. We     965
+915   generation timestamps, or finish reasons. All
+                                                                       retain both analyses. Their role is to motivate sep-    966
+916   contain usage metadata. Of the 122 summaries,
+                                                                       arating problem content, student cues, and output       967
+917   83 contain generation parameters and 114 con-
+                                                                       instructions in the prospective experiment; neither     968
+918   tain a judge-prompt hash; none contains the in-
+                                                                       the archive’s size nor favorable legacy scores sub-     969
+919   spected generation-prompt hash fields. A judge-
+                                                                       stitute for that confirmation.                          970
+920   prompt hash is not evidence of the tutor’s genera-
+921   tion prompt, and later scoring summaries do not                  B     Measurement Development Results                   971
+922   necessarily attest to the original generation param-
+923   eters.                                                           This section reports the completed, excluded pi-        972
+924      This is a field-coverage finding, not proof that              lot, not the prospective confirmation study. Its 160    973
+925   provenance is unavailable in external logs or origi-             tutor responses cover only four templates and there-    974
+926   nal sources. Reconstructed historical inputs must                fore do not justify education-wide prevalence or        975
+927   be identified as reconstructions. Consequently,                  uncertainty estimates. All responses received three     976
+928   the archive provides discovery and confound au-                  complete event codes after the recorded structural      977
+929   dits, while the prospective study records the input,             repairs. Figure 3 separates agreement on event          978
+930   output, source, version, and timing relationships                presence from agreement on absence, rather than         979
 
 
                                                                   11
-                                      Current task role                     Settings   Records
-                                      Evaluation of existing work                 7    354,308
-                                      Test or option answering                   10    306,307
-                                      Mixed educational assistance                2     78,322
-                                      Tutor response                              9     68,799
-                                      Learner history or diagnosis                2     42,997
-                                      Safety response                             2     13,974
-                                      Metacognitive problem solving               3     11,188
-                                      Constrained question generation             1      9,233
-                                      Assigned solution repair                    1      8,015
-                                      General instruction following               1      3,782
-                                      Knowledge-structure reasoning               1      2,100
-                                      Total                                      39    899,025
+                                       Current task role                     Settings   Records
+                                       Evaluation of existing work                 7    354,308
+                                       Test or option answering                   10    306,307
+                                       Mixed educational assistance                2     78,322
+                                       Tutor response                              9     68,799
+                                       Learner history or diagnosis                2     42,997
+                                       Safety response                             2     13,974
+                                       Metacognitive problem solving               3     11,188
+                                       Constrained question generation             1      9,233
+                                       Assigned solution repair                    1      8,015
+                                       General instruction following               1      3,782
+                                       Knowledge-structure reasoning               1      2,100
+                                       Total                                      39    899,025
 
-      Table 3: Variant-preserving text inventory, not counts of independent tutoring contexts or personality labels. Mixed
-      educational assistance requires item-level role separation; it is not automatically excluded from later research.
+       Table 3: Variant-preserving text inventory, not counts of independent tutoring contexts or personality labels. Mixed
+       educational assistance requires item-level role separation; it is not automatically excluded from later research.
 
-                                      Legacy dimension         Four tasks      Without Socratic
-                                      Affective warmth          11.27%                  2.81%
-                                      Autonomy support           9.58%                  4.49%
-                                      Cognitive load             2.05%                  1.83%
-                                      Diagnostic specificity     3.93%                  2.51%
-                                      Elicitation               10.73%                  3.23%
-                                      Epistemic caution         −0.86%                 −1.11%
-                                      Help directness            6.57%                  0.34%
-                                      Personalization           12.15%                 10.52%
+                                       Legacy dimension         Four tasks      Without Socratic
+                                       Affective warmth          11.27%                  2.81%
+                                       Autonomy support           9.58%                  4.49%
+                                       Cognitive load             2.05%                  1.83%
+                                       Diagnostic specificity     3.93%                  2.51%
+                                       Elicitation               10.73%                  3.23%
+                                       Epistemic caution         −0.86%                 −1.11%
+                                       Help directness            6.57%                  0.34%
+                                       Personalization           12.15%                 10.52%
 
-      Table 4: Exploratory relative MSE reduction from task-specific model profiles over a global model profile, averaged
-      over split-specific ratios. The full panel has 224 contexts/210 source families; the reduced panel has 144/133.
-      Negative values mean worse predictions. The 100 overlapping splits are not independent experiments and their
-      dispersion is not a confidence interval.
-
-
-973   allowing abundant negative examples to dominate                tion 4.                                                 997
-974   a single agreement statistic.
-                                                                     C      Detailed Methods and Protocol History            998
-975      The three selected primary endpoints have
-976   majority-positive counts of 129 for answer revela-             We use educational personality operationally for        999
-977   tion, 61 for reasoning elicitation, and 111 for affect         recurring default behavior and conditional response     1000
-978   acknowledgement. Their pairwise positive agree-                patterns of a deployed model in educational inter-      1001
-979   ment ranges are 98.04–99.23%, 89.43–92.19%,                                  (k)
-                                                                     action. Let Ymqsar denote whether model configu-        1002
-980   and 97.32–98.63%, respectively. In contrast, re-               ration m expresses behavior k on source problem q,      1003
-981   quests for missing facts have only one majority-               student state s, instruction arm a, and independent     1004
-982   positive example: positive agreement ranges from               request r. A default profile summarizes behav-          1005
-983   0–40% despite high overall agreement. Unsup-                   ior under the canonical tutor role over a specified     1006
-984   ported ability attribution also has weaker positive            distribution of educational inputs. A conditional       1007
-985   agreement, ranging from 33.33–51.16%. These re-                profile additionally represents how that behavior       1008
-986   sults support different measurement priorities; they           varies with student state. We test both descriptions    1009
-987   do not validate a fixed-dimensional personality tax-           through predictions on separate source problems.        1010
-988   onomy.                                                         This operationalization does not require a fixed        1011
-989      Pilot model profiles suggest potentially useful             cross-context model ranking, and it does not treat      1012
-990   defaults, but adding student-state interactions does           any identifiable linguistic signature as a validated    1013
-991   not consistently improve source-held-out predic-               personality construct.                                  1014
-992   tion over model-by-subject profiles during method                 The unit m is a deployment configuration, in-        1015
-993   development. These exploratory observations moti-              cluding its requested and returned model names,         1016
-994   vated separate sources, within-domain replication,             provider, observation period, and generation set-       1017
-995   and locked prospective comparisons. They remain                tings. The five prospective configurations re-          1018
-996   distinct from the confirmation outcomes in Sec-                quest MiniMax-M3, MiniMax-M2.7, GLM-5.3,                1019
+       Table 4: Exploratory relative MSE reduction from task-specific model profiles over a global model profile, averaged
+       over split-specific ratios. The full panel has 224 contexts/210 source families; the reduced panel has 144/133.
+       Negative values mean worse predictions. The 100 overlapping splits are not independent experiments and their
+       dispersion is not a confidence interval.
 
 
-                                                                12
+980    allowing abundant negative examples to dominate                tion 4.                                                 1004
+981    a single agreement statistic.
+                                                                      C      Detailed Methods and Protocol History            1005
+982       The three selected primary endpoints have
+983    majority-positive counts of 129 for answer revela-             We use educational personality operationally for        1006
+984    tion, 61 for reasoning elicitation, and 111 for affect         recurring default behavior and conditional response     1007
+985    acknowledgement. Their pairwise positive agree-                patterns of a deployed model in educational inter-      1008
+986    ment ranges are 98.04–99.23%, 89.43–92.19%,                                  (k)
+                                                                      action. Let Ymqsar denote whether model configu-        1009
+987    and 97.32–98.63%, respectively. In contrast, re-               ration m expresses behavior k on source problem q,      1010
+988    quests for missing facts have only one majority-               student state s, instruction arm a, and independent     1011
+989    positive example: positive agreement ranges from               request r. A default profile summarizes behav-          1012
+990    0–40% despite high overall agreement. Unsup-                   ior under the canonical tutor role over a specified     1013
+991    ported ability attribution also has weaker positive            distribution of educational inputs. A conditional       1014
+992    agreement, ranging from 33.33–51.16%. These re-                profile additionally represents how that behavior       1015
+993    sults support different measurement priorities; they           varies with student state. We test both descriptions    1016
+994    do not validate a fixed-dimensional personality tax-           through predictions on separate source problems.        1017
+995    onomy.                                                         This operationalization does not require a fixed        1018
+996       Pilot model profiles suggest potentially useful             cross-context model ranking, and it does not treat      1019
+997    defaults, but adding student-state interactions does           any identifiable linguistic signature as a validated    1020
+998    not consistently improve source-held-out predic-               personality construct.                                  1021
+999    tion over model-by-subject profiles during method                 The unit m is a deployment configuration, in-        1022
+1000   development. These exploratory observations moti-              cluding its requested and returned model names,         1023
+1001   vated separate sources, within-domain replication,             provider, observation period, and generation set-       1024
+1002   and locked prospective comparisons. They remain                tings. The five prospective configurations re-          1025
+1003   distinct from the confirmation outcomes in Sec-                quest MiniMax-M3, MiniMax-M2.7, GLM-5.3,                1026
+
+
+                                                                 12
                                                      Measurement-development pilot
                                                                                                                                 Majority
                                               Agreement on presence                           Agreement on absence              positives
@@ -859,43 +857,43 @@
        and rare events require separate attention.
 
 
-1020   DeepSeek-V4-Pro, and Doubao-Seed-2.0-Lite. In                          68,799 records in nine tutor-response settings; most          1044
-1021   the measurement pilot, the request alias GLM-5.2                       other records come from evaluation or test-answer             1045
-1022   returned GLM-5.3 throughout; those responses are                       tasks. Tutor-role membership does not itself es-              1046
-1023   identified by the returned name and are not pooled                     tablish neutral prompts or equivalent historical re-          1047
-1024   with historical GLM-5.2 results. Provider model                        quests. Appendix A reports the complete role                  1048
-1025   names do not attest to immutable weights, so ver-                      inventory and a hash-verified inspection of the               1049
-1026   sion and temporal uncertainty remain limitations                       122 tutor prediction files, including their missing           1050
-1027   of deployment-level inference.                                         generation-provenance fields.                                 1051
+1027   DeepSeek-V4-Pro, and Doubao-Seed-2.0-Lite. In                          68,799 records in nine tutor-response settings; most          1051
+1028   the measurement pilot, the request alias GLM-5.2                       other records come from evaluation or test-answer             1052
+1029   returned GLM-5.3 throughout; those responses are                       tasks. Tutor-role membership does not itself es-              1053
+1030   identified by the returned name and are not pooled                     tablish neutral prompts or equivalent historical re-          1054
+1031   with historical GLM-5.2 results. Provider model                        quests. Appendix A reports the complete role                  1055
+1032   names do not attest to immutable weights, so ver-                      inventory and a hash-verified inspection of the               1056
+1033   sion and temporal uncertainty remain limitations                       122 tutor prediction files, including their missing           1057
+1034   of deployment-level inference.                                         generation-provenance fields.                                 1058
 
-                                                                                 The controlled protocol uses 32 training ques-             1052
-1028   C.1    Archive Exploration and Prospective                             tions in 30 conservative source families and 32 con-          1053
-1029          Separation                                                      firmation questions in 32 separate source families.           1054
+                                                                                 The controlled protocol uses 32 training ques-             1059
+1035   C.1    Archive Exploration and Prospective                             tions in 30 conservative source families and 32 con-          1060
+1036          Separation                                                      firmation questions in 32 separate source families.           1061
 
-1030   The archive audit distinguishes raw records from                       Each partition has eight questions in each of mathe-          1055
+1037   The archive audit distinguishes raw records from                       Each partition has eight questions in each of mathe-          1062
 
-1031   successful deduplicated responses, and distin-                         matics, science, language, and logic/data reasoning.          1056
+1038   successful deduplicated responses, and distin-                         matics, science, language, and logic/data reasoning.          1063
 
-1032   guishes tutors from solvers and evaluators. Re-                        Two training question pairs share an averaging or             1057
+1039   guishes tutors from solvers and evaluators. Re-                        Two training question pairs share an averaging or             1064
 
-1033   peated questions and conversations can occur under                     unit- conversion family and remain grouped in in-             1058
+1040   peated questions and conversations can occur under                     unit- conversion family and remain grouped in in-             1065
 
-1034   different benchmark names and prompt variants.                         ternal validation. The four pilot templates and their         1059
+1041   different benchmark names and prompt variants.                         ternal validation. The four pilot templates and their         1066
 
-1035   Consequently, benchmark names and local item                           numerical substitutions are excluded. Confirmation            1060
+1042   Consequently, benchmark names and local item                           numerical substitutions are excluded. Confirmation            1067
 
-1036   identifiers are not sufficient independence units.                     tests new sources within these four domains, rather           1061
+1043   identifiers are not sufficient independence units.                     tests new sources within these four domains, rather           1068
 
-1037   Related source material must stay together when                        than transfer to entirely new academic domains                1062
+1044   Related source material must stay together when                        than transfer to entirely new academic domains                1069
 
-1038   estimating transfer. Analyses informed by previ-                       or proof that a model has never encountered the               1063
+1045   estimating transfer. Analyses informed by previ-                       or proof that a model has never encountered the               1070
 
-1039   ous archive results remain exploratory; starting a                     underlying concepts.                                          1064
+1046   ous archive results remain exploratory; starting a                     underlying concepts.                                          1071
 
-1040   new conversational context does not make them                             The questions, correct references, erroneous stu-          1065
-1041   prospective.                                                           dent attempts, and correct unfinished work were               1066
-1042      Across the 899,025 variant-preserving text                          authored by the research agent. Two model review-             1067
-1043   records, a current-adapter role review identifies                      ers checked 64 question packages before freez-                1068
+1047   new conversational context does not make them                             The questions, correct references, erroneous stu-          1072
+1048   prospective.                                                           dent attempts, and correct unfinished work were               1073
+1049      Across the 899,025 variant-preserving text                          authored by the research agent. Two model review-             1074
+1050   records, a current-adapter role review identifies                      ers checked 64 question packages before freez-                1075
 
 
                                                                          13
@@ -934,308 +932,308 @@
        below.
 
 
-1069   ing, yielding 128 complete reviews. All five                        or instruction-following ability. Results under this        1093
-1070   Boolean content checks were positive in every re-                   controlled reference condition are reported sepa-           1094
-1071   view. Twenty-five reviews nevertheless included                     rately from the historical archive.                         1095
-1072   issue text, mostly describing the deliberately incor-                  The training stage uses the canonical tutor role         1096
-1073   rect attempt or the deliberately unfinished work;                   on all 32 questions. The confirmation stage first           1097
-1074   these comments and their agent adjudication are re-                 repeats this design on its 32 new questions. Within         1098
-1075   tained. This is content quality control without new                 each confirmation domain, four questions are se-            1099
-1076   human annotation, not a human-gold validation                       lected by a fixed hash for four additional role arms:       1100
-1077   claim.                                                              two neutral paraphrases, an instruction to priori-          1101
-                                                                           tize student reasoning without revealing the final          1102
-1078   C.2     Crossed Educational Inputs                                  answer, and an instruction to explain the solution          1103
+1076   ing, yielding 128 complete reviews. All five                        or instruction-following ability. Results under this        1100
+1077   Boolean content checks were positive in every re-                   controlled reference condition are reported sepa-           1101
+1078   view. Twenty-five reviews nevertheless included                     rately from the historical archive.                         1102
+1079   issue text, mostly describing the deliberately incor-                  The training stage uses the canonical tutor role         1103
+1080   rect attempt or the deliberately unfinished work;                   on all 32 questions. The confirmation stage first           1104
+1081   these comments and their agent adjudication are re-                 repeats this design on its 32 new questions. Within         1105
+1082   tained. This is content quality control without new                 each confirmation domain, four questions are se-            1106
+1083   human annotation, not a human-gold validation                       lected by a fixed hash for four additional role arms:       1107
+1084   claim.                                                              two neutral paraphrases, an instruction to priori-          1108
+                                                                           tize student reasoning without revealing the final          1109
+1085   C.2     Crossed Educational Inputs                                  answer, and an instruction to explain the solution          1110
 
-1079   Each main question has two student-work states,                     and state the answer. Each selected question re-            1104
+1086   Each main question has two student-work states,                     and state the answer. Each selected question re-            1111
 
-1080   an erroneous attempt and correct but unfinished                     ceives every arm and student state. The neutral             1105
+1087   an erroneous attempt and correct but unfinished                     ceives every arm and student state. The neutral             1112
 
-1081   work, crossed with two explicit affect statements,                  arms change only the role wording; the two pol-             1106
+1088   work, crossed with two explicit affect statements,                  arms change only the role wording; the two pol-             1113
 
-1082   calm and frustrated. These are four controlled in-                  icy arms explicitly change the requested teaching           1107
+1089   calm and frustrated. These are four controlled in-                  icy arms explicitly change the requested teaching           1114
 
-1083   put conditions. The work-state contrast bundles                     behavior.                                                   1108
+1090   put conditions. The work-state contrast bundles                     behavior.                                                   1115
 
-1084   correctness and progress; it does not isolate a pure                   Every model–input cell receives two requests at          1109
-1085   progress or latent student-ability effect. The affect               temperature 0.7 with an 8,192-token output bud-             1110
-1086   statement is an input manipulation, not an observa-                 get. The fixed design specifies 1,280 training re-          1111
-1087   tion of a real learner’s emotion.                                   sponses, 1,280 canonical confirmation responses,            1112
-1088      All prospective main conditions provide the tutor                and 2,560 additional intervention responses. It             1113
-1089   with the same correct instructor reference for that                 also includes 160 secondary responses to paired             1114
-1090   question, specifying that the student has not seen                  complete/missing- information probes on eight con-          1115
-1091   it. This equalizes the availability of the solution                 firmation sources, plus 40 cross-stage responses            1116
-1092   but does not fully control comprehension, attention,                to four training-source sentinels. Sentinels and            1117
+1091   correctness and progress; it does not isolate a pure                   Every model–input cell receives two requests at          1116
+1092   progress or latent student-ability effect. The affect               temperature 0.7 with an 8,192-token output bud-             1117
+1093   statement is an input manipulation, not an observa-                 get. The fixed design specifies 1,280 training re-          1118
+1094   tion of a real learner’s emotion.                                   sponses, 1,280 canonical confirmation responses,            1119
+1095      All prospective main conditions provide the tutor                and 2,560 additional intervention responses. It             1120
+1096   with the same correct instructor reference for that                 also includes 160 secondary responses to paired             1121
+1097   question, specifying that the student has not seen                  complete/missing- information probes on eight con-          1122
+1098   it. This equalizes the availability of the solution                 firmation sources, plus 40 cross-stage responses            1123
+1099   but does not fully control comprehension, attention,                to four training-source sentinels. Sentinels and            1124
 
 
                                                                       14
-1118   prompt variants do not increase the count of inde-            480 valid codes for 160 unchanged tutor responses      1169
-1119   pendent confirmation sources. Request manifests,              after two structure/completion failures were retried   1170
-1120   input hashes, parameters, timestamps, and failure             under identical inputs. Formal structure failures      1171
-1121   histories are recorded. Requests are interleaved              are likewise recorded and retried without select-      1172
-1122   within shared provider concurrency limits rather              ing by event label or coder agreement. A train-        1173
-1123   than run as separate model blocks.                            ing coding interruption was recovered using saved      1174
-                                                                     valid outputs and the existing two-pass repair al-     1175
-1124   C.3   Observable Events and Measurement                       lowance. This yielded 3,839 of 3,840 valid codes.      1176
-1125         Development                                             One GLM coding request repeatedly exhausted its        1177
-1126   Three primary events are fixed from the                       16,384-token completion budget without visible         1178
-1127   measurement-development pilot. Answer revela-                 output. Before forecast locking or confirmation        1179
-1128   tion records an explicit final resolution, including          generation, a disclosed amendment allowed this         1180
-1129   an incorrect resolution or a correct statement that           single missing code a 32,768-token ceiling and at      1181
-1130   information is insufficient. It therefore measures            most two attempts, keeping its model, input, rubric,   1182
-1131   disclosure, not correctness. Reasoning elicitation            and temperature fixed. It completed on the first at-   1183
-1132   records an invitation for the student to perform              tempt using 3,511 completion tokens; this does not     1184
-1133   unanswered reasoning, including imperatives and               identify the cause of the preceding failures. The      1185
-1134   indirect suggestions; rhetorical questions immedi-            original and expanded-budget groups were vali-         1186
-1135   ately answered by the tutor do not qualify. Affect            dated separately before their disjoint codes were      1187
-1136   acknowledgement records explicit recognition of               combined. All 1,280 training answers consequently      1188
-1137   feeling or difficulty, excluding generic politeness           have three valid codes. The interrupted run, failed    1189
-1138   and praise. These are behavior endpoints, not three           attempts, and amendment receipt are retained; the      1190
-1139   assumed independent personality factors.                      single expanded-budget code is an explicit devia-      1191
-1140      Five secondary events cover worked explanation,            tion from the original uniform-budget protocol.        1192
-1141   learner choice, epistemic qualification, requests for            Confirmation coding subsequently exhausted its      1193
-1142   missing facts, and unsupported ability attribution.           two repair passes with 12,114 of 12,120 codes valid.   1194
-1143   All are retained regardless of their results. The pi-         All six remaining GLM requests produced empty          1195
-1144   lot showed why a high aggregate agreement rate is             visible outputs after both 16,384-token attempts in    1196
-1145   insufficient: requesting missing facts had only one           each repair pass. Before computing primary con-        1197
-1146   majority-coded positive example among 160 re-                 firmation results, a separate amendment permitted      1198
-1147   sponses, while unsupported ability attribution had            these six requests a 32,768-token ceiling and at       1199
-1148   weak positive agreement. Neither is promoted to               most two attempts each, with unchanged inputs,         1200
-1149   a primary endpoint based on subsequent confirma-              model, rubric, temperature, and parser. It selects     1201
-1150   tion results.                                                 every remaining missing code, without selecting        1202
-1151      MiniMax-M3, DeepSeek-V4-Pro, and GLM-5.3                   by event label or agreement; all prior valid codes     1203
-1152   each code every visible tutor response. Coders re-            are retained. The two budget groups require sep-       1204
-1153   ceive the student conversation, the reference target,         arate validation and an exact disjoint union. Two      1205
-1154   and the answer with original line identifiers. They           affected answers belong to the canonical prediction    1206
-1155   do not receive the generating model name, system-             panel, one to a neutral wording arm, and three to      1207
-1156   role assignment, repeat number, or partition label.           the missing-information opportunity panel. The         1208
-1157   Natural output style can still reveal identity. Posi-         supplemental sensitivity enumerates all binary as-     1209
-1158   tive codes must reference existing nonempty source            signments for the two missing canonical GLM            1210
-1159   lines; negative codes have no references. Valid ref-          codes while fixing the other coders and locked         1211
-1160   erences establish traceability, not semantic truth.           predictions, and bounds the affected descriptive       1212
-1161   We use majority labels when all three coders are              contrasts. This is an explicitly amended measure-      1213
-1162   structurally valid, and retain individual and leave-          ment protocol; it does not reset the original frozen   1214
-1163   one-coder analyses, including fractional means for            repair allowance. Five requests completed under        1215
-1164   two-coder ties.                                               this amendment. The remaining opportunity-probe        1216
-1165      The initial exact-quotation protocol failed on nat-        request returned HTTP 502 at approximately 300         1217
-1166   urally formatted answers, which motivated line ref-           seconds on both attempts, matching the local Gate-     1218
-1167   erences during measurement development. Origi-                way’s upstream read timeout. A separate transport      1219
-1168   nal failures remain archived. The finalized pilot has         amendment retained those five completed codes, in-     1220
+1125   prompt variants do not increase the count of inde-            480 valid codes for 160 unchanged tutor responses      1176
+1126   pendent confirmation sources. Request manifests,              after two structure/completion failures were retried   1177
+1127   input hashes, parameters, timestamps, and failure             under identical inputs. Formal structure failures      1178
+1128   histories are recorded. Requests are interleaved              are likewise recorded and retried without select-      1179
+1129   within shared provider concurrency limits rather              ing by event label or coder agreement. A train-        1180
+1130   than run as separate model blocks.                            ing coding interruption was recovered using saved      1181
+                                                                     valid outputs and the existing two-pass repair al-     1182
+1131   C.3   Observable Events and Measurement                       lowance. This yielded 3,839 of 3,840 valid codes.      1183
+1132         Development                                             One GLM coding request repeatedly exhausted its        1184
+1133   Three primary events are fixed from the                       16,384-token completion budget without visible         1185
+1134   measurement-development pilot. Answer revela-                 output. Before forecast locking or confirmation        1186
+1135   tion records an explicit final resolution, including          generation, a disclosed amendment allowed this         1187
+1136   an incorrect resolution or a correct statement that           single missing code a 32,768-token ceiling and at      1188
+1137   information is insufficient. It therefore measures            most two attempts, keeping its model, input, rubric,   1189
+1138   disclosure, not correctness. Reasoning elicitation            and temperature fixed. It completed on the first at-   1190
+1139   records an invitation for the student to perform              tempt using 3,511 completion tokens; this does not     1191
+1140   unanswered reasoning, including imperatives and               identify the cause of the preceding failures. The      1192
+1141   indirect suggestions; rhetorical questions immedi-            original and expanded-budget groups were vali-         1193
+1142   ately answered by the tutor do not qualify. Affect            dated separately before their disjoint codes were      1194
+1143   acknowledgement records explicit recognition of               combined. All 1,280 training answers consequently      1195
+1144   feeling or difficulty, excluding generic politeness           have three valid codes. The interrupted run, failed    1196
+1145   and praise. These are behavior endpoints, not three           attempts, and amendment receipt are retained; the      1197
+1146   assumed independent personality factors.                      single expanded-budget code is an explicit devia-      1198
+1147      Five secondary events cover worked explanation,            tion from the original uniform-budget protocol.        1199
+1148   learner choice, epistemic qualification, requests for            Confirmation coding subsequently exhausted its      1200
+1149   missing facts, and unsupported ability attribution.           two repair passes with 12,114 of 12,120 codes valid.   1201
+1150   All are retained regardless of their results. The pi-         All six remaining GLM requests produced empty          1202
+1151   lot showed why a high aggregate agreement rate is             visible outputs after both 16,384-token attempts in    1203
+1152   insufficient: requesting missing facts had only one           each repair pass. Before computing primary con-        1204
+1153   majority-coded positive example among 160 re-                 firmation results, a separate amendment permitted      1205
+1154   sponses, while unsupported ability attribution had            these six requests a 32,768-token ceiling and at       1206
+1155   weak positive agreement. Neither is promoted to               most two attempts each, with unchanged inputs,         1207
+1156   a primary endpoint based on subsequent confirma-              model, rubric, temperature, and parser. It selects     1208
+1157   tion results.                                                 every remaining missing code, without selecting        1209
+1158      MiniMax-M3, DeepSeek-V4-Pro, and GLM-5.3                   by event label or agreement; all prior valid codes     1210
+1159   each code every visible tutor response. Coders re-            are retained. The two budget groups require sep-       1211
+1160   ceive the student conversation, the reference target,         arate validation and an exact disjoint union. Two      1212
+1161   and the answer with original line identifiers. They           affected answers belong to the canonical prediction    1213
+1162   do not receive the generating model name, system-             panel, one to a neutral wording arm, and three to      1214
+1163   role assignment, repeat number, or partition label.           the missing-information opportunity panel. The         1215
+1164   Natural output style can still reveal identity. Posi-         supplemental sensitivity enumerates all binary as-     1216
+1165   tive codes must reference existing nonempty source            signments for the two missing canonical GLM            1217
+1166   lines; negative codes have no references. Valid ref-          codes while fixing the other coders and locked         1218
+1167   erences establish traceability, not semantic truth.           predictions, and bounds the affected descriptive       1219
+1168   We use majority labels when all three coders are              contrasts. This is an explicitly amended measure-      1220
+1169   structurally valid, and retain individual and leave-          ment protocol; it does not reset the original frozen   1221
+1170   one-coder analyses, including fractional means for            repair allowance. Five requests completed under        1222
+1171   two-coder ties.                                               this amendment. The remaining opportunity-probe        1223
+1172      The initial exact-quotation protocol failed on nat-        request returned HTTP 502 at approximately 300         1224
+1173   urally formatted answers, which motivated line ref-           seconds on both attempts, matching the local Gate-     1225
+1174   erences during measurement development. Origi-                way’s upstream read timeout. A separate transport      1226
+1175   nal failures remain archived. The finalized pilot has         amendment retained those five completed codes, in-     1227
 
 
                                                                 15
-1221   creased only the idle Gateway’s read timeout from            C.5   Repetition and Prompt Plasticity                  1269
-1222   300 to 660 seconds, and permitted at most two addi-
-                                                                    Repetition analyses report positive, negative, and      1270
-1223   tional attempts for that one request under the same
-                                                                    total event agreement and profile correspondence,       1271
-1224   32,768-token budget. The client timeout remained
-                                                                    retaining source clustering. Constant behavior can      1272
-1225   720 seconds. This extra transport allowance is also
-                                                                    produce perfect repeat agreement and is reported as     1273
-1226   retained in the protocol history rather than counted
-                                                                    such. On the 16 fully crossed intervention sources,     1274
-1227   as part of either earlier repair allowance.
-                                                                    we estimate each model’s event-rate difference be-      1275
-                                                                    tween an alternative role and the canonical role. We    1276
-                                                                    report average shifts alongside model and student-      1277
-1228   C.4   Prediction Before Confirmation                         state heterogeneity.                                    1278
-1229         Generation
-                                                                       For neutral wording, the fixed equivalence ref-      1279
-                                                                    erence is ±0.10 in event probability. We retain         1280
-1230   For each behavior, four nested logistic predictors           the nominal Bonferroni paired-t intervals across        1281
-1231   model the probability of its occurrence: a subject-          the 30 model–event–neutral-arm comparisons. A           1282
-1232   by-student-state baseline; that baseline plus model          nonsignificant difference does not establish equiva-    1283
-1233   identity; an additional model-by-subject block; and          lence, and constant source differences receive a de-    1284
-1234   an additional model-by-student-state block. New              generacy flag. Further synthetic diagnostics during     1285
-1235   feature blocks are orthogonalized against existing           training show undercoverage in a sparse boundary        1286
-1236   blocks using training data and standardized un-              case even with nonzero source variance. Before          1287
-1237   der source-equal weights. This prevents duplicate            confirmation generation, we therefore additionally      1288
-1238   main-effect encodings from changing their ridge              require a bounded-source interval to support any        1289
-1239   penalty when interactions are introduced. The in-            population-equivalence statement. Scaling Hoeffd-       1290
-1240   tercept is unpenalized. The penalty is selected from         ing’s bound to source differences in [−1, 1] and        1291
-1241   {0.1, 1, 10, 100} by source-grouped training-only            allocating error across both
-1242   validation. Constant training outcomes use the                                           ptails and all 30 com-      1292
-                                                                    parisons gives half-width 2 log(2 · 30/0.05)/n          1293
-1243   same smoothed constant across all four predictors.           (Hoeffding, 1963). At n = 16 this is approximately      1294
-1244      The fitted models, tuning choices, input hashes,          0.941, too wide to support the chosen tolerance.        1295
-1245   and confirmation probabilities are saved before any          This conservative sensitivity still assumes indepen-    1296
-1246   confirmation tutor response is generated. The gen-           dent source observations and does not make the          1297
-1247   eration runner checks this prediction lock. No               authored bank representative. We can describe ob-       1298
-1248   confirmation label, answer length, or same-item              served neutral shifts and nominal intervals, while      1299
-1249   cross-model score enters a primary predictor. A              withholding population equivalence. These dis-          1300
-1250   secondary competing forecast uses only training-             closed interpretation additions preserve the frozen     1301
-1251   source profiles of log word count and marked-line            numerical output and the six primary prediction         1302
-1252   fraction, recomputing those profiles within training         tests. The explicit ASK and EXPLAIN arms quan-          1303
-1253   validation. Such style competition is descriptive:           tify policy displacement rather than better teaching.   1304
-1254   teaching policy may itself influence length and for-         Finally, answer revelation and reasoning elicitation    1305
-1255   matting, so it is not a causal adjustment for style.         are analyzed jointly as four possible combinations.     1306
-                                                                    Their evidence lines do not identify which action       1307
-1256      For each of the three primary events, the two pri-
-                                                                    occurred first, and we do not infer action order from   1308
-1257   mary comparisons are the Brier improvement from
-                                                                    them.                                                   1309
-1258   a default model profile over the situation baseline
-1259   and from a student-state profile over the model-
-                                                                    C.6   Sensitivity Analyses and Their Timing             1310
-1260   by-subject baseline. We average losses within
-1261   source and then equally across the 32 confirma-              During training coding, after measurement devel-        1311
-1262   tion sources. The six one-sided paired source-level          opment but before confirmation responses exist,         1312
-1263   tests use Holm correction. We report absolute Brier          we additionally fix eight alternative coding panels:    1313
-1264   losses, source-bootstrap intervals, and all compar-          the three-coder mean, each individual coder, each       1314
-1265   ison signs. These intervals condition on the fitted          two-coder mean, and the mean after excluding the        1315
-1266   training profiles and a source-sampling approxi-             generator’s model family. For each panel, forecasts     1316
-1267   mation; they do not describe uncertainty over all            are refitted using its training labels and locked be-   1317
-1268   models or all educational contexts.                          fore confirmation generation. They are evaluated        1318
+1228   creased only the idle Gateway’s read timeout from            C.5   Repetition and Prompt Plasticity                  1276
+1229   300 to 660 seconds, and permitted at most two addi-
+                                                                    Repetition analyses report positive, negative, and      1277
+1230   tional attempts for that one request under the same
+                                                                    total event agreement and profile correspondence,       1278
+1231   32,768-token budget. The client timeout remained
+                                                                    retaining source clustering. Constant behavior can      1279
+1232   720 seconds. This extra transport allowance is also
+                                                                    produce perfect repeat agreement and is reported as     1280
+1233   retained in the protocol history rather than counted
+                                                                    such. On the 16 fully crossed intervention sources,     1281
+1234   as part of either earlier repair allowance.
+                                                                    we estimate each model’s event-rate difference be-      1282
+                                                                    tween an alternative role and the canonical role. We    1283
+                                                                    report average shifts alongside model and student-      1284
+1235   C.4   Prediction Before Confirmation                         state heterogeneity.                                    1285
+1236         Generation
+                                                                       For neutral wording, the fixed equivalence ref-      1286
+                                                                    erence is ±0.10 in event probability. We retain         1287
+1237   For each behavior, four nested logistic predictors           the nominal Bonferroni paired-t intervals across        1288
+1238   model the probability of its occurrence: a subject-          the 30 model–event–neutral-arm comparisons. A           1289
+1239   by-student-state baseline; that baseline plus model          nonsignificant difference does not establish equiva-    1290
+1240   identity; an additional model-by-subject block; and          lence, and constant source differences receive a de-    1291
+1241   an additional model-by-student-state block. New              generacy flag. Further synthetic diagnostics during     1292
+1242   feature blocks are orthogonalized against existing           training show undercoverage in a sparse boundary        1293
+1243   blocks using training data and standardized un-              case even with nonzero source variance. Before          1294
+1244   der source-equal weights. This prevents duplicate            confirmation generation, we therefore additionally      1295
+1245   main-effect encodings from changing their ridge              require a bounded-source interval to support any        1296
+1246   penalty when interactions are introduced. The in-            population-equivalence statement. Scaling Hoeffd-       1297
+1247   tercept is unpenalized. The penalty is selected from         ing’s bound to source differences in [−1, 1] and        1298
+1248   {0.1, 1, 10, 100} by source-grouped training-only            allocating error across both
+1249   validation. Constant training outcomes use the                                           ptails and all 30 com-      1299
+                                                                    parisons gives half-width 2 log(2 · 30/0.05)/n          1300
+1250   same smoothed constant across all four predictors.           (Hoeffding, 1963). At n = 16 this is approximately      1301
+1251      The fitted models, tuning choices, input hashes,          0.941, too wide to support the chosen tolerance.        1302
+1252   and confirmation probabilities are saved before any          This conservative sensitivity still assumes indepen-    1303
+1253   confirmation tutor response is generated. The gen-           dent source observations and does not make the          1304
+1254   eration runner checks this prediction lock. No               authored bank representative. We can describe ob-       1305
+1255   confirmation label, answer length, or same-item              served neutral shifts and nominal intervals, while      1306
+1256   cross-model score enters a primary predictor. A              withholding population equivalence. These dis-          1307
+1257   secondary competing forecast uses only training-             closed interpretation additions preserve the frozen     1308
+1258   source profiles of log word count and marked-line            numerical output and the six primary prediction         1309
+1259   fraction, recomputing those profiles within training         tests. The explicit ASK and EXPLAIN arms quan-          1310
+1260   validation. Such style competition is descriptive:           tify policy displacement rather than better teaching.   1311
+1261   teaching policy may itself influence length and for-         Finally, answer revelation and reasoning elicitation    1312
+1262   matting, so it is not a causal adjustment for style.         are analyzed jointly as four possible combinations.     1313
+                                                                    Their evidence lines do not identify which action       1314
+1263      For each of the three primary events, the two pri-
+                                                                    occurred first, and we do not infer action order from   1315
+1264   mary comparisons are the Brier improvement from
+                                                                    them.                                                   1316
+1265   a default model profile over the situation baseline
+1266   and from a student-state profile over the model-
+                                                                    C.6   Sensitivity Analyses and Their Timing             1317
+1267   by-subject baseline. We average losses within
+1268   source and then equally across the 32 confirma-              During training coding, after measurement devel-        1318
+1269   tion sources. The six one-sided paired source-level          opment but before confirmation responses exist,         1319
+1270   tests use Holm correction. We report absolute Brier          we additionally fix eight alternative coding panels:    1320
+1271   losses, source-bootstrap intervals, and all compar-          the three-coder mean, each individual coder, each       1321
+1272   ison signs. These intervals condition on the fitted          two-coder mean, and the mean after excluding the        1322
+1273   training profiles and a source-sampling approxi-             generator’s model family. For each panel, forecasts     1323
+1274   mation; they do not describe uncertainty over all            are refitted using its training labels and locked be-   1324
+1275   models or all educational contexts.                          fore confirmation generation. They are evaluated        1325
 
 
                                                                16
-1319   against the corresponding confirmation labels; two-          three additional screens: excluding unanimously           1370
-1320   coder ties remain 0.5. This checks dependence on             identified errors; excluding errors identified by ei-     1371
-1321   coding choices but cannot remove biases shared by            ther reviewer; and excluding either errors or un-         1372
-1322   all coders or supply an external ground truth.               certainty. A flagged response removes its entire          1373
-1323      Five further forecast sets each remove one gener-         five-model source–student-state–repeat slot so that       1374
-1324   ator configuration from both training and the con-           model comparisons remain paired. We report re-            1375
-1325   firmation target, refitting the baselines and tuning         tained coverage and source-equal losses with de-          1376
-1326   within the retained training data. This checks de-           scriptive source intervals, without new hypothesis        1377
-1327   pendence on a single configuration; it changes the           tests. These screens condition on generated re-           1378
-1328   target model mixture and does not test prediction            sponses and change the target distribution; they          1379
-1329   of an unseen model. Neither sensitivity family re-           are not causal controls for ability. The content          1380
-1330   places the six primary comparisons.                          review covers the canonical panel, not all prompt-        1381
-1331      We also resample the 30 training source families          intervention responses.                                   1382
-1332   200 times, preserving the multiplicity of repeated              The first content pass returned all 2,584 records,     1383
-1333   source draws. We retain the selected regulariza-             but its initial validator reconstructed a zero tempera-   1384
-1334   tion relative to total loss weight, without repeating        ture as JSON integer 0, whereas the request runner        1385
-1335   hyperparameter selection, and recompute training-            had serialized float 0.0. A separately recorded           1386
-1336   style profiles in each resample. The resulting gain          correction reconstructs the exact payload from the        1387
-1337   quantiles describe training-source sensitivity con-          verified recorded numeric value. All prompt, re-          1388
-1338   ditional on the confirmation material and selected           sponse and corrected payload hashes match; no             1389
-1339   regularization. They are separate from the primary           sampling parameter, input, verdict rule, or original      1390
-1340   confirmation- source intervals. These extensions             file changes. The unchanged parser accepts 2,577          1391
-1341   were specified before confirmation outputs, not pre-         initial reviews. The first of the original two allowed    1392
-1342   registered before the entire research project began.         repair passes resolves all seven structural failures:     1393
-                                                                    two invalid concise explanations and five invalid         1394
-1343   C.7   Mathematics and Content-Error                          evidence-line references. All seven complete on           1395
-1344         Sensitivity                                            their first HTTP attempts; the 2,577 valid original       1396
-1345   The protocol also requires a mathematics subset              reviews remain unchanged. The correction, origi-          1397
-1346   and a check of dependence on obvious content er-             nal failed diagnostic, and repair history are retained.   1398
-1347   rors. Its implementation is fixed during training            Both reviewers’ twelve control judgments are valid        1399
-1348   coding, before confirmation generation. We evalu-            and match the expected verdicts.                          1400
-1349   ate the existing forecasts on all eight mathematics
-1350   sources, covering 320 canonical responses, without           D     Exact Role Wording and an Illustrative              1401
-1351   refitting. Separately, MiniMax-M3 and DeepSeek-                    Response Set                                        1402
-1352   V4-Pro review all 1,280 canonical responses for
-                                                                    D.1    Role Instructions                                  1403
-1353   checkable content errors using the student input,
-1354   reference, and original answer lines. They distin-           Every main system message starts with one of the          1404
+1326   against the corresponding confirmation labels; two-          three additional screens: excluding unanimously           1377
+1327   coder ties remain 0.5. This checks dependence on             identified errors; excluding errors identified by ei-     1378
+1328   coding choices but cannot remove biases shared by            ther reviewer; and excluding either errors or un-         1379
+1329   all coders or supply an external ground truth.               certainty. A flagged response removes its entire          1380
+1330      Five further forecast sets each remove one gener-         five-model source–student-state–repeat slot so that       1381
+1331   ator configuration from both training and the con-           model comparisons remain paired. We report re-            1382
+1332   firmation target, refitting the baselines and tuning         tained coverage and source-equal losses with de-          1383
+1333   within the retained training data. This checks de-           scriptive source intervals, without new hypothesis        1384
+1334   pendence on a single configuration; it changes the           tests. These screens condition on generated re-           1385
+1335   target model mixture and does not test prediction            sponses and change the target distribution; they          1386
+1336   of an unseen model. Neither sensitivity family re-           are not causal controls for ability. The content          1387
+1337   places the six primary comparisons.                          review covers the canonical panel, not all prompt-        1388
+1338      We also resample the 30 training source families          intervention responses.                                   1389
+1339   200 times, preserving the multiplicity of repeated              The first content pass returned all 2,584 records,     1390
+1340   source draws. We retain the selected regulariza-             but its initial validator reconstructed a zero tempera-   1391
+1341   tion relative to total loss weight, without repeating        ture as JSON integer 0, whereas the request runner        1392
+1342   hyperparameter selection, and recompute training-            had serialized float 0.0. A separately recorded           1393
+1343   style profiles in each resample. The resulting gain          correction reconstructs the exact payload from the        1394
+1344   quantiles describe training-source sensitivity con-          verified recorded numeric value. All prompt, re-          1395
+1345   ditional on the confirmation material and selected           sponse and corrected payload hashes match; no             1396
+1346   regularization. They are separate from the primary           sampling parameter, input, verdict rule, or original      1397
+1347   confirmation- source intervals. These extensions             file changes. The unchanged parser accepts 2,577          1398
+1348   were specified before confirmation outputs, not pre-         initial reviews. The first of the original two allowed    1399
+1349   registered before the entire research project began.         repair passes resolves all seven structural failures:     1400
+                                                                    two invalid concise explanations and five invalid         1401
+1350   C.7   Mathematics and Content-Error                          evidence-line references. All seven complete on           1402
+1351         Sensitivity                                            their first HTTP attempts; the 2,577 valid original       1403
+1352   The protocol also requires a mathematics subset              reviews remain unchanged. The correction, origi-          1404
+1353   and a check of dependence on obvious content er-             nal failed diagnostic, and repair history are retained.   1405
+1354   rors. Its implementation is fixed during training            Both reviewers’ twelve control judgments are valid        1406
+1355   coding, before confirmation generation. We evalu-            and match the expected verdicts.                          1407
+1356   ate the existing forecasts on all eight mathematics
+1357   sources, covering 320 canonical responses, without           D     Exact Role Wording and an Illustrative              1408
+1358   refitting. Separately, MiniMax-M3 and DeepSeek-                    Response Set                                        1409
+1359   V4-Pro review all 1,280 canonical responses for
+                                                                    D.1    Role Instructions                                  1410
+1360   checkable content errors using the student input,
+1361   reference, and original answer lines. They distin-           Every main system message starts with one of the          1411
 
-1355   guish a clear error, no clear error identified, and          following strings. The same question-specific in-         1405
+1362   guish a clear error, no clear error identified, and          following strings. The same question-specific in-         1412
 
-1356   uncertainty. Withholding a solution, asking a ques-          structor reference follows it, headed “Instructor         1406
+1363   uncertainty. Withholding a solution, asking a ques-          structor reference follows it, headed “Instructor         1413
 
-1357   tion, or correctly quoting and correcting an error is        reference (the student has not been shown this ref-       1407
+1364   tion, or correctly quoting and correcting an error is        reference (the student has not been shown this ref-       1414
 
-1358   not itself an error. Positive error judgments require        erence):”. The student message gives the problem,         1408
+1365   not itself an error. Positive error judgments require        erence):”. The student message gives the problem,         1415
 
-1359   a category and source-line evidence.                         “My work so far:”, the relevant scripted attempt,         1409
+1366   a category and source-line evidence.                         “My work so far:”, the relevant scripted attempt,         1416
 
-1360      Twelve agent-authored controls accompany the              the affect sentence, and “Please help me continue.”       1410
+1367      Twelve agent-authored controls accompany the              the affect sentence, and “Please help me continue.”       1417
 
-1361   responses, giving 2,584 secondary review requests.           The two affect sentences are “I feel calm while           1411
+1368   responses, giving 2,584 secondary review requests.           The two affect sentences are “I feel calm while           1418
 
-1362   Each reviewer must match at least five of six                working on this.” and “I feel frustrated while work-      1412
+1369   Each reviewer must match at least five of six                working on this.” and “I feel frustrated while work-      1419
 
-1363   controls in each of the clear-error and no-clear-            ing on this.” Full materials and input hashes ac-         1413
+1370   controls in each of the clear-error and no-clear-            ing on this.” Full materials and input hashes ac-         1420
 
-1364   error classes to meet the limited diagnostic rule.           company the generation manifests.                         1414
+1371   error classes to meet the limited diagnostic rule.           company the generation manifests.                         1421
 
-1365   If either reviewer fails, screened results remain            Canonical. “You are a tutor. Respond to the stu-          1415
-1366   measurement-limited diagnostics. These controls              dent’s last message.”                                     1416
-1367   do not establish correctness on natural responses,
-1368   even when the rule is met.                                   Neutral A. “You are helping a student as a tutor.         1417
-1369      We retain the full primary results and report             Reply to the student’s most recent message.”              1418
+1372   If either reviewer fails, screened results remain            Canonical. “You are a tutor. Respond to the stu-          1422
+1373   measurement-limited diagnostics. These controls              dent’s last message.”                                     1423
+1374   do not establish correctness on natural responses,
+1375   even when the rule is met.                                   Neutral A. “You are helping a student as a tutor.         1424
+1376      We retain the full primary results and report             Reply to the student’s most recent message.”              1425
 
 
                                                                17
-1419   Neutral B. “Act as a tutor assisting the student.             A coding boundary. M2.7 writes, “The key ques-           1466
-1420   Write your response to their latest message.”                 tion to ask yourself: Is one fact surprising given       1467
-                                                                     the other? If yes, reach for although.” Its elicita-     1468
-1421   ASK. The canonical string followed by: “For this              tion code is majority-positive but not unanimous.        1469
-1422   response, prioritize asking the student to work out           A question accompanied by a rule for answering it        1470
-1423   the next useful step. Do not state the final answer.          leaves room for different interpretations of whether     1471
-1424   You may offer a brief hint or explanation.”                   unanswered student reasoning remains. We retain          1472
-                                                                     this disagreement; the illustration does not override    1473
-1425   EXPLAIN. The canonical string followed by:                    the frozen majority rule or supply a new gold label.     1474
-1426   “For this response, prioritize explaining the solution
-1427   and state the final answer. You may invite follow-            E     Additional Confirmation Results                    1475
-1428   up reasoning or questions.”
-                                                                     E.1    Prediction, Repetition, and Student Cues          1476
+1426   Neutral B. “Act as a tutor assisting the student.             A coding boundary. M2.7 writes, “The key ques-           1473
+1427   Write your response to their latest message.”                 tion to ask yourself: Is one fact surprising given       1474
+                                                                     the other? If yes, reach for although.” Its elicita-     1475
+1428   ASK. The canonical string followed by: “For this              tion code is majority-positive but not unanimous.        1476
+1429   response, prioritize asking the student to work out           A question accompanied by a rule for answering it        1477
+1430   the next useful step. Do not state the final answer.          leaves room for different interpretations of whether     1478
+1431   You may offer a brief hint or explanation.”                   unanswered student reasoning remains. We retain          1479
+                                                                     this disagreement; the illustration does not override    1480
+1432   EXPLAIN. The canonical string followed by:                    the frozen majority rule or supply a new gold label.     1481
+1433   “For this response, prioritize explaining the solution
+1434   and state the final answer. You may invite follow-            E     Additional Confirmation Results                    1482
+1435   up reasoning or questions.”
+                                                                     E.1    Prediction, Repetition, and Student Cues          1483
 
-1429   D.2   One Input, Five Responses                               Table 6 reports the absolute losses for all five pre-    1477
+1436   D.2   One Input, Five Responses                               Table 6 reports the absolute losses for all five pre-    1484
 
-1430   For illustration, we use the first template in the            dictors on the three primary endpoints. Table 7          1478
+1437   For illustration, we use the first template in the            dictors on the three primary endpoints. Table 7          1485
 
-1431   frozen confirmation bank, the canonical role, er-             retains every prespecified primary comparison, in-       1479
+1438   frozen confirmation bank, the canonical role, er-             retains every prespecified primary comparison, in-       1486
 
-1432   roneous work, frustrated cue, and the first request.          cluding unresolved and negative increments. All          1480
+1439   roneous work, frustrated cue, and the first request.          cluding unresolved and negative increments. All          1487
 
-1433   This example set was selected after the analyses              sources are equally weighted after averaging the         1481
+1440   This example set was selected after the analyses              sources are equally weighted after averaging the         1488
 
-1434   and is not used to estimate prevalence or validate            matched responses within each source. These ta-          1482
+1441   and is not used to estimate prevalence or validate            matched responses within each source. These ta-          1489
 
-1435   the coding rubric. It retains all five deployments,           bles use the original locked predictions and full        1483
+1442   the coding rubric. It retains all five deployments,           bles use the original locked predictions and full        1490
 
-1436   including a disputed elicitation code.                        majority labels; the content-screened target is sepa-    1484
-                                                                     rate.                                                    1485
-1437      The exercise asks the student to choose “al-
-1438   though” or “because” for an unexpected contrast               E.2    Prompt Arms and Joint Actions                     1486
-1439   in “___ it was raining, they continued the outdoor
-1440   match.” The erroneous attempt chooses “because”               Table 8 uses the same 16 source problems in every        1487
+1443   including a disputed elicitation code.                        majority labels; the content-screened target is sepa-    1491
+                                                                     rate.                                                    1492
+1444      The exercise asks the student to choose “al-
+1445   though” or “because” for an unexpected contrast               E.2    Prompt Arms and Joint Actions                     1493
+1446   in “___ it was raining, they continued the outdoor
+1447   match.” The erroneous attempt chooses “because”               Table 8 uses the same 16 source problems in every        1494
 
-1441   while explicitly retaining the intended contrast. All         arm; its canonical rates differ from the full 32-        1488
+1448   while explicitly retaining the intended contrast. All         arm; its canonical rates differ from the full 32-        1495
 
-1442   five responses disclose “although”, including GLM,            source profile. In EXPLAIN, revelation is always         1489
+1449   five responses disclose “although”, including GLM,            source profile. In EXPLAIN, revelation is always         1496
 
-1443   despite its much lower pooled canonical revelation            present, so the elicitation rates equal the proportion   1490
+1450   despite its much lower pooled canonical revelation            present, so the elicitation rates equal the proportion   1497
 
-1444   rate. The following excerpts preserve the wording             with both actions. In ASK, elicitation is always         1491
+1451   rate. The following excerpts preserve the wording             with both actions. In ASK, elicitation is always         1498
 
-1445   of the generated responses; typographic emphasis              present, so the revelation rates equal the proportion    1492
+1452   of the generated responses; typographic emphasis              present, so the revelation rates equal the proportion    1499
 
-1446   is rendered as in the source.                                 with both actions. Neither implication establishes       1493
-                                                                     the order or pedagogical value of the actions.           1494
+1453   is rendered as in the source.                                 with both actions. Neither implication establishes       1500
+                                                                     the order or pedagogical value of the actions.           1501
 
-1447   Generic praise versus acknowledgement. M3                        Three nominal neutral comparisons are degener-        1495
+1454   Generic praise versus acknowledgement. M3                        Three nominal neutral comparisons are degener-        1502
 
-1448   begins, “You’re absolutely right to question your             ate. After excluding these, seven comparisons still      1496
+1455   begins, “You’re absolutely right to question your             ate. After excluding these, seven comparisons still      1503
 
-1449   choice!” DeepSeek instead begins, “I under-                   meet a nominal t-based tolerance criterion. None         1497
+1456   choice!” DeepSeek instead begins, “I under-                   meet a nominal t-based tolerance criterion. None         1504
 
-1450   stand your frustration—this is a tricky distinction.”         meets the separate bounded-source rule: its simulta-     1498
+1457   stand your frustration—this is a tricky distinction.”         meets the separate bounded-source rule: its simulta-     1505
 
-1451   Doubao begins, “It’s totally okay to feel frustrated          neous half-width is 0.9414 for the 30 contrasts. We      1499
+1458   Doubao begins, “It’s totally okay to feel frustrated          neous half-width is 0.9414 for the 30 contrasts. We      1506
 
-1452   here”. The complete M3 response is coded as not               therefore make no population-equivalence claim           1500
+1459   here”. The complete M3 response is coded as not               therefore make no population-equivalence claim           1507
 
-1453   acknowledging affect/difficulty, while the other two          for any neutral arm. The GLM neutral-B shifts are        1501
+1460   acknowledging affect/difficulty, while the other two          for any neutral arm. The GLM neutral-B shifts are        1508
 
-1454   are coded positive by all three coders. The contrast          descriptive examples of observed wording sensitiv-       1502
+1461   are coded positive by all three coders. The contrast          descriptive examples of observed wording sensitiv-       1509
 
-1455   illustrates the intended separation between gen-              ity, not proof of a population effect from a selected    1503
+1462   illustrates the intended separation between gen-              ity, not proof of a population effect from a selected    1510
 
-1456   eral encouragement and explicit acknowledgement;              unadjusted interval.                                     1504
+1463   eral encouragement and explicit acknowledgement;              unadjusted interval.                                     1511
 
-1457   unanimous coding is still not semantic ground
-                                                                     E.3    Sensitivity to Coders, Deployments, and           1505
-1458   truth.
-                                                                            Training Sources                                  1506
+1464   unanimous coding is still not semantic ground
+                                                                     E.3    Sensitivity to Coders, Deployments, and           1512
+1465   truth.
+                                                                            Training Sources                                  1513
 
-1459   A disclosed answer and a further invitation.                  The eight coding panels comprise three single            1507
-1460   GLM explains both connectives and later asks, “So,            coders, three leave-one-coder panels, all-three soft     1508
-1461   applying that test to your sentence — which word              labels, and exclusion of the generator’s coder fam-      1509
-1462   gives you the contrast you’re after?” Its revelation          ily. Their default-gain ranges are reported in Sec-      1510
-1463   and elicitation codes are both unanimously positive.          tion 4. Conditional gain ranges are [0.000369,           1511
-1464   This example shows why elicitation is not defined             0.000593] for revelation, [-0.000301, 0.000002] for      1512
-1465   as the absence of an answer.                                  elicitation, and [0.006970, 0.010522] for acknowl-       1513
+1466   A disclosed answer and a further invitation.                  The eight coding panels comprise three single            1514
+1467   GLM explains both connectives and later asks, “So,            coders, three leave-one-coder panels, all-three soft     1515
+1468   applying that test to your sentence — which word              labels, and exclusion of the generator’s coder fam-      1516
+1469   gives you the contrast you’re after?” Its revelation          ily. Their default-gain ranges are reported in Sec-      1517
+1470   and elicitation codes are both unanimously positive.          tion 4. Conditional gain ranges are [0.000369,           1518
+1471   This example shows why elicitation is not defined             0.000593] for revelation, [-0.000301, 0.000002] for      1519
+1472   as the absence of an answer.                                  elicitation, and [0.006970, 0.010522] for acknowl-       1520
 
 
                                                                 18
@@ -1410,73 +1408,73 @@ controls that interpretation.
 
 
                                                        21
-1514   edgement. Panel-specific forecasts were locked be-            of information-seeking behavior. These secondary        1565
-1515   fore confirmation; labels and predictions are com-            rates are not population trait estimates.               1566
-1516   pared within their corresponding panel.                          Four training source problems are repeated as        1567
-1517      Across the five generator deletions, default-gain          later sentinels, with two requests per deployment       1568
-1518   estimates span [0.003942, 0.115447], [0.030800,               at each stage. The paired-stage tables preserve dif-    1569
-1519   0.156526], and [0.001748, 0.028750] for revela-               ferences for every event and configuration. The         1570
-1520   tion, elicitation, and acknowledgement. These                 sample is too small, and the observations combine       1571
-1521   changes include refitting the specified predictor on          generation variation, coding variation, and possible    1572
-1522   the reduced training-model panel before confirma-             deployment drift, to attribute any change specifi-      1573
-1523   tion; they are not predictions for unseen model               cally to provider drift. Moreover, the tutor gener-     1574
-1524   identities. Conditional acknowledgement gains                 ations preceded the later Gateway coding outage;        1575
-1525   span [0.002844, 0.012928]. The corresponding                  these sentinels cannot validate the stability of the    1576
-1526   individual source-bootstrap intervals exclude zero            coding deployments across that outage.                  1577
-1527   in all five deletions, but these are supplemental in-
-1528   tervals, not five additional primary hypothesis tests.
-1529   The default acknowledgement interval crosses zero             E.5   Mathematics and Content-Selection                 1578
-1530   without M2.7, and the revelation default gain with-                 Sensitivity                                       1579
-1531   out GLM is small; the full-panel result is not a
-1532   claim of equal robustness across subsets.                     Table 10 reports every selected subset. Of 1,280        1580
+1521   edgement. Panel-specific forecasts were locked be-            of information-seeking behavior. These secondary        1572
+1522   fore confirmation; labels and predictions are com-            rates are not population trait estimates.               1573
+1523   pared within their corresponding panel.                          Four training source problems are repeated as        1574
+1524      Across the five generator deletions, default-gain          later sentinels, with two requests per deployment       1575
+1525   estimates span [0.003942, 0.115447], [0.030800,               at each stage. The paired-stage tables preserve dif-    1576
+1526   0.156526], and [0.001748, 0.028750] for revela-               ferences for every event and configuration. The         1577
+1527   tion, elicitation, and acknowledgement. These                 sample is too small, and the observations combine       1578
+1528   changes include refitting the specified predictor on          generation variation, coding variation, and possible    1579
+1529   the reduced training-model panel before confirma-             deployment drift, to attribute any change specifi-      1580
+1530   tion; they are not predictions for unseen model               cally to provider drift. Moreover, the tutor gener-     1581
+1531   identities. Conditional acknowledgement gains                 ations preceded the later Gateway coding outage;        1582
+1532   span [0.002844, 0.012928]. The corresponding                  these sentinels cannot validate the stability of the    1583
+1533   individual source-bootstrap intervals exclude zero            coding deployments across that outage.                  1584
+1534   in all five deletions, but these are supplemental in-
+1535   tervals, not five additional primary hypothesis tests.
+1536   The default acknowledgement interval crosses zero             E.5   Mathematics and Content-Selection                 1585
+1537   without M2.7, and the revelation default gain with-                 Sensitivity                                       1586
+1538   out GLM is small; the full-panel result is not a
+1539   claim of equal robustness across subsets.                     Table 10 reports every selected subset. Of 1,280        1587
 
-1533      The 200 training-source resamples yield 2.5–               natural responses, five receive unanimous error         1581
+1540      The 200 training-source resamples yield 2.5–               natural responses, five receive unanimous error         1588
 
-1534   97.5 percentile ranges of [0.086539, 0.092425],               judgments and 49 receive at least one; none re-         1582
+1541   97.5 percentile ranges of [0.086539, 0.092425],               judgments and 49 receive at least one; none re-         1589
 
-1535   [0.126473, 0.131030], and [0.016673, 0.021398]                ceives an uncertainty judgment. The five unani-         1583
+1542   [0.126473, 0.131030], and [0.016673, 0.021398]                ceives an uncertainty judgment. The five unani-         1590
 
-1536   for the three default gains. Conditional ranges are [-        mous errors occupy five comparison slots. The 49        1584
+1543   for the three default gains. Conditional ranges are [-        mous errors occupy five comparison slots. The 49        1591
 
-1537   0.001067, 0.000641], [-0.002126, -0.000058], and              either-reviewer errors occupy 43 slots, whose exclu-    1585
+1544   0.001067, 0.000641], [-0.002126, -0.000058], and              either-reviewer errors occupy 43 slots, whose exclu-    1592
 
-1538   [0.005422, 0.010389]. Sources are resampled as                sion removes 215 answers because all five models        1586
+1545   [0.005422, 0.010389]. Sources are resampled as                sion removes 215 answers because all five models        1593
 
-1539   groups with multiplicity weights; the original reg-           are removed together. All 32 sources retain obser-      1587
+1546   groups with multiplicity weights; the original reg-           are removed together. All 32 sources retain obser-      1594
 
-1540   ularization ratio and confirmation labels remain              vations. Per-model counts (unanimous/either) are        1588
+1547   ularization ratio and confirmation labels remain              vations. Per-model counts (unanimous/either) are        1595
 
-1541   fixed. These ranges describe training-set sensitivity         M2.7 2/17, M3 3/20, DeepSeek 0/0, Doubao 0/2,           1589
+1548   fixed. These ranges describe training-set sensitivity         M2.7 2/17, M3 3/20, DeepSeek 0/0, Doubao 0/2,           1596
 
-1542   and are not replacement confidence intervals for              and GLM 0/10, each out of 256 responses. These          1590
+1549   and are not replacement confidence intervals for              and GLM 0/10, each out of 256 responses. These          1597
 
-1543   the six tests.                                                are reviewer flags, not an accuracy ranking. Over-      1591
-                                                                     all reviewer verdict agreement is 96.6%, but error-     1592
-1544   E.4   Secondary Events, Expression                            positive agreement is only 2(5)/(49 + 5) = 18.5%,       1593
-1545         Opportunities, and Sentinels                            illustrating the effect of rare positives. Each re-     1594
+1550   the six tests.                                                are reviewer flags, not an accuracy ranking. Over-      1598
+                                                                     all reviewer verdict agreement is 96.6%, but error-     1599
+1551   E.4   Secondary Events, Expression                            positive agreement is only 2(5)/(49 + 5) = 18.5%,       1600
+1552         Opportunities, and Sentinels                            illustrating the effect of rare positives. Each re-     1601
 
-1546   Positive coder agreement on the full 4,040-                   viewer matches all six error and six no-error agent-    1595
+1553   Positive coder agreement on the full 4,040-                   viewer matches all six error and six no-error agent-    1602
 
-1547   response panel is 39.62–61.26% for epistemic qual-            authored controls; these limited diagnostics do not     1596
+1554   response panel is 39.62–61.26% for epistemic qual-            authored controls; these limited diagnostics do not     1603
 
-1548   ification and 26.54–40.93% for unsupported ability            resolve natural-response disagreement.                  1597
+1555   ification and 26.54–40.93% for unsupported ability            resolve natural-response disagreement.                  1604
 
-1549   claims. Their rates require particular caution. Infor-           Across the three screens, the default-gain inter-    1598
-1550   mation requests have 75.51–88.89% positive agree-             vals remain above zero for all three actions. Con-      1599
-1551   ment over the mixed full panel, which includes the            ditional acknowledgement intervals are [0.00551,        1600
-1552   opportunity probes; this does not resolve the lack            0.01405] under unanimous-error exclusion and            1601
-1553   of natural pilot positive examples or validate all            [0.00510, 0.01472] under either-error exclusion.        1602
-1554   missing-information detection.                                Conditional revelation and elicitation intervals span   1603
-1555      No deployment requests missing information                 zero under every screen. The last two screens are       1604
-1556   in the fully specified canonical responses. On                identical and are not independent checks. Screen-       1605
-1557   eight separate paired opportunity sources (16 re-             ing conditions on output judgments, changes the         1606
-1558   sponses per deployment per condition), requests               retained target, and retains source-equal weight-       1607
-1559   remain absent when the necessary facts are sup-               ing; it does not remove ability as a cause. The         1608
-1560   plied. When a necessary fact is withheld, request             full primary tests are unchanged. The content-          1609
-1561   rates are 62.5% for M2.7, 93.8% for M3, 25.0%                 independent checkpoint’s all-canonical and mathe-       1610
-1562   for DeepSeek, 12.5% for Doubao, and 43.8% for                 matics tables agree with their completed counter-       1611
-1563   GLM. This bounded diagnostic shows why absence                parts within 10−12 , using the same routines rather     1612
-1564   in the canonical panel cannot establish an absence            than an independent implementation.                     1613
+1556   claims. Their rates require particular caution. Infor-           Across the three screens, the default-gain inter-    1605
+1557   mation requests have 75.51–88.89% positive agree-             vals remain above zero for all three actions. Con-      1606
+1558   ment over the mixed full panel, which includes the            ditional acknowledgement intervals are [0.00551,        1607
+1559   opportunity probes; this does not resolve the lack            0.01405] under unanimous-error exclusion and            1608
+1560   of natural pilot positive examples or validate all            [0.00510, 0.01472] under either-error exclusion.        1609
+1561   missing-information detection.                                Conditional revelation and elicitation intervals span   1610
+1562      No deployment requests missing information                 zero under every screen. The last two screens are       1611
+1563   in the fully specified canonical responses. On                identical and are not independent checks. Screen-       1612
+1564   eight separate paired opportunity sources (16 re-             ing conditions on output judgments, changes the         1613
+1565   sponses per deployment per condition), requests               retained target, and retains source-equal weight-       1614
+1566   remain absent when the necessary facts are sup-               ing; it does not remove ability as a cause. The         1615
+1567   plied. When a necessary fact is withheld, request             full primary tests are unchanged. The content-          1616
+1568   rates are 62.5% for M2.7, 93.8% for M3, 25.0%                 independent checkpoint’s all-canonical and mathe-       1617
+1569   for DeepSeek, 12.5% for Doubao, and 43.8% for                 matics tables agree with their completed counter-       1618
+1570   GLM. This bounded diagnostic shows why absence                parts within 10−12 , using the same routines rather     1619
+1571   in the canonical panel cannot establish an absence            than an independent implementation.                     1620
 
 
                                                                 22
@@ -1503,111 +1501,166 @@ controls that interpretation.
        are source-equal Brier gains, not new hypothesis tests.
 
 
-1614   F    Expression-Transfer Extension and                              placing the missing vote by either binary value       1645
-1615        Measurement History                                            leaves every primary majority unchanged. Two sec-     1646
-                                                                           ondary events do not have this invariance. Derived    1647
-1616   The extension protocol and forecast table were                      measurement selection, original diagnostics, and      1648
-1617   frozen on 7 September 2026 before its first tutor                   recovered diagnostics are stored separately.          1649
-1618   generation. Its 32 problem sources had already                         Generation completed on 7 September and mea-       1650
-1619   been observed in the first confirmation stage; they                 surement recovery on 8 September 2026. The first-     1651
-1620   are not a second independent source holdout. Each                   stage fitted predictors remain unchanged. Six new-    1652
-1621   of four expression arms crosses 32 sources, two                     expression primary tests form their own Holm fam-     1653
-1622   student-work states, two cue poles, five deploy-                    ily; contemporary original-wording comparisons,       1654
-1623   ments, and two requests, yielding 1,280 answers.                    expression-minus-original paired contrasts, phrase    1655
-1624   Explicit and implicit arms each assign one of four                  subgroups, peer contrasts, repetition, and cod-       1656
-1625   fixed phrase pairs per source, balanced with two                    ing/deletion sensitivities are secondary. Bootstrap   1657
-1626   sources per domain and phrase pair. Student-work                    intervals use 10,000 source resamples stratified by   1658
-1627   text and reference targets are inherited. The peer                  domain with seed 20260907. They condition on          1659
-1628   arm assigns the current student the calm state in                   the fixed training fit and the finite source/phrase   1660
-1629   the frozen predictor regardless of the peer’s quote.                assignment. The individual-coder panels change        1661
-1630   Exact materials, the 61,440-row forecast table cov-                 measurements; generator-deletion panels remove        1662
-1631   ering all endpoints and predictors, and their hashes                scored observations without refitting the original    1663
-1632   are retained with the executable analysis.                          predictors.                                           1664
+1621   F    Expression-Transfer Extension and                              placing the missing vote by either binary value       1652
+1622        Measurement History                                            leaves every primary majority unchanged. Two sec-     1653
+                                                                           ondary events do not have this invariance. Derived    1654
+1623   The extension protocol and forecast table were                      measurement selection, original diagnostics, and      1655
+1624   frozen on 7 September 2026 before its first tutor                   recovered diagnostics are stored separately.          1656
+1625   generation. Its 32 problem sources had already                         Generation completed on 7 September and mea-       1657
+1626   been observed in the first confirmation stage; they                 surement recovery on 8 September 2026. The first-     1658
+1627   are not a second independent source holdout. Each                   stage fitted predictors remain unchanged. Six new-    1659
+1628   of four expression arms crosses 32 sources, two                     expression primary tests form their own Holm fam-     1660
+1629   student-work states, two cue poles, five deploy-                    ily; contemporary original-wording comparisons,       1661
+1630   ments, and two requests, yielding 1,280 answers.                    expression-minus-original paired contrasts, phrase    1662
+1631   Explicit and implicit arms each assign one of four                  subgroups, peer contrasts, repetition, and cod-       1663
+1632   fixed phrase pairs per source, balanced with two                    ing/deletion sensitivities are secondary. Bootstrap   1664
+1633   sources per domain and phrase pair. Student-work                    intervals use 10,000 source resamples stratified by   1665
+1634   text and reference targets are inherited. The peer                  domain with seed 20260907. They condition on          1666
+1635   arm assigns the current student the calm state in                   the fixed training fit and the finite source/phrase   1667
+1636   the frozen predictor regardless of the peer’s quote.                assignment. The individual-coder panels change        1668
+1637   Exact materials, the 61,440-row forecast table cov-                 measurements; generator-deletion panels remove        1669
+1638   ering all endpoints and predictors, and their hashes                scored observations without refitting the original    1670
+1639   are retained with the executable analysis.                          predictors.                                           1671
 
-1633      The extension uses the original three event
-                                                                           G     Recovered Archive Inputs: Evidence              1665
-1634   coders and evidence-line rubric. Of 15,360 re-
-                                                                                 Available and Pending                           1666
-1635   quested codes, 15,359 pass the original strict parser
-1636   after the fixed repair budget. The remaining final re-              A local reconstruction of six tutor-dialogue set-     1667
-1637   sponse contains all eight complete event objects but                tings recovers 3,454 task items and 960 exact ques-   1668
-1638   lacks one root closing brace. A separately recorded                 tion/conversation source groups, including 940        1669
-1639   amendment appends exactly that brace to a derived                   groups shared across benchmark settings. Of these,    1670
-1640   copy, preserving raw responses, earlier failed at-                  551 items in 250 groups lack a separately recovered   1671
-1641   tempts, and the failed controller’s exit record. No                 target question; the remaining 710 groups have at     1672
-1642   event label or evidence is edited and no additional                 least one known problem. Reference fields com-        1673
-1643   API request is made. The other two coders agree                     prise 2,679 provided non-placeholder solutions,       1674
-1644   on all three primary events for this response; re-                  475 placeholders, and 300 absent references. Pro-     1675
+1640      The extension uses the original three event
+                                                                           G     Recovered Archive Inputs: Evidence              1672
+1641   coders and evidence-line rubric. Of 15,360 re-
+                                                                                 Available and Pending                           1673
+1642   quested codes, 15,359 pass the original strict parser
+1643   after the fixed repair budget. The remaining final re-              A local reconstruction of six tutor-dialogue set-     1674
+1644   sponse contains all eight complete event objects but                tings recovers 3,454 task items and 960 exact ques-   1675
+1645   lacks one root closing brace. A separately recorded                 tion/conversation source groups, including 940        1676
+1646   amendment appends exactly that brace to a derived                   groups shared across benchmark settings. Of these,    1677
+1647   copy, preserving raw responses, earlier failed at-                  551 items in 250 groups lack a separately recovered   1678
+1648   tempts, and the failed controller’s exit record. No                 target question; the remaining 710 groups have at     1679
+1649   event label or evidence is edited and no additional                 least one known problem. Reference fields com-        1680
+1650   API request is made. The other two coders agree                     prise 2,679 provided non-placeholder solutions,       1681
+1651   on all three primary events for this response; re-                  475 placeholders, and 300 absent references. Pro-     1682
 
 
                                                                       23
-1676   vided solutions are not thereby verified as correct.         common prevalence shift alone therefore cannot          1725
-1677   Exact grouping normalizes Unicode and whites-                account for this relative contrast. This does not       1726
-1678   pace, not mathematical content or paraphrase equiv-          evaluate the generalization of any recalibrated pre-    1727
-1679   alence, and does not certify statistical indepen-            dictor or exclude model/cue-specific recalibration.     1728
-1680   dence.                                                          M3 and DeepSeek show larger, not absent,             1729
-1681      All 92 prediction-file and summary pairs match            acknowledgement cue gaps under the new ex-              1730
-1682   the earlier census snapshots. The reconstruc-                pressions. Their weighted contributions to the          1731
-1683   tion links 54,264 latest-success file-item records           total explicit gain change are -0.005577 and -          1732
-1684   without unmatched joins, yielding 46,356 distinct            0.010557, and to the implicit change -0.005382          1733
-1685   variant-preserving response-text records. A seven-           and -0.013470. M2.7 and GLM contribute in the           1734
-1686   model standard-variant panel contains 24,178                 positive direction, and Doubao in the negative direc-   1735
-1687   records. Reviewed historical adapter methods sup-            tion. Full model, domain, work-state, and cue-pole      1736
-1688   port reconstruction consistency, but do not attest           contributions are retained and sum to the respec-       1737
-1689   all historic data, constants, client behavior, or de-        tive total within numerical precision. These are        1738
-1690   ployed weights.                                              descriptions of the same outputs, not causal effects    1739
-1691      A separate protocol selects 256 eligible exact            or independent replications. New and contempo-          1740
-1692   source groups with paired scaffolding/pedagogy               rary replies need not share random seeds for the        1741
-1693   replies from seven historical model aliases: 3,584           accounting identity; their pairing does not repre-      1742
-1694   existing answers, requiring 10,752 automated                 sent a real learner’s trajectory. The two expression    1743
-1695   codes. Source-grouped cross-fitting and paired               arms’ different absolute-loss changes and the fi-       1744
-1696   instruction effects are specified before coding.             nite cue bank continue to limit a single-mechanism      1745
-1697   This validation has not been executed at the draft           interpretation.                                         1746
-1698   checkpoint; no natural-dialogue behavior result is
-1699   claimed. The counts in this section describe re-
-1700   covered data and a planned sample, not additional
-1701   completed experimental evidence.
+1683   vided solutions are not thereby verified as correct.         total gain changes of -0.016144 and -0.018761. A        1732
+1684   Exact grouping normalizes Unicode and whites-                common prevalence shift alone therefore cannot          1733
+1685   pace, not mathematical content or paraphrase equiv-          account for this relative contrast. This does not       1734
+1686   alence, and does not certify statistical indepen-            evaluate the generalization of any recalibrated pre-    1735
+1687   dence.                                                       dictor or exclude model/cue-specific recalibration.     1736
+1688      All 92 prediction-file and summary pairs match               M3 and DeepSeek show larger, not absent,             1737
+1689   the earlier census snapshots. The reconstruc-                acknowledgement cue gaps under the new ex-              1738
+1690   tion links 54,264 latest-success file-item records           pressions. Their weighted contributions to the          1739
+1691   without unmatched joins, yielding 46,356 distinct            total explicit gain change are -0.005577 and -          1740
+1692   variant-preserving response-text records. A seven-           0.010557, and to the implicit change -0.005382          1741
+1693   model standard-variant panel contains 24,178                 and -0.013470. M2.7 and GLM contribute in the           1742
+1694   records. Reviewed historical adapter methods sup-            positive direction, and Doubao in the negative direc-   1743
+1695   port reconstruction consistency, but do not attest           tion. Full model, domain, work-state, and cue-pole      1744
+1696   all historic data, constants, client behavior, or de-        contributions are retained and sum to the respec-       1745
+1697   ployed weights.                                              tive total within numerical precision. These are        1746
+1698      A separate protocol selects 256 eligible exact            descriptions of the same outputs, not causal effects    1747
+1699   source groups with paired scaffolding/pedagogy               or independent replications. New and contempo-          1748
+1700   replies from seven historical model aliases: 3,584           rary replies need not share random seeds for the        1749
+1701   existing answers, requiring 10,752 automated                 accounting identity; their pairing does not repre-      1750
+1702   codes. Source-grouped cross-fitting and paired in-           sent a real learner’s trajectory. The two expression    1751
+1703   struction effects are specified before coding. Cod-          arms’ different absolute-loss changes and the fi-       1752
+1704   ing was launched on 8 September 2026 after au-               nite cue bank continue to limit a single-mechanism      1753
+1705   thorization; completed validation is pending at this         interpretation.                                         1754
+1706   checkpoint, and no natural-dialogue behavior result
+1707   is claimed. The counts in this section describe re-          I   Source-Held-Out Calibration Diagnosis               1755
+1708   covered data and a planned sample, not additional
+1709   completed experimental evidence.                             After inspecting the primary results and                1756
+                                                                    absolute-loss diagnostic, we specify a sepa-            1757
+1710   H    Post-Result Diagnosis of the Transfer                   rate acknowledgement-only check. The domain             1758
+1711        Contrast                                                and conditional predictors receive identical calibra-   1759
+                                                                    tion procedures. The identity map retains original      1760
+1712   This diagnostic was specified after the extension’s
+                                                                    probabilities. Shared logistic calibration fits         1761
+1713   primary results and absolute-loss summaries had
+                                                                    σ(a + b logit(p)) across models; model-specific         1762
+1714   been inspected. It adds no API calls, fitted parame-
+                                                                    calibration fits one such map per deployment. We        1763
+1715   ters, hypothesis tests, or independent confirmation.
+                                                                    clip input probabilities to [10−6 , 1 − 10−6 ] for      1764
+1716   The three student expression arms share identical
+                                                                    logistic maps, minimize the summed binomial             1765
+1717   frozen predictions at every matched source, do-
+                                                                    negative log likelihood plus 12 [a2 + (b − 1)2 ], and   1766
+1718   main, model, student-work state, cue pole, and rep-
+                                                                    fix a ∈ [−10, 10], b ∈ [0, 5] without tuning. All       1767
+1719   etition index. Peer controls are excluded because
+                                                                    240 fitted maps converge without reaching these         1768
+1720   their own-student affect assignments differ.
+                                                                    bounds.                                                 1769
+1721      For baseline probability b, conditional probabil-
+1722   ity e, contemporary label y0 , and new-expression               Each domain’s eight source families are hash-        1770
 
-1702   H    Post-Result Diagnosis of the Transfer
-1703        Contrast
-1704   This diagnostic was specified after the extension’s
-1705   primary results and absolute-loss summaries had
-1706   been inspected. It adds no API calls, fitted parame-
-1707   ters, hypothesis tests, or independent confirmation.
-1708   The three student expression arms share identical
-1709   frozen predictions at every matched source, do-
-1710   main, model, student-work state, cue pole, and rep-
-1711   etition index. Peer controls are excluded because
-1712   their own-student affect assignments differ.
-1713      For baseline probability b, conditional probabil-
-1714   ity e, contemporary label y0 , and new-expression
-1715   label y1 , let d = e−b and z = y1 −y0 . The change
-1716   in Brier-loss gain has the finite-panel identity
+1723   label y1 , let d = e−b and z = y1 −y0 . The change           ordered and assigned cyclically to four folds. Every    1771
 
-1717    ∆G = 2 E[zd] = 2 E[z] E[d] + 2 Cov(z, d). (1)
+1724   in Brier-loss gain has the finite-panel identity             model, state, repetition, and expression for a source   1772
+                                                                    shares its fold. Each fit uses 24 sources and pre-      1773
 
-1718   Expectations and covariance use equally weighted
-1719   observed cells, not a causal model. For acknowl-
-1720   edgement, mean conditional-minus-domain prob-
-1721   ability is 0.000009812. The overall-rate terms are
-1722   approximately -0.000001043 for explicit synonyms
-1723   and -0.000002162 for implicit cues, compared with
-1724   total gain changes of -0.016144 and -0.018761. A
+1725    ∆G = 2 E[zd] = 2 E[z] E[d] + 2 Cov(z, d). (1)               dicts eight held-out sources. The original-wording      1774
+                                                                    training regime only uses contemporary original-        1775
+1726   Expectations and covariance use equally weighted             wording labels; the target-arm regime uses labels       1776
+1727   observed cells, not a causal model. For acknowl-             from the target expression. The latter evaluates        1777
+1728   edgement, mean conditional-minus-domain prob-                adaptation to source-held-out inputs, not zero-shot     1778
+1729   ability is 0.000009812. The overall-rate terms are           expression transfer. Source separation does not         1779
+1730   approximately -0.000001043 for explicit synonyms             guarantee phrase separation in this nested material     1780
+1731   and -0.000002162 for implicit cues, compared with            bank. Tests verify that held-out source labels can-     1781
+
 
                                                                24
-                       Deployment             Frozen cue gap   Original   Explicit   Implicit
-                       MiniMax-M2.7                    .5417      .3516     .4375      .4531
-                       MiniMax-M3                      .3597      .3281     .7656      .7500
-                       DeepSeek-V4-Pro                 .2625      .1875     .4844      .5078
-                       Doubao-Seed-2.0-Lite            .7455      .7500     .7422      .6484
-                       GLM-5.3                         .6788      .6094     .6406      .8438
+                              Deployment             Frozen cue gap   Original   Explicit   Implicit
+                              MiniMax-M2.7                    .5417      .3516     .4375      .4531
+                              MiniMax-M3                      .3597      .3281     .7656      .7500
+                              DeepSeek-V4-Pro                 .2625      .1875     .4844      .5078
+                              Doubao-Seed-2.0-Lite            .7455      .7500     .7422      .6484
+                              GLM-5.3                         .6788      .6094     .6406      .8438
 
-Table 11: Acknowledgement-rate gaps: frustrated pole minus calm pole, averaged across matched problems, work
-states, and requests. The frozen conditional probability gap is identical across expression arms; the other columns
-are observed gaps. These are post-result descriptive contrasts without new tests.
-
-
+       Table 11: Acknowledgement-rate gaps: frustrated pole minus calm pole, averaged across matched problems, work
+       states, and requests. The frozen conditional probability gap is identical across expression arms; the other columns
+       are observed gaps. These are post-result descriptive contrasts without new tests.
 
 
-                                                        25
+1782   not change their predictions and target-arm labels
+1783   cannot affect original-wording calibration.
+1784      Under target-arm per-model calibration, ex-
+1785   plicit conditional loss improves from 0.144501
+1786   to 0.132657, while domain loss improves from
+1787   0.140840 to 0.129123. Implicit conditional loss im-
+1788   proves from 0.155411 to 0.133293, while domain
+1789   loss improves from 0.149134 to 0.125062. Adap-
+1790   tation can therefore improve absolute prediction
+1791   without restoring the old interaction’s incremental
+1792   advantage. Per-model calibration can itself absorb
+1793   model-dependent cue responses, so successful base-
+1794   line adaptation is not evidence of their absence.
+1795      All absolute losses, parameters, source predic-
+1796   tions, and domain-stratified source bootstrap in-
+1797   tervals are retained. The 10,000 draws use seed
+1798   20260908; intervals condition on cross-fitted fore-
+1799   casts without refitting each bootstrap or accounting
+1800   for the full post-result selection history. There are
+1801   no new hypothesis tests. These two calibration
+1802   families constrain a specific alternative explana-
+1803   tion; they do not exclude nonlinear maps, other
+1804   features, training objectives, or larger adaptation
+1805   samples.
+
+
+
+
+                                                               25
+                        Training arm   Map                   Original   Explicit   Implicit
+                        None           Identity              .012483    -.003661   -.006277
+                        Original       Shared logistic       .012130    -.002864   -.005871
+                        Original       Per-model logistic    .005646    -.000846   -.003864
+                        Target         Shared logistic            —     -.005239   -.010456
+                        Target         Per-model logistic         —     -.003534   -.008231
+
+Table 12: Post-result acknowledgement Brier gains: calibrated domain loss minus calibrated conditional loss, with
+the same map class applied to both. Original means contemporary original wording. Target-arm calibration uses
+target labels from other sources. Negative estimates do not all have intervals excluding zero.
+
+
+
+
+                                                        26
 

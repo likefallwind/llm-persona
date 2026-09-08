@@ -20,7 +20,7 @@ def main():
     for path in (reading.BUILD / 'build_provenance.json', acl.BUILD / 'build_provenance.json'):
         receipt = json.loads(path.read_text())
         receipt['v4_wrapper_sha256'] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
-        receipt['checkpoint'] = 'cue-transfer integrated; archive behavior validation unexecuted'
+        receipt['checkpoint'] = 'cue-transfer integrated; completed archive behavior validation pending'
         receipt['scientific_quality_goal_complete'] = False
         path.write_text(json.dumps(receipt, indent=2) + '\n')
 

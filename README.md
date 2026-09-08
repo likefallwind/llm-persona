@@ -10,9 +10,10 @@ control. The [integrated v4 bilingual draft](paper/educational_personality_v4/RE
 now incorporates this finding in the abstract, design, results, discussion, and conclusion.
 The v3 PDFs below preserve the earlier checkpoint.
 [Archive inputs have been reconstructed](research/72_archive_input_reconstruction_v4.md);
-natural-dialogue behavioral validation is frozen but unexecuted, pending specific
-authorization for external coding of archived dialogue, references, and replies.
-No archive-validation API job is running at this checkpoint. The research quality
+natural-dialogue coding was authorized and launched on 2026-09-08 at 13:54 CST.
+The single startup check confirmed a live detached task and 28 initial replies
+without transport errors; this is a launch snapshot, not current completion evidence.
+The research quality
 goal remains incomplete; see the [v4 assessment](research/76_integrated_draft_quality_v4.md).
 An additional [post-result diagnosis](research/78_cue_transfer_competing_explanations_results_v4.md)
 separates loss of relative advantage from worsening absolute error: explicit
@@ -453,3 +454,8 @@ candidate that jointly passes non-tutoring recurrence and default-tutoring
 transport; organizational style is the most stable general profile. See
 `research/03_claim_evidence_matrix.md` and `research/04_red_team_review.md` for
 the claim boundary and remaining submission blockers.
+
+The [source-held-out calibration diagnosis](research/80_cue_calibration_results_v4.md)
+now tests shared and model-specific logistic maps. Absolute prediction can improve
+without restoring the conditional profile's incremental advantage. It is post-result
+adaptation analysis using existing automated codes, not another prospective replication.
