@@ -517,7 +517,7 @@ What the archive currently contributes. The archive supplies breadth and exposes
 analysis units and historical provenance matter. Tutor, grading, and test-taking outputs cannot
 be pooled as a million independent observations of a tutor’s personality. Local recovery now links
 task inputs and response records for six dialogue settings, but reconstructing them does not attest
-every historic request. A separately frozen natural-dialogue validation awaits completed coding and
+every historic request. A separately frozen archived-dialogue validation awaits completed coding and
 analysis and supplies no behavioral evidence in this draft. Its absence leaves generalization from the
 constructed student messages to archived dialogue unresolved.
 
@@ -526,13 +526,13 @@ constructed student messages to archived dialogue unresolved.
 These deployments exhibit recurring teaching tendencies, but their transfer boundaries differ. Model
 defaults predict actions on new problems, and the answer-revelation and reasoning-elicitation defaults
 retain their gains under tested changes in student expression. The acknowledgement state profile,
-although predictive on new problems with the original wording, does not retain its incremental gain
-under new expressions. Explicit teaching instructions further make demanded actions converge while
-allowing different accompanying behavior. A defensible educational-personality claim must therefore
-specify which actions recur, under which input changes, and beyond which contextual baseline.
-These results support prompt-dependent action profiles; they do not establish immutable human-like
-types, emotional understanding, or learning benefits. Transfer to archived natural dialogue remains
-untested in this draft.
+although predictive on new problems with the original wording, does not retain its incremental
+gain under new expressions. Explicit teaching instructions further make demanded actions converge
+while allowing different accompanying behavior. A defensible educational-personality claim must
+therefore specify which actions recur, under which input changes, and beyond which contextual
+baseline. These results support prompt-dependent action profiles; they do not establish immutable
+human-like types, emotional understanding, or learning benefits. Transfer to archived benchmark
+dialogue remains untested in this draft.
 
 
 7    Limitations
@@ -1438,8 +1438,25 @@ data, constants, client behavior, or deployed weights.
 replies from seven historical model aliases: 3,584 existing answers, requiring 10,752 automated codes.
 Source-grouped cross-fitting and paired instruction effects are specified before coding. Coding was
 launched on 8 September 2026 after authorization; completed validation is pending at this checkpoint,
-and no natural-dialogue behavior result is claimed. The counts in this section describe recovered
+and no archived-dialogue behavior result is claimed. The counts in this section describe recovered
 data and a planned sample, not additional completed experimental evidence.
+    An input-only scope audit reproduces the frozen selection exactly. The standard scaffolding
+pool has 1,150 items in 741 exact source groups; excluding 148 items with missing problems and
+placeholder references leaves 1,002 items in 612 groups. Source-level selection chooses 256 groups
+and one dialogue per group. The selected contexts contain 243 two-utterance, twelve three-utterance,
+and one four-utterance histories. Median context lengths are 398 characters in the full pool, 422 in
+the eligible pool, and 429 in the selection. These summaries do not establish representativeness of
+classroom interactions or the full archive.
+    The upstream collection combines Bridge and MathDial, including both real tutoring snippets
+and teacher–simulated-student dialogues (Macina et al., 2025). All selected problem strings exactly
+
+
+                                                  29
+match questions in the local MathDial inventory, but bridge records lack per-item upstream dataset
+identifiers. Question overlap does not attest exact dialogue lineage or actual learner participation.
+Accordingly, we refer to archived benchmark dialogue rather than real-classroom validation. Existing
+inputs and references may be human-authored; upstream human quality/preference labels and the
+omitted target tutor utterance are not used as behavioral ground truth.
 
 
 H     Post-Result Diagnosis of the Transfer Contrast
@@ -1448,14 +1465,10 @@ been inspected. It adds no API calls, fitted parameters, hypothesis tests, or in
 The three student expression arms share identical frozen predictions at every matched source, domain,
 model, student-work state, cue pole, and repetition index. Peer controls are excluded because their
 own-student affect assignments differ.
-
-
-
-                                                  29
-   For baseline probability b, conditional probability e, contemporary label y0 , and new-expression
+   For baseline probability b, conditional probability e, contemporary label y0 , and new-expression
 label y1 , let d = e − b and z = y1 − y0 . The change in Brier-loss gain has the finite-panel identity
 
-                              ∆G = 2 E[zd] = 2 E[z] E[d] + 2 Cov(z, d).                              (1)
+                              ∆G = 2 E[zd] = 2 E[z] E[d] + 2 Cov(z, d).                            (1)
 
 Expectations and covariance use equally weighted observed cells, not a causal model. For acknowl-
 edgement, mean conditional-minus-domain probability is 0.000009812. The overall-rate terms are
@@ -1464,12 +1477,12 @@ total gain changes of -0.016144 and -0.018761. A common prevalence shift alone t
 account for this relative contrast. This does not evaluate the generalization of any recalibrated
 predictor or exclude model/cue-specific recalibration.
 
-                 Deployment              Frozen cue gap   Original   Explicit   Implicit
-                 MiniMax-M2.7                     .5417      .3516     .4375      .4531
-                 MiniMax-M3                       .3597      .3281     .7656      .7500
-                 DeepSeek-V4-Pro                  .2625      .1875     .4844      .5078
-                 Doubao-Seed-2.0-Lite             .7455      .7500     .7422      .6484
-                 GLM-5.3                          .6788      .6094     .6406      .8438
+                 Deployment             Frozen cue gap   Original   Explicit   Implicit
+                 MiniMax-M2.7                    .5417      .3516     .4375      .4531
+                 MiniMax-M3                      .3597      .3281     .7656      .7500
+                 DeepSeek-V4-Pro                 .2625      .1875     .4844      .5078
+                 Doubao-Seed-2.0-Lite            .7455      .7500     .7422      .6484
+                 GLM-5.3                         .6788      .6094     .6406      .8438
 
 Table 11: Acknowledgement-rate gaps: frustrated pole minus calm pole, averaged across matched
 problems, work states, and requests. The frozen conditional probability gap is identical across
@@ -1487,7 +1500,10 @@ learner’s trajectory. The two expression arms’ different absolute-loss chang
 continue to limit a single-mechanism interpretation.
 
 
-I   Source-Held-Out Calibration Diagnosis
+
+
+                                                  30
+I   Source-Held-Out Calibration Diagnosis
 After inspecting the primary results and absolute-loss diagnostic, we specify a separate
 acknowledgement-only check. The domain and conditional predictors receive identical cali-
 bration procedures. The identity map retains original probabilities. Shared logistic calibration fits
@@ -1500,18 +1516,15 @@ model, state, repetition, and expression for a source shares its fold. Each fit 
 predicts eight held-out sources. The original-wording training regime only uses contemporary original-
 wording labels; the target-arm regime uses labels from the target expression. The latter evaluates
 adaptation to source-held-out inputs, not zero-shot expression transfer. Source separation does not
-
-
-                                                   30
-guarantee phrase separation in this nested material bank. Tests verify that held-out source labels
+guarantee phrase separation in this nested material bank. Tests verify that held-out source labels
 cannot change their predictions and target-arm labels cannot affect original-wording calibration.
 
-                  Training arm   Map                  Original   Explicit   Implicit
-                  None           Identity             .012483    -.003661   -.006277
-                  Original       Shared logistic      .012130    -.002864   -.005871
-                  Original       Per-model logistic   .005646    -.000846   -.003864
-                  Target         Shared logistic           —     -.005239   -.010456
-                  Target         Per-model logistic        —     -.003534   -.008231
+                   Training arm    Map                  Original   Explicit   Implicit
+                   None            Identity             .012483    -.003661   -.006277
+                   Original        Shared logistic      .012130    -.002864   -.005871
+                   Original        Per-model logistic   .005646    -.000846   -.003864
+                   Target          Shared logistic           —     -.005239   -.010456
+                   Target          Per-model logistic        —     -.003534   -.008231
 
 Table 12: Post-result acknowledgement Brier gains: calibrated domain loss minus calibrated condi-
 tional loss, with the same map class applied to both. Original means contemporary original wording.
@@ -1534,5 +1547,5 @@ adaptation samples.
 
 
 
-                                                 31
+                                                   31
 

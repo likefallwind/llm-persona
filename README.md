@@ -459,3 +459,8 @@ The [source-held-out calibration diagnosis](research/80_cue_calibration_results_
 now tests shared and model-specific logistic maps. Absolute prediction can improve
 without restoring the conditional profile's incremental advantage. It is post-result
 adaptation analysis using existing automated codes, not another prospective replication.
+
+An [input-only archive sampling audit](research/81_archive_sampling_scope_v4.md)
+reproduces the frozen 256-source selection and documents short-context and
+provenance limits. Archived benchmark dialogues are not treated as representative
+real-classroom interactions; no human quality labels enter the behavior analysis.

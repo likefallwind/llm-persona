@@ -557,13 +557,13 @@
 692   adds another distinction: social context can change          instructions further make demanded actions con-         741
 693   whether the tutor acknowledges a fixed current-              verge while allowing different accompanying be-         742
 694   student state. Selected examples show that such an           havior. A defensible educational-personality claim      743
-695   event can occur while correctly distinguishing the           must therefore specify which actions recur, un-         744
-696   peer’s emotion; its presence alone does not diag-            der which input changes, and beyond which con-          745
-697   nose emotional misattribution. Role wording, stu-            textual baseline. These results support prompt-         746
-698   dent expression, and instructional constraint thus           dependent action profiles; they do not establish im-    747
-699   belong in the empirical description of a deploy-             mutable human-like types, emotional understand-         748
-700   ment’s behavior.                                             ing, or learning benefits. Transfer to archived natu-   749
-                                                                   ral dialogue remains untested in this draft.            750
+695   event can occur while correctly distinguishing the           must therefore specify which actions recur, under       744
+696   peer’s emotion; its presence alone does not diag-            which input changes, and beyond which contextual        745
+697   nose emotional misattribution. Role wording, stu-            baseline. These results support prompt-dependent        746
+698   dent expression, and instructional constraint thus           action profiles; they do not establish immutable        747
+699   belong in the empirical description of a deploy-             human-like types, emotional understanding, or           748
+700   ment’s behavior.                                             learning benefits. Transfer to archived benchmark       749
+                                                                   dialogue remains untested in this draft.                750
 701   Increment over existing personality and tutor-
 702   ing research. Situated personality probes and be-            7   Limitations                                         751
 703   havioral profiles already exist (Lee et al., 2025;
@@ -590,8 +590,8 @@
 723   personality. Local recovery now links task inputs            multilingual teaching, extended dialogue, and ad-       771
 724   and response records for six dialogue settings, but          vanced subject matter remain outside the confirma-      772
 725   reconstructing them does not attest every historic           tion target. The first stage uses one calm/frustrated   773
-726   request. A separately frozen natural-dialogue vali-          wording pair. The extension tests four fixed pairs      774
-727   dation awaits completed coding and analysis and              in each new expression arm on reused problems;          775
+726   request. A separately frozen archived-dialogue val-          wording pair. The extension tests four fixed pairs      774
+727   idation awaits completed coding and analysis and             in each new expression arm on reused problems;          775
 
 
                                                                9
@@ -1539,113 +1539,116 @@ controls that interpretation.
 
 
                                                                       23
-1683   vided solutions are not thereby verified as correct.         total gain changes of -0.016144 and -0.018761. A        1732
-1684   Exact grouping normalizes Unicode and whites-                common prevalence shift alone therefore cannot          1733
-1685   pace, not mathematical content or paraphrase equiv-          account for this relative contrast. This does not       1734
-1686   alence, and does not certify statistical indepen-            evaluate the generalization of any recalibrated pre-    1735
-1687   dence.                                                       dictor or exclude model/cue-specific recalibration.     1736
-1688      All 92 prediction-file and summary pairs match               M3 and DeepSeek show larger, not absent,             1737
-1689   the earlier census snapshots. The reconstruc-                acknowledgement cue gaps under the new ex-              1738
-1690   tion links 54,264 latest-success file-item records           pressions. Their weighted contributions to the          1739
-1691   without unmatched joins, yielding 46,356 distinct            total explicit gain change are -0.005577 and -          1740
-1692   variant-preserving response-text records. A seven-           0.010557, and to the implicit change -0.005382          1741
-1693   model standard-variant panel contains 24,178                 and -0.013470. M2.7 and GLM contribute in the           1742
-1694   records. Reviewed historical adapter methods sup-            positive direction, and Doubao in the negative direc-   1743
-1695   port reconstruction consistency, but do not attest           tion. Full model, domain, work-state, and cue-pole      1744
-1696   all historic data, constants, client behavior, or de-        contributions are retained and sum to the respec-       1745
-1697   ployed weights.                                              tive total within numerical precision. These are        1746
-1698      A separate protocol selects 256 eligible exact            descriptions of the same outputs, not causal effects    1747
-1699   source groups with paired scaffolding/pedagogy               or independent replications. New and contempo-          1748
-1700   replies from seven historical model aliases: 3,584           rary replies need not share random seeds for the        1749
-1701   existing answers, requiring 10,752 automated                 accounting identity; their pairing does not repre-      1750
-1702   codes. Source-grouped cross-fitting and paired in-           sent a real learner’s trajectory. The two expression    1751
-1703   struction effects are specified before coding. Cod-          arms’ different absolute-loss changes and the fi-       1752
-1704   ing was launched on 8 September 2026 after au-               nite cue bank continue to limit a single-mechanism      1753
-1705   thorization; completed validation is pending at this         interpretation.                                         1754
-1706   checkpoint, and no natural-dialogue behavior result
-1707   is claimed. The counts in this section describe re-          I   Source-Held-Out Calibration Diagnosis               1755
-1708   covered data and a planned sample, not additional
-1709   completed experimental evidence.                             After inspecting the primary results and                1756
-                                                                    absolute-loss diagnostic, we specify a sepa-            1757
-1710   H    Post-Result Diagnosis of the Transfer                   rate acknowledgement-only check. The domain             1758
-1711        Contrast                                                and conditional predictors receive identical calibra-   1759
-                                                                    tion procedures. The identity map retains original      1760
-1712   This diagnostic was specified after the extension’s
-                                                                    probabilities. Shared logistic calibration fits         1761
-1713   primary results and absolute-loss summaries had
-                                                                    σ(a + b logit(p)) across models; model-specific         1762
-1714   been inspected. It adds no API calls, fitted parame-
-                                                                    calibration fits one such map per deployment. We        1763
-1715   ters, hypothesis tests, or independent confirmation.
-                                                                    clip input probabilities to [10−6 , 1 − 10−6 ] for      1764
-1716   The three student expression arms share identical
-                                                                    logistic maps, minimize the summed binomial             1765
-1717   frozen predictions at every matched source, do-
-                                                                    negative log likelihood plus 12 [a2 + (b − 1)2 ], and   1766
-1718   main, model, student-work state, cue pole, and rep-
-                                                                    fix a ∈ [−10, 10], b ∈ [0, 5] without tuning. All       1767
-1719   etition index. Peer controls are excluded because
-                                                                    240 fitted maps converge without reaching these         1768
-1720   their own-student affect assignments differ.
-                                                                    bounds.                                                 1769
-1721      For baseline probability b, conditional probabil-
-1722   ity e, contemporary label y0 , and new-expression               Each domain’s eight source families are hash-        1770
+1683   vided solutions are not thereby verified as correct.          omitted target tutor utterance are not used as behav-   1735
+1684   Exact grouping normalizes Unicode and whites-                 ioral ground truth.                                     1736
+1685   pace, not mathematical content or paraphrase equiv-
+1686   alence, and does not certify statistical indepen-             H    Post-Result Diagnosis of the Transfer              1737
+1687   dence.                                                             Contrast                                           1738
+1688      All 92 prediction-file and summary pairs match
+1689   the earlier census snapshots. The reconstruc-                 This diagnostic was specified after the extension’s     1739
+1690   tion links 54,264 latest-success file-item records            primary results and absolute-loss summaries had         1740
+1691   without unmatched joins, yielding 46,356 distinct             been inspected. It adds no API calls, fitted parame-    1741
+1692   variant-preserving response-text records. A seven-            ters, hypothesis tests, or independent confirmation.    1742
+1693   model standard-variant panel contains 24,178                  The three student expression arms share identical       1743
+1694   records. Reviewed historical adapter methods sup-             frozen predictions at every matched source, do-         1744
+1695   port reconstruction consistency, but do not attest            main, model, student-work state, cue pole, and rep-     1745
+1696   all historic data, constants, client behavior, or de-         etition index. Peer controls are excluded because       1746
+1697   ployed weights.                                               their own-student affect assignments differ.            1747
+1698      A separate protocol selects 256 eligible exact                For baseline probability b, conditional probabil-    1748
+1699   source groups with paired scaffolding/pedagogy                ity e, contemporary label y0 , and new-expression       1749
+1700   replies from seven historical model aliases: 3,584            label y1 , let d = e−b and z = y1 −y0 . The change      1750
+1701   existing answers, requiring 10,752 automated                  in Brier-loss gain has the finite-panel identity        1751
+1702   codes. Source-grouped cross-fitting and paired in-
+1703   struction effects are specified before coding. Cod-
+1704   ing was launched on 8 September 2026 after au-                 ∆G = 2 E[zd] = 2 E[z] E[d] + 2 Cov(z, d). (1)          1752
 
-1723   label y1 , let d = e−b and z = y1 −y0 . The change           ordered and assigned cyclically to four folds. Every    1771
-
-1724   in Brier-loss gain has the finite-panel identity             model, state, repetition, and expression for a source   1772
-                                                                    shares its fold. Each fit uses 24 sources and pre-      1773
-
-1725    ∆G = 2 E[zd] = 2 E[z] E[d] + 2 Cov(z, d). (1)               dicts eight held-out sources. The original-wording      1774
-                                                                    training regime only uses contemporary original-        1775
-1726   Expectations and covariance use equally weighted             wording labels; the target-arm regime uses labels       1776
-1727   observed cells, not a causal model. For acknowl-             from the target expression. The latter evaluates        1777
-1728   edgement, mean conditional-minus-domain prob-                adaptation to source-held-out inputs, not zero-shot     1778
-1729   ability is 0.000009812. The overall-rate terms are           expression transfer. Source separation does not         1779
-1730   approximately -0.000001043 for explicit synonyms             guarantee phrase separation in this nested material     1780
-1731   and -0.000002162 for implicit cues, compared with            bank. Tests verify that held-out source labels can-     1781
+1705   thorization; completed validation is pending at this
+1706   checkpoint, and no archived-dialogue behavior re-             Expectations and covariance use equally weighted        1753
+1707   sult is claimed. The counts in this section describe          observed cells, not a causal model. For acknowl-        1754
+1708   recovered data and a planned sample, not additional           edgement, mean conditional-minus-domain prob-           1755
+1709   completed experimental evidence.                              ability is 0.000009812. The overall-rate terms are      1756
+1710      An input-only scope audit reproduces the frozen            approximately -0.000001043 for explicit synonyms        1757
+1711   selection exactly. The standard scaffolding pool              and -0.000002162 for implicit cues, compared with       1758
+1712   has 1,150 items in 741 exact source groups; exclud-           total gain changes of -0.016144 and -0.018761. A        1759
+1713   ing 148 items with missing problems and place-                common prevalence shift alone therefore cannot          1760
+1714   holder references leaves 1,002 items in 612 groups.           account for this relative contrast. This does not       1761
+1715   Source-level selection chooses 256 groups and one             evaluate the generalization of any recalibrated pre-    1762
+1716   dialogue per group. The selected contexts contain             dictor or exclude model/cue-specific recalibration.     1763
+1717   243 two-utterance, twelve three-utterance, and one               M3 and DeepSeek show larger, not absent,             1764
+1718   four-utterance histories. Median context lengths              acknowledgement cue gaps under the new ex-              1765
+1719   are 398 characters in the full pool, 422 in the eligi-        pressions. Their weighted contributions to the          1766
+1720   ble pool, and 429 in the selection. These summaries           total explicit gain change are -0.005577 and -          1767
+1721   do not establish representativeness of classroom in-          0.010557, and to the implicit change -0.005382          1768
+1722   teractions or the full archive.                               and -0.013470. M2.7 and GLM contribute in the           1769
+1723      The upstream collection combines Bridge and                positive direction, and Doubao in the negative direc-   1770
+1724   MathDial, including both real tutoring snippets               tion. Full model, domain, work-state, and cue-pole      1771
+1725   and teacher–simulated-student dialogues (Macina               contributions are retained and sum to the respec-       1772
+1726   et al., 2025). All selected problem strings exactly           tive total within numerical precision. These are        1773
+1727   match questions in the local MathDial inventory,              descriptions of the same outputs, not causal effects    1774
+1728   but bridge records lack per-item upstream dataset             or independent replications. New and contempo-          1775
+1729   identifiers. Question overlap does not attest ex-             rary replies need not share random seeds for the        1776
+1730   act dialogue lineage or actual learner participation.         accounting identity; their pairing does not repre-      1777
+1731   Accordingly, we refer to archived benchmark dia-              sent a real learner’s trajectory. The two expression    1778
+1732   logue rather than real-classroom validation. Exist-           arms’ different absolute-loss changes and the fi-       1779
+1733   ing inputs and references may be human-authored;              nite cue bank continue to limit a single-mechanism      1780
+1734   upstream human quality/preference labels and the              interpretation.                                         1781
 
 
-                                                               24
-                              Deployment             Frozen cue gap   Original   Explicit   Implicit
-                              MiniMax-M2.7                    .5417      .3516     .4375      .4531
-                              MiniMax-M3                      .3597      .3281     .7656      .7500
-                              DeepSeek-V4-Pro                 .2625      .1875     .4844      .5078
-                              Doubao-Seed-2.0-Lite            .7455      .7500     .7422      .6484
-                              GLM-5.3                         .6788      .6094     .6406      .8438
+                                                                24
+                              Deployment             Frozen cue gap    Original   Explicit   Implicit
+                              MiniMax-M2.7                    .5417       .3516     .4375      .4531
+                              MiniMax-M3                      .3597       .3281     .7656      .7500
+                              DeepSeek-V4-Pro                 .2625       .1875     .4844      .5078
+                              Doubao-Seed-2.0-Lite            .7455       .7500     .7422      .6484
+                              GLM-5.3                         .6788       .6094     .6406      .8438
 
        Table 11: Acknowledgement-rate gaps: frustrated pole minus calm pole, averaged across matched problems, work
        states, and requests. The frozen conditional probability gap is identical across expression arms; the other columns
        are observed gaps. These are post-result descriptive contrasts without new tests.
 
 
-1782   not change their predictions and target-arm labels
-1783   cannot affect original-wording calibration.
-1784      Under target-arm per-model calibration, ex-
-1785   plicit conditional loss improves from 0.144501
-1786   to 0.132657, while domain loss improves from
-1787   0.140840 to 0.129123. Implicit conditional loss im-
-1788   proves from 0.155411 to 0.133293, while domain
-1789   loss improves from 0.149134 to 0.125062. Adap-
-1790   tation can therefore improve absolute prediction
-1791   without restoring the old interaction’s incremental
-1792   advantage. Per-model calibration can itself absorb
-1793   model-dependent cue responses, so successful base-
-1794   line adaptation is not evidence of their absence.
-1795      All absolute losses, parameters, source predic-
-1796   tions, and domain-stratified source bootstrap in-
-1797   tervals are retained. The 10,000 draws use seed
-1798   20260908; intervals condition on cross-fitted fore-
-1799   casts without refitting each bootstrap or accounting
-1800   for the full post-result selection history. There are
-1801   no new hypothesis tests. These two calibration
-1802   families constrain a specific alternative explana-
-1803   tion; they do not exclude nonlinear maps, other
-1804   features, training objectives, or larger adaptation
-1805   samples.
-
-
-
+1782   I   Source-Held-Out Calibration Diagnosis                    tions, and domain-stratified source bootstrap in-        1823
+                                                                    tervals are retained. The 10,000 draws use seed          1824
+1783   After inspecting the primary results and                     20260908; intervals condition on cross-fitted fore-      1825
+1784   absolute-loss diagnostic, we specify a sepa-                 casts without refitting each bootstrap or accounting     1826
+1785   rate acknowledgement-only check. The domain                  for the full post-result selection history. There are    1827
+1786   and conditional predictors receive identical calibra-        no new hypothesis tests. These two calibration           1828
+1787   tion procedures. The identity map retains original           families constrain a specific alternative explana-       1829
+1788   probabilities. Shared logistic calibration fits              tion; they do not exclude nonlinear maps, other          1830
+1789   σ(a + b logit(p)) across models; model-specific              features, training objectives, or larger adaptation      1831
+1790   calibration fits one such map per deployment. We             samples.                                                 1832
+1791   clip input probabilities to [10−6 , 1 − 10−6 ] for
+1792   logistic maps, minimize the summed binomial
+1793   negative log likelihood plus 12 [a2 + (b − 1)2 ], and
+1794   fix a ∈ [−10, 10], b ∈ [0, 5] without tuning. All
+1795   240 fitted maps converge without reaching these
+1796   bounds.
+1797      Each domain’s eight source families are hash-
+1798   ordered and assigned cyclically to four folds. Every
+1799   model, state, repetition, and expression for a source
+1800   shares its fold. Each fit uses 24 sources and pre-
+1801   dicts eight held-out sources. The original-wording
+1802   training regime only uses contemporary original-
+1803   wording labels; the target-arm regime uses labels
+1804   from the target expression. The latter evaluates
+1805   adaptation to source-held-out inputs, not zero-shot
+1806   expression transfer. Source separation does not
+1807   guarantee phrase separation in this nested material
+1808   bank. Tests verify that held-out source labels can-
+1809   not change their predictions and target-arm labels
+1810   cannot affect original-wording calibration.
+1811      Under target-arm per-model calibration, ex-
+1812   plicit conditional loss improves from 0.144501
+1813   to 0.132657, while domain loss improves from
+1814   0.140840 to 0.129123. Implicit conditional loss im-
+1815   proves from 0.155411 to 0.133293, while domain
+1816   loss improves from 0.149134 to 0.125062. Adap-
+1817   tation can therefore improve absolute prediction
+1818   without restoring the old interaction’s incremental
+1819   advantage. Per-model calibration can itself absorb
+1820   model-dependent cue responses, so successful base-
+1821   line adaptation is not evidence of their absence.
+1822      All absolute losses, parameters, source predic-
 
                                                                25
                         Training arm   Map                   Original   Explicit   Implicit

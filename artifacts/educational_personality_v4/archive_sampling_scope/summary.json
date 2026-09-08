@@ -1,0 +1,116 @@
+{
+  "status": "input-only sampling scope audit complete",
+  "new_api_calls": 0,
+  "coding_results_read": false,
+  "human_quality_labels_used": false,
+  "selection_reproduced_exactly": true,
+  "selected_teacher_responses": 3584,
+  "populations": [
+    {
+      "population": "all_scaffolding",
+      "items": 1150,
+      "source_groups": 741,
+      "problem_char_quantiles": [
+        0.0,
+        173.0,
+        234.0,
+        300.75,
+        673.0
+      ],
+      "conversation_char_quantiles": [
+        31.0,
+        200.25,
+        398.0,
+        491.0,
+        1086.0
+      ],
+      "reference_status": {
+        "provided_unvalidated": 1002,
+        "placeholder": 148
+      }
+    },
+    {
+      "population": "eligible_dialogues",
+      "items": 1002,
+      "source_groups": 612,
+      "problem_char_quantiles": [
+        92.0,
+        192.25,
+        245.0,
+        313.75,
+        673.0
+      ],
+      "conversation_char_quantiles": [
+        31.0,
+        311.25,
+        422.0,
+        504.0,
+        1086.0
+      ],
+      "reference_status": {
+        "provided_unvalidated": 1002
+      }
+    },
+    {
+      "population": "selected_sources",
+      "items": 256,
+      "source_groups": 256,
+      "problem_char_quantiles": [
+        97.0,
+        189.0,
+        243.0,
+        300.5,
+        673.0
+      ],
+      "conversation_char_quantiles": [
+        58.0,
+        312.5,
+        429.0,
+        504.25,
+        854.0
+      ],
+      "reference_status": {
+        "provided_unvalidated": 256
+      }
+    }
+  ],
+  "exclusions": {
+    "problem_or_reference_missing": 148
+  },
+  "eligible_group_multiplicity": {
+    "1": 377,
+    "2": 154,
+    "3": 44,
+    "4": 15,
+    "5": 13,
+    "6": 5,
+    "7": 2,
+    "8": 2
+  },
+  "selected_context_turn_counts": {
+    "2": 243,
+    "3": 12,
+    "4": 1
+  },
+  "distinct_selected_normalized_problems": 256,
+  "selected_problem_strings_shared_between_groups": 0,
+  "selected_mathdial_exact_question_matches": 256,
+  "selected_verified_original_dataset_ids": 0,
+  "interpretation": [
+    "A hash-selected subset of recoverable paired short mathematical benchmark contexts, not a sample of the million-record archive.",
+    "The source paper describes both real-dialogue snippets and teacher/simulated-student dialogue origins.",
+    "Question overlap with MathDial does not establish exact selected-dialogue lineage or real learner origin.",
+    "Input contexts and references may be human-authored; neither human quality labels nor held-out tutor golds are used as behavioral measurements."
+  ],
+  "inputs": {
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v4/archive_bridge/local/materials.jsonl": "0278bafc3eff606b05e6135ca6aa7556960282fb028a0f3e7558abea126b3eb9",
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v4/archive_bridge/response_index.jsonl": "6d5f6cb7434d0665a07f46814afcd2de69e4a44db7126ce075dac0e1a849d1ec",
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v4/archive_validation/selected_response_index.jsonl": "7ee6fcfc16d677d4ed4a46cd30d9b49cb90b50b7f3f8c9104d53dd3a13bf7176",
+    "/home/likefallwind/code/llm-persona/artifacts/educational_personality_v4/archive_validation/design_freeze.json": "117a9d28515be8b6f8e4468a17ac7b9fb0b904f3b27bfee38a9e262a296b05eb",
+    "/home/likefallwind/code/edubenchmark/sources/datasets/mathtutorbench/datasets/mathdial_bridge.json": "96609c808383eea57d16bb24a49f302a9d84ffa323571c5989e57638bbaf2066",
+    "/home/likefallwind/code/edubenchmark/sources/text/mathtutorbench.txt": "e8de60754365daa93e244ddda69c56268d58d784e1ba1fc2f9d152d2e7691255",
+    "/home/likefallwind/code/edubenchmark/sources/datasets/mathdial/train.jsonl": "d6135869c02dccf8d14756fa2f0367c5352922bb263ec22dc0eeace4da815d43",
+    "/home/likefallwind/code/edubenchmark/sources/datasets/mathdial/test.jsonl": "3ec54ee8ab921dc6191bf5e2ee766d4e7916b4264394eb17a6be9b3fe486e50b",
+    "/home/likefallwind/code/llm-persona/scripts/audit_archive_sampling_scope_v4.py": "db75a7e313de9de48af63289572576fdc1af93f28bf8d0a3ce26eb5099f1149a"
+  }
+}

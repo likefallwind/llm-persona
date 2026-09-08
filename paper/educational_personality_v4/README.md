@@ -25,7 +25,7 @@ The renderers preserve the pinned official ACL style and reuse the v3 build logi
 with v4 output paths. The figure receipt maps all 12 points to completed analysis
 tables. Build receipts record source and PDF hashes; they do not certify the science.
 
-At the reviewed checkpoint the reading PDFs have 31 English and 24 Chinese pages.
+At the reviewed checkpoint the reading PDFs have 31 English and 25 Chinese pages.
 The ACL-layout draft has 26 pages including references and appendices; the
 conclusion is on page 9. Layout is inspectable, but the main text still needs
 compression against the eventual venue requirements. No venue-specific compliance
@@ -39,3 +39,6 @@ It separates absolute loss from relative gain without fitting a new predictor.
 The source-held-out calibration check (research/79–80) is included with all
 methods, fitting parameters, and explicit target-label adaptation boundaries.
 Eleven targeted tests pass; no new API calls or human annotations are added.
+
+The input-only scope audit (research/81) verifies the original sample and explains
+short-context, eligibility and upstream-provenance limits without reading new codes.
