@@ -30,9 +30,10 @@ This is the behavioral question about educational personality examined here.
     Distinguishing models’ text is insufficient. Length, formatting, task instructions, and solution
 access can all produce recognizable differences. Conversely, a recurring tendency need not imply
 identical behavior in every situation: a tutor may consistently elicit more reasoning after an erroneous
-attempt. We therefore distinguish a model’s default action profile from its conditional response
-to student state, and test both through predictions beyond the educational context. Observed
-differences, repeated behavior, and successful transfer provide different kinds of evidence.
+attempt. We therefore distinguish a model’s default action profile from its conditional response to
+student state, and test whether both add predictive information beyond a baseline using educational
+context alone. Observed differences, repeated behavior, and successful transfer provide different
+kinds of evidence.
     Educational actions make this question testable without assuming a human personality taxonomy.
 Revealing a solution and inviting reasoning are observable, can co-occur, and are not universally good
 or bad teaching moves. Acknowledging expressed frustration does not establish empathy. Our target
@@ -41,8 +42,6 @@ is the tutor model’s behavior, distinct from adapting instruction to a student
     Prior studies already investigate personality-oriented scenarios and situated behavioral profiles
 (Lee et al., 2025; Liu et al., 2026), characteristic tutoring-action mixtures, and learned tutor-persona
 variation (Kucheria et al., 2025; Lee et al., 2026). We examine a specific boundary in these
-
-
 
                                                      1
 interpretations: does information that transfers to new problems also transfer when students express
@@ -69,15 +68,16 @@ interpretation to prompt-dependent action profiles of the specified deployments.
 
 2    Related Work
 Personality and situated behavior. TRAIT extends personality inventories into scenario-based
-choices and evaluates distinctiveness, consistency, and prompting effects (Lee et al., 2025). Behavioral
-Mode Axes uses situated choices across interaction registers, also evaluates open-ended generations,
-and studies activation-based control (Liu et al., 2026). Separate construction and evaluation scenarios
-are already part of that framework. Internal-feature interventions further connect personality-related
-representations to behavior across situations (Zhang et al., 2026); conversational studies examine
-contextual variation under the same assigned personality (Han et al., 2026). Together these studies
-motivate examining both recurring defaults and conditional expression. Our deployment-level
-forecasts test observable educational actions and do not identify the internal mechanisms responsible
-for them.
+choices and evaluates distinctiveness, consistency, and prompting effects, including answer agreement
+between original and paraphrased test items (Lee et al., 2025). Thus, wording robustness is already
+an explicit personality-measurement question. Behavioral Mode Axes uses situated choices across
+interaction registers, also evaluates open-ended generations, and studies activation-based control
+(Liu et al., 2026). Separate construction and evaluation scenarios are already part of that framework.
+Internal-feature interventions further connect personality-related representations to behavior across
+situations (Zhang et al., 2026); conversational studies examine contextual variation under the same
+assigned personality (Han et al., 2026). Together these studies motivate examining both recurring
+defaults and conditional expression. Our deployment-level forecasts test observable educational
+actions and do not identify the internal mechanisms responsible for them.
 
 Tutor behavior and educational personas. The CIMA comparison studies three LLMs in
 language-learning dialogues, reporting characteristic action mixtures and response complexity. Its
@@ -91,16 +91,18 @@ without establishing that the resulting labels are ground truth.
 
 Teaching quality and the predictive question. MRBench and MathTutorBench organize
 pedagogical-capability evaluation (Maurya et al., 2025; Macina et al., 2025). PATS studies teaching
-adapted to student personality (Rooein et al., 2026). Our primary target is the probability of the
 
 
                                                    2
-tutor’s next observable behavior under specified conditions. Predicting that behavior does not rank
-its educational value. The empirical addition sought here is a joint account of which default and
-conditional profiles predict new-source actions, how those profiles compare with simpler explanations,
-and how neutral wording and explicit policies change them on matched inputs. Source separation and
-advance prediction locks make these comparisons auditable; their substantive contribution depends
-on the resulting evidence rather than on the procedure alone.
+adapted to student personality (Rooein et al., 2026). Our primary target is the probability of the
+tutor’s next observable behavior under specified conditions. Predicting that behavior does not rank its
+educational value. The empirical addition is the different transfer behavior of default and conditional
+profiles: after new-problem confirmation, unchanged forecasts retain default revelation and elicitation
+gains under new student expressions, while the acknowledgement state increment disappears despite
+a positive contemporary original-wording control. This compares incremental probability prediction,
+not just response agreement or profile correlation. Matched instruction changes further distinguish
+demanded from permissible accompanying actions. These findings concern the tested deployments
+and expressions; neither wording sensitivity nor the use of held-out inputs is itself a novelty claim.
 
 
 3     Study Design and Tests
@@ -139,9 +141,6 @@ temperature 0.7 and an 8,192-token output budget. Training and canonical confirm
 Secondary information-opportunity probes and cross-stage sentinels add 160 and 40 responses,
 respectively, for 5,320 tutor generations. These repetitions and variants do not add independent
 sources.
-
-
-
 
                                                    3
 3.2   Observable Behavior and Recurrence (RQ1)
