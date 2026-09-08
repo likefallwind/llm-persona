@@ -1,0 +1,13 @@
+arm,event,comparison,sources,mean,bootstrap_95_low,bootstrap_95_high
+pedagogy,affect_acknowledgement,same_instruction_model_vs_instruction_only,256,-3.817463692161401e-05,-7.22191301117072e-05,8.395842599486674e-06
+pedagogy,affect_acknowledgement,other_instruction_model_vs_instruction_only,256,-0.00011779097983464853,-0.00021721651384682878,2.4020582723560614e-06
+pedagogy,answer_reveal,same_instruction_model_vs_instruction_only,256,0.0008124881249134596,0.00012531999577311944,0.0015587027348315768
+pedagogy,answer_reveal,other_instruction_model_vs_instruction_only,256,-0.32304412436282176,-0.34578645421105153,-0.2988419913310502
+pedagogy,reasoning_elicitation,same_instruction_model_vs_instruction_only,256,0.0004084043141054337,-6.093006524474727e-05,0.0009186897712941174
+pedagogy,reasoning_elicitation,other_instruction_model_vs_instruction_only,256,-0.3656341942016711,-0.3866851381007956,-0.3418153919073311
+scaffolding,affect_acknowledgement,same_instruction_model_vs_instruction_only,256,4.68057634261466e-05,-9.204755543391966e-05,0.00020914310902196318
+scaffolding,affect_acknowledgement,other_instruction_model_vs_instruction_only,256,-2.5461921603039728e-05,-6.64266845711273e-05,2.480407882116069e-05
+scaffolding,answer_reveal,same_instruction_model_vs_instruction_only,256,0.0468058489105795,0.03834070780373486,0.05528288798016968
+scaffolding,answer_reveal,other_instruction_model_vs_instruction_only,256,-0.2744339071277838,-0.3145201945662627,-0.23382681225068885
+scaffolding,reasoning_elicitation,same_instruction_model_vs_instruction_only,256,0.041925406661998385,0.03384772762015009,0.05011085328469756
+scaffolding,reasoning_elicitation,other_instruction_model_vs_instruction_only,256,-0.3211054573234937,-0.360340117127026,-0.28183764497883407

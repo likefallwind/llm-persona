@@ -1,0 +1,37 @@
+{
+  "status": "identified-majority calculations complete; manuscript synthesis pending",
+  "sources": 256,
+  "archived_answers": 3584,
+  "valid_coding_requests": 10750,
+  "expected_coding_requests": 10752,
+  "missing_coding_requests": 2,
+  "original_complete_coding_gate_passed": false,
+  "identified_majority_event_items": 28672,
+  "missing_vote_majority_invariant_event_items": 16,
+  "additional_diagnostic_http_attempts": 2,
+  "missing_labels_imputed": false,
+  "new_teacher_generations": 0,
+  "human_annotation_added": false,
+  "affected_sources": [
+    "2af2c176852fe91a2a0415ba",
+    "77a5c58a1d5d1b4c85263e27"
+  ],
+  "complete_coder_common_sources": 254,
+  "input_hashes": {
+    "artifacts/educational_personality_v4/archive_validation/design_freeze.json": "117a9d28515be8b6f8e4468a17ac7b9fb0b904f3b27bfee38a9e262a296b05eb",
+    "artifacts/educational_personality_v4/archive_validation/measurement_diagnostics/transport_diagnostic/summary.json": "f7ab816d9084446cf2923619a46d36d40a0d6b399abc48e514811c7a47d295f7",
+    "artifacts/educational_personality_v4/archive_validation/measurement_diagnostics/transport_diagnostic/coverage.csv": "4ea6c71655c5131fc8dc8cdba6eff0dc488751ee4e78a57e8fbd5d1dc16f83c3",
+    "artifacts/educational_personality_v4/archive_validation/measurement_diagnostics/transport_diagnostic/event_codes.csv": "02f005756caf91295724e35f9862845660ed7c66f07f085b4b1db7b95e5d770f",
+    "scripts/analyze_archive_identified_majority_v4.py": "e3bd36f3faee66f423b5e28e95850489ffc3204d821bf58c5c9a9cca8f2f69db",
+    "research/86_archive_identified_majority_amendment_v4.md": "8833f950246286387eb6016e5a77a10592117c658d5879f0ed05ce6c12b90505"
+  },
+  "limitations": [
+    "Post-hoc missing-coder amendment after inspecting agreement of the two available votes.",
+    "SensitiveContentDetected provider refusal; no rewritten input or alternative route.",
+    "Fixed-crossfit bootstrap does not cover all fitting uncertainty or shared-training dependence.",
+    "Common-source sensitivity refits all panels with the hash fold rule applied to 254 sources.",
+    "Historical requests reconstructed, not attested; benchmark dialogue is not classroom validation.",
+    "Identified majority does not establish semantic truth or complete three-coder unanimity."
+  ],
+  "research_quality_goal_complete": false
+}

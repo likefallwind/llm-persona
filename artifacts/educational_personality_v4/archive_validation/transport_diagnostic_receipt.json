@@ -1,0 +1,37 @@
+{
+  "diagnostic_start": {
+    "started_at": "2026-09-08T14:04:05.885605+00:00",
+    "request_ids": [
+      "5fb91d284325462763d5:deepseek-v4-pro",
+      "97c495a4d4eb3b96b91b:deepseek-v4-pro"
+    ],
+    "max_new_http_attempts": 2,
+    "amendment_sha256": "95c1cc7024e5cc5c37efe3bb2a8433c9d8cd89691926606b391aa8ecf624e72f",
+    "script_sha256": "af6862bdda7d0a276980441a7c8b61e6144a46f208c2f5c1e1b16fb9718c1a07"
+  },
+  "diagnostic_finish": {
+    "completed_at": "2026-09-08T14:04:23.134645+00:00",
+    "valid_judge_requests": 10750,
+    "invalid_or_missing": 2,
+    "new_http_attempts": 2,
+    "research_quality_goal_complete": false
+  },
+  "errors": [
+    {
+      "request_id": "97c495a4d4eb3b96b91b:deepseek-v4-pro",
+      "at": "2026-09-08T14:04:17.737689+00:00",
+      "http_status": 400,
+      "provider_error_code": "SensitiveContentDetected",
+      "error_body_sha256": "acb94066c6720e7deb658a24b3f85ff6593dcd98cf514916aa98deb875bd265d"
+    },
+    {
+      "request_id": "5fb91d284325462763d5:deepseek-v4-pro",
+      "at": "2026-09-08T14:04:20.537522+00:00",
+      "http_status": 400,
+      "provider_error_code": "SensitiveContentDetected",
+      "error_body_sha256": "abf49485fb202831838b4e2c7213694ed487309aa807e188a650aac7632a5e49"
+    }
+  ],
+  "raw_records_preserved_under_ignored_judge_directory": true,
+  "additional_requests_allowed": 0
+}

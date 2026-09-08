@@ -1,0 +1,14 @@
+{
+  "status": "identified-majority analysis complete; manuscript integration pending",
+  "analysis": "artifacts/educational_personality_v4/archive_validation/analysis_identified",
+  "valid_coding_requests": 10750,
+  "expected_coding_requests": 10752,
+  "original_complete_coding_gate_passed": false,
+  "missing_vote_majorities_identified": true,
+  "missing_labels_imputed": false,
+  "amendments": [
+    "research/85_archive_transport_diagnostic_amendment_v4.md",
+    "research/86_archive_identified_majority_amendment_v4.md"
+  ],
+  "research_quality_goal_complete": false
+}
