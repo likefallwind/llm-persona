@@ -61,3 +61,60 @@ paired instruction effects are specified before coding. This validation has
 not been executed at the draft checkpoint; no natural-dialogue behavior result
 is claimed. The counts in this section describe recovered data and a planned
 sample, not additional completed experimental evidence.
+
+
+\section{Post-Result Diagnosis of the Transfer Contrast}
+\label{app:cue-diagnosis}
+
+This diagnostic was specified after the extension's primary results and
+absolute-loss summaries had been inspected. It adds no API calls, fitted
+parameters, hypothesis tests, or independent confirmation. The three student
+expression arms share identical frozen predictions at every matched source,
+domain, model, student-work state, cue pole, and repetition index. Peer controls
+are excluded because their own-student affect assignments differ.
+
+For baseline probability $b$, conditional probability $e$, contemporary label
+$y_0$, and new-expression label $y_1$, let $d=e-b$ and $z=y_1-y_0$.
+The change in Brier-loss gain has the finite-panel identity
+\begin{equation}
+\Delta G = 2\operatorname{E}[zd]
+         = 2\operatorname{E}[z]\operatorname{E}[d] + 2\operatorname{Cov}(z,d).
+\end{equation}
+Expectations and covariance use equally weighted observed cells, not a causal
+model. For acknowledgement, mean conditional-minus-domain probability is
+0.000009812. The overall-rate terms are approximately -0.000001043 for explicit
+synonyms and -0.000002162 for implicit cues, compared with total gain changes
+of -0.016144 and -0.018761. A common prevalence shift alone therefore cannot
+account for this relative contrast. This does not evaluate the generalization
+of any recalibrated predictor or exclude model/cue-specific recalibration.
+
+\begin{table}[ht]
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule
+Deployment & Frozen cue gap & Original & Explicit & Implicit\\
+\midrule
+MiniMax-M2.7 & .5417 & .3516 & .4375 & .4531\\
+MiniMax-M3 & .3597 & .3281 & .7656 & .7500\\
+DeepSeek-V4-Pro & .2625 & .1875 & .4844 & .5078\\
+Doubao-Seed-2.0-Lite & .7455 & .7500 & .7422 & .6484\\
+GLM-5.3 & .6788 & .6094 & .6406 & .8438\\
+\bottomrule
+\end{tabular}
+\caption{Acknowledgement-rate gaps: frustrated pole minus calm pole, averaged
+across matched problems, work states, and requests. The frozen conditional
+probability gap is identical across expression arms; the other columns are
+observed gaps. These are post-result descriptive contrasts without new tests.}
+\end{table}
+
+M3 and DeepSeek show larger, not absent, acknowledgement cue gaps under the new
+expressions. Their weighted contributions to the total explicit gain change
+are -0.005577 and -0.010557, and to the implicit change -0.005382 and -0.013470.
+M2.7 and GLM contribute in the positive direction, and Doubao in the negative
+direction. Full model, domain, work-state, and cue-pole contributions are
+retained and sum to the respective total within numerical precision. These
+are descriptions of the same outputs, not causal effects or independent
+replications. New and contemporary replies need not share random seeds for
+the accounting identity; their pairing does not represent a real learner's
+trajectory. The two expression arms' different absolute-loss changes and the
+finite cue bank continue to limit a single-mechanism interpretation.

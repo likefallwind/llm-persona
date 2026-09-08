@@ -14,6 +14,11 @@ natural-dialogue behavioral validation is frozen but unexecuted, pending specifi
 authorization for external coding of archived dialogue, references, and replies.
 No archive-validation API job is running at this checkpoint. The research quality
 goal remains incomplete; see the [v4 assessment](research/76_integrated_draft_quality_v4.md).
+An additional [post-result diagnosis](research/78_cue_transfer_competing_explanations_results_v4.md)
+separates loss of relative advantage from worsening absolute error: explicit
+rewording slightly improves conditional loss while improving its baseline more;
+implicit cues increase conditional loss. The bilingual draft now includes this
+distinction and its descriptive decomposition, without changing the primary tests.
 
 This study asks whether deployed language models have recurring educational
 behavior that predicts their actions on new tutoring problems. It separates

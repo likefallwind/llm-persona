@@ -24,9 +24,13 @@ The renderers preserve the pinned official ACL style and reuse the v3 build logi
 with v4 output paths. The figure receipt maps all 12 points to completed analysis
 tables. Build receipts record source and PDF hashes; they do not certify the science.
 
-At the reviewed checkpoint the reading PDFs have 28 English and 22 Chinese pages.
-The ACL-layout draft has 24 pages including references and appendices; the
+At the reviewed checkpoint the reading PDFs have 30 English and 24 Chinese pages.
+The ACL-layout draft has 25 pages including references and appendices; the
 conclusion is on page 9. Layout is inspectable, but the main text still needs
 compression against the eventual venue requirements. No venue-specific compliance
 claim is made. The source-specific old checks in v3 are not silently reused as a
 quality verdict on this changed draft.
+
+The post-result diagnosis in research/78 is also integrated. Its eight targeted
+tests and all twelve comparisons against the unchanged transfer tables pass.
+It separates absolute loss from relative gain without fitting a new predictor.

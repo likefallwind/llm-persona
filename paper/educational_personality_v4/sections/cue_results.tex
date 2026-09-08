@@ -62,6 +62,19 @@ independent replications. The failure concerns transported conditional
 probabilities: models still exhibit acknowledgement differences between cue
 poles, and the implicit arm changes more than affect wording alone.
 
+\paragraph{Relative advantage is distinct from absolute accuracy.}
+A post-result diagnostic separates the two expression arms. Under explicit
+synonyms, the conditional acknowledgement Brier loss slightly improves from
+0.145806 to 0.144501, but the domain-profile baseline improves more, from
+0.158289 to 0.140840. Under implicit cues, conditional loss instead rises to
+0.155411 while baseline loss falls to 0.149134. Thus both arms lose incremental
+advantage, but only the latter has worse absolute conditional prediction error.
+An exact decomposition shows that overall acknowledgement-rate shifts contribute
+less than 0.000003 to either gain change: the two predictors have nearly identical
+mean probabilities. The remaining change covaries with their differing
+cell-level predictions. This descriptive accounting does not rule out richer
+calibration or semantic explanations (Appendix~\ref{app:cue-diagnosis}).
+
 \paragraph{Peer-context control.}
 Keeping the current student explicitly calm, changing a peer's quote yields
 acknowledgement-rate changes of +30.47, +25.00, +26.56, +23.44, and -4.69

@@ -2,21 +2,21 @@
   "status": "reading PDFs built; scientific and visual review recorded separately",
   "source_sha256": {
     "paper/educational_personality_v4/main.tex": "6c8ffc7f5593322c8092db3b2dc3f28cfb662ab0639f53ff0f7d9190cd787dd6",
-    "paper/educational_personality_v4/manuscript_zh.md": "80482e8ee8ef85a6cbc4ca3e681177a4155f37a910e7ea8b33b5d15e5abdd22d",
+    "paper/educational_personality_v4/manuscript_zh.md": "e246185adc6d1d9f7e60b38a6b00bdbe490f1dbf49a948076520b379240c0359",
     "paper/educational_personality_v4/references.bib": "9c996919883e0977eba48267070276d0c4a0878d6dd0525b9a956ec45ebf1d06",
     "paper/educational_personality_v4/sections/abstract.tex": "c850e898ef467aac80c07764709bf636261cba540728c1429da8b7dffdecfd55",
     "paper/educational_personality_v4/sections/archive_scope.tex": "89cdadad9c5123c6d8110169f06ba797ccc9e6b44f56e83b54314175e96f3b76",
     "paper/educational_personality_v4/sections/conclusion.tex": "5becf83dc0bad854c38679dcbf3e9bba58bdf2be4743186b9ffdf52667f64646",
     "paper/educational_personality_v4/sections/confirmation_details.tex": "663aee18e21a264e0bc9907b3a299d5133ea3813b31315005df0e09ac005c856",
-    "paper/educational_personality_v4/sections/cue_results.tex": "33588cedbd3c7444178a16e65735c60a052099bf86cd9f7563e4f0349264da5b",
-    "paper/educational_personality_v4/sections/cue_transfer_details.tex": "e764ac31b49d0d2758daf7d58dbbbac12927e0ac44fe4d91d03bce849a5f7bf2",
+    "paper/educational_personality_v4/sections/cue_results.tex": "e2b340aeadf8c9fed9ef044c2d30f8a936e60a09c985043a9098a9d4ae24f805",
+    "paper/educational_personality_v4/sections/cue_transfer_details.tex": "150a2b398cff605ef698839ae3d8b290f13fbccd0b9074e2fc3427da8717553c",
     "paper/educational_personality_v4/sections/detailed_methods.tex": "ee543879f161744763a6537550d9ad57bdfd6af09bc1000e6c8f51b59e77db61",
-    "paper/educational_personality_v4/sections/discussion.tex": "2204b9185357790bb7350634353679711b03b790f10fb4079f2cf18a8ab19755",
+    "paper/educational_personality_v4/sections/discussion.tex": "04b054c291075dddb8a17b2371b9881f72bf15cbb8f0a8b8535fc9352e7f01ad",
     "paper/educational_personality_v4/sections/introduction.tex": "c04896518799faaf247806f793c9a6d7c0bd515d79cdf68e5a1a49a56a461de2",
     "paper/educational_personality_v4/sections/limitations.tex": "69cef663d20a655a967b1eef454ef556e152cd5d8ca98204376784e0dc0cae4b",
     "paper/educational_personality_v4/sections/materials_examples.tex": "3e06a911561ca2de5934428d46e72a966ab32c128dc97f5fc0d2517b4eed8567",
     "paper/educational_personality_v4/sections/measurement_development.tex": "0eeebd31749f1073bd35777299e635a5746344cffa5d125bca723aa786bb9b9f",
-    "paper/educational_personality_v4/sections/methods.tex": "311dca089099a141335da59abcc14b8e6836004385861aa467659ce54b6ab9ea",
+    "paper/educational_personality_v4/sections/methods.tex": "f985e336c8f4b86ff6fbeff649d48a08d985ec8ebfa854b4c9d562326642d196",
     "paper/educational_personality_v4/sections/related_work.tex": "9abee7c9b68fdf82c529f81307cc8adb1fb4986c6bad1d0c3407dd8caa1d56f1",
     "paper/educational_personality_v4/sections/results.tex": "ce819ce5255f3f5c638b24de2bcacd67aa98218d7c0b91540bd2097a8a7348b4",
     "paper/educational_personality_v4/figures/confirmation_default_repetition.pdf": "a04ddab5d419bcfb406d2489d24f7adc5fb9520103b073b23d4bac90e278a8ec",
@@ -35,8 +35,8 @@
     "scripts/build_personality_draft_v3.py": "480a4a7fae2bd198224c53074ec3ac13cde865c859f09b793511d01cab2d5434"
   },
   "pdf_sha256": {
-    "working_draft_en.pdf": "f66f66e0a2ca8f249c9b945681a52a1ac5c06fb3367f696e4a61edd5a04ed500",
-    "working_draft_zh.pdf": "789bb3b6dd4c9a4869c8756d964b66e5e49234cfffa7cd635b2f543dca76ad8d"
+    "working_draft_en.pdf": "cc305fb7cd5c72489015b786c463b4903dc1efa90b13ac380d77f1e00cde5f82",
+    "working_draft_zh.pdf": "d72c994e9d4bc9abc0314a86f80d1a365eca23d2739983ffa8366d09a05f62c7"
   },
   "visual_inspection_required": true,
   "build_certifies_scientific_completion": false,
