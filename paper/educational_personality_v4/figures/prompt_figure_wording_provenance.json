@@ -1,0 +1,20 @@
+{
+  "changes": [
+    "Axis wording only; existing estimates and plotting layout retained"
+  ],
+  "new_api_calls": 0,
+  "new_estimates": 0,
+  "source_sha256": {
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/paired_prompt_effects.csv": "83bb44e495510b51d02185b2677fce1140f66aefbe92d50c9e2af99cfdf91d24",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_neutral_bounds/neutral_equivalence_interpretation.csv": "cf3c60796ac33cd7e58136e8842471882758c6c82ef0d8bd7d5ddaf37d5ed2f2",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_reporting/summary.json": "f614632de3ef632588ab03e3e45d3e0f1d24f0a50a32604e39d6d1b8cd0ab862",
+    "scripts/plot_personality_confirmation_v3.py": "4dc0655de8172feeb98b3617f8bf149b520e2630958660279b203abc936459d3",
+    "scripts/render_personality_publication_figures_v3.py": "420f0f8eaf2464efaaadf007f06026ff9cf369bfb5f23043e58e04bf2b0304c1",
+    "scripts/render_personality_prompt_figure_v4.py": "1e000735ce1be320db979a8857912c3635367b7299b5ece5afbdb81cc4c56a25"
+  },
+  "output_sha256": {
+    "paper/educational_personality_v4/figures/confirmation_prompt_changes_publication.pdf": "7a7c04a5b351b07e2b39caaf5f27ded589fe19035478c689cfbcd74efeb70260",
+    "paper/educational_personality_v4/figures/confirmation_prompt_changes_publication.png": "564899f93cbff4462cb1b0668778fad363cb6abc99d50e99b62e4d4f8806f1f0",
+    "paper/educational_personality_v4/figures/confirmation_prompt_changes_publication.svg": "25979e4252a59f446132792b18eeca17c5f92abebb332edb863414775c8b3346"
+  }
+}

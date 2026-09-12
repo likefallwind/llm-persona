@@ -1,22 +1,22 @@
 \section{Introduction}
 
-An AI tutor can answer correctly while choosing different ways to help:
+An artificial intelligence (AI) tutor can answer correctly while choosing different ways to help:
 explain the solution, invite the student to attempt a step, or combine both.
 For an educator selecting a tutor, correctness therefore leaves a practical
 question open: how will this model usually respond, and when can that behavior
-be expected to recur?
+be expected to persist?
 
 Our investigation draws on 1,028,822 raw evaluation records across 39 educational
 benchmark settings, including tutoring, assessment, and problem solving.
 Looking at models answering the same educational questions raised an initial
 question: do their apparently different teaching styles recur across responses?
-We investigate this using subsets suited to each analysis. We use \emph{educational personality} to
-investigate observable teaching tendencies, without assuming human personality
+We analyze relevant subsets of these records. We use \emph{educational personality}
+to describe observable teaching tendencies, without assuming human personality
 traits. Initial screening found that some differences recur while others vary. We
 therefore ask what happens when the problems, student wording, or teaching
 instructions change.
 
-We ask three questions:
+We ask three research questions (RQs):
 \textbf{RQ1: Which educational behaviors exhibit recurring model differences?}
 \textbf{RQ2: Under which input changes do those differences persist?}
 \textbf{RQ3: How do explicit instructions reshape the differences?}
@@ -31,9 +31,9 @@ Knowing how often each model gave answers or invited reasoning helps predict
 these actions on new problems, even when students use different wording.
 For acknowledgement of feeling or difficulty, knowing how a model responds to
 student cues further improves prediction, but this extra benefit is lost under
-new wording. Giving models the same teaching instruction makes required
-actions converge while other choices remain different. These remaining
-differences need not preserve the original model ranking or action rates.
+new wording. Giving models the same teaching instruction makes models perform the same required
+actions while other choices remain different. Models can still differ under the same instruction, but both their relative
+ordering and the frequency of each action can change.
 
 Prior work connects personality consistency, prompt sensitivity, and tutor
 action mixtures \citep{lee2025trait,kucheria2025cima,liu2026bma,lee2026tutorpersonas}.
@@ -45,8 +45,10 @@ deliberate control changes their behavior. Section~\ref{sec:methods} identifies
 which analyses are exploratory and which predictions were fixed in advance.
 
 For educators, these findings describe how a tutor usually helps, when that
-behavior can be anticipated, and how it responds to instructions. A recurring
-habit is not necessarily the best choice for every activity. Developers can
-use such evidence to investigate model selection and additional system
-support. These applications follow from the behavioral findings; learning
-benefits and harness effectiveness remain untested.
+behavior can be anticipated, and how it responds to instructions. These patterns
+help educators judge whether a model's usual teaching approach fits the
+requirements of a particular activity. For developers, the findings motivate
+broader evaluation of models' teaching behaviors, including their usual
+tendencies, responses to changed inputs, and instruction following. Such
+evaluations can guide the design and testing of harnesses for specific models
+and educational activities.

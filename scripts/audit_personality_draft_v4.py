@@ -248,7 +248,7 @@ def main():
             assert abs(float(bound[prefix + '_max']) - max(values)) < 1e-12
     checks.append({'check': 'full-source coder ranges equal all saved scenario extrema',
                    'sources': 256, 'comparisons': 36, 'eventwise_scenarios': 18})
-    assert 'complete-coding gate therefore failed' in archive_text
+    assert 'The original requirement for complete coding therefore failed.' in archive_text
     screen = (PAPER / 'sections/behavior_evidence_details.tex').read_text()
     screen_names = {'help_directness': 'Assistance directness', 'elicitation': 'Elicitation',
                     'autonomy_support': 'Autonomy support', 'affective_warmth': 'Affective warmth',

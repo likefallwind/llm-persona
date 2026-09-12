@@ -2,10 +2,10 @@
 \label{app:behavior-evidence}
 
 The following analyses and experiments belong to the present investigation.
-They retain different sampling frames, deployment aliases, and decision rules.
+They use different samples, recorded model versions, and decision rules.
 Table~\ref{tab:behavior-map} gives the full evidence map, including the
 persistence results developed after Section~\ref{sec:differences}.
-Table~\ref{tab:evidence-anchors} supplies quantitative anchors for the broader
+Table~\ref{tab:evidence-anchors} supplies numerical results for the broader
 behavioral findings. Its accompanying inventory maps each quantitative row to
 a saved aggregate, field, and source hash. These tables report existing
 results; they do not introduce a new analysis or a common validation rule.
@@ -28,62 +28,64 @@ Other candidate dimensions & Mixed or insufficient full-chain evidence & Failed 
 \end{tabular}
 \caption{Detailed evidence map across the investigation.
 Behavioral screens and prospective tests address different questions; inventory
-choices describe responses to fixed options. Quantitative anchors and measurement distinctions are reported in this appendix.}
+choices describe responses to fixed options. Numerical results and measurement distinctions are reported in this appendix.}
 \label{tab:behavior-map}
 \end{table}
 
+In Table~\ref{tab:evidence-anchors}, SATA denotes select-all-that-apply
+questions: a model must choose all appropriate options.
 \input{sections/behavior_evidence_table}
 
 \subsection{Semantic Screening and Candidate Dimensions}
 
-The semantic panel rates visible responses from six historical configurations
-on eight dimensions using three model coders. Assistance directness spans
+Three model annotators rate responses from six previously tested models
+on eight behavioral dimensions. Assistance directness spans
 hint/question-only assistance to a complete solution; cognitive load spans a
 manageable next step to many simultaneous steps or concepts. Thus the latter
-is an output rubric, not a learner measurement. Ratings are examined for coder
+is an output rubric, not a learner measurement. Ratings are examined for annotator
 agreement, variation, cross-task consistency, and links to observable actions
-and prompt changes. Coders' response-level agreement and models' cross-task
+and prompt changes. Annotators' response-level agreement and models' cross-task
 consistency are separate quantities. Directness alone satisfies the complete
-saved behavioral-disposition rule. Cognitive load satisfies the narrower
-semantic-signature criteria; action/quality evidence does not support its
-promotion to a fully validated disposition. No learning-efficacy claim follows
+screening rule. Cognitive-load ratings meet the narrower criteria for consistency across
+tasks, but evidence linking them to actions or response quality is insufficient
+to pass the full screening rule. No learning-efficacy claim follows
 from the directness decision either.
 
-The decision rule was fixed after partial coder results had been inspected,
-before the remaining coder reveal; it is not a fully outcome-blind
-preregistration. It constrains subsequent decisions without converting the
-whole semantic screen into independent prospective confirmation.
+The decision rule was fixed after partial annotator results had been inspected,
+before the remaining annotator results were revealed; it is not a preregistration made before any results were seen. It constrains subsequent decisions without converting the
+whole semantic screen into independent prospective testing.
 
 \paragraph{Complete screening rule.}
-The hierarchy requires all preceding tiers; passing one component alone does
-not validate a dimension. Reliable measurement requires coder ICC(3,$k$)
-$\geq .60$, consensus-score SD $\geq .50$, neither endpoint above 80\%,
-minimum leave-one-coder model-profile Spearman $\geq .70$, and no
-leave-one-coder prompt-effect sign reversal among headline model--task
+A dimension must pass each earlier stage before moving to the next. Passing
+one criterion alone does not validate it. Reliable measurement requires annotator ICC(3,$k$)
+$\geq .60$, consensus-score standard deviation $\geq .50$, neither end of the rating scale above 80\%,
+minimum leave-one-annotator model-profile Spearman $\geq .70$, and no
+leave-one-annotator prompt-effect sign reversal among headline model--task
 contrasts. Cross-task signature status additionally requires a positive lower
 95\% bootstrap bound for model variance in every sampled benchmark and either
 cross-task ICC(3,1) $\geq .50$ or median pairwise-task Spearman $\geq .50$.
-Whole-panel held-out-task attribution must exceed $1/6$ chance; this shared
+Model identification using all dimensions on held-out tasks must exceed $1/6$ chance; this shared
 check is not a dimension-specific validation test.
 
 The strongest tier further requires at least one of three corroborations:
-(1) adding the full semantic panel to a transparent quality predictor yields
-positive mean leave-one-model-out AUC gain with no negative model fold, and
+(1) adding all eight behavioral ratings to a transparent quality predictor yields
+positive mean leave-one-model-out gain in area under the receiver operating
+characteristic curve (AUC), with no negative model fold, and
 the dimension separates independently inferred human actions in its anchored
 direction; (2) paired prompt movement agrees with the independently trained
-human-action result and keeps its direction under every single-coder exclusion;
+result based on human teaching actions and keeps its direction under every single-annotator exclusion;
 or (3) on 40 LongTutor histories \citep{li2026longtutor}, the dimension predicts
-human-gold diagnosis beyond exact history, with within-outcome BH-adjusted
+human-annotated diagnosis beyond exact history, with within-outcome Benjamini--Hochberg (BH)-adjusted
 $q<.05$ under the specified history permutation test. Only directness passes
 the complete hierarchy, through criterion (2). Semantic elicitation passes that
 corroboration but fails the preceding cross-task tier.
 
-The thresholds were fixed on 19 August 2026 after 637 of 1,080 planned coder
-annotations, before the third coder and LongTutor results were available.
+The thresholds were fixed on 19 August 2026 after 637 of 1,080 planned annotator
+annotations, before the third annotator and LongTutor results were available.
 An implementation clarification at 640 annotations applied the variance check
 to every benchmark; the BH amendment at 725 annotations preceded all LongTutor
 coding. These timings are disclosed because this was a staged decision rule,
-not an outcome-blind preregistration. Self-family residual differences or slate-position
+not a preregistration made before any results were seen. Residual differences for annotations from the same model family or response-order
 ranges above .25 scale points flag interpretation concerns; they do not replace
 the tier decisions.
 
@@ -111,34 +113,32 @@ The binary prospective elicitation event is a separate measure.}
 
 The retained eight-dimensional record includes elicitation, autonomy support,
 affective warmth, diagnostic specificity, personalization, and epistemic
-caution, with their failed components. A separate four-coder frozen-split
-panel examines instructional agency, relational communion, and next-step
+caution, with their failed components. A separate analysis with four annotators and fixed data splits examines instructional agency, relational communion, and next-step
 actionability in matched standard/hard and Socratic settings. Agency's failed
-pilot gate is not reversed by stronger formal agreement. Communion has no
+pilot criterion is not reversed by stronger agreement in the main experiment. Communion has no
 model variation in the constrained Socratic setting and overlaps with warmth.
 Actionability fails cross-task stability (E9), despite an instruction-induced
-increase for every tested model in both matched task variants. Outcome-aware
-source-grouped reanalysis is reported in Appendix~\ref{app:archive-reanalysis};
+increase for every tested model in both matched task variants. Post-hoc
+reanalysis keeping related problems in the same group is reported in Appendix~\ref{app:archive-reanalysis};
 it does not retroactively change these decisions. In particular, the semantic
-elicitation score (E3) and the subsequent binary reasoning-invitation endpoint
+elicitation score (E3) and the subsequent binary reasoning-invitation outcome
 are not identical measures.
 
 \subsection{Confidence, Revision, and Safety Facets}
 
-These are outcome-aware exploratory analyses of already scored archive
-outputs. The common six historical configurations are MiniMax-M3,
+These exploratory analyses use previously scored archive outputs, with the design informed by earlier results. The same six historical models are MiniMax-M3,
 MiniMax-M2.7, GLM-5.2, DeepSeek-V4-Pro, Doubao-Seed-2.0-Pro, and Qwen3.5-4B.
-The epistemic analysis uses recorded confidence, revision, correctness, and
+The analysis of confidence and uncertainty uses recorded confidence, revision, correctness, and
 abstention fields rather than newly assigning personality ratings. Model means
 are compared across four source contexts for confidence and revision and five
 unanswerability categories for abstention. ICC(3,1) and median pairwise rank
 correlation each use a 0.50 descriptive screening threshold. Confidence passes
 both (E4), revision only the ICC check (E5), and abstention only the rank check
-(E6). These finite-panel screens do not identify latent factors or make reported
+(E6). These checks on the tested models do not identify latent factors or make reported
 confidence a correctness guarantee.
 
 Safety analysis compares attack success across five risk categories and SATA
-incorrect inclusion across ten scenario-language cells (E7--E8). Their
+incorrect inclusion across ten scenario and language combinations (E7--E8). Their
 cross-task model-rank correlation is -0.486, opposite the proposed common
 permissiveness direction. Educational-refusal style also has recurring
 within-task structure, but one category-pair rank correlation is only 0.086;
@@ -150,24 +150,24 @@ validated across judge families.
 \subsection{Targeted Affiliation Pilot}
 
 The prospective pilot contains 280 generation calls and 144 blinded coding
-calls, with twelve open conflict scenarios. Five historical configurations
+calls, with twelve open conflict scenarios. Five historical models
 participate: MiniMax-M3, MiniMax-M2.7, GLM-5.2, DeepSeek-V4-Pro, and
-Doubao-Seed-2.0-Lite. Three model coders score open affiliation. The fixed gates
-require coder ICC at least 0.70, cross-domain and irrelevant-change rank
+Doubao-Seed-2.0-Lite. Three model annotators score open affiliation. The fixed criteria
+require annotator ICC at least 0.70, cross-domain and irrelevant-change rank
 correlations at least 0.70, absolute mean irrelevant displacement at most
 0.25, and default between-model standard deviation at least 0.15. All pass:
-coder ICC is 0.931, the two rank correlations are in E10, displacement is
--0.050, and model standard deviation is 0.445. With only five configurations,
+annotator ICC is 0.931, the two rank correlations are in E10, displacement is
+-0.050, and model standard deviation is 0.445. With only five models,
 the two exact two-sided permutation p-values are 0.091 and 0.174. This is a
-local gate-based result, not population-level significance or broad invariance.
+result within this pilot under the specified criteria, not population-level significance or broad invariance.
 
 High-minus-low affiliation instructions shift the mean by 1.689 on the 1--5
 scale, with a positive direction in all five models. Default rank correlation
 is 0.900 under high affiliation and 0.200 under low affiliation. Self-report
 correlation with open behavior is -0.200; default forced-choice responses have
-no model variance. Open affiliation correlates 0.900 with surface warmth.
-Thus locally recurring open behavior is supported, while general-trait
-convergence and separation from warm expression are not established.
+no model variance. Open affiliation correlates 0.900 with warmth of the wording.
+Thus locally recurring open behavior is supported, while the results do not establish a general affiliation trait distinct from
+warm wording.
 
 \input{sections/prompt_response_details}
 
@@ -180,13 +180,13 @@ wording's threshold and is not a measure of semantic warmth. Ordinary student
 requests for the opposite action do not override the configured policy in
 those tested contrasts. This supports action control, not adaptive selection.
 
-A prospective two-stage trial uses 96 contexts, five configurations, two
-selector wordings, both counterfactual executors, and a concurrent single-pass
-baseline: 2,400 generation cells. Specified ASK and EXPLAIN actions are realized
+A prospective two-stage trial uses 96 contexts, five models, two
+selector wordings, both possible follow-up instruction conditions, and a concurrent single-pass
+baseline: 2,400 response requests. Specified ASK and EXPLAIN actions are realized
 at 0.998 and 1.000 under the trial's question-based binary metric. Selector
 match to an existing observed-teacher binary reference is 0.519 and 0.500;
-composed-minus-single-pass match is -0.058 and -0.077. Both selection wordings
+two-stage minus single-pass match is -0.058 and -0.077. Both selection wordings
 fail the registered joint target. An observed teacher move is not uniquely
-optimal, and question-based action realization is not a quality measure.
-The trial constrains naive system-decomposition claims without becoming the
+optimal, and question-based instruction compliance is not a quality measure.
+The trial constrains claims that separating action choice from response generation is sufficient without becoming the
 main contribution of the educational-personality investigation.

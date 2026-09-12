@@ -39,6 +39,8 @@ def save(fig, name):
         path = OUT / (name + '.' + suffix)
         kw = {'metadata': {'CreationDate': None, 'ModDate': None}} if suffix == 'pdf' else {}
         fig.savefig(path, dpi=220, **kw)
+        if suffix == 'svg':
+            path.write_text('\n'.join(line.rstrip() for line in path.read_text().splitlines()) + '\n')
         outputs[str(path.relative_to(ROOT))] = sha(path)
     plt.close(fig)
     return outputs
@@ -130,11 +132,11 @@ def main():
         ax.tick_params(axis='y', length=0)
     axes[1].legend(loc='lower left', bbox_to_anchor=(-.55, 1.22), ncol=2,
                    frameon=False, fontsize=9, handletextpad=.4)
-    fig.suptitle('Archived tutoring: explicit probing compresses observed model differences',
+    fig.suptitle('Historical tutoring: probing reduces observed differences between models',
                  x=.04, ha='left', y=.99, fontsize=12, fontweight='bold')
-    fig.text(.04, .91, 'Seven historical deployments · 256 paired sources · Both instructions limit replies to two sentences',
+    fig.text(.04, .91, 'Seven historical models · 256 matched dialogues · Both instructions limit replies to two sentences',
              fontsize=9, color='#526170')
-    fig.text(.18, .025, 'Bars: source-bootstrap 95% intervals. Historical configurations differ from the prospective panel.',
+    fig.text(.18, .025, 'Bars: source-bootstrap 95% intervals. Historical and controlled experiments use different model groups.',
              fontsize=8, color='#526170')
     outputs.update(save(fig, 'archive_instruction_profiles'))
     receipt = {'purpose': 'Descriptive illustrations of existing findings; no new hypothesis tests',

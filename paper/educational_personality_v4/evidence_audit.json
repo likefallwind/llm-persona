@@ -81,6 +81,6 @@
   "scientific_quality_goal_complete": false,
   "archive_identified_majority_analysis_complete": true,
   "archive_original_complete_coding_gate_passed": false,
-  "audit_script_sha256": "c32e4f4e4027b2a08b8e6d047f61ff5b5fe8970b87a22e70da3c01f14ab1fdaa",
+  "audit_script_sha256": "0c9d8060d4c5502509e4d338f123b414b689ffbc7b1925c0952c9fd99e58de01",
   "review_scope": "new estimates, evidence hashes, and observed-vote majority enumeration; not full independent manuscript review"
 }

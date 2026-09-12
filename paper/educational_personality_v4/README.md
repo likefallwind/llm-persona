@@ -37,7 +37,7 @@ estimates remain in the appendices, including the contemporary wording control.
 The manuscript is now formatted for a NAACL 2027 long-paper submission through
 ARR October 2026: the conclusion ends on page 8; Limitations, ethical
 considerations and an anonymous AI-assistance disclosure follow before references.
-The abstract has 186 words. The complete PDF has 35 pages including appendices.
+The abstract has 189 words. The complete PDF has 35 pages including appendices.
 [Submission requirements and remaining author actions](submission/requirements_and_status.md)
 record the verified rules, metadata draft and Responsible NLP checklist.
 
@@ -57,15 +57,15 @@ Harness benefits, and optimal system configurations are not empirical
 contributions of this paper.
 
 The post-conclusion Limitations section concentrates on three points: coverage of settings
-and deployments, automated behavioral measurement, and further teaching
+and models, automated behavioral measurement, and further teaching
 tendencies that remain to be tested. Evidence levels and technical disclosures
 remain in the methods, results, and empirical appendices.
 
 ## Evidence and scope
 
 The controlled action sequence contains 10,440 tutor generations from five
-deployments; the paired archive contains 3,584 replies from seven historical
-configurations. Other pilot and routing counts are reported separately, not
+models; the paired archive contains 3,584 replies from seven historical
+models. Other pilot and routing counts are reported separately, not
 silently included in those totals. The million-record inventory is an archive
 coverage count, not a million independent personality measurements.
 
@@ -102,3 +102,24 @@ the build now rejects an overlong main paper or abstract and checks the
 post-conclusion order, known PDF identity patterns and Type 3 fonts.
 The evidence audit also verifies all eight cumulative screen decisions and all
 twenty fixed expression stimuli against their saved sources.
+
+## Whole-paper terminology review (2026-09-12)
+
+The English main text and appendices use model, prediction, test problem,
+standard tutoring prompt, and experimental condition consistently. Necessary
+statistical terms and distinctions between historical analyses and predictions
+fixed before response collection remain explicit. The existing table label
+Canonical is defined as the standard tutoring prompt. Prompt quotations,
+response excerpts, mathematical definitions and numeric table rows are unchanged.
+
+Updated figure labels can be reproduced from the repository root with:
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/plot_personality_design_v4.py
+PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/render_personality_prompt_figure_v4.py
+PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/render_personality_transfer_figure_v4.py
+PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 .venv/bin/python scripts/render_personality_discovery_figures_v4.py
+```
+
+These commands render the saved design and results; they make no model-provider
+requests. Rebuild the PDF afterward using the commands above.

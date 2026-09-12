@@ -6,8 +6,8 @@ Past behavior can help predict a model's next response even when it does not
 repeat the same action every time. M3 agrees with itself on whether to invite
 reasoning in only 57.8\% of 128 matched input pairs (95\% source-bootstrap
 interval 50.0--66.4\%). High agreement can also reflect repeated absence:
-DeepSeek and Doubao have elicitation agreement above 90\%, but none of their
-few invitations recur in both requests. They agree perfectly on answer
+DeepSeek and Doubao agree on whether to invite reasoning in over 90\% of
+repeated responses, but none of their few invitations appear in both responses. They agree perfectly on answer
 revelation because they always reveal an answer in this sample.
 
 Agreement therefore needs to be read alongside how often each action occurs
@@ -29,7 +29,7 @@ clear additional benefit for revelation or elicitation. Full estimates and
 uncertainty intervals appear in Appendix Tables~\ref{tab:absolute-losses}
 and~\ref{tab:primary-tests}.
 
-A predictor using training-response length and formatting makes larger errors
+A predictor based on the length and formatting of training responses makes larger errors
 than the model-default predictor for all three actions
 (Appendix Table~\ref{tab:absolute-losses}). These two style measures do not
 match the predictive performance of model defaults. Richer style measures may
@@ -47,8 +47,8 @@ rates or model rankings stay fixed. Default and state gains also compare
 different predictors, so their sizes cannot be read as a common stability
 score. Persistence across provider updates remains untested.
 
-\subsection{Checking Dependence on Coders, Models, and Answer Errors}
-The main pattern holds across eight sets of coder labels: model defaults
+\subsection{Checking Dependence on Annotators, Models, and Answer Errors}
+The main pattern holds across eight sets of annotator labels: model defaults
 improve prediction, and cue-specific responses add value mainly for
 acknowledgement. Resampling training sources and checking missing codes
 preserve this pattern. These checks reduce concern that the findings depend
@@ -58,11 +58,11 @@ on one coding choice, but do not establish that the labels are correct
 The strength of the differences depends on which models are compared.
 Removing GLM substantially reduces default gains for revelation and elicitation.
 Removing M2.7 leaves a small default acknowledgement gain whose interval spans
-zero. The full-panel result therefore need not hold equally strongly for every
+zero. The result for all five models therefore need not hold equally strongly for every
 subset of models.
 
-Default gains and the acknowledgement state gain remain positive after removing
-matched response groups flagged for content errors. However, reviewers often
+Default gains and the acknowledgement state gain remain positive after excluding
+matched response groups flagged for answer errors. However, reviewers often
 disagree about these errors. The screen cannot guarantee correct retained
 answers or rule out differences in task ability
 (Appendix~\ref{app:content-results}).

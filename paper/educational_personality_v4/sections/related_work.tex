@@ -1,37 +1,38 @@
 \section{Related Work}
 
-\paragraph{Personality and situated behavior.}
-TRAIT extends personality inventories into scenario-based choices and evaluates
-distinctiveness, consistency, and prompting effects, including agreement between
-original and paraphrased items \citep{lee2025trait}. Behavioral Mode Axes
-examines choices across interaction registers, evaluates open-ended generations,
-and studies activation-based control \citep{liu2026bma}. Internal-feature
-interventions and conversational studies further connect personality-related
-behavior to changes in situations \citep{zhang2026triad,han2026contexts}.
-PERSONA composes activation vectors for context-dependent personality control
-\citep{feng2026persona}, while Dynamic Persona Coherence distinguishes stable
-identity from appropriate state changes in role-playing \citep{qi2026dynamic}.
-These studies connect consistency, context, and control. We examine that
-relationship in existing AI tutors by predicting observable teaching actions
-before collecting new responses and testing how shared instructions change them.
+\paragraph{Personality measurement and behavioral consistency.}
+Psychometric studies assess personality expression and its control through
+prompts \citep{serapio2025psychometric}; the Trait of AI Testbench (TRAIT) uses
+scenario-based choices \citep{lee2025trait}. Yet self-reports do not reliably
+predict behavior in some tests \citep{han2026illusion}, and their predictive
+value depends on the behavior and conversational context
+\citep{kocielnik2026rethinking}. Consistency in following an assigned persona also varies across
+tasks \citep{reusens2025consistency}. Behavioral Mode Axes studies observable
+choices across interaction contexts and controls them through activation
+steering \citep{liu2026bma}. We examine recurring tendencies in teaching
+responses and test when past behavior helps predict new responses.
 
-\paragraph{Tutor behavior and educational personas.}
-The CIMA comparison reports characteristic action mixtures and response
-complexity for three LLMs in language-learning dialogues; its generation
-prompt requests both a response and action labels \citep{kucheria2025cima}.
-Tutor-persona steering learns from human tutoring dialogues and evaluates
-persona alignment on held-out dialogues \citep{lee2026tutorpersonas}.
-These studies establish tutor-specific styles and methods for learning them.
-We test whether models' past actions help predict new responses, whether the
-same forecasts work when students change their wording, and how shared
-instructions change both required actions and other choices.
-We code visible answers after generation under controlled student cues and
-teaching instructions.
+\paragraph{Teaching styles and adaptation.}
+A comparison of tutoring dialogues finds differences in teaching actions and
+response complexity across three large language models (LLMs)
+\citep{kucheria2025cima}. Tests that remove information about students show that models differ in how
+they adapt their teaching
+\citep{borchers2025adaptivity}. Steering methods learn teaching styles
+from human dialogues \citep{lee2026tutorpersonas}, while Personality-Aware
+Teaching Strategies (PATS) adapts teaching
+strategies to simulated student personalities \citep{rooein2026pats}.
+Our focus is the models' own teaching tendencies: we test their predictive
+value on new inputs and how shared instructions reshape them.
 
-\paragraph{Teaching quality and behavioral predictability.}
-MRBench and MathTutorBench evaluate pedagogical capabilities
-\citep{maurya2025mrbench,macina2025mathtutorbench}, while PATS studies teaching
-adapted to student personality \citep{rooein2026pats}. We complement capability evaluation by asking which teaching actions can be
-predicted from a model's previous responses and when changes in input make
-those predictions less useful. This connects descriptions of teaching habits with evidence about what tutors
-are likely to do next.
+\paragraph{Educational benchmarks and our starting point.}
+MRBench provides human ratings across pedagogical dimensions
+\citep{maurya2025mrbench}, and MathTutorBench evaluates multiple open-ended
+tutoring capabilities \citep{macina2025mathtutorbench}. TutorBench assesses
+explanations, feedback, and hints with example-specific rubrics
+\citep{srinivasa2025tutorbench}. LongTutor evaluates use of learning histories
+for diagnosis and adaptive teaching \citep{li2026longtutor}.
+Our investigation began with archived evaluations across these and other
+educational benchmarks (Appendix~\ref{app:archive-scope}). We analyze relevant
+subsets for recurring behavior, then test candidate tendencies in controlled
+experiments. This complements teaching-quality evaluation with evidence about
+which behaviors remain predictable and how instructions change them.

@@ -4,7 +4,7 @@
     "artifacts/educational_personality_v2/prospective_formal/confirmation_descriptive/matched_prompt_profiles.csv": "c5b44c1ebb3486039da9e1684b3207aceca40fb56047f7ec1b7042d31978c23f",
     "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/source_prompt_rates.csv": "6b2ff852067d39eb86c7109219f87902ef745a3fc4143dfba9c350c792e90921",
     "artifacts/educational_personality_v4/archive_validation/analysis_identified/event_rates.csv": "58c4990027fbf434973161c0bebac1d10efef7c3576a3c7ac32c26aba5e8f0b2",
-    "scripts/render_personality_discovery_figures_v4.py": "5ea415a9cc32be58361e24c3be5a2b543971e3030a0dcec630d7df469c907d50"
+    "scripts/render_personality_discovery_figures_v4.py": "6be85aaeffa8bb7873dce2af5e3606be6a4a9e5586b1ea47d472ac8f7b6d9e53"
   },
   "matched_source_ids": [
     "all_different_constraint",
@@ -522,11 +522,11 @@
   ],
   "outputs": {
     "paper/educational_personality_v4/figures/teaching_choices_under_instructions.pdf": "2a6495891f00de61f07f813c9eff92ce245b2f0e14d7c8bf3bc4b36733c7a8e2",
-    "paper/educational_personality_v4/figures/teaching_choices_under_instructions.svg": "b5e303ec5a409b5f3c3e120be18888fac3c9213ba52d8aee4c661a68d50ccb11",
+    "paper/educational_personality_v4/figures/teaching_choices_under_instructions.svg": "64bd81f6c4654c5c5a945388997e5276263a1b4c604ecf8b035db114a051ec7f",
     "paper/educational_personality_v4/figures/teaching_choices_under_instructions.png": "219503ee2406fa1d58baa27c8bb948d8677cf55c940f2e4810277a282d421afa",
-    "paper/educational_personality_v4/figures/archive_instruction_profiles.pdf": "9cf049a2416afb02df010dbe703c7d89219f35c1d3afe9c4892ff3606360235c",
-    "paper/educational_personality_v4/figures/archive_instruction_profiles.svg": "104cc8ffbb2192528db69f7365d54869375359c3c9a013494a382aca1e6a997d",
-    "paper/educational_personality_v4/figures/archive_instruction_profiles.png": "3307c8dffef19c5cd4dd54ac096dfcbbc8b2817963749760375f1da4c9c6e3de"
+    "paper/educational_personality_v4/figures/archive_instruction_profiles.pdf": "9c5675cccb059342220119ce6d5db1d4b3655a542ef4a77191847036e4a03165",
+    "paper/educational_personality_v4/figures/archive_instruction_profiles.svg": "79da76f0c8a12dddb6178112ebf641c2b5eddf347df36b926079e8a1563989bf",
+    "paper/educational_personality_v4/figures/archive_instruction_profiles.png": "97265128677ae1348d8cad9f6687b25c5574cd6b71868b5f39a03b7ada388bec"
   },
   "checks": {
     "matched_rates_recomputed_from_16_sources": 30,

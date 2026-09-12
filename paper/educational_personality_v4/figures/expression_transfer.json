@@ -2,7 +2,7 @@
   "sources": {
     "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/primary_prediction_comparisons.csv": "314d36f5fd478bb5e48d6cb79faff2f3aec026456cdfd20ed8ac256f110919ad",
     "artifacts/educational_personality_v4/cue_transfer/analysis/all_forecast_comparisons.csv": "eadfc819d20c4c2100fe49d81116e0becf196a1488bb19118bedae7201d9d013",
-    "scripts/render_personality_transfer_figure_v4.py": "6581b23a9c1b8679d0fa7f4838a23dc407a4a7cc4cb7d08ce06d0e2b7dad8872"
+    "scripts/render_personality_transfer_figure_v4.py": "dbeaacbd2004d818bc96f310af1a08caf175b7bb906b42b8cde5ab598f33c33a"
   },
   "points": [
     {
@@ -102,5 +102,5 @@
       "high": -0.002726416056543286
     }
   ],
-  "figure_sha256": "d569ca4e986249a1108001303ff88299c2f8f70ebfb7667886cbc9302d0b3e2b"
+  "figure_sha256": "81be70c2ad1f8accfccd289b77b5f6a41510b77afc070544940ac8f84be0c9d9"
 }

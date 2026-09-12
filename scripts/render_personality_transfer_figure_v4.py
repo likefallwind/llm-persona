@@ -53,7 +53,7 @@ def main():
         elif event == 'answer_reveal':
             ax.set_xticks([0, .05, .10])
     axes[0].set_yticks([3, 2, 1, 0], ['New problems\n(original wording)',
-                                    'Same problems\n(contemporary original)',
+                                    'Same problems\n(original wording rerun)',
                                     'Same problems\n(explicit synonyms)',
                                     'Same problems\n(implicit cues)'])
     fig.tight_layout(w_pad=2)

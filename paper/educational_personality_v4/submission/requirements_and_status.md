@@ -15,7 +15,7 @@ Requirements checked: 11 September 2026. Target: long paper, ARR October 2026, f
 |---|---|
 | Main content at most eight pages | Conclusion ends on page 8; no main-text argument or result moved into Limitations |
 | Official ACL review style | Pinned official files unchanged; A4, two columns and review line numbers retained |
-| Abstract no longer than 200 words | 186 words by whitespace count; below 200 even splitting hyphenated words |
+| Abstract no longer than 200 words | 189 words by whitespace count; below 200 even splitting hyphenated words |
 | Limitations after conclusion | Three points, starting on page 9 |
 | Ethical impact and AI assistance | Anonymous Ethical Considerations and Acknowledgements included |
 | References, then appendices | Same PDF; appendix text remains in two columns, with full-width figures/tables |

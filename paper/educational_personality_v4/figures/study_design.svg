@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-09-05T17:24:35.129267</dc:date>
+    <dc:date>2026-09-12T19:19:36.841141</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,7 +40,7 @@ Q 17.25696 54.533376 17.25696 61.168896
 L 17.25696 196.533504 
 Q 17.25696 203.169024 29.82816 203.169024 
 z
-" clip-path="url(#pa41d762f0d)" style="fill: #eaf2f8; stroke: #a5b2ba; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#p263d8d6a70)" style="fill: #eaf2f8; stroke: #a5b2ba; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 308.48976 203.169024 
@@ -53,7 +53,7 @@ Q 295.91856 54.533376 295.91856 61.168896
 L 295.91856 196.533504 
 Q 295.91856 203.169024 308.48976 203.169024 
 z
-" clip-path="url(#pa41d762f0d)" style="fill: #f0f1f3; stroke: #a5b2ba; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#p263d8d6a70)" style="fill: #f0f1f3; stroke: #a5b2ba; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_4">
     <path d="M 587.15136 203.169024 
@@ -66,27 +66,27 @@ Q 574.58016 54.533376 574.58016 61.168896
 L 574.58016 196.533504 
 Q 574.58016 203.169024 587.15136 203.169024 
 z
-" clip-path="url(#pa41d762f0d)" style="fill: #e8f3ef; stroke: #a5b2ba; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#p263d8d6a70)" style="fill: #e8f3ef; stroke: #a5b2ba; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 276.550646 129.293568 
 Q 283.766879 129.293568 289.30606 129.293568 
-" clip-path="url(#pa41d762f0d)" style="fill: none; stroke: #526674; stroke-width: 1.5; stroke-linecap: round"/>
+" clip-path="url(#p263d8d6a70)" style="fill: none; stroke: #526674; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 282.50606 125.893568 
 L 289.30606 129.293568 
 L 282.50606 132.693568 
 z
-" clip-path="url(#pa41d762f0d)" style="fill: #526674; stroke: #526674; stroke-width: 1.5; stroke-linecap: round"/>
+" clip-path="url(#p263d8d6a70)" style="fill: #526674; stroke: #526674; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="patch_6">
     <path d="M 555.626171 129.293568 
 Q 562.427142 129.293568 567.551063 129.293568 
-" clip-path="url(#pa41d762f0d)" style="fill: none; stroke: #526674; stroke-width: 1.5; stroke-linecap: round"/>
+" clip-path="url(#p263d8d6a70)" style="fill: none; stroke: #526674; stroke-width: 1.5; stroke-linecap: round"/>
     <path d="M 560.751063 125.893568 
 L 567.551063 129.293568 
 L 560.751063 132.693568 
 z
-" clip-path="url(#pa41d762f0d)" style="fill: #526674; stroke: #526674; stroke-width: 1.5; stroke-linecap: round"/>
+" clip-path="url(#p263d8d6a70)" style="fill: #526674; stroke: #526674; stroke-width: 1.5; stroke-linecap: round"/>
    </g>
    <g id="patch_7">
     <path d="M 29.82816 388.963584 
@@ -99,7 +99,7 @@ Q 17.25696 255.810816 17.25696 262.446336
 L 17.25696 382.328064 
 Q 17.25696 388.963584 29.82816 388.963584 
 z
-" clip-path="url(#pa41d762f0d)" style="fill: #eaf2f8; stroke: #a5b2ba; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#p263d8d6a70)" style="fill: #eaf2f8; stroke: #a5b2ba; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
     <path d="M 308.48976 388.963584 
@@ -112,7 +112,7 @@ Q 295.91856 255.810816 295.91856 262.446336
 L 295.91856 382.328064 
 Q 295.91856 388.963584 308.48976 388.963584 
 z
-" clip-path="url(#pa41d762f0d)" style="fill: #e8f3ef; stroke: #a5b2ba; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#p263d8d6a70)" style="fill: #e8f3ef; stroke: #a5b2ba; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
     <path d="M 587.15136 388.963584 
@@ -125,70 +125,70 @@ Q 574.58016 255.810816 574.58016 262.446336
 L 574.58016 382.328064 
 Q 574.58016 388.963584 587.15136 388.963584 
 z
-" clip-path="url(#pa41d762f0d)" style="fill: #faf0e5; stroke: #a5b2ba; stroke-width: 1.1; stroke-linejoin: miter"/>
+" clip-path="url(#p263d8d6a70)" style="fill: #faf0e5; stroke: #a5b2ba; stroke-width: 1.1; stroke-linejoin: miter"/>
    </g>
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="426.24" y="33.388384" transform="rotate(-0 426.24 33.388384)">Prospective design: separate sources, predictions saved before generation</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="426.24" y="33.388384" transform="rotate(-0 426.24 33.388384)">Study design: separate problems, predictions saved before response collection</text>
    </g>
    <g id="text_2">
     <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="147.5784" y="84.827964" transform="rotate(-0 147.5784 84.827964)">Training answers</text>
    </g>
    <g id="text_3">
     <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(35.922853 114.052304)">32 questions / 30 source families</text>
-    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(48.185705 134.404609)">Four domains / canonical role</text>
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(39.428634 133.627304)">Four subjects / standard prompt</text>
     <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(41.062345 153.202304)">5 models · 4 states · 2 requests</text>
-    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(68.777423 172.777304)">1,280 planned answers</text>
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(98.213752 173.277226)">1,280 answers</text>
    </g>
    <g id="text_4">
-    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="426.24" y="84.827964" transform="rotate(-0 426.24 84.827964)">Forecast lock</text>
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="426.24" y="84.827964" transform="rotate(-0 426.24 84.827964)">Fix predictions</text>
    </g>
    <g id="text_5">
     <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(319.058437 114.052304)">Fit and tune on training sources</text>
-    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(312.218789 133.627304)">Save forecasts and fitting choices</text>
-    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(324.404648 153.202304)">Primary and sensitivity panels</text>
-    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(320.500195 172.777304)">Before confirmation generation</text>
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(308.489414 133.627304)">Save predictions and fitted models</text>
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(302.172891 153.202304)">Primary tests and robustness checks</text>
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(324.335039 172.777304)">Before collecting test answers</text>
    </g>
    <g id="text_6">
-    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="704.9016" y="84.826714" transform="rotate(-0 704.9016 84.826714)">New-source answers</text>
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="704.9016" y="84.826714" transform="rotate(-0 704.9016 84.826714)">Test answers</text>
    </g>
    <g id="text_7">
     <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(611.275936 114.052304)">32 separate source families</text>
-    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(585.479334 134.404609)">Same four domains / canonical role</text>
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(592.426561 133.627304)">Same subjects / standard prompt</text>
     <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(598.385545 153.202304)">5 models · 4 states · 2 requests</text>
-    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(626.100623 172.777304)">1,280 planned answers</text>
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(655.536952 173.277226)">1,280 answers</text>
    </g>
    <g id="text_8">
-    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="426.24" y="234.49291" transform="rotate(-0 426.24 234.49291)">Three questions evaluated on the confirmation responses</text>
+    <text style="font-weight: 700; font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="426.24" y="234.49291" transform="rotate(-0 426.24 234.49291)">Three research questions tested on the new responses</text>
    </g>
    <g id="text_9">
-    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="147.5784" y="286.105404" transform="rotate(-0 147.5784 286.105404)">RQ1 · Recurring defaults</text>
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="147.5784" y="286.105404" transform="rotate(-0 147.5784 286.105404)">RQ1 · Recurring behavior</text>
    </g>
    <g id="text_10">
     <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(42.83633 315.329744)">Repeat agreement and profiles</text>
     <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(27.68258 334.904744)">Two requests under identical inputs</text>
-    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(32.351681 354.479744)">Behavior rates reported alongside</text>
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(23.90258 354.479744)">Report how often each action occurs</text>
     <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(69.803634 375.362557)">32 new source families</text>
    </g>
    <g id="text_11">
     <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="426.24" y="286.105404" transform="rotate(-0 426.24 286.105404)">RQ2 · Behavior prediction</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(351.005977 316.637557)">Four nested forecasts:</text>
-    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(339.734531 335.523846)">situation; model defaults;</text>
-    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(317.511211 355.098846)">model × domain; model × state</text>
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(347.814492 315.329744)">Four nested predictors:</text>
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(317.605078 334.904744)">subject + state; model defaults;</text>
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(318.32543 354.479744)">model × subject; model × state</text>
     <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(334.713164 374.054744)">Losses averaged by source</text>
    </g>
    <g id="text_13">
-    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="704.9016" y="286.105404" transform="rotate(-0 704.9016 286.105404)">RQ3 · Prompt plasticity</text>
+    <text style="font-weight: 700; font-size: 16px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #203544" x="704.9016" y="286.105404" transform="rotate(-0 704.9016 286.105404)">RQ3 · Instruction effects</text>
    </g>
    <g id="text_14">
     <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(611.292811 316.637557)">16 matched source families</text>
-    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(578.837967 335.523846)">Canonical; neutral A/B; ASK; EXPLAIN</text>
-    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(596.228709 354.479744)">Crossed with states and repeats</text>
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(581.262694 335.523846)">Standard; neutral A/B; ASK; EXPLAIN</text>
+    <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(597.789647 354.479744)">All student states; two requests</text>
     <text style="font-size: 13.5px; font-family: 'DejaVu Sans'; fill: #263b48" transform="translate(619.868475 374.673846)">2,560 additional answers</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526674" x="426.24" y="417.426119" transform="rotate(-0 426.24 417.426119)">Supplementary probes: 160 complete/missing-information answers + 40 sentinel answers.</text>
+    <text style="font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526674" x="426.24" y="417.426119" transform="rotate(-0 426.24 417.426119)">Additional checks: 160 complete/missing-information answers + 40 reference-question replies.</text>
    </g>
    <g id="text_16">
     <text style="font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #526674" x="426.24" y="438.659783" transform="rotate(-0 426.24 438.659783)">All counts describe the fixed design. Repeated requests and prompt variants do not add independent sources.</text>
@@ -196,7 +196,7 @@ z
   </g>
  </g>
  <defs>
-  <clipPath id="pa41d762f0d">
+  <clipPath id="p263d8d6a70">
    <rect x="7.2" y="7.2" width="838.08" height="442.368"/>
   </clipPath>
  </defs>

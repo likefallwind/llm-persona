@@ -141,3 +141,146 @@ and a 186-word abstract. All 15 evidence checks pass; source hashes and all
 15 bibliography keys were verified. Main pages 1–8 and post-conclusion page 9
 were visually inspected. No new experiments or provider calls were made.
 Backup: `/tmp/persona-clearer-before-fp8nn0re/paper`.
+
+## 2026-09-12: Abstract focused on principal findings
+
+Reorganized the abstract around recurring teaching differences, the conditions
+under which past behavior remains predictive, and instruction-induced alignment
+that leaves other response choices different. Retained one concrete helping
+example and the million-record archive scope. Detailed complexity and
+acknowledgement results remain in the unchanged main text. Educational
+implications emphasize understanding teaching habits and evaluating support
+for each model; harness effectiveness remains a question for testing.
+
+Synchronized the submission abstract. The final abstract has 186 words; the
+main paper remains eight pages (35 including disclosures, references and
+appendices). All 15 evidence checks pass, build source hashes match, and
+PDF pages 1 and 8 were visually reviewed. No other section source changed.
+
+## 2026-09-12: Three introduction annotations resolved
+
+Clarified that model differences can remain under a shared instruction while
+relative ordering and action frequencies change. Replaced the abstract
+"best choice" caveat with how educators can compare a model's usual approach
+against an activity's requirements. The developer implication now connects
+broader behavioral evaluation to model- and activity-specific harness design
+and testing. The discussion retains the untested harness/learning-benefit
+boundary. No abstract, result, figure, table, or other section source changed
+in this revision.
+
+The official ACL build and all 15 evidence checks pass. Main content ends on
+page 8; the abstract remains 186 words and the complete PDF 35 pages. Source
+hashes match the build receipt; PDF pages 1, 2 and 8 were visually inspected.
+
+## 2026-09-12: Related-work relevance and recent-source review
+
+Reorganized Section 2 around personality measurement and behavioral consistency,
+teaching styles and adaptation, and educational benchmarks as the investigation's
+starting point. Six directly relevant 2025–2026 references were added; four
+adjacent or overlapping references were removed. The section now discusses
+14 sources, with 17 unique cited bibliography entries across the manuscript.
+Primary-source claim and publication checks, selection decisions, and archive
+provenance are recorded in `research/93_related_work_review_v4.md`. Conference
+papers, workshop papers, and preprints are distinguished. Prior benchmarks are
+credited for teaching-quality evaluation; our additional focus is behavioral
+predictability and instruction-dependent change.
+
+Only Related Work changed among section sources in this revision. No results,
+experiments, or model-provider calls were added. The official ACL build yields
+eight main pages, 35 total pages, and a 186-word abstract. All 15 evidence checks
+pass, all bibliography keys are unique and cited, and build source hashes match.
+PDF pages 2, 3, 8, 9, 10 and 11 were visually checked for section flow, the main
+page limit, references and appendix transition. Backup:
+`/tmp/persona-related-before-21xreqgh/paper`.
+
+## 2026-09-12: Methods annotations and abbreviation pass
+
+Addressed authorized annotations 1–3. Defined intraclass correlation coefficient
+(ICC) on first use. Section 3.1 now identifies the historical subsets' purposes
+and the controlled comparison design; its source word count decreases from
+201 to 140. Pilot details, historical deployment distinctions, source-family
+counts, and material-exclusion rules remain in the existing appendices.
+The coding paragraph now says explicitly that coders are not given the
+generating model's name or assigned teaching instruction. The paragraph's
+repair/disagreement/label-correctness sentences (annotation 4) are unchanged
+pending discussion.
+
+The abbreviation pass covers section text, tables and extracted figure text.
+It defines ICC, AI, LLM, research questions, AUC, BH, MSE, CI, SATA, API, HTTP,
+JSON and GPU; writes standard deviation in full; clarifies NA; expands TRAIT,
+PATS, ASAP and SAS; spells out BEA and Creative Commons license names; and
+replaces the one-off CIMA shorthand with a tutoring-dialogue description.
+ASK and EXPLAIN are experiment labels, now explained at their first methods
+occurrence. Official model names, evidence identifiers, filenames, the MIT
+license name, and cited publication titles retain their established spelling.
+
+Primary sources checked for less familiar names:
+- TRAIT: https://aclanthology.org/2025.findings-naacl.469.pdf
+- PATS: https://aclanthology.org/2026.findings-eacl.219/
+- ASAP: https://doi.org/10.1016/j.asw.2025.100954
+- SATA and SAS: locally stored original papers in the adjacent evaluation
+  repository, `sources/text/eduguard.txt` and `sources/text/sasbench.txt`.
+The AUC expansion was checked against the saved analyses' `roc_auc_score` use.
+
+The initial expanded version exceeded the eight-page main-content gate;
+Section 3.1 was shortened before the successful final build. Final PDF:
+eight main pages, 35 total pages, 188-word abstract. All 15 evidence checks
+pass; all 17 bibliography keys are cited, build source hashes match, numerical
+table bodies and figure files are unchanged. PDF pages 1, 2, 3, 8, 11, 12 and 13
+were visually inspected. No experiments, provider calls or bibliography edits.
+Backup: `/tmp/persona-methods-abbrev-before-nm7u8wfl/paper`.
+
+## 2026-09-12: Coding-recovery wording approved
+
+Resolved annotation 4 after discussion. The main text states majority voting
+and restricts retries or repairs to incomplete or incorrectly formatted coding
+outputs, not label values or coder disagreement. It points to Appendix D for
+recovery details and removes the repeated correctness caveat; the existing
+limitations and recovery disclosures are unchanged. Only `methods.tex` changes
+among section sources in this revision. The official build and 15 evidence
+checks pass: eight main pages, 35 total pages, 188 abstract words. Build source
+hashes match; PDF pages 3 and 8 were visually checked. No new experiments.
+Backup: `/tmp/persona-coding-prose-before-s9r6f4cu/paper`.
+
+## 2026-09-12: Explain prediction gains in Section 3.3
+
+Removed the contrast with another language model. Section 3.3 now states that
+logistic regression predicts action probabilities, explains default and state
+gains before naming the error measure, and clarifies that student state is
+already present in both comparisons. Brier loss is described as probability
+prediction error; formulas and multiple-testing details remain in Appendix D.4.
+The predictive comparisons, fitting, Holm correction and results are unchanged.
+Only `methods.tex` changes among section sources. The build and all 15 evidence
+checks pass: eight main pages, 35 total pages, 188 abstract words. Source hashes
+match; PDF pages 3 and 8 were visually checked. No new experiments.
+Backup: `/tmp/persona-prediction-prose-before-awyyczs1/paper`.
+
+## 2026-09-12: Whole-paper language and terminology revision
+
+Reviewed the main text and all appendices, revising 21 section sources. Ordinary
+references now use model, prediction, test problem, standard tutoring prompt,
+and experimental condition. Model version and settings are defined once;
+source grouping, prediction timing, the primary comparisons, and the distinction
+between binary actions and behavioral ratings remain explicit. Section 3.4
+now describes changing student wording, collecting new responses, and testing
+the original predictions in that order. Dense descriptions of annotation checks,
+model exclusions, historical reconstruction and calibration were rewritten as
+experimental actions. The existing Canonical label in fixed result tables is
+defined in the prompt appendix.
+
+Figure titles and labels were updated, including the study-design schematic
+and prompt-effect axis inherited from an earlier manuscript checkpoint. The
+new v4 renderers preserve the saved design and plotted estimates; historical
+rendering scripts remain unchanged. One evidence-audit assertion now matches
+the clearer wording disclosing the failed original annotation-completeness
+requirement. Its substantive check and all numerical checks remain intact.
+
+Validation: quoted prompts and response excerpts, mathematical expressions,
+and numeric table data rows exactly match the pre-revision backup. Existing
+figure points and study counts match their saved receipts; bibliography content
+is unchanged in this revision. All 15 evidence checks pass, build input hashes
+match, and the abstract is synchronized with submission metadata. The PDF has
+189 abstract words, eight main pages and 35 total pages, with no overfull boxes.
+All 35 pages were inspected in rendered review sheets for layout and updated
+labels. Git whitespace checks pass. No experiments or provider calls were made.
+Backup: `/tmp/persona-full-prose-before-olk8p3xu/paper`.

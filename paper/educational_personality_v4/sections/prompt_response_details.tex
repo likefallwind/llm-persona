@@ -1,20 +1,20 @@
 \subsection{Semantic Prompt Effects, Ordering, and Attribution}
 \label{app:prompt-response}
 
-This outcome-aware secondary analysis uses already scored, paired generic and
-pedagogy responses from six historical configurations: MiniMax-M3,
+This secondary analysis was designed after inspecting the results. It uses paired generic and
+pedagogy responses already rated for six historical models: MiniMax-M3,
 MiniMax-M2.7, GLM-5.2, DeepSeek-V4-Pro, Doubao-Seed-2.0-Pro, and Qwen3.5-4B.
 There are 79 standard and 40 hard MathDial contexts, each with both prompt
-arms and all six models. The eight semantic dimensions yield 11,424
+conditions and all six models. The eight semantic dimensions yield 11,424
 response--dimension rows, not 11,424 independent replies. Analyses use the
-saved three-coder consensus. They do not revise the frozen dimension decisions
-or constitute independent prospective confirmation.
+saved three-annotator consensus. They do not revise the recorded decisions about the dimensions
+or constitute independent prospective testing.
 
 \paragraph{Prompt shift relative to default spread.}
 For each task and dimension, the absolute mean paired pedagogy-minus-generic
-shift is divided by the full range of generic-arm model means.
+shift is divided by the full range of model means under the generic prompt.
 Table~\ref{tab:prompt-scale} reports the three dimensions that passed the
-reliable-measurement gate, with 5,000 context-bootstrap intervals. These are
+measurement reliability criterion, with 5,000 context-bootstrap intervals. These are
 ratios of descriptive point estimates, not tests that prompts universally
 matter more than model choice. A ratio near one means that the mean shift
 under this instruction is comparable to the observed baseline range.
@@ -33,7 +33,7 @@ Hard & Semantic elicitation & 0.987 [0.777, 1.301]\\
 Hard & Assistance directness & 1.011 [0.758, 1.361]\\
 \bottomrule
 \end{tabular}
-\caption{Prompt shifts relative to default model spread in the fixed semantic panel. Intervals are descriptive context-bootstrap intervals, not simultaneous tests across dimensions.}
+\caption{Prompt shifts relative to default model spread for the rated behavioral dimensions. CI denotes confidence interval. Intervals are descriptive context-bootstrap intervals, not simultaneous tests across dimensions.}
 \label{tab:prompt-scale}
 \end{table}
 
@@ -41,7 +41,7 @@ Hard & Assistance directness & 1.011 [0.758, 1.361]\\
 Let $s$ and $p$ denote the generic and pedagogy scores. For a pooled increase,
 the adjusted change is $(p-s)/(5-s)$; for a pooled decrease, it is
 $(s-p)/(s-1)$. Only contexts
-where every model has nonzero directional headroom are retained. The retained
+where every model has nonzero room to change in the tested direction are retained. The retained
 standard/hard counts are 41/19 for elicitation, 58/31 for directness, and 36/16
 for complexity. Model labels are permuted within paired contexts 5,000 times;
 Benjamini--Hochberg correction covers eight dimensions within each task.
@@ -54,9 +54,9 @@ floor/ceiling explanation rather than every possible source of heterogeneity.
 
 \paragraph{Changes in model ordering.}
 Table~\ref{tab:prompt-order-example} illustrates the Doubao/GLM directness
-comparison. Across the six-model panel, directness ordering reverses for 5/15
+comparison. Across the six models, directness ordering reverses for 5/15
 comparable pairs in standard and 6/14 in hard contexts; pairs tied in either
-arm are excluded. These counts describe sample-mean crossings, not separate
+condition are excluded. These counts describe sample-mean crossings, not separate
 significant pairwise reversals. The generic-to-pedagogy Spearman correlations
 are 0.371 and 0.203; their exact two-sided permutation $p$ values, 0.497 and
 0.711, do not establish either preserved ordering or its absence.
@@ -65,7 +65,7 @@ are 0.371 and 0.203; their exact two-sided permutation $p$ values, 0.497 and
 \centering\small
 \begin{tabular}{llrrr}
 \toprule
-Task & Configuration & Generic & Pedagogy & Paired change [95\% CI]\\
+Task & Model & Generic & Pedagogy & Paired change [95\% CI]\\
 \midrule
 Standard & Doubao-Seed-2.0-Pro & 3.90 & 1.58 & -2.32 [-2.62, -2.01]\\
 Standard & GLM-5.2 & 2.97 & 1.87 & -1.10 [-1.38, -0.84]\\
@@ -86,9 +86,9 @@ Pooled generic-to-pedagogy accuracy is 0.301 [0.264, 0.335]; the reverse is
 0.297 [0.266, 0.326], compared with chance 0.167. The four cross-task,
 cross-prompt directions range from 0.263 to 0.300, with lower interval bounds
 above chance. Intervals use 2,000 test-context bootstrap samples conditional
-on the fitted classifier. Pooled transfers reuse paired contexts across arms;
+on the fitted classifier. Pooled transfers reuse paired contexts across conditions;
 cross-task transfers compare the two benchmark variants rather than a new
 prospectively sampled source population. This is supplementary evidence of
-joint behavioral discrimination, distinct from the locked action-probability
-forecasts in Section~\ref{sec:stability}. It does not establish immutable
+joint behavioral discrimination, distinct from the action-probability
+predictions fixed before response collection in Section~\ref{sec:stability}. It does not establish immutable
 model identity or an internal personality mechanism.

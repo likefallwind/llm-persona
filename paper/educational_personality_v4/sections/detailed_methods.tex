@@ -4,80 +4,78 @@
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{figures/study_design.pdf}
-\caption{Prospective design, with realized response counts. Each main question
-crosses five configurations, four student-work/affect conditions, and two
-requests. Main training and confirmation source families are separate.
+\caption{Controlled experiment design and collected response counts. For each main
+question, we test five models in four student-work and feeling conditions,
+with two requests per combination. Main training and test source families are separate.
 This diagram covers the first stage (5,320 responses); the subsequent expression
-extension adds 5,120 responses on the same 32 confirmation sources.
-RQ1 and the first-stage RQ2 test use the 32 canonical confirmation sources; RQ3 reuses 16 of them
-under additional role arms. Repetitions and prompt variants do not add
-independent sources. The four nested forecasts are accompanied by the
-training-only style competitor and the sensitivity analyses described below.}
+extension adds 5,120 responses on the same 32 test sources.
+RQ1 and the first-stage RQ2 test use the 32 test problems under the standard prompt; RQ3 reuses 16 of them
+under additional prompt conditions. Repetitions and prompt variants do not add
+independent sources. We compare four nested predictors and a predictor based on training-response
+style, with the robustness checks described below.}
 \label{fig:study-design}
 \end{figure}
 
-We use \emph{educational personality} operationally for recurring default
-behavior and conditional response patterns of a deployed model in educational
-interaction. Let $Y_{mqsar}^{(k)}$ denote whether model configuration $m$ expresses
-behavior $k$ on source problem $q$, student state $s$, instruction arm $a$, and
+We define \emph{educational personality} as recurring teaching behavior and
+patterns in how a model responds to student cues. Let $Y_{mqsar}^{(k)}$ denote whether model configuration $m$ expresses
+behavior $k$ on source problem $q$, student state $s$, instruction condition $a$, and
 independent request $r$. A default profile summarizes behavior under the
-canonical tutor role over a specified distribution of educational inputs. A
+standard tutoring prompt over a specified distribution of educational inputs. A
 conditional profile additionally represents how that behavior varies with
 student state. We test both descriptions through predictions on separate source
-problems. This operationalization does not require a fixed cross-context model
+problems. This definition does not require a fixed cross-context model
 ranking, and it does not treat any identifiable linguistic signature as a
 validated personality construct.
 
-The unit $m$ is a deployment configuration, including its requested and returned
-model names, provider, observation period, and generation settings. The five
-prospective configurations request MiniMax-M3, MiniMax-M2.7, GLM-5.3,
+The unit $m$ is a model configuration, including its requested and returned
+model names, provider, observation period, and generation settings. The controlled experiments request MiniMax-M3, MiniMax-M2.7, GLM-5.3,
 DeepSeek-V4-Pro, and Doubao-Seed-2.0-Lite. In the measurement pilot, the request
 alias GLM-5.2 returned GLM-5.3 throughout; those responses are identified by the
-returned name and are not pooled with historical GLM-5.2 results. Provider model
-names do not attest to immutable weights, so version and temporal uncertainty
-remain limitations of deployment-level inference.
+returned name and are not pooled with historical GLM-5.2 results. A provider may change model weights without changing the model name. Our
+results therefore apply to the versions observed during the experiment.
 
 
 
 
-\subsection{Archive Exploration and Prospective Separation}
+\subsection{Separating Historical Analysis from New Tests}
 
 The archive audit distinguishes raw records from successful deduplicated
 responses, and distinguishes tutors from solvers and evaluators. Repeated
 questions and conversations can occur under different benchmark names and
 prompt variants. Consequently, benchmark names and local item identifiers are
-not sufficient independence units. Related source material must stay together
-when estimating transfer. Analyses informed by previous archive results remain
+not enough to identify independent samples. We keep related problems in
+the same group when testing prediction on new inputs. Analyses informed by previous archive results remain
 exploratory and are distinguished from predictions fixed before new outputs
 were collected.
 
-Across the 899,025 variant-preserving text records, a current-adapter role review
-identifies 68,799 records in nine tutor-response settings; most other records
-come from evaluation or test-answer tasks. Tutor-role membership does not itself
-establish neutral prompts or equivalent historical requests. Appendix~\ref{app:archive-scope} reports
+The deduplicated archive contains 899,025 records when different input
+versions are kept separate. Reviewing current benchmark implementations
+identifies 68,799 records in nine tutoring settings; most other records involve
+evaluation or answering test questions. Classifying a task as tutoring does not show that its prompts were neutral
+or comparable across models. Appendix~\ref{app:archive-scope} reports
 the complete role inventory and a hash-verified inspection of the 122 tutor
-prediction files, including their missing generation-provenance fields.
+response files, including missing information about how responses were generated.
 
-The controlled protocol uses 32 training questions in 30 conservative source
-families and 32 confirmation questions in 32 separate source families. Each
+We group related questions into \emph{source families}, treating potentially
+related questions as one group. The controlled experiment uses 32 training
+questions in 30 source families and 32 test questions in 32 separate families. Each
 partition has eight questions in each of mathematics, science, language, and
 logic/data reasoning. Two training question pairs share an averaging or unit-
-conversion family and remain grouped in internal validation. The four pilot
-templates and their numerical substitutions are excluded. Confirmation tests
-new sources within these four domains, rather than transfer to entirely new
-academic domains or proof that a model has never encountered the underlying
-concepts.
+conversion family and remain grouped in internal validation. We exclude the four pilot templates and versions that only substitute numbers.
+The test evaluates new problems within these four subjects. It does not test
+new subjects or establish that models have never encountered the concepts.
 
 The questions, correct references, erroneous student attempts, and correct
 unfinished work were authored by the research agent. Two model reviewers
-checked 64 question packages before freezing, yielding 128 complete reviews.
-All five Boolean content checks were positive in every review. Twenty-five
-reviews nevertheless included issue text, mostly describing the deliberately
-incorrect attempt or the deliberately unfinished work; these comments and their
-agent adjudication are retained. This is content quality control without new
-human annotation, not a human-gold validation claim.
+checked all 64 sets of question materials before they were finalized,
+yielding 128 complete reviews.
+All five yes/no content checks passed in every review. Twenty-five reviews
+also included comments, mostly about the deliberately incorrect or unfinished
+student work. We retain these comments and the research agent's decisions
+about them. This is content quality control without new
+human annotation, not a claim of validation against human annotations.
 
-\subsection{Crossed Educational Inputs}
+\subsection{Student Work and Feeling Conditions}
 
 Each main question has two student-work states, an erroneous attempt and correct
 but unfinished work, crossed with two explicit affect statements, calm and
@@ -93,37 +91,36 @@ control comprehension, attention, or instruction-following ability. Results
 under this controlled reference condition are reported separately from the
 historical archive.
 
-The training stage uses the canonical tutor role on all 32 questions. The
-confirmation stage first repeats this design on its 32 new questions. Within
-each confirmation domain, four questions are selected by a fixed hash for four
-additional role arms: two neutral paraphrases, an instruction to prioritize
+The training stage uses the standard tutoring prompt on all 32 questions. The
+test stage first repeats this design on its 32 new questions. Within
+each test domain, four questions are selected by a fixed hash for four
+additional prompt conditions: two neutral paraphrases, an instruction to prioritize
 student reasoning without revealing the final answer, and an instruction to
-explain the solution and state the answer. Each selected question receives every
-arm and student state. The neutral arms change only the role wording; the two
-policy arms explicitly change the requested teaching behavior.
+explain the solution and state the answer. Each selected question is tested under every instruction and student state. The neutral prompt conditions change only the role wording; the two
+instruction conditions explicitly change the requested teaching behavior.
 
-Every model--input cell receives two requests at temperature 0.7 with an
+Every model--input combination receives two requests at temperature 0.7 with an
 8,192-token output budget. The fixed design specifies 1,280 training responses,
-1,280 canonical confirmation responses, and 2,560 additional intervention
-responses. It also includes 160 secondary responses to paired complete/missing-
-information probes on eight confirmation sources, plus 40 cross-stage responses
-to four training-source sentinels. Sentinels and prompt variants do not increase
-the count of independent confirmation sources. Request manifests, input hashes,
+1,280 test responses to the standard prompt, and 2,560 additional intervention
+responses. It also includes 160 responses to eight paired test problems with complete
+or missing information. Four training problems are repeated as reference
+checks across stages, adding 40 responses. These checks and prompt variants
+do not increase the number of independent test problems. Request manifests, input hashes,
 parameters, timestamps, and failure histories are recorded. Requests are
 interleaved within shared provider concurrency limits rather than run as
 separate model blocks.
 
 \subsection{Observable Events and Measurement Development}
 
-Three primary events are fixed from the measurement-development pilot.
-\emph{Answer revelation} records an explicit final resolution, including an
-incorrect resolution or a correct statement that information is insufficient.
+We selected three primary actions using the measurement-development pilot.
+\emph{Answer revelation} records an explicit final answer, including an incorrect answer or a correct
+statement that the available information is insufficient.
 It therefore measures disclosure, not correctness. \emph{Reasoning elicitation}
-records an invitation for the student to perform unanswered reasoning, including
-imperatives and indirect suggestions; rhetorical questions immediately answered
+records an invitation for the student to complete a reasoning step, including
+direct requests and indirect suggestions; rhetorical questions immediately answered
 by the tutor do not qualify. \emph{Affect acknowledgement} records explicit
 recognition of feeling or difficulty, excluding generic politeness and praise.
-These are behavior endpoints, not three assumed independent personality factors.
+These are behavior measures, not three assumed independent personality factors.
 
 Five secondary events cover worked explanation, learner choice, epistemic
 qualification, requests for missing facts, and unsupported ability attribution.
@@ -131,28 +128,28 @@ All are retained regardless of their results. The pilot showed why a high
 aggregate agreement rate is insufficient: requesting missing facts had only one
 majority-coded positive example among 160 responses, while unsupported ability
 attribution had weak positive agreement. Neither is promoted to a primary
-endpoint based on subsequent confirmation results.
+outcome based on subsequent test results.
 
-MiniMax-M3, DeepSeek-V4-Pro, and GLM-5.3 each code every visible tutor response.
-Coders receive the student conversation, the reference target, and the answer
-with original line identifiers. They do not receive the generating model name,
+MiniMax-M3, DeepSeek-V4-Pro, and GLM-5.3 each annotate every tutor response.
+Annotators receive the student conversation, reference answer, and response
+with its original line numbers. They do not receive the generating model name,
 system-role assignment, repeat number, or partition label. Natural output style
 can still reveal identity. Positive codes must reference existing nonempty
-source lines; negative codes have no references. Valid references establish
-traceability, not semantic truth. We use majority labels when all three coders
-are structurally valid, and retain individual and leave-one-coder analyses,
-including fractional means for two-coder ties.
+source lines; negative codes have no references. Valid line references make the judgment traceable but do not ensure it is
+correct. We use majority labels when all three annotation outputs are valid.
+We also analyze each annotator separately and exclude each in turn, assigning
+0.5 to ties between two annotators.
 
 The initial exact-quotation protocol failed on naturally formatted answers,
 which motivated line references during measurement development. Original
 failures remain archived. The finalized pilot has 480 valid codes for 160
 unchanged tutor responses after two structure/completion failures were retried
 under identical inputs. Formal structure failures are likewise recorded and
-retried without selecting by event label or coder agreement.
+retried without selecting by event label or annotator agreement.
 A training coding interruption was recovered using saved valid outputs and
 the existing two-pass repair allowance. This yielded 3,839 of 3,840 valid codes.
 One GLM coding request repeatedly exhausted its 16,384-token completion budget
-without visible output. Before forecast locking or confirmation generation, a
+without visible output. Before fixing predictions or test generation, a
 disclosed amendment allowed this single missing code a 32,768-token ceiling
 and at most two attempts, keeping its model, input, rubric, and temperature
 fixed. It completed on the first attempt using 3,511 completion tokens; this
@@ -163,22 +160,24 @@ The interrupted run, failed attempts, and amendment receipt are retained; the
 single expanded-budget code is an explicit deviation from the original
 uniform-budget protocol.
 
-Confirmation coding subsequently exhausted its two repair passes with 12,114
+Test coding subsequently exhausted its two repair passes with 12,114
 of 12,120 codes valid. All six remaining GLM requests produced empty visible
 outputs after both 16,384-token attempts in each repair pass. Before computing
-primary confirmation results, a separate amendment permitted these six requests
+primary test results, a separate amendment permitted these six requests
 a 32,768-token ceiling and at most two attempts each, with unchanged inputs,
 model, rubric, temperature, and parser. It selects every remaining missing code,
 without selecting by event label or agreement; all prior valid codes are retained.
-The two budget groups require separate validation and an exact disjoint union.
-Two affected answers belong to the canonical prediction panel, one to a neutral
-wording arm, and three to the missing-information opportunity panel. The
+We validate the two budget groups separately and combine them only after
+checking that no annotation is duplicated or omitted.
+Two affected answers were generated under the standard prompt for prediction tests, one under a neutral
+wording condition, and three in the tests with missing information. The
 supplemental sensitivity enumerates all binary assignments for the two missing
-canonical GLM codes while fixing the other coders and locked predictions, and
+GLM labels for responses to the standard prompt while keeping the other annotations and predictions unchanged, and
 bounds the affected descriptive contrasts. This is an explicitly amended
 measurement protocol; it does not reset the original frozen repair allowance.
 Five requests completed under this amendment. The remaining opportunity-probe
-request returned HTTP 502 at approximately 300 seconds on both attempts,
+request returned Hypertext Transfer Protocol (HTTP) status 502 at approximately
+300 seconds on both attempts,
 matching the local Gateway's upstream read timeout. A separate transport
 amendment retained those five completed codes, increased only the idle
 Gateway's read timeout from 300 to 660 seconds, and permitted at most two
@@ -188,17 +187,17 @@ also retained in the protocol history rather than counted as part of either
 earlier repair allowance.
 
 
-\subsection{Prediction Before Confirmation Generation}
+\subsection{Fixing Predictions Before Collecting Test Responses}
 \label{app:prediction-method}
 
 The predictors are statistical logistic-regression models. The LLMs generate
 tutor answers and code their behaviors; they do not produce the primary
-behavior forecasts. For each event, training responses from the five deployments
-are pooled, with deployment identity included as an input feature. The
+behavior predictions. For each event, training responses from the five models
+are pooled, with model identity included as an input feature. The
 predictors use structured subject and student-state indicators rather than
 reading the full problem text. Fitting a predictor does not train or fine-tune
-any evaluated LLM. The same five deployments are evaluated on the separate
-confirmation questions.
+any evaluated LLM. The same five models are evaluated on the separate
+test questions.
 
 For each behavior, four nested logistic predictors model the probability of its
 occurrence: a subject-by-student-state baseline; that baseline plus model
@@ -211,11 +210,11 @@ The penalty is selected from $\{0.1,1,10,100\}$ by source-grouped training-only
 validation. Constant training outcomes use the same smoothed constant across
 all four predictors.
 
-The fitted models, tuning choices, input hashes, and confirmation probabilities
-are saved before any confirmation tutor response is generated. The generation
-runner checks this prediction lock. No confirmation label, answer length, or
+The fitted models, tuning choices, input hashes, and test probabilities
+are saved before any test tutor response is generated. The generation
+runner checks this prediction lock. No test label, answer length, or
 same-item cross-model score enters a primary predictor. A secondary competing
-forecast uses only training-source profiles of log word count and marked-line
+predictor uses only training-source profiles of log word count and marked-line
 fraction, recomputing those profiles within training validation. Such style
 competition is descriptive: teaching policy may itself influence length and
 formatting, so it is not a causal adjustment for style.
@@ -228,7 +227,7 @@ improved probability prediction.
 For each of the three primary events, the two primary comparisons are the Brier
 improvement from a default model profile over the situation baseline and from a
 student-state profile over the model-by-subject baseline. We average losses
-within source and then equally across the 32 confirmation sources. The six
+within source and then equally across the 32 test sources. The six
 one-sided paired source-level tests use Holm correction. We report absolute
 Brier losses, source-bootstrap intervals, and all comparison signs. These
 intervals condition on the fitted training profiles and a source-sampling
@@ -241,15 +240,15 @@ Repetition analyses report positive, negative, and total event agreement and
 profile correspondence, retaining source clustering. Constant behavior can
 produce perfect repeat agreement and is reported as such. On the 16 fully
 crossed intervention sources, we estimate each model's event-rate difference
-between an alternative role and the canonical role. We report average shifts
+between an alternative role and the standard tutoring prompt. We report average shifts
 alongside model and student-state heterogeneity.
 
 For neutral wording, the fixed equivalence reference is $\pm0.10$ in event
 probability. We retain the nominal Bonferroni paired-$t$ intervals across the
-30 model--event--neutral-arm comparisons. A nonsignificant difference does not
+30 model--event--neutral-prompt comparisons. A nonsignificant difference does not
 establish equivalence, and constant source differences receive a degeneracy
 flag. Further synthetic diagnostics during training show undercoverage in a
-sparse boundary case even with nonzero source variance. Before confirmation
+sparse boundary case even with nonzero source variance. Before test
 generation, we therefore additionally require a bounded-source interval to
 support any population-equivalence statement. Scaling Hoeffding's bound to
 source differences in $[-1,1]$ and allocating error across both tails and all
@@ -261,25 +260,23 @@ does not make the authored bank representative. We can describe observed
 neutral shifts and nominal intervals, while withholding population equivalence.
 These disclosed interpretation additions preserve the frozen numerical output
 and the six primary prediction tests. The
-explicit ASK and EXPLAIN arms quantify policy displacement rather than better
-teaching. Finally, answer revelation and reasoning elicitation are analyzed
+explicit ASK and EXPLAIN conditions measure changes in the requested actions, without assessing teaching quality. Finally, answer revelation and reasoning elicitation are analyzed
 jointly as four possible combinations. Their evidence lines do not identify
 which action occurred first, and we do not infer action order from them.
 
 \subsection{Sensitivity Analyses and Their Timing}
 
-During training coding, after measurement development but before confirmation
-responses exist, we additionally fix eight alternative coding panels: the
-three-coder mean, each individual coder, each two-coder mean, and the mean after
-excluding the generator's model family. For each panel, forecasts are refitted
-using its training labels and locked before confirmation generation. They are
-evaluated against the corresponding confirmation labels; two-coder ties remain
+During training coding, after measurement development but before test
+responses exist, we additionally fix eight alternative sets of annotations: the
+three-annotator mean, each individual annotator, each two-annotator mean, and the mean after
+excluding annotators from the generating model's family. For each label set, predictors are refitted
+using its training labels and locked before test generation. They are
+evaluated against the corresponding test labels; two-annotator ties remain
 0.5. This checks dependence on coding choices but cannot remove biases shared
-by all coders or supply an external ground truth.
+by all annotators or supply an external ground truth.
 
-Five further forecast sets each remove one generator configuration from both
-training and the confirmation target, refitting the baselines and tuning within
-the retained training data. This checks dependence on a single configuration;
+Five further analyses each exclude one generating model from both training
+and testing. We refit and tune the predictors using the remaining training data. This checks dependence on a single configuration;
 it changes the target model mixture and does not test prediction of an unseen
 model. Neither sensitivity family replaces the six primary comparisons.
 
@@ -287,25 +284,25 @@ We also resample the 30 training source families 200 times, preserving the
 multiplicity of repeated source draws. We retain the selected regularization
 relative to total loss weight, without repeating hyperparameter selection, and
 recompute training-style profiles in each resample. The resulting gain quantiles
-describe training-source sensitivity conditional on the confirmation material
-and selected regularization. They are separate from the primary confirmation-
-source intervals. These extensions were specified before confirmation outputs,
+describe training-source sensitivity conditional on the test material
+and selected regularization. They are separate from the primary test-
+source intervals. These extensions were specified before test outputs,
 not preregistered before the entire research project began.
 
 \subsection{Mathematics and Content-Error Sensitivity}
 
 The protocol also requires a mathematics subset and a check of dependence on
 obvious content errors. Its implementation is fixed during training coding,
-before confirmation generation. We evaluate the existing forecasts on all eight
-mathematics sources, covering 320 canonical responses, without refitting.
-Separately, MiniMax-M3 and DeepSeek-V4-Pro review all 1,280 canonical responses
+before test generation. We evaluate the existing predictions on all eight
+mathematics sources, covering 320 responses to the standard prompt, without refitting.
+Separately, MiniMax-M3 and DeepSeek-V4-Pro review all 1,280 responses to the standard prompt
 for checkable content errors using the student input, reference, and original
 answer lines. They distinguish a clear error, no clear error identified, and
 uncertainty. Withholding a solution, asking a question, or correctly quoting
 and correcting an error is not itself an error. Positive error judgments
 require a category and source-line evidence.
 
-Twelve agent-authored controls accompany the responses, giving 2,584
+Twelve control examples written by research agents accompany the responses, giving 2,584
 secondary review requests. Each reviewer must match at least five of six
 controls in each of the clear-error and no-clear-error classes to meet the
 limited diagnostic rule. If either reviewer fails, screened results remain
@@ -314,16 +311,16 @@ on natural responses, even when the rule is met.
 
 We retain the full primary results and report three additional screens:
 excluding unanimously identified errors; excluding errors identified by either
-reviewer; and excluding either errors or uncertainty. A flagged response
-removes its entire five-model source--student-state--repeat slot so that model
-comparisons remain paired. We report retained coverage and source-equal losses
+reviewer; and excluding either errors or uncertainty. If a response is flagged, we remove responses from all five models for the
+same problem, student state, and repetition, keeping the comparisons matched. We report retained coverage and source-equal losses
 with descriptive source intervals, without new hypothesis tests. These screens
 condition on generated responses and change the target distribution; they are
-not causal controls for ability. The content review covers the canonical panel,
+not causal controls for ability. The content review covers the responses to the standard prompt,
 not all prompt-intervention responses.
 
 The first content pass returned all 2,584 records, but its initial validator
-reconstructed a zero temperature as JSON integer \texttt{0}, whereas the
+reconstructed a zero temperature as a JavaScript Object Notation (JSON)
+integer \texttt{0}, whereas the
 request runner had serialized float \texttt{0.0}. A separately recorded
 correction reconstructs the exact payload from the verified recorded numeric
 value. All prompt, response and corrected payload hashes match; no sampling
@@ -341,7 +338,7 @@ The saved analysis environment records Python 3.13.11, NumPy 2.5.2,
 SciPy 1.18.0, pandas 3.0.5, scikit-learn 1.9.0, statsmodels 0.14.6,
 Matplotlib 3.11.1, and seaborn 0.13.2. Statistical analyses run locally;
 tutor generation and behavioral coding use hosted model APIs. No tutor
-weights are trained for this study. Parameter counts and provider-side GPU
+weights are trained for this study. Parameter counts and provider-side graphics processing unit (GPU)
 hours of the served configurations were not independently verified.
 
 Generation and coding counts, completion limits, retries, and missing-code

@@ -1,14 +1,13 @@
-\section{Archive Scope and Historical Provenance}
+\section{Historical Data: Coverage and Available Records}
 \label{app:archive-scope}
 
-The frozen archive census contains 1,028,822 raw records. Successful text
-deduplication yields 899,025 model--benchmark--item--response records when
+The archived dataset contains 1,028,822 raw records. After excluding unsuccessful responses and removing duplicate texts, we obtain 899,025 model--benchmark--item--response records when
 recorded input variants remain distinct, and 837,704 when variants are ignored
 for text inventory only. Neither count estimates independent generation events.
-Table~\ref{tab:archive-roles} classifies all 39 benchmark settings using a review
-of current adapter contracts. Each assignment retains a source file, class,
-line, hash, and interpretation note. Current contracts guide role interpretation
-but do not establish the exact prompts used by every historical request.
+Table~\ref{tab:archive-roles} classifies all 39 benchmark settings by reviewing the current benchmark implementations. Each classification
+records the relevant source file, class, line, hash, and reasoning. These
+implementations help identify task roles, but do not establish the exact
+prompts used for every historical request.
 
 \begin{table}[ht]
 \centering\small
@@ -31,16 +30,18 @@ Knowledge-structure reasoning & 1 & 2,100\\
 Total & 39 & 899,025\\
 \bottomrule
 \end{tabular}
-\caption{Variant-preserving text inventory, not counts of independent tutoring
-contexts or personality labels. Mixed educational assistance requires item-level
+\caption{Counts of distinct texts with input versions kept separate, not counts of
+independent tutoring interactions or personality labels. Mixed educational assistance requires item-level
 role separation; it is not automatically excluded from later research.}
 \label{tab:archive-roles}
 \end{table}
 
 Evaluation and test/option outputs comprise 73.48\% of these records. For
 example, the Pedagogy Benchmark requests pedagogical-knowledge multiple-choice
-answers, while ASAP and SAS ask the candidate model to score student work.
-MRBench and BEA judge settings likewise evaluate existing tutor text; that text
+answers, while Automated Student Assessment Prize (ASAP) and Short Answer
+Scoring (SAS) settings ask the candidate model to score student work.
+MRBench and Building Educational Applications (BEA) judge settings likewise
+evaluate existing tutor text; that text
 is not the candidate evaluator's own tutoring. Even among tutor settings,
 instructions differ: TutorBench use cases request different actions, MMTutorBench
 requires image-conditioned guidance in three prescribed sections, and LongTutor
@@ -56,19 +57,19 @@ generation timestamps, or finish reasons. All contain usage metadata. Of the
 122 summaries, 83 contain generation parameters and 114 contain a judge-prompt
 hash; none contains the inspected generation-prompt hash fields. A judge-prompt
 hash is not evidence of the tutor's generation prompt, and later scoring summaries
-do not necessarily attest to the original generation parameters.
+do not necessarily establish the original generation parameters.
 
-This is a field-coverage finding, not proof that provenance is unavailable in
-external logs or original sources. Reconstructed historical inputs must be
-identified as reconstructions. Consequently, the archive provides discovery and
-confound audits, while the prospective study records the input, output, source,
-version, and timing relationships needed for its own narrower confirmation.
+These fields are absent from the inspected files; other logs or original
+sources may still contain them. Reconstructed historical inputs must be
+identified as reconstructions. We therefore use the archive to identify candidate patterns and investigate
+alternative explanations. The controlled study records inputs, outputs,
+problem sources, model versions, and timing for its more focused tests.
 
 \subsection{What the Existing Scores Contribute}
 \label{app:archive-reanalysis}
 
-We also reanalyze the legacy scored panel with its original eight semantic
-dimensions and six model configurations. These are exploratory measurements,
+We also reanalyze previously scored responses from six models on the original
+eight behavioral dimensions. These are exploratory measurements,
 not labels assigned to the entire archive, and are not pooled with the new
 binary event codes. Excluding 15 contexts without recoverable source groups
 leaves 224 contexts from 210 source families across four task settings. Each
@@ -79,13 +80,13 @@ task, predicting scores centered within each context. This tests new sources
 within known task settings, not transfer to a new task or prediction of absolute
 scores.
 
-The task-conditioned increment depends on which instructional settings are
+The gain from task-specific profiles depends on which instructional settings are
 included (Table~\ref{tab:archive-profile-sensitivity}). Excluding the Socratic
 setting, whose current adapter requires question-only output, reduces the
 direct-help increment from 6.57\% to 0.34\%. This does not eliminate predictive
-information in the global model profile: in the reduced panel, its direct-help
-MSE is 0.66754, compared with 0.88413 for zero relative model differences.
-Personalization retains a larger task-conditioned increment, but that legacy
+information in the global model profile: in the reduced dataset, its direct-help
+mean squared error (MSE) is 0.66754, compared with 0.88413 for zero relative model differences.
+Personalization retains a larger gain from task-specific profiles, but that legacy
 score does not establish learner understanding or a validated personality factor.
 
 \begin{table}[ht]
@@ -106,7 +107,7 @@ Personalization & 12.15\% & 10.52\%\\
 \end{tabular}
 \caption{Exploratory relative MSE reduction from task-specific model profiles
 over a global model profile, averaged over split-specific ratios. The full
-panel has 224 contexts/210 source families; the reduced panel has 144/133.
+dataset has 224 contexts/210 source families; the reduced dataset has 144/133.
 Negative values mean worse predictions. The 100 overlapping splits are not
 independent experiments and their dispersion is not a confidence interval.}
 \label{tab:archive-profile-sensitivity}
@@ -116,8 +117,7 @@ This exclusion was chosen after observing task results. It changes the target
 task distribution and its weights, so the difference between columns is not a
 causal effect of question-only formatting. We retain both analyses. Their role
 is to motivate separating problem content, student cues, and output instructions
-in the prospective experiment; neither the archive's size nor favorable legacy
-scores substitute for that confirmation.
+in the prospective experiment; neither archive size nor favorable historical scores replaces those tests.
 
 \subsection{Data Use, Access, and Privacy}
 \label{app:data-use}
@@ -127,14 +127,17 @@ and roles; the million-record census is not a uniformly English tutoring
 corpus. Existing human teacher-action labels and LongTutor diagnosis labels
 are secondary reference data, not new human annotations collected here.
 
-The MathDial repository \citep{macina2023mathdial} states CC BY-SA 4.0.\footnote{\url{https://github.com/eth-nlped/mathdial}}
+The MathDial repository \citep{macina2023mathdial} states Creative Commons
+Attribution--ShareAlike (CC BY-SA) 4.0.\footnote{\url{https://github.com/eth-nlped/mathdial}}
 For MathTutorBench \citep{macina2025mathtutorbench}, the publication states
-CC BY 4.0, whereas the current repository README states CC BY-SA 4.0.\footnote{\url{https://github.com/eth-lre/mathtutorbench}}
+Creative Commons Attribution (CC BY) 4.0, whereas the current repository README
+states CC BY-SA 4.0.\footnote{\url{https://github.com/eth-lre/mathtutorbench}}
 We retain this discrepancy rather than infer a uniform redistribution licence.
 LongTutor's data card \citep{li2026longtutor} states CC BY 4.0 for data and MIT
 for evaluation code. These statements identify source terms, not independent
 verification of every underlying record's permissions. Archived generations
-also retain the conditions of their upstream sources and API services.
+also retain the conditions of their upstream sources and application programming
+interface (API) services.
 
 Raw archived learner histories and the full evaluation corpus are not
 redistributed with this manuscript. Earlier semantic payload preparation used

@@ -8,8 +8,8 @@
 different. Each cell is a descriptive percentage of 128 replies on the same
 16 problems; this matched subset differs from the 32-problem default table.
 ASK requires a next step without the final answer. EXPLAIN requires the answer
-and permits follow-up reasoning. All models reveal under EXPLAIN, yet
-elicitation ranges from 1.6\% to 62.5\%. Actions may co-occur; these frequencies
+and permits follow-up reasoning. All models give the answer under EXPLAIN, yet
+reasoning invitations range from 1.6\% to 62.5\%. Actions may co-occur; these frequencies
 are not quality scores. Full prompt comparisons and uncertainty limitations
 appear in Appendix~\ref{app:confirmation-details}.}
 \label{fig:teaching-choices}
@@ -23,7 +23,7 @@ and whether past behavior still helps predict responses under a new instruction.
 
 On the same 16 problems, ASK requires a next step without the final answer,
 whereas EXPLAIN requires a solution and allows follow-up reasoning. All five
-deployments invite reasoning in every ASK response and reveal the answer in
+models invite reasoning in every ASK response and reveal the answer in
 every EXPLAIN response (Figure~\ref{fig:teaching-choices}). Yet asking for reasoning does not guarantee that the answer is withheld: under ASK, M2.7 and M3 still
 reveal answers in 9/128 and 4/128 replies, respectively; the other three models
 never do so in this sample.
@@ -51,14 +51,14 @@ complexity by amounts comparable to the original differences between models. Mod
 in both variants, even after accounting for how far their ratings could move
 before reaching a scale boundary. Complexity does not pass this stricter check.
 Together, these results motivate comparing models under the intended teaching
-instruction as well as at baseline. Detailed estimates and supplementary
-model-attribution analyses remain in Appendix~\ref{app:prompt-response}.
+instruction as well as at baseline. Detailed estimates and additional
+analyses identifying models from their responses remain in Appendix~\ref{app:prompt-response}.
 
 \subsection{Predictions May Fail Under a Different Instruction}
 
 Past responses can help predict behavior under the same instruction but make
 prediction worse under a different one.
-In the paired archive of seven historical configurations, knowing the model improves prediction of revelation and elicitation under
+In the paired archive of seven previously tested models, knowing the model improves prediction of giving answers and inviting reasoning under
 general scaffolding. Under explicit probing, nearly every reply invites
 reasoning, so knowing the model adds less. Using a model's rates from the other
 instruction makes prediction worse than using only the current instruction.

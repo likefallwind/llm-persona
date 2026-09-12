@@ -3,121 +3,124 @@
 
 A \emph{behavioral profile} estimates how often a model performs an action.
 A default profile describes its usual rate; a conditional profile also
-accounts for how it responds to student cues. We examine rated teaching
+accounts for its responses to student cues. We examine rated teaching
 behaviors, expressed confidence, safety boundaries, affiliation, and specific
 actions. These analyses use different model groups and measures
-(Appendix~\ref{app:behavior-evidence}); their samples overlap and cannot be added
-as independent observations.
+(Appendix~\ref{app:behavior-evidence}); their samples overlap and cannot be
+counted as independent observations.
 
 \paragraph{What stability means.}
 We ask whether a model repeats an action on the same input, whether models
 show similar relative tendencies across tasks, and whether past behavior helps
 predict new responses. These are separate questions. Showing that action rates
-stay unchanged requires an equivalence test. Likewise, agreement among coders
-and consistency of model differences across tasks use different ICC measures.
+remain unchanged requires an equivalence test. Different forms of the intraclass
+correlation coefficient (ICC) assess agreement among annotators and consistency
+of model differences across tasks.
 
-\subsection{Exploration and Prospective Design}
-Analyses of selected archive subsets identify candidate teaching tendencies. The archive
-spans educational roles beyond tutoring, and historical prompt and deployment
-provenance is incomplete (Appendix~\ref{app:archive-scope}). An excluded
-160-answer pilot develops the prospective event measures
-(Appendix~\ref{sec:measurement-development}).
+\subsection{Historical Data and Controlled Experiments}
+Historical benchmark responses support exploratory comparisons of teaching
+behavior, confidence, safety, and responses to instructions. Each analysis
+uses a relevant subset; Appendices~\ref{app:behavior-evidence}
+and~\ref{app:archive-scope} describe model coverage and data limitations.
 
-The new-response experiments test MiniMax-M3, MiniMax-M2.7, GLM-5.3,
-DeepSeek-V4-Pro, and Doubao-Seed-2.0-Lite deployment configurations.
-Earlier records for GLM-5.2 and Doubao-2.0-Pro are analyzed separately.
-There are 32 training questions in 30 conservative source families and
-32 confirmation questions in 32 separate families, with eight questions per
-partition in mathematics, science, language, and logic/data reasoning.
-Research agents authored the English problems and student messages; two model
-reviewers checked all 64 packages before freezing. Related training questions
-stay grouped, and pilot templates and numerical substitutions are excluded.
-The holdout tests new sources within these domains, not unseen domains.
+Controlled experiments test five models: MiniMax-M3, MiniMax-M2.7,
+GLM-5.3, DeepSeek-V4-Pro, and Doubao-Seed-2.0-Lite. Here, a model refers to the
+version and settings tested. We use 32 training and 32 test questions from
+separate groups of related problems, balanced across mathematics, science,
+language, and logic/data reasoning. Research agents authored the English
+problems and student messages; two model reviewers checked them before the
+materials were finalized. The tests use new problems within these domains.
 
-For each question, the student shows either an erroneous attempt or correct
-unfinished work, and states feeling either calm or frustrated. The two work
-states differ in both correctness and progress. Every main condition gives the tutor the same reference solution, marked as
-unseen by the student. We request each response twice and group statistical
-comparisons by source problem; repetitions do not add independent sources. Appendix~\ref{app:detailed-methods} records materials, deployment
-identities, settings, and counts.
+For each problem, we combine two student-work states (erroneous or correct but
+unfinished) with two statements of feeling (calm or frustrated). Tutors receive
+the same reference solution, unseen by the student. We request two responses
+per input and group comparisons by source problem. Appendix~\ref{app:detailed-methods}
+records materials, grouping, the separate measurement pilot, and model settings.
 
-\subsection{Observable Actions and Recurrence (RQ1)}
-We focus on three actions that can be identified in the text and showed
-agreement among coders on their presence: \emph{answer revelation}, an explicit final resolution
-regardless of correctness; \emph{reasoning elicitation}, an invitation for
-student reasoning not immediately answered by the tutor; and \emph{affect
-acknowledgement}, explicit recognition of feeling or difficulty beyond generic
-praise or politeness. A reply can contain several of these actions; we do not treat them as
-independent personality factors.
-Five secondary events are retained regardless of results.
+\subsection{Observed Actions and Repeated Responses (RQ1)}
+We focus on three actions that can be identified in the text and for which
+annotators agreed on positive examples: \emph{answer revelation}, an explicit
+final answer regardless of correctness; \emph{reasoning elicitation}, an
+invitation for student reasoning not immediately answered by the tutor; and
+\emph{affect acknowledgement}, explicit recognition of feeling or difficulty
+beyond generic praise or politeness. A reply can contain several actions;
+these are not assumed to be independent personality factors.
+Five secondary actions are retained regardless of results.
 
 Three models---MiniMax-M3, DeepSeek-V4-Pro, and GLM-5.3---label the actions in
-each response using its context, reference, and original answer lines. Generator identity and design
-labels are withheld, although style may reveal identity. Each positive label must cite nonempty evidence lines. The majority of the
-three coders determines the action label. Repairs address incomplete or
-malformed outputs, never disagreement or label choices. Evidence lines and
-coder agreement alone do not guarantee correct labels.
-RQ1 reports action rates and agreement between repeated requests, separating
-agreement on an action being present from agreement on its absence. Statistical
-comparisons account for replies sharing a source problem.
+each response using its context, reference, and numbered answer lines.
+These annotators are not given the generating model's name or teaching
+instruction, although the answer itself may offer clues. Each positive label
+must cite supporting lines. A majority vote determines each action label.
+We retry or repair only incomplete or incorrectly formatted annotations;
+disagreement or label values do not trigger recovery
+(Appendix~\ref{app:detailed-methods}).
+RQ1 reports action rates and agreement between repeated responses, separating
+agreement on presence from agreement on absence. Statistical comparisons
+account for responses sharing a source problem.
 
 \subsection{Predicting Responses to New Problems (RQ2)}
-We use logistic regression, not another language model, to predict the actions
-of the same five deployments on new questions. We fit it to coded training
-answers using model identity, subject, and scripted student state, and fix all
-forecasts before collecting confirmation responses.
+We use logistic regression to predict each action's probability for the same
+five models on new questions. We fit predictors to labeled training responses
+using model identity, subject, and scripted student state, and fix all
+predictions before collecting test responses.
 
-We make two comparisons. First, does knowing the model's usual behavior improve
-prediction over knowing only the subject and student state? Second, does
-knowing how each model responds to student cues improve prediction over its
-usual behavior within a subject? We call the reductions in Brier loss the
-\emph{default gain} and \emph{state gain}, respectively; positive gains mean
-lower prediction error. The six first-stage tests use Holm correction.
-Appendix~\ref{app:prediction-method} gives fitting and inference details.
+\emph{Default gain} measures how much knowing a model's usual behavior improves
+prediction beyond subject and student state. \emph{State gain} measures the
+added value of knowing how that model responds to student cues, beyond its
+usual behavior within each subject. Both comparisons already account for
+student state; the second adds model-specific responses to it.
+Both gains are reductions in Brier loss, a measure of probability prediction
+error. Positive gains mean more accurate predictions.
+Appendix~\ref{app:prediction-method} gives fitting and statistical testing details.
 
-\subsection{Transfer Across Student Expressions (RQ2)}
+\subsection{Changing How Students Express Their State (RQ2)}
 \label{sec:cue-design}
-To test whether wording changes affect prediction, an extension reuses the 32
-confirmation problems, original forecasts, and five deployments. We fix this protocol after seeing the first confirmation results but before
-collecting the extension responses. Original wording
-generated again, new explicit synonyms, implicit cues, and a peer-context
-control each yield 1,280 answers: 5,120 additional replies, for 10,440 across
-the two stages, excluding the pilot. The primary tests use the original fitted predictors. This extension tests
-new expressions on the same problems, not another independent set of problems.
+We change how students express their state and collect new responses from the
+same five models on the same 32 test problems. We then test whether the earlier
+predictions still work, without refitting the predictors. This tests new wording
+on the same test problems. We fixed this follow-up design after seeing the
+first test results, but before collecting the new responses.
 
-The explicit and implicit conditions each use four fixed cue pairs. Each pair
-is assigned to two sources per domain; not every phrase is tested on every
-problem. Implicit cues
-also change actions, willingness, or time information; their effects cannot be attributed to emotion alone. The peer arm keeps the current student calm while quoting a
-calm or frustrated classmate working on another problem.
+We compare original wording rerun during the same period, new explicit
+expressions, implicit cues, and a classmate control: 5,120 additional responses
+and 10,440 across both stages, excluding the pilot. Explicit and implicit
+conditions each use four calm/frustrated cue pairs, balanced across subjects.
+Implicit cues also change actions, willingness, or time information, so they
+do not isolate emotion. In the classmate control, the current student remains
+calm while quoting a calm or frustrated classmate working on another problem.
 
-Six primary tests cover default revelation and elicitation and conditional
-acknowledgement in the two new-expression arms. Paired source-level tests use
-Holm correction within this family and 10,000 domain-stratified source
-bootstrap draws. Repeated original wording, contrasts against it, and peer effects
-are secondary. Appendix~\ref{app:cue-transfer} reports exact cues, coder and
-generator-deletion sensitivities, and measurement recovery.
+Six primary tests examine default gains for giving answers and inviting
+reasoning, and state gains for acknowledgement, under explicit and implicit
+wording, with Holm correction. Original-wording and classmate comparisons
+are secondary.
+Appendix~\ref{app:cue-transfer} gives exact cues, uncertainty estimates,
+annotation recovery, and checks excluding individual annotators and models.
 
-\subsection{Instruction Control and Sensitivities (RQ3)}
-On 16 hash-selected sources, each model receives every student state under the
-canonical role, two neutral paraphrases, ASK, and EXPLAIN. Paired comparisons measure how much action rates change and whether the
-changes differ by model or student state. Using an equivalence margin of $\pm0.10$, our source-level check is too imprecise
-to establish equivalent effects of neutral paraphrases beyond these sixteen
-sources. Nonsignificance does not establish stability. Joint revelation/elicitation rates allow co-occurrence
-without inferring order; instruction effects do not measure better teaching.
+\subsection{Instruction Effects and Robustness Checks (RQ3)}
+On 16 problems selected by a fixed hash rule, each model receives every student
+state under the standard tutoring prompt, two neutral paraphrases, an
+instruction to invite reasoning without the answer (ASK), and one to explain
+and give the answer (EXPLAIN). Paired comparisons measure changes in action
+rates and differences in these changes across models and student states.
+With an equivalence margin of $\pm0.10$, the sample is too small to establish
+equivalent effects of neutral paraphrases beyond these problems. We also
+measure how often answers and reasoning invitations appear together, without
+inferring their order or teaching quality.
 
-Checks specified before confirmation use eight sets of coder labels, exclude
-each of the five generating models in turn, and resample training sources
-200 times. Content-error screens remove
-complete five-model comparison slots without refitting forecasts. Low reviewer
-agreement limits their interpretation. Full specifications, diagnostic controls,
-coverage rules, and amendments appear in Appendix~\ref{app:detailed-methods}.
+Checks specified before test responses were collected use eight sets of
+annotations, exclude each generating model in turn, and resample training
+problems 200 times. To check sensitivity to answer errors, we exclude matched
+response groups from all five models without refitting predictions. Reviewers'
+low agreement on errors limits this check. Appendix~\ref{app:detailed-methods}
+gives the full procedures, diagnostic controls, and protocol changes.
 
-A retrospective MathTutorBench extension \citep{macina2025mathtutorbench}
-compares general scaffolding and explicit probing, both limited to two
-sentences, on 256 exact source groups from seven historical deployments.
-Five-fold source-held-out Jeffreys rates test same-instruction and
-other-instruction model profiles against an instruction-only baseline.
-Two provider-blocked codes remain missing; agreeing available votes identify
-every affected majority. The post-hoc amendment preserves missing labels and
-adds analyses on 254 fully coded sources (Appendix~\ref{app:archive-validation}).
+A separate analysis of historical MathTutorBench responses
+\citep{macina2025mathtutorbench} compares general scaffolding and explicit
+probing, both limited to two sentences, on 256 matched dialogue groups from
+seven models. We test whether each model's behavior under one instruction
+predicts its responses under the same or the other instruction, compared with
+knowing only the current instruction. Two annotations remain missing because
+the provider blocked the requests; the other annotators agree, determining
+each majority label. We also analyze the 254 fully annotated groups
+(Appendix~\ref{app:archive-validation}).
