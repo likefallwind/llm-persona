@@ -1,56 +1,45 @@
-\section{Discussion}
+\section{Discussion and Educational Implications}
 \label{sec:discussion}
 
-\paragraph{Defaults and state responses require different transfer claims.}
-The evidence supports recurring educational behavior in these deployments.
-Default action profiles learned on one source set improve predictions on
-another; revelation and elicitation gains also survive the tested expression
-changes without refitting. The stronger claim about student-state responses
-has a different outcome. Acknowledgement interactions help under the original
-wording, including its contemporary repetition, but lose their increment under
-explicit synonyms and implicit cues. A successful new-problem test therefore
-cannot by itself validate a transportable student-state profile.
+\paragraph{Teaching habits help educators anticipate responses.}
+Knowing a model's past teaching choices helps predict its responses to new
+problems. For giving answers and inviting reasoning, this remains useful under
+the tested changes in student wording. Educators can therefore form expectations
+from patterns across responses, rather than isolated examples. The support
+varies by behavior: complexity and confidence recur in more limited settings,
+shared affiliation-questionnaire choices do not distinguish models, and a
+predictable habit need not appear in every reply.
 
-This does not imply that models ignore student emotion: acknowledgement rates
-still change between cue poles. It means that the particular conditional
-probabilities learned under the old wording do not improve forecasts under
-these new inputs. The explicit arm loses relative advantage despite slightly lower absolute
-conditional loss; the implicit arm has higher conditional loss.
-Expression-specific calibration, the additional information
-in implicit cues, and changes in what the acknowledgement event captures are
-plausible explanations. The study does not identify an internal mechanism or
-establish failure of every possible conditional predictor. Educational
-personality is consequently useful here as a testable action profile with
-specified transfer boundaries, rather than a psychological type.
+Teaching habits complement capability evaluation
+\citep{maurya2025mrbench,macina2025mathtutorbench}. Knowing that a model can solve
+a problem does not tell us whether it usually explains the answer or asks the
+student to attempt a step. Neither choice suits every activity. A behavioral
+profile helps educators compare how a model usually responds with what an
+activity requires; it does not rank tutors by their effects on learning.
 
-\paragraph{Prompt dependence has more than one form.}
-ASK and EXPLAIN instructions make demanded actions nearly or fully shared,
-while other permissible actions remain unevenly expressed. Neutral role
-paraphrases cannot be declared population-equivalent with sixteen sources.
-The peer control adds another distinction: social context can change whether
-the tutor acknowledges a fixed current-student state. Selected examples show
-that such an event can occur while correctly distinguishing the peer's emotion;
-its presence alone does not diagnose emotional misattribution. Role wording,
-student expression, and instructional constraint thus belong in the empirical
-description of a deployment's behavior.
+\paragraph{Following an instruction does not settle every teaching choice.}
+Under EXPLAIN, every model gives the answer, but some also invite reasoning much
+more often than others. The same required action need not produce the same overall response. These
+remaining differences
+do not prove that models preserve their original styles: their rankings can
+change, and rates learned under one instruction may not predict another.
 
-\paragraph{Increment over existing personality and tutoring research.}
-Beyond prior situated profiles and tutor-action comparisons
-\citep{lee2025trait,liu2026bma,kucheria2025cima,lee2026tutorpersonas}, the linked
-design distinguishes default transfer, expression-limited conditional transfer,
-and instructional convergence. Unchanged forecasts and the contemporary control
-locate the predictive boundary. Call volume and automated coding are not the
-novelty; education-specific traits, internal persona mechanisms, and teaching
-benefits remain unestablished.
+Reliability therefore needs to cover the full response under the intended
+instruction. Under ASK, some replies invite a step but also give away the
+answer. Checking only for the invitation would miss a failure that matters
+when students are meant to attempt the step themselves. Evaluation should
+check all behaviors required by the activity and the input changes likely to
+occur. A predictable habit or success on one requirement is not enough.
 
-\paragraph{What the archive adds and leaves unresolved.}
-Archived benchmark replies extend the evidence beyond constructed student
-messages: model differences predict actions under general tutoring, while
-explicit probing instructions sharply reduce that increment. Neither a single
-deployment nor one coder accounts for the scaffolding result. Yet the archive
-does not support an instruction-invariant absolute action profile; directly
-transferred probabilities perform poorly. This can follow from instruction-wide
-rate shifts without any reversal of model rankings. The short benchmark
-contexts, rare acknowledgement events, and incomplete historical attestation
-limit the result. Tutor, grading, and test-taking records still cannot be pooled
-as a million independent observations of tutor personality.
+\paragraph{Harness design should start from the model's behavior.}
+Developers can identify what needs additional control by testing a model's
+usual habits, their persistence under changed inputs, and its response to
+instructions. A workflow or checking mechanism---a \emph{harness}---may
+be reusable across models, but its settings and effectiveness need to be tested
+with each model it supports. Evaluation can show which desired behaviors a
+simple prompt already produces reliably and which important failures remain.
+
+Developers can then test whether the configured system closes those gaps.
+When the model changes, they need to check these behaviors again. Harness
+benefits and learning gains remain untested; the findings help specify what
+additional support should address and how to evaluate it.

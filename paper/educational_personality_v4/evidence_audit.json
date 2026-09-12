@@ -2,8 +2,30 @@
   "status": "specified local checks passed; not scientific completion",
   "checks": [
     {
+      "check": "secondary prompt scale, ordering, adjusted heterogeneity and attribution match saved sources",
+      "scale_rows": 6,
+      "illustrative_model_rows": 4,
+      "attribution_directions": 6,
+      "source_sha256": {
+        "artifacts/prompt_contingent_signatures_v1/prompt_vs_model_scale.csv": "ec8b0f495d5f7d2472554aed44b02cbe472f12b818d5904ceb1028cf57e70b16",
+        "artifacts/prompt_contingent_signatures_v1/model_semantic_elasticity.csv": "dab463e9f3c37615290dd8eefa225bc50056cc61bc10331be898534d1c8faf44",
+        "artifacts/prompt_contingent_signatures_v1/rank_stability.csv": "33979facca2ac60bf1f84a013822d52ba6b13e3efef2f79ae3145190dd737762",
+        "artifacts/prompt_contingent_signatures_v1/headroom_adjusted_elasticity_heterogeneity.csv": "5a92b95287f2df6befe826b071daea29442572558472459fd2834bec94936e42",
+        "artifacts/prompt_contingent_signatures_v1/cross_prompt_model_attribution.csv": "0360f6ac968be76bf07358dfd233db4b6d3eeb595c8e9d8fee3bd1564a80f0fc",
+        "artifacts/prompt_contingent_signatures_v1/decision.json": "cca082980be3e3203efc43d2e975552ef9e81ffc98d25cca3f1925c41efd6c4a"
+      }
+    },
+    {
+      "check": "one canonical English manuscript PDF; Chinese manuscript retired"
+    },
+    {
+      "check": "ten integrated behavioral evidence rows independently reread from saved source fields; English table agrees",
+      "rows": 10,
+      "numbers": 20
+    },
+    {
       "check": "six first-stage tables preserve previously audited values; all source hashes verified",
-      "bilingual_tables": 12,
+      "english_tables": 6,
       "prior_audit_checks": 16
     },
     {
@@ -15,7 +37,7 @@
       "count": 19
     },
     {
-      "check": "six primary bilingual table estimates and intervals",
+      "check": "six primary English table estimates and intervals",
       "count": 18
     },
     {
@@ -23,16 +45,20 @@
       "points": 12
     },
     {
+      "check": "discovery figure inputs, outputs, 30 matched rates and 28 archive rates with intervals verified",
+      "figure_points": 58
+    },
+    {
       "check": "all archived majorities independently enumerated from observed votes",
       "events": 28672,
       "events_with_absent_third_vote": 16
     },
     {
-      "check": "all twelve archived bilingual gain estimates and intervals",
+      "check": "all twelve archived English gain estimates and intervals",
       "numbers": 36
     },
     {
-      "check": "all archived bilingual event rates",
+      "check": "all archived English event rates",
       "numbers": 42
     },
     {
@@ -40,11 +66,21 @@
       "sources": 256,
       "comparisons": 36,
       "eventwise_scenarios": 18
+    },
+    {
+      "check": "all eight cumulative semantic screening decisions match saved results",
+      "count": 8,
+      "source_sha256": "5b5ab2ec6b291d0b1b5b434be10b5b3b3b31d6e794493dff656187a78a61e705"
+    },
+    {
+      "check": "all twenty exact expression stimuli appear in appendix",
+      "count": 20,
+      "source_sha256": "a7ec3c4d738166c0e41ed46160422d22b245beeb0c7d76bee67f91c60f4b83af"
     }
   ],
   "scientific_quality_goal_complete": false,
   "archive_identified_majority_analysis_complete": true,
   "archive_original_complete_coding_gate_passed": false,
-  "audit_script_sha256": "8a0d189ace25964ba3ef626ac1b41e2e41b149ef09271802cca5505eb3ed48e0",
+  "audit_script_sha256": "c32e4f4e4027b2a08b8e6d047f61ff5b5fe8970b87a22e70da3c01f14ab1fdaa",
   "review_scope": "new estimates, evidence hashes, and observed-vote majority enumeration; not full independent manuscript review"
 }

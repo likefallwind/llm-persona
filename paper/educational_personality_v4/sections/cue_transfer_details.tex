@@ -1,6 +1,55 @@
 \section{Expression-Transfer Extension and Measurement History}
 \label{app:cue-transfer}
 
+\begin{table}[t]
+\centering\small
+\begin{tabular}{llrr}
+\toprule
+Expression & Forecast increment & Gain [95\% CI] & Holm $p$\\
+\midrule
+Explicit & Default: reveal & .09730 [.08095, .11320] & $7.63\!\times\!10^{-11}$\\
+Explicit & Default: elicit & .13070 [.12266, .13825] & $4.97\!\times\!10^{-24}$\\
+Explicit & State: acknowledge & -.00366 [-.00793, .00090] & 1.0\\
+Implicit & Default: reveal & .08231 [.06657, .09695] & $2.76\!\times\!10^{-9}$\\
+Implicit & Default: elicit & .12748 [.11660, .13806] & $8.51\!\times\!10^{-20}$\\
+Implicit & State: acknowledge & -.00628 [-.00960, -.00273] & 1.0\\
+\bottomrule
+\end{tabular}
+\caption{Six frozen-forecast primary expression-transfer tests. Gains are
+source-averaged reductions in Brier loss; intervals bootstrap 32 reused source
+problems, conditioning on fitted forecasts. The default baseline is educational
+context; the state baseline is the model-by-domain profile. One-sided tests
+ask whether the gain is positive: $p=1$ is not a separately specified test of
+harm, and the confidence intervals are not simultaneous intervals.}
+\label{tab:cue-primary}
+\end{table}
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{p{.12\linewidth}p{.40\linewidth}p{.40\linewidth}}
+\toprule
+Arm / pair & Calm pole & Frustrated pole\\
+\midrule
+Original & I feel calm while working on this. & I feel frustrated while working on this.\\
+Explicit 1 & I'm feeling at ease as I work through this. & I'm feeling annoyed as I work through this.\\
+Explicit 2 & Working on this leaves me feeling relaxed. & Working on this leaves me feeling irritated.\\
+Explicit 3 & I'm feeling composed about working on this problem. & I'm feeling exasperated about working on this problem.\\
+Explicit 4 & I feel settled while I work on this. & I feel fed up while I work on this.\\
+Implicit 1 & I've set aside some time for this; one step at a time is fine. & Ugh, this again. I'm about ready to close the page.\\
+Implicit 2 & I'm taking my time with the page. There's no rush. & I've just pushed the page away. Ugh, enough already.\\
+Implicit 3 & I'm sitting back with my notebook open, ready to take the next step. & I've thrown my pencil down beside the notebook. Ugh.\\
+Implicit 4 & I'll take a slow breath and carry on with the page in front of me. & I'm gritting my teeth at the page in front of me. Ugh.\\
+Peer & I feel calm while working on this. My classmate, who is doing a different problem, says, ``I feel calm while working on this.'' & I feel calm while working on this. My classmate, who is doing a different problem, says, ``I feel frustrated while working on this.''\\
+\bottomrule
+\end{tabular}
+\caption{Complete fixed expression stimuli. Pole labels denote the intended
+stimulus contrast, not diagnosed human emotion. Within each domain, sources
+are ordered by their frozen hash: explicit pair index cycles through 1--4;
+implicit pair index is offset by one modulo four. Each source keeps its assigned
+pair across student-work states, models, and requests.}
+\label{tab:exact-cues}
+\end{table}
+
 The extension protocol and forecast table were frozen on 7 September 2026
 before its first tutor generation. Its 32 problem sources had already been
 observed in the first confirmation stage; they are not a second independent
@@ -13,7 +62,10 @@ calm state in the frozen predictor regardless of the peer's quote. Exact
 materials, the 61,440-row forecast table covering all endpoints and predictors,
 and their hashes are retained with the executable analysis.
 
-The extension uses the original three event coders and evidence-line rubric.
+The extension yields all 5,120 answers and uses the original three event coders
+and evidence-line rubric. After the recovery described below, all 15,360 codes
+are usable. Pairwise positive coder agreement is 99.25--99.41\% for revelation,
+90.68--92.34\% for elicitation, and 94.89--95.51\% for acknowledgement.
 Of 15,360 requested codes, 15,359 pass the original strict parser after the
 fixed repair budget. The remaining final response contains all eight complete
 event objects but lacks one root closing brace. A separately recorded amendment
@@ -35,6 +87,15 @@ Bootstrap intervals use 10,000 source resamples stratified by domain with seed
 assignment. The individual-coder panels change measurements; generator-deletion
 panels remove scored observations without refitting the original predictors.
 
+\paragraph{Contemporary original-wording control.}
+The acknowledgement state gain is +0.01248 with a 95\% source-bootstrap
+interval of [0.00888, 0.01624] when the original wording is generated again.
+Paired new-minus-contemporary gain differences are -0.01614
+[-0.02254, -0.00990] for explicit synonyms and -0.01876
+[-0.02384, -0.01358] for implicit cues. These secondary contrasts compare
+expression conditions during the same observation period; they do not isolate
+the effects of provider changes over time.
+
 \paragraph{Peer-context control.}
 Keeping the current student explicitly calm, changing a peer's quote yields
 acknowledgement-rate changes of +30.47, +25.00, +26.56, +23.44, and -4.69
@@ -47,7 +108,7 @@ frustration. The event-rate contrast therefore cannot itself establish
 misattribution. Outcome-selected examples do not estimate its prevalence.
 
 
-\section{Recovered Archive Inputs: Evidence Available and Pending}
+\section{Recovered Archive Inputs and Provenance Limits}
 
 A local reconstruction of six tutor-dialogue settings recovers 3,454 task items
 and 960 exact question/conversation source groups, including 940 groups shared
@@ -84,8 +145,9 @@ four-utterance histories. Median context lengths are 398 characters in the full
 pool, 422 in the eligible pool, and 429 in the selection. These summaries do not
 establish representativeness of classroom interactions or the full archive.
 
-The upstream collection combines Bridge and MathDial, including both real
-tutoring snippets and teacher--simulated-student dialogues
+MathTutorBench combines Bridge's real tutoring snippets
+\citep{wang2024bridge} and MathDial's teacher--simulated-student dialogues
+\citep{macina2023mathdial} into its MathDialBridge collection
 \citep{macina2025mathtutorbench}. All selected problem strings exactly match
 questions in the local MathDial inventory, but bridge records lack per-item
 upstream dataset identifiers. Question overlap does not attest exact dialogue

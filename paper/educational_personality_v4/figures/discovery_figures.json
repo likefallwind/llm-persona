@@ -1,0 +1,536 @@
+{
+  "purpose": "Descriptive illustrations of existing findings; no new hypothesis tests",
+  "sources": {
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_descriptive/matched_prompt_profiles.csv": "c5b44c1ebb3486039da9e1684b3207aceca40fb56047f7ec1b7042d31978c23f",
+    "artifacts/educational_personality_v2/prospective_formal/confirmation_analysis/source_prompt_rates.csv": "6b2ff852067d39eb86c7109219f87902ef745a3fc4143dfba9c350c792e90921",
+    "artifacts/educational_personality_v4/archive_validation/analysis_identified/event_rates.csv": "58c4990027fbf434973161c0bebac1d10efef7c3576a3c7ac32c26aba5e8f0b2",
+    "scripts/render_personality_discovery_figures_v4.py": "5ea415a9cc32be58361e24c3be5a2b543971e3030a0dcec630d7df469c907d50"
+  },
+  "matched_source_ids": [
+    "all_different_constraint",
+    "boyles_law",
+    "direct_speech_punctuation",
+    "exclusive_or",
+    "exponent_product",
+    "figurative_metaphor",
+    "half_life",
+    "least_common_multiple",
+    "parallel_structure",
+    "photosynthesis_inputs",
+    "pigeonhole_principle",
+    "rectangular_prism_volume",
+    "relative_clause_attachment",
+    "sampling_frame_bias",
+    "triangle_area",
+    "turning_moment"
+  ],
+  "matched_points": [
+    {
+      "model": "MiniMax-M2.7",
+      "event": "answer_reveal",
+      "arm": "canonical",
+      "sources": 16,
+      "responses": 128,
+      "rate": 1.0
+    },
+    {
+      "model": "MiniMax-M2.7",
+      "event": "answer_reveal",
+      "arm": "ask",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.0703125
+    },
+    {
+      "model": "MiniMax-M2.7",
+      "event": "answer_reveal",
+      "arm": "explain",
+      "sources": 16,
+      "responses": 128,
+      "rate": 1.0
+    },
+    {
+      "model": "MiniMax-M3",
+      "event": "answer_reveal",
+      "arm": "canonical",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.78125
+    },
+    {
+      "model": "MiniMax-M3",
+      "event": "answer_reveal",
+      "arm": "ask",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.03125
+    },
+    {
+      "model": "MiniMax-M3",
+      "event": "answer_reveal",
+      "arm": "explain",
+      "sources": 16,
+      "responses": 128,
+      "rate": 1.0
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "event": "answer_reveal",
+      "arm": "canonical",
+      "sources": 16,
+      "responses": 128,
+      "rate": 1.0
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "event": "answer_reveal",
+      "arm": "ask",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.0
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "event": "answer_reveal",
+      "arm": "explain",
+      "sources": 16,
+      "responses": 128,
+      "rate": 1.0
+    },
+    {
+      "model": "doubao-seed-2.0-lite",
+      "event": "answer_reveal",
+      "arm": "canonical",
+      "sources": 16,
+      "responses": 128,
+      "rate": 1.0
+    },
+    {
+      "model": "doubao-seed-2.0-lite",
+      "event": "answer_reveal",
+      "arm": "ask",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.0
+    },
+    {
+      "model": "doubao-seed-2.0-lite",
+      "event": "answer_reveal",
+      "arm": "explain",
+      "sources": 16,
+      "responses": 128,
+      "rate": 1.0
+    },
+    {
+      "model": "glm-5.3",
+      "event": "answer_reveal",
+      "arm": "canonical",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.2734375
+    },
+    {
+      "model": "glm-5.3",
+      "event": "answer_reveal",
+      "arm": "ask",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.0
+    },
+    {
+      "model": "glm-5.3",
+      "event": "answer_reveal",
+      "arm": "explain",
+      "sources": 16,
+      "responses": 128,
+      "rate": 1.0
+    },
+    {
+      "model": "MiniMax-M2.7",
+      "event": "reasoning_elicitation",
+      "arm": "canonical",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.09375
+    },
+    {
+      "model": "MiniMax-M2.7",
+      "event": "reasoning_elicitation",
+      "arm": "ask",
+      "sources": 16,
+      "responses": 128,
+      "rate": 1.0
+    },
+    {
+      "model": "MiniMax-M2.7",
+      "event": "reasoning_elicitation",
+      "arm": "explain",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.0546875
+    },
+    {
+      "model": "MiniMax-M3",
+      "event": "reasoning_elicitation",
+      "arm": "canonical",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.5625
+    },
+    {
+      "model": "MiniMax-M3",
+      "event": "reasoning_elicitation",
+      "arm": "ask",
+      "sources": 16,
+      "responses": 128,
+      "rate": 1.0
+    },
+    {
+      "model": "MiniMax-M3",
+      "event": "reasoning_elicitation",
+      "arm": "explain",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.453125
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "event": "reasoning_elicitation",
+      "arm": "canonical",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.03125
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "event": "reasoning_elicitation",
+      "arm": "ask",
+      "sources": 16,
+      "responses": 128,
+      "rate": 1.0
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "event": "reasoning_elicitation",
+      "arm": "explain",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.0546875
+    },
+    {
+      "model": "doubao-seed-2.0-lite",
+      "event": "reasoning_elicitation",
+      "arm": "canonical",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.0390625
+    },
+    {
+      "model": "doubao-seed-2.0-lite",
+      "event": "reasoning_elicitation",
+      "arm": "ask",
+      "sources": 16,
+      "responses": 128,
+      "rate": 1.0
+    },
+    {
+      "model": "doubao-seed-2.0-lite",
+      "event": "reasoning_elicitation",
+      "arm": "explain",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.015625
+    },
+    {
+      "model": "glm-5.3",
+      "event": "reasoning_elicitation",
+      "arm": "canonical",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.953125
+    },
+    {
+      "model": "glm-5.3",
+      "event": "reasoning_elicitation",
+      "arm": "ask",
+      "sources": 16,
+      "responses": 128,
+      "rate": 1.0
+    },
+    {
+      "model": "glm-5.3",
+      "event": "reasoning_elicitation",
+      "arm": "explain",
+      "sources": 16,
+      "responses": 128,
+      "rate": 0.625
+    }
+  ],
+  "archive_points": [
+    {
+      "model": "minimax-m2.7",
+      "event": "answer_reveal",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.86328125",
+      "bootstrap_95_low": "0.8203125",
+      "bootstrap_95_high": "0.9024414062499986"
+    },
+    {
+      "model": "minimax-m2.7",
+      "event": "answer_reveal",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.1328125",
+      "bootstrap_95_low": "0.09375",
+      "bootstrap_95_high": "0.17578125"
+    },
+    {
+      "model": "minimax-m3",
+      "event": "answer_reveal",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.76953125",
+      "bootstrap_95_low": "0.71875",
+      "bootstrap_95_high": "0.8203125"
+    },
+    {
+      "model": "minimax-m3",
+      "event": "answer_reveal",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.09765625",
+      "bootstrap_95_low": "0.0625",
+      "bootstrap_95_high": "0.13671875"
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "event": "answer_reveal",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.375",
+      "bootstrap_95_low": "0.31640625",
+      "bootstrap_95_high": "0.43359375"
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "event": "answer_reveal",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.0546875",
+      "bootstrap_95_low": "0.02734375",
+      "bootstrap_95_high": "0.08203125"
+    },
+    {
+      "model": "doubao-seed-2.0-pro",
+      "event": "answer_reveal",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.59375",
+      "bootstrap_95_low": "0.53125",
+      "bootstrap_95_high": "0.65234375"
+    },
+    {
+      "model": "doubao-seed-2.0-pro",
+      "event": "answer_reveal",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.01953125",
+      "bootstrap_95_low": "0.00390625",
+      "bootstrap_95_high": "0.0390625"
+    },
+    {
+      "model": "glm-5.2",
+      "event": "answer_reveal",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.22265625",
+      "bootstrap_95_low": "0.171875",
+      "bootstrap_95_high": "0.2734375"
+    },
+    {
+      "model": "glm-5.2",
+      "event": "answer_reveal",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.05859375",
+      "bootstrap_95_low": "0.03125",
+      "bootstrap_95_high": "0.08984375"
+    },
+    {
+      "model": "qwen3.5-4b",
+      "event": "answer_reveal",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.59375",
+      "bootstrap_95_low": "0.53515625",
+      "bootstrap_95_high": "0.65625"
+    },
+    {
+      "model": "qwen3.5-4b",
+      "event": "answer_reveal",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.0546875",
+      "bootstrap_95_low": "0.02734375",
+      "bootstrap_95_high": "0.0859375"
+    },
+    {
+      "model": "qwen3.8-27b",
+      "event": "answer_reveal",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.8046875",
+      "bootstrap_95_low": "0.75390625",
+      "bootstrap_95_high": "0.8515625"
+    },
+    {
+      "model": "qwen3.8-27b",
+      "event": "answer_reveal",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.0703125",
+      "bootstrap_95_low": "0.0390625",
+      "bootstrap_95_high": "0.10166015624999858"
+    },
+    {
+      "model": "minimax-m2.7",
+      "event": "reasoning_elicitation",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.12109375",
+      "bootstrap_95_low": "0.08203125",
+      "bootstrap_95_high": "0.1640625"
+    },
+    {
+      "model": "minimax-m2.7",
+      "event": "reasoning_elicitation",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.953125",
+      "bootstrap_95_low": "0.92578125",
+      "bootstrap_95_high": "0.9765625"
+    },
+    {
+      "model": "minimax-m3",
+      "event": "reasoning_elicitation",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.33203125",
+      "bootstrap_95_low": "0.2734375",
+      "bootstrap_95_high": "0.390625"
+    },
+    {
+      "model": "minimax-m3",
+      "event": "reasoning_elicitation",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.8984375",
+      "bootstrap_95_low": "0.859375",
+      "bootstrap_95_high": "0.93359375"
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "event": "reasoning_elicitation",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.625",
+      "bootstrap_95_low": "0.56640625",
+      "bootstrap_95_high": "0.68359375"
+    },
+    {
+      "model": "deepseek-v4-pro",
+      "event": "reasoning_elicitation",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.93359375",
+      "bootstrap_95_low": "0.90234375",
+      "bootstrap_95_high": "0.9609375"
+    },
+    {
+      "model": "doubao-seed-2.0-pro",
+      "event": "reasoning_elicitation",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.3046875",
+      "bootstrap_95_low": "0.25",
+      "bootstrap_95_high": "0.36328125"
+    },
+    {
+      "model": "doubao-seed-2.0-pro",
+      "event": "reasoning_elicitation",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.98828125",
+      "bootstrap_95_low": "0.97265625",
+      "bootstrap_95_high": "1.0"
+    },
+    {
+      "model": "glm-5.2",
+      "event": "reasoning_elicitation",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.734375",
+      "bootstrap_95_low": "0.6796875",
+      "bootstrap_95_high": "0.7890625"
+    },
+    {
+      "model": "glm-5.2",
+      "event": "reasoning_elicitation",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.94140625",
+      "bootstrap_95_low": "0.91015625",
+      "bootstrap_95_high": "0.96875"
+    },
+    {
+      "model": "qwen3.5-4b",
+      "event": "reasoning_elicitation",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.3046875",
+      "bootstrap_95_low": "0.25",
+      "bootstrap_95_high": "0.359375"
+    },
+    {
+      "model": "qwen3.5-4b",
+      "event": "reasoning_elicitation",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.93359375",
+      "bootstrap_95_low": "0.90234375",
+      "bootstrap_95_high": "0.9609375"
+    },
+    {
+      "model": "qwen3.8-27b",
+      "event": "reasoning_elicitation",
+      "arm": "scaffolding",
+      "sources": "256",
+      "mean": "0.19140625",
+      "bootstrap_95_low": "0.14453125",
+      "bootstrap_95_high": "0.2421875"
+    },
+    {
+      "model": "qwen3.8-27b",
+      "event": "reasoning_elicitation",
+      "arm": "pedagogy",
+      "sources": "256",
+      "mean": "0.9375",
+      "bootstrap_95_low": "0.90625",
+      "bootstrap_95_high": "0.96484375"
+    }
+  ],
+  "outputs": {
+    "paper/educational_personality_v4/figures/teaching_choices_under_instructions.pdf": "2a6495891f00de61f07f813c9eff92ce245b2f0e14d7c8bf3bc4b36733c7a8e2",
+    "paper/educational_personality_v4/figures/teaching_choices_under_instructions.svg": "b5e303ec5a409b5f3c3e120be18888fac3c9213ba52d8aee4c661a68d50ccb11",
+    "paper/educational_personality_v4/figures/teaching_choices_under_instructions.png": "219503ee2406fa1d58baa27c8bb948d8677cf55c940f2e4810277a282d421afa",
+    "paper/educational_personality_v4/figures/archive_instruction_profiles.pdf": "9cf049a2416afb02df010dbe703c7d89219f35c1d3afe9c4892ff3606360235c",
+    "paper/educational_personality_v4/figures/archive_instruction_profiles.svg": "104cc8ffbb2192528db69f7365d54869375359c3c9a013494a382aca1e6a997d",
+    "paper/educational_personality_v4/figures/archive_instruction_profiles.png": "3307c8dffef19c5cd4dd54ac096dfcbbc8b2817963749760375f1da4c9c6e3de"
+  },
+  "checks": {
+    "matched_rates_recomputed_from_16_sources": 30,
+    "archive_rates_and_existing_intervals": 28
+  },
+  "quality_scores_or_learner_gains": false
+}

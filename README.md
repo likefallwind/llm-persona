@@ -1,13 +1,30 @@
 # Educational Personality in Language Models
 
-> **Research goal active (2026-09-07).** The first experimental/manuscript checkpoint is complete; the top-conference quality goal remains open. See [quality reassessment and continuation](research/70_quality_goal_reopened.md).
+> **Integrated first-paper draft (2026-09-09).** The current manuscript follows the agreed research sequence: same-input behavioral differences, selective stability, input changes, deliberate instruction, and educational understanding. All draft directories are checkpoints of one investigation, not prior publications.
 
-**Update, 2026-09-08:** the [completed cue-transfer study](research/74_cue_transfer_results_v4.md)
-changes the interpretation: answer-revelation and reasoning-elicitation defaults
-retain predictive gains under new expressions, but the acknowledgement
-student-state profile does not, despite a positive contemporary original-wording
-control. The [integrated v4 bilingual draft](paper/educational_personality_v4/README.md)
-now incorporates this finding in the abstract, design, results, discussion, and conclusion.
+Read the [integrated English paper](paper/educational_personality_v4/README.md),
+[agreed structure and scope](research/92_integrated_first_paper_preparation.md), or
+[claim-to-evidence ledger](paper/educational_personality_v4/evidence_ledger.md).
+The primary implications concern which teaching habits recur, where they persist,
+and how they respond to instructions. Simple-prompt/Harness configurations appear
+only as downstream predictions. Learning outcomes are outside the current scope.
+As of 2026-09-10, only the English ACL-layout manuscript is maintained; Chinese
+and alternative reading PDFs in earlier checkpoints are historical records.
+
+The manuscript incorporates the broader semantic, confidence, affiliation, and
+boundary findings with their evidence levels, alongside the prospective action
+study, [expression transfer](research/74_cue_transfer_results_v4.md), and
+[paired archive analysis](research/87_archive_identified_majority_results_v4.md).
+This revision uses existing experiments; no new provider batch or human annotation
+is required for the agreed claim scope. Scientific assessment and conference
+acceptance are separate from successful builds and numerical checks.
+
+Two archive coder labels remain missing. Their majorities are identified without
+imputation, while the original complete-coding gate remains failed. See
+[full-source sensitivity](research/88_full_source_coder_bounds_v4.md).
+
+## Earlier checkpoints
+
 The v3 PDFs below preserve the earlier checkpoint.
 [Archive inputs have been reconstructed](research/72_archive_input_reconstruction_v4.md);
 natural-dialogue coding was authorized and launched on 2026-09-08 at 13:54 CST.

@@ -1,65 +1,52 @@
 \section{Introduction}
 
-Language models can teach differently even when responding to the same exercise.
-One reveals the answer; another asks the student to complete a step; a third
-acknowledges frustration. Do these differences reflect recurring teaching
-tendencies that predict behavior in a new educational situation? This is the
-behavioral question about \emph{educational personality} examined here.
+An AI tutor can answer correctly while choosing different ways to help:
+explain the solution, invite the student to attempt a step, or combine both.
+For an educator selecting a tutor, correctness therefore leaves a practical
+question open: how will this model usually respond, and when can that behavior
+be expected to recur?
 
-Distinguishing models' text is insufficient. Length, formatting, task
-instructions, and solution access can all produce recognizable differences.
-Conversely, a recurring tendency need not imply identical behavior in every
-situation: a tutor may consistently elicit more reasoning after an erroneous
-attempt. We therefore distinguish a model's default action profile from its
-conditional response to student state, and test whether both add predictive
-information beyond a baseline using educational context alone. Observed
-differences, repeated behavior, and successful
-transfer provide different kinds of evidence.
+Our investigation draws on 1,028,822 raw evaluation records across 39 educational
+benchmark settings, including tutoring, assessment, and problem solving.
+Looking at models answering the same educational questions raised an initial
+question: do their apparently different teaching styles recur across responses?
+We investigate this using subsets suited to each analysis. We use \emph{educational personality} to
+investigate observable teaching tendencies, without assuming human personality
+traits. Initial screening found that some differences recur while others vary. We
+therefore ask what happens when the problems, student wording, or teaching
+instructions change.
 
-Educational actions make this question testable without assuming a human
-personality taxonomy. Revealing a solution and inviting reasoning are observable,
-can co-occur, and are not universally good or bad teaching moves. Acknowledging
-expressed frustration does not establish empathy. Our target is the \emph{tutor
-model's} behavior, distinct from adapting instruction to a \emph{student's}
-assigned personality \citep{rooein2026pats}. Neither behavior predictability nor
-its failure measures learning benefit.
+We ask three questions:
+\textbf{RQ1: Which educational behaviors exhibit recurring model differences?}
+\textbf{RQ2: Under which input changes do those differences persist?}
+\textbf{RQ3: How do explicit instructions reshape the differences?}
 
-Prior studies already investigate personality-oriented scenarios and situated
-behavioral profiles \citep{lee2025trait,liu2026bma}, characteristic tutoring-action
-mixtures, and learned tutor-persona variation
-\citep{kucheria2025cima,lee2026tutorpersonas}. We examine a specific boundary in
-these interpretations: does information that transfers to new problems also
-transfer when students express themselves differently?
+Some teaching tendencies distinguish models more consistently than others.
+Across tasks, models differ in how directly they help and how much information
+they present. Exploratory archive analyses also find recurring differences in
+how confidently they state answers. Other measures show shared responses or
+insufficient evidence of consistent differences.
 
-Three linked questions organize the study. \textbf{RQ1:} Under matched input,
-do models show distinguishable defaults that recur across requests?
-\textbf{RQ2:} Do defaults or model-specific student-state responses predict
-new problems and new expressions? \textbf{RQ3:} How do neutral role rewordings
-and explicit teaching instructions change those profiles?
+Knowing how often each model gave answers or invited reasoning helps predict
+these actions on new problems, even when students use different wording.
+For acknowledgement of feeling or difficulty, knowing how a model responds to
+student cues further improves prediction, but this extra benefit is lost under
+new wording. Giving models the same teaching instruction makes required
+actions converge while other choices remain different. These remaining
+differences need not preserve the original model ranking or action rates.
 
-An audit of a million-record educational-output archive motivates the controlled
-study: different roles, repeated sources, and instructional settings can produce
-apparent model differences (Appendix~\ref{app:archive-reanalysis}). We develop
-observable measures on an excluded pilot, then fit profiles on training sources
-and lock predictions before generating responses to new problems. Model-by-subject
-baselines distinguish subject habits from student-state increments. After
-observing this confirmation, a separately frozen expression extension reuses
-its 32 problems and original forecasts, with contemporary original wording as
-a control. The extension tests an expression shift without adding new sources.
+Prior work connects personality consistency, prompt sensitivity, and tutor
+action mixtures \citep{lee2025trait,kucheria2025cima,liu2026bma,lee2026tutorpersonas}.
+We connect these descriptions of teaching habits to tests of when they remain
+predictable. We fix predictions before collecting new responses, then test
+whether previous behavior helps predict answers to new inputs. We also compare
+models on the same inputs under different teaching instructions to see how
+deliberate control changes their behavior. Section~\ref{sec:methods} identifies
+which analyses are exploratory and which predictions were fixed in advance.
 
-Default revelation and elicitation gains survive both transfer tests. The
-acknowledgement state profile improves new-problem prediction under original
-wording, but loses its increment under explicit synonyms and implicit cues;
-the contemporary original-wording control remains positive. Explicit teaching
-instructions also make demanded actions converge while permissible accompanying
-actions remain different. This separation of default recurrence, conditional
-transfer, and instructional constraint is the central empirical contribution.
-The finite constructed materials limit the supported interpretation to
-prompt-dependent action profiles of the specified deployments.
-
-A retrospective extension analyzes 3,584 archived replies from seven historical
-deployments on 256 paired benchmark dialogue sources. Model-specific predictive
-gains are substantial under general tutoring instructions but small under
-explicit probing instructions. This extends the materials and deployment panel;
-it is neither a transfer of the original fitted probabilities to the archive
-nor a validation with real learners.
+For educators, these findings describe how a tutor usually helps, when that
+behavior can be anticipated, and how it responds to instructions. A recurring
+habit is not necessarily the best choice for every activity. Developers can
+use such evidence to investigate model selection and additional system
+support. These applications follow from the behavioral findings; learning
+benefits and harness effectiveness remain untested.

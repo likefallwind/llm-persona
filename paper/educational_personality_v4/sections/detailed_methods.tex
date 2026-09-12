@@ -48,13 +48,13 @@ questions and conversations can occur under different benchmark names and
 prompt variants. Consequently, benchmark names and local item identifiers are
 not sufficient independence units. Related source material must stay together
 when estimating transfer. Analyses informed by previous archive results remain
-exploratory; starting a new conversational context does not make them
-prospective.
+exploratory and are distinguished from predictions fixed before new outputs
+were collected.
 
 Across the 899,025 variant-preserving text records, a current-adapter role review
 identifies 68,799 records in nine tutor-response settings; most other records
 come from evaluation or test-answer tasks. Tutor-role membership does not itself
-establish neutral prompts or equivalent historical requests. Appendix~A reports
+establish neutral prompts or equivalent historical requests. Appendix~\ref{app:archive-scope} reports
 the complete role inventory and a hash-verified inspection of the 122 tutor
 prediction files, including their missing generation-provenance fields.
 
@@ -189,6 +189,16 @@ earlier repair allowance.
 
 
 \subsection{Prediction Before Confirmation Generation}
+\label{app:prediction-method}
+
+The predictors are statistical logistic-regression models. The LLMs generate
+tutor answers and code their behaviors; they do not produce the primary
+behavior forecasts. For each event, training responses from the five deployments
+are pooled, with deployment identity included as an input feature. The
+predictors use structured subject and student-state indicators rather than
+reading the full problem text. Fitting a predictor does not train or fine-tune
+any evaluated LLM. The same five deployments are evaluated on the separate
+confirmation questions.
 
 For each behavior, four nested logistic predictors model the probability of its
 occurrence: a subject-by-student-state baseline; that baseline plus model
@@ -209,6 +219,11 @@ forecast uses only training-source profiles of log word count and marked-line
 fraction, recomputing those profiles within training validation. Such style
 competition is descriptive: teaching policy may itself influence length and
 formatting, so it is not a causal adjustment for style.
+
+For an action with predicted probability $p$ and observed binary label
+$y\in\{0,1\}$, Brier loss is $(p-y)^2$. A positive gain is the baseline's
+average loss minus the augmented predictor's average loss, so it indicates
+improved probability prediction.
 
 For each of the three primary events, the two primary comparisons are the Brier
 improvement from a default model profile over the situation baseline and from a
@@ -319,3 +334,21 @@ and five invalid evidence-line references. All seven complete on their first
 HTTP attempts; the 2,577 valid original reviews remain unchanged. The correction,
 original failed diagnostic, and repair history are retained. Both reviewers'
 twelve control judgments are valid and match the expected verdicts.
+
+\subsection{Implementation and Computational Reporting}
+\label{app:implementation}
+The saved analysis environment records Python 3.13.11, NumPy 2.5.2,
+SciPy 1.18.0, pandas 3.0.5, scikit-learn 1.9.0, statsmodels 0.14.6,
+Matplotlib 3.11.1, and seaborn 0.13.2. Statistical analyses run locally;
+tutor generation and behavioral coding use hosted model APIs. No tutor
+weights are trained for this study. Parameter counts and provider-side GPU
+hours of the served configurations were not independently verified.
+
+Generation and coding counts, completion limits, retries, and missing-code
+amendments are reported by stage above and in
+Appendices~\ref{app:cue-transfer} and~\ref{app:archive-validation}.
+These include 10,440 controlled tutor replies and 3,584 separately archived
+replies, with pilot and measurement-development work reported separately.
+The million-record archive predates the controlled experiments; its total
+compute cost cannot be reconstructed from the retained provenance. We do not
+convert request counts into unobserved training costs, energy, or carbon estimates.

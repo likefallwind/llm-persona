@@ -13,6 +13,33 @@ Table~\ref{tab:primary-tests}.}
 \label{fig:primary-gains}
 \end{figure}
 
+All 4,040 first-stage confirmation responses received three valid event codes, yielding
+12,120 coder outputs and 32,320 majority-coded response--event observations.
+The six disclosed larger-budget codes are included; the original failures are
+retained. On this complete panel, pairwise positive coder agreement is
+99.05--99.29\% for answer revelation, 91.38--92.52\% for reasoning elicitation,
+and 96.29--98.15\% for affect acknowledgement. These are measurement diagnostics
+over all arms, distinct from the repeated-generation agreement below.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrrr}
+\toprule
+Deployment & Reveal & Elicit & Acknowledge \\
+\midrule
+MiniMax-M2.7 & 99.6 & 8.2 & 27.0 \\
+MiniMax-M3 & 83.2 & 48.4 & 69.9 \\
+DeepSeek-V4-Pro & 100.0 & 2.0 & 59.0 \\
+Doubao-Seed-2.0-Lite & 100.0 & 4.3 & 60.9 \\
+GLM-5.3 & 22.3 & 96.5 & 51.2 \\
+\bottomrule
+\end{tabular}
+\caption{Canonical event rates (\%): 256 answers per deployment, eight per
+source, on 32 sources. Events can co-occur. Abbreviated deployment names in the
+text refer to these configurations, not all releases in their model families.}
+\label{tab:default-rates}
+\end{table}
+
 \subsection{Prediction, Repetition, and Student Cues}
 
 Table~\ref{tab:absolute-losses} reports the absolute losses for all five
@@ -130,7 +157,7 @@ selected unadjusted interval.
 
 The eight coding panels comprise three single coders, three leave-one-coder
 panels, all-three soft labels, and exclusion of the generator's coder family.
-Their default-gain ranges are reported in Section~\ref{sec:results}.
+All eight panels retain positive default-gain estimates for all three events.
 Conditional gain ranges are [0.000369, 0.000593] for revelation,
 [-0.000301, 0.000002] for elicitation, and [0.006970, 0.010522] for
 acknowledgement. Panel-specific forecasts were locked before confirmation;

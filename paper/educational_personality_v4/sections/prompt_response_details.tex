@@ -1,0 +1,94 @@
+\subsection{Semantic Prompt Effects, Ordering, and Attribution}
+\label{app:prompt-response}
+
+This outcome-aware secondary analysis uses already scored, paired generic and
+pedagogy responses from six historical configurations: MiniMax-M3,
+MiniMax-M2.7, GLM-5.2, DeepSeek-V4-Pro, Doubao-Seed-2.0-Pro, and Qwen3.5-4B.
+There are 79 standard and 40 hard MathDial contexts, each with both prompt
+arms and all six models. The eight semantic dimensions yield 11,424
+response--dimension rows, not 11,424 independent replies. Analyses use the
+saved three-coder consensus. They do not revise the frozen dimension decisions
+or constitute independent prospective confirmation.
+
+\paragraph{Prompt shift relative to default spread.}
+For each task and dimension, the absolute mean paired pedagogy-minus-generic
+shift is divided by the full range of generic-arm model means.
+Table~\ref{tab:prompt-scale} reports the three dimensions that passed the
+reliable-measurement gate, with 5,000 context-bootstrap intervals. These are
+ratios of descriptive point estimates, not tests that prompts universally
+matter more than model choice. A ratio near one means that the mean shift
+under this instruction is comparable to the observed baseline range.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{llr}
+\toprule
+Task & Dimension & Shift / default range [95\% CI]\\
+\midrule
+Standard & Response complexity & 1.111 [0.785, 1.401]\\
+Standard & Semantic elicitation & 1.148 [0.946, 1.437]\\
+Standard & Assistance directness & 1.000 [0.830, 1.204]\\
+Hard & Response complexity & 0.848 [0.585, 1.214]\\
+Hard & Semantic elicitation & 0.987 [0.777, 1.301]\\
+Hard & Assistance directness & 1.011 [0.758, 1.361]\\
+\bottomrule
+\end{tabular}
+\caption{Prompt shifts relative to default model spread in the fixed semantic panel. Intervals are descriptive context-bootstrap intervals, not simultaneous tests across dimensions.}
+\label{tab:prompt-scale}
+\end{table}
+
+\paragraph{Response heterogeneity and scale boundaries.}
+Let $s$ and $p$ denote the generic and pedagogy scores. For a pooled increase,
+the adjusted change is $(p-s)/(5-s)$; for a pooled decrease, it is
+$(s-p)/(s-1)$. Only contexts
+where every model has nonzero directional headroom are retained. The retained
+standard/hard counts are 41/19 for elicitation, 58/31 for directness, and 36/16
+for complexity. Model labels are permuted within paired contexts 5,000 times;
+Benjamini--Hochberg correction covers eight dimensions within each task.
+Adjusted $q$ values for elicitation are 0.0003/0.0016 and for directness
+0.0003/0.0155 (standard/hard); complexity is 0.0003/0.7023. Thus only
+elicitation and directness among the reliably measured dimensions retain
+heterogeneity in both variants after adjustment. The exclusion of boundary
+contexts changes the analysis subset, and normalization addresses one
+floor/ceiling explanation rather than every possible source of heterogeneity.
+
+\paragraph{Changes in model ordering.}
+Table~\ref{tab:prompt-order-example} illustrates the Doubao/GLM directness
+comparison. Across the six-model panel, directness ordering reverses for 5/15
+comparable pairs in standard and 6/14 in hard contexts; pairs tied in either
+arm are excluded. These counts describe sample-mean crossings, not separate
+significant pairwise reversals. The generic-to-pedagogy Spearman correlations
+are 0.371 and 0.203; their exact two-sided permutation $p$ values, 0.497 and
+0.711, do not establish either preserved ordering or its absence.
+
+\begin{table}[t]
+\centering\small
+\begin{tabular}{llrrr}
+\toprule
+Task & Configuration & Generic & Pedagogy & Paired change [95\% CI]\\
+\midrule
+Standard & Doubao-Seed-2.0-Pro & 3.90 & 1.58 & -2.32 [-2.62, -2.01]\\
+Standard & GLM-5.2 & 2.97 & 1.87 & -1.10 [-1.38, -0.84]\\
+Hard & Doubao-Seed-2.0-Pro & 3.98 & 2.10 & -1.88 [-2.30, -1.43]\\
+Hard & GLM-5.2 & 3.08 & 2.48 & -0.60 [-1.00, -0.17]\\
+\bottomrule
+\end{tabular}
+\caption{An illustrative change in directness ordering. Higher scores indicate more direct assistance. Intervals describe each model's paired prompt shift, not the difference between models or a test of rank reversal.}
+\label{tab:prompt-order-example}
+\end{table}
+
+\paragraph{Residual model attribution across instructions.}
+A standardized multinomial logistic classifier predicts the six model
+identities from eight item-centered semantic scores, training under one
+instruction and testing under the other. All eight dimensions are included;
+classification success does not validate them individually as traits.
+Pooled generic-to-pedagogy accuracy is 0.301 [0.264, 0.335]; the reverse is
+0.297 [0.266, 0.326], compared with chance 0.167. The four cross-task,
+cross-prompt directions range from 0.263 to 0.300, with lower interval bounds
+above chance. Intervals use 2,000 test-context bootstrap samples conditional
+on the fitted classifier. Pooled transfers reuse paired contexts across arms;
+cross-task transfers compare the two benchmark variants rather than a new
+prospectively sampled source population. This is supplementary evidence of
+joint behavioral discrimination, distinct from the locked action-probability
+forecasts in Section~\ref{sec:stability}. It does not establish immutable
+model identity or an internal personality mechanism.

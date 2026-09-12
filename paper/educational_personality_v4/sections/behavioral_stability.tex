@@ -1,0 +1,68 @@
+\section{Which Differences Persist When Inputs Change?}
+\label{sec:stability}
+
+\subsection{A Teaching Habit Need Not Appear in Every Reply}
+Past behavior can help predict a model's next response even when it does not
+repeat the same action every time. M3 agrees with itself on whether to invite
+reasoning in only 57.8\% of 128 matched input pairs (95\% source-bootstrap
+interval 50.0--66.4\%). High agreement can also reflect repeated absence:
+DeepSeek and Doubao have elicitation agreement above 90\%, but none of their
+few invitations recur in both requests. They agree perfectly on answer
+revelation because they always reveal an answer in this sample.
+
+Agreement therefore needs to be read alongside how often each action occurs
+and whether earlier responses help predict later ones
+(Appendix~\ref{app:confirmation-details}).
+Appendix~\ref{app:materials-examples} illustrates the codes on matched replies.
+
+\subsection{Past Behavior Helps Predict New Responses (RQ2)}
+Knowing the model's usual behavior improves prediction of all three actions
+on new problems, compared with knowing only the subject and student state.
+Brier loss decreases by 0.091 for answer revelation, 0.130 for reasoning
+elicitation, and 0.020 for acknowledgement; all three gains pass the six-test
+Holm correction. Thus, models' previous teaching choices provide information
+that the scripted educational context alone does not supply.
+
+Knowing how each model responds to student cues further improves acknowledgement
+predictions over its usual rate within a subject. The same comparison gives no
+clear additional benefit for revelation or elicitation. Full estimates and
+uncertainty intervals appear in Appendix Tables~\ref{tab:absolute-losses}
+and~\ref{tab:primary-tests}.
+
+A predictor using training-response length and formatting makes larger errors
+than the model-default predictor for all three actions
+(Appendix Table~\ref{tab:absolute-losses}). These two style measures do not
+match the predictive performance of model defaults. Richer style measures may
+do better, and the comparison does not identify a causal effect of model identity.
+
+\input{sections/cue_results}
+
+\subsection{Useful Predictions Do Not Require Unchanged Action Rates}
+A model's action rates can change while its earlier behavior still helps
+predict new responses. Neutral role paraphrases produce some observed shifts,
+and our sample is too limited to establish equivalence
+(Appendix~\ref{app:confirmation-details}). The transfer tests show that previous
+behavior remains informative under the tested changes. They do not show that
+rates or model rankings stay fixed. Default and state gains also compare
+different predictors, so their sizes cannot be read as a common stability
+score. Persistence across provider updates remains untested.
+
+\subsection{Checking Dependence on Coders, Models, and Answer Errors}
+The main pattern holds across eight sets of coder labels: model defaults
+improve prediction, and cue-specific responses add value mainly for
+acknowledgement. Resampling training sources and checking missing codes
+preserve this pattern. These checks reduce concern that the findings depend
+on one coding choice, but do not establish that the labels are correct
+(Appendix~\ref{app:confirmation-details}).
+
+The strength of the differences depends on which models are compared.
+Removing GLM substantially reduces default gains for revelation and elicitation.
+Removing M2.7 leaves a small default acknowledgement gain whose interval spans
+zero. The full-panel result therefore need not hold equally strongly for every
+subset of models.
+
+Default gains and the acknowledgement state gain remain positive after removing
+matched response groups flagged for content errors. However, reviewers often
+disagree about these errors. The screen cannot guarantee correct retained
+answers or rule out differences in task ability
+(Appendix~\ref{app:content-results}).

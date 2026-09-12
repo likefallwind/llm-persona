@@ -1,45 +1,14 @@
-\subsection{Default Gains Survive New Expressions; the State Gain Does Not (RQ2)}
+\subsection{Prediction Under New Student Wording (RQ2)}
 \label{sec:cue-results}
 
-The extension yields all 5,120 answers and 15,360 usable codes. One code needs a
-disclosed one-character structural recovery; all three primary majority labels
-are unchanged under either possible value of that missing vote
-(Appendix~\ref{app:cue-transfer}). Pairwise positive coder agreement is
-99.25--99.41\% for revelation, 90.68--92.34\% for elicitation, and
-94.89--95.51\% for acknowledgement.
-
-Frozen default profiles retain substantial gains under both new expression
-arms (Table~\ref{tab:cue-primary}). In contrast, the acknowledgement state
-profile does not retain its incremental gain: -0.00366 for explicit synonyms
-and -0.00628 for implicit cues. The contemporary original-wording gain is
-+0.01248 [0.00888, 0.01624]. Paired new-minus-contemporary gain differences are
--0.01614 [-0.02254, -0.00990] and -0.01876 [-0.02384, -0.01358], respectively.
-These secondary paired contrasts weaken a simple explanation in which all
-profiles cease working across deployments at the later observation time.
-Figure~\ref{fig:expression-transfer} separates the two transfer tests.
-
-\begin{table}[t]
-\centering\small
-\begin{tabular}{llrr}
-\toprule
-Expression & Forecast increment & Gain [95\% CI] & Holm $p$\\
-\midrule
-Explicit & Default: reveal & .09730 [.08095, .11320] & $7.63\!\times\!10^{-11}$\\
-Explicit & Default: elicit & .13070 [.12266, .13825] & $4.97\!\times\!10^{-24}$\\
-Explicit & State: acknowledge & -.00366 [-.00793, .00090] & 1.0\\
-Implicit & Default: reveal & .08231 [.06657, .09695] & $2.76\!\times\!10^{-9}$\\
-Implicit & Default: elicit & .12748 [.11660, .13806] & $8.51\!\times\!10^{-20}$\\
-Implicit & State: acknowledge & -.00628 [-.00960, -.00273] & 1.0\\
-\bottomrule
-\end{tabular}
-\caption{Six frozen-forecast primary expression-transfer tests. Gains are
-source-averaged reductions in Brier loss; intervals bootstrap 32 reused source
-problems, conditioning on fitted forecasts. The default baseline is educational
-context; the state baseline is the model-by-domain profile. One-sided tests
-ask whether the gain is positive: $p=1$ is not a separately specified test of
-harm, and the confidence intervals are not simultaneous intervals.}
-\label{tab:cue-primary}
-\end{table}
+When students express themselves differently, the original model defaults still
+help predict whether tutors give answers or invite reasoning. For acknowledgement,
+the extra benefit of knowing each model's response to student cues is lost.
+This benefit remains positive when we collect new replies using the original
+wording during the same period. The contrast weakens an explanation based only on a general loss of predictive
+value over time. Figure~\ref{fig:expression-transfer}
+shows the estimates and uncertainty; Appendix Table~\ref{tab:cue-primary}
+gives all six tests and Appendix~\ref{app:cue-transfer} the paired contrasts.
 
 \begin{figure}[t]
 \centering
@@ -54,23 +23,25 @@ simultaneous intervals. Horizontal scales differ by panel.}
 \label{fig:expression-transfer}
 \end{figure}
 
-All three individual-coder panels have positive contemporary and negative
-new-expression acknowledgement state-gain estimates. Both new-expression point
-estimates also remain negative in all five generator-deletion panels; some
-intervals include zero. These are sensitivities of the same responses, not
-independent replications. The failure concerns transported conditional
-probabilities: models still exhibit acknowledgement differences between cue
-poles, and the implicit arm changes more than affect wording alone.
+The acknowledgement gains have the same sign pattern when each coder's labels
+are used separately and when each generating model is left out, although some
+intervals include zero. These checks reuse the same responses. The result
+concerns prediction: models still acknowledge feeling or difficulty at different
+rates for contrasting student cues. It does not mean that models stop responding to
+student cues. The implicit condition also changes more than affect wording.
 
 \paragraph{Alternative explanations.}
-The explicit arm loses relative advantage while slightly improving its own
-conditional loss; the implicit arm also worsens absolute conditional loss.
-Post-result accounting and source-held-out calibration constrain simple
-prevalence-shift and logistic-calibration explanations, without excluding
-richer semantic or modeling alternatives
+Losing an advantage over a baseline does not always mean making larger errors.
+Under explicit synonyms, the cue-based predictor's own loss improves slightly,
+yet it no longer outperforms the baseline. Under implicit cues, its own loss
+also worsens. Further checks show that a common change in acknowledgement
+frequency cannot explain the contrast, and the tested logistic recalibrations
+do not restore a positive gain. These post-result checks narrow the explanations
+without identifying a unique mechanism
 (Appendices~\ref{app:cue-diagnosis}--\ref{app:cue-calibration}).
 
-In the secondary peer control, social context changes acknowledgement of a
-fixed current-student state. Selected examples show that this can happen with
-correct emotion attribution; the contrast alone does not identify misattribution
-(Appendix~\ref{app:cue-transfer}).
+In the secondary peer control, changing a classmate's quoted feelings changes
+acknowledgement rates even though the current student remains calm. Selected
+examples show this can happen when the model correctly distinguishes the two
+students' feelings. The contrast alone therefore does not establish confusion
+about whose feelings are being expressed (Appendix~\ref{app:cue-transfer}).

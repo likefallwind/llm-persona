@@ -1,4 +1,5 @@
 \section{Archive Scope and Historical Provenance}
+\label{app:archive-scope}
 
 The frozen archive census contains 1,028,822 raw records. Successful text
 deduplication yields 899,025 model--benchmark--item--response records when
@@ -43,6 +44,7 @@ MRBench and BEA judge settings likewise evaluate existing tutor text; that text
 is not the candidate evaluator's own tutoring. Even among tutor settings,
 instructions differ: TutorBench use cases request different actions, MMTutorBench
 requires image-conditioned guidance in three prescribed sections, and LongTutor
+\citep{li2026longtutor}
 explicitly requests scaffolding without the full answer.
 
 A second pass verifies all 122 prediction files and corresponding summaries in
@@ -116,3 +118,29 @@ causal effect of question-only formatting. We retain both analyses. Their role
 is to motivate separating problem content, student cues, and output instructions
 in the prospective experiment; neither the archive's size nor favorable legacy
 scores substitute for that confirmation.
+
+\subsection{Data Use, Access, and Privacy}
+\label{app:data-use}
+The prospective problems and student messages are synthetic English research
+stimuli, not a demographic sample. Archived tasks have heterogeneous languages
+and roles; the million-record census is not a uniformly English tutoring
+corpus. Existing human teacher-action labels and LongTutor diagnosis labels
+are secondary reference data, not new human annotations collected here.
+
+The MathDial repository \citep{macina2023mathdial} states CC BY-SA 4.0.\footnote{\url{https://github.com/eth-nlped/mathdial}}
+For MathTutorBench \citep{macina2025mathtutorbench}, the publication states
+CC BY 4.0, whereas the current repository README states CC BY-SA 4.0.\footnote{\url{https://github.com/eth-lre/mathtutorbench}}
+We retain this discrepancy rather than infer a uniform redistribution licence.
+LongTutor's data card \citep{li2026longtutor} states CC BY 4.0 for data and MIT
+for evaluation code. These statements identify source terms, not independent
+verification of every underlying record's permissions. Archived generations
+also retain the conditions of their upstream sources and API services.
+
+Raw archived learner histories and the full evaluation corpus are not
+redistributed with this manuscript. Earlier semantic payload preparation used
+identifier-pattern screening, which cannot establish absence of all sensitive
+information. The appendix instead provides aggregate results, measurement
+rules, synthetic stimuli, and worked response examples from the prospective
+experiment. The intended use is research on model behavior, not reconstruction
+of learners or inference of their personal traits. No institutional ethics
+approval or new participant consent is asserted for this secondary analysis.

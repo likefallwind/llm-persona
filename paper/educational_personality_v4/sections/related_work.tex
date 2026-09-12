@@ -2,45 +2,36 @@
 
 \paragraph{Personality and situated behavior.}
 TRAIT extends personality inventories into scenario-based choices and evaluates
-distinctiveness, consistency, and prompting effects, including answer agreement
-between original and paraphrased test items \citep{lee2025trait}. Thus, wording
-robustness is already an explicit personality-measurement question.
-Behavioral Mode Axes uses situated choices across interaction registers,
-also evaluates open-ended generations, and studies activation-based control
-\citep{liu2026bma}. Separate construction and evaluation scenarios are already
-part of that framework. Internal-feature interventions further connect
-personality-related representations to behavior across situations
-\citep{zhang2026triad}; conversational studies examine contextual variation under
-the same assigned personality \citep{han2026contexts}. Together these studies
-motivate examining both recurring defaults and conditional expression. Our
-deployment-level forecasts test observable educational actions and do not
-identify the internal mechanisms responsible for them.
+distinctiveness, consistency, and prompting effects, including agreement between
+original and paraphrased items \citep{lee2025trait}. Behavioral Mode Axes
+examines choices across interaction registers, evaluates open-ended generations,
+and studies activation-based control \citep{liu2026bma}. Internal-feature
+interventions and conversational studies further connect personality-related
+behavior to changes in situations \citep{zhang2026triad,han2026contexts}.
+PERSONA composes activation vectors for context-dependent personality control
+\citep{feng2026persona}, while Dynamic Persona Coherence distinguishes stable
+identity from appropriate state changes in role-playing \citep{qi2026dynamic}.
+These studies connect consistency, context, and control. We examine that
+relationship in existing AI tutors by predicting observable teaching actions
+before collecting new responses and testing how shared instructions change them.
 
 \paragraph{Tutor behavior and educational personas.}
-The CIMA comparison studies three LLMs in language-learning dialogues, reporting
-characteristic action mixtures and response complexity. Its generation prompt
-requests both a response and action labels \citep{kucheria2025cima}. Thus,
-describing model-specific teaching styles is an existing research direction.
+The CIMA comparison reports characteristic action mixtures and response
+complexity for three LLMs in language-learning dialogues; its generation
+prompt requests both a response and action labels \citep{kucheria2025cima}.
 Tutor-persona steering learns from human tutoring dialogues and evaluates
-persona alignment on held-out dialogues \citep{lee2026tutorpersonas}. Our
-experiment instead measures the default behavior of multiple deployed
-configurations and compares changes caused by controlled student cues and
-teaching instructions. We code the visible answers after generation and retain
-cross-coder sensitivity; this changes the measurement procedure without
-establishing that the resulting labels are ground truth.
+persona alignment on held-out dialogues \citep{lee2026tutorpersonas}.
+These studies establish tutor-specific styles and methods for learning them.
+We test whether models' past actions help predict new responses, whether the
+same forecasts work when students change their wording, and how shared
+instructions change both required actions and other choices.
+We code visible answers after generation under controlled student cues and
+teaching instructions.
 
-\paragraph{Teaching quality and the predictive question.}
-MRBench and MathTutorBench organize pedagogical-capability evaluation
-\citep{maurya2025mrbench,macina2025mathtutorbench}. PATS studies teaching adapted
-to student personality \citep{rooein2026pats}. Our primary target is the
-probability of the tutor's next observable behavior under specified conditions.
-Predicting that behavior does not rank its educational value. The empirical
-addition is the different transfer behavior of default and conditional
-profiles: after new-problem confirmation, unchanged forecasts retain default
-revelation and elicitation gains under new student expressions, while the
-acknowledgement state increment disappears despite a positive contemporary
-original-wording control. This compares incremental probability prediction,
-not just response agreement or profile correlation. Matched instruction changes
-further distinguish demanded from permissible accompanying actions. These
-findings concern the tested deployments and expressions; neither wording
-sensitivity nor the use of held-out inputs is itself a novelty claim.
+\paragraph{Teaching quality and behavioral predictability.}
+MRBench and MathTutorBench evaluate pedagogical capabilities
+\citep{maurya2025mrbench,macina2025mathtutorbench}, while PATS studies teaching
+adapted to student personality \citep{rooein2026pats}. We complement capability evaluation by asking which teaching actions can be
+predicted from a model's previous responses and when changes in input make
+those predictions less useful. This connects descriptions of teaching habits with evidence about what tutors
+are likely to do next.

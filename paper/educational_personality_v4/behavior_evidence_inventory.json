@@ -1,0 +1,186 @@
+{
+  "purpose": "Evidence integration only; no new experiments or tests",
+  "rows": [
+    {
+      "id": "E1",
+      "en": "Assistance directness",
+      "source": "artifacts/submission_decision/dimension_decisions.csv",
+      "selector": {
+        "dimension": "help_directness"
+      },
+      "fields": [
+        "cross_task_icc_3_1",
+        "median_pairwise_task_spearman"
+      ],
+      "values": [
+        0.6287436390635446,
+        0.6474454981802753
+      ],
+      "scope": "semantic screen"
+    },
+    {
+      "id": "E2",
+      "en": "Response complexity",
+      "source": "artifacts/submission_decision/dimension_decisions.csv",
+      "selector": {
+        "dimension": "cognitive_load"
+      },
+      "fields": [
+        "cross_task_icc_3_1",
+        "median_pairwise_task_spearman"
+      ],
+      "values": [
+        0.6634936770300413,
+        0.6768511731740915
+      ],
+      "scope": "semantic screen"
+    },
+    {
+      "id": "E3",
+      "en": "Semantic elicitation",
+      "source": "artifacts/submission_decision/dimension_decisions.csv",
+      "selector": {
+        "dimension": "elicitation"
+      },
+      "fields": [
+        "cross_task_icc_3_1",
+        "median_pairwise_task_spearman"
+      ],
+      "values": [
+        0.4745807802431492,
+        0.4675610649415506
+      ],
+      "scope": "semantic screen"
+    },
+    {
+      "id": "E4",
+      "en": "Expressed confidence",
+      "source": "artifacts/epistemic_character_axes_v1/cross_context_stability.csv",
+      "selector": {
+        "axis": "expressed_confidence"
+      },
+      "fields": [
+        "icc_3_1",
+        "median_pairwise_spearman"
+      ],
+      "values": [
+        0.8520396318763286,
+        0.8857142857142859
+      ],
+      "scope": "exploratory archive"
+    },
+    {
+      "id": "E5",
+      "en": "Revision propensity",
+      "source": "artifacts/epistemic_character_axes_v1/cross_context_stability.csv",
+      "selector": {
+        "axis": "revision_propensity"
+      },
+      "fields": [
+        "icc_3_1",
+        "median_pairwise_spearman"
+      ],
+      "values": [
+        0.5371042054219625,
+        0.47233582909125377
+      ],
+      "scope": "exploratory archive"
+    },
+    {
+      "id": "E6",
+      "en": "Unanswerable abstention",
+      "source": "artifacts/epistemic_character_axes_v1/cross_context_stability.csv",
+      "selector": {
+        "axis": "unanswerable_abstention_propensity"
+      },
+      "fields": [
+        "icc_3_1",
+        "median_pairwise_spearman"
+      ],
+      "values": [
+        0.3460038986354777,
+        0.7047689012592435
+      ],
+      "scope": "exploratory archive"
+    },
+    {
+      "id": "E7",
+      "en": "Attack success",
+      "source": "artifacts/normative_boundary_axes_v1/cross_context_stability.csv",
+      "selector": {
+        "axis": "adversarial_attack_success_propensity"
+      },
+      "fields": [
+        "icc_3_1",
+        "median_pairwise_spearman"
+      ],
+      "values": [
+        0.8059533130544854,
+        0.942857142857143
+      ],
+      "scope": "exploratory within-task"
+    },
+    {
+      "id": "E8",
+      "en": "SATA incorrect inclusion",
+      "source": "artifacts/normative_boundary_axes_v1/cross_context_stability.csv",
+      "selector": {
+        "axis": "sata_incorrect_inclusion_propensity"
+      },
+      "fields": [
+        "icc_3_1",
+        "median_pairwise_spearman"
+      ],
+      "values": [
+        0.7609299956355015,
+        0.7142857142857143
+      ],
+      "scope": "exploratory within-task"
+    },
+    {
+      "id": "E9",
+      "en": "Next-step actionability",
+      "source": "artifacts/confirmatory_character_panel_v1/formal/cross_task_stability.csv",
+      "selector": {
+        "dimension": "next_step_actionability"
+      },
+      "fields": [
+        "icc_3_1",
+        "median_pairwise_spearman"
+      ],
+      "values": [
+        -0.11093066787549456,
+        -0.7714285714285715
+      ],
+      "scope": "frozen-split panel"
+    },
+    {
+      "id": "E10",
+      "en": "Open affiliation",
+      "source": "artifacts/affiliation_stability_pilot_v1/analysis/decision.json",
+      "selector": {
+        "object": "estimates"
+      },
+      "fields": [
+        "default_cross_domain_spearman",
+        "default_to_irrelevant_spearman"
+      ],
+      "values": [
+        0.8999999999999998,
+        0.7181848464596079
+      ],
+      "scope": "targeted five-model pilot"
+    }
+  ],
+  "source_sha256": {
+    "artifacts/affiliation_stability_pilot_v1/analysis/decision.json": "ee1c9d193dda472ab0f85d9b3e9c90f6bfdb9e0ddb317e5790cbf8eb9dbcbfe1",
+    "artifacts/confirmatory_character_panel_v1/formal/cross_task_stability.csv": "773e6d1be0289d460173ef40125443ce784b2829905a334e5358cb8bc5b631d8",
+    "artifacts/epistemic_character_axes_v1/cross_context_stability.csv": "05f8f3b3d49b59ca7156edb2b5284bdc01bc48fc82265578eefb3f37a2ab30a7",
+    "artifacts/normative_boundary_axes_v1/cross_context_stability.csv": "7fe242a16f2d0634dc849345f1854b7d0b920fef812db4371d297ae565d4051e",
+    "artifacts/submission_decision/dimension_decisions.csv": "5b5ab2ec6b291d0b1b5b434be10b5b3b3b31d6e794493dff656187a78a61e705"
+  },
+  "output_sha256": {
+    "paper/educational_personality_v4/sections/behavior_evidence_table.tex": "ac09d36d6095380867db80aa83fae91f066bd07af783abf414fec4d54c07d0a4"
+  },
+  "renderer_sha256": "e497644aa37de81ad67dd018f4d94831d3e7a10819136a0e407c142d1b50cefd"
+}

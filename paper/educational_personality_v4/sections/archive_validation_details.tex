@@ -3,7 +3,8 @@
 
 \paragraph{Sample and analysis chronology.}
 The input-only audit above defines 256 exact source groups, one dialogue per
-group, paired across MathTutorBench standard scaffolding and pedagogy tasks.
+group, paired across MathTutorBench standard scaffolding and pedagogy tasks
+\citep{macina2025mathtutorbench}.
 Both instructions require at most two sentences. Scaffolding asks for useful,
 caring mathematics tutoring; pedagogy explicitly requests stepwise guidance,
 probing, and one question at a time. Seven historical deployments yield 3,584
@@ -54,6 +55,19 @@ not fully capture dependence induced by shared training folds; no additional
 confirmatory p-values are claimed. Negative other-instruction gains can reflect
 a shift in overall action rates, without establishing a reversal of model
 rankings.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/archive_instruction_profiles.pdf}
+\caption{Paired archived action profiles on 256 sources. Explicit probing
+compresses the observed range across seven historical deployments. Lines
+connect the same model under two instructions; bars are the existing
+source-bootstrap 95\% intervals for individual rates, not intervals for paired
+changes. Both instructions limit replies to two sentences. This historical
+panel differs from the prospective panel; all rates and prediction comparisons
+are reported below.}
+\label{fig:archive-instructions}
+\end{figure}
 
 \begin{table*}[t]
 \centering\small
